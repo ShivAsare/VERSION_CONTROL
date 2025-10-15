@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V19" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="TRANSFER" Datatype="Struct" Remanence="Retain">
+      <Member Name="TRANSFER START" Datatype="Bool" />
+      <Member Name="TRANSFER STOP" Datatype="Bool" />
+      <Member Name="TRANSFER OVER" Datatype="Bool" />
+      <Member Name="TRANSFER BUFF" Datatype="Struct">
+        <Member Name="MFG TO STORAGE-1 WITH INLINE HOMO" Datatype="Int" />
+        <Member Name="MFG TO STORAGE-1 WITH INLINE FILTER PRES" Datatype="Int" />
+        <Member Name="MFG TO STORAGE-2 WITH INLINE HOMO" Datatype="Int" />
+        <Member Name="MFG TO STORAGE-2 WITH INLINE FILTER PRES" Datatype="Int" />
+        <Member Name="MFG TO STORAGE-3 WITH INLINE HOMO" Datatype="Int" />
+        <Member Name="MFG TO STORAGE-3 WITH INLINE FILTER PRES" Datatype="Int" />
+      </Member>
+      <Member Name="SELECT" Datatype="Struct">
+        <Member Name="MFG TO STORAGE-1 WITH INLINE HOMO" Datatype="Bool" />
+        <Member Name="MFG TO STORAGE-1 WITH INLINE FILTER PRES" Datatype="Bool" />
+        <Member Name="MFG TO STORAGE-2 WITH INLINE HOMO" Datatype="Bool" />
+        <Member Name="MFG TO STORAGE-2 WITH INLINE FILTER PRES" Datatype="Bool" />
+        <Member Name="MFG TO STORAGE-3 WITH INLINE HOMO" Datatype="Bool" />
+        <Member Name="MFG TO STORAGE-3 WITH INLINE FILTER PRES" Datatype="Bool" />
+        <Member Name="SELECT BUFF" Datatype="Int" />
+      </Member>
+    </Member>
+    <Member Name="SET PARAMETER" Datatype="Struct" Remanence="Retain">
+      <Member Name="MFG TO STORAGE-1 WITH INLINE HOMO" Datatype="Real" />
+      <Member Name="MFG TO STORAGE-1 WITH INLINE FILTER PRES" Datatype="Real" />
+      <Member Name="MFG TO STORAGE-2 WITH INLINE HOMO" Datatype="Real" />
+      <Member Name="MFG TO STORAGE-2 WITH INLINE FILTER PRES" Datatype="Real" />
+      <Member Name="MFG TO STORAGE-3 WITH INLINE HOMO" Datatype="Real" />
+      <Member Name="MFG TO STORAGE-3 WITH INLINE FILTER PRES" Datatype="Real" />
+      <Member Name="SET TIME" Datatype="Struct">
+        <Member Name="MFG TO STORAGE-1 WITH INLINE HOMO" Datatype="Int" />
+        <Member Name="MFG TO STORAGE-1 WITH INLINE FILTER PRES" Datatype="Int" />
+        <Member Name="MFG TO STORAGE-2 WITH INLINE HOMO" Datatype="Int" />
+        <Member Name="MFG TO STORAGE-2 WITH INLINE FILTER PRES" Datatype="Int" />
+        <Member Name="MFG TO STORAGE-3 WITH INLINE HOMO" Datatype="Int" />
+        <Member Name="MFG TO STORAGE-3 WITH INLINE FILTER PRES" Datatype="Int" />
+      </Member>
+      <Member Name="RPM" Datatype="Struct">
+        <Member Name="MFG TO STORAGE-1 WITH INLINE HOMO" Datatype="Real" />
+        <Member Name="MFG TO STORAGE-1 WITH INLINE FILTER PRES" Datatype="Real" />
+        <Member Name="MFG TO STORAGE-2 WITH INLINE HOMO" Datatype="Real" />
+        <Member Name="MFG TO STORAGE-2 WITH INLINE FILTER PRES" Datatype="Real" />
+        <Member Name="MFG TO STORAGE-3 WITH INLINE HOMO" Datatype="Real" />
+        <Member Name="MFG TO STORAGE-3 WITH INLINE FILTER PRES" Datatype="Real" />
+      </Member>
+    </Member>
+    <Member Name="PV PARAMETER" Datatype="Struct" Remanence="Retain">
+      <Member Name="MFG TO STORAGE-1 WITH INLINE HOMO" Datatype="Real" />
+      <Member Name="MFG TO STORAGE-1 WITH INLINE FILTER PRES" Datatype="Real" />
+      <Member Name="MFG TO STORAGE-2 WITH INLINE HOMO" Datatype="Real" />
+      <Member Name="MFG TO STORAGE-2 WITH INLINE FILTER PRES" Datatype="Real" />
+      <Member Name="MFG TO STORAGE-3 WITH INLINE HOMO" Datatype="Real" />
+      <Member Name="MFG TO STORAGE-3 WITH INLINE FILTER PRES" Datatype="Real" />
+      <Member Name="PV TIME" Datatype="Struct">
+        <Member Name="MFG TO STORAGE-1 WITH INLINE HOMO" Datatype="Int" />
+        <Member Name="MFG TO STORAGE-1 WITH INLINE FILTER PRES" Datatype="Int" />
+        <Member Name="MFG TO STORAGE-2 WITH INLINE HOMO" Datatype="Int" />
+        <Member Name="MFG TO STORAGE-2 WITH INLINE FILTER PRES" Datatype="Int" />
+        <Member Name="MFG TO STORAGE-3 WITH INLINE HOMO" Datatype="Int" />
+        <Member Name="MFG TO STORAGE-3 WITH INLINE FILTER PRES" Datatype="Int" />
+      </Member>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>MFG TRANSFER CYCLE DB</Name>
+      <Namespace />
+      <Number>74</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

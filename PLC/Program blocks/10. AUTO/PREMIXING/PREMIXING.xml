@@ -9361,7 +9361,7 @@
       <Symbol>
         <Component Name="LEVEL BUFF" />
         <Component Name="AUTO" />
-        <Component Name="PREMIXING MFG VACUUM MIN_MAX BUFF" />
+        <Component Name="PREMIXING VACUUM MIN_MAX BUFF" />
       </Symbol>
     </Access>
     <Access Scope="LiteralConstant" UId="27">
@@ -9542,7 +9542,7 @@
       <Symbol>
         <Component Name="LEVEL BUFF" />
         <Component Name="AUTO" />
-        <Component Name="PREMIXING MFG VACUUM MIN_MAX BUFF" />
+        <Component Name="PREMIXING VACUUM MIN_MAX BUFF" />
       </Symbol>
     </Access>
     <Access Scope="LiteralConstant" UId="27">

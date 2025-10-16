@@ -9,23 +9,20 @@
     <Member Name="SYRUP MFG_COOLING" Datatype="Int" Remanence="Retain" />
     <Member Name="SYRUP MFG_VACCUM" Datatype="Int" Remanence="Retain" />
     <Member Name="SYRUP MFG_LOAD CELL" Datatype="Int" Remanence="Retain" />
-    <Member Name="AUTO MFG_LOAD CELL" Datatype="Int" Remanence="Retain" />
     <Member Name="PREMIXING_TEMP" Datatype="Int" Remanence="Retain" />
     <Member Name="PREMIXING_COOLING" Datatype="Int" Remanence="Retain" />
     <Member Name="PREMIXING_VACCUM" Datatype="Int" Remanence="Retain" />
     <Member Name="PREMIXING_LOAD CELL" Datatype="Int" Remanence="Retain" />
-    <Member Name="AUTO PREMIXING_LOAD CELL" Datatype="Int" Remanence="Retain" />
     <Member Name="SUGAR_TEMP" Datatype="Int" Remanence="Retain" />
     <Member Name="SUGAR_VACCUM" Datatype="Int" Remanence="Retain" />
     <Member Name="SUGAR_LOAD CELL" Datatype="Int" Remanence="Retain" />
-    <Member Name="AUTO SUGAR_LOAD CELL" Datatype="Int" Remanence="Retain" />
     <Member Name="AUTO" Datatype="Struct">
       <Member Name="MFG LOAD CELL" Datatype="Int" />
       <Member Name="MFG TEMP MIN_MAX BUFF" Datatype="Int" />
       <Member Name="MFG VACUUM MIN_MAX BUFF" Datatype="Int" />
       <Member Name="PREMIXING LOAD CELL" Datatype="Int" />
       <Member Name="PREMIXING TEMP MIN_MAX BUFF" Datatype="Int" />
-      <Member Name="PREMIXING MFG VACUUM MIN_MAX BUFF" Datatype="Int" />
+      <Member Name="PREMIXING VACUUM MIN_MAX BUFF" Datatype="Int" />
       <Member Name="SUGAR LOAD CELL" Datatype="Int" />
       <Member Name="SUGAR TEMP MIN_MAX BUFF" Datatype="Int" />
       <Member Name="SUGAR VACUUM MIN_MAX BUFF" Datatype="Int" />

@@ -105,7 +105,7 @@
       <Member Name="RECIRCULATION PROCESS SELECT" Datatype="Bool" />
       <Member Name="RECIRCULATION PROCESS RUNING" Datatype="Bool" />
       <Member Name="RECIRCULATION OVER" Datatype="Bool" />
-      <Member Name="MFG PROCESS OVER" Datatype="Bool" />
+      <Member Name="PREMIXING PROCESS OVER" Datatype="Bool" />
     </Member>
     <Member Name="PREMIXING PROCESS ALARM" Datatype="Struct">
       <Member Name="MFG PROCESS START" Datatype="Bool" />

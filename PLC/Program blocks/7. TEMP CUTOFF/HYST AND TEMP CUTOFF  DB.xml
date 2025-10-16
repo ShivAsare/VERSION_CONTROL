@@ -79,9 +79,11 @@
       <Member Name="PREMIXING_COOLING" Datatype="Real" />
       <Member Name="PREMIXING_VACCUM" Datatype="Real" />
       <Member Name="PREMIXING_LOAD CELL" Datatype="Real" />
+      <Member Name="PREMIXING LOAD CELL FOR TRANSFER" Datatype="Real" />
       <Member Name="SUGAR_TEMP" Datatype="Real" />
       <Member Name="SUGAR_VACCUM" Datatype="Real" />
       <Member Name="SUGAR_LOAD CELL" Datatype="Real" />
+      <Member Name="SUGAR LOAD CELL FOR TRANSFER" Datatype="Real" />
     </Member>
     <Member Name="AUTO MAIN SET PARAMETER" Datatype="Struct" Remanence="Retain">
       <Member Name="MFG LOAD CELL" Datatype="Real" />
@@ -100,6 +102,8 @@
     </Member>
     <Member Name="MIAN MFG TEMP MIN" Datatype="Real" />
     <Member Name="MIAN MFG TEMP MAX" Datatype="Real" />
+    <Member Name="MIAN PREMIXING TEMP MIN" Datatype="Real" />
+    <Member Name="MIAN PREMIXING TEMP MAX" Datatype="Real" />
   </Section>
 </Sections></Interface>
       <MemoryLayout>Optimized</MemoryLayout>

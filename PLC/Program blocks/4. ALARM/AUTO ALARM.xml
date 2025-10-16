@@ -3449,7 +3449,7 @@
     <Access Scope="GlobalVariable" UId="25">
       <Symbol>
         <Component Name="AUTO ALARM DB" />
-        <Component Name="MFG PROCESS" />
+        <Component Name="PREMIXING PROCESS" />
         <Component Name="PURIFIED WATER PROCESS SELECT" />
       </Symbol>
     </Access>
@@ -3552,7 +3552,7 @@
     <Access Scope="GlobalVariable" UId="25">
       <Symbol>
         <Component Name="AUTO ALARM DB" />
-        <Component Name="MFG PROCESS" />
+        <Component Name="PREMIXING PROCESS" />
         <Component Name="PURIFIED WATER PROCESS OF INITIAL DRAIN SELECT" />
       </Symbol>
     </Access>
@@ -3655,7 +3655,7 @@
     <Access Scope="GlobalVariable" UId="25">
       <Symbol>
         <Component Name="AUTO ALARM DB" />
-        <Component Name="MFG PROCESS" />
+        <Component Name="PREMIXING PROCESS" />
         <Component Name="PURIFIED WATER PROCESS OF LOAD CELL" />
       </Symbol>
     </Access>
@@ -3758,7 +3758,7 @@
     <Access Scope="GlobalVariable" UId="25">
       <Symbol>
         <Component Name="AUTO ALARM DB" />
-        <Component Name="MFG PROCESS" />
+        <Component Name="PREMIXING PROCESS" />
         <Component Name="PURIFIED WATER HEATING OR COOLING SELECT" />
       </Symbol>
     </Access>
@@ -3854,7 +3854,7 @@
     <Access Scope="GlobalVariable" UId="24">
       <Symbol>
         <Component Name="AUTO ALARM DB" />
-        <Component Name="MFG PROCESS" />
+        <Component Name="PREMIXING PROCESS" />
         <Component Name="PURIFIED WATER PROCESS OF JACKET DRAIN SELECT" />
       </Symbol>
     </Access>
@@ -3951,7 +3951,7 @@
     <Access Scope="GlobalVariable" UId="25">
       <Symbol>
         <Component Name="AUTO ALARM DB" />
-        <Component Name="MFG PROCESS" />
+        <Component Name="PREMIXING PROCESS" />
         <Component Name="PURIFIED WATER PROCESS OVER" />
       </Symbol>
     </Access>
@@ -4054,7 +4054,7 @@
     <Access Scope="GlobalVariable" UId="25">
       <Symbol>
         <Component Name="AUTO ALARM DB" />
-        <Component Name="MFG PROCESS" />
+        <Component Name="PREMIXING PROCESS" />
         <Component Name="MATERIAL ADDITION PROCESS SELECT" />
       </Symbol>
     </Access>
@@ -4157,7 +4157,7 @@
     <Access Scope="GlobalVariable" UId="25">
       <Symbol>
         <Component Name="AUTO ALARM DB" />
-        <Component Name="MFG PROCESS" />
+        <Component Name="PREMIXING PROCESS" />
         <Component Name="MATERIAL ADDITION MATERIAL ADDED TEXT" />
       </Symbol>
     </Access>
@@ -4260,7 +4260,7 @@
     <Access Scope="GlobalVariable" UId="25">
       <Symbol>
         <Component Name="AUTO ALARM DB" />
-        <Component Name="MFG PROCESS" />
+        <Component Name="PREMIXING PROCESS" />
         <Component Name="MATERIAL ADDITION DO YOU WANT TO ADD SORBITOL SELECT" />
       </Symbol>
     </Access>
@@ -4363,7 +4363,7 @@
     <Access Scope="GlobalVariable" UId="25">
       <Symbol>
         <Component Name="AUTO ALARM DB" />
-        <Component Name="MFG PROCESS" />
+        <Component Name="PREMIXING PROCESS" />
         <Component Name="MATERIAL ADDITION OF SORBITOL OVER" />
       </Symbol>
     </Access>
@@ -4466,7 +4466,7 @@
     <Access Scope="GlobalVariable" UId="25">
       <Symbol>
         <Component Name="AUTO ALARM DB" />
-        <Component Name="MFG PROCESS" />
+        <Component Name="PREMIXING PROCESS" />
         <Component Name="MATERIAL ADDITION DO YOU WANT TO ADD GLUCOSE SELECT" />
       </Symbol>
     </Access>
@@ -4569,7 +4569,7 @@
     <Access Scope="GlobalVariable" UId="25">
       <Symbol>
         <Component Name="AUTO ALARM DB" />
-        <Component Name="MFG PROCESS" />
+        <Component Name="PREMIXING PROCESS" />
         <Component Name="MATERIAL ADDITION OF GLUCOSE OVER" />
       </Symbol>
     </Access>
@@ -4672,7 +4672,7 @@
     <Access Scope="GlobalVariable" UId="25">
       <Symbol>
         <Component Name="AUTO ALARM DB" />
-        <Component Name="MFG PROCESS" />
+        <Component Name="PREMIXING PROCESS" />
         <Component Name="MATERIAL ADDITION PROCESS OVER" />
       </Symbol>
     </Access>
@@ -4775,7 +4775,7 @@
     <Access Scope="GlobalVariable" UId="25">
       <Symbol>
         <Component Name="AUTO ALARM DB" />
-        <Component Name="MFG PROCESS" />
+        <Component Name="PREMIXING PROCESS" />
         <Component Name="RECIRCULATION PROCESS SELECT" />
       </Symbol>
     </Access>
@@ -4878,7 +4878,7 @@
     <Access Scope="GlobalVariable" UId="25">
       <Symbol>
         <Component Name="AUTO ALARM DB" />
-        <Component Name="MFG PROCESS" />
+        <Component Name="PREMIXING PROCESS" />
         <Component Name="RECIRCULATION PROCESS RUNING" />
       </Symbol>
     </Access>
@@ -4981,7 +4981,7 @@
     <Access Scope="GlobalVariable" UId="25">
       <Symbol>
         <Component Name="AUTO ALARM DB" />
-        <Component Name="MFG PROCESS" />
+        <Component Name="PREMIXING PROCESS" />
         <Component Name="RECIRCULATION OVER" />
       </Symbol>
     </Access>
@@ -5084,8 +5084,8 @@
     <Access Scope="GlobalVariable" UId="25">
       <Symbol>
         <Component Name="AUTO ALARM DB" />
-        <Component Name="MFG PROCESS" />
-        <Component Name="MFG PROCESS OVER" />
+        <Component Name="PREMIXING PROCESS" />
+        <Component Name="PREMIXING PROCESS OVER" />
       </Symbol>
     </Access>
     <Part Name="Eq" UId="26">

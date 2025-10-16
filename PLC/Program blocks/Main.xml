@@ -173,19 +173,30 @@
     <Call UId="23">
       <CallInfo Name="MFG TRANSFER CYCLE" BlockType="FC" />
     </Call>
+    <Call UId="24">
+      <CallInfo Name="PREMIXING" BlockType="FC" />
+    </Call>
+    <Call UId="25">
+      <CallInfo Name="PREMIXING TRANSFER CYCLE" BlockType="FC" />
+    </Call>
   </Parts>
   <Wires>
-    <Wire UId="24">
+    <Wire UId="26">
       <Powerrail />
       <NameCon UId="21" Name="en" />
+      <NameCon UId="24" Name="en" />
     </Wire>
-    <Wire UId="25">
+    <Wire UId="27">
       <NameCon UId="21" Name="eno" />
       <NameCon UId="22" Name="en" />
     </Wire>
-    <Wire UId="26">
+    <Wire UId="28">
       <NameCon UId="22" Name="eno" />
       <NameCon UId="23" Name="en" />
+    </Wire>
+    <Wire UId="29">
+      <NameCon UId="24" Name="eno" />
+      <NameCon UId="25" Name="en" />
     </Wire>
   </Wires>
 </FlgNet></NetworkSource>

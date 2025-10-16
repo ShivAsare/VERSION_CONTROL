@@ -487,13 +487,14 @@
     <Access Scope="GlobalVariable" UId="90">
       <Symbol>
         <Component Name="MFG PROCESS_DB" />
-        <Component Name="AUTO BUFF" />
+        <Component Name="MATERIAL SUCTION" />
+        <Component Name="MATERIAL SUCTION BUFF" />
       </Symbol>
     </Access>
     <Access Scope="LiteralConstant" UId="91">
       <Constant>
         <ConstantType>Int</ConstantType>
-        <ConstantValue>195</ConstantValue>
+        <ConstantValue>10</ConstantValue>
       </Constant>
     </Access>
     <Access Scope="GlobalVariable" UId="92">
@@ -1098,7 +1099,933 @@
       </SW.Blocks.CompileUnit>
       <SW.Blocks.CompileUnit ID="8" CompositionName="CompileUnits">
         <AttributeList>
-          <NetworkSource />
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="AlwaysTRUE" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="MODE SELECTION DB" />
+        <Component Name="MODE BUFF" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="23">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>1</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="PREMIXING DB" />
+        <Component Name="AUTO BUFF" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="25">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>25</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="PREMIXING DB" />
+        <Component Name="AUTO BUFF" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="27">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>35</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="28">
+      <Symbol>
+        <Component Name="CONTINUE DB" />
+        <Component Name="PREMIXING PROCESS ERROR" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="29">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>1</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="30">
+      <Symbol>
+        <Component Name="PREMIXING DB" />
+        <Component Name="SET PARAMETER" />
+        <Component Name="PURIFIED STIRRER MOTOR RPM" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="31">
+      <Symbol>
+        <Component Name="SET PARAMETER DB" />
+        <Component Name="AUTO VFD SET PARAMETER" />
+        <Component Name="PREMIXING  VESSEL STIRROR RUN" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="32">
+      <Symbol>
+        <Component Name="MODE SELECTION DB" />
+        <Component Name="MODE BUFF" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="33">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>1</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="34">
+      <Symbol>
+        <Component Name="PREMIXING DB" />
+        <Component Name="AUTO BUFF" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="35">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>90</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="36">
+      <Symbol>
+        <Component Name="PREMIXING DB" />
+        <Component Name="AUTO BUFF" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="37">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>95</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="38">
+      <Symbol>
+        <Component Name="CONTINUE DB" />
+        <Component Name="PREMIXING PROCESS ERROR" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="39">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>1</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="40">
+      <Symbol>
+        <Component Name="MFG PROCESS_DB" />
+        <Component Name="SET PARAMETER" />
+        <Component Name="MATERIAL SORBITOL STIRRER MOTOR RPM" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="41">
+      <Symbol>
+        <Component Name="SET PARAMETER DB" />
+        <Component Name="AUTO VFD SET PARAMETER" />
+        <Component Name="PREMIXING  VESSEL STIRROR RUN" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="42">
+      <Symbol>
+        <Component Name="MODE SELECTION DB" />
+        <Component Name="MODE BUFF" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="43">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>1</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="44">
+      <Symbol>
+        <Component Name="PREMIXING DB" />
+        <Component Name="AUTO BUFF" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="45">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>125</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="46">
+      <Symbol>
+        <Component Name="PREMIXING DB" />
+        <Component Name="AUTO BUFF" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="47">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>130</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="48">
+      <Symbol>
+        <Component Name="CONTINUE DB" />
+        <Component Name="PREMIXING PROCESS ERROR" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="49">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>1</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="50">
+      <Symbol>
+        <Component Name="MFG PROCESS_DB" />
+        <Component Name="SET PARAMETER" />
+        <Component Name="MATERIAL GLUCOSE STIRRER MOTOR RPM" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="51">
+      <Symbol>
+        <Component Name="SET PARAMETER DB" />
+        <Component Name="AUTO VFD SET PARAMETER" />
+        <Component Name="PREMIXING  VESSEL STIRROR RUN" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="52">
+      <Symbol>
+        <Component Name="MODE SELECTION DB" />
+        <Component Name="MODE BUFF" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="53">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>1</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="54">
+      <Symbol>
+        <Component Name="PREMIXING DB" />
+        <Component Name="AUTO BUFF" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="55">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>155</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="56">
+      <Symbol>
+        <Component Name="PREMIXING DB" />
+        <Component Name="AUTO BUFF" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="57">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>160</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="58">
+      <Symbol>
+        <Component Name="CONTINUE DB" />
+        <Component Name="PREMIXING PROCESS ERROR" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="59">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>1</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="60">
+      <Symbol>
+        <Component Name="MFG PROCESS_DB" />
+        <Component Name="SET PARAMETER" />
+        <Component Name="RECIRCULATION STIRRER RPM" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="61">
+      <Symbol>
+        <Component Name="SET PARAMETER DB" />
+        <Component Name="AUTO VFD SET PARAMETER" />
+        <Component Name="PREMIXING  VESSEL STIRROR RUN" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="62">
+      <Symbol>
+        <Component Name="AlwaysTRUE" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="63">
+      <Symbol>
+        <Component Name="MODE SELECTION DB" />
+        <Component Name="MODE BUFF" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="64">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>1</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="65">
+      <Symbol>
+        <Component Name="PREMIXING TRANSFER CYCLE DB" />
+        <Component Name="TRANSFER" />
+        <Component Name="TRANSFER BUFF" />
+        <Component Name="PREMIXING TO MFG WITH INLINE HOMO" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="66">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>10</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="67">
+      <Symbol>
+        <Component Name="PREMIXING TRANSFER CYCLE DB" />
+        <Component Name="SET PARAMETER" />
+        <Component Name="RPM" />
+        <Component Name="PREMIXING TO MFG WITH INLINE HOMO" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="68">
+      <Symbol>
+        <Component Name="SET PARAMETER DB" />
+        <Component Name="AUTO VFD SET PARAMETER" />
+        <Component Name="PREMIXING  VESSEL STIRROR RUN" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="69">
+      <Symbol>
+        <Component Name="PREMIXING TRANSFER CYCLE DB" />
+        <Component Name="TRANSFER" />
+        <Component Name="TRANSFER BUFF" />
+        <Component Name="PREMIXING TO MFG WITH INLINE FILTER PRES" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="70">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>10</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="71">
+      <Symbol>
+        <Component Name="PREMIXING TRANSFER CYCLE DB" />
+        <Component Name="SET PARAMETER" />
+        <Component Name="RPM" />
+        <Component Name="PREMIXING TO MFG WITH INLINE FILTER PRES" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="72">
+      <Symbol>
+        <Component Name="SET PARAMETER DB" />
+        <Component Name="AUTO VFD SET PARAMETER" />
+        <Component Name="PREMIXING  VESSEL STIRROR RUN" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="73">
+      <Symbol>
+        <Component Name="PREMIXING TRANSFER CYCLE DB" />
+        <Component Name="TRANSFER" />
+        <Component Name="TRANSFER BUFF" />
+        <Component Name="PREMIXING TO STORAGE-4 WITH INLINE HOMO" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="74">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>10</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="75">
+      <Symbol>
+        <Component Name="PREMIXING TRANSFER CYCLE DB" />
+        <Component Name="SET PARAMETER" />
+        <Component Name="RPM" />
+        <Component Name="PREMIXING TO STORAGE-4 WITH INLINE HOMO" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="76">
+      <Symbol>
+        <Component Name="SET PARAMETER DB" />
+        <Component Name="AUTO VFD SET PARAMETER" />
+        <Component Name="PREMIXING  VESSEL STIRROR RUN" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="77">
+      <Symbol>
+        <Component Name="PREMIXING TRANSFER CYCLE DB" />
+        <Component Name="TRANSFER" />
+        <Component Name="TRANSFER BUFF" />
+        <Component Name="PREMIXING TO STORAGE-4 WITH INLINE FILTER PRES" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="78">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>10</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="79">
+      <Symbol>
+        <Component Name="PREMIXING TRANSFER CYCLE DB" />
+        <Component Name="SET PARAMETER" />
+        <Component Name="RPM" />
+        <Component Name="PREMIXING TO STORAGE-4 WITH INLINE FILTER PRES" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="80">
+      <Symbol>
+        <Component Name="SET PARAMETER DB" />
+        <Component Name="AUTO VFD SET PARAMETER" />
+        <Component Name="PREMIXING  VESSEL STIRROR RUN" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="81">
+      <Symbol>
+        <Component Name="AlwaysTRUE" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="82">
+      <Symbol>
+        <Component Name="PREMIXING DB" />
+        <Component Name="MATERIAL SUCTION" />
+        <Component Name="MATERIAL SUCTION BUFF" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="83">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>10</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="84">
+      <Symbol>
+        <Component Name="CONTINUE DB" />
+        <Component Name="PREMIXING PROCESS ERROR" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="85">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>1</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="86">
+      <Symbol>
+        <Component Name="PREMIXING DB" />
+        <Component Name="SET PARAMETER" />
+        <Component Name="MATERIAL SUCTION STIRRER RPM" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="87">
+      <Symbol>
+        <Component Name="SET PARAMETER DB" />
+        <Component Name="AUTO VFD SET PARAMETER" />
+        <Component Name="PREMIXING  VESSEL STIRROR RUN" />
+      </Symbol>
+    </Access>
+    <Part Name="Contact" UId="88" />
+    <Part Name="Eq" UId="89">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="Eq" UId="90">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="Eq" UId="91">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="O" UId="92">
+      <TemplateValue Name="Card" Type="Cardinality">2</TemplateValue>
+    </Part>
+    <Part Name="Ne" UId="93">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="Move" UId="94" DisabledENO="true">
+      <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+    </Part>
+    <Part Name="Eq" UId="95">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="Ge" UId="96">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="Le" UId="97">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="Ne" UId="98">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="Move" UId="99" DisabledENO="true">
+      <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+    </Part>
+    <Part Name="Eq" UId="100">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="Ge" UId="101">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="Le" UId="102">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="Ne" UId="103">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="Move" UId="104" DisabledENO="true">
+      <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+    </Part>
+    <Part Name="Eq" UId="105">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="Ge" UId="106">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="Le" UId="107">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="Ne" UId="108">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="Move" UId="109" DisabledENO="true">
+      <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+    </Part>
+    <Part Name="Contact" UId="110" />
+    <Part Name="Eq" UId="111">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="Eq" UId="112">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="Move" UId="113" DisabledENO="true">
+      <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+    </Part>
+    <Part Name="Eq" UId="114">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="Move" UId="115" DisabledENO="true">
+      <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+    </Part>
+    <Part Name="Eq" UId="116">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="Move" UId="117" DisabledENO="true">
+      <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+    </Part>
+    <Part Name="Eq" UId="118">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="Move" UId="119" DisabledENO="true">
+      <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+    </Part>
+    <Part Name="Contact" UId="120" />
+    <Part Name="Eq" UId="121">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="Ne" UId="122">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="Move" UId="123" DisabledENO="true">
+      <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+    </Part>
+  </Parts>
+  <Wires>
+    <Wire UId="124">
+      <Powerrail />
+      <NameCon UId="88" Name="in" />
+      <NameCon UId="110" Name="in" />
+      <NameCon UId="120" Name="in" />
+    </Wire>
+    <Wire UId="125">
+      <IdentCon UId="21" />
+      <NameCon UId="88" Name="operand" />
+    </Wire>
+    <Wire UId="126">
+      <NameCon UId="88" Name="out" />
+      <NameCon UId="89" Name="pre" />
+      <NameCon UId="95" Name="pre" />
+      <NameCon UId="100" Name="pre" />
+      <NameCon UId="105" Name="pre" />
+    </Wire>
+    <Wire UId="127">
+      <IdentCon UId="22" />
+      <NameCon UId="89" Name="in1" />
+    </Wire>
+    <Wire UId="128">
+      <IdentCon UId="23" />
+      <NameCon UId="89" Name="in2" />
+    </Wire>
+    <Wire UId="129">
+      <NameCon UId="89" Name="out" />
+      <NameCon UId="90" Name="pre" />
+      <NameCon UId="91" Name="pre" />
+    </Wire>
+    <Wire UId="130">
+      <IdentCon UId="24" />
+      <NameCon UId="90" Name="in1" />
+    </Wire>
+    <Wire UId="131">
+      <IdentCon UId="25" />
+      <NameCon UId="90" Name="in2" />
+    </Wire>
+    <Wire UId="132">
+      <NameCon UId="90" Name="out" />
+      <NameCon UId="92" Name="in1" />
+    </Wire>
+    <Wire UId="133">
+      <IdentCon UId="26" />
+      <NameCon UId="91" Name="in1" />
+    </Wire>
+    <Wire UId="134">
+      <IdentCon UId="27" />
+      <NameCon UId="91" Name="in2" />
+    </Wire>
+    <Wire UId="135">
+      <NameCon UId="91" Name="out" />
+      <NameCon UId="92" Name="in2" />
+    </Wire>
+    <Wire UId="136">
+      <NameCon UId="92" Name="out" />
+      <NameCon UId="93" Name="pre" />
+    </Wire>
+    <Wire UId="137">
+      <IdentCon UId="28" />
+      <NameCon UId="93" Name="in1" />
+    </Wire>
+    <Wire UId="138">
+      <IdentCon UId="29" />
+      <NameCon UId="93" Name="in2" />
+    </Wire>
+    <Wire UId="139">
+      <NameCon UId="93" Name="out" />
+      <NameCon UId="94" Name="en" />
+    </Wire>
+    <Wire UId="140">
+      <IdentCon UId="30" />
+      <NameCon UId="94" Name="in" />
+    </Wire>
+    <Wire UId="141">
+      <NameCon UId="94" Name="out1" />
+      <IdentCon UId="31" />
+    </Wire>
+    <Wire UId="142">
+      <IdentCon UId="32" />
+      <NameCon UId="95" Name="in1" />
+    </Wire>
+    <Wire UId="143">
+      <IdentCon UId="33" />
+      <NameCon UId="95" Name="in2" />
+    </Wire>
+    <Wire UId="144">
+      <NameCon UId="95" Name="out" />
+      <NameCon UId="96" Name="pre" />
+    </Wire>
+    <Wire UId="145">
+      <IdentCon UId="34" />
+      <NameCon UId="96" Name="in1" />
+    </Wire>
+    <Wire UId="146">
+      <IdentCon UId="35" />
+      <NameCon UId="96" Name="in2" />
+    </Wire>
+    <Wire UId="147">
+      <NameCon UId="96" Name="out" />
+      <NameCon UId="97" Name="pre" />
+    </Wire>
+    <Wire UId="148">
+      <IdentCon UId="36" />
+      <NameCon UId="97" Name="in1" />
+    </Wire>
+    <Wire UId="149">
+      <IdentCon UId="37" />
+      <NameCon UId="97" Name="in2" />
+    </Wire>
+    <Wire UId="150">
+      <NameCon UId="97" Name="out" />
+      <NameCon UId="98" Name="pre" />
+    </Wire>
+    <Wire UId="151">
+      <IdentCon UId="38" />
+      <NameCon UId="98" Name="in1" />
+    </Wire>
+    <Wire UId="152">
+      <IdentCon UId="39" />
+      <NameCon UId="98" Name="in2" />
+    </Wire>
+    <Wire UId="153">
+      <NameCon UId="98" Name="out" />
+      <NameCon UId="99" Name="en" />
+    </Wire>
+    <Wire UId="154">
+      <IdentCon UId="40" />
+      <NameCon UId="99" Name="in" />
+    </Wire>
+    <Wire UId="155">
+      <NameCon UId="99" Name="out1" />
+      <IdentCon UId="41" />
+    </Wire>
+    <Wire UId="156">
+      <IdentCon UId="42" />
+      <NameCon UId="100" Name="in1" />
+    </Wire>
+    <Wire UId="157">
+      <IdentCon UId="43" />
+      <NameCon UId="100" Name="in2" />
+    </Wire>
+    <Wire UId="158">
+      <NameCon UId="100" Name="out" />
+      <NameCon UId="101" Name="pre" />
+    </Wire>
+    <Wire UId="159">
+      <IdentCon UId="44" />
+      <NameCon UId="101" Name="in1" />
+    </Wire>
+    <Wire UId="160">
+      <IdentCon UId="45" />
+      <NameCon UId="101" Name="in2" />
+    </Wire>
+    <Wire UId="161">
+      <NameCon UId="101" Name="out" />
+      <NameCon UId="102" Name="pre" />
+    </Wire>
+    <Wire UId="162">
+      <IdentCon UId="46" />
+      <NameCon UId="102" Name="in1" />
+    </Wire>
+    <Wire UId="163">
+      <IdentCon UId="47" />
+      <NameCon UId="102" Name="in2" />
+    </Wire>
+    <Wire UId="164">
+      <NameCon UId="102" Name="out" />
+      <NameCon UId="103" Name="pre" />
+    </Wire>
+    <Wire UId="165">
+      <IdentCon UId="48" />
+      <NameCon UId="103" Name="in1" />
+    </Wire>
+    <Wire UId="166">
+      <IdentCon UId="49" />
+      <NameCon UId="103" Name="in2" />
+    </Wire>
+    <Wire UId="167">
+      <NameCon UId="103" Name="out" />
+      <NameCon UId="104" Name="en" />
+    </Wire>
+    <Wire UId="168">
+      <IdentCon UId="50" />
+      <NameCon UId="104" Name="in" />
+    </Wire>
+    <Wire UId="169">
+      <NameCon UId="104" Name="out1" />
+      <IdentCon UId="51" />
+    </Wire>
+    <Wire UId="170">
+      <IdentCon UId="52" />
+      <NameCon UId="105" Name="in1" />
+    </Wire>
+    <Wire UId="171">
+      <IdentCon UId="53" />
+      <NameCon UId="105" Name="in2" />
+    </Wire>
+    <Wire UId="172">
+      <NameCon UId="105" Name="out" />
+      <NameCon UId="106" Name="pre" />
+    </Wire>
+    <Wire UId="173">
+      <IdentCon UId="54" />
+      <NameCon UId="106" Name="in1" />
+    </Wire>
+    <Wire UId="174">
+      <IdentCon UId="55" />
+      <NameCon UId="106" Name="in2" />
+    </Wire>
+    <Wire UId="175">
+      <NameCon UId="106" Name="out" />
+      <NameCon UId="107" Name="pre" />
+    </Wire>
+    <Wire UId="176">
+      <IdentCon UId="56" />
+      <NameCon UId="107" Name="in1" />
+    </Wire>
+    <Wire UId="177">
+      <IdentCon UId="57" />
+      <NameCon UId="107" Name="in2" />
+    </Wire>
+    <Wire UId="178">
+      <NameCon UId="107" Name="out" />
+      <NameCon UId="108" Name="pre" />
+    </Wire>
+    <Wire UId="179">
+      <IdentCon UId="58" />
+      <NameCon UId="108" Name="in1" />
+    </Wire>
+    <Wire UId="180">
+      <IdentCon UId="59" />
+      <NameCon UId="108" Name="in2" />
+    </Wire>
+    <Wire UId="181">
+      <NameCon UId="108" Name="out" />
+      <NameCon UId="109" Name="en" />
+    </Wire>
+    <Wire UId="182">
+      <IdentCon UId="60" />
+      <NameCon UId="109" Name="in" />
+    </Wire>
+    <Wire UId="183">
+      <NameCon UId="109" Name="out1" />
+      <IdentCon UId="61" />
+    </Wire>
+    <Wire UId="184">
+      <IdentCon UId="62" />
+      <NameCon UId="110" Name="operand" />
+    </Wire>
+    <Wire UId="185">
+      <NameCon UId="110" Name="out" />
+      <NameCon UId="111" Name="pre" />
+    </Wire>
+    <Wire UId="186">
+      <IdentCon UId="63" />
+      <NameCon UId="111" Name="in1" />
+    </Wire>
+    <Wire UId="187">
+      <IdentCon UId="64" />
+      <NameCon UId="111" Name="in2" />
+    </Wire>
+    <Wire UId="188">
+      <NameCon UId="111" Name="out" />
+      <NameCon UId="112" Name="pre" />
+      <NameCon UId="114" Name="pre" />
+      <NameCon UId="116" Name="pre" />
+      <NameCon UId="118" Name="pre" />
+    </Wire>
+    <Wire UId="189">
+      <IdentCon UId="65" />
+      <NameCon UId="112" Name="in1" />
+    </Wire>
+    <Wire UId="190">
+      <IdentCon UId="66" />
+      <NameCon UId="112" Name="in2" />
+    </Wire>
+    <Wire UId="191">
+      <NameCon UId="112" Name="out" />
+      <NameCon UId="113" Name="en" />
+    </Wire>
+    <Wire UId="192">
+      <IdentCon UId="67" />
+      <NameCon UId="113" Name="in" />
+    </Wire>
+    <Wire UId="193">
+      <NameCon UId="113" Name="out1" />
+      <IdentCon UId="68" />
+    </Wire>
+    <Wire UId="194">
+      <IdentCon UId="69" />
+      <NameCon UId="114" Name="in1" />
+    </Wire>
+    <Wire UId="195">
+      <IdentCon UId="70" />
+      <NameCon UId="114" Name="in2" />
+    </Wire>
+    <Wire UId="196">
+      <NameCon UId="114" Name="out" />
+      <NameCon UId="115" Name="en" />
+    </Wire>
+    <Wire UId="197">
+      <IdentCon UId="71" />
+      <NameCon UId="115" Name="in" />
+    </Wire>
+    <Wire UId="198">
+      <NameCon UId="115" Name="out1" />
+      <IdentCon UId="72" />
+    </Wire>
+    <Wire UId="199">
+      <IdentCon UId="73" />
+      <NameCon UId="116" Name="in1" />
+    </Wire>
+    <Wire UId="200">
+      <IdentCon UId="74" />
+      <NameCon UId="116" Name="in2" />
+    </Wire>
+    <Wire UId="201">
+      <NameCon UId="116" Name="out" />
+      <NameCon UId="117" Name="en" />
+    </Wire>
+    <Wire UId="202">
+      <IdentCon UId="75" />
+      <NameCon UId="117" Name="in" />
+    </Wire>
+    <Wire UId="203">
+      <NameCon UId="117" Name="out1" />
+      <IdentCon UId="76" />
+    </Wire>
+    <Wire UId="204">
+      <IdentCon UId="77" />
+      <NameCon UId="118" Name="in1" />
+    </Wire>
+    <Wire UId="205">
+      <IdentCon UId="78" />
+      <NameCon UId="118" Name="in2" />
+    </Wire>
+    <Wire UId="206">
+      <NameCon UId="118" Name="out" />
+      <NameCon UId="119" Name="en" />
+    </Wire>
+    <Wire UId="207">
+      <IdentCon UId="79" />
+      <NameCon UId="119" Name="in" />
+    </Wire>
+    <Wire UId="208">
+      <NameCon UId="119" Name="out1" />
+      <IdentCon UId="80" />
+    </Wire>
+    <Wire UId="209">
+      <IdentCon UId="81" />
+      <NameCon UId="120" Name="operand" />
+    </Wire>
+    <Wire UId="210">
+      <NameCon UId="120" Name="out" />
+      <NameCon UId="121" Name="pre" />
+    </Wire>
+    <Wire UId="211">
+      <IdentCon UId="82" />
+      <NameCon UId="121" Name="in1" />
+    </Wire>
+    <Wire UId="212">
+      <IdentCon UId="83" />
+      <NameCon UId="121" Name="in2" />
+    </Wire>
+    <Wire UId="213">
+      <NameCon UId="121" Name="out" />
+      <NameCon UId="122" Name="pre" />
+    </Wire>
+    <Wire UId="214">
+      <IdentCon UId="84" />
+      <NameCon UId="122" Name="in1" />
+    </Wire>
+    <Wire UId="215">
+      <IdentCon UId="85" />
+      <NameCon UId="122" Name="in2" />
+    </Wire>
+    <Wire UId="216">
+      <NameCon UId="122" Name="out" />
+      <NameCon UId="123" Name="en" />
+    </Wire>
+    <Wire UId="217">
+      <IdentCon UId="86" />
+      <NameCon UId="123" Name="in" />
+    </Wire>
+    <Wire UId="218">
+      <NameCon UId="123" Name="out1" />
+      <IdentCon UId="87" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
           <ProgrammingLanguage>LAD</ProgrammingLanguage>
         </AttributeList>
         <ObjectList>
@@ -2270,7 +3197,7 @@
               <MultilingualTextItem ID="2F" CompositionName="Items">
                 <AttributeList>
                   <Culture>en-US</Culture>
-                  <Text>MFG AUTO LOAD CELL FOR TRANSFER</Text>
+                  <Text>AUTO MFG LOAD CELL FOR TRANSFER</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -2675,7 +3602,7 @@
               <MultilingualTextItem ID="34" CompositionName="Items">
                 <AttributeList>
                   <Culture>en-US</Culture>
-                  <Text>MFG AUTO LOAD CELL VALUE </Text>
+                  <Text>AUTO MFG LOAD CELL VALUE </Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -2712,7 +3639,136 @@
       </SW.Blocks.CompileUnit>
       <SW.Blocks.CompileUnit ID="3A" CompositionName="CompileUnits">
         <AttributeList>
-          <NetworkSource />
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="AlwaysTRUE" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="MODE SELECTION DB" />
+        <Component Name="MODE BUFF" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="23">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>1</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="PREMIXING DB" />
+        <Component Name="AUTO BUFF" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="25">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>20</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="PREMIXING DB" />
+        <Component Name="AUTO BUFF" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="27">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>35</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="28">
+      <Symbol>
+        <Component Name="PREMIXING DB" />
+        <Component Name="SET PARAMETER" />
+        <Component Name="PURIFIED HEATING" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="29">
+      <Symbol>
+        <Component Name="HYST AND TEMP CUTOFF  DB" />
+        <Component Name="AUTO SET" />
+        <Component Name="PREMIXING_TEMP" />
+      </Symbol>
+    </Access>
+    <Part Name="Contact" UId="30" />
+    <Part Name="Eq" UId="31">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="Ge" UId="32">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="Le" UId="33">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="Move" UId="34" DisabledENO="true">
+      <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+    </Part>
+  </Parts>
+  <Wires>
+    <Wire UId="35">
+      <Powerrail />
+      <NameCon UId="30" Name="in" />
+    </Wire>
+    <Wire UId="36">
+      <IdentCon UId="21" />
+      <NameCon UId="30" Name="operand" />
+    </Wire>
+    <Wire UId="37">
+      <NameCon UId="30" Name="out" />
+      <NameCon UId="31" Name="pre" />
+    </Wire>
+    <Wire UId="38">
+      <IdentCon UId="22" />
+      <NameCon UId="31" Name="in1" />
+    </Wire>
+    <Wire UId="39">
+      <IdentCon UId="23" />
+      <NameCon UId="31" Name="in2" />
+    </Wire>
+    <Wire UId="40">
+      <NameCon UId="31" Name="out" />
+      <NameCon UId="32" Name="pre" />
+    </Wire>
+    <Wire UId="41">
+      <IdentCon UId="24" />
+      <NameCon UId="32" Name="in1" />
+    </Wire>
+    <Wire UId="42">
+      <IdentCon UId="25" />
+      <NameCon UId="32" Name="in2" />
+    </Wire>
+    <Wire UId="43">
+      <NameCon UId="32" Name="out" />
+      <NameCon UId="33" Name="pre" />
+    </Wire>
+    <Wire UId="44">
+      <IdentCon UId="26" />
+      <NameCon UId="33" Name="in1" />
+    </Wire>
+    <Wire UId="45">
+      <IdentCon UId="27" />
+      <NameCon UId="33" Name="in2" />
+    </Wire>
+    <Wire UId="46">
+      <NameCon UId="33" Name="out" />
+      <NameCon UId="34" Name="en" />
+    </Wire>
+    <Wire UId="47">
+      <IdentCon UId="28" />
+      <NameCon UId="34" Name="in" />
+    </Wire>
+    <Wire UId="48">
+      <NameCon UId="34" Name="out1" />
+      <IdentCon UId="29" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
           <ProgrammingLanguage>LAD</ProgrammingLanguage>
         </AttributeList>
         <ObjectList>
@@ -2731,7 +3787,7 @@
               <MultilingualTextItem ID="3E" CompositionName="Items">
                 <AttributeList>
                   <Culture>en-US</Culture>
-                  <Text />
+                  <Text>PREMIXING_TEMP</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -2740,7 +3796,264 @@
       </SW.Blocks.CompileUnit>
       <SW.Blocks.CompileUnit ID="3F" CompositionName="CompileUnits">
         <AttributeList>
-          <NetworkSource />
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="AlwaysTRUE" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="MODE SELECTION DB" />
+        <Component Name="MODE BUFF" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="23">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>1</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="PREMIXING DB" />
+        <Component Name="AUTO BUFF" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="25">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>80</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="PREMIXING DB" />
+        <Component Name="AUTO BUFF" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="27">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>95</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="28">
+      <Symbol>
+        <Component Name="PREMIXING DB" />
+        <Component Name="SET PARAMETER" />
+        <Component Name="MATERIAL_SORBITOL TEMP_MAX" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="29">
+      <Symbol>
+        <Component Name="HYST AND TEMP CUTOFF  DB" />
+        <Component Name="MIAN PREMIXING TEMP MAX" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="30">
+      <Symbol>
+        <Component Name="PREMIXING DB" />
+        <Component Name="SET PARAMETER" />
+        <Component Name="MATERIAL_SORBITOL TEMP_MIN" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="31">
+      <Symbol>
+        <Component Name="HYST AND TEMP CUTOFF  DB" />
+        <Component Name="MIAN PREMIXING TEMP MIN" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="32">
+      <Symbol>
+        <Component Name="PREMIXING DB" />
+        <Component Name="AUTO BUFF" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="33">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>110</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="34">
+      <Symbol>
+        <Component Name="PREMIXING DB" />
+        <Component Name="AUTO BUFF" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="35">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>130</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="36">
+      <Symbol>
+        <Component Name="PREMIXING DB" />
+        <Component Name="SET PARAMETER" />
+        <Component Name="MATERIAL_GLUCOSE TEMP_MAX" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="37">
+      <Symbol>
+        <Component Name="HYST AND TEMP CUTOFF  DB" />
+        <Component Name="MIAN PREMIXING TEMP MAX" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="38">
+      <Symbol>
+        <Component Name="PREMIXING DB" />
+        <Component Name="SET PARAMETER" />
+        <Component Name="MATERIAL_GLUCOSE TEMP_MIN" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="39">
+      <Symbol>
+        <Component Name="HYST AND TEMP CUTOFF  DB" />
+        <Component Name="MIAN PREMIXING TEMP MIN" />
+      </Symbol>
+    </Access>
+    <Part Name="Contact" UId="40" />
+    <Part Name="Eq" UId="41">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="Ge" UId="42">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="Le" UId="43">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="Move" UId="44" DisabledENO="true">
+      <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+    </Part>
+    <Part Name="Move" UId="45" DisabledENO="true">
+      <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+    </Part>
+    <Part Name="Ge" UId="46">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="Le" UId="47">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="Move" UId="48" DisabledENO="true">
+      <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+    </Part>
+    <Part Name="Move" UId="49" DisabledENO="true">
+      <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+    </Part>
+  </Parts>
+  <Wires>
+    <Wire UId="50">
+      <Powerrail />
+      <NameCon UId="40" Name="in" />
+    </Wire>
+    <Wire UId="51">
+      <IdentCon UId="21" />
+      <NameCon UId="40" Name="operand" />
+    </Wire>
+    <Wire UId="52">
+      <NameCon UId="40" Name="out" />
+      <NameCon UId="41" Name="pre" />
+    </Wire>
+    <Wire UId="53">
+      <IdentCon UId="22" />
+      <NameCon UId="41" Name="in1" />
+    </Wire>
+    <Wire UId="54">
+      <IdentCon UId="23" />
+      <NameCon UId="41" Name="in2" />
+    </Wire>
+    <Wire UId="55">
+      <NameCon UId="41" Name="out" />
+      <NameCon UId="42" Name="pre" />
+      <NameCon UId="46" Name="pre" />
+    </Wire>
+    <Wire UId="56">
+      <IdentCon UId="24" />
+      <NameCon UId="42" Name="in1" />
+    </Wire>
+    <Wire UId="57">
+      <IdentCon UId="25" />
+      <NameCon UId="42" Name="in2" />
+    </Wire>
+    <Wire UId="58">
+      <NameCon UId="42" Name="out" />
+      <NameCon UId="43" Name="pre" />
+    </Wire>
+    <Wire UId="59">
+      <IdentCon UId="26" />
+      <NameCon UId="43" Name="in1" />
+    </Wire>
+    <Wire UId="60">
+      <IdentCon UId="27" />
+      <NameCon UId="43" Name="in2" />
+    </Wire>
+    <Wire UId="61">
+      <NameCon UId="43" Name="out" />
+      <NameCon UId="44" Name="en" />
+      <NameCon UId="45" Name="en" />
+    </Wire>
+    <Wire UId="62">
+      <IdentCon UId="28" />
+      <NameCon UId="44" Name="in" />
+    </Wire>
+    <Wire UId="63">
+      <NameCon UId="44" Name="out1" />
+      <IdentCon UId="29" />
+    </Wire>
+    <Wire UId="64">
+      <IdentCon UId="30" />
+      <NameCon UId="45" Name="in" />
+    </Wire>
+    <Wire UId="65">
+      <NameCon UId="45" Name="out1" />
+      <IdentCon UId="31" />
+    </Wire>
+    <Wire UId="66">
+      <IdentCon UId="32" />
+      <NameCon UId="46" Name="in1" />
+    </Wire>
+    <Wire UId="67">
+      <IdentCon UId="33" />
+      <NameCon UId="46" Name="in2" />
+    </Wire>
+    <Wire UId="68">
+      <NameCon UId="46" Name="out" />
+      <NameCon UId="47" Name="pre" />
+    </Wire>
+    <Wire UId="69">
+      <IdentCon UId="34" />
+      <NameCon UId="47" Name="in1" />
+    </Wire>
+    <Wire UId="70">
+      <IdentCon UId="35" />
+      <NameCon UId="47" Name="in2" />
+    </Wire>
+    <Wire UId="71">
+      <NameCon UId="47" Name="out" />
+      <NameCon UId="48" Name="en" />
+      <NameCon UId="49" Name="en" />
+    </Wire>
+    <Wire UId="72">
+      <IdentCon UId="36" />
+      <NameCon UId="48" Name="in" />
+    </Wire>
+    <Wire UId="73">
+      <NameCon UId="48" Name="out1" />
+      <IdentCon UId="37" />
+    </Wire>
+    <Wire UId="74">
+      <IdentCon UId="38" />
+      <NameCon UId="49" Name="in" />
+    </Wire>
+    <Wire UId="75">
+      <NameCon UId="49" Name="out1" />
+      <IdentCon UId="39" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
           <ProgrammingLanguage>LAD</ProgrammingLanguage>
         </AttributeList>
         <ObjectList>
@@ -2759,7 +4072,7 @@
               <MultilingualTextItem ID="43" CompositionName="Items">
                 <AttributeList>
                   <Culture>en-US</Culture>
-                  <Text />
+                  <Text>PREMIXING TEMP MIN_MAX</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -2768,7 +4081,136 @@
       </SW.Blocks.CompileUnit>
       <SW.Blocks.CompileUnit ID="44" CompositionName="CompileUnits">
         <AttributeList>
-          <NetworkSource />
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="AlwaysTRUE" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="MODE SELECTION DB" />
+        <Component Name="MODE BUFF" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="23">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>1</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="PREMIXING DB" />
+        <Component Name="AUTO BUFF" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="25">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>20</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="PREMIXING DB" />
+        <Component Name="AUTO BUFF" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="27">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>35</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="28">
+      <Symbol>
+        <Component Name="PREMIXING DB" />
+        <Component Name="SET PARAMETER" />
+        <Component Name="PURIFIED COOLING" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="29">
+      <Symbol>
+        <Component Name="HYST AND TEMP CUTOFF  DB" />
+        <Component Name="AUTO SET" />
+        <Component Name="PREMIXING_COOLING" />
+      </Symbol>
+    </Access>
+    <Part Name="Contact" UId="30" />
+    <Part Name="Eq" UId="31">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="Ge" UId="32">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="Le" UId="33">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="Move" UId="34" DisabledENO="true">
+      <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+    </Part>
+  </Parts>
+  <Wires>
+    <Wire UId="35">
+      <Powerrail />
+      <NameCon UId="30" Name="in" />
+    </Wire>
+    <Wire UId="36">
+      <IdentCon UId="21" />
+      <NameCon UId="30" Name="operand" />
+    </Wire>
+    <Wire UId="37">
+      <NameCon UId="30" Name="out" />
+      <NameCon UId="31" Name="pre" />
+    </Wire>
+    <Wire UId="38">
+      <IdentCon UId="22" />
+      <NameCon UId="31" Name="in1" />
+    </Wire>
+    <Wire UId="39">
+      <IdentCon UId="23" />
+      <NameCon UId="31" Name="in2" />
+    </Wire>
+    <Wire UId="40">
+      <NameCon UId="31" Name="out" />
+      <NameCon UId="32" Name="pre" />
+    </Wire>
+    <Wire UId="41">
+      <IdentCon UId="24" />
+      <NameCon UId="32" Name="in1" />
+    </Wire>
+    <Wire UId="42">
+      <IdentCon UId="25" />
+      <NameCon UId="32" Name="in2" />
+    </Wire>
+    <Wire UId="43">
+      <NameCon UId="32" Name="out" />
+      <NameCon UId="33" Name="pre" />
+    </Wire>
+    <Wire UId="44">
+      <IdentCon UId="26" />
+      <NameCon UId="33" Name="in1" />
+    </Wire>
+    <Wire UId="45">
+      <IdentCon UId="27" />
+      <NameCon UId="33" Name="in2" />
+    </Wire>
+    <Wire UId="46">
+      <NameCon UId="33" Name="out" />
+      <NameCon UId="34" Name="en" />
+    </Wire>
+    <Wire UId="47">
+      <IdentCon UId="28" />
+      <NameCon UId="34" Name="in" />
+    </Wire>
+    <Wire UId="48">
+      <NameCon UId="34" Name="out1" />
+      <IdentCon UId="29" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
           <ProgrammingLanguage>LAD</ProgrammingLanguage>
         </AttributeList>
         <ObjectList>
@@ -2787,7 +4229,7 @@
               <MultilingualTextItem ID="48" CompositionName="Items">
                 <AttributeList>
                   <Culture>en-US</Culture>
-                  <Text />
+                  <Text>PREMIXING_COOLING VALUE</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -2796,7 +4238,84 @@
       </SW.Blocks.CompileUnit>
       <SW.Blocks.CompileUnit ID="49" CompositionName="CompileUnits">
         <AttributeList>
-          <NetworkSource />
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="AlwaysTRUE" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="MODE SELECTION DB" />
+        <Component Name="MODE BUFF" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="23">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>1</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="HYST AND TEMP CUTOFF  DB" />
+        <Component Name="AUTO SET" />
+        <Component Name="PREMIXING_VACCUM" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="25">
+      <Symbol>
+        <Component Name="HYST AND TEMP CUTOFF  DB" />
+        <Component Name="AUTO SET" />
+        <Component Name="PREMIXING_VACCUM" />
+      </Symbol>
+    </Access>
+    <Part Name="Contact" UId="26">
+      <Negated Name="operand" />
+    </Part>
+    <Part Name="Eq" UId="27">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="Move" UId="28" DisabledENO="true">
+      <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+    </Part>
+  </Parts>
+  <Wires>
+    <Wire UId="29">
+      <Powerrail />
+      <NameCon UId="26" Name="in" />
+    </Wire>
+    <Wire UId="30">
+      <IdentCon UId="21" />
+      <NameCon UId="26" Name="operand" />
+    </Wire>
+    <Wire UId="31">
+      <NameCon UId="26" Name="out" />
+      <NameCon UId="27" Name="pre" />
+    </Wire>
+    <Wire UId="32">
+      <IdentCon UId="22" />
+      <NameCon UId="27" Name="in1" />
+    </Wire>
+    <Wire UId="33">
+      <IdentCon UId="23" />
+      <NameCon UId="27" Name="in2" />
+    </Wire>
+    <Wire UId="34">
+      <NameCon UId="27" Name="out" />
+      <NameCon UId="28" Name="en" />
+    </Wire>
+    <Wire UId="35">
+      <IdentCon UId="24" />
+      <NameCon UId="28" Name="in" />
+    </Wire>
+    <Wire UId="36">
+      <NameCon UId="28" Name="out1" />
+      <IdentCon UId="25" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
           <ProgrammingLanguage>LAD</ProgrammingLanguage>
         </AttributeList>
         <ObjectList>
@@ -2815,7 +4334,7 @@
               <MultilingualTextItem ID="4D" CompositionName="Items">
                 <AttributeList>
                   <Culture>en-US</Culture>
-                  <Text />
+                  <Text>PRMEIXING_VACCUM VALUE </Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -2824,7 +4343,262 @@
       </SW.Blocks.CompileUnit>
       <SW.Blocks.CompileUnit ID="4E" CompositionName="CompileUnits">
         <AttributeList>
-          <NetworkSource />
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="MODE SELECTION DB" />
+        <Component Name="MODE BUFF" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="22">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>1</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="PREMIXING TRANSFER CYCLE DB" />
+        <Component Name="TRANSFER" />
+        <Component Name="SELECT" />
+        <Component Name="SELECT BUFF" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="24">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>1</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="25">
+      <Symbol>
+        <Component Name="PREMIXING TRANSFER CYCLE DB" />
+        <Component Name="SET PARAMETER" />
+        <Component Name="PREMIXING TO MFG WITH INLINE HOMO" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="HYST AND TEMP CUTOFF  DB" />
+        <Component Name="AUTO SET" />
+        <Component Name="PREMIXING LOAD CELL FOR TRANSFER" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="27">
+      <Symbol>
+        <Component Name="PREMIXING TRANSFER CYCLE DB" />
+        <Component Name="TRANSFER" />
+        <Component Name="SELECT" />
+        <Component Name="SELECT BUFF" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="28">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>2</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="29">
+      <Symbol>
+        <Component Name="PREMIXING TRANSFER CYCLE DB" />
+        <Component Name="SET PARAMETER" />
+        <Component Name="PREMIXING TO MFG WITH INLINE FILTER PRES" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="30">
+      <Symbol>
+        <Component Name="HYST AND TEMP CUTOFF  DB" />
+        <Component Name="AUTO SET" />
+        <Component Name="PREMIXING LOAD CELL FOR TRANSFER" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="31">
+      <Symbol>
+        <Component Name="PREMIXING TRANSFER CYCLE DB" />
+        <Component Name="TRANSFER" />
+        <Component Name="SELECT" />
+        <Component Name="SELECT BUFF" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="32">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>3</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="33">
+      <Symbol>
+        <Component Name="PREMIXING TRANSFER CYCLE DB" />
+        <Component Name="SET PARAMETER" />
+        <Component Name="PREMIXING TO STORAGE-4 WITH INLINE HOMO" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="34">
+      <Symbol>
+        <Component Name="HYST AND TEMP CUTOFF  DB" />
+        <Component Name="AUTO SET" />
+        <Component Name="PREMIXING LOAD CELL FOR TRANSFER" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="35">
+      <Symbol>
+        <Component Name="PREMIXING TRANSFER CYCLE DB" />
+        <Component Name="TRANSFER" />
+        <Component Name="SELECT" />
+        <Component Name="SELECT BUFF" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="36">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>4</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="37">
+      <Symbol>
+        <Component Name="PREMIXING TRANSFER CYCLE DB" />
+        <Component Name="SET PARAMETER" />
+        <Component Name="PREMIXING TO STORAGE-4 WITH INLINE FILTER PRES" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="38">
+      <Symbol>
+        <Component Name="HYST AND TEMP CUTOFF  DB" />
+        <Component Name="AUTO SET" />
+        <Component Name="PREMIXING LOAD CELL FOR TRANSFER" />
+      </Symbol>
+    </Access>
+    <Part Name="Eq" UId="39">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="Eq" UId="40">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="Move" UId="41" DisabledENO="true">
+      <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+    </Part>
+    <Part Name="Eq" UId="42">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="Move" UId="43" DisabledENO="true">
+      <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+    </Part>
+    <Part Name="Eq" UId="44">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="Move" UId="45" DisabledENO="true">
+      <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+    </Part>
+    <Part Name="Eq" UId="46">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="Move" UId="47" DisabledENO="true">
+      <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+    </Part>
+  </Parts>
+  <Wires>
+    <Wire UId="48">
+      <Powerrail />
+      <NameCon UId="39" Name="pre" />
+    </Wire>
+    <Wire UId="49">
+      <IdentCon UId="21" />
+      <NameCon UId="39" Name="in1" />
+    </Wire>
+    <Wire UId="50">
+      <IdentCon UId="22" />
+      <NameCon UId="39" Name="in2" />
+    </Wire>
+    <Wire UId="51">
+      <NameCon UId="39" Name="out" />
+      <NameCon UId="40" Name="pre" />
+      <NameCon UId="42" Name="pre" />
+      <NameCon UId="44" Name="pre" />
+      <NameCon UId="46" Name="pre" />
+    </Wire>
+    <Wire UId="52">
+      <IdentCon UId="23" />
+      <NameCon UId="40" Name="in1" />
+    </Wire>
+    <Wire UId="53">
+      <IdentCon UId="24" />
+      <NameCon UId="40" Name="in2" />
+    </Wire>
+    <Wire UId="54">
+      <NameCon UId="40" Name="out" />
+      <NameCon UId="41" Name="en" />
+    </Wire>
+    <Wire UId="55">
+      <IdentCon UId="25" />
+      <NameCon UId="41" Name="in" />
+    </Wire>
+    <Wire UId="56">
+      <NameCon UId="41" Name="out1" />
+      <IdentCon UId="26" />
+    </Wire>
+    <Wire UId="57">
+      <IdentCon UId="27" />
+      <NameCon UId="42" Name="in1" />
+    </Wire>
+    <Wire UId="58">
+      <IdentCon UId="28" />
+      <NameCon UId="42" Name="in2" />
+    </Wire>
+    <Wire UId="59">
+      <NameCon UId="42" Name="out" />
+      <NameCon UId="43" Name="en" />
+    </Wire>
+    <Wire UId="60">
+      <IdentCon UId="29" />
+      <NameCon UId="43" Name="in" />
+    </Wire>
+    <Wire UId="61">
+      <NameCon UId="43" Name="out1" />
+      <IdentCon UId="30" />
+    </Wire>
+    <Wire UId="62">
+      <IdentCon UId="31" />
+      <NameCon UId="44" Name="in1" />
+    </Wire>
+    <Wire UId="63">
+      <IdentCon UId="32" />
+      <NameCon UId="44" Name="in2" />
+    </Wire>
+    <Wire UId="64">
+      <NameCon UId="44" Name="out" />
+      <NameCon UId="45" Name="en" />
+    </Wire>
+    <Wire UId="65">
+      <IdentCon UId="33" />
+      <NameCon UId="45" Name="in" />
+    </Wire>
+    <Wire UId="66">
+      <NameCon UId="45" Name="out1" />
+      <IdentCon UId="34" />
+    </Wire>
+    <Wire UId="67">
+      <IdentCon UId="35" />
+      <NameCon UId="46" Name="in1" />
+    </Wire>
+    <Wire UId="68">
+      <IdentCon UId="36" />
+      <NameCon UId="46" Name="in2" />
+    </Wire>
+    <Wire UId="69">
+      <NameCon UId="46" Name="out" />
+      <NameCon UId="47" Name="en" />
+    </Wire>
+    <Wire UId="70">
+      <IdentCon UId="37" />
+      <NameCon UId="47" Name="in" />
+    </Wire>
+    <Wire UId="71">
+      <NameCon UId="47" Name="out1" />
+      <IdentCon UId="38" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
           <ProgrammingLanguage>LAD</ProgrammingLanguage>
         </AttributeList>
         <ObjectList>
@@ -2843,7 +4617,7 @@
               <MultilingualTextItem ID="52" CompositionName="Items">
                 <AttributeList>
                   <Culture>en-US</Culture>
-                  <Text />
+                  <Text>AUTO PREMIXING LOAD CELL FOR TRANSFER</Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -2852,7 +4626,384 @@
       </SW.Blocks.CompileUnit>
       <SW.Blocks.CompileUnit ID="53" CompositionName="CompileUnits">
         <AttributeList>
-          <NetworkSource />
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="AlwaysTRUE" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="MODE SELECTION DB" />
+        <Component Name="MODE BUFF" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="23">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>1</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="PREMIXING DB" />
+        <Component Name="AUTO BUFF" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="25">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>10</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="PREMIXING DB" />
+        <Component Name="SET PARAMETER" />
+        <Component Name="PURIFIED LOAD" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="27">
+      <Symbol>
+        <Component Name="HYST AND TEMP CUTOFF  DB" />
+        <Component Name="AUTO SET" />
+        <Component Name="PREMIXING_LOAD CELL" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="28">
+      <Symbol>
+        <Component Name="PREMIXING DB" />
+        <Component Name="AUTO BUFF" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="29">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>60</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="30">
+      <Symbol>
+        <Component Name="PREMIXING DB" />
+        <Component Name="AUTO BUFF" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="31">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>80</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="32">
+      <Symbol>
+        <Component Name="PREMIXING DB" />
+        <Component Name="SET PARAMETER" />
+        <Component Name="MATERIAL_SORBITOL LOAD CELL" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="33">
+      <Symbol>
+        <Component Name="HYST AND TEMP CUTOFF  DB" />
+        <Component Name="AUTO SET" />
+        <Component Name="PREMIXING_LOAD CELL" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="34">
+      <Symbol>
+        <Component Name="PREMIXING DB" />
+        <Component Name="AUTO BUFF" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="35">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>110</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="36">
+      <Symbol>
+        <Component Name="PREMIXING DB" />
+        <Component Name="SET PARAMETER" />
+        <Component Name="MATERIAL_GLUCOSE LOAD CELL" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="37">
+      <Symbol>
+        <Component Name="HYST AND TEMP CUTOFF  DB" />
+        <Component Name="AUTO SET" />
+        <Component Name="PREMIXING_LOAD CELL" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="38">
+      <Symbol>
+        <Component Name="PREMIXING DB" />
+        <Component Name="AUTO BUFF" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="39">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>190</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="40">
+      <Symbol>
+        <Component Name="PREMIXING DB" />
+        <Component Name="AUTO BUFF" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="41">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>195</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="42">
+      <Symbol>
+        <Component Name="PREMIXING DB" />
+        <Component Name="SET PARAMETER" />
+        <Component Name="MATERIAL_SORBITOL LOAD CELL" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="43">
+      <Symbol>
+        <Component Name="HYST AND TEMP CUTOFF  DB" />
+        <Component Name="AUTO SET" />
+        <Component Name="PREMIXING_LOAD CELL" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="44">
+      <Symbol>
+        <Component Name="PREMIXING DB" />
+        <Component Name="MATERIAL SUCTION" />
+        <Component Name="MATERIAL SUCTION BUFF" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="45">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>0</ConstantValue>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="46">
+      <Symbol>
+        <Component Name="PREMIXING DB" />
+        <Component Name="SET PARAMETER" />
+        <Component Name="MATERIAL SUCTION LOAD CELL" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="47">
+      <Symbol>
+        <Component Name="HYST AND TEMP CUTOFF  DB" />
+        <Component Name="AUTO SET" />
+        <Component Name="PREMIXING_LOAD CELL" />
+      </Symbol>
+    </Access>
+    <Part Name="Contact" UId="48" />
+    <Part Name="Eq" UId="49">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="Eq" UId="50">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="Move" UId="51" DisabledENO="true">
+      <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+    </Part>
+    <Part Name="Ge" UId="52">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="Le" UId="53">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="Move" UId="54" DisabledENO="true">
+      <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+    </Part>
+    <Part Name="Eq" UId="55">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="Move" UId="56" DisabledENO="true">
+      <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+    </Part>
+    <Part Name="Eq" UId="57">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="Eq" UId="58">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="O" UId="59">
+      <TemplateValue Name="Card" Type="Cardinality">2</TemplateValue>
+    </Part>
+    <Part Name="Move" UId="60" DisabledENO="true">
+      <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+    </Part>
+    <Part Name="Ne" UId="61">
+      <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+    </Part>
+    <Part Name="Move" UId="62" DisabledENO="true">
+      <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+    </Part>
+  </Parts>
+  <Wires>
+    <Wire UId="63">
+      <Powerrail />
+      <NameCon UId="48" Name="in" />
+    </Wire>
+    <Wire UId="64">
+      <IdentCon UId="21" />
+      <NameCon UId="48" Name="operand" />
+    </Wire>
+    <Wire UId="65">
+      <NameCon UId="48" Name="out" />
+      <NameCon UId="49" Name="pre" />
+    </Wire>
+    <Wire UId="66">
+      <IdentCon UId="22" />
+      <NameCon UId="49" Name="in1" />
+    </Wire>
+    <Wire UId="67">
+      <IdentCon UId="23" />
+      <NameCon UId="49" Name="in2" />
+    </Wire>
+    <Wire UId="68">
+      <NameCon UId="49" Name="out" />
+      <NameCon UId="50" Name="pre" />
+      <NameCon UId="52" Name="pre" />
+      <NameCon UId="55" Name="pre" />
+      <NameCon UId="57" Name="pre" />
+      <NameCon UId="58" Name="pre" />
+      <NameCon UId="61" Name="pre" />
+    </Wire>
+    <Wire UId="69">
+      <IdentCon UId="24" />
+      <NameCon UId="50" Name="in1" />
+    </Wire>
+    <Wire UId="70">
+      <IdentCon UId="25" />
+      <NameCon UId="50" Name="in2" />
+    </Wire>
+    <Wire UId="71">
+      <NameCon UId="50" Name="out" />
+      <NameCon UId="51" Name="en" />
+    </Wire>
+    <Wire UId="72">
+      <IdentCon UId="26" />
+      <NameCon UId="51" Name="in" />
+    </Wire>
+    <Wire UId="73">
+      <NameCon UId="51" Name="out1" />
+      <IdentCon UId="27" />
+    </Wire>
+    <Wire UId="74">
+      <IdentCon UId="28" />
+      <NameCon UId="52" Name="in1" />
+    </Wire>
+    <Wire UId="75">
+      <IdentCon UId="29" />
+      <NameCon UId="52" Name="in2" />
+    </Wire>
+    <Wire UId="76">
+      <NameCon UId="52" Name="out" />
+      <NameCon UId="53" Name="pre" />
+    </Wire>
+    <Wire UId="77">
+      <IdentCon UId="30" />
+      <NameCon UId="53" Name="in1" />
+    </Wire>
+    <Wire UId="78">
+      <IdentCon UId="31" />
+      <NameCon UId="53" Name="in2" />
+    </Wire>
+    <Wire UId="79">
+      <NameCon UId="53" Name="out" />
+      <NameCon UId="54" Name="en" />
+    </Wire>
+    <Wire UId="80">
+      <IdentCon UId="32" />
+      <NameCon UId="54" Name="in" />
+    </Wire>
+    <Wire UId="81">
+      <NameCon UId="54" Name="out1" />
+      <IdentCon UId="33" />
+    </Wire>
+    <Wire UId="82">
+      <IdentCon UId="34" />
+      <NameCon UId="55" Name="in1" />
+    </Wire>
+    <Wire UId="83">
+      <IdentCon UId="35" />
+      <NameCon UId="55" Name="in2" />
+    </Wire>
+    <Wire UId="84">
+      <NameCon UId="55" Name="out" />
+      <NameCon UId="56" Name="en" />
+    </Wire>
+    <Wire UId="85">
+      <IdentCon UId="36" />
+      <NameCon UId="56" Name="in" />
+    </Wire>
+    <Wire UId="86">
+      <NameCon UId="56" Name="out1" />
+      <IdentCon UId="37" />
+    </Wire>
+    <Wire UId="87">
+      <IdentCon UId="38" />
+      <NameCon UId="57" Name="in1" />
+    </Wire>
+    <Wire UId="88">
+      <IdentCon UId="39" />
+      <NameCon UId="57" Name="in2" />
+    </Wire>
+    <Wire UId="89">
+      <NameCon UId="57" Name="out" />
+      <NameCon UId="59" Name="in1" />
+    </Wire>
+    <Wire UId="90">
+      <IdentCon UId="40" />
+      <NameCon UId="58" Name="in1" />
+    </Wire>
+    <Wire UId="91">
+      <IdentCon UId="41" />
+      <NameCon UId="58" Name="in2" />
+    </Wire>
+    <Wire UId="92">
+      <NameCon UId="58" Name="out" />
+      <NameCon UId="59" Name="in2" />
+    </Wire>
+    <Wire UId="93">
+      <NameCon UId="59" Name="out" />
+      <NameCon UId="60" Name="en" />
+    </Wire>
+    <Wire UId="94">
+      <IdentCon UId="42" />
+      <NameCon UId="60" Name="in" />
+    </Wire>
+    <Wire UId="95">
+      <NameCon UId="60" Name="out1" />
+      <IdentCon UId="43" />
+    </Wire>
+    <Wire UId="96">
+      <IdentCon UId="44" />
+      <NameCon UId="61" Name="in1" />
+    </Wire>
+    <Wire UId="97">
+      <IdentCon UId="45" />
+      <NameCon UId="61" Name="in2" />
+    </Wire>
+    <Wire UId="98">
+      <NameCon UId="61" Name="out" />
+      <NameCon UId="62" Name="en" />
+    </Wire>
+    <Wire UId="99">
+      <IdentCon UId="46" />
+      <NameCon UId="62" Name="in" />
+    </Wire>
+    <Wire UId="100">
+      <NameCon UId="62" Name="out1" />
+      <IdentCon UId="47" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
           <ProgrammingLanguage>LAD</ProgrammingLanguage>
         </AttributeList>
         <ObjectList>
@@ -2871,7 +5022,7 @@
               <MultilingualTextItem ID="57" CompositionName="Items">
                 <AttributeList>
                   <Culture>en-US</Culture>
-                  <Text />
+                  <Text>AUTO PREMIXING LOAD CELL VALUE </Text>
                 </AttributeList>
               </MultilingualTextItem>
             </ObjectList>
@@ -3046,9 +5197,177 @@
           </MultilingualText>
         </ObjectList>
       </SW.Blocks.CompileUnit>
-      <MultilingualText ID="76" CompositionName="Title">
+      <SW.Blocks.CompileUnit ID="76" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
         <ObjectList>
-          <MultilingualTextItem ID="77" CompositionName="Items">
+          <MultilingualText ID="77" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="78" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="79" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="7A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="7B" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="7C" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="7D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="7E" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="7F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="80" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="81" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="82" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="83" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="84" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="85" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="86" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="87" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="88" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="89" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="8A" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="8B" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="8C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="8D" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="8E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="8F" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="90" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="91" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="92" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="93" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="94" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="95" CompositionName="Items">
             <AttributeList>
               <Culture>en-US</Culture>
               <Text />

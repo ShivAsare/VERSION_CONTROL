@@ -789,7 +789,7 @@
     </Access>
     <Access Scope="GlobalVariable" UId="29">
       <Symbol>
-        <Component Name="TIMER_SEC_DB_17" />
+        <Component Name="TIMER_SEC_DB_3" />
         <Component Name="DONE" />
       </Symbol>
     </Access>
@@ -858,7 +858,7 @@
       <Symbol>
         <Component Name="LEVEL BUFF" />
         <Component Name="AUTO" />
-        <Component Name="PREMIXING MFG VACUUM MIN_MAX BUFF" />
+        <Component Name="PREMIXING VACUUM MIN_MAX BUFF" />
       </Symbol>
     </Access>
     <Access Scope="LiteralConstant" UId="41">
@@ -4515,7 +4515,7 @@
     </Access>
     <Access Scope="GlobalVariable" UId="29">
       <Symbol>
-        <Component Name="TIMER_SEC_DB_17" />
+        <Component Name="TIMER_SEC_DB_3" />
         <Component Name="DONE" />
       </Symbol>
     </Access>
@@ -4584,7 +4584,7 @@
       <Symbol>
         <Component Name="LEVEL BUFF" />
         <Component Name="AUTO" />
-        <Component Name="PREMIXING MFG VACUUM MIN_MAX BUFF" />
+        <Component Name="PREMIXING VACUUM MIN_MAX BUFF" />
       </Symbol>
     </Access>
     <Access Scope="LiteralConstant" UId="41">

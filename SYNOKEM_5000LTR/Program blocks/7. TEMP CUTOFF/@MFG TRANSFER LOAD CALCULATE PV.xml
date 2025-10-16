@@ -1071,7 +1071,7 @@
     </Access>
     <Access Scope="LocalVariable" UId="23">
       <Symbol>
-        <Component Name="AUTO TRANSFER_4" />
+        <Component Name="AUTO TRANSFER_5" />
       </Symbol>
     </Access>
     <Access Scope="LiteralConstant" UId="24">
@@ -1082,7 +1082,7 @@
     </Access>
     <Access Scope="LocalVariable" UId="25">
       <Symbol>
-        <Component Name="AUTO TRANSFER_4" />
+        <Component Name="AUTO TRANSFER_5" />
       </Symbol>
     </Access>
     <Access Scope="LiteralConstant" UId="26">
@@ -1108,7 +1108,7 @@
     </Access>
     <Access Scope="LocalVariable" UId="30">
       <Symbol>
-        <Component Name="AUTO TRANSFER_4" />
+        <Component Name="AUTO TRANSFER_5" />
       </Symbol>
     </Access>
     <Access Scope="LiteralConstant" UId="31">
@@ -1119,7 +1119,7 @@
     </Access>
     <Access Scope="LocalVariable" UId="32">
       <Symbol>
-        <Component Name="AUTO TRANSFER_4" />
+        <Component Name="AUTO TRANSFER_5" />
       </Symbol>
     </Access>
     <Access Scope="LiteralConstant" UId="33">

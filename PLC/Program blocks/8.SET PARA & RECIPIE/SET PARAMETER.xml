@@ -1218,7 +1218,7 @@
     </Access>
     <Access Scope="GlobalVariable" UId="40">
       <Symbol>
-        <Component Name="MFG PROCESS_DB" />
+        <Component Name="PREMIXING DB" />
         <Component Name="SET PARAMETER" />
         <Component Name="MATERIAL SORBITOL STIRRER MOTOR RPM" />
       </Symbol>
@@ -1280,7 +1280,7 @@
     </Access>
     <Access Scope="GlobalVariable" UId="50">
       <Symbol>
-        <Component Name="MFG PROCESS_DB" />
+        <Component Name="PREMIXING DB" />
         <Component Name="SET PARAMETER" />
         <Component Name="MATERIAL GLUCOSE STIRRER MOTOR RPM" />
       </Symbol>
@@ -1342,7 +1342,7 @@
     </Access>
     <Access Scope="GlobalVariable" UId="60">
       <Symbol>
-        <Component Name="MFG PROCESS_DB" />
+        <Component Name="PREMIXING DB" />
         <Component Name="SET PARAMETER" />
         <Component Name="RECIRCULATION STIRRER RPM" />
       </Symbol>

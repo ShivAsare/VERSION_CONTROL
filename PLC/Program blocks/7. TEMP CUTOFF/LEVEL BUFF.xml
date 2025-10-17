@@ -16,7 +16,7 @@
     <Member Name="SUGAR_TEMP" Datatype="Int" Remanence="Retain" />
     <Member Name="SUGAR_VACCUM" Datatype="Int" Remanence="Retain" />
     <Member Name="SUGAR_LOAD CELL" Datatype="Int" Remanence="Retain" />
-    <Member Name="AUTO" Datatype="Struct">
+    <Member Name="AUTO" Datatype="Struct" Remanence="Retain">
       <Member Name="MFG LOAD CELL" Datatype="Int" />
       <Member Name="MFG TEMP MIN_MAX BUFF" Datatype="Int" />
       <Member Name="MFG VACUUM MIN_MAX BUFF" Datatype="Int" />

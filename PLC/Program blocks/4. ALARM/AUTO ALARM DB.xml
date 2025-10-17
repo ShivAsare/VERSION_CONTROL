@@ -77,6 +77,7 @@
       <Member Name="MFG TO STORAGE-3 WITH INLINE FILTER PRES" Datatype="Bool" />
     </Member>
     <Member Name="MFG TRANSFER OVER" Datatype="Struct">
+      <Member Name="TRANSFER START_MFG TO STORAGE ALL IN ONE FOR OVER (POPUP)" Datatype="Bool" />
       <Member Name="MFG TO STORAGE-1 WITH INLINE HOMO" Datatype="Bool" />
       <Member Name="MFG TO STORAGE-1 WITH INLINE FILTER PRES" Datatype="Bool" />
       <Member Name="MFG TO STORAGE-2 WITH INLINE HOMO" Datatype="Bool" />

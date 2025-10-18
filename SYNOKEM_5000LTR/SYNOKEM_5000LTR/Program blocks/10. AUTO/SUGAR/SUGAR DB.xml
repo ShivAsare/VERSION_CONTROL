@@ -36,19 +36,6 @@
       <Member Name="PURIFIED STIRRER MOTOR RPM" Datatype="Real" />
       <Member Name="PURIFIED STIRRER_TIME" Datatype="Int" />
       <Member Name="PURIFIED WATER JACKET DRAIN TIME" Datatype="Int" />
-      <Member Name="MATERIAL_SORBITOL LOAD CELL" Datatype="Real" />
-      <Member Name="MATERIAL_SORBITOL STIRRER TIME" Datatype="Int" />
-      <Member Name="MATERIAL SORBITOL STIRRER MOTOR RPM" Datatype="Real" />
-      <Member Name="MATERIAL_SORBITOL TEMP_MAX" Datatype="Real" />
-      <Member Name="MATERIAL_SORBITOL TEMP_MIN" Datatype="Real" />
-      <Member Name="MATERIAL_GLUCOSE LOAD CELL" Datatype="Real" />
-      <Member Name="MATERIAL_GLUCOSE STIRRER TIME" Datatype="Int" />
-      <Member Name="MATERIAL GLUCOSE STIRRER MOTOR RPM" Datatype="Real" />
-      <Member Name="MATERIAL_GLUCOSE TEMP_MAX" Datatype="Real" />
-      <Member Name="MATERIAL_GLUCOSE TEMP_MIN" Datatype="Real" />
-      <Member Name="RECIRCULATION TOTAL TIME" Datatype="Int" />
-      <Member Name="RECIRCULATION STIRRER RPM" Datatype="Real" />
-      <Member Name="RECIRCULATION HOMOGENIZER DELAY" Datatype="Int" />
       <Member Name="MATERIAL SUCTION VACUUM HIGH" Datatype="Real" />
       <Member Name="MATERIAL SUCTION VACUUM LOW" Datatype="Real" />
       <Member Name="MATERIAL SUCTION STIRRER RPM" Datatype="Real" />
@@ -58,14 +45,39 @@
       <Member Name="PURIFIED WATER INITIAL DRAIN TIME" Datatype="Int" />
       <Member Name="PURIFIED STIRRER_TIME" Datatype="Int" />
       <Member Name="PURIFIED WATER JACKET DRAIN TIME" Datatype="Int" />
-      <Member Name="MATERIAL_SORBITOL STIRRER TIME" Datatype="Int" />
-      <Member Name="MATERIAL_GLUCOSE STIRRER TIME" Datatype="Int" />
-      <Member Name="RECIRCULATION TOTAL TIME" Datatype="Int" />
-      <Member Name="RECIRCULATION HOMOGENIZER DELAY" Datatype="Int" />
       <Member Name="PURIFIED LOAD" Datatype="Real" />
       <Member Name="MATERIAL_SORBITOL LOAD CELL" Datatype="Real" />
       <Member Name="MATERIAL_GLUCOSE LOAD CELL" Datatype="Real" />
       <Member Name="MATERIAL SUCTION LOAD CELL" Datatype="Real" />
+    </Member>
+    <Member Name="TRANSFER" Datatype="Struct" Remanence="Retain">
+      <Member Name="TRANSFER START" Datatype="Bool" />
+      <Member Name="TRANSFER SKIP" Datatype="Bool" />
+      <Member Name="TRANSFER OVER" Datatype="Bool" />
+      <Member Name="SELECT" Datatype="Struct">
+        <Member Name="SUGAR TO PREMIXING" Datatype="Bool" />
+        <Member Name="SUGAR TO MFG" Datatype="Bool" />
+      </Member>
+    </Member>
+    <Member Name="SET PARAMETER TRANSFER" Datatype="Struct" Remanence="Retain">
+      <Member Name="SUGAR TO PREMIXING" Datatype="Real" />
+      <Member Name="SUGAR TO MFG" Datatype="Real" />
+      <Member Name="SET TIME" Datatype="Struct">
+        <Member Name="SUGAR TO PREMIXING" Datatype="Int" />
+        <Member Name="SUGAR TO MFG" Datatype="Int" />
+      </Member>
+      <Member Name="RPM" Datatype="Struct">
+        <Member Name="SUGAR TO PREMIXING" Datatype="Real" />
+        <Member Name="SUGAR TO MFG" Datatype="Real" />
+      </Member>
+    </Member>
+    <Member Name="PV PARAMETER TRANSFER" Datatype="Struct" Remanence="Retain">
+      <Member Name="SUGAR TO PREMIXING" Datatype="Real" />
+      <Member Name="SUGAR TO MFG" Datatype="Real" />
+      <Member Name="PV TIME" Datatype="Struct">
+        <Member Name="SUGAR TO PREMIXING" Datatype="Int" />
+        <Member Name="SUGAR TO MFG" Datatype="Int" />
+      </Member>
     </Member>
   </Section>
 </Sections></Interface>

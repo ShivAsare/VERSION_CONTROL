@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V19" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="SYRUP MFG PROCESS ERROR" Datatype="Int" Remanence="Retain" />
+    <Member Name="PREMIXING PROCESS ERROR" Datatype="Int" Remanence="Retain" />
+    <Member Name="SUGAR PROCESS ERROR" Datatype="Int" Remanence="Retain" />
+    <Member Name="MFG PROCESS CONTINUE" Datatype="Bool" Remanence="Retain" />
+    <Member Name="MFG PROCESS RESET" Datatype="Bool" Remanence="Retain" />
+    <Member Name="PREMIX PROCESS CONTINUE" Datatype="Bool" Remanence="Retain" />
+    <Member Name="PREMIX PROCESS RESET" Datatype="Bool" Remanence="Retain" />
+    <Member Name="SUGAR PROCESS CONTINUE" Datatype="Bool" Remanence="Retain" />
+    <Member Name="SUGAR PREMIX PROCESS RESET" Datatype="Bool" Remanence="Retain" />
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>CONTINUE DB</Name>
+      <Namespace />
+      <Number>11</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

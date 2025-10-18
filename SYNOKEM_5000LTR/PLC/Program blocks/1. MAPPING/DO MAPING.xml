@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V19" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="SYRUP MFG VESSEL BOTTOM STERROR RUN" Datatype="Bool" />
+    <Member Name="PREMIXING VESSEL BOTTOM STERROR RUN" Datatype="Bool" />
+    <Member Name="INLINE 1 HOMOGENIZER MOTOR1 RUN" Datatype="Bool" />
+    <Member Name="INLINE 2 HOMOGENIZER MOTOR 2 RUN" Datatype="Bool" />
+    <Member Name="FILTER PRESS MOTOR 1 RUN" Datatype="Bool" />
+    <Member Name="FILTER PRESS MOTOR 2 RUN" Datatype="Bool" />
+    <Member Name="VACCUM PUMP MOTOR-W 1 RUN" Datatype="Bool" />
+    <Member Name="VACCUMP PUMP MOTOR-S2 RUN" Datatype="Bool" />
+    <Member Name="VACCUMP PUMP MOTOR-W 3 RUN" Datatype="Bool" />
+    <Member Name="VACCUMP PUMP MOTOR-S 4 RUN" Datatype="Bool" />
+    <Member Name="SUGAR VESSEL BOTTOM STERROR RUN" Datatype="Bool" />
+    <Member Name="BASKET FILTER MOTOR RUN" Datatype="Bool" />
+    <Member Name="PBV-01 INGREDIENT INLET" Datatype="Bool" />
+    <Member Name="PBV-02 CIP INLET (SPRAY BALL)" Datatype="Bool" />
+    <Member Name="PBV-03 VENT FILTER ISOLATION" Datatype="Bool" />
+    <Member Name="PBV-04 PW INLET" Datatype="Bool" />
+    <Member Name="PBV-07 PREMIX TANK DRAIN VALVE" Datatype="Bool" />
+    <Member Name="PAV-09 JACKET STEAM INLET" Datatype="Bool" />
+    <Member Name="PAV-10 JACKET CONDENSATE DRAIN" Datatype="Bool" />
+    <Member Name="PAV-11 JACKET BYPASS DRAIN VALVE" Datatype="Bool" />
+    <Member Name="PAV-12 SEAL COOLING INLET" Datatype="Bool" />
+    <Member Name="PAV-13 WATER COOLING INLET" Datatype="Bool" />
+    <Member Name="PAV-14 WATER COOLING OUTLET" Datatype="Bool" />
+    <Member Name="PBV-15 VACUUM INLET" Datatype="Bool" />
+    <Member Name="PBV-16 VACUUM VENT VALVE" Datatype="Bool" />
+    <Member Name="PFBV-17 TANK OUTLET VALVE" Datatype="Bool" />
+    <Member Name="PBV-19 PW INLET" Datatype="Bool" />
+    <Member Name="PBV-20 CIP INLET (SPRAY BALL)" Datatype="Bool" />
+    <Member Name="PBV-21 VENT FILTER ISOLATION" Datatype="Bool" />
+    <Member Name="PBV-22 INGREDIENT INLET (SUGAR INLET)" Datatype="Bool" />
+    <Member Name="PBV-25 BOTTOM OUTLET TO DRAIN VALVE" Datatype="Bool" />
+    <Member Name="PAV-27 JACKET STEAM INLET" Datatype="Bool" />
+    <Member Name="PAV-28 SEAL COOLING INLET" Datatype="Bool" />
+    <Member Name="PAV-29 JACKET CONDENSATE DRAIN" Datatype="Bool" />
+    <Member Name="PBV-30 VACUUM INLET VALVE" Datatype="Bool" />
+    <Member Name="PBV-31 VACUUM VENT VALVE" Datatype="Bool" />
+    <Member Name="PFBV-32 TANK OUTLET VALVE" Datatype="Bool" />
+    <Member Name="PBV-36 PW INLET" Datatype="Bool" />
+    <Member Name="PBV-37 VENT FILTER ISOLATION" Datatype="Bool" />
+    <Member Name="PBV-38 CIP INLET LINE" Datatype="Bool" />
+    <Member Name="PBV-41 MFG TANK DRAIN VALVE" Datatype="Bool" />
+    <Member Name="PAV-50 JACKET STEAM INLET" Datatype="Bool" />
+    <Member Name="PAV-51 WATER COOLING OUTLET" Datatype="Bool" />
+    <Member Name="PAV-52 WATER COOLING INLET" Datatype="Bool" />
+    <Member Name="PAV-53 SEAL COOLING INLET" Datatype="Bool" />
+    <Member Name="PAV-54 JACKET STEAM OUTLET VALVE" Datatype="Bool" />
+    <Member Name="PAV-55 JACKET CONDENSATE BYPASS DRAIN" Datatype="Bool" />
+    <Member Name="PAV-56 INLINE HOMO. SEAL COOLING INLET" Datatype="Bool" />
+    <Member Name="PBV-57 VACUUM INLET VALVE" Datatype="Bool" />
+    <Member Name="PFBV-59 TANK OUTLET VALVE" Datatype="Bool" />
+    <Member Name="PBV-79 BASKET FILTER INLET" Datatype="Bool" />
+    <Member Name="PBV-80 BOTTOM OUTLET TO BASKET FILTER" Datatype="Bool" />
+    <Member Name="PBV-81 TANK BOTTOM OUTLET TO CIP OUTLET" Datatype="Bool" />
+    <Member Name="PBV-82 CIP ISOLATION" Datatype="Bool" />
+    <Member Name="PBV-83 PREMIX TRANSFER TO MFG VESSEL TRANSFER (TOP DISH)" Datatype="Bool" />
+    <Member Name="PBV-84 FROM TANK OUTLET TO CIP OUTLET" Datatype="Bool" />
+    <Member Name="PBV-85 SORBITOL INLET LINE" Datatype="Bool" />
+    <Member Name="PBV-86 GLUCOSE INLET LINE" Datatype="Bool" />
+    <Member Name="PBV-87 BASKET FILTER TO PREMIX VESSEL LINE" Datatype="Bool" />
+    <Member Name="PBV-88 BASKET FILTER TRANSFER LINE" Datatype="Bool" />
+    <Member Name="PBV-89 BASKET FILTER TO MFG INLET TRANSFER LINE" Datatype="Bool" />
+    <Member Name="PBV-90 PREMIX TO MFG TRANSFER LINE" Datatype="Bool" />
+    <Member Name="PBV-91 PREMIX TO MFG TRANSFER LINE" Datatype="Bool" />
+    <Member Name="PBV-92 PREMIX TO STORAGE – 4 TRANSFER LINE" Datatype="Bool" />
+    <Member Name="PBV-93 TANK OUTLET TO INLINE HOMOGENIZER LINE" Datatype="Bool" />
+    <Member Name="PBV-94 INLINE HOMOGENIZER INLET LINE" Datatype="Bool" />
+    <Member Name="PBV-95 TANK OUTLET TO FILTER PRESS LINE" Datatype="Bool" />
+    <Member Name="PBV-96 INLINE HOMOGENIZER RECIRCULATION LINE" Datatype="Bool" />
+    <Member Name="PBV-97 FILTER PRESS OUTLET" Datatype="Bool" />
+    <Member Name="PBV-98 INLINE HOMOGENIZER TO FILTER PRESS OUTLET LINE" Datatype="Bool" />
+    <Member Name="PAV-99 INLINE HOMOGENIZER SEAL COOLING" Datatype="Bool" />
+    <Member Name="PBV-100 FILTER PRESS INLET" Datatype="Bool" />
+    <Member Name="PBV-101 SUGAR MELTING TO MFG TRANSFER (TOP DISH)" Datatype="Bool" />
+    <Member Name="PBV-102 PREMIX TO MFG TRANSFER (TOP DISH)" Datatype="Bool" />
+    <Member Name="PBV-103 CIP INLET (SPRAY BALL)" Datatype="Bool" />
+    <Member Name="PBV-104 MFG VESSEL TRANSFER LINE" Datatype="Bool" />
+    <Member Name="PBV-105 INGREDIENT INLET" Datatype="Bool" />
+    <Member Name="PBV-106 SORBITOL INLET" Datatype="Bool" />
+    <Member Name="PBV-107 GLUCOSE INLET" Datatype="Bool" />
+    <Member Name="PBV-108 INLINE HOMOGENIZER TO FILTER PRESS INLET LINE" Datatype="Bool" />
+    <Member Name="PBV-109 HOMO. RECIRCULATION INLET" Datatype="Bool" />
+    <Member Name="PBV-110 INLINE HOMOGENIZER TO INLET LINE" Datatype="Bool" />
+    <Member Name="PBV-111 FILTER PRESS OUTLER VALVE" Datatype="Bool" />
+    <Member Name="PBV-112 FILTER PRESS TO TRANSFER LINE" Datatype="Bool" />
+    <Member Name="PAV-113 TANK OUTLET TO CIP DRAIN LINE" Datatype="Bool" />
+    <Member Name="PBV-114 TANK OUTLET TO INLINE HOMOGENIZER LINE" Datatype="Bool" />
+    <Member Name="PBV-115 MFG TO STORAGE – 1 TRANSFER LINE" Datatype="Bool" />
+    <Member Name="PBV-116 MFG TO STORAGE – 2 TRANSFER LINE" Datatype="Bool" />
+    <Member Name="PBV-117 MFG TO STORAGE – 3 TRANSFER LINE" Datatype="Bool" />
+    <Member Name="PBV-118 FILTER PRESS INLET" Datatype="Bool" />
+    <Member Name="PBV-119 SEAL COOLING FOR STORAGE VESSEL - 4" Datatype="Bool" />
+    <Member Name="PBV-120 SEAL COOLING FOR STORAGE VESSEL - 3" Datatype="Bool" />
+    <Member Name="PBV-121 SEAL COOLING FOR STORAGE VESSEL - 2" Datatype="Bool" />
+    <Member Name="PBV-122 SEAL COOLING FOR STORAGE VESSEL - 1" Datatype="Bool" />
+    <Member Name="PBV-123 VESSEL TOP DISH" Datatype="Bool" />
+    <Member Name="PBV-124 VESSEL INLET LINE" Datatype="Bool" />
+    <Member Name="PBV-149" Datatype="Bool" />
+    <Member Name="PBV-150" Datatype="Bool" />
+    <Member Name="PBV-151" Datatype="Bool" />
+    <Member Name="PBV-152" Datatype="Bool" />
+    <Member Name="PBV-153" Datatype="Bool" />
+    <Member Name="PBV-155" Datatype="Bool" />
+    <Member Name="PBV-156" Datatype="Bool" />
+    <Member Name="HOOTER_1" Datatype="Bool" />
+    <Member Name="HOOTR_2" Datatype="Bool" />
+    <Member Name="SPARE_DO1" Datatype="Bool" />
+    <Member Name="SPARE_DO2" Datatype="Bool" />
+    <Member Name="SPARE_DO3" Datatype="Bool" />
+    <Member Name="SPARE_DO4" Datatype="Bool" />
+    <Member Name="SPARE_DO5" Datatype="Bool" />
+    <Member Name="SPARE_DO6" Datatype="Bool" />
+    <Member Name="SPARE_DO7" Datatype="Bool" />
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>DO MAPING</Name>
+      <Namespace />
+      <Number>2</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

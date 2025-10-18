@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V19" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="MIN" Datatype="Struct" Remanence="Retain">
+      <Member Name="SYRUP VESSEL TEMP SENSOR" Datatype="Real">
+        <StartValue>-50.0</StartValue>
+      </Member>
+      <Member Name="PREMIXING VESSEL TEMP SENSOR" Datatype="Real">
+        <StartValue>-50.0</StartValue>
+      </Member>
+      <Member Name="SUGAR VESSEL TEMP SENSOR" Datatype="Real">
+        <StartValue>-50.0</StartValue>
+      </Member>
+      <Member Name="STEAM LINE_1 TEMP SENSOR" Datatype="Real">
+        <StartValue>-50.0</StartValue>
+      </Member>
+      <Member Name="STEAM LINE_2 TEMP SENSOR" Datatype="Real">
+        <StartValue>-50.0</StartValue>
+      </Member>
+      <Member Name="PRESSURE TRANSMITTER 1" Datatype="Real">
+        <StartValue>-1.0</StartValue>
+      </Member>
+      <Member Name="PRESSURE TRANSMITTER 2" Datatype="Real">
+        <StartValue>-1.0</StartValue>
+      </Member>
+      <Member Name="VACCIM TRANSMITTER 1" Datatype="Real">
+        <StartValue>-750.0</StartValue>
+      </Member>
+      <Member Name="VACCIM TRANSMITTER 2" Datatype="Real">
+        <StartValue>-750.0</StartValue>
+      </Member>
+      <Member Name="VACCUM TRANSMITTER 3" Datatype="Real">
+        <StartValue>-750.0</StartValue>
+      </Member>
+      <Member Name="SYRUP LOAD CELL" Datatype="Real">
+        <StartValue>0.0</StartValue>
+      </Member>
+      <Member Name="PREMIXING LOAD CELL" Datatype="Real">
+        <StartValue>0.0</StartValue>
+      </Member>
+      <Member Name="SUGAR LOAD CELL" Datatype="Real">
+        <StartValue>0.0</StartValue>
+      </Member>
+      <Member Name="ULTRASONIC LEVEL SENSOR-1" Datatype="Real">
+        <StartValue>0.0</StartValue>
+      </Member>
+      <Member Name="ULTRASONIC LEVEL SENSOR-2" Datatype="Real">
+        <StartValue>0.0</StartValue>
+      </Member>
+      <Member Name="ULTRASONIC LEVEL SENSOR-3" Datatype="Real">
+        <StartValue>0.0</StartValue>
+      </Member>
+    </Member>
+    <Member Name="MAX" Datatype="Struct" Remanence="Retain">
+      <Member Name="SYRUP VESSEL TEMP SENSOR" Datatype="Real">
+        <StartValue>250.0</StartValue>
+      </Member>
+      <Member Name="PREMIXING VESSEL TEMP SENSOR" Datatype="Real">
+        <StartValue>250.0</StartValue>
+      </Member>
+      <Member Name="SUGAR VESSEL TEMP SENSOR" Datatype="Real">
+        <StartValue>250.0</StartValue>
+      </Member>
+      <Member Name="STEAM LINE_1 TEMP SENSOR" Datatype="Real">
+        <StartValue>250.0</StartValue>
+      </Member>
+      <Member Name="STEAM LINE_2 TEMP SENSOR" Datatype="Real">
+        <StartValue>250.0</StartValue>
+      </Member>
+      <Member Name="PRESSURE TRANSMITTER 1" Datatype="Real">
+        <StartValue>5.0</StartValue>
+      </Member>
+      <Member Name="PRESSURE TRANSMITTER 2" Datatype="Real">
+        <StartValue>5.0</StartValue>
+      </Member>
+      <Member Name="VACCIM TRANSMITTER 1" Datatype="Real">
+        <StartValue>0.0</StartValue>
+      </Member>
+      <Member Name="VACCIM TRANSMITTER 2" Datatype="Real">
+        <StartValue>0.0</StartValue>
+      </Member>
+      <Member Name="VACCUM TRANSMITTER 3" Datatype="Real">
+        <StartValue>0.0</StartValue>
+      </Member>
+      <Member Name="SYRUP LOAD CELL" Datatype="Real">
+        <StartValue>5000.0</StartValue>
+      </Member>
+      <Member Name="PREMIXING LOAD CELL" Datatype="Real">
+        <StartValue>1500.0</StartValue>
+      </Member>
+      <Member Name="SUGAR LOAD CELL" Datatype="Real">
+        <StartValue>3750.0</StartValue>
+      </Member>
+      <Member Name="ULTRASONIC LEVEL SENSOR-1" Datatype="Real">
+        <StartValue>10000.0</StartValue>
+      </Member>
+      <Member Name="ULTRASONIC LEVEL SENSOR-2" Datatype="Real">
+        <StartValue>10000.0</StartValue>
+      </Member>
+      <Member Name="ULTRASONIC LEVEL SENSOR-3" Datatype="Real">
+        <StartValue>10000.0</StartValue>
+      </Member>
+    </Member>
+    <Member Name="PV" Datatype="Struct">
+      <Member Name="SYRUP VESSEL TEMP SENSOR" Datatype="Real" />
+      <Member Name="PREMIXING VESSEL TEMP SENSOR" Datatype="Real" />
+      <Member Name="SUGAR VESSEL TEMP SENSOR" Datatype="Real" />
+      <Member Name="STEAM LINE_1 TEMP SENSOR" Datatype="Real" />
+      <Member Name="STEAM LINE_2 TEMP SENSOR" Datatype="Real" />
+      <Member Name="PRESSURE TRANSMITTER 1" Datatype="Real" />
+      <Member Name="PRESSURE TRANSMITTER 2" Datatype="Real" />
+      <Member Name="VACCIM TRANSMITTER 1" Datatype="Real" />
+      <Member Name="VACCIM TRANSMITTER 2" Datatype="Real" />
+      <Member Name="VACCUM TRANSMITTER 3" Datatype="Real" />
+      <Member Name="SYRUP LOAD CELL" Datatype="Real" />
+      <Member Name="PREMIXING LOAD CELL" Datatype="Real" />
+      <Member Name="SUGAR LOAD CELL" Datatype="Real" />
+      <Member Name="ULTRASONIC LEVEL SENSOR-1" Datatype="Real" />
+      <Member Name="ULTRASONIC LEVEL SENSOR-2" Datatype="Real" />
+      <Member Name="ULTRASONIC LEVEL SENSOR-3" Datatype="Real" />
+    </Member>
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>AI SCALING DB</Name>
+      <Namespace />
+      <Number>5</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V19" />
+  <SW.Blocks.OB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="Initial_Call" Datatype="Bool" Informative="true">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Initial call of this OB</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Remanence" Datatype="Bool" Informative="true">
+      <Comment>
+        <MultiLanguageText Lang="en-US">=True, if remanent data are available</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+  <Section Name="Temp" />
+  <Section Name="Constant" />
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <Name>Main</Name>
+      <Namespace />
+      <Number>1</Number>
+      <ProgrammingLanguage>LAD</ProgrammingLanguage>
+      <SecondaryType>ProgramCycle</SecondaryType>
+      <SetENOAutomatically>false</SetENOAutomatically>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="3" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+  <Parts>
+    <Call UId="21">
+      <CallInfo Name="AI SCALING" BlockType="FC" />
+    </Call>
+    <Call UId="22">
+      <CallInfo Name="AO SCALING" BlockType="FC" />
+    </Call>
+    <Call UId="23">
+      <CallInfo Name="DI/DO MAPING" BlockType="FC" />
+    </Call>
+    <Call UId="24">
+      <CallInfo Name="SUBOUTPUT" BlockType="FC" />
+    </Call>
+    <Call UId="25">
+      <CallInfo Name="TRANSFER PROCESS &amp; SET CUTOUT" BlockType="FC" />
+    </Call>
+    <Call UId="26">
+      <CallInfo Name="TRANSFER SUBOUTPUT" BlockType="FC" />
+    </Call>
+    <Call UId="27">
+      <CallInfo Name="MODE SELECTION" BlockType="FC" />
+    </Call>
+    <Call UId="28">
+      <CallInfo Name="ALARM" BlockType="FC" />
+    </Call>
+    <Call UId="29">
+      <CallInfo Name="AUTO ALARM" BlockType="FC" />
+    </Call>
+    <Call UId="30">
+      <CallInfo Name="MANUAL INTERLOCK" BlockType="FC" />
+    </Call>
+    <Call UId="31">
+      <CallInfo Name="DATE &amp; TIME FC" BlockType="FC" />
+    </Call>
+    <Call UId="32">
+      <CallInfo Name="RECIRCULATION" BlockType="FC" />
+    </Call>
+    <Call UId="33">
+      <CallInfo Name="TEMP CUTOFF LOGIC" BlockType="FC" />
+    </Call>
+    <Call UId="34">
+      <CallInfo Name="SET PARAMETER" BlockType="FC" />
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="35">
+      <Powerrail />
+      <NameCon UId="21" Name="en" />
+      <NameCon UId="27" Name="en" />
+      <NameCon UId="30" Name="en" />
+      <NameCon UId="33" Name="en" />
+    </Wire>
+    <Wire UId="36">
+      <NameCon UId="21" Name="eno" />
+      <NameCon UId="22" Name="en" />
+    </Wire>
+    <Wire UId="37">
+      <NameCon UId="22" Name="eno" />
+      <NameCon UId="23" Name="en" />
+    </Wire>
+    <Wire UId="38">
+      <NameCon UId="23" Name="eno" />
+      <NameCon UId="24" Name="en" />
+    </Wire>
+    <Wire UId="39">
+      <NameCon UId="24" Name="eno" />
+      <NameCon UId="25" Name="en" />
+    </Wire>
+    <Wire UId="40">
+      <NameCon UId="25" Name="eno" />
+      <NameCon UId="26" Name="en" />
+    </Wire>
+    <Wire UId="41">
+      <NameCon UId="27" Name="eno" />
+      <NameCon UId="28" Name="en" />
+    </Wire>
+    <Wire UId="42">
+      <NameCon UId="28" Name="eno" />
+      <NameCon UId="29" Name="en" />
+    </Wire>
+    <Wire UId="43">
+      <NameCon UId="30" Name="eno" />
+      <NameCon UId="31" Name="en" />
+    </Wire>
+    <Wire UId="44">
+      <NameCon UId="31" Name="eno" />
+      <NameCon UId="32" Name="en" />
+    </Wire>
+    <Wire UId="45">
+      <NameCon UId="33" Name="eno" />
+      <NameCon UId="34" Name="en" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="5" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="6" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>#SHIV</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="8" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+  <Parts>
+    <Call UId="21">
+      <CallInfo Name="AUTO SUBOUTPUT" BlockType="FC" />
+    </Call>
+    <Call UId="22">
+      <CallInfo Name="MFG PROCESS" BlockType="FC" />
+    </Call>
+    <Call UId="23">
+      <CallInfo Name="MFG TRANSFER CYCLE" BlockType="FC" />
+    </Call>
+    <Call UId="24">
+      <CallInfo Name="PREMIXING" BlockType="FC" />
+    </Call>
+    <Call UId="25">
+      <CallInfo Name="PREMIXING TRANSFER CYCLE" BlockType="FC" />
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="26">
+      <Powerrail />
+      <NameCon UId="21" Name="en" />
+      <NameCon UId="24" Name="en" />
+    </Wire>
+    <Wire UId="27">
+      <NameCon UId="21" Name="eno" />
+      <NameCon UId="22" Name="en" />
+    </Wire>
+    <Wire UId="28">
+      <NameCon UId="22" Name="eno" />
+      <NameCon UId="23" Name="en" />
+    </Wire>
+    <Wire UId="29">
+      <NameCon UId="24" Name="eno" />
+      <NameCon UId="25" Name="en" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="9" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="B" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="D" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="E" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="10" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="11" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="12" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="13" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="14" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="15" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="16" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="17" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="18" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>"Main Program Sweep (Cycle)"</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.OB>
+</Document>

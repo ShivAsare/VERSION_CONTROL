@@ -1,0 +1,131 @@
+﻿FUNCTION "AO SCALING" : Void
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+
+BEGIN
+	REGION SYRUP MFG VESSEL SPEED
+	    IF "DO MAPING"."SYRUP MFG VESSEL BOTTOM STERROR RUN" = FALSE THEN
+	        "SYRUP MFG VESSEL SPEED" := 0;
+	        "AO SCALING DB".PV."SYRUP MFG VESSEL SPEED" := 0.0;
+	    ELSE
+	        "@SCALING AO"("ANALOG OUTPUT" := "AO SCALING DB".SET."SYRUP MFG VESSEL SPEED",
+	                      "SCALING MIN" := "AO SCALING DB".MIN."SYRUP MFG VESSEL SPEED",
+	                      "SCALING MAX" := "AO SCALING DB".MAX."SYRUP MFG VESSEL SPEED",
+	                      "RAW MIN" := 0,
+	                      "RAW MAX" := 27648,
+	                      "PV VALUE" => "SYRUP MFG VESSEL SPEED");
+	        "@SCALING AI"("ANALOG INPUT" := "SYRUP MFG VESSEL SPEED",
+	                      "RAW MIN" := 0,
+	                      "RAW MAX" := 27648,
+	                      "SCALE MIN" := "AO SCALING DB".MIN."SYRUP MFG VESSEL SPEED",
+	                      "SCALE MAX" := "AO SCALING DB".MAX."SYRUP MFG VESSEL SPEED",
+	                      "PV VALUE" => "AO SCALING DB".PV."SYRUP MFG VESSEL SPEED");
+	        ;
+	    END_IF;
+	
+	    CASE "MODE SELECTION DB"."MODE BUFF" OF
+	        1:  "AO SCALING DB".SET."SYRUP MFG VESSEL SPEED" :=
+	            "SET PARAMETER DB"."AUTO VFD SET PARAMETER"."MFG VESSEL STIRROR RUN"
+	            ;
+	        2:
+	            "AO SCALING DB".SET."SYRUP MFG VESSEL SPEED" :=
+	            "SET PARAMETER DB"."MANUAL VFD SET PARAMETER"."MFG VESSEL STIRROR RUN";
+	            ;
+	        ELSE
+	            "AO SCALING DB".SET."SYRUP MFG VESSEL SPEED" := 0.0;
+	            ;
+	    END_CASE;
+	    
+	END_REGION
+	
+	REGION PREMIXING VESSEL SPEED
+	    IF "DO MAPING"."PREMIXING VESSEL BOTTOM STERROR RUN" = FALSE THEN
+	        "PREMIXING VESSEL SPEED" := 0;
+	        "AO SCALING DB".PV."PREMIXING VESSEL SPEED" := 0.0;
+	    ELSE
+	        "@SCALING AO"("ANALOG OUTPUT" := "AO SCALING DB".SET."PREMIXING VESSEL SPEED",
+	                      "SCALING MIN" := "AO SCALING DB".MIN."PREMIXING VESSEL SPEED",
+	                      "SCALING MAX" := "AO SCALING DB".MAX."PREMIXING VESSEL SPEED",
+	                      "RAW MIN" := 0,
+	                      "RAW MAX" := 27648,
+	                      "PV VALUE" => "PREMIXING VESSEL SPEED");
+	        "@SCALING AI"("ANALOG INPUT" := "PREMIXING VESSEL SPEED",
+	                      "RAW MIN" := 0,
+	                      "RAW MAX" := 27648,
+	                      "SCALE MIN" := "AO SCALING DB".MIN."PREMIXING VESSEL SPEED",
+	                      "SCALE MAX" := "AO SCALING DB".MAX."PREMIXING VESSEL SPEED",
+	                      "PV VALUE" => "AO SCALING DB".PV."PREMIXING VESSEL SPEED");
+	        ;
+	    END_IF;
+	    CASE "MODE SELECTION DB"."MODE BUFF" OF
+	        1:
+	            "AO SCALING DB".SET."PREMIXING VESSEL SPEED" :=
+	            "SET PARAMETER DB"."AUTO VFD SET PARAMETER"."PREMIXING  VESSEL STIRROR RUN"
+	            ;
+	        2:
+	            "AO SCALING DB".SET."PREMIXING VESSEL SPEED" :=
+	            "SET PARAMETER DB"."MANUAL VFD SET PARAMETER"."PREMIXING  VESSEL STIRROR RUN";
+	            ;
+	        ELSE
+	            "AO SCALING DB".SET."PREMIXING VESSEL SPEED" := 0.0;
+	            ;
+	    END_CASE;
+	END_REGION
+	
+	REGION SUGAR VESSEL SPEED
+	    IF "DO MAPING"."SUGAR VESSEL BOTTOM STERROR RUN" = FALSE THEN
+	        "SUGAR VESSEL SPEED" := 0;
+	        "AO SCALING DB".PV."SUGAR VESSEL SPEED" := 0.0;
+	    ELSE
+	        "@SCALING AO"("ANALOG OUTPUT" := "AO SCALING DB".SET."SUGAR VESSEL SPEED",
+	                      "SCALING MIN" := "AO SCALING DB".MIN."SUGAR VESSEL SPEED",
+	                      "SCALING MAX" := "AO SCALING DB".MAX."SUGAR VESSEL SPEED",
+	                      "RAW MIN" := 0,
+	                      "RAW MAX" := 27648,
+	                      "PV VALUE" => "SUGAR VESSEL SPEED");
+	        "@SCALING AI"("ANALOG INPUT" := "SUGAR VESSEL SPEED",
+	                      "RAW MIN" := 0,
+	                      "RAW MAX" := 27648,
+	                      "SCALE MIN" := "AO SCALING DB".MIN."SUGAR VESSEL SPEED",
+	                      "SCALE MAX" := "AO SCALING DB".MAX."SUGAR VESSEL SPEED",
+	                      "PV VALUE" => "AO SCALING DB".PV."SUGAR VESSEL SPEED");
+	        ;
+	    END_IF;
+	    CASE "MODE SELECTION DB"."MODE BUFF" OF
+	        1:
+	            "AO SCALING DB".SET."SUGAR VESSEL SPEED" :=
+	            "SET PARAMETER DB"."AUTO VFD SET PARAMETER"."SUGAR VESSEL STIRROR RUN"
+	            ;
+	        2:
+	            "AO SCALING DB".SET."SUGAR VESSEL SPEED" :=
+	            "SET PARAMETER DB"."MANUAL VFD SET PARAMETER"."SUGAR VESSEL STIRROR RUN";
+	            ;
+	        ELSE
+	            "AO SCALING DB".SET."SUGAR VESSEL SPEED" := 0.0;
+	            ;
+	    END_CASE;
+	END_REGION
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+END_FUNCTION
+

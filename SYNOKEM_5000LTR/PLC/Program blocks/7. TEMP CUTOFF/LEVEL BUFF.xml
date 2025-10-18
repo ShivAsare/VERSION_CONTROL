@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V19" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="SYRUP MFG_TEMP" Datatype="Int" Remanence="Retain" />
+    <Member Name="SYRUP MFG_COOLING" Datatype="Int" Remanence="Retain" />
+    <Member Name="SYRUP MFG_VACCUM" Datatype="Int" Remanence="Retain" />
+    <Member Name="SYRUP MFG_LOAD CELL" Datatype="Int" Remanence="Retain" />
+    <Member Name="PREMIXING_TEMP" Datatype="Int" Remanence="Retain" />
+    <Member Name="PREMIXING_COOLING" Datatype="Int" Remanence="Retain" />
+    <Member Name="PREMIXING_VACCUM" Datatype="Int" Remanence="Retain" />
+    <Member Name="PREMIXING_LOAD CELL" Datatype="Int" Remanence="Retain" />
+    <Member Name="SUGAR_TEMP" Datatype="Int" Remanence="Retain" />
+    <Member Name="SUGAR_VACCUM" Datatype="Int" Remanence="Retain" />
+    <Member Name="SUGAR_LOAD CELL" Datatype="Int" Remanence="Retain" />
+    <Member Name="AUTO" Datatype="Struct" Remanence="Retain">
+      <Member Name="MFG LOAD CELL" Datatype="Int" />
+      <Member Name="MFG TEMP MIN_MAX BUFF" Datatype="Int" />
+      <Member Name="MFG VACUUM MIN_MAX BUFF" Datatype="Int" />
+      <Member Name="PREMIXING LOAD CELL" Datatype="Int" />
+      <Member Name="PREMIXING TEMP MIN_MAX BUFF" Datatype="Int" />
+      <Member Name="PREMIXING VACUUM MIN_MAX BUFF" Datatype="Int" />
+      <Member Name="SUGAR LOAD CELL" Datatype="Int" />
+      <Member Name="SUGAR TEMP MIN_MAX BUFF" Datatype="Int" />
+      <Member Name="SUGAR VACUUM MIN_MAX BUFF" Datatype="Int" />
+    </Member>
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>LEVEL BUFF</Name>
+      <Namespace />
+      <Number>14</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

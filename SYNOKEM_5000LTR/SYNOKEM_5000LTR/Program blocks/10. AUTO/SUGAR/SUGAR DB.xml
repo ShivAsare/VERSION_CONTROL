@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V19" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="START" Datatype="Bool" />
+    <Member Name="PAUSE" Datatype="Bool" Remanence="Retain" />
+    <Member Name="STOP" Datatype="Bool" />
+    <Member Name="AUTO BUFF" Datatype="Int" Remanence="Retain" />
+    <Member Name="SUGAR PROCESS OVER" Datatype="Bool" />
+    <Member Name="BIT" Datatype="Struct">
+      <Member Name="PURIFIED WATER" Datatype="Struct">
+        <Member Name="PURIFIED WATER SELECT" Datatype="Bool" />
+        <Member Name="PURIFIED WATER SKIP" Datatype="Bool" />
+        <Member Name="PURIFIED WATER PROCESS OF INITIAL DRAIN SELECT" Datatype="Bool" />
+        <Member Name="PURIFIED WATER PROCESS OF INITIAL DRAIN SKIP" Datatype="Bool" />
+        <Member Name="PURIFIED WATER LOAD CELL" Datatype="Bool" />
+        <Member Name="SELECT HEATING" Datatype="Bool" />
+        <Member Name="PURIFIED WATER OVER" Datatype="Bool" />
+        <Member Name="PURIFIED WATER PROCESS OF JACKET DRAIN SELECT" Datatype="Bool" />
+        <Member Name="PURIFIED WATER PROCESS OF JACKET DRAIN SKIP" Datatype="Bool" />
+      </Member>
+      <Member Name="MATERIAL SUCTION" Datatype="Struct">
+        <Member Name="MATERIAL SUCTION SELECT" Datatype="Bool" />
+        <Member Name="MATERIAL SUCTION SKIP" Datatype="Bool" />
+        <Member Name="MATERIAL SUCTION OVER" Datatype="Bool" />
+      </Member>
+    </Member>
+    <Member Name="SET PARAMETER" Datatype="Struct" Remanence="Retain">
+      <Member Name="PURIFIED WATER INITIAL DRAIN TIME" Datatype="Int" />
+      <Member Name="PURIFIED LOAD" Datatype="Real" />
+      <Member Name="PURIFIED HEATING" Datatype="Real" />
+      <Member Name="PURIFIED COOLING" Datatype="Real" />
+      <Member Name="PURIFIED STIRRER MOTOR RPM" Datatype="Real" />
+      <Member Name="PURIFIED STIRRER_TIME" Datatype="Int" />
+      <Member Name="PURIFIED WATER JACKET DRAIN TIME" Datatype="Int" />
+      <Member Name="MATERIAL_SORBITOL LOAD CELL" Datatype="Real" />
+      <Member Name="MATERIAL_SORBITOL STIRRER TIME" Datatype="Int" />
+      <Member Name="MATERIAL SORBITOL STIRRER MOTOR RPM" Datatype="Real" />
+      <Member Name="MATERIAL_SORBITOL TEMP_MAX" Datatype="Real" />
+      <Member Name="MATERIAL_SORBITOL TEMP_MIN" Datatype="Real" />
+      <Member Name="MATERIAL_GLUCOSE LOAD CELL" Datatype="Real" />
+      <Member Name="MATERIAL_GLUCOSE STIRRER TIME" Datatype="Int" />
+      <Member Name="MATERIAL GLUCOSE STIRRER MOTOR RPM" Datatype="Real" />
+      <Member Name="MATERIAL_GLUCOSE TEMP_MAX" Datatype="Real" />
+      <Member Name="MATERIAL_GLUCOSE TEMP_MIN" Datatype="Real" />
+      <Member Name="RECIRCULATION TOTAL TIME" Datatype="Int" />
+      <Member Name="RECIRCULATION STIRRER RPM" Datatype="Real" />
+      <Member Name="RECIRCULATION HOMOGENIZER DELAY" Datatype="Int" />
+      <Member Name="MATERIAL SUCTION VACUUM HIGH" Datatype="Real" />
+      <Member Name="MATERIAL SUCTION VACUUM LOW" Datatype="Real" />
+      <Member Name="MATERIAL SUCTION STIRRER RPM" Datatype="Real" />
+      <Member Name="MATERIAL SUCTION LOAD CELL" Datatype="Real" />
+    </Member>
+    <Member Name="PV PARAMETER" Datatype="Struct" Remanence="Retain">
+      <Member Name="PURIFIED WATER INITIAL DRAIN TIME" Datatype="Int" />
+      <Member Name="PURIFIED STIRRER_TIME" Datatype="Int" />
+      <Member Name="PURIFIED WATER JACKET DRAIN TIME" Datatype="Int" />
+      <Member Name="MATERIAL_SORBITOL STIRRER TIME" Datatype="Int" />
+      <Member Name="MATERIAL_GLUCOSE STIRRER TIME" Datatype="Int" />
+      <Member Name="RECIRCULATION TOTAL TIME" Datatype="Int" />
+      <Member Name="RECIRCULATION HOMOGENIZER DELAY" Datatype="Int" />
+      <Member Name="PURIFIED LOAD" Datatype="Real" />
+      <Member Name="MATERIAL_SORBITOL LOAD CELL" Datatype="Real" />
+      <Member Name="MATERIAL_GLUCOSE LOAD CELL" Datatype="Real" />
+      <Member Name="MATERIAL SUCTION LOAD CELL" Datatype="Real" />
+    </Member>
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>SUGAR DB</Name>
+      <Namespace />
+      <Number>162</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

@@ -1,0 +1,164 @@
+﻿FUNCTION "AI SCALING" : Void
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+
+BEGIN
+	REGION SYRUP VESSEL TEMP SENSOR
+	    "@SCALING AI"("ANALOG INPUT":="SYRUP VESSEL TEMP SENSOR",
+	                 "RAW MIN":=0,
+	                 "RAW MAX":=27648,
+	                 "SCALE MIN":="AI SCALING DB".MIN."SYRUP VESSEL TEMP SENSOR",
+	                 "SCALE MAX":="AI SCALING DB".MAX."SYRUP VESSEL TEMP SENSOR",
+	                 "PV VALUE"=>"AI SCALING DB".PV."SYRUP VESSEL TEMP SENSOR");
+	END_REGION
+	
+	REGION PREMIXING VESSEL TEMP SENSOR
+	    "@SCALING AI"("ANALOG INPUT" := "PREMIXING VESSEL TEMP SENSOR",
+	                  "RAW MIN" := 0,
+	                  "RAW MAX" := 27648,
+	                  "SCALE MIN" := "AI SCALING DB".MIN."PREMIXING VESSEL TEMP SENSOR",
+	                  "SCALE MAX" := "AI SCALING DB".MAX."PREMIXING VESSEL TEMP SENSOR",
+	                  "PV VALUE" => "AI SCALING DB".PV."PREMIXING VESSEL TEMP SENSOR");
+	END_REGION
+	
+	REGION SUGAR VESSEL TEMP SENSOR
+	    "@SCALING AI"("ANALOG INPUT" := "SUGAR VESSEL TEMP SENSOR",
+	                  "RAW MIN" := 0,
+	                  "RAW MAX" := 27648,
+	                  "SCALE MIN" := "AI SCALING DB".MIN."SUGAR VESSEL TEMP SENSOR",
+	                  "SCALE MAX" := "AI SCALING DB".MAX."SUGAR VESSEL TEMP SENSOR",
+	                  "PV VALUE" => "AI SCALING DB".PV."SUGAR VESSEL TEMP SENSOR");
+	END_REGION
+	
+	REGION STEAM LINE_1 TEMP SENSOR
+	    "@SCALING AI"("ANALOG INPUT" := "STEAM LINE_1 TEMP SENSOR",
+	                  "RAW MIN" := 0,
+	                  "RAW MAX" := 27648,
+	                  "SCALE MIN" := "AI SCALING DB".MIN."STEAM LINE_1 TEMP SENSOR",
+	                  "SCALE MAX" := "AI SCALING DB".MAX."STEAM LINE_1 TEMP SENSOR",
+	                  "PV VALUE" => "AI SCALING DB".PV."STEAM LINE_1 TEMP SENSOR");
+	END_REGION
+	
+	REGION STEAM LINE_2 TEMP SENSOR
+	    "@SCALING AI"("ANALOG INPUT" := "STEAM LINE_2 TEMP SENSOR",
+	                  "RAW MIN" := 0,
+	                  "RAW MAX" := 27648,
+	                  "SCALE MIN" := "AI SCALING DB".MIN."STEAM LINE_2 TEMP SENSOR",
+	                  "SCALE MAX" := "AI SCALING DB".MAX."STEAM LINE_2 TEMP SENSOR",
+	                  "PV VALUE" => "AI SCALING DB".PV."STEAM LINE_2 TEMP SENSOR");
+	END_REGION
+	
+	REGION PRESSURE TRANSMITTER 1
+	    "@SCALING AI"("ANALOG INPUT" := "PRESSURE TRANSMITTER 1",
+	                  "RAW MIN" := 0,
+	                  "RAW MAX" := 27648,
+	                  "SCALE MIN" := "AI SCALING DB".MIN."PRESSURE TRANSMITTER 1",
+	                  "SCALE MAX" := "AI SCALING DB".MAX."PRESSURE TRANSMITTER 1",
+	                  "PV VALUE" => "AI SCALING DB".PV."PRESSURE TRANSMITTER 1");
+	END_REGION
+	 
+	REGION PRESSURE TRANSMITTER 2
+	    "@SCALING AI"("ANALOG INPUT" := "PRESSURE TRANSMITTER 2",
+	                  "RAW MIN" := 0,
+	                  "RAW MAX" := 27648,
+	                  "SCALE MIN" := "AI SCALING DB".MIN."PRESSURE TRANSMITTER 2",
+	                  "SCALE MAX" := "AI SCALING DB".MAX."PRESSURE TRANSMITTER 2",
+	                  "PV VALUE" => "AI SCALING DB".PV."PRESSURE TRANSMITTER 2");
+	END_REGION
+	
+	  REGION VACCIM TRANSMITTER 1
+	      "@SCALING AI"("ANALOG INPUT" := "VACCIM TRANSMITTER 1",
+	                      "RAW MIN" := 0,
+	                      "RAW MAX" := 27648,
+	                  "SCALE MIN" := "AI SCALING DB".MIN."VACCIM TRANSMITTER 1",
+	                  "SCALE MAX" := "AI SCALING DB".MAX."VACCIM TRANSMITTER 1",
+	                  "PV VALUE" => "AI SCALING DB".PV."VACCIM TRANSMITTER 1");
+	END_REGION
+	
+	REGION VACCIM TRANSMITTER 2
+	    "@SCALING AI"("ANALOG INPUT" := "VACCIM TRANSMITTER 2",
+	                  "RAW MIN" := 0,
+	                  "RAW MAX" := 27648,
+	                  "SCALE MIN" := "AI SCALING DB".MIN."VACCIM TRANSMITTER 2",
+	                  "SCALE MAX" := "AI SCALING DB".MAX."VACCIM TRANSMITTER 2",
+	                  "PV VALUE" => "AI SCALING DB".PV."VACCIM TRANSMITTER 2");
+	END_REGION
+	
+	REGION VACCUM TRANSMITTER 3
+	    "@SCALING AI"("ANALOG INPUT" := "VACCUM TRANSMITTER 3",
+	                  "RAW MIN" := 0,
+	                  "RAW MAX" := 27648,
+	                  "SCALE MIN" := "AI SCALING DB".MIN."VACCUM TRANSMITTER 3",
+	                  "SCALE MAX" := "AI SCALING DB".MAX."VACCUM TRANSMITTER 3",
+	                  "PV VALUE" => "AI SCALING DB".PV."VACCUM TRANSMITTER 3");
+	END_REGION
+	
+	REGION SYRUP LOAD CELL
+	    "@SCALING AI"("ANALOG INPUT" := "SYRUP LOAD CELL",
+	                  "RAW MIN" := 0,
+	                  "RAW MAX" := 27648,
+	                  "SCALE MIN" := "AI SCALING DB".MIN."SYRUP LOAD CELL",
+	                  "SCALE MAX" := "AI SCALING DB".MAX."SYRUP LOAD CELL",
+	                  "PV VALUE" => "AI SCALING DB".PV."SYRUP LOAD CELL");
+	END_REGION
+	
+	REGION PREMIXING LOAD CELL
+	    "@SCALING AI"("ANALOG INPUT" := "PREMIXING LOAD CELL",
+	                  "RAW MIN" := 0,
+	                  "RAW MAX" := 27648,
+	                  "SCALE MIN" := "AI SCALING DB".MIN."PREMIXING LOAD CELL",
+	                  "SCALE MAX" := "AI SCALING DB".MAX."PREMIXING LOAD CELL",
+	                  "PV VALUE" => "AI SCALING DB".PV."PREMIXING LOAD CELL");
+	END_REGION
+	
+	REGION SUGAR LOAD CELL
+	    "@SCALING AI"("ANALOG INPUT" := "SUGAR LOAD CELL",
+	                  "RAW MIN" := 0,
+	                  "RAW MAX" := 27648,
+	                  "SCALE MIN" := "AI SCALING DB".MIN."SUGAR LOAD CELL",
+	                  "SCALE MAX" := "AI SCALING DB".MAX."SUGAR LOAD CELL",
+	                  "PV VALUE" => "AI SCALING DB".PV."SUGAR LOAD CELL");
+	END_REGION
+	
+	REGION ULTRASONIC LEVEL SENSOR-1
+	    "@SCALING AI"("ANALOG INPUT" := "ULTRASONIC LEVEL SENSOR-1",
+	                  "RAW MIN" := 0,
+	                  "RAW MAX" := 27648,
+	                  "SCALE MIN" := "AI SCALING DB".MIN."ULTRASONIC LEVEL SENSOR-1",
+	                  "SCALE MAX" := "AI SCALING DB".MAX."ULTRASONIC LEVEL SENSOR-1",
+	                  "PV VALUE" => "AI SCALING DB".PV."ULTRASONIC LEVEL SENSOR-1");
+	END_REGION
+	
+	REGION ULTRASONIC LEVEL SENSOR-2
+	    "@SCALING AI"("ANALOG INPUT" := "ULTRASONIC LEVEL SENSOR-2",
+	                  "RAW MIN" := 0,
+	                  "RAW MAX" := 27648,
+	                  "SCALE MIN" := "AI SCALING DB".MIN."ULTRASONIC LEVEL SENSOR-2",
+	                  "SCALE MAX" := "AI SCALING DB".MAX."ULTRASONIC LEVEL SENSOR-2",
+	                  "PV VALUE" => "AI SCALING DB".PV."ULTRASONIC LEVEL SENSOR-2");
+	END_REGION
+	
+	REGION ULTRASONIC LEVEL SENSOR-3
+	    "@SCALING AI"("ANALOG INPUT" := "ULTRASONIC LEVEL SENSOR-3",
+	                  "RAW MIN" := 0,
+	                  "RAW MAX" := 27648,
+	                  "SCALE MIN" := "AI SCALING DB".MIN."ULTRASONIC LEVEL SENSOR-3",
+	                  "SCALE MAX" := "AI SCALING DB".MAX."ULTRASONIC LEVEL SENSOR-3",
+	                  "PV VALUE" => "AI SCALING DB".PV."ULTRASONIC LEVEL SENSOR-3");
+	END_REGION
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+END_FUNCTION
+

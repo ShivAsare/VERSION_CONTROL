@@ -179,22 +179,26 @@
     <Call UId="25">
       <CallInfo Name="PREMIXING TRANSFER CYCLE" BlockType="FC" />
     </Call>
+    <Call UId="26">
+      <CallInfo Name="SUGAR" BlockType="FC" />
+    </Call>
   </Parts>
   <Wires>
-    <Wire UId="26">
+    <Wire UId="27">
       <Powerrail />
       <NameCon UId="21" Name="en" />
       <NameCon UId="24" Name="en" />
+      <NameCon UId="26" Name="en" />
     </Wire>
-    <Wire UId="27">
+    <Wire UId="28">
       <NameCon UId="21" Name="eno" />
       <NameCon UId="22" Name="en" />
     </Wire>
-    <Wire UId="28">
+    <Wire UId="29">
       <NameCon UId="22" Name="eno" />
       <NameCon UId="23" Name="en" />
     </Wire>
-    <Wire UId="29">
+    <Wire UId="30">
       <NameCon UId="24" Name="eno" />
       <NameCon UId="25" Name="en" />
     </Wire>

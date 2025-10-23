@@ -176,16 +176,6 @@
       <Member Name="PURIFIED WATER HEATING OR COOLING SELECT" Datatype="Bool" />
       <Member Name="PURIFIED WATER PROCESS OF JACKET DRAIN SELECT" Datatype="Bool" />
       <Member Name="PURIFIED WATER PROCESS OVER" Datatype="Bool" />
-      <Member Name="MATERIAL ADDITION PROCESS SELECT" Datatype="Bool" />
-      <Member Name="MATERIAL ADDITION MATERIAL ADDED TEXT" Datatype="Bool" />
-      <Member Name="MATERIAL ADDITION DO YOU WANT TO ADD SORBITOL SELECT" Datatype="Bool" />
-      <Member Name="MATERIAL ADDITION OF SORBITOL OVER" Datatype="Bool" />
-      <Member Name="MATERIAL ADDITION DO YOU WANT TO ADD GLUCOSE SELECT" Datatype="Bool" />
-      <Member Name="MATERIAL ADDITION OF GLUCOSE OVER" Datatype="Bool" />
-      <Member Name="MATERIAL ADDITION PROCESS OVER" Datatype="Bool" />
-      <Member Name="RECIRCULATION PROCESS SELECT" Datatype="Bool" />
-      <Member Name="RECIRCULATION PROCESS RUNING" Datatype="Bool" />
-      <Member Name="RECIRCULATION OVER" Datatype="Bool" />
       <Member Name="MFG PROCESS OVER" Datatype="Bool" />
     </Member>
     <Member Name="SUGAR PROCESS ALARM" Datatype="Struct">
@@ -202,47 +192,18 @@
       <Member Name="PURIFIED WATER PROCESS OF JACKET DRAIN START" Datatype="Bool" />
       <Member Name="PURIFIED WATER PROCESS OF JACKET DRAIN STOP" Datatype="Bool" />
       <Member Name="PURIFIED WATER PROCESS OVER" Datatype="Bool" />
-      <Member Name="MATERIAL ADDITION PROCESS SELECT" Datatype="Bool" />
-      <Member Name="MATERIAL ADDITION PROCESS START" Datatype="Bool" />
-      <Member Name="MATERIAL ADDITION OF INITIAL DRAIN SELECT" Datatype="Bool" />
-      <Member Name="MATERIAL ADDITION OF INITIAL DRAIN START" Datatype="Bool" />
-      <Member Name="MATERIAL ADDITION OF INITIAL DRAIN STOP" Datatype="Bool" />
-      <Member Name="MATERIAL ADDITION MATERIAL ADDED TEXT" Datatype="Bool" />
-      <Member Name="MATERIAL ADDITION DO YOU WANT TO ADD SORBITOL SELECT" Datatype="Bool" />
-      <Member Name="MATERIAL ADDITION OF SORBITOL START" Datatype="Bool" />
-      <Member Name="MATERIAL ADDITION OF SORBITOL STIRRER START" Datatype="Bool" />
-      <Member Name="MATERIAL ADDITION OF SORBITOL STIRRER STOP" Datatype="Bool" />
-      <Member Name="MATERIAL ADDITION OF SORBITOL OVER" Datatype="Bool" />
-      <Member Name="MATERIAL ADDITION DO YOU WANT TO ADD GLUCOSE SELECT" Datatype="Bool" />
-      <Member Name="MATERIAL ADDITION OF GLUCOSE START" Datatype="Bool" />
-      <Member Name="MATERIAL ADDITION OF GLUCOSE STIRRER START" Datatype="Bool" />
-      <Member Name="MATERIAL ADDITION OF GLUCOSE STIRRER STOP" Datatype="Bool" />
-      <Member Name="MATERIAL ADDITION OF GLUCOSE OVER" Datatype="Bool" />
-      <Member Name="MATERIAL ADDITION PROCESS OF JACKET DRAIN SELECT" Datatype="Bool" />
-      <Member Name="MATERIAL ADDITION PROCESS OF JACKET DRAIN STOP" Datatype="Bool" />
-      <Member Name="MATERIAL ADDITION PROCESS OVER" Datatype="Bool" />
-      <Member Name="RECIRCULATION PROCESS SELECT" Datatype="Bool" />
-      <Member Name="RECIRCULATION PROCESS START" Datatype="Bool" />
-      <Member Name="RECIRCULATION PROCESS OF INITIAL DRAIN SELECT" Datatype="Bool" />
-      <Member Name="RECIRCULATION PROCESS OF INITIAL DRAIN START" Datatype="Bool" />
-      <Member Name="RECIRCULATION PROCESS OF INITIAL DRAIN STOP" Datatype="Bool" />
-      <Member Name="RECIRCULATION PROCESS RUNING" Datatype="Bool" />
-      <Member Name="RECIRCULATION PROCESS OF JACKET DRAIN SELECT" Datatype="Bool" />
-      <Member Name="RECIRCULATION PROCESS OF JACKET DRAIN STOP" Datatype="Bool" />
-      <Member Name="RECIRCULATION OVER" Datatype="Bool" />
       <Member Name="MFG PROCESS OVER" Datatype="Bool" />
     </Member>
     <Member Name="SUGAR TRANSFER START" Datatype="Struct">
-      <Member Name="PREMIXING TO MFG WITH INLINE HOMO" Datatype="Bool" />
-      <Member Name="PREMIXING TO MFG WITH INLINE FILTER PRES" Datatype="Bool" />
-      <Member Name="PREMIXING TO STORAGE-4 WITH INLINE HOMO" Datatype="Bool" />
-      <Member Name="PREMIXING TO STORAGE-4 WITH INLINE FILTER PRES" Datatype="Bool" />
+      <Member Name="SUGAR TRANSFER SELECT POPUP" Datatype="Bool" />
+      <Member Name="TRANSFER PREMIXING AND MFG POPUP" Datatype="Bool" />
+      <Member Name="SUGAR TO PREMIXING" Datatype="Bool" />
+      <Member Name="SUGAR TO MFG" Datatype="Bool" />
     </Member>
     <Member Name="SUGAR TRANSFER OVER" Datatype="Struct">
-      <Member Name="PREMIXING TO MFG WITH INLINE HOMO" Datatype="Bool" />
-      <Member Name="PREMIXING TO MFG WITH INLINE FILTER PRES" Datatype="Bool" />
-      <Member Name="PREMIXING TO STORAGE-4 WITH INLINE HOMO" Datatype="Bool" />
-      <Member Name="PREMIXING TO STORAGE-4 WITH INLINE FILTER PRES" Datatype="Bool" />
+      <Member Name="SUGAR TRANSFER OVER POPUP" Datatype="Bool" />
+      <Member Name="SUGAR TO PREMIXING" Datatype="Bool" />
+      <Member Name="SUGAR TO MFG" Datatype="Bool" />
     </Member>
     <Member Name="SUGAR MATERIAL SUCTION" Datatype="Struct">
       <Member Name="MATERIAL SUCTION START" Datatype="Bool" />

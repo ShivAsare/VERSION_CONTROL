@@ -3339,325 +3339,378 @@
       <ConstantValue UId="95">0</ConstantValue>
     </Constant>
   </Access>
-  <Blank UId="96" />
-  <Token Text="THEN" UId="97" />
-  <NewLine UId="98" />
-  <Blank Num="4" UId="99" />
-  <Access Scope="GlobalVariable" UId="100">
-    <Symbol UId="101">
-      <Component Name="TRANSFER DB" UId="102" />
-      <Token Text="." UId="103" />
-      <Component Name="BIT" UId="104" />
-      <Token Text="." UId="105" />
-      <Component Name="SUGAR TO PREMIXING" UId="106" />
-      <Token Text="." UId="107" />
-      <Component Name="PFBV-32 TANK OUTLET VALVE" UId="108" />
+  <NewLine UId="96" />
+  <Blank Num="4" UId="97" />
+  <Token Text="OR" UId="98" />
+  <Blank UId="99" />
+  <Token Text="(" UId="100" />
+  <Access Scope="GlobalVariable" UId="101">
+    <Symbol UId="102">
+      <Component Name="MODE SELECTION DB" UId="103" />
+      <Token Text="." UId="104" />
+      <Component Name="MODE BUFF" UId="105" />
     </Symbol>
   </Access>
-  <Blank UId="109" />
-  <Token Text=":=" UId="110" />
+  <Token Text="=" UId="106" />
+  <Access Scope="LiteralConstant" UId="107">
+    <Constant UId="108">
+      <ConstantValue UId="110">1</ConstantValue>
+    </Constant>
+  </Access>
   <Blank UId="111" />
-  <Access Scope="LiteralConstant" UId="112">
-    <Constant UId="113">
-      <ConstantValue UId="115">TRUE</ConstantValue>
-    </Constant>
-  </Access>
-  <Token Text=";" UId="116" />
-  <NewLine UId="117" />
-  <Blank Num="4" UId="118" />
-  <Access Scope="GlobalVariable" UId="119">
-    <Symbol UId="120">
-      <Component Name="TRANSFER DB" UId="121" />
-      <Token Text="." UId="122" />
-      <Component Name="BIT" UId="123" />
-      <Token Text="." UId="124" />
-      <Component Name="SUGAR TO PREMIXING" UId="125" />
-      <Token Text="." UId="126" />
-      <Component Name="PBV-80 BOTTOM OUTLET TO BASKET FILTER" UId="127" />
+  <Token Text="AND" UId="112" />
+  <Blank UId="113" />
+  <Access Scope="GlobalVariable" UId="114">
+    <Symbol UId="115">
+      <Component Name="SUGAR DB" UId="116" />
+      <Token Text="." UId="117" />
+      <Component Name="AUTO BUFF" UId="118" />
     </Symbol>
   </Access>
-  <Blank UId="128" />
-  <Token Text=":=" UId="129" />
-  <Blank UId="130" />
-  <Access Scope="LiteralConstant" UId="131">
-    <Constant UId="132">
-      <ConstantValue UId="134">TRUE</ConstantValue>
+  <Token Text="=" UId="119" />
+  <Access Scope="LiteralConstant" UId="120">
+    <Constant UId="121">
+      <ConstantValue UId="123">105</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=";" UId="135" />
-  <NewLine UId="136" />
-  <Blank Num="4" UId="137" />
-  <Access Scope="GlobalVariable" UId="138">
-    <Symbol UId="139">
-      <Component Name="TRANSFER DB" UId="140" />
-      <Token Text="." UId="141" />
-      <Component Name="BIT" UId="142" />
-      <Token Text="." UId="143" />
-      <Component Name="SUGAR TO PREMIXING" UId="144" />
-      <Token Text="." UId="145" />
-      <Component Name="BASKET FILTER MOTOR RUN" UId="146" />
+  <NewLine UId="124" />
+  <Blank Num="4" UId="125" />
+  <Token Text="AND" UId="126" />
+  <Blank UId="127" />
+  <Access Scope="GlobalVariable" UId="128">
+    <Symbol UId="129">
+      <Component Name="CONTINUE DB" UId="130" />
+      <Token Text="." UId="131" />
+      <Component Name="SUGAR PROCESS ERROR" UId="132" />
     </Symbol>
   </Access>
-  <Blank UId="147" />
-  <Token Text=":=" UId="148" />
-  <Blank UId="149" />
-  <Access Scope="LiteralConstant" UId="150">
-    <Constant UId="151">
-      <ConstantValue UId="153">TRUE</ConstantValue>
+  <Blank UId="133" />
+  <Token Text="&lt;&gt;" UId="134" />
+  <Access Scope="LiteralConstant" UId="135">
+    <Constant UId="136">
+      <ConstantValue UId="138">1</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=";" UId="154" />
-  <NewLine UId="155" />
-  <Blank Num="4" UId="156" />
-  <Access Scope="GlobalVariable" UId="157">
-    <Symbol UId="158">
-      <Component Name="TRANSFER DB" UId="159" />
-      <Token Text="." UId="160" />
-      <Component Name="BIT" UId="161" />
-      <Token Text="." UId="162" />
-      <Component Name="SUGAR TO PREMIXING" UId="163" />
-      <Token Text="." UId="164" />
-      <Component Name="PBV-79 BASKET FILTER INLET" UId="165" />
+  <Token Text=")" UId="139" />
+  <NewLine UId="140" />
+  <Token Text="THEN" UId="141" />
+  <NewLine UId="142" />
+  <Blank Num="4" UId="143" />
+  <Access Scope="GlobalVariable" UId="144">
+    <Symbol UId="145">
+      <Component Name="TRANSFER DB" UId="146" />
+      <Token Text="." UId="147" />
+      <Component Name="BIT" UId="148" />
+      <Token Text="." UId="149" />
+      <Component Name="SUGAR TO PREMIXING" UId="150" />
+      <Token Text="." UId="151" />
+      <Component Name="PFBV-32 TANK OUTLET VALVE" UId="152" />
     </Symbol>
   </Access>
-  <Blank UId="166" />
-  <Token Text=":=" UId="167" />
-  <Blank UId="168" />
-  <Access Scope="LiteralConstant" UId="169">
-    <Constant UId="170">
-      <ConstantValue UId="172">TRUE</ConstantValue>
+  <Blank UId="153" />
+  <Token Text=":=" UId="154" />
+  <Blank UId="155" />
+  <Access Scope="LiteralConstant" UId="156">
+    <Constant UId="157">
+      <ConstantValue UId="159">TRUE</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=";" UId="173" />
-  <NewLine UId="174" />
-  <Blank Num="4" UId="175" />
-  <Access Scope="GlobalVariable" UId="176">
-    <Symbol UId="177">
-      <Component Name="TRANSFER DB" UId="178" />
-      <Token Text="." UId="179" />
-      <Component Name="BIT" UId="180" />
-      <Token Text="." UId="181" />
-      <Component Name="SUGAR TO PREMIXING" UId="182" />
-      <Token Text="." UId="183" />
-      <Component Name="PBV-149" UId="184" />
+  <Token Text=";" UId="160" />
+  <NewLine UId="161" />
+  <Blank Num="4" UId="162" />
+  <Access Scope="GlobalVariable" UId="163">
+    <Symbol UId="164">
+      <Component Name="TRANSFER DB" UId="165" />
+      <Token Text="." UId="166" />
+      <Component Name="BIT" UId="167" />
+      <Token Text="." UId="168" />
+      <Component Name="SUGAR TO PREMIXING" UId="169" />
+      <Token Text="." UId="170" />
+      <Component Name="PBV-80 BOTTOM OUTLET TO BASKET FILTER" UId="171" />
     </Symbol>
   </Access>
-  <Blank UId="185" />
-  <Token Text=":=" UId="186" />
-  <Blank UId="187" />
-  <Access Scope="LiteralConstant" UId="188">
-    <Constant UId="189">
-      <ConstantValue UId="191">TRUE</ConstantValue>
+  <Blank UId="172" />
+  <Token Text=":=" UId="173" />
+  <Blank UId="174" />
+  <Access Scope="LiteralConstant" UId="175">
+    <Constant UId="176">
+      <ConstantValue UId="178">TRUE</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=";" UId="192" />
-  <NewLine UId="193" />
-  <Blank Num="4" UId="194" />
-  <Access Scope="GlobalVariable" UId="195">
-    <Symbol UId="196">
-      <Component Name="TRANSFER DB" UId="197" />
-      <Token Text="." UId="198" />
-      <Component Name="BIT" UId="199" />
-      <Token Text="." UId="200" />
-      <Component Name="SUGAR TO PREMIXING" UId="201" />
-      <Token Text="." UId="202" />
-      <Component Name="PBV-88 BASKET FILTER TRANSFER LINE" UId="203" />
+  <Token Text=";" UId="179" />
+  <NewLine UId="180" />
+  <Blank Num="4" UId="181" />
+  <Access Scope="GlobalVariable" UId="182">
+    <Symbol UId="183">
+      <Component Name="TRANSFER DB" UId="184" />
+      <Token Text="." UId="185" />
+      <Component Name="BIT" UId="186" />
+      <Token Text="." UId="187" />
+      <Component Name="SUGAR TO PREMIXING" UId="188" />
+      <Token Text="." UId="189" />
+      <Component Name="BASKET FILTER MOTOR RUN" UId="190" />
     </Symbol>
   </Access>
-  <Blank UId="204" />
-  <Token Text=":=" UId="205" />
-  <Blank UId="206" />
-  <Access Scope="LiteralConstant" UId="207">
-    <Constant UId="208">
-      <ConstantValue UId="210">TRUE</ConstantValue>
+  <Blank UId="191" />
+  <Token Text=":=" UId="192" />
+  <Blank UId="193" />
+  <Access Scope="LiteralConstant" UId="194">
+    <Constant UId="195">
+      <ConstantValue UId="197">TRUE</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=";" UId="211" />
-  <NewLine UId="212" />
-  <Blank Num="4" UId="213" />
-  <Access Scope="GlobalVariable" UId="214">
-    <Symbol UId="215">
-      <Component Name="TRANSFER DB" UId="216" />
-      <Token Text="." UId="217" />
-      <Component Name="BIT" UId="218" />
-      <Token Text="." UId="219" />
-      <Component Name="SUGAR TO PREMIXING" UId="220" />
-      <Token Text="." UId="221" />
-      <Component Name="PBV-87 BASKET FILTER TO PREMIX VESSEL LINE" UId="222" />
+  <Token Text=";" UId="198" />
+  <NewLine UId="199" />
+  <Blank Num="4" UId="200" />
+  <Access Scope="GlobalVariable" UId="201">
+    <Symbol UId="202">
+      <Component Name="TRANSFER DB" UId="203" />
+      <Token Text="." UId="204" />
+      <Component Name="BIT" UId="205" />
+      <Token Text="." UId="206" />
+      <Component Name="SUGAR TO PREMIXING" UId="207" />
+      <Token Text="." UId="208" />
+      <Component Name="PBV-79 BASKET FILTER INLET" UId="209" />
     </Symbol>
   </Access>
-  <Blank UId="223" />
-  <Token Text=":=" UId="224" />
-  <Blank UId="225" />
-  <Access Scope="LiteralConstant" UId="226">
-    <Constant UId="227">
-      <ConstantValue UId="229">TRUE</ConstantValue>
+  <Blank UId="210" />
+  <Token Text=":=" UId="211" />
+  <Blank UId="212" />
+  <Access Scope="LiteralConstant" UId="213">
+    <Constant UId="214">
+      <ConstantValue UId="216">TRUE</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=";" UId="230" />
-  <NewLine UId="231" />
-  <Token Text="ELSE" UId="232" />
-  <NewLine UId="233" />
-  <Blank Num="4" UId="234" />
-  <Access Scope="GlobalVariable" UId="235">
-    <Symbol UId="236">
-      <Component Name="TRANSFER DB" UId="237" />
-      <Token Text="." UId="238" />
-      <Component Name="BIT" UId="239" />
-      <Token Text="." UId="240" />
-      <Component Name="SUGAR TO PREMIXING" UId="241" />
+  <Token Text=";" UId="217" />
+  <NewLine UId="218" />
+  <Blank Num="4" UId="219" />
+  <Access Scope="GlobalVariable" UId="220">
+    <Symbol UId="221">
+      <Component Name="TRANSFER DB" UId="222" />
+      <Token Text="." UId="223" />
+      <Component Name="BIT" UId="224" />
+      <Token Text="." UId="225" />
+      <Component Name="SUGAR TO PREMIXING" UId="226" />
+      <Token Text="." UId="227" />
+      <Component Name="PBV-149" UId="228" />
+    </Symbol>
+  </Access>
+  <Blank UId="229" />
+  <Token Text=":=" UId="230" />
+  <Blank UId="231" />
+  <Access Scope="LiteralConstant" UId="232">
+    <Constant UId="233">
+      <ConstantValue UId="235">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="236" />
+  <NewLine UId="237" />
+  <Blank Num="4" UId="238" />
+  <Access Scope="GlobalVariable" UId="239">
+    <Symbol UId="240">
+      <Component Name="TRANSFER DB" UId="241" />
       <Token Text="." UId="242" />
-      <Component Name="PFBV-32 TANK OUTLET VALVE" UId="243" />
+      <Component Name="BIT" UId="243" />
+      <Token Text="." UId="244" />
+      <Component Name="SUGAR TO PREMIXING" UId="245" />
+      <Token Text="." UId="246" />
+      <Component Name="PBV-88 BASKET FILTER TRANSFER LINE" UId="247" />
     </Symbol>
   </Access>
-  <Blank UId="244" />
-  <Token Text=":=" UId="245" />
-  <Blank UId="246" />
-  <Access Scope="LiteralConstant" UId="247">
-    <Constant UId="248">
-      <ConstantValue UId="250">FALSE</ConstantValue>
+  <Blank UId="248" />
+  <Token Text=":=" UId="249" />
+  <Blank UId="250" />
+  <Access Scope="LiteralConstant" UId="251">
+    <Constant UId="252">
+      <ConstantValue UId="254">TRUE</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=";" UId="251" />
-  <NewLine UId="252" />
-  <Blank Num="4" UId="253" />
-  <Access Scope="GlobalVariable" UId="254">
-    <Symbol UId="255">
-      <Component Name="TRANSFER DB" UId="256" />
-      <Token Text="." UId="257" />
-      <Component Name="BIT" UId="258" />
-      <Token Text="." UId="259" />
-      <Component Name="SUGAR TO PREMIXING" UId="260" />
+  <Token Text=";" UId="255" />
+  <NewLine UId="256" />
+  <Blank Num="4" UId="257" />
+  <Access Scope="GlobalVariable" UId="258">
+    <Symbol UId="259">
+      <Component Name="TRANSFER DB" UId="260" />
       <Token Text="." UId="261" />
-      <Component Name="PBV-80 BOTTOM OUTLET TO BASKET FILTER" UId="262" />
+      <Component Name="BIT" UId="262" />
+      <Token Text="." UId="263" />
+      <Component Name="SUGAR TO PREMIXING" UId="264" />
+      <Token Text="." UId="265" />
+      <Component Name="PBV-87 BASKET FILTER TO PREMIX VESSEL LINE" UId="266" />
     </Symbol>
   </Access>
-  <Blank UId="263" />
-  <Token Text=":=" UId="264" />
-  <Blank UId="265" />
-  <Access Scope="LiteralConstant" UId="266">
-    <Constant UId="267">
-      <ConstantValue UId="269">FALSE</ConstantValue>
+  <Blank UId="267" />
+  <Token Text=":=" UId="268" />
+  <Blank UId="269" />
+  <Access Scope="LiteralConstant" UId="270">
+    <Constant UId="271">
+      <ConstantValue UId="273">TRUE</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=";" UId="270" />
-  <NewLine UId="271" />
-  <Blank Num="4" UId="272" />
-  <Access Scope="GlobalVariable" UId="273">
-    <Symbol UId="274">
-      <Component Name="TRANSFER DB" UId="275" />
-      <Token Text="." UId="276" />
-      <Component Name="BIT" UId="277" />
-      <Token Text="." UId="278" />
-      <Component Name="SUGAR TO PREMIXING" UId="279" />
-      <Token Text="." UId="280" />
-      <Component Name="BASKET FILTER MOTOR RUN" UId="281" />
+  <Token Text=";" UId="274" />
+  <NewLine UId="275" />
+  <Token Text="ELSE" UId="276" />
+  <NewLine UId="277" />
+  <Blank Num="4" UId="278" />
+  <Access Scope="GlobalVariable" UId="279">
+    <Symbol UId="280">
+      <Component Name="TRANSFER DB" UId="281" />
+      <Token Text="." UId="282" />
+      <Component Name="BIT" UId="283" />
+      <Token Text="." UId="284" />
+      <Component Name="SUGAR TO PREMIXING" UId="285" />
+      <Token Text="." UId="286" />
+      <Component Name="PFBV-32 TANK OUTLET VALVE" UId="287" />
     </Symbol>
   </Access>
-  <Blank UId="282" />
-  <Token Text=":=" UId="283" />
-  <Blank UId="284" />
-  <Access Scope="LiteralConstant" UId="285">
-    <Constant UId="286">
-      <ConstantValue UId="288">FALSE</ConstantValue>
+  <Blank UId="288" />
+  <Token Text=":=" UId="289" />
+  <Blank UId="290" />
+  <Access Scope="LiteralConstant" UId="291">
+    <Constant UId="292">
+      <ConstantValue UId="294">FALSE</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=";" UId="289" />
-  <NewLine UId="290" />
-  <Blank Num="4" UId="291" />
-  <Access Scope="GlobalVariable" UId="292">
-    <Symbol UId="293">
-      <Component Name="TRANSFER DB" UId="294" />
-      <Token Text="." UId="295" />
-      <Component Name="BIT" UId="296" />
-      <Token Text="." UId="297" />
-      <Component Name="SUGAR TO PREMIXING" UId="298" />
-      <Token Text="." UId="299" />
-      <Component Name="PBV-79 BASKET FILTER INLET" UId="300" />
+  <Token Text=";" UId="295" />
+  <NewLine UId="296" />
+  <Blank Num="4" UId="297" />
+  <Access Scope="GlobalVariable" UId="298">
+    <Symbol UId="299">
+      <Component Name="TRANSFER DB" UId="300" />
+      <Token Text="." UId="301" />
+      <Component Name="BIT" UId="302" />
+      <Token Text="." UId="303" />
+      <Component Name="SUGAR TO PREMIXING" UId="304" />
+      <Token Text="." UId="305" />
+      <Component Name="PBV-80 BOTTOM OUTLET TO BASKET FILTER" UId="306" />
     </Symbol>
   </Access>
-  <Blank UId="301" />
-  <Token Text=":=" UId="302" />
-  <Blank UId="303" />
-  <Access Scope="LiteralConstant" UId="304">
-    <Constant UId="305">
-      <ConstantValue UId="307">FALSE</ConstantValue>
+  <Blank UId="307" />
+  <Token Text=":=" UId="308" />
+  <Blank UId="309" />
+  <Access Scope="LiteralConstant" UId="310">
+    <Constant UId="311">
+      <ConstantValue UId="313">FALSE</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=";" UId="308" />
-  <NewLine UId="309" />
-  <Blank Num="4" UId="310" />
-  <Access Scope="GlobalVariable" UId="311">
-    <Symbol UId="312">
-      <Component Name="TRANSFER DB" UId="313" />
-      <Token Text="." UId="314" />
-      <Component Name="BIT" UId="315" />
-      <Token Text="." UId="316" />
-      <Component Name="SUGAR TO PREMIXING" UId="317" />
-      <Token Text="." UId="318" />
-      <Component Name="PBV-149" UId="319" />
+  <Token Text=";" UId="314" />
+  <NewLine UId="315" />
+  <Blank Num="4" UId="316" />
+  <Access Scope="GlobalVariable" UId="317">
+    <Symbol UId="318">
+      <Component Name="TRANSFER DB" UId="319" />
+      <Token Text="." UId="320" />
+      <Component Name="BIT" UId="321" />
+      <Token Text="." UId="322" />
+      <Component Name="SUGAR TO PREMIXING" UId="323" />
+      <Token Text="." UId="324" />
+      <Component Name="BASKET FILTER MOTOR RUN" UId="325" />
     </Symbol>
   </Access>
-  <Blank UId="320" />
-  <Token Text=":=" UId="321" />
-  <Blank UId="322" />
-  <Access Scope="LiteralConstant" UId="323">
-    <Constant UId="324">
-      <ConstantValue UId="326">FALSE</ConstantValue>
+  <Blank UId="326" />
+  <Token Text=":=" UId="327" />
+  <Blank UId="328" />
+  <Access Scope="LiteralConstant" UId="329">
+    <Constant UId="330">
+      <ConstantValue UId="332">FALSE</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=";" UId="327" />
-  <NewLine UId="328" />
-  <Blank Num="4" UId="329" />
-  <Access Scope="GlobalVariable" UId="330">
-    <Symbol UId="331">
-      <Component Name="TRANSFER DB" UId="332" />
-      <Token Text="." UId="333" />
-      <Component Name="BIT" UId="334" />
-      <Token Text="." UId="335" />
-      <Component Name="SUGAR TO PREMIXING" UId="336" />
-      <Token Text="." UId="337" />
-      <Component Name="PBV-88 BASKET FILTER TRANSFER LINE" UId="338" />
+  <Token Text=";" UId="333" />
+  <NewLine UId="334" />
+  <Blank Num="4" UId="335" />
+  <Access Scope="GlobalVariable" UId="336">
+    <Symbol UId="337">
+      <Component Name="TRANSFER DB" UId="338" />
+      <Token Text="." UId="339" />
+      <Component Name="BIT" UId="340" />
+      <Token Text="." UId="341" />
+      <Component Name="SUGAR TO PREMIXING" UId="342" />
+      <Token Text="." UId="343" />
+      <Component Name="PBV-79 BASKET FILTER INLET" UId="344" />
     </Symbol>
   </Access>
-  <Blank UId="339" />
-  <Token Text=":=" UId="340" />
-  <Blank UId="341" />
-  <Access Scope="LiteralConstant" UId="342">
-    <Constant UId="343">
-      <ConstantValue UId="345">FALSE</ConstantValue>
+  <Blank UId="345" />
+  <Token Text=":=" UId="346" />
+  <Blank UId="347" />
+  <Access Scope="LiteralConstant" UId="348">
+    <Constant UId="349">
+      <ConstantValue UId="351">FALSE</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=";" UId="346" />
-  <NewLine UId="347" />
-  <Blank Num="4" UId="348" />
-  <Access Scope="GlobalVariable" UId="349">
-    <Symbol UId="350">
-      <Component Name="TRANSFER DB" UId="351" />
-      <Token Text="." UId="352" />
-      <Component Name="BIT" UId="353" />
-      <Token Text="." UId="354" />
-      <Component Name="SUGAR TO PREMIXING" UId="355" />
-      <Token Text="." UId="356" />
-      <Component Name="PBV-87 BASKET FILTER TO PREMIX VESSEL LINE" UId="357" />
+  <Token Text=";" UId="352" />
+  <NewLine UId="353" />
+  <Blank Num="4" UId="354" />
+  <Access Scope="GlobalVariable" UId="355">
+    <Symbol UId="356">
+      <Component Name="TRANSFER DB" UId="357" />
+      <Token Text="." UId="358" />
+      <Component Name="BIT" UId="359" />
+      <Token Text="." UId="360" />
+      <Component Name="SUGAR TO PREMIXING" UId="361" />
+      <Token Text="." UId="362" />
+      <Component Name="PBV-149" UId="363" />
     </Symbol>
   </Access>
-  <Blank UId="358" />
-  <Token Text=":=" UId="359" />
-  <Blank UId="360" />
-  <Access Scope="LiteralConstant" UId="361">
-    <Constant UId="362">
-      <ConstantValue UId="364">FALSE</ConstantValue>
+  <Blank UId="364" />
+  <Token Text=":=" UId="365" />
+  <Blank UId="366" />
+  <Access Scope="LiteralConstant" UId="367">
+    <Constant UId="368">
+      <ConstantValue UId="370">FALSE</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=";" UId="365" />
-  <NewLine UId="366" />
-  <Blank Num="4" UId="367" />
-  <Token Text=";" UId="368" />
-  <NewLine UId="369" />
-  <Token Text="END_IF" UId="370" />
   <Token Text=";" UId="371" />
   <NewLine UId="372" />
+  <Blank Num="4" UId="373" />
+  <Access Scope="GlobalVariable" UId="374">
+    <Symbol UId="375">
+      <Component Name="TRANSFER DB" UId="376" />
+      <Token Text="." UId="377" />
+      <Component Name="BIT" UId="378" />
+      <Token Text="." UId="379" />
+      <Component Name="SUGAR TO PREMIXING" UId="380" />
+      <Token Text="." UId="381" />
+      <Component Name="PBV-88 BASKET FILTER TRANSFER LINE" UId="382" />
+    </Symbol>
+  </Access>
+  <Blank UId="383" />
+  <Token Text=":=" UId="384" />
+  <Blank UId="385" />
+  <Access Scope="LiteralConstant" UId="386">
+    <Constant UId="387">
+      <ConstantValue UId="389">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="390" />
+  <NewLine UId="391" />
+  <Blank Num="4" UId="392" />
+  <Access Scope="GlobalVariable" UId="393">
+    <Symbol UId="394">
+      <Component Name="TRANSFER DB" UId="395" />
+      <Token Text="." UId="396" />
+      <Component Name="BIT" UId="397" />
+      <Token Text="." UId="398" />
+      <Component Name="SUGAR TO PREMIXING" UId="399" />
+      <Token Text="." UId="400" />
+      <Component Name="PBV-87 BASKET FILTER TO PREMIX VESSEL LINE" UId="401" />
+    </Symbol>
+  </Access>
+  <Blank UId="402" />
+  <Token Text=":=" UId="403" />
+  <Blank UId="404" />
+  <Access Scope="LiteralConstant" UId="405">
+    <Constant UId="406">
+      <ConstantValue UId="408">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="409" />
+  <NewLine UId="410" />
+  <Blank Num="4" UId="411" />
+  <Token Text=";" UId="412" />
+  <NewLine UId="413" />
+  <Token Text="END_IF" UId="414" />
+  <Token Text=";" UId="415" />
+  <NewLine UId="416" />
 </StructuredText></NetworkSource>
           <ProgrammingLanguage>SCL</ProgrammingLanguage>
         </AttributeList>
@@ -4600,326 +4653,379 @@
       <ConstantValue UId="96">0</ConstantValue>
     </Constant>
   </Access>
-  <Blank UId="97" />
-  <Token Text="THEN" UId="98" />
-  <NewLine UId="99" />
-  <Blank Num="4" UId="100" />
-  <Access Scope="GlobalVariable" UId="101">
-    <Symbol UId="102">
-      <Component Name="TRANSFER DB" UId="103" />
-      <Token Text="." UId="104" />
-      <Component Name="BIT" UId="105" />
-      <Token Text="." UId="106" />
-      <Component Name="SUGAR TO MFG" UId="107" />
-      <Token Text="." UId="108" />
-      <Component Name="PFBV-32 TANK OUTLET VALVE" UId="109" />
+  <NewLine UId="97" />
+  <Blank Num="4" UId="98" />
+  <Token Text="OR" UId="99" />
+  <Blank UId="100" />
+  <Token Text="(" UId="101" />
+  <Access Scope="GlobalVariable" UId="102">
+    <Symbol UId="103">
+      <Component Name="MODE SELECTION DB" UId="104" />
+      <Token Text="." UId="105" />
+      <Component Name="MODE BUFF" UId="106" />
     </Symbol>
   </Access>
-  <Blank UId="110" />
-  <Token Text=":=" UId="111" />
+  <Token Text="=" UId="107" />
+  <Access Scope="LiteralConstant" UId="108">
+    <Constant UId="109">
+      <ConstantValue UId="111">1</ConstantValue>
+    </Constant>
+  </Access>
   <Blank UId="112" />
-  <Access Scope="LiteralConstant" UId="113">
-    <Constant UId="114">
-      <ConstantValue UId="116">TRUE</ConstantValue>
-    </Constant>
-  </Access>
-  <Token Text=";" UId="117" />
-  <NewLine UId="118" />
-  <Blank Num="4" UId="119" />
-  <Access Scope="GlobalVariable" UId="120">
-    <Symbol UId="121">
-      <Component Name="TRANSFER DB" UId="122" />
-      <Token Text="." UId="123" />
-      <Component Name="BIT" UId="124" />
-      <Token Text="." UId="125" />
-      <Component Name="SUGAR TO MFG" UId="126" />
-      <Token Text="." UId="127" />
-      <Component Name="PBV-80 BOTTOM OUTLET TO BASKET FILTER" UId="128" />
+  <Token Text="AND" UId="113" />
+  <Blank UId="114" />
+  <Access Scope="GlobalVariable" UId="115">
+    <Symbol UId="116">
+      <Component Name="SUGAR DB" UId="117" />
+      <Token Text="." UId="118" />
+      <Component Name="AUTO BUFF" UId="119" />
     </Symbol>
   </Access>
-  <Blank UId="129" />
-  <Token Text=":=" UId="130" />
-  <Blank UId="131" />
-  <Access Scope="LiteralConstant" UId="132">
-    <Constant UId="133">
-      <ConstantValue UId="135">TRUE</ConstantValue>
+  <Token Text="=" UId="120" />
+  <Access Scope="LiteralConstant" UId="121">
+    <Constant UId="122">
+      <ConstantValue UId="124">125</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=";" UId="136" />
-  <NewLine UId="137" />
-  <Blank Num="4" UId="138" />
-  <Access Scope="GlobalVariable" UId="139">
-    <Symbol UId="140">
-      <Component Name="TRANSFER DB" UId="141" />
-      <Token Text="." UId="142" />
-      <Component Name="BIT" UId="143" />
-      <Token Text="." UId="144" />
-      <Component Name="SUGAR TO MFG" UId="145" />
-      <Token Text="." UId="146" />
-      <Component Name="BASKET FILTER MOTOR RUN" UId="147" />
+  <NewLine UId="125" />
+  <Blank Num="4" UId="126" />
+  <Token Text="AND" UId="127" />
+  <Blank UId="128" />
+  <Access Scope="GlobalVariable" UId="129">
+    <Symbol UId="130">
+      <Component Name="CONTINUE DB" UId="131" />
+      <Token Text="." UId="132" />
+      <Component Name="SUGAR PROCESS ERROR" UId="133" />
     </Symbol>
   </Access>
-  <Blank UId="148" />
-  <Token Text=":=" UId="149" />
-  <Blank UId="150" />
-  <Access Scope="LiteralConstant" UId="151">
-    <Constant UId="152">
-      <ConstantValue UId="154">TRUE</ConstantValue>
+  <Blank UId="134" />
+  <Token Text="&lt;&gt;" UId="135" />
+  <Access Scope="LiteralConstant" UId="136">
+    <Constant UId="137">
+      <ConstantValue UId="139">1</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=";" UId="155" />
-  <NewLine UId="156" />
-  <Blank Num="4" UId="157" />
-  <Access Scope="GlobalVariable" UId="158">
-    <Symbol UId="159">
-      <Component Name="TRANSFER DB" UId="160" />
-      <Token Text="." UId="161" />
-      <Component Name="BIT" UId="162" />
-      <Token Text="." UId="163" />
-      <Component Name="SUGAR TO MFG" UId="164" />
-      <Token Text="." UId="165" />
-      <Component Name="PBV-79 BASKET FILTER INLET" UId="166" />
+  <Token Text=")" UId="140" />
+  <NewLine UId="141" />
+  <Token Text="THEN" UId="142" />
+  <NewLine UId="143" />
+  <Blank Num="4" UId="144" />
+  <Access Scope="GlobalVariable" UId="145">
+    <Symbol UId="146">
+      <Component Name="TRANSFER DB" UId="147" />
+      <Token Text="." UId="148" />
+      <Component Name="BIT" UId="149" />
+      <Token Text="." UId="150" />
+      <Component Name="SUGAR TO MFG" UId="151" />
+      <Token Text="." UId="152" />
+      <Component Name="PFBV-32 TANK OUTLET VALVE" UId="153" />
     </Symbol>
   </Access>
-  <Blank UId="167" />
-  <Token Text=":=" UId="168" />
-  <Blank UId="169" />
-  <Access Scope="LiteralConstant" UId="170">
-    <Constant UId="171">
-      <ConstantValue UId="173">TRUE</ConstantValue>
+  <Blank UId="154" />
+  <Token Text=":=" UId="155" />
+  <Blank UId="156" />
+  <Access Scope="LiteralConstant" UId="157">
+    <Constant UId="158">
+      <ConstantValue UId="160">TRUE</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=";" UId="174" />
-  <NewLine UId="175" />
-  <Blank Num="4" UId="176" />
-  <Access Scope="GlobalVariable" UId="177">
-    <Symbol UId="178">
-      <Component Name="TRANSFER DB" UId="179" />
-      <Token Text="." UId="180" />
-      <Component Name="BIT" UId="181" />
-      <Token Text="." UId="182" />
-      <Component Name="SUGAR TO MFG" UId="183" />
-      <Token Text="." UId="184" />
-      <Component Name="PBV-149" UId="185" />
+  <Token Text=";" UId="161" />
+  <NewLine UId="162" />
+  <Blank Num="4" UId="163" />
+  <Access Scope="GlobalVariable" UId="164">
+    <Symbol UId="165">
+      <Component Name="TRANSFER DB" UId="166" />
+      <Token Text="." UId="167" />
+      <Component Name="BIT" UId="168" />
+      <Token Text="." UId="169" />
+      <Component Name="SUGAR TO MFG" UId="170" />
+      <Token Text="." UId="171" />
+      <Component Name="PBV-80 BOTTOM OUTLET TO BASKET FILTER" UId="172" />
     </Symbol>
   </Access>
-  <Blank UId="186" />
-  <Token Text=":=" UId="187" />
-  <Blank UId="188" />
-  <Access Scope="LiteralConstant" UId="189">
-    <Constant UId="190">
-      <ConstantValue UId="192">TRUE</ConstantValue>
+  <Blank UId="173" />
+  <Token Text=":=" UId="174" />
+  <Blank UId="175" />
+  <Access Scope="LiteralConstant" UId="176">
+    <Constant UId="177">
+      <ConstantValue UId="179">TRUE</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=";" UId="193" />
-  <NewLine UId="194" />
-  <Blank Num="4" UId="195" />
-  <Access Scope="GlobalVariable" UId="196">
-    <Symbol UId="197">
-      <Component Name="TRANSFER DB" UId="198" />
-      <Token Text="." UId="199" />
-      <Component Name="BIT" UId="200" />
-      <Token Text="." UId="201" />
-      <Component Name="SUGAR TO MFG" UId="202" />
-      <Token Text="." UId="203" />
-      <Component Name="PBV-89 BASKET FILTER TO MFG INLET TRANSFER LINE" UId="204" />
+  <Token Text=";" UId="180" />
+  <NewLine UId="181" />
+  <Blank Num="4" UId="182" />
+  <Access Scope="GlobalVariable" UId="183">
+    <Symbol UId="184">
+      <Component Name="TRANSFER DB" UId="185" />
+      <Token Text="." UId="186" />
+      <Component Name="BIT" UId="187" />
+      <Token Text="." UId="188" />
+      <Component Name="SUGAR TO MFG" UId="189" />
+      <Token Text="." UId="190" />
+      <Component Name="BASKET FILTER MOTOR RUN" UId="191" />
     </Symbol>
   </Access>
-  <Blank UId="205" />
-  <Token Text=":=" UId="206" />
-  <Blank UId="207" />
-  <Access Scope="LiteralConstant" UId="208">
-    <Constant UId="209">
-      <ConstantValue UId="211">TRUE</ConstantValue>
+  <Blank UId="192" />
+  <Token Text=":=" UId="193" />
+  <Blank UId="194" />
+  <Access Scope="LiteralConstant" UId="195">
+    <Constant UId="196">
+      <ConstantValue UId="198">TRUE</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=";" UId="212" />
-  <NewLine UId="213" />
-  <Blank Num="4" UId="214" />
-  <Access Scope="GlobalVariable" UId="215">
-    <Symbol UId="216">
-      <Component Name="TRANSFER DB" UId="217" />
-      <Token Text="." UId="218" />
-      <Component Name="BIT" UId="219" />
-      <Token Text="." UId="220" />
-      <Component Name="SUGAR TO MFG" UId="221" />
-      <Token Text="." UId="222" />
-      <Component Name="PBV-101 SUGAR MELTING TO MFG TRANSFER (TOP DISH)" UId="223" />
+  <Token Text=";" UId="199" />
+  <NewLine UId="200" />
+  <Blank Num="4" UId="201" />
+  <Access Scope="GlobalVariable" UId="202">
+    <Symbol UId="203">
+      <Component Name="TRANSFER DB" UId="204" />
+      <Token Text="." UId="205" />
+      <Component Name="BIT" UId="206" />
+      <Token Text="." UId="207" />
+      <Component Name="SUGAR TO MFG" UId="208" />
+      <Token Text="." UId="209" />
+      <Component Name="PBV-79 BASKET FILTER INLET" UId="210" />
     </Symbol>
   </Access>
-  <Blank UId="224" />
-  <Token Text=":=" UId="225" />
-  <Blank UId="226" />
-  <Access Scope="LiteralConstant" UId="227">
-    <Constant UId="228">
-      <ConstantValue UId="230">TRUE</ConstantValue>
+  <Blank UId="211" />
+  <Token Text=":=" UId="212" />
+  <Blank UId="213" />
+  <Access Scope="LiteralConstant" UId="214">
+    <Constant UId="215">
+      <ConstantValue UId="217">TRUE</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=";" UId="231" />
-  <NewLine UId="232" />
-  <Blank Num="4" UId="233" />
-  <NewLine UId="234" />
-  <Token Text="ELSE" UId="235" />
-  <NewLine UId="236" />
-  <Blank Num="4" UId="237" />
-  <Access Scope="GlobalVariable" UId="238">
-    <Symbol UId="239">
-      <Component Name="TRANSFER DB" UId="240" />
-      <Token Text="." UId="241" />
-      <Component Name="BIT" UId="242" />
+  <Token Text=";" UId="218" />
+  <NewLine UId="219" />
+  <Blank Num="4" UId="220" />
+  <Access Scope="GlobalVariable" UId="221">
+    <Symbol UId="222">
+      <Component Name="TRANSFER DB" UId="223" />
+      <Token Text="." UId="224" />
+      <Component Name="BIT" UId="225" />
+      <Token Text="." UId="226" />
+      <Component Name="SUGAR TO MFG" UId="227" />
+      <Token Text="." UId="228" />
+      <Component Name="PBV-149" UId="229" />
+    </Symbol>
+  </Access>
+  <Blank UId="230" />
+  <Token Text=":=" UId="231" />
+  <Blank UId="232" />
+  <Access Scope="LiteralConstant" UId="233">
+    <Constant UId="234">
+      <ConstantValue UId="236">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="237" />
+  <NewLine UId="238" />
+  <Blank Num="4" UId="239" />
+  <Access Scope="GlobalVariable" UId="240">
+    <Symbol UId="241">
+      <Component Name="TRANSFER DB" UId="242" />
       <Token Text="." UId="243" />
-      <Component Name="SUGAR TO MFG" UId="244" />
+      <Component Name="BIT" UId="244" />
       <Token Text="." UId="245" />
-      <Component Name="PFBV-32 TANK OUTLET VALVE" UId="246" />
+      <Component Name="SUGAR TO MFG" UId="246" />
+      <Token Text="." UId="247" />
+      <Component Name="PBV-89 BASKET FILTER TO MFG INLET TRANSFER LINE" UId="248" />
     </Symbol>
   </Access>
-  <Blank UId="247" />
-  <Token Text=":=" UId="248" />
   <Blank UId="249" />
-  <Access Scope="LiteralConstant" UId="250">
-    <Constant UId="251">
-      <ConstantValue UId="253">FALSE</ConstantValue>
+  <Token Text=":=" UId="250" />
+  <Blank UId="251" />
+  <Access Scope="LiteralConstant" UId="252">
+    <Constant UId="253">
+      <ConstantValue UId="255">TRUE</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=";" UId="254" />
-  <NewLine UId="255" />
-  <Blank Num="4" UId="256" />
-  <Access Scope="GlobalVariable" UId="257">
-    <Symbol UId="258">
-      <Component Name="TRANSFER DB" UId="259" />
-      <Token Text="." UId="260" />
-      <Component Name="BIT" UId="261" />
+  <Token Text=";" UId="256" />
+  <NewLine UId="257" />
+  <Blank Num="4" UId="258" />
+  <Access Scope="GlobalVariable" UId="259">
+    <Symbol UId="260">
+      <Component Name="TRANSFER DB" UId="261" />
       <Token Text="." UId="262" />
-      <Component Name="SUGAR TO MFG" UId="263" />
+      <Component Name="BIT" UId="263" />
       <Token Text="." UId="264" />
-      <Component Name="PBV-80 BOTTOM OUTLET TO BASKET FILTER" UId="265" />
+      <Component Name="SUGAR TO MFG" UId="265" />
+      <Token Text="." UId="266" />
+      <Component Name="PBV-101 SUGAR MELTING TO MFG TRANSFER (TOP DISH)" UId="267" />
     </Symbol>
   </Access>
-  <Blank UId="266" />
-  <Token Text=":=" UId="267" />
   <Blank UId="268" />
-  <Access Scope="LiteralConstant" UId="269">
-    <Constant UId="270">
-      <ConstantValue UId="272">FALSE</ConstantValue>
+  <Token Text=":=" UId="269" />
+  <Blank UId="270" />
+  <Access Scope="LiteralConstant" UId="271">
+    <Constant UId="272">
+      <ConstantValue UId="274">TRUE</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=";" UId="273" />
-  <NewLine UId="274" />
-  <Blank Num="4" UId="275" />
-  <Access Scope="GlobalVariable" UId="276">
-    <Symbol UId="277">
-      <Component Name="TRANSFER DB" UId="278" />
-      <Token Text="." UId="279" />
-      <Component Name="BIT" UId="280" />
-      <Token Text="." UId="281" />
-      <Component Name="SUGAR TO MFG" UId="282" />
-      <Token Text="." UId="283" />
-      <Component Name="BASKET FILTER MOTOR RUN" UId="284" />
+  <Token Text=";" UId="275" />
+  <NewLine UId="276" />
+  <Blank Num="4" UId="277" />
+  <NewLine UId="278" />
+  <Token Text="ELSE" UId="279" />
+  <NewLine UId="280" />
+  <Blank Num="4" UId="281" />
+  <Access Scope="GlobalVariable" UId="282">
+    <Symbol UId="283">
+      <Component Name="TRANSFER DB" UId="284" />
+      <Token Text="." UId="285" />
+      <Component Name="BIT" UId="286" />
+      <Token Text="." UId="287" />
+      <Component Name="SUGAR TO MFG" UId="288" />
+      <Token Text="." UId="289" />
+      <Component Name="PFBV-32 TANK OUTLET VALVE" UId="290" />
     </Symbol>
   </Access>
-  <Blank UId="285" />
-  <Token Text=":=" UId="286" />
-  <Blank UId="287" />
-  <Access Scope="LiteralConstant" UId="288">
-    <Constant UId="289">
-      <ConstantValue UId="291">FALSE</ConstantValue>
+  <Blank UId="291" />
+  <Token Text=":=" UId="292" />
+  <Blank UId="293" />
+  <Access Scope="LiteralConstant" UId="294">
+    <Constant UId="295">
+      <ConstantValue UId="297">FALSE</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=";" UId="292" />
-  <NewLine UId="293" />
-  <Blank Num="4" UId="294" />
-  <Access Scope="GlobalVariable" UId="295">
-    <Symbol UId="296">
-      <Component Name="TRANSFER DB" UId="297" />
-      <Token Text="." UId="298" />
-      <Component Name="BIT" UId="299" />
-      <Token Text="." UId="300" />
-      <Component Name="SUGAR TO MFG" UId="301" />
-      <Token Text="." UId="302" />
-      <Component Name="PBV-79 BASKET FILTER INLET" UId="303" />
+  <Token Text=";" UId="298" />
+  <NewLine UId="299" />
+  <Blank Num="4" UId="300" />
+  <Access Scope="GlobalVariable" UId="301">
+    <Symbol UId="302">
+      <Component Name="TRANSFER DB" UId="303" />
+      <Token Text="." UId="304" />
+      <Component Name="BIT" UId="305" />
+      <Token Text="." UId="306" />
+      <Component Name="SUGAR TO MFG" UId="307" />
+      <Token Text="." UId="308" />
+      <Component Name="PBV-80 BOTTOM OUTLET TO BASKET FILTER" UId="309" />
     </Symbol>
   </Access>
-  <Blank UId="304" />
-  <Token Text=":=" UId="305" />
-  <Blank UId="306" />
-  <Access Scope="LiteralConstant" UId="307">
-    <Constant UId="308">
-      <ConstantValue UId="310">FALSE</ConstantValue>
+  <Blank UId="310" />
+  <Token Text=":=" UId="311" />
+  <Blank UId="312" />
+  <Access Scope="LiteralConstant" UId="313">
+    <Constant UId="314">
+      <ConstantValue UId="316">FALSE</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=";" UId="311" />
-  <NewLine UId="312" />
-  <Blank Num="4" UId="313" />
-  <Access Scope="GlobalVariable" UId="314">
-    <Symbol UId="315">
-      <Component Name="TRANSFER DB" UId="316" />
-      <Token Text="." UId="317" />
-      <Component Name="BIT" UId="318" />
-      <Token Text="." UId="319" />
-      <Component Name="SUGAR TO MFG" UId="320" />
-      <Token Text="." UId="321" />
-      <Component Name="PBV-149" UId="322" />
+  <Token Text=";" UId="317" />
+  <NewLine UId="318" />
+  <Blank Num="4" UId="319" />
+  <Access Scope="GlobalVariable" UId="320">
+    <Symbol UId="321">
+      <Component Name="TRANSFER DB" UId="322" />
+      <Token Text="." UId="323" />
+      <Component Name="BIT" UId="324" />
+      <Token Text="." UId="325" />
+      <Component Name="SUGAR TO MFG" UId="326" />
+      <Token Text="." UId="327" />
+      <Component Name="BASKET FILTER MOTOR RUN" UId="328" />
     </Symbol>
   </Access>
-  <Blank UId="323" />
-  <Token Text=":=" UId="324" />
-  <Blank UId="325" />
-  <Access Scope="LiteralConstant" UId="326">
-    <Constant UId="327">
-      <ConstantValue UId="329">FALSE</ConstantValue>
+  <Blank UId="329" />
+  <Token Text=":=" UId="330" />
+  <Blank UId="331" />
+  <Access Scope="LiteralConstant" UId="332">
+    <Constant UId="333">
+      <ConstantValue UId="335">FALSE</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=";" UId="330" />
-  <NewLine UId="331" />
-  <Blank Num="4" UId="332" />
-  <Access Scope="GlobalVariable" UId="333">
-    <Symbol UId="334">
-      <Component Name="TRANSFER DB" UId="335" />
-      <Token Text="." UId="336" />
-      <Component Name="BIT" UId="337" />
-      <Token Text="." UId="338" />
-      <Component Name="SUGAR TO MFG" UId="339" />
-      <Token Text="." UId="340" />
-      <Component Name="PBV-89 BASKET FILTER TO MFG INLET TRANSFER LINE" UId="341" />
+  <Token Text=";" UId="336" />
+  <NewLine UId="337" />
+  <Blank Num="4" UId="338" />
+  <Access Scope="GlobalVariable" UId="339">
+    <Symbol UId="340">
+      <Component Name="TRANSFER DB" UId="341" />
+      <Token Text="." UId="342" />
+      <Component Name="BIT" UId="343" />
+      <Token Text="." UId="344" />
+      <Component Name="SUGAR TO MFG" UId="345" />
+      <Token Text="." UId="346" />
+      <Component Name="PBV-79 BASKET FILTER INLET" UId="347" />
     </Symbol>
   </Access>
-  <Blank UId="342" />
-  <Token Text=":=" UId="343" />
-  <Blank UId="344" />
-  <Access Scope="LiteralConstant" UId="345">
-    <Constant UId="346">
-      <ConstantValue UId="348">FALSE</ConstantValue>
+  <Blank UId="348" />
+  <Token Text=":=" UId="349" />
+  <Blank UId="350" />
+  <Access Scope="LiteralConstant" UId="351">
+    <Constant UId="352">
+      <ConstantValue UId="354">FALSE</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=";" UId="349" />
-  <NewLine UId="350" />
-  <Blank Num="4" UId="351" />
-  <Access Scope="GlobalVariable" UId="352">
-    <Symbol UId="353">
-      <Component Name="TRANSFER DB" UId="354" />
-      <Token Text="." UId="355" />
-      <Component Name="BIT" UId="356" />
-      <Token Text="." UId="357" />
-      <Component Name="SUGAR TO MFG" UId="358" />
-      <Token Text="." UId="359" />
-      <Component Name="PBV-101 SUGAR MELTING TO MFG TRANSFER (TOP DISH)" UId="360" />
+  <Token Text=";" UId="355" />
+  <NewLine UId="356" />
+  <Blank Num="4" UId="357" />
+  <Access Scope="GlobalVariable" UId="358">
+    <Symbol UId="359">
+      <Component Name="TRANSFER DB" UId="360" />
+      <Token Text="." UId="361" />
+      <Component Name="BIT" UId="362" />
+      <Token Text="." UId="363" />
+      <Component Name="SUGAR TO MFG" UId="364" />
+      <Token Text="." UId="365" />
+      <Component Name="PBV-149" UId="366" />
     </Symbol>
   </Access>
-  <Blank UId="361" />
-  <Token Text=":=" UId="362" />
-  <Blank UId="363" />
-  <Access Scope="LiteralConstant" UId="364">
-    <Constant UId="365">
-      <ConstantValue UId="367">FALSE</ConstantValue>
+  <Blank UId="367" />
+  <Token Text=":=" UId="368" />
+  <Blank UId="369" />
+  <Access Scope="LiteralConstant" UId="370">
+    <Constant UId="371">
+      <ConstantValue UId="373">FALSE</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=";" UId="368" />
-  <NewLine UId="369" />
-  <Blank Num="4" UId="370" />
-  <Token Text=";" UId="371" />
-  <NewLine UId="372" />
-  <Token Text="END_IF" UId="373" />
   <Token Text=";" UId="374" />
+  <NewLine UId="375" />
+  <Blank Num="4" UId="376" />
+  <Access Scope="GlobalVariable" UId="377">
+    <Symbol UId="378">
+      <Component Name="TRANSFER DB" UId="379" />
+      <Token Text="." UId="380" />
+      <Component Name="BIT" UId="381" />
+      <Token Text="." UId="382" />
+      <Component Name="SUGAR TO MFG" UId="383" />
+      <Token Text="." UId="384" />
+      <Component Name="PBV-89 BASKET FILTER TO MFG INLET TRANSFER LINE" UId="385" />
+    </Symbol>
+  </Access>
+  <Blank UId="386" />
+  <Token Text=":=" UId="387" />
+  <Blank UId="388" />
+  <Access Scope="LiteralConstant" UId="389">
+    <Constant UId="390">
+      <ConstantValue UId="392">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="393" />
+  <NewLine UId="394" />
+  <Blank Num="4" UId="395" />
+  <Access Scope="GlobalVariable" UId="396">
+    <Symbol UId="397">
+      <Component Name="TRANSFER DB" UId="398" />
+      <Token Text="." UId="399" />
+      <Component Name="BIT" UId="400" />
+      <Token Text="." UId="401" />
+      <Component Name="SUGAR TO MFG" UId="402" />
+      <Token Text="." UId="403" />
+      <Component Name="PBV-101 SUGAR MELTING TO MFG TRANSFER (TOP DISH)" UId="404" />
+    </Symbol>
+  </Access>
+  <Blank UId="405" />
+  <Token Text=":=" UId="406" />
+  <Blank UId="407" />
+  <Access Scope="LiteralConstant" UId="408">
+    <Constant UId="409">
+      <ConstantValue UId="411">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="412" />
+  <NewLine UId="413" />
+  <Blank Num="4" UId="414" />
+  <Token Text=";" UId="415" />
+  <NewLine UId="416" />
+  <Token Text="END_IF" UId="417" />
+  <Token Text=";" UId="418" />
 </StructuredText></NetworkSource>
           <ProgrammingLanguage>SCL</ProgrammingLanguage>
         </AttributeList>

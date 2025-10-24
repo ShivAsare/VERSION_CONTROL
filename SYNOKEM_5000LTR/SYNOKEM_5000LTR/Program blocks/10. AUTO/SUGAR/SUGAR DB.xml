@@ -32,7 +32,6 @@
       <Member Name="PURIFIED WATER INITIAL DRAIN TIME" Datatype="Int" />
       <Member Name="PURIFIED LOAD" Datatype="Real" />
       <Member Name="PURIFIED HEATING" Datatype="Real" />
-      <Member Name="PURIFIED COOLING" Datatype="Real" />
       <Member Name="PURIFIED STIRRER MOTOR RPM" Datatype="Real" />
       <Member Name="PURIFIED STIRRER_TIME" Datatype="Int" />
       <Member Name="PURIFIED WATER JACKET DRAIN TIME" Datatype="Int" />

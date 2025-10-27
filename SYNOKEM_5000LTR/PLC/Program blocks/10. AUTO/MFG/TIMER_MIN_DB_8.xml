@@ -12,12 +12,12 @@
     <Member Name="INPUT" Datatype="Bool" />
   </Section>
   <Section Name="Output">
-    <Member Name="PRESENT VALUE OF TIME" Datatype="Int" Remanence="Retain" />
+    <Member Name="PRESENT VALUE OF TIME" Datatype="Int" />
     <Member Name="DONE" Datatype="Bool" />
   </Section>
   <Section Name="InOut" />
   <Section Name="Static">
-    <Member Name="TIMER" Datatype="IEC_TIMER" Version="1.0">
+    <Member Name="TIMER" Datatype="IEC_TIMER" Version="1.0" Remanence="Retain">
       <AttributeList>
         <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
       </AttributeList>

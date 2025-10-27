@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V19" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="RINSE-1_START_YES" Datatype="Bool" />
+    <Member Name="RINSE-1_START_NO" Datatype="Bool" />
+    <Member Name="RINSE-1_RECIRCULATION" Datatype="Bool" />
+    <Member Name="RINSE-1_DRAIN" Datatype="Bool" />
+    <Member Name="RINSE-2_START_YES" Datatype="Bool" />
+    <Member Name="RINSE-2_START_NO" Datatype="Bool" />
+    <Member Name="RINSE-2_RECIRCULATION" Datatype="Bool" />
+    <Member Name="RINSE-2_DRAIN" Datatype="Bool" />
+    <Member Name="ACID/ALKALI_START_YES" Datatype="Bool" />
+    <Member Name="ACID/ALKALI_START_NO" Datatype="Bool" />
+    <Member Name="ALKALI/ACID_RECIRCULATION" Datatype="Bool" />
+    <Member Name="ALKALI/ACID_DRAIN" Datatype="Bool" />
+    <Member Name="ACID/ALKALI CONTINUE CYCLE" Datatype="Bool" />
+    <Member Name="RINSE-3_START_YES" Datatype="Bool" />
+    <Member Name="RINSE-3_START_NO" Datatype="Bool" />
+    <Member Name="RINSE-3_RECIRCULATION" Datatype="Bool" />
+    <Member Name="RINSE-3_DRAIN" Datatype="Bool" />
+    <Member Name="FINAL_RINSE_START_YES" Datatype="Bool" />
+    <Member Name="FINAL_RINSE_START_NO" Datatype="Bool" />
+    <Member Name="FINAL_RINSE_RECIRCULATION" Datatype="Bool" />
+    <Member Name="FINAL_RINSE_FRESH_CYCLE" Datatype="Bool" />
+    <Member Name="ALKALI" Datatype="Bool" />
+    <Member Name="ACID" Datatype="Bool" />
+    <Member Name="ALKALI /ACID FRESH CYCLE" Datatype="Bool" />
+    <Member Name="FINAL_RINSE_DRAIN" Datatype="Bool" />
+    <Member Name="SW TANK_START_YES" Datatype="Bool" />
+    <Member Name="SW TANK_START_NO" Datatype="Bool" />
+    <Member Name="PW TANK_START_YES" Datatype="Bool" />
+    <Member Name="PW TANK_START_NO" Datatype="Bool" />
+    <Member Name="PW TANK_START_YES1" Datatype="Bool" />
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Standard</MemoryLayout>
+      <Name>CYCLE_POPUP</Name>
+      <Namespace />
+      <Number>37</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

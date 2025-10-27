@@ -38,34 +38,15 @@
       <Member Name="PURIFIED WATER PROCESS OF JACKET DRAIN START" Datatype="Bool" />
       <Member Name="PURIFIED WATER PROCESS OF JACKET DRAIN STOP" Datatype="Bool" />
       <Member Name="PURIFIED WATER PROCESS OVER" Datatype="Bool" />
-      <Member Name="MATERIAL ADDITION PROCESS SELECT" Datatype="Bool" />
       <Member Name="MATERIAL ADDITION PROCESS START" Datatype="Bool" />
-      <Member Name="MATERIAL ADDITION OF INITIAL DRAIN SELECT" Datatype="Bool" />
-      <Member Name="MATERIAL ADDITION OF INITIAL DRAIN START" Datatype="Bool" />
-      <Member Name="MATERIAL ADDITION OF INITIAL DRAIN STOP" Datatype="Bool" />
       <Member Name="MATERIAL ADDITION MATERIAL ADDED TEXT" Datatype="Bool" />
-      <Member Name="MATERIAL ADDITION DO YOU WANT TO ADD SORBITOL SELECT" Datatype="Bool" />
       <Member Name="MATERIAL ADDITION OF SORBITOL START" Datatype="Bool" />
-      <Member Name="MATERIAL ADDITION OF SORBITOL STIRRER START" Datatype="Bool" />
-      <Member Name="MATERIAL ADDITION OF SORBITOL STIRRER STOP" Datatype="Bool" />
       <Member Name="MATERIAL ADDITION OF SORBITOL OVER" Datatype="Bool" />
-      <Member Name="MATERIAL ADDITION DO YOU WANT TO ADD GLUCOSE SELECT" Datatype="Bool" />
       <Member Name="MATERIAL ADDITION OF GLUCOSE START" Datatype="Bool" />
-      <Member Name="MATERIAL ADDITION OF GLUCOSE STIRRER START" Datatype="Bool" />
-      <Member Name="MATERIAL ADDITION OF GLUCOSE STIRRER STOP" Datatype="Bool" />
       <Member Name="MATERIAL ADDITION OF GLUCOSE OVER" Datatype="Bool" />
-      <Member Name="MATERIAL ADDITION PROCESS OF JACKET DRAIN SELECT" Datatype="Bool" />
-      <Member Name="MATERIAL ADDITION PROCESS OF JACKET DRAIN STOP" Datatype="Bool" />
       <Member Name="MATERIAL ADDITION PROCESS OVER" Datatype="Bool" />
-      <Member Name="RECIRCULATION PROCESS SELECT" Datatype="Bool" />
       <Member Name="RECIRCULATION PROCESS START" Datatype="Bool" />
-      <Member Name="RECIRCULATION PROCESS OF INITIAL DRAIN SELECT" Datatype="Bool" />
-      <Member Name="RECIRCULATION PROCESS OF INITIAL DRAIN START" Datatype="Bool" />
-      <Member Name="RECIRCULATION PROCESS OF INITIAL DRAIN STOP" Datatype="Bool" />
-      <Member Name="RECIRCULATION PROCESS RUNING" Datatype="Bool" />
-      <Member Name="RECIRCULATION PROCESS OF JACKET DRAIN SELECT" Datatype="Bool" />
-      <Member Name="RECIRCULATION PROCESS OF JACKET DRAIN STOP" Datatype="Bool" />
-      <Member Name="RECIRCULATION OVER" Datatype="Bool" />
+      <Member Name="RECIRCULATION PROCESS OVER" Datatype="Bool" />
       <Member Name="MFG PROCESS OVER" Datatype="Bool" />
     </Member>
     <Member Name="MFG TRANSFER START" Datatype="Struct">
@@ -109,7 +90,7 @@
       <Member Name="PREMIXING PROCESS OVER" Datatype="Bool" />
     </Member>
     <Member Name="PREMIXING PROCESS ALARM" Datatype="Struct">
-      <Member Name="MFG PROCESS START" Datatype="Bool" />
+      <Member Name="PREMIXING PROCESS START" Datatype="Bool" />
       <Member Name="PURIFIED WATER PROCESS START" Datatype="Bool" />
       <Member Name="PURIFIED WATER PROCESS OF INITIAL DRAIN START" Datatype="Bool" />
       <Member Name="PURIFIED WATER PROCESS OF INITIAL DRAIN STOP" Datatype="Bool" />
@@ -122,35 +103,26 @@
       <Member Name="PURIFIED WATER PROCESS OF JACKET DRAIN START" Datatype="Bool" />
       <Member Name="PURIFIED WATER PROCESS OF JACKET DRAIN STOP" Datatype="Bool" />
       <Member Name="PURIFIED WATER PROCESS OVER" Datatype="Bool" />
-      <Member Name="MATERIAL ADDITION PROCESS SELECT" Datatype="Bool" />
       <Member Name="MATERIAL ADDITION PROCESS START" Datatype="Bool" />
-      <Member Name="MATERIAL ADDITION OF INITIAL DRAIN SELECT" Datatype="Bool" />
       <Member Name="MATERIAL ADDITION OF INITIAL DRAIN START" Datatype="Bool" />
       <Member Name="MATERIAL ADDITION OF INITIAL DRAIN STOP" Datatype="Bool" />
       <Member Name="MATERIAL ADDITION MATERIAL ADDED TEXT" Datatype="Bool" />
-      <Member Name="MATERIAL ADDITION DO YOU WANT TO ADD SORBITOL SELECT" Datatype="Bool" />
       <Member Name="MATERIAL ADDITION OF SORBITOL START" Datatype="Bool" />
-      <Member Name="MATERIAL ADDITION OF SORBITOL STIRRER START" Datatype="Bool" />
-      <Member Name="MATERIAL ADDITION OF SORBITOL STIRRER STOP" Datatype="Bool" />
       <Member Name="MATERIAL ADDITION OF SORBITOL OVER" Datatype="Bool" />
-      <Member Name="MATERIAL ADDITION DO YOU WANT TO ADD GLUCOSE SELECT" Datatype="Bool" />
       <Member Name="MATERIAL ADDITION OF GLUCOSE START" Datatype="Bool" />
-      <Member Name="MATERIAL ADDITION OF GLUCOSE STIRRER START" Datatype="Bool" />
-      <Member Name="MATERIAL ADDITION OF GLUCOSE STIRRER STOP" Datatype="Bool" />
       <Member Name="MATERIAL ADDITION OF GLUCOSE OVER" Datatype="Bool" />
       <Member Name="MATERIAL ADDITION PROCESS OF JACKET DRAIN SELECT" Datatype="Bool" />
       <Member Name="MATERIAL ADDITION PROCESS OF JACKET DRAIN STOP" Datatype="Bool" />
       <Member Name="MATERIAL ADDITION PROCESS OVER" Datatype="Bool" />
-      <Member Name="RECIRCULATION PROCESS SELECT" Datatype="Bool" />
       <Member Name="RECIRCULATION PROCESS START" Datatype="Bool" />
-      <Member Name="RECIRCULATION PROCESS OF INITIAL DRAIN SELECT" Datatype="Bool" />
       <Member Name="RECIRCULATION PROCESS OF INITIAL DRAIN START" Datatype="Bool" />
       <Member Name="RECIRCULATION PROCESS OF INITIAL DRAIN STOP" Datatype="Bool" />
-      <Member Name="RECIRCULATION PROCESS RUNING" Datatype="Bool" />
+      <Member Name="RECIRCULATION START" Datatype="Bool" />
+      <Member Name="RECIRCULATION STOP" Datatype="Bool" />
       <Member Name="RECIRCULATION PROCESS OF JACKET DRAIN SELECT" Datatype="Bool" />
       <Member Name="RECIRCULATION PROCESS OF JACKET DRAIN STOP" Datatype="Bool" />
-      <Member Name="RECIRCULATION OVER" Datatype="Bool" />
-      <Member Name="MFG PROCESS OVER" Datatype="Bool" />
+      <Member Name="RECIRCULATION PROCESS OVER" Datatype="Bool" />
+      <Member Name="PREMIXING PROCESS OVER" Datatype="Bool" />
     </Member>
     <Member Name="PREMIXING TRANSFER START" Datatype="Struct">
       <Member Name="PREMIXING TO MFG WITH INLINE HOMO" Datatype="Bool" />
@@ -179,7 +151,7 @@
       <Member Name="MFG PROCESS OVER" Datatype="Bool" />
     </Member>
     <Member Name="SUGAR PROCESS ALARM" Datatype="Struct">
-      <Member Name="MFG PROCESS START" Datatype="Bool" />
+      <Member Name="SUGAR PROCESS START" Datatype="Bool" />
       <Member Name="PURIFIED WATER PROCESS START" Datatype="Bool" />
       <Member Name="PURIFIED WATER PROCESS OF INITIAL DRAIN START" Datatype="Bool" />
       <Member Name="PURIFIED WATER PROCESS OF INITIAL DRAIN STOP" Datatype="Bool" />
@@ -192,7 +164,6 @@
       <Member Name="PURIFIED WATER PROCESS OF JACKET DRAIN START" Datatype="Bool" />
       <Member Name="PURIFIED WATER PROCESS OF JACKET DRAIN STOP" Datatype="Bool" />
       <Member Name="PURIFIED WATER PROCESS OVER" Datatype="Bool" />
-      <Member Name="MFG PROCESS OVER" Datatype="Bool" />
     </Member>
     <Member Name="SUGAR TRANSFER START" Datatype="Struct">
       <Member Name="SUGAR TRANSFER SELECT POPUP" Datatype="Bool" />

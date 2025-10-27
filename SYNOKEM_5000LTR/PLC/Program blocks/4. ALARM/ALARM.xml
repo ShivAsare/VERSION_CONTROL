@@ -1913,125 +1913,139 @@
   <Parts>
     <Access Scope="GlobalVariable" UId="21">
       <Symbol>
+        <Component Name="AlwaysFALSE" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
         <Component Name="MODE SELECTION DB" />
         <Component Name="MODE BUFF" />
       </Symbol>
     </Access>
-    <Access Scope="LiteralConstant" UId="22">
+    <Access Scope="LiteralConstant" UId="23">
       <Constant>
         <ConstantType>Int</ConstantType>
         <ConstantValue>0</ConstantValue>
       </Constant>
     </Access>
-    <Access Scope="GlobalVariable" UId="23">
+    <Access Scope="GlobalVariable" UId="24">
       <Symbol>
         <Component Name="TRANSFER DB" />
         <Component Name="BUFF" />
         <Component Name="MFG TO STORAGE-1 WITH INLINE HOMO" />
       </Symbol>
     </Access>
-    <Access Scope="LiteralConstant" UId="24">
+    <Access Scope="LiteralConstant" UId="25">
       <Constant>
         <ConstantType>Int</ConstantType>
         <ConstantValue>3</ConstantValue>
       </Constant>
     </Access>
-    <Access Scope="TypedConstant" UId="25">
+    <Access Scope="TypedConstant" UId="26">
       <Constant>
         <ConstantValue>T#1S</ConstantValue>
       </Constant>
     </Access>
-    <Access Scope="GlobalVariable" UId="26">
+    <Access Scope="GlobalVariable" UId="27">
       <Symbol>
         <Component Name="ALARM DB" />
         <Component Name="MFG TO STORAGE-1 WITH INLINE HOMOGENIZER TRANSFER COMPLETE" />
       </Symbol>
     </Access>
-    <Access Scope="GlobalVariable" UId="27">
+    <Access Scope="GlobalVariable" UId="28">
       <Symbol>
         <Component Name="P_TRIG" />
         <Component Name="21" />
       </Symbol>
     </Access>
-    <Access Scope="GlobalVariable" UId="28">
+    <Access Scope="GlobalVariable" UId="29">
       <Symbol>
         <Component Name="DO MAPING" />
         <Component Name="HOOTER_1" />
       </Symbol>
     </Access>
-    <Part Name="Ne" UId="29">
+    <Part Name="Contact" UId="30" />
+    <Part Name="Ne" UId="31">
       <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
     </Part>
-    <Part Name="Eq" UId="30">
+    <Part Name="Eq" UId="32">
       <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
     </Part>
-    <Part Name="TP" Version="1.0" UId="31">
-      <Instance Scope="GlobalVariable" UId="32">
+    <Part Name="TP" Version="1.0" UId="33">
+      <Instance Scope="GlobalVariable" UId="34">
         <Component Name="IEC_Timer_0_DB_27" />
       </Instance>
       <TemplateValue Name="time_type" Type="Type">Time</TemplateValue>
     </Part>
-    <Part Name="Coil" UId="33" />
-    <Part Name="PBox" UId="34" />
-    <Part Name="SCoil" UId="35" />
+    <Part Name="Coil" UId="35" />
+    <Part Name="PBox" UId="36" />
+    <Part Name="SCoil" UId="37" />
   </Parts>
   <Wires>
-    <Wire UId="37">
-      <Powerrail />
-      <NameCon UId="29" Name="pre" />
-    </Wire>
-    <Wire UId="38">
-      <IdentCon UId="21" />
-      <NameCon UId="29" Name="in1" />
-    </Wire>
     <Wire UId="39">
-      <IdentCon UId="22" />
-      <NameCon UId="29" Name="in2" />
+      <Powerrail />
+      <NameCon UId="30" Name="in" />
     </Wire>
     <Wire UId="40">
-      <NameCon UId="29" Name="out" />
-      <NameCon UId="30" Name="pre" />
+      <IdentCon UId="21" />
+      <NameCon UId="30" Name="operand" />
     </Wire>
     <Wire UId="41">
-      <IdentCon UId="23" />
-      <NameCon UId="30" Name="in1" />
+      <NameCon UId="30" Name="out" />
+      <NameCon UId="31" Name="pre" />
     </Wire>
     <Wire UId="42">
-      <IdentCon UId="24" />
-      <NameCon UId="30" Name="in2" />
+      <IdentCon UId="22" />
+      <NameCon UId="31" Name="in1" />
     </Wire>
     <Wire UId="43">
-      <NameCon UId="30" Name="out" />
-      <NameCon UId="31" Name="IN" />
+      <IdentCon UId="23" />
+      <NameCon UId="31" Name="in2" />
     </Wire>
     <Wire UId="44">
-      <IdentCon UId="25" />
-      <NameCon UId="31" Name="PT" />
+      <NameCon UId="31" Name="out" />
+      <NameCon UId="32" Name="pre" />
     </Wire>
     <Wire UId="45">
-      <NameCon UId="31" Name="Q" />
-      <NameCon UId="33" Name="in" />
-      <NameCon UId="34" Name="in" />
+      <IdentCon UId="24" />
+      <NameCon UId="32" Name="in1" />
     </Wire>
     <Wire UId="46">
-      <NameCon UId="31" Name="ET" />
-      <OpenCon UId="36" />
+      <IdentCon UId="25" />
+      <NameCon UId="32" Name="in2" />
     </Wire>
     <Wire UId="47">
-      <IdentCon UId="26" />
-      <NameCon UId="33" Name="operand" />
+      <NameCon UId="32" Name="out" />
+      <NameCon UId="33" Name="IN" />
     </Wire>
     <Wire UId="48">
-      <IdentCon UId="27" />
-      <NameCon UId="34" Name="bit" />
+      <IdentCon UId="26" />
+      <NameCon UId="33" Name="PT" />
     </Wire>
     <Wire UId="49">
-      <NameCon UId="34" Name="out" />
+      <NameCon UId="33" Name="Q" />
       <NameCon UId="35" Name="in" />
+      <NameCon UId="36" Name="in" />
     </Wire>
     <Wire UId="50">
-      <IdentCon UId="28" />
+      <NameCon UId="33" Name="ET" />
+      <OpenCon UId="38" />
+    </Wire>
+    <Wire UId="51">
+      <IdentCon UId="27" />
       <NameCon UId="35" Name="operand" />
+    </Wire>
+    <Wire UId="52">
+      <IdentCon UId="28" />
+      <NameCon UId="36" Name="bit" />
+    </Wire>
+    <Wire UId="53">
+      <NameCon UId="36" Name="out" />
+      <NameCon UId="37" Name="in" />
+    </Wire>
+    <Wire UId="54">
+      <IdentCon UId="29" />
+      <NameCon UId="37" Name="operand" />
     </Wire>
   </Wires>
 </FlgNet></NetworkSource>
@@ -2066,125 +2080,139 @@
   <Parts>
     <Access Scope="GlobalVariable" UId="21">
       <Symbol>
+        <Component Name="AlwaysFALSE" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
         <Component Name="MODE SELECTION DB" />
         <Component Name="MODE BUFF" />
       </Symbol>
     </Access>
-    <Access Scope="LiteralConstant" UId="22">
+    <Access Scope="LiteralConstant" UId="23">
       <Constant>
         <ConstantType>Int</ConstantType>
         <ConstantValue>0</ConstantValue>
       </Constant>
     </Access>
-    <Access Scope="GlobalVariable" UId="23">
+    <Access Scope="GlobalVariable" UId="24">
       <Symbol>
         <Component Name="TRANSFER DB" />
         <Component Name="BUFF" />
         <Component Name="MFG TO STORAGE-1 WITH INLINE FILTER PRES" />
       </Symbol>
     </Access>
-    <Access Scope="LiteralConstant" UId="24">
+    <Access Scope="LiteralConstant" UId="25">
       <Constant>
         <ConstantType>Int</ConstantType>
         <ConstantValue>3</ConstantValue>
       </Constant>
     </Access>
-    <Access Scope="TypedConstant" UId="25">
+    <Access Scope="TypedConstant" UId="26">
       <Constant>
         <ConstantValue>T#1S</ConstantValue>
       </Constant>
     </Access>
-    <Access Scope="GlobalVariable" UId="26">
+    <Access Scope="GlobalVariable" UId="27">
       <Symbol>
         <Component Name="ALARM DB" />
         <Component Name="MFG TO STORAGE-1 WITH FILTER PRESS TRANSFER COMPLETE" />
       </Symbol>
     </Access>
-    <Access Scope="GlobalVariable" UId="27">
+    <Access Scope="GlobalVariable" UId="28">
       <Symbol>
         <Component Name="P_TRIG" />
         <Component Name="22" />
       </Symbol>
     </Access>
-    <Access Scope="GlobalVariable" UId="28">
+    <Access Scope="GlobalVariable" UId="29">
       <Symbol>
         <Component Name="DO MAPING" />
         <Component Name="HOOTER_1" />
       </Symbol>
     </Access>
-    <Part Name="Ne" UId="29">
+    <Part Name="Contact" UId="30" />
+    <Part Name="Ne" UId="31">
       <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
     </Part>
-    <Part Name="Eq" UId="30">
+    <Part Name="Eq" UId="32">
       <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
     </Part>
-    <Part Name="TP" Version="1.0" UId="31">
-      <Instance Scope="GlobalVariable" UId="32">
+    <Part Name="TP" Version="1.0" UId="33">
+      <Instance Scope="GlobalVariable" UId="34">
         <Component Name="IEC_Timer_0_DB_32" />
       </Instance>
       <TemplateValue Name="time_type" Type="Type">Time</TemplateValue>
     </Part>
-    <Part Name="Coil" UId="33" />
-    <Part Name="PBox" UId="34" />
-    <Part Name="SCoil" UId="35" />
+    <Part Name="Coil" UId="35" />
+    <Part Name="PBox" UId="36" />
+    <Part Name="SCoil" UId="37" />
   </Parts>
   <Wires>
-    <Wire UId="37">
-      <Powerrail />
-      <NameCon UId="29" Name="pre" />
-    </Wire>
-    <Wire UId="38">
-      <IdentCon UId="21" />
-      <NameCon UId="29" Name="in1" />
-    </Wire>
     <Wire UId="39">
-      <IdentCon UId="22" />
-      <NameCon UId="29" Name="in2" />
+      <Powerrail />
+      <NameCon UId="30" Name="in" />
     </Wire>
     <Wire UId="40">
-      <NameCon UId="29" Name="out" />
-      <NameCon UId="30" Name="pre" />
+      <IdentCon UId="21" />
+      <NameCon UId="30" Name="operand" />
     </Wire>
     <Wire UId="41">
-      <IdentCon UId="23" />
-      <NameCon UId="30" Name="in1" />
+      <NameCon UId="30" Name="out" />
+      <NameCon UId="31" Name="pre" />
     </Wire>
     <Wire UId="42">
-      <IdentCon UId="24" />
-      <NameCon UId="30" Name="in2" />
+      <IdentCon UId="22" />
+      <NameCon UId="31" Name="in1" />
     </Wire>
     <Wire UId="43">
-      <NameCon UId="30" Name="out" />
-      <NameCon UId="31" Name="IN" />
+      <IdentCon UId="23" />
+      <NameCon UId="31" Name="in2" />
     </Wire>
     <Wire UId="44">
-      <IdentCon UId="25" />
-      <NameCon UId="31" Name="PT" />
+      <NameCon UId="31" Name="out" />
+      <NameCon UId="32" Name="pre" />
     </Wire>
     <Wire UId="45">
-      <NameCon UId="31" Name="Q" />
-      <NameCon UId="33" Name="in" />
-      <NameCon UId="34" Name="in" />
+      <IdentCon UId="24" />
+      <NameCon UId="32" Name="in1" />
     </Wire>
     <Wire UId="46">
-      <NameCon UId="31" Name="ET" />
-      <OpenCon UId="36" />
+      <IdentCon UId="25" />
+      <NameCon UId="32" Name="in2" />
     </Wire>
     <Wire UId="47">
-      <IdentCon UId="26" />
-      <NameCon UId="33" Name="operand" />
+      <NameCon UId="32" Name="out" />
+      <NameCon UId="33" Name="IN" />
     </Wire>
     <Wire UId="48">
-      <IdentCon UId="27" />
-      <NameCon UId="34" Name="bit" />
+      <IdentCon UId="26" />
+      <NameCon UId="33" Name="PT" />
     </Wire>
     <Wire UId="49">
-      <NameCon UId="34" Name="out" />
+      <NameCon UId="33" Name="Q" />
       <NameCon UId="35" Name="in" />
+      <NameCon UId="36" Name="in" />
     </Wire>
     <Wire UId="50">
-      <IdentCon UId="28" />
+      <NameCon UId="33" Name="ET" />
+      <OpenCon UId="38" />
+    </Wire>
+    <Wire UId="51">
+      <IdentCon UId="27" />
       <NameCon UId="35" Name="operand" />
+    </Wire>
+    <Wire UId="52">
+      <IdentCon UId="28" />
+      <NameCon UId="36" Name="bit" />
+    </Wire>
+    <Wire UId="53">
+      <NameCon UId="36" Name="out" />
+      <NameCon UId="37" Name="in" />
+    </Wire>
+    <Wire UId="54">
+      <IdentCon UId="29" />
+      <NameCon UId="37" Name="operand" />
     </Wire>
   </Wires>
 </FlgNet></NetworkSource>
@@ -2219,125 +2247,139 @@
   <Parts>
     <Access Scope="GlobalVariable" UId="21">
       <Symbol>
+        <Component Name="AlwaysFALSE" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
         <Component Name="MODE SELECTION DB" />
         <Component Name="MODE BUFF" />
       </Symbol>
     </Access>
-    <Access Scope="LiteralConstant" UId="22">
+    <Access Scope="LiteralConstant" UId="23">
       <Constant>
         <ConstantType>Int</ConstantType>
         <ConstantValue>0</ConstantValue>
       </Constant>
     </Access>
-    <Access Scope="GlobalVariable" UId="23">
+    <Access Scope="GlobalVariable" UId="24">
       <Symbol>
         <Component Name="TRANSFER DB" />
         <Component Name="BUFF" />
         <Component Name="MFG TO STORAGE-2 WITH INLINE HOMO" />
       </Symbol>
     </Access>
-    <Access Scope="LiteralConstant" UId="24">
+    <Access Scope="LiteralConstant" UId="25">
       <Constant>
         <ConstantType>Int</ConstantType>
         <ConstantValue>3</ConstantValue>
       </Constant>
     </Access>
-    <Access Scope="TypedConstant" UId="25">
+    <Access Scope="TypedConstant" UId="26">
       <Constant>
         <ConstantValue>T#1S</ConstantValue>
       </Constant>
     </Access>
-    <Access Scope="GlobalVariable" UId="26">
+    <Access Scope="GlobalVariable" UId="27">
       <Symbol>
         <Component Name="ALARM DB" />
         <Component Name="MFG TO STORAGE-2 WITH INLINE HOMOGENIZER TRANSFER COMPLETE" />
       </Symbol>
     </Access>
-    <Access Scope="GlobalVariable" UId="27">
+    <Access Scope="GlobalVariable" UId="28">
       <Symbol>
         <Component Name="P_TRIG" />
         <Component Name="23" />
       </Symbol>
     </Access>
-    <Access Scope="GlobalVariable" UId="28">
+    <Access Scope="GlobalVariable" UId="29">
       <Symbol>
         <Component Name="DO MAPING" />
         <Component Name="HOOTER_1" />
       </Symbol>
     </Access>
-    <Part Name="Ne" UId="29">
+    <Part Name="Contact" UId="30" />
+    <Part Name="Ne" UId="31">
       <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
     </Part>
-    <Part Name="Eq" UId="30">
+    <Part Name="Eq" UId="32">
       <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
     </Part>
-    <Part Name="TP" Version="1.0" UId="31">
-      <Instance Scope="GlobalVariable" UId="32">
+    <Part Name="TP" Version="1.0" UId="33">
+      <Instance Scope="GlobalVariable" UId="34">
         <Component Name="IEC_Timer_0_DB_33" />
       </Instance>
       <TemplateValue Name="time_type" Type="Type">Time</TemplateValue>
     </Part>
-    <Part Name="Coil" UId="33" />
-    <Part Name="PBox" UId="34" />
-    <Part Name="SCoil" UId="35" />
+    <Part Name="Coil" UId="35" />
+    <Part Name="PBox" UId="36" />
+    <Part Name="SCoil" UId="37" />
   </Parts>
   <Wires>
-    <Wire UId="37">
-      <Powerrail />
-      <NameCon UId="29" Name="pre" />
-    </Wire>
-    <Wire UId="38">
-      <IdentCon UId="21" />
-      <NameCon UId="29" Name="in1" />
-    </Wire>
     <Wire UId="39">
-      <IdentCon UId="22" />
-      <NameCon UId="29" Name="in2" />
+      <Powerrail />
+      <NameCon UId="30" Name="in" />
     </Wire>
     <Wire UId="40">
-      <NameCon UId="29" Name="out" />
-      <NameCon UId="30" Name="pre" />
+      <IdentCon UId="21" />
+      <NameCon UId="30" Name="operand" />
     </Wire>
     <Wire UId="41">
-      <IdentCon UId="23" />
-      <NameCon UId="30" Name="in1" />
+      <NameCon UId="30" Name="out" />
+      <NameCon UId="31" Name="pre" />
     </Wire>
     <Wire UId="42">
-      <IdentCon UId="24" />
-      <NameCon UId="30" Name="in2" />
+      <IdentCon UId="22" />
+      <NameCon UId="31" Name="in1" />
     </Wire>
     <Wire UId="43">
-      <NameCon UId="30" Name="out" />
-      <NameCon UId="31" Name="IN" />
+      <IdentCon UId="23" />
+      <NameCon UId="31" Name="in2" />
     </Wire>
     <Wire UId="44">
-      <IdentCon UId="25" />
-      <NameCon UId="31" Name="PT" />
+      <NameCon UId="31" Name="out" />
+      <NameCon UId="32" Name="pre" />
     </Wire>
     <Wire UId="45">
-      <NameCon UId="31" Name="Q" />
-      <NameCon UId="33" Name="in" />
-      <NameCon UId="34" Name="in" />
+      <IdentCon UId="24" />
+      <NameCon UId="32" Name="in1" />
     </Wire>
     <Wire UId="46">
-      <NameCon UId="31" Name="ET" />
-      <OpenCon UId="36" />
+      <IdentCon UId="25" />
+      <NameCon UId="32" Name="in2" />
     </Wire>
     <Wire UId="47">
-      <IdentCon UId="26" />
-      <NameCon UId="33" Name="operand" />
+      <NameCon UId="32" Name="out" />
+      <NameCon UId="33" Name="IN" />
     </Wire>
     <Wire UId="48">
-      <IdentCon UId="27" />
-      <NameCon UId="34" Name="bit" />
+      <IdentCon UId="26" />
+      <NameCon UId="33" Name="PT" />
     </Wire>
     <Wire UId="49">
-      <NameCon UId="34" Name="out" />
+      <NameCon UId="33" Name="Q" />
       <NameCon UId="35" Name="in" />
+      <NameCon UId="36" Name="in" />
     </Wire>
     <Wire UId="50">
-      <IdentCon UId="28" />
+      <NameCon UId="33" Name="ET" />
+      <OpenCon UId="38" />
+    </Wire>
+    <Wire UId="51">
+      <IdentCon UId="27" />
       <NameCon UId="35" Name="operand" />
+    </Wire>
+    <Wire UId="52">
+      <IdentCon UId="28" />
+      <NameCon UId="36" Name="bit" />
+    </Wire>
+    <Wire UId="53">
+      <NameCon UId="36" Name="out" />
+      <NameCon UId="37" Name="in" />
+    </Wire>
+    <Wire UId="54">
+      <IdentCon UId="29" />
+      <NameCon UId="37" Name="operand" />
     </Wire>
   </Wires>
 </FlgNet></NetworkSource>
@@ -2372,125 +2414,139 @@
   <Parts>
     <Access Scope="GlobalVariable" UId="21">
       <Symbol>
+        <Component Name="AlwaysFALSE" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
         <Component Name="MODE SELECTION DB" />
         <Component Name="MODE BUFF" />
       </Symbol>
     </Access>
-    <Access Scope="LiteralConstant" UId="22">
+    <Access Scope="LiteralConstant" UId="23">
       <Constant>
         <ConstantType>Int</ConstantType>
         <ConstantValue>0</ConstantValue>
       </Constant>
     </Access>
-    <Access Scope="GlobalVariable" UId="23">
+    <Access Scope="GlobalVariable" UId="24">
       <Symbol>
         <Component Name="TRANSFER DB" />
         <Component Name="BUFF" />
         <Component Name="MFG TO STORAGE-2 WITH INLINE FILTER PRES" />
       </Symbol>
     </Access>
-    <Access Scope="LiteralConstant" UId="24">
+    <Access Scope="LiteralConstant" UId="25">
       <Constant>
         <ConstantType>Int</ConstantType>
         <ConstantValue>3</ConstantValue>
       </Constant>
     </Access>
-    <Access Scope="TypedConstant" UId="25">
+    <Access Scope="TypedConstant" UId="26">
       <Constant>
         <ConstantValue>T#1S</ConstantValue>
       </Constant>
     </Access>
-    <Access Scope="GlobalVariable" UId="26">
+    <Access Scope="GlobalVariable" UId="27">
       <Symbol>
         <Component Name="ALARM DB" />
         <Component Name="MFG TO STORAGE-2 WITH FILTER PRESS TRANSFER COMPLETE" />
       </Symbol>
     </Access>
-    <Access Scope="GlobalVariable" UId="27">
+    <Access Scope="GlobalVariable" UId="28">
       <Symbol>
         <Component Name="P_TRIG" />
         <Component Name="24" />
       </Symbol>
     </Access>
-    <Access Scope="GlobalVariable" UId="28">
+    <Access Scope="GlobalVariable" UId="29">
       <Symbol>
         <Component Name="DO MAPING" />
         <Component Name="HOOTER_1" />
       </Symbol>
     </Access>
-    <Part Name="Ne" UId="29">
+    <Part Name="Contact" UId="30" />
+    <Part Name="Ne" UId="31">
       <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
     </Part>
-    <Part Name="Eq" UId="30">
+    <Part Name="Eq" UId="32">
       <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
     </Part>
-    <Part Name="TP" Version="1.0" UId="31">
-      <Instance Scope="GlobalVariable" UId="32">
+    <Part Name="TP" Version="1.0" UId="33">
+      <Instance Scope="GlobalVariable" UId="34">
         <Component Name="IEC_Timer_0_DB_34" />
       </Instance>
       <TemplateValue Name="time_type" Type="Type">Time</TemplateValue>
     </Part>
-    <Part Name="Coil" UId="33" />
-    <Part Name="PBox" UId="34" />
-    <Part Name="SCoil" UId="35" />
+    <Part Name="Coil" UId="35" />
+    <Part Name="PBox" UId="36" />
+    <Part Name="SCoil" UId="37" />
   </Parts>
   <Wires>
-    <Wire UId="37">
-      <Powerrail />
-      <NameCon UId="29" Name="pre" />
-    </Wire>
-    <Wire UId="38">
-      <IdentCon UId="21" />
-      <NameCon UId="29" Name="in1" />
-    </Wire>
     <Wire UId="39">
-      <IdentCon UId="22" />
-      <NameCon UId="29" Name="in2" />
+      <Powerrail />
+      <NameCon UId="30" Name="in" />
     </Wire>
     <Wire UId="40">
-      <NameCon UId="29" Name="out" />
-      <NameCon UId="30" Name="pre" />
+      <IdentCon UId="21" />
+      <NameCon UId="30" Name="operand" />
     </Wire>
     <Wire UId="41">
-      <IdentCon UId="23" />
-      <NameCon UId="30" Name="in1" />
+      <NameCon UId="30" Name="out" />
+      <NameCon UId="31" Name="pre" />
     </Wire>
     <Wire UId="42">
-      <IdentCon UId="24" />
-      <NameCon UId="30" Name="in2" />
+      <IdentCon UId="22" />
+      <NameCon UId="31" Name="in1" />
     </Wire>
     <Wire UId="43">
-      <NameCon UId="30" Name="out" />
-      <NameCon UId="31" Name="IN" />
+      <IdentCon UId="23" />
+      <NameCon UId="31" Name="in2" />
     </Wire>
     <Wire UId="44">
-      <IdentCon UId="25" />
-      <NameCon UId="31" Name="PT" />
+      <NameCon UId="31" Name="out" />
+      <NameCon UId="32" Name="pre" />
     </Wire>
     <Wire UId="45">
-      <NameCon UId="31" Name="Q" />
-      <NameCon UId="33" Name="in" />
-      <NameCon UId="34" Name="in" />
+      <IdentCon UId="24" />
+      <NameCon UId="32" Name="in1" />
     </Wire>
     <Wire UId="46">
-      <NameCon UId="31" Name="ET" />
-      <OpenCon UId="36" />
+      <IdentCon UId="25" />
+      <NameCon UId="32" Name="in2" />
     </Wire>
     <Wire UId="47">
-      <IdentCon UId="26" />
-      <NameCon UId="33" Name="operand" />
+      <NameCon UId="32" Name="out" />
+      <NameCon UId="33" Name="IN" />
     </Wire>
     <Wire UId="48">
-      <IdentCon UId="27" />
-      <NameCon UId="34" Name="bit" />
+      <IdentCon UId="26" />
+      <NameCon UId="33" Name="PT" />
     </Wire>
     <Wire UId="49">
-      <NameCon UId="34" Name="out" />
+      <NameCon UId="33" Name="Q" />
       <NameCon UId="35" Name="in" />
+      <NameCon UId="36" Name="in" />
     </Wire>
     <Wire UId="50">
-      <IdentCon UId="28" />
+      <NameCon UId="33" Name="ET" />
+      <OpenCon UId="38" />
+    </Wire>
+    <Wire UId="51">
+      <IdentCon UId="27" />
       <NameCon UId="35" Name="operand" />
+    </Wire>
+    <Wire UId="52">
+      <IdentCon UId="28" />
+      <NameCon UId="36" Name="bit" />
+    </Wire>
+    <Wire UId="53">
+      <NameCon UId="36" Name="out" />
+      <NameCon UId="37" Name="in" />
+    </Wire>
+    <Wire UId="54">
+      <IdentCon UId="29" />
+      <NameCon UId="37" Name="operand" />
     </Wire>
   </Wires>
 </FlgNet></NetworkSource>
@@ -2525,125 +2581,139 @@
   <Parts>
     <Access Scope="GlobalVariable" UId="21">
       <Symbol>
+        <Component Name="AlwaysFALSE" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
         <Component Name="MODE SELECTION DB" />
         <Component Name="MODE BUFF" />
       </Symbol>
     </Access>
-    <Access Scope="LiteralConstant" UId="22">
+    <Access Scope="LiteralConstant" UId="23">
       <Constant>
         <ConstantType>Int</ConstantType>
         <ConstantValue>0</ConstantValue>
       </Constant>
     </Access>
-    <Access Scope="GlobalVariable" UId="23">
+    <Access Scope="GlobalVariable" UId="24">
       <Symbol>
         <Component Name="TRANSFER DB" />
         <Component Name="BUFF" />
         <Component Name="MFG TO STORAGE-3 WITH INLINE HOMO" />
       </Symbol>
     </Access>
-    <Access Scope="LiteralConstant" UId="24">
+    <Access Scope="LiteralConstant" UId="25">
       <Constant>
         <ConstantType>Int</ConstantType>
         <ConstantValue>3</ConstantValue>
       </Constant>
     </Access>
-    <Access Scope="TypedConstant" UId="25">
+    <Access Scope="TypedConstant" UId="26">
       <Constant>
         <ConstantValue>T#1S</ConstantValue>
       </Constant>
     </Access>
-    <Access Scope="GlobalVariable" UId="26">
+    <Access Scope="GlobalVariable" UId="27">
       <Symbol>
         <Component Name="ALARM DB" />
         <Component Name="MFG TO STORAGE-3 WITH INLINE HOMOGENIZER TRANSFER COMPLETE" />
       </Symbol>
     </Access>
-    <Access Scope="GlobalVariable" UId="27">
+    <Access Scope="GlobalVariable" UId="28">
       <Symbol>
         <Component Name="P_TRIG" />
         <Component Name="25" />
       </Symbol>
     </Access>
-    <Access Scope="GlobalVariable" UId="28">
+    <Access Scope="GlobalVariable" UId="29">
       <Symbol>
         <Component Name="DO MAPING" />
         <Component Name="HOOTER_1" />
       </Symbol>
     </Access>
-    <Part Name="Ne" UId="29">
+    <Part Name="Contact" UId="30" />
+    <Part Name="Ne" UId="31">
       <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
     </Part>
-    <Part Name="Eq" UId="30">
+    <Part Name="Eq" UId="32">
       <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
     </Part>
-    <Part Name="TP" Version="1.0" UId="31">
-      <Instance Scope="GlobalVariable" UId="32">
+    <Part Name="TP" Version="1.0" UId="33">
+      <Instance Scope="GlobalVariable" UId="34">
         <Component Name="IEC_Timer_0_DB_35" />
       </Instance>
       <TemplateValue Name="time_type" Type="Type">Time</TemplateValue>
     </Part>
-    <Part Name="Coil" UId="33" />
-    <Part Name="PBox" UId="34" />
-    <Part Name="SCoil" UId="35" />
+    <Part Name="Coil" UId="35" />
+    <Part Name="PBox" UId="36" />
+    <Part Name="SCoil" UId="37" />
   </Parts>
   <Wires>
-    <Wire UId="37">
-      <Powerrail />
-      <NameCon UId="29" Name="pre" />
-    </Wire>
-    <Wire UId="38">
-      <IdentCon UId="21" />
-      <NameCon UId="29" Name="in1" />
-    </Wire>
     <Wire UId="39">
-      <IdentCon UId="22" />
-      <NameCon UId="29" Name="in2" />
+      <Powerrail />
+      <NameCon UId="30" Name="in" />
     </Wire>
     <Wire UId="40">
-      <NameCon UId="29" Name="out" />
-      <NameCon UId="30" Name="pre" />
+      <IdentCon UId="21" />
+      <NameCon UId="30" Name="operand" />
     </Wire>
     <Wire UId="41">
-      <IdentCon UId="23" />
-      <NameCon UId="30" Name="in1" />
+      <NameCon UId="30" Name="out" />
+      <NameCon UId="31" Name="pre" />
     </Wire>
     <Wire UId="42">
-      <IdentCon UId="24" />
-      <NameCon UId="30" Name="in2" />
+      <IdentCon UId="22" />
+      <NameCon UId="31" Name="in1" />
     </Wire>
     <Wire UId="43">
-      <NameCon UId="30" Name="out" />
-      <NameCon UId="31" Name="IN" />
+      <IdentCon UId="23" />
+      <NameCon UId="31" Name="in2" />
     </Wire>
     <Wire UId="44">
-      <IdentCon UId="25" />
-      <NameCon UId="31" Name="PT" />
+      <NameCon UId="31" Name="out" />
+      <NameCon UId="32" Name="pre" />
     </Wire>
     <Wire UId="45">
-      <NameCon UId="31" Name="Q" />
-      <NameCon UId="33" Name="in" />
-      <NameCon UId="34" Name="in" />
+      <IdentCon UId="24" />
+      <NameCon UId="32" Name="in1" />
     </Wire>
     <Wire UId="46">
-      <NameCon UId="31" Name="ET" />
-      <OpenCon UId="36" />
+      <IdentCon UId="25" />
+      <NameCon UId="32" Name="in2" />
     </Wire>
     <Wire UId="47">
-      <IdentCon UId="26" />
-      <NameCon UId="33" Name="operand" />
+      <NameCon UId="32" Name="out" />
+      <NameCon UId="33" Name="IN" />
     </Wire>
     <Wire UId="48">
-      <IdentCon UId="27" />
-      <NameCon UId="34" Name="bit" />
+      <IdentCon UId="26" />
+      <NameCon UId="33" Name="PT" />
     </Wire>
     <Wire UId="49">
-      <NameCon UId="34" Name="out" />
+      <NameCon UId="33" Name="Q" />
       <NameCon UId="35" Name="in" />
+      <NameCon UId="36" Name="in" />
     </Wire>
     <Wire UId="50">
-      <IdentCon UId="28" />
+      <NameCon UId="33" Name="ET" />
+      <OpenCon UId="38" />
+    </Wire>
+    <Wire UId="51">
+      <IdentCon UId="27" />
       <NameCon UId="35" Name="operand" />
+    </Wire>
+    <Wire UId="52">
+      <IdentCon UId="28" />
+      <NameCon UId="36" Name="bit" />
+    </Wire>
+    <Wire UId="53">
+      <NameCon UId="36" Name="out" />
+      <NameCon UId="37" Name="in" />
+    </Wire>
+    <Wire UId="54">
+      <IdentCon UId="29" />
+      <NameCon UId="37" Name="operand" />
     </Wire>
   </Wires>
 </FlgNet></NetworkSource>
@@ -2678,125 +2748,139 @@
   <Parts>
     <Access Scope="GlobalVariable" UId="21">
       <Symbol>
+        <Component Name="AlwaysFALSE" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
         <Component Name="MODE SELECTION DB" />
         <Component Name="MODE BUFF" />
       </Symbol>
     </Access>
-    <Access Scope="LiteralConstant" UId="22">
+    <Access Scope="LiteralConstant" UId="23">
       <Constant>
         <ConstantType>Int</ConstantType>
         <ConstantValue>0</ConstantValue>
       </Constant>
     </Access>
-    <Access Scope="GlobalVariable" UId="23">
+    <Access Scope="GlobalVariable" UId="24">
       <Symbol>
         <Component Name="TRANSFER DB" />
         <Component Name="BUFF" />
         <Component Name="MFG TO STORAGE-3 WITH INLINE FILTER PRES" />
       </Symbol>
     </Access>
-    <Access Scope="LiteralConstant" UId="24">
+    <Access Scope="LiteralConstant" UId="25">
       <Constant>
         <ConstantType>Int</ConstantType>
         <ConstantValue>3</ConstantValue>
       </Constant>
     </Access>
-    <Access Scope="TypedConstant" UId="25">
+    <Access Scope="TypedConstant" UId="26">
       <Constant>
         <ConstantValue>T#1S</ConstantValue>
       </Constant>
     </Access>
-    <Access Scope="GlobalVariable" UId="26">
+    <Access Scope="GlobalVariable" UId="27">
       <Symbol>
         <Component Name="ALARM DB" />
         <Component Name="MFG TO STORAGE-3 WITH FILTER PRESS TRANSFER COMPLETE" />
       </Symbol>
     </Access>
-    <Access Scope="GlobalVariable" UId="27">
+    <Access Scope="GlobalVariable" UId="28">
       <Symbol>
         <Component Name="P_TRIG" />
         <Component Name="26" />
       </Symbol>
     </Access>
-    <Access Scope="GlobalVariable" UId="28">
+    <Access Scope="GlobalVariable" UId="29">
       <Symbol>
         <Component Name="DO MAPING" />
         <Component Name="HOOTER_1" />
       </Symbol>
     </Access>
-    <Part Name="Ne" UId="29">
+    <Part Name="Contact" UId="30" />
+    <Part Name="Ne" UId="31">
       <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
     </Part>
-    <Part Name="Eq" UId="30">
+    <Part Name="Eq" UId="32">
       <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
     </Part>
-    <Part Name="TP" Version="1.0" UId="31">
-      <Instance Scope="GlobalVariable" UId="32">
+    <Part Name="TP" Version="1.0" UId="33">
+      <Instance Scope="GlobalVariable" UId="34">
         <Component Name="IEC_Timer_0_DB_36" />
       </Instance>
       <TemplateValue Name="time_type" Type="Type">Time</TemplateValue>
     </Part>
-    <Part Name="Coil" UId="33" />
-    <Part Name="PBox" UId="34" />
-    <Part Name="SCoil" UId="35" />
+    <Part Name="Coil" UId="35" />
+    <Part Name="PBox" UId="36" />
+    <Part Name="SCoil" UId="37" />
   </Parts>
   <Wires>
-    <Wire UId="37">
-      <Powerrail />
-      <NameCon UId="29" Name="pre" />
-    </Wire>
-    <Wire UId="38">
-      <IdentCon UId="21" />
-      <NameCon UId="29" Name="in1" />
-    </Wire>
     <Wire UId="39">
-      <IdentCon UId="22" />
-      <NameCon UId="29" Name="in2" />
+      <Powerrail />
+      <NameCon UId="30" Name="in" />
     </Wire>
     <Wire UId="40">
-      <NameCon UId="29" Name="out" />
-      <NameCon UId="30" Name="pre" />
+      <IdentCon UId="21" />
+      <NameCon UId="30" Name="operand" />
     </Wire>
     <Wire UId="41">
-      <IdentCon UId="23" />
-      <NameCon UId="30" Name="in1" />
+      <NameCon UId="30" Name="out" />
+      <NameCon UId="31" Name="pre" />
     </Wire>
     <Wire UId="42">
-      <IdentCon UId="24" />
-      <NameCon UId="30" Name="in2" />
+      <IdentCon UId="22" />
+      <NameCon UId="31" Name="in1" />
     </Wire>
     <Wire UId="43">
-      <NameCon UId="30" Name="out" />
-      <NameCon UId="31" Name="IN" />
+      <IdentCon UId="23" />
+      <NameCon UId="31" Name="in2" />
     </Wire>
     <Wire UId="44">
-      <IdentCon UId="25" />
-      <NameCon UId="31" Name="PT" />
+      <NameCon UId="31" Name="out" />
+      <NameCon UId="32" Name="pre" />
     </Wire>
     <Wire UId="45">
-      <NameCon UId="31" Name="Q" />
-      <NameCon UId="33" Name="in" />
-      <NameCon UId="34" Name="in" />
+      <IdentCon UId="24" />
+      <NameCon UId="32" Name="in1" />
     </Wire>
     <Wire UId="46">
-      <NameCon UId="31" Name="ET" />
-      <OpenCon UId="36" />
+      <IdentCon UId="25" />
+      <NameCon UId="32" Name="in2" />
     </Wire>
     <Wire UId="47">
-      <IdentCon UId="26" />
-      <NameCon UId="33" Name="operand" />
+      <NameCon UId="32" Name="out" />
+      <NameCon UId="33" Name="IN" />
     </Wire>
     <Wire UId="48">
-      <IdentCon UId="27" />
-      <NameCon UId="34" Name="bit" />
+      <IdentCon UId="26" />
+      <NameCon UId="33" Name="PT" />
     </Wire>
     <Wire UId="49">
-      <NameCon UId="34" Name="out" />
+      <NameCon UId="33" Name="Q" />
       <NameCon UId="35" Name="in" />
+      <NameCon UId="36" Name="in" />
     </Wire>
     <Wire UId="50">
-      <IdentCon UId="28" />
+      <NameCon UId="33" Name="ET" />
+      <OpenCon UId="38" />
+    </Wire>
+    <Wire UId="51">
+      <IdentCon UId="27" />
       <NameCon UId="35" Name="operand" />
+    </Wire>
+    <Wire UId="52">
+      <IdentCon UId="28" />
+      <NameCon UId="36" Name="bit" />
+    </Wire>
+    <Wire UId="53">
+      <NameCon UId="36" Name="out" />
+      <NameCon UId="37" Name="in" />
+    </Wire>
+    <Wire UId="54">
+      <IdentCon UId="29" />
+      <NameCon UId="37" Name="operand" />
     </Wire>
   </Wires>
 </FlgNet></NetworkSource>

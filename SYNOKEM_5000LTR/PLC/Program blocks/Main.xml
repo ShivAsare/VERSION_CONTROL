@@ -182,25 +182,32 @@
     <Call UId="26">
       <CallInfo Name="SUGAR" BlockType="FC" />
     </Call>
+    <Call UId="27">
+      <CallInfo Name="RECIPE" BlockType="FC" />
+    </Call>
   </Parts>
   <Wires>
-    <Wire UId="27">
+    <Wire UId="28">
       <Powerrail />
       <NameCon UId="21" Name="en" />
       <NameCon UId="24" Name="en" />
       <NameCon UId="26" Name="en" />
     </Wire>
-    <Wire UId="28">
+    <Wire UId="29">
       <NameCon UId="21" Name="eno" />
       <NameCon UId="22" Name="en" />
     </Wire>
-    <Wire UId="29">
+    <Wire UId="30">
       <NameCon UId="22" Name="eno" />
       <NameCon UId="23" Name="en" />
     </Wire>
-    <Wire UId="30">
+    <Wire UId="31">
       <NameCon UId="24" Name="eno" />
       <NameCon UId="25" Name="en" />
+    </Wire>
+    <Wire UId="32">
+      <NameCon UId="26" Name="eno" />
+      <NameCon UId="27" Name="en" />
     </Wire>
   </Wires>
 </FlgNet></NetworkSource>

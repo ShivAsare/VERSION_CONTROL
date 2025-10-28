@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V19" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="RINSE-1_CLEANING_TIME_SV" Datatype="Int" />
+    <Member Name="RINSE-1_RECIRCULATION_TIME_SV" Datatype="Int" />
+    <Member Name="RINSE-1_DRAIN_TIME_SV" Datatype="Int" />
+    <Member Name="RINSE-1_PUMP_CHASING_TIME_SV" Datatype="Int" />
+    <Member Name="RINSE-1_TEMPERATURE_SET" Datatype="Real" />
+    <Member Name="RINSE-1_FWD_PUMP_HEATING_RPM" Datatype="Int" />
+    <Member Name="RINSE-1_FWD_PUMP_CLEANING_RPM" Datatype="Int" />
+    <Member Name="RINSE-2_TEMPERATURE_SET" Datatype="Real" />
+    <Member Name="RINSE-2_CLEANING_TIME_SV" Datatype="Int" />
+    <Member Name="RINSE-2_RECIRCULATION_TIME_SV" Datatype="Int" />
+    <Member Name="RINSE-2_DRAIN_TIME_SV" Datatype="Int" />
+    <Member Name="RINSE-2_PUMP_CHASING_TIME_SV" Datatype="Int" />
+    <Member Name="RINSE-2_FWD_PUMP_HEATING_RPM" Datatype="Int" />
+    <Member Name="RINSE-2_FWD_PUMP_CLEANING_RPM" Datatype="Int" />
+    <Member Name="DOSING_TIME_SV" Datatype="Int" />
+    <Member Name="ALKALI/ACID_TEMPERATURE_SET" Datatype="Real" />
+    <Member Name="ALKALI/ACID_CLEANING_TIME_SV" Datatype="Int" />
+    <Member Name="ALKALI/ACID_RECIRCULATION_TIME_SV" Datatype="Int" />
+    <Member Name="ALKALI/ACID_DRAIN_TIME_SV" Datatype="Int" />
+    <Member Name="ALKALI/ACID_PUMP_CHASING_TIME_SV" Datatype="Int" />
+    <Member Name="ALKALI/ACID_FWD_PUMP_HEATING_RPM" Datatype="Int" />
+    <Member Name="ALKALI/ACID_FWD_PUMP_CLEANING_RPM" Datatype="Int" />
+    <Member Name="FINAL_RINSE_TEMPERATURE_SET" Datatype="Real" />
+    <Member Name="FINAL_RINSE_CLEANING_TIME_SV" Datatype="Int" />
+    <Member Name="FINAL_RINSE_RECIRCULATION_TIME_SV" Datatype="Int" />
+    <Member Name="FINAL_RINSE_DRAIN_TIME_SV" Datatype="Int" />
+    <Member Name="FINAL_RINSE_PUMP_CHASING_TIME_SV" Datatype="Int" />
+    <Member Name="FINAL_RINSE-2_FWD_PUMP_HEATING_RPM" Datatype="Int" />
+    <Member Name="FINAL_RINSE-2_FWD_PUMP_CLEANING_RPM" Datatype="Int" />
+    <Member Name="CONDUCTIVITY_SET" Datatype="Real" />
+    <Member Name="PH_SET (NOT USED)" Datatype="Int" />
+    <Member Name="DOSING_PH_LOW" Datatype="Real" />
+    <Member Name="DOSING_PH_HIGH" Datatype="Real" />
+    <Member Name="RINSE-3_TEMPERATURE_SET" Datatype="Real" />
+    <Member Name="RINSE-3_CLEANING_TIME_SV" Datatype="Int" />
+    <Member Name="RINSE-3_RECIRCULATION_TIME_SV" Datatype="Int" />
+    <Member Name="RINSE-3_DRAIN_TIME_SV" Datatype="Int" />
+    <Member Name="RINSE-3_PUMP_CHASING_TIME_SV" Datatype="Int" />
+    <Member Name="FINAL_RINSE-1_FWD_PUMP_HEATING_RPM" Datatype="Int" />
+    <Member Name="FINAL_RINSE-1_FWD_PUMP_CLEANING_RPM" Datatype="Int" />
+    <Member Name="SET_TEMPERATURE" Datatype="Real" />
+    <Member Name="RINSE-1_SELECT" Datatype="Bool" />
+    <Member Name="ALKALI / ACID_SELECT" Datatype="Bool" />
+    <Member Name="RINSE-2_SELECT" Datatype="Bool" />
+    <Member Name="FINAL_RINSE-1_SELECT" Datatype="Bool" />
+    <Member Name="FINAL_RINSE-2_SELECT" Datatype="Bool" />
+    <Member Name="RECIRCULATION_PH_LOW" Datatype="Real" />
+    <Member Name="RECIRCULATION_PH_HIGH" Datatype="Real" />
+    <Member Name="SW TANK_SELECT" Datatype="Bool" />
+    <Member Name="PW TANK_SELECT" Datatype="Bool" />
+    <Member Name="SW TANK_FWD_PUMP_CLEANING_RPM" Datatype="Int" />
+    <Member Name="PW TANK_FWD_PUMP_CLEANING_RPM" Datatype="Int" />
+    <Member Name="SW TANK_TEMPERATURE_SET" Datatype="Real" />
+    <Member Name="PW TANK_TEMPERATURE_SET" Datatype="Real" />
+    <Member Name="SW TANK_CLEANING_TIME_SV" Datatype="Int" />
+    <Member Name="SW TANK_DRAIN_TIME_SV" Datatype="Int" />
+    <Member Name="SW TANK_PUMP_CHASING_TIME_SV" Datatype="Int" />
+    <Member Name="PW TANK_CLEANING_TIME_SV" Datatype="Int" />
+    <Member Name="PW TANK_DRAIN_TIME_SV" Datatype="Int" />
+    <Member Name="PW TANK_PUMP_CHASING_TIME_SV" Datatype="Int" />
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Standard</MemoryLayout>
+      <Name>RECIPE DB</Name>
+      <Namespace />
+      <Number>9</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

@@ -36,6 +36,19 @@
     <Member Name="CIP_IN" Datatype="Bool" />
     <Member Name="CIP_OUT" Datatype="Bool" />
     <Member Name="PNV-25" Datatype="Bool" />
+    <Member Name="PBV- 128" Datatype="Bool" />
+    <Member Name="PBV- 130" Datatype="Bool" />
+    <Member Name="PBV- 132" Datatype="Bool" />
+    <Member Name="PBV – 133" Datatype="Bool" />
+    <Member Name="PBV – 134" Datatype="Bool" />
+    <Member Name="PBV - 138" Datatype="Bool" />
+    <Member Name="PBV – 142" Datatype="Bool" />
+    <Member Name="PBV – 143" Datatype="Bool" />
+    <Member Name="PBV – 144" Datatype="Bool" />
+    <Member Name="PBV – 148" Datatype="Bool" />
+    <Member Name="PBV – 157" Datatype="Bool" />
+    <Member Name="PBV-158" Datatype="Bool" />
+    <Member Name="PBV-159" Datatype="Bool" />
   </Section>
 </Sections></Interface>
       <MemoryLayout>Standard</MemoryLayout>

@@ -316,7 +316,7 @@
     </Access>
     <Access Scope="GlobalVariable" UId="24">
       <Symbol>
-        <Component Name="TS_SENSOR_1" />
+        <Component Name="TS_SENSOR_2" />
       </Symbol>
     </Access>
     <Access Scope="LiteralConstant" UId="25">

@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V19" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="STEP" Datatype="Int" />
+    <Member Name="EDGE" Datatype="Bool" />
+    <Member Name="P_TRIG" Datatype="Struct">
+      <Member Name="0" Datatype="Bool" />
+      <Member Name="1" Datatype="Bool" />
+      <Member Name="2" Datatype="Bool" />
+      <Member Name="3" Datatype="Bool" />
+      <Member Name="4" Datatype="Bool" />
+      <Member Name="5" Datatype="Bool" />
+      <Member Name="6" Datatype="Bool" />
+      <Member Name="7" Datatype="Bool" />
+      <Member Name="8" Datatype="Bool" />
+      <Member Name="9" Datatype="Bool" />
+      <Member Name="10" Datatype="Bool" />
+      <Member Name="11" Datatype="Bool" />
+      <Member Name="12" Datatype="Bool" />
+      <Member Name="13" Datatype="Bool" />
+      <Member Name="14" Datatype="Bool" />
+      <Member Name="15" Datatype="Bool" />
+      <Member Name="16" Datatype="Bool" />
+      <Member Name="17" Datatype="Bool" />
+      <Member Name="18" Datatype="Bool" />
+      <Member Name="19" Datatype="Bool" />
+      <Member Name="20" Datatype="Bool" />
+      <Member Name="21" Datatype="Bool" />
+      <Member Name="22" Datatype="Bool" />
+      <Member Name="23" Datatype="Bool" />
+      <Member Name="24" Datatype="Bool" />
+      <Member Name="25" Datatype="Bool" />
+      <Member Name="26" Datatype="Bool" />
+      <Member Name="27" Datatype="Bool" />
+      <Member Name="28" Datatype="Bool" />
+      <Member Name="29" Datatype="Bool" />
+      <Member Name="30" Datatype="Bool" />
+      <Member Name="31" Datatype="Bool" />
+      <Member Name="32" Datatype="Bool" />
+      <Member Name="33" Datatype="Bool" />
+      <Member Name="34" Datatype="Bool" />
+      <Member Name="35" Datatype="Bool" />
+      <Member Name="36" Datatype="Bool" />
+      <Member Name="37" Datatype="Bool" />
+      <Member Name="38" Datatype="Bool" />
+      <Member Name="39" Datatype="Bool" />
+      <Member Name="40" Datatype="Bool" />
+      <Member Name="41" Datatype="Bool" />
+      <Member Name="42" Datatype="Bool" />
+      <Member Name="43" Datatype="Bool" />
+      <Member Name="44" Datatype="Bool" />
+      <Member Name="45" Datatype="Bool" />
+      <Member Name="46" Datatype="Bool" />
+      <Member Name="47" Datatype="Bool" />
+      <Member Name="48" Datatype="Bool" />
+      <Member Name="49" Datatype="Bool" />
+      <Member Name="50" Datatype="Bool" />
+    </Member>
+    <Member Name="VFD_1" Datatype="Struct">
+      <Member Name="WRITE" Datatype="Struct">
+        <Member Name="DONE" Datatype="Bool" />
+        <Member Name="BUSY" Datatype="Bool" />
+        <Member Name="ERROR" Datatype="Bool" />
+        <Member Name="STATUS" Datatype="Int" />
+      </Member>
+      <Member Name="READ" Datatype="Struct">
+        <Member Name="DONE" Datatype="Bool" />
+        <Member Name="BUSY" Datatype="Bool" />
+        <Member Name="ERROR" Datatype="Bool" />
+        <Member Name="STATUS" Datatype="Int" />
+      </Member>
+    </Member>
+    <Member Name="VFD_1 SEND" Datatype="UInt" />
+    <Member Name="VFD_1 RECEIVE" Datatype="UInt" />
+    <Member Name="VFD_2" Datatype="Struct">
+      <Member Name="WRITE" Datatype="Struct">
+        <Member Name="DONE" Datatype="Bool" />
+        <Member Name="BUSY" Datatype="Bool" />
+        <Member Name="ERROR" Datatype="Bool" />
+        <Member Name="STATUS" Datatype="Int" />
+      </Member>
+      <Member Name="READ" Datatype="Struct">
+        <Member Name="DONE" Datatype="Bool" />
+        <Member Name="BUSY" Datatype="Bool" />
+        <Member Name="ERROR" Datatype="Bool" />
+        <Member Name="STATUS" Datatype="Int" />
+      </Member>
+    </Member>
+    <Member Name="VFD_2 SEND" Datatype="UInt" />
+    <Member Name="VFD_2 RECEIVE" Datatype="UInt" />
+    <Member Name="VFD_3" Datatype="Struct">
+      <Member Name="WRITE" Datatype="Struct">
+        <Member Name="DONE" Datatype="Bool" />
+        <Member Name="BUSY" Datatype="Bool" />
+        <Member Name="ERROR" Datatype="Bool" />
+        <Member Name="STATUS" Datatype="Int" />
+      </Member>
+      <Member Name="READ" Datatype="Struct">
+        <Member Name="DONE" Datatype="Bool" />
+        <Member Name="BUSY" Datatype="Bool" />
+        <Member Name="ERROR" Datatype="Bool" />
+        <Member Name="STATUS" Datatype="Int" />
+      </Member>
+    </Member>
+    <Member Name="VFD_3 SEND" Datatype="UInt" />
+    <Member Name="VFD_3 RECEIVE" Datatype="UInt" />
+    <Member Name="VFD_4" Datatype="Struct">
+      <Member Name="WRITE" Datatype="Struct">
+        <Member Name="DONE" Datatype="Bool" />
+        <Member Name="BUSY" Datatype="Bool" />
+        <Member Name="ERROR" Datatype="Bool" />
+        <Member Name="STATUS" Datatype="Int" />
+      </Member>
+      <Member Name="READ" Datatype="Struct">
+        <Member Name="DONE" Datatype="Bool" />
+        <Member Name="BUSY" Datatype="Bool" />
+        <Member Name="ERROR" Datatype="Bool" />
+        <Member Name="STATUS" Datatype="Int" />
+      </Member>
+    </Member>
+    <Member Name="VFD_4 SEND" Datatype="UInt" />
+    <Member Name="VFD_4 RECEIVE" Datatype="UInt" />
+    <Member Name="VFD_5" Datatype="Struct">
+      <Member Name="WRITE" Datatype="Struct">
+        <Member Name="DONE" Datatype="Bool" />
+        <Member Name="BUSY" Datatype="Bool" />
+        <Member Name="ERROR" Datatype="Bool" />
+        <Member Name="STATUS" Datatype="Int" />
+      </Member>
+      <Member Name="READ" Datatype="Struct">
+        <Member Name="DONE" Datatype="Bool" />
+        <Member Name="BUSY" Datatype="Bool" />
+        <Member Name="ERROR" Datatype="Bool" />
+        <Member Name="STATUS" Datatype="Int" />
+      </Member>
+    </Member>
+    <Member Name="VFD_5 SEND" Datatype="UInt" />
+    <Member Name="VFD_5 RECEIVE" Datatype="UInt" />
+    <Member Name="VFD_6" Datatype="Struct">
+      <Member Name="WRITE" Datatype="Struct">
+        <Member Name="DONE" Datatype="Bool" />
+        <Member Name="BUSY" Datatype="Bool" />
+        <Member Name="ERROR" Datatype="Bool" />
+        <Member Name="STATUS" Datatype="Int" />
+      </Member>
+      <Member Name="READ" Datatype="Struct">
+        <Member Name="DONE" Datatype="Bool" />
+        <Member Name="BUSY" Datatype="Bool" />
+        <Member Name="ERROR" Datatype="Bool" />
+        <Member Name="STATUS" Datatype="Int" />
+      </Member>
+    </Member>
+    <Member Name="VFD_6 SEND" Datatype="UInt" />
+    <Member Name="VFD_6 RECEIVE" Datatype="UInt" />
+    <Member Name="VFD_7" Datatype="Struct">
+      <Member Name="WRITE" Datatype="Struct">
+        <Member Name="DONE" Datatype="Bool" />
+        <Member Name="BUSY" Datatype="Bool" />
+        <Member Name="ERROR" Datatype="Bool" />
+        <Member Name="STATUS" Datatype="Int" />
+      </Member>
+      <Member Name="READ" Datatype="Struct">
+        <Member Name="DONE" Datatype="Bool" />
+        <Member Name="BUSY" Datatype="Bool" />
+        <Member Name="ERROR" Datatype="Bool" />
+        <Member Name="STATUS" Datatype="Int" />
+      </Member>
+    </Member>
+    <Member Name="VFD_7 SEND" Datatype="UInt" />
+    <Member Name="VFD_7 RECEIVE" Datatype="UInt" />
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Standard</MemoryLayout>
+      <Name>MODBUS DB</Name>
+      <Namespace />
+      <Number>53</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

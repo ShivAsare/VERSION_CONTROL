@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V19" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="P-201 A RO 1 FEED PUMP TRIP" Datatype="Bool" />
+    <Member Name="P-201 B RO 1 FEED PUMP TRIP" Datatype="Bool" />
+    <Member Name="P-201 C RO 1 FEED PUMP TRIP" Datatype="Bool" />
+    <Member Name="P-301 A RO 1 HPP PUMP TRIP" Datatype="Bool" />
+    <Member Name="P-301 B RO B HPP PUMP TRIP" Datatype="Bool" />
+    <Member Name="P-401 A RO 2 FEED PUMP TRIP" Datatype="Bool" />
+    <Member Name="P-401 B RO 2 FEED PUMP TRIP" Datatype="Bool" />
+    <Member Name="P-401 C RO 2 FEED PUMP TRIP" Datatype="Bool" />
+    <Member Name="P 401 A RO 2 HPP PUMP TRIP" Datatype="Bool" />
+    <Member Name="P-401 B RO 2 HPP PUMP TRIP" Datatype="Bool" />
+    <Member Name="P-501 A EDI FEED PUMP TRIP" Datatype="Bool" />
+    <Member Name="P-501 B EDI FEED PUMP TRIP" Datatype="Bool" />
+    <Member Name="P-501 C EDI FEED PUMP TRIP" Datatype="Bool" />
+    <Member Name="EDI 501 A TRIP" Datatype="Bool" />
+    <Member Name="EDI 501 B TRIP" Datatype="Bool" />
+    <Member Name="P-201 A RO 1 FEED PUMP_FEEDBACK FAIL" Datatype="Bool" />
+    <Member Name="P-201 B RO 1 FEED PUMP_FEEDBACK FAIL" Datatype="Bool" />
+    <Member Name="P-201 C RO 1 FEED PUMP_FEEDBACK FAIL" Datatype="Bool" />
+    <Member Name="P-301 A RO 1 HPP PUMP_FEEDBACK FAIL" Datatype="Bool" />
+    <Member Name="P-301 B RO B HPP PUMP_FEEDBACK FAIL" Datatype="Bool" />
+    <Member Name="P-401 A RO 2 FEED PUMP_FEEDBACK FAIL" Datatype="Bool" />
+    <Member Name="P-401 B RO 2 FEED PUMP_FEEDBACK FAIL" Datatype="Bool" />
+    <Member Name="P-401 C RO 2 FEED PUMP_FEEDBACK FAIL" Datatype="Bool" />
+    <Member Name="P 401 A RO 2 HPP PUMP_FEEDBACK FAIL" Datatype="Bool" />
+    <Member Name="P-401 B RO 2 HPP PUMP_FEEDBACK FAIL" Datatype="Bool" />
+    <Member Name="P-501 A EDI FEED PUMP_FEEDBACK FAIL" Datatype="Bool" />
+    <Member Name="P-501 B EDI FEED PUMP_FEEDBACK FAIL" Datatype="Bool" />
+    <Member Name="P-501 C EDI FEED PUMP_FEEDBACK FAIL" Datatype="Bool" />
+    <Member Name="EDI 501 A _FEEDBACK FAIL" Datatype="Bool" />
+    <Member Name="EDI 501 B_FEEDBACK FAIL" Datatype="Bool" />
+    <Member Name="RO-01 ORP DUMP VALVE ABV-301 OPEN COMMOND FAIL" Datatype="Bool" />
+    <Member Name="RO-01 ORP DUMP VALVE ABV-301 CLOSE COMMOND FAIL" Datatype="Bool" />
+    <Member Name="RO-01 ORP PROCESS VALVE ABV-302 OPEN COMMOND FAIL" Datatype="Bool" />
+    <Member Name="RO-01 ORP PROCESS VALVE ABV-302 CLOSE COMMOND FAIL" Datatype="Bool" />
+    <Member Name="RO-1 A AUTO FLUSING VALVE AGLV-301 OPEN COMMOND FAIL" Datatype="Bool" />
+    <Member Name="RO-1 A AUTO FLUSING VALVE AGLV-301 CLOSE COMMOND FAIL" Datatype="Bool" />
+    <Member Name="RO-1 B AUTO FLUSING VALVE AGLV-302 OPEN COMMOND FAIL" Datatype="Bool" />
+    <Member Name="RO-1 B AUTO FLUSING VALVE AGLV-302 CLOSE COMMOND FAIL" Datatype="Bool" />
+    <Member Name="RO-2 A AUTO FLUSING VALVE AGLV-401 OPEN COMMOND FAIL" Datatype="Bool" />
+    <Member Name="RO-2 A AUTO FLUSING VALVE AGLV-401 CLOSE COMMOND FAIL" Datatype="Bool" />
+    <Member Name="RO-2 B AUTO FLUSING VALVE AGLV-402 OPEN COMMOND FAIL" Datatype="Bool" />
+    <Member Name="RO-2 B AUTO FLUSING VALVE AGLV-402 CLOSE COMMOND FAIL" Datatype="Bool" />
+    <Member Name="EDI AUTO DUMP VALVE ABV-501 OPEN COMMOND FAIL" Datatype="Bool" />
+    <Member Name="EDI AUTO DUMP VALVE ABV-501 CLOSE COMMOND FAIL" Datatype="Bool" />
+    <Member Name="DM TANK INLET VALVE ABV-502 OPEN COMMOND FAIL" Datatype="Bool" />
+    <Member Name="DM TANK INLET VALVE ABV-502 CLOSE COMMOND FAIL" Datatype="Bool" />
+    <Member Name="RO-02 FEED TANK LEVEL ( LT-401)- LOW LOW" Datatype="Bool" />
+    <Member Name="RO-02 FEED TANK LEVEL ( LT-401)- HIGH HIGH" Datatype="Bool" />
+    <Member Name="EDI FEED TANK LEVEL ( LT-501)- LOW LOW" Datatype="Bool" />
+    <Member Name="EDI FEED TANK LEVEL ( LT-501)- HIGH HIGH" Datatype="Bool" />
+    <Member Name="DM WATER STORAGE TANK  LEVEL ( LT-502)- LOW LOW" Datatype="Bool" />
+    <Member Name="DM WATER STORAGE TANK LEVEL ( LT-502)- HIGH HIGH" Datatype="Bool" />
+    <Member Name="RO-01A LPS-301 LOW" Datatype="Bool" />
+    <Member Name="RO-01 B LPS-302 LOW" Datatype="Bool" />
+    <Member Name="RO-01 A HPS-301 HIGH" Datatype="Bool" />
+    <Member Name="RO-01B HPS-302 HIGH" Datatype="Bool" />
+    <Member Name="RO-02A LPS-401 LOW" Datatype="Bool" />
+    <Member Name="RO-02B LPS-402 LOW" Datatype="Bool" />
+    <Member Name="RO-02A HPS-401 HIGH" Datatype="Bool" />
+    <Member Name="RO-02 B HPS-402 HIGH" Datatype="Bool" />
+    <Member Name="EDI-501A FEED PRESSURE PT-501 LOW" Datatype="Bool" />
+    <Member Name="PT-501A LOW_SET VALIDATION TIME OVER_(SYSTEM STOP)" Datatype="Bool" />
+    <Member Name="EDI-501A FEED PRESSURE PT-501 HIGH" Datatype="Bool" />
+    <Member Name="PT-501A HIGH_SET VALIDATION TIME OVER_(SYSTEM STOP)" Datatype="Bool" />
+    <Member Name="EDI-501B FEED PRESSURE PT-502 LOW" Datatype="Bool" />
+    <Member Name="PT-501B LOW_SET VALIDATION TIME OVER_(SYSTEM STOP)" Datatype="Bool" />
+    <Member Name="EDI-501B FEED PRESSURE PT-502 HIGH" Datatype="Bool" />
+    <Member Name="PT-501B HIGH_SET VALIDATION TIME OVER_(SYSTEM STOP)" Datatype="Bool" />
+    <Member Name="EDI-501B CONCENTRATE OUT PRESSURE PT-503 HIGH" Datatype="Bool" />
+    <Member Name="PT-503 HIGH_SET VALIDATION TIME OVER_(SYSTEM STOP)" Datatype="Bool" />
+    <Member Name="EDI-501A PRODUCT OUT PRESSURE PT-504 HIGH" Datatype="Bool" />
+    <Member Name="PT-504 HIGH_SET VALIDATION TIME OVER_(SYSTEM STOP)" Datatype="Bool" />
+    <Member Name="EDI-501A CONCENTRATE OUT PRESSURE PT-505 HIGH" Datatype="Bool" />
+    <Member Name="PT-505 HIGH_SET VALIDATION TIME OVER_(SYSTEM STOP)" Datatype="Bool" />
+    <Member Name="EDI-501B PRODUCT OUT PRESSURE PT-506 HIGH" Datatype="Bool" />
+    <Member Name="PT-506 HIGH_SET VALIDATION TIME OVER_(SYSTEM STOP)" Datatype="Bool" />
+    <Member Name="RO-01 FEED PHIT-301 HIGH" Datatype="Bool" />
+    <Member Name="RO-01 FEED PHIT-301 LOW" Datatype="Bool" />
+    <Member Name="RO-01 PRODUCT PHIT-302 HIGH" Datatype="Bool" />
+    <Member Name="RO-01 PRODUCT PHIT-302 LOW" Datatype="Bool" />
+    <Member Name="RO-02 FEED PHIT-401 HIGH" Datatype="Bool" />
+    <Member Name="RO-02 FEED PHIT-401 LOW" Datatype="Bool" />
+    <Member Name="RO-02 PRODUCT PHIT-402 HIGH" Datatype="Bool" />
+    <Member Name="RO-02 PRODUCT PHIT-402 LOW" Datatype="Bool" />
+    <Member Name="EDI-501A PRODUCT OUT  PHIT-501 HIGH" Datatype="Bool" />
+    <Member Name="EDI-501A PRODUCT OUT  PHIT-501 LOW" Datatype="Bool" />
+    <Member Name="EDI-501B PRODUCT OUT  PHIT-502 HIGH" Datatype="Bool" />
+    <Member Name="EDI-501B PRODUCT OUT PHIT-502 LOW" Datatype="Bool" />
+    <Member Name="RO-01 FEED CIT-301 HIGH" Datatype="Bool" />
+    <Member Name="CIT-301 HIGH_SET VALIDATION TIME OVER_(SYSTEM STOP)" Datatype="Bool" />
+    <Member Name="RO-01 PRODUCT CIT-302 HIGH" Datatype="Bool" />
+    <Member Name="CIT-302 HIGH_SET VALIDATION TIME OVER_(SYSTEM STOP)" Datatype="Bool" />
+    <Member Name="RO-02 FEED CIT-401 HIGH" Datatype="Bool" />
+    <Member Name="CIT-401 HIGH_SET VALIDATION TIME OVER_(SYSTEM STOP)" Datatype="Bool" />
+    <Member Name="RO-02 PRODUCT CIT-402 HIGH" Datatype="Bool" />
+    <Member Name="CIT-402 HIGH_SET VALIDATION TIME OVER_(SYSTEM STOP)" Datatype="Bool" />
+    <Member Name="EDI-501A PRODUCT OUT RIT-501 HIGH" Datatype="Bool" />
+    <Member Name="RIT-501A HIGH_SET VALIDATION TIME OVER_(SYSTEM STOP)" Datatype="Bool" />
+    <Member Name="EDI-501B PRODUCT OUT RIT-502 HIGH" Datatype="Bool" />
+    <Member Name="RIT-501B HIGH_SET VALIDATION TIME OVER_(SYSTEM STOP)" Datatype="Bool" />
+    <Member Name="ORP-301 HIGH" Datatype="Bool" />
+    <Member Name="ORP-301 HIGH_SET VALIDATION TIME OVER_(SYSTEM STOP)" Datatype="Bool" />
+    <Member Name="EDI-501A FEED PRESSURE FIT-501 LOW" Datatype="Bool" />
+    <Member Name="FIT-501  LOW_SET VALIDATION TIME OVER_(SYSTEM STOP)" Datatype="Bool" />
+    <Member Name="EDI-501B FEED PRESSURE FIT-502 LOW" Datatype="Bool" />
+    <Member Name="FIT-501 LOW_SET VALIDATION TIME OVER_(SYSTEM STOP)" Datatype="Bool" />
+    <Member Name="EDI-501B CONCENTRATE OUT PRESSURE FIT-503 LOW" Datatype="Bool" />
+    <Member Name="FIT-503 LOW_SET VALIDATION TIME OVER_(SYSTEM STOP)" Datatype="Bool" />
+    <Member Name="EDI-501A PRODUCT OUT PRESSURE FIT-504 LOW" Datatype="Bool" />
+    <Member Name="FIT-504 LOW_SET VALIDATION TIME OVER_(SYSTEM STOP)" Datatype="Bool" />
+    <Member Name="EDI-501B CONCENTRATE OUT PRESSURE FIT-505 LOW" Datatype="Bool" />
+    <Member Name="FIT-505 LOW_SET VALIDATION TIME OVER_(SYSTEM STOP)" Datatype="Bool" />
+    <Member Name="EDI-501B CONCENTRATE OUT PRESSURE FIT-505 HIGH" Datatype="Bool" />
+    <Member Name="FIT-505 HIGH_SET VALIDATION TIME OVER_(SYSTEM STOP)" Datatype="Bool" />
+    <Member Name="EDI-501A PRODUCT OUT PRESSURE FIT-506 LOW" Datatype="Bool" />
+    <Member Name="FIT-506 LOW_SET VALIDATION TIME OVER_(SYSTEM STOP)" Datatype="Bool" />
+    <Member Name="EDI-501A PRODUCT OUT PRESSURE FIT-506 HIGH" Datatype="Bool" />
+    <Member Name="FIT-506 HIGH_SET VALIDATION TIME OVER_(SYSTEM STOP)" Datatype="Bool" />
+    <Member Name="EDI-501B CONCENTRATE OUT PRESSURE FIT-507 LOW" Datatype="Bool" />
+    <Member Name="FIT-507 LOW_SET VALIDATION TIME OVER_(SYSTEM STOP)" Datatype="Bool" />
+    <Member Name="EDI-501B CONCENTRATE OUT PRESSURE FIT-507 HIGH" Datatype="Bool" />
+    <Member Name="FIT-507 HIGH_SET VALIDATION TIME OVER_(SYSTEM STOP)" Datatype="Bool" />
+    <Member Name="EDI-501A PRODUCT OUT PRESSURE FIT-508 LOW" Datatype="Bool" />
+    <Member Name="FIT-508 LOW_SET VALIDATION TIME OVER_(SYSTEM STOP)" Datatype="Bool" />
+    <Member Name="EDI-501A PRODUCT OUT PRESSURE FIT-508 HIGH" Datatype="Bool" />
+    <Member Name="FIT-508 HIGH_SET VALIDATION TIME OVER_(SYSTEM STOP)" Datatype="Bool" />
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Standard</MemoryLayout>
+      <Name>ALARM DB PLC 2</Name>
+      <Namespace />
+      <Number>37</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

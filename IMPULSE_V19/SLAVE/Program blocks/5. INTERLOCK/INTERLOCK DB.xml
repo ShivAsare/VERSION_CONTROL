@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V19" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="RO-1 SET PARAMETER" Datatype="Struct">
+      <Member Name="ORP-301 HH" Datatype="Real" />
+      <Member Name="ORP-301 H" Datatype="Real" />
+      <Member Name="pH-301 HIGH" Datatype="Real" />
+      <Member Name="pH-301 LOW" Datatype="Real" />
+      <Member Name="pH-302 HIGH" Datatype="Real" />
+      <Member Name="pH-302 LOW" Datatype="Real" />
+      <Member Name="CT-301 H" Datatype="Real" />
+      <Member Name="CT-301 HH" Datatype="Real" />
+      <Member Name="CT-302 H" Datatype="Real" />
+      <Member Name="CT-302 HH" Datatype="Real" />
+    </Member>
+    <Member Name="RO-1 PARAMETER BUFF" Datatype="Struct">
+      <Member Name="ORP-301 BUFF" Datatype="Int" />
+      <Member Name="pH-301 BUFF" Datatype="Int" />
+      <Member Name="pH-302 BUFF" Datatype="Int" />
+      <Member Name="CT-301 BUFF" Datatype="Int" />
+      <Member Name="CT-302 BUFF" Datatype="Int" />
+    </Member>
+    <Member Name="RO-1 SET TIMER" Datatype="Struct">
+      <Member Name="LPS-301 TIMER SET" Datatype="Int" />
+      <Member Name="LPS-302 TIMER SET" Datatype="Int" />
+      <Member Name="HPS-301 TIMER SET" Datatype="Int" />
+      <Member Name="HPS-302 TIMER SET" Datatype="Int" />
+      <Member Name="ORP-301 TIMER SET" Datatype="Int" />
+      <Member Name="CT-301 HIGH TIMER SET" Datatype="Int" />
+      <Member Name="CT-302 HIGH TIMER SET" Datatype="Int" />
+      <Member Name="AGLV-301A FLUSH TIME SET" Datatype="Int" />
+      <Member Name="AGLV-301B FLUSH  TIME SET" Datatype="Int" />
+    </Member>
+    <Member Name="RO-1 PV TIMER" Datatype="Struct">
+      <Member Name="LPS-301 TIMER PV" Datatype="Int" />
+      <Member Name="LPS-302 TIMER PV" Datatype="Int" />
+      <Member Name="HPS-301 TIMER PV" Datatype="Int" />
+      <Member Name="HPS-302 TIMER PV" Datatype="Int" />
+      <Member Name="ORP-301 TIMER PV" Datatype="Int" />
+      <Member Name="CT-301 HIGH TIMER PV" Datatype="Int" />
+      <Member Name="CT-302 HIGH TIMER PV" Datatype="Int" />
+      <Member Name="AGLV-301A FLUSH TIME PV" Datatype="Int" />
+      <Member Name="AGLV-301B FLUSH  TIME PV" Datatype="Int" />
+    </Member>
+    <Member Name="RO-2 SET PARAMETER" Datatype="Struct">
+      <Member Name="pH-401 HIGH" Datatype="Real" />
+      <Member Name="pH-401 LOW" Datatype="Real" />
+      <Member Name="pH-402 HIGH" Datatype="Real" />
+      <Member Name="pH-402 LOW" Datatype="Real" />
+      <Member Name="CT-401 H" Datatype="Real" />
+      <Member Name="CT-401 HH" Datatype="Real" />
+      <Member Name="CT-402 H" Datatype="Real" />
+      <Member Name="CT-402 HH" Datatype="Real" />
+    </Member>
+    <Member Name="RO-2 PARAMETER BUFF" Datatype="Struct">
+      <Member Name="pH-401 BUFF" Datatype="Int" />
+      <Member Name="pH-402 BUFF" Datatype="Int" />
+      <Member Name="CT-401 BUFF" Datatype="Int" />
+      <Member Name="CT-402 BUFF" Datatype="Int" />
+    </Member>
+    <Member Name="RO-2 SET TIMER" Datatype="Struct">
+      <Member Name="LPS-401 TIMER SET" Datatype="Int" />
+      <Member Name="LPS-402 TIMER SET" Datatype="Int" />
+      <Member Name="HPS-401 TIMER SET" Datatype="Int" />
+      <Member Name="HPS-402 TIMER SET" Datatype="Int" />
+      <Member Name="CT-401 HIGH TIMER SET" Datatype="Int" />
+      <Member Name="CT-402 HIGH TIMER SET" Datatype="Int" />
+      <Member Name="AGLV-401A FLUSH TIME SET" Datatype="Int" />
+      <Member Name="AGLV-401B FLUSH  TIME SET" Datatype="Int" />
+    </Member>
+    <Member Name="RO-2 PV TIMER" Datatype="Struct">
+      <Member Name="LPS-401 TIMER PV" Datatype="Int" />
+      <Member Name="LPS-402 TIMER PV" Datatype="Int" />
+      <Member Name="HPS-401 TIMER PV" Datatype="Int" />
+      <Member Name="HPS-402 TIMER PV" Datatype="Int" />
+      <Member Name="CT-401 HIGH TIMER PV" Datatype="Int" />
+      <Member Name="CT-402 HIGH TIMER PV" Datatype="Int" />
+      <Member Name="AGLV-401A FLUSH TIME PV" Datatype="Int" />
+      <Member Name="AGLV-401B FLUSH  TIME PV" Datatype="Int" />
+    </Member>
+    <Member Name="EDI SET PARAMETER" Datatype="Struct">
+      <Member Name="PT-501 LOW" Datatype="Real" />
+      <Member Name="PT-501 HIGH" Datatype="Real" />
+      <Member Name="PT-502 LOW" Datatype="Real" />
+      <Member Name="PT-502 HIGH" Datatype="Real" />
+      <Member Name="PT-503 HIGH" Datatype="Real" />
+      <Member Name="PT-504 HIGH" Datatype="Real" />
+      <Member Name="PT-505 HIGH" Datatype="Real" />
+      <Member Name="PT-506 HIGH" Datatype="Real" />
+      <Member Name="FIT-501 LOW" Datatype="Real" />
+      <Member Name="FIT-502 LOW" Datatype="Real" />
+      <Member Name="FIT-503 LOW" Datatype="Real" />
+      <Member Name="FIT-504 LOW" Datatype="Real" />
+      <Member Name="FIT-505 LOW" Datatype="Real" />
+      <Member Name="FIT-505 HIGH" Datatype="Real" />
+      <Member Name="FIT-506 LOW" Datatype="Real" />
+      <Member Name="FIT-506 HIGH" Datatype="Real" />
+      <Member Name="FIT-507 LOW" Datatype="Real" />
+      <Member Name="FIT-507 HIGH" Datatype="Real" />
+      <Member Name="FIT-508 LOW" Datatype="Real" />
+      <Member Name="FIT-508 HIGH" Datatype="Real" />
+      <Member Name="pHIT-501 - LOW" Datatype="Real" />
+      <Member Name="pHIT-501 - High" Datatype="Real" />
+      <Member Name="pHIT-502 - LOW" Datatype="Real" />
+      <Member Name="pHIT-502 - High" Datatype="Real" />
+      <Member Name="RIT-501 HIGH" Datatype="Real" />
+      <Member Name="RIT-502 HIGH" Datatype="Real" />
+      <Member Name="RIT-501 LOW" Datatype="Real" />
+      <Member Name="RIT-502 LOW" Datatype="Real" />
+    </Member>
+    <Member Name="EDI PARAMETER BUFF" Datatype="Struct">
+      <Member Name="PT-501 LOW/ HIGH BUFF" Datatype="Int" />
+      <Member Name="PT-502 LOW / HIGH BUFF" Datatype="Int" />
+      <Member Name="PT-503 HIGH" Datatype="Int" />
+      <Member Name="PT-504 HIGH" Datatype="Int" />
+      <Member Name="PT-505 HIGH" Datatype="Int" />
+      <Member Name="PT-506 HIGH" Datatype="Int" />
+      <Member Name="FIT-501 LOW BUFF" Datatype="Int" />
+      <Member Name="FIT-502 LOW  BUFF" Datatype="Int" />
+      <Member Name="FIT-503 LOW BUFF" Datatype="Int" />
+      <Member Name="FIT-504 LOW BUFF" Datatype="Int" />
+      <Member Name="FIT-505 LOW / HIGH BUFF" Datatype="Int" />
+      <Member Name="FIT-506 LOW / HIGH BUFF" Datatype="Int" />
+      <Member Name="FIT-507 LOW / HIGH BUFF" Datatype="Int" />
+      <Member Name="FIT-508 LOW / HIGH BUFF" Datatype="Int" />
+      <Member Name="pHIT-501 - LOW / High BUFF" Datatype="Int" />
+      <Member Name="pHIT-502 - LOW / High BUFF" Datatype="Int" />
+      <Member Name="RIT-501 HIGH/LOW BUFF" Datatype="Int" />
+      <Member Name="RIT-502 HIGH/ LOW BUFF" Datatype="Int" />
+    </Member>
+    <Member Name="EDI SET TIMER" Datatype="Struct">
+      <Member Name="PT-501 LOW TIMER SET" Datatype="Int" />
+      <Member Name="PT-501 HIGH TIMER SET" Datatype="Int" />
+      <Member Name="PT-502 LOW TIMER SET" Datatype="Int" />
+      <Member Name="PT-502 HIGH TIMER SET" Datatype="Int" />
+      <Member Name="PT-503 HIGH TIMER SET" Datatype="Int" />
+      <Member Name="PT-504 HIGH TIMER SET" Datatype="Int" />
+      <Member Name="PT-505 HIGH TIMER SET" Datatype="Int" />
+      <Member Name="PT-506 HIGH TIMER SET" Datatype="Int" />
+      <Member Name="FIT-501 LOW TIMER SET" Datatype="Int" />
+      <Member Name="FIT-502 LOW TIMER SET" Datatype="Int" />
+      <Member Name="FIT-503 LOW TIMER SET" Datatype="Int" />
+      <Member Name="FIT-504 LOW TIMER SET" Datatype="Int" />
+      <Member Name="FIT-505 LOW TIMER SET" Datatype="Int" />
+      <Member Name="FIT-505 HIGH TIMER SET" Datatype="Int" />
+      <Member Name="FIT-506 LOW TIMER SET" Datatype="Int" />
+      <Member Name="FIT-506 HIGH TIMER SET" Datatype="Int" />
+      <Member Name="FIT-507 LOW TIMER SET" Datatype="Int" />
+      <Member Name="FIT-507 HIGH TIMER SET" Datatype="Int" />
+      <Member Name="FIT-508 LOW TIMER SET" Datatype="Int" />
+      <Member Name="FIT-508 HIGH TIMER SET" Datatype="Int" />
+      <Member Name="pHIT-501 - LOW TIMER SET" Datatype="Int" />
+      <Member Name="pHIT-501 - High TIMER SET" Datatype="Int" />
+      <Member Name="pHIT-502 - LOW TIMER SET" Datatype="Int" />
+      <Member Name="pHIT-502 - High TIMER SET" Datatype="Int" />
+      <Member Name="RIT-501 HIGH TIMER SET" Datatype="Int" />
+      <Member Name="RIT-502 HIGH TIMER SET" Datatype="Int" />
+    </Member>
+    <Member Name="EDI PV TIMER" Datatype="Struct">
+      <Member Name="PT-501 LOW TIMER PV" Datatype="Int" />
+      <Member Name="PT-501 HIGH TIMER PV" Datatype="Int" />
+      <Member Name="PT-502 LOW TIMER PV" Datatype="Int" />
+      <Member Name="PT-502 HIGH TIMER PV" Datatype="Int" />
+      <Member Name="PT-503 HIGH TIMER PV" Datatype="Int" />
+      <Member Name="PT-504 HIGH TIMER PV" Datatype="Int" />
+      <Member Name="PT-505 HIGH TIMER PV" Datatype="Int" />
+      <Member Name="PT-506 HIGH TIMER PV" Datatype="Int" />
+      <Member Name="FIT-501 LOW TIMER PV" Datatype="Int" />
+      <Member Name="FIT-502 LOW TIMER PV" Datatype="Int" />
+      <Member Name="FIT-503 LOW TIMER PV" Datatype="Int" />
+      <Member Name="FIT-504 LOW TIMER PV" Datatype="Int" />
+      <Member Name="FIT-505 LOW TIMER PV" Datatype="Int" />
+      <Member Name="FIT-505 HIGH TIMER PV" Datatype="Int" />
+      <Member Name="FIT-506 LOW TIMER PV" Datatype="Int" />
+      <Member Name="FIT-506 HIGH TIMER PV" Datatype="Int" />
+      <Member Name="FIT-507 LOW TIMER PV" Datatype="Int" />
+      <Member Name="FIT-507 HIGH TIMER PV" Datatype="Int" />
+      <Member Name="FIT-508 LOW TIMER PV" Datatype="Int" />
+      <Member Name="FIT-508 HIGH TIMER PV" Datatype="Int" />
+      <Member Name="pHIT-501 - LOW TIMER PV" Datatype="Int" />
+      <Member Name="pHIT-501 - High TIMER PV" Datatype="Int" />
+      <Member Name="pHIT-502 - LOW TIMER PV" Datatype="Int" />
+      <Member Name="pHIT-502 - High TIMER PV" Datatype="Int" />
+      <Member Name="RIT-501 HIGH TIMER PV" Datatype="Int" />
+      <Member Name="RIT-502 HIGH TIMER PV" Datatype="Int" />
+    </Member>
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Standard</MemoryLayout>
+      <Name>INTERLOCK DB</Name>
+      <Namespace />
+      <Number>70</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

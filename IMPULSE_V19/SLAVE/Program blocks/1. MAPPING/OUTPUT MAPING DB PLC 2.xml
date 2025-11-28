@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V19" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="P-202 A RO 1 FEED PUMP" Datatype="Bool" />
+    <Member Name="P-202 B RO 1 FEED PUMP" Datatype="Bool" />
+    <Member Name="P-202 C RO 1 FEED PUMP" Datatype="Bool" />
+    <Member Name="P-301 A RO 1 HPP PUMP" Datatype="Bool" />
+    <Member Name="P-301 B RO 1 HPP PUMP" Datatype="Bool" />
+    <Member Name="P-401 A RO 2 FEED PUMP" Datatype="Bool" />
+    <Member Name="P-401 B RO 2 FEED PUMP" Datatype="Bool" />
+    <Member Name="P-401 C RO 2 FEED PUMP" Datatype="Bool" />
+    <Member Name="P-402  A RO 2 HPP" Datatype="Bool" />
+    <Member Name="P-402 B" Datatype="Bool" />
+    <Member Name="P-501 A EDI FEED PUMP" Datatype="Bool" />
+    <Member Name="P-501 B EDI FEED PUMP" Datatype="Bool" />
+    <Member Name="P-501 C EDI FEED PUMP" Datatype="Bool" />
+    <Member Name="EDI 501" Datatype="Bool" />
+    <Member Name="EDI 502" Datatype="Bool" />
+    <Member Name="DP 703" Datatype="Bool" />
+    <Member Name="DP 704" Datatype="Bool" />
+    <Member Name="DP 705" Datatype="Bool" />
+    <Member Name="ABV 301" Datatype="Bool" />
+    <Member Name="ABV 302" Datatype="Bool" />
+    <Member Name="AGLV-301" Datatype="Bool" />
+    <Member Name="AGLV-302" Datatype="Bool" />
+    <Member Name="AGLV-401" Datatype="Bool" />
+    <Member Name="AGLV-402" Datatype="Bool" />
+    <Member Name="AGLV-501" Datatype="Bool" />
+    <Member Name="AGLV-502" Datatype="Bool" />
+    <Member Name="HOOTER RESET" Datatype="Bool" />
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Standard</MemoryLayout>
+      <Name>OUTPUT MAPING DB PLC 2</Name>
+      <Namespace />
+      <Number>2</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

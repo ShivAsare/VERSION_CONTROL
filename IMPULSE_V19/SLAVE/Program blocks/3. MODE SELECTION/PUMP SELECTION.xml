@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V19" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="P-202 A RO 1 FEED PUMP" Datatype="Bool" Remanence="Retain" />
+    <Member Name="P-202 B RO 1 FEED PUMP" Datatype="Bool" Remanence="Retain" />
+    <Member Name="P-202 C RO 1 FEED PUMP" Datatype="Bool" Remanence="Retain" />
+    <Member Name="P-301 RO 1 HPP PUMP A" Datatype="Bool" Remanence="Retain" />
+    <Member Name="P-301 RO 1 HPP PUMP B" Datatype="Bool" Remanence="Retain" />
+    <Member Name="P-401 A RO 2 FEED PUMP" Datatype="Bool" Remanence="Retain" />
+    <Member Name="P-401 B RO 2 FEED PUMP" Datatype="Bool" Remanence="Retain" />
+    <Member Name="P-401 C RO 2 FEED PUMP" Datatype="Bool" Remanence="Retain" />
+    <Member Name="P-402 RO 2 HPP A" Datatype="Bool" Remanence="Retain" />
+    <Member Name="P-402 RO 2 HPP B" Datatype="Bool" Remanence="Retain" />
+    <Member Name="P-501 A EDI FEED PUMP" Datatype="Bool" Remanence="Retain" />
+    <Member Name="P-501 B EDI FEED PUMP" Datatype="Bool" Remanence="Retain" />
+    <Member Name="P-501 C EDI FEED PUMP" Datatype="Bool" Remanence="Retain" />
+    <Member Name="EDI-501" Datatype="Bool" Remanence="Retain" />
+    <Member Name="EDI-502" Datatype="Bool" Remanence="Retain" />
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Standard</MemoryLayout>
+      <Name>PUMP SELECTION</Name>
+      <Namespace />
+      <Number>36</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

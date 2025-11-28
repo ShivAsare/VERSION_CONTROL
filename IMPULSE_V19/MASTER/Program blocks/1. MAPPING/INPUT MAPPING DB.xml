@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V19" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="EMERGENCY STOP" Datatype="Bool" />
+    <Member Name="AIR FAIL" Datatype="Bool" />
+    <Member Name="HOOTER" Datatype="Bool" />
+    <Member Name="MGF FEED PUMP P-101 A MCB TRIP" Datatype="Bool" />
+    <Member Name="MGF FEED PUMP P-101 B MCB TRIP" Datatype="Bool" />
+    <Member Name="MGF BACK WASH  P-102 A MCB TRIP" Datatype="Bool" />
+    <Member Name="MGF BACK WASH P-102 B MCB TRIP" Datatype="Bool" />
+    <Member Name="UF FEED PUMP P-103 A MCB TRIP" Datatype="Bool" />
+    <Member Name="UF FEED PUMP P-103 B MCB TRIP" Datatype="Bool" />
+    <Member Name="UF BLOWER AB-201 A MCB TRIP" Datatype="Bool" />
+    <Member Name="UF BLOWER AB-201 B MCB TRIP" Datatype="Bool" />
+    <Member Name="UF BACKWASH P-201A TRIP" Datatype="Bool" />
+    <Member Name="UF BACKWASH P-201B TRIP" Datatype="Bool" />
+    <Member Name="FRL LOW" Datatype="Bool" />
+    <Member Name="SPARE_3" Datatype="Bool" />
+    <Member Name="SPARE_4" Datatype="Bool" />
+    <Member Name="DM FEED PUMP P-502 A MPCB TRIP" Datatype="Bool" />
+    <Member Name="DM FEED PUMP P-502 B MPCB TRIP" Datatype="Bool" />
+    <Member Name="DM FEED PUMP P-502 C MPCB TRIP" Datatype="Bool" />
+    <Member Name="CIP P-601" Datatype="Bool" />
+    <Member Name="BACK WASH RECOVERY P-801 A MPCB TRIP" Datatype="Bool" />
+    <Member Name="BACK WASH RECOVERY P-801 B MPCB TRIP" Datatype="Bool" />
+    <Member Name="ABFV-101 FEED BACK OPEN FEED BACK" Datatype="Bool" />
+    <Member Name="ABFV-101 FEED BACK CLOSE FEED BACK" Datatype="Bool" />
+    <Member Name="ABFV-102 FEED BACK OPEN FEED BACK" Datatype="Bool" />
+    <Member Name="ABFV-102 FEED BACK CLOSE FEED BACK" Datatype="Bool" />
+    <Member Name="ABFV-103 FEED BACK OPEN FEED BACK" Datatype="Bool" />
+    <Member Name="ABFV-103 FEED BACK CLOSE FEED BACK" Datatype="Bool" />
+    <Member Name="ABFV-104 FEED BACK OPEN FEED BACK" Datatype="Bool" />
+    <Member Name="ABFV-104 FEED BACK CLOSE FEED BACK" Datatype="Bool" />
+    <Member Name="ABFV 105 FEED BACK OPEN" Datatype="Bool" />
+    <Member Name="ABFV 105 FEED BACK CLOSE" Datatype="Bool" />
+    <Member Name="ABV 201 FEED BACK OPEN" Datatype="Bool" />
+    <Member Name="ABV 201 FEED BACK CLOSE" Datatype="Bool" />
+    <Member Name="ABFV 201 FEED BACK OPEN" Datatype="Bool" />
+    <Member Name="ABFV 201 FEED BACK CLOSE" Datatype="Bool" />
+    <Member Name="ABFV 202 FEED BACK OPEN" Datatype="Bool" />
+    <Member Name="ABFV 202 FEED BACK CLOSE" Datatype="Bool" />
+    <Member Name="ABFV 203 FEED BACK OPEN" Datatype="Bool" />
+    <Member Name="ABFV 203 FEED BACK CLOSE" Datatype="Bool" />
+    <Member Name="ABFV 204 FEED BACK OPEN" Datatype="Bool" />
+    <Member Name="ABFV 204 FEED BACK CLOSE" Datatype="Bool" />
+    <Member Name="ABFV 205 FEED BACK OPEN" Datatype="Bool" />
+    <Member Name="ABFV 205 FEED BACK CLOSE" Datatype="Bool" />
+    <Member Name="ABFV 206 FEED BACK OPEN" Datatype="Bool" />
+    <Member Name="ABFV 206 FEED BACK CLOSE" Datatype="Bool" />
+    <Member Name="ABFV-207 FEED BACK OPEN" Datatype="Bool" />
+    <Member Name="ABFV-207 FEED BACK CLOSE" Datatype="Bool" />
+    <Member Name="ABFV-208 FEED BACK OPEN" Datatype="Bool" />
+    <Member Name="ABFV-208 FEED BACK CLOSE" Datatype="Bool" />
+    <Member Name="P-101 A MGF FEED PUMP" Datatype="Bool" />
+    <Member Name="P-101 B MGF FEED PUMP" Datatype="Bool" />
+    <Member Name="P-102 A MGF BACK WASH" Datatype="Bool" />
+    <Member Name="P-102 B MGF BACK WASH" Datatype="Bool" />
+    <Member Name="P-103 A UF FEED PUMP" Datatype="Bool" />
+    <Member Name="P-103 B UF FEED PUMP" Datatype="Bool" />
+    <Member Name="AB-201 A UF BLOWER" Datatype="Bool" />
+    <Member Name="AB-201 B UF BLOWER" Datatype="Bool" />
+    <Member Name="P-201 A UF BACK WASH" Datatype="Bool" />
+    <Member Name="P-201 B UF BACK WASH" Datatype="Bool" />
+    <Member Name="P-502 A DM FEED PUMP" Datatype="Bool" />
+    <Member Name="P-502 B DM FEED PUMP" Datatype="Bool" />
+    <Member Name="P-502 C ON" Datatype="Bool" />
+    <Member Name="P-601 ON" Datatype="Bool" />
+    <Member Name="P-801 A BACK WASH WAST FEED BACK" Datatype="Bool" />
+    <Member Name="P-801 B BACK WASH WAST FEED BACK" Datatype="Bool" />
+    <Member Name="SPARE(5)" Datatype="Bool" />
+    <Member Name="SPARE(6)" Datatype="Bool" />
+    <Member Name="SPARE(7)" Datatype="Bool" />
+    <Member Name="SPARE(8)" Datatype="Bool" />
+    <Member Name="SPARE(9)" Datatype="Bool" />
+    <Member Name="SPARE(10)" Datatype="Bool" />
+    <Member Name="ABFV 501 OPEN FEED BACK" Datatype="Bool" />
+    <Member Name="ABFV 501 CLOSE FEED BACK" Datatype="Bool" />
+    <Member Name="ABFV 502 OPEN FEED BACK" Datatype="Bool" />
+    <Member Name="ABFV 502 CLOSE FEED BACK" Datatype="Bool" />
+    <Member Name="PS 201 UF" Datatype="Bool" />
+    <Member Name="SPARE(12)" Datatype="Bool" />
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Standard</MemoryLayout>
+      <Name>INPUT MAPPING DB</Name>
+      <Namespace />
+      <Number>2</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

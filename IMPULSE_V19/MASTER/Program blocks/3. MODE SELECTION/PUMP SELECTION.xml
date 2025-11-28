@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V19" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="MGF FEED PUMP P-101 A/B" Datatype="Bool" Remanence="Retain" />
+    <Member Name="MGF FEED PUMP P-102 A/B" Datatype="Bool" Remanence="Retain" />
+    <Member Name="UF FEED PUMP P-103 A/B" Datatype="Bool" Remanence="Retain" />
+    <Member Name="UF BLOWER AB-201 A/B" Datatype="Bool" Remanence="Retain" />
+    <Member Name="UF BACK WASH P-201 A/B" Datatype="Bool" Remanence="Retain" />
+    <Member Name="DM FEED PUMP P-502 A" Datatype="Bool" Remanence="Retain" />
+    <Member Name="DM FEED PUMP P-502 B" Datatype="Bool" Remanence="Retain" />
+    <Member Name="DM FEED PUMP P-502 C" Datatype="Bool" Remanence="Retain" />
+    <Member Name="BACK WASH RECOVERY P-801 A/B" Datatype="Bool" Remanence="Retain" />
+    <Member Name="NaOCL DOSING D-706 A/B" Datatype="Bool" Remanence="Retain" />
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Standard</MemoryLayout>
+      <Name>PUMP SELECTION</Name>
+      <Namespace />
+      <Number>19</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V19" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="DRAIN BY GRAVITY" Datatype="Int" Remanence="Retain" />
+    <Member Name="CEB BACKWASH_1" Datatype="Int" Remanence="Retain" />
+    <Member Name="CEB BACKWASH_2" Datatype="Int" Remanence="Retain" />
+    <Member Name="SOAK" Datatype="Int" Remanence="Retain" />
+    <Member Name="BACKWASH_1" Datatype="Int" Remanence="Retain" />
+    <Member Name="BACKWASH_2" Datatype="Int" Remanence="Retain" />
+    <Member Name="DRAIN BY GRAVITY_2" Datatype="Int" Remanence="Retain" />
+    <Member Name="TOTAL CYCLE" Datatype="Int" Remanence="Retain" />
+    <Member Name="PV" Datatype="Struct" Remanence="Retain">
+      <Member Name="DRAIN BY GRAVITY" Datatype="Int" />
+      <Member Name="CEB BACKWASH_1" Datatype="Int" />
+      <Member Name="CEB BACKWASH_2" Datatype="Int" />
+      <Member Name="SOAK" Datatype="Int" />
+      <Member Name="BACKWASH_1" Datatype="Int" />
+      <Member Name="BACKWASH_2" Datatype="Int" />
+      <Member Name="DRAIN BY GRAVITY_2" Datatype="Int" />
+      <Member Name="TOTAL CYCLE" Datatype="Int" />
+    </Member>
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Standard</MemoryLayout>
+      <Name>CEB_2 DB</Name>
+      <Namespace />
+      <Number>135</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

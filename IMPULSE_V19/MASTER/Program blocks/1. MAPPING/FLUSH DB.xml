@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V19" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="ABFV 101 MULTIGRADE FILTER VALVE" Datatype="Bool" />
+    <Member Name="ABFV 102 MULTIGRADE FILTER VALVE" Datatype="Bool" />
+    <Member Name="ABFV 103 MULTIGRADE FILTER VALVE" Datatype="Bool" />
+    <Member Name="ABFV 104 MULTIGRADE FILTER VALVE" Datatype="Bool" />
+    <Member Name="ABFV 105 MULTIGRADE FILTER VALVE" Datatype="Bool" />
+    <Member Name="ABV 201 UF VALVE" Datatype="Bool" />
+    <Member Name="ABFV 201 UF VALVE" Datatype="Bool" />
+    <Member Name="ABFV 202 UF VALVE" Datatype="Bool" />
+    <Member Name="ABFV 203 UF VALVE" Datatype="Bool" />
+    <Member Name="ABFV 204 UF VALVE" Datatype="Bool" />
+    <Member Name="ABFV 205 UF VALVE" Datatype="Bool" />
+    <Member Name="ABFV 206 UF VALVE" Datatype="Bool" />
+    <Member Name="ABFV 207 UF VALVE" Datatype="Bool" />
+    <Member Name="ABFV 208 UF VALVE" Datatype="Bool" />
+    <Member Name="ABFV 101 MULTIGRADE FILTER VALVE_CLOSE" Datatype="Bool" />
+    <Member Name="ABFV 102 MULTIGRADE FILTER VALVE_CLOSE" Datatype="Bool" />
+    <Member Name="ABFV 103 MULTIGRADE FILTER VALVE_CLOSE" Datatype="Bool" />
+    <Member Name="ABFV 104 MULTIGRADE FILTER VALVE_CLOSE" Datatype="Bool" />
+    <Member Name="ABFV 105 MULTIGRADE FILTER VALVE_CLOSE" Datatype="Bool" />
+    <Member Name="ABV 201 UF VALVE_CLOSE" Datatype="Bool" />
+    <Member Name="ABFV 201 UF VALVE_CLOSE" Datatype="Bool" />
+    <Member Name="ABFV 202 UF VALVE_CLOSE" Datatype="Bool" />
+    <Member Name="ABFV 203 UF VALVE_CLOSE" Datatype="Bool" />
+    <Member Name="ABFV 204 UF VALVE_CLOSE" Datatype="Bool" />
+    <Member Name="ABFV 205 UF VALVE_CLOSE" Datatype="Bool" />
+    <Member Name="ABFV 206 UF VALVE_CLOSE" Datatype="Bool" />
+    <Member Name="ABFV 207 UF VALVE_CLOSE" Datatype="Bool" />
+    <Member Name="ABFV 208 UF VALVE_CLOSE" Datatype="Bool" />
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>FLUSH DB</Name>
+      <Namespace />
+      <Number>41</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

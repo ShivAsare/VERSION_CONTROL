@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V19" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="EMERGENCY STOP" Datatype="Bool" />
+    <Member Name="AIR FAIL" Datatype="Bool" />
+    <Member Name="MGF FEED PUMP P-101 A MCB TRIP" Datatype="Bool" />
+    <Member Name="MGF FEED PUMP P-101 B MCB TRIP" Datatype="Bool" />
+    <Member Name="MGF BACK WASH  P-102 A MCB TRIP" Datatype="Bool" />
+    <Member Name="MGF BACK WASH P-102 B MCB TRIP" Datatype="Bool" />
+    <Member Name="UF FEED PUMP P-103 A MCB TRIP" Datatype="Bool" />
+    <Member Name="UF FEED PUMP P-103 B MCB TRIP" Datatype="Bool" />
+    <Member Name="UF BLOWER AB-201 A MCB TRIP" Datatype="Bool" />
+    <Member Name="UF BLOWER AB-201 B MCB TRIP" Datatype="Bool" />
+    <Member Name="DM FEED PUMP P-502 A MPCB TRIP" Datatype="Bool" />
+    <Member Name="DM FEED PUMP P-502 B MPCB TRIP" Datatype="Bool" />
+    <Member Name="DM FEED PUMP P-502 C MPCB TRIP" Datatype="Bool" />
+    <Member Name="CIP P-601" Datatype="Bool" />
+    <Member Name="BACK WASH RECOVERY P-801 A MPCB TRIP" Datatype="Bool" />
+    <Member Name="BACK WASH RECOVERY P-801 B MPCB TRIP" Datatype="Bool" />
+    <Member Name="UF BACKWASH P-201A TRIP" Datatype="Bool" />
+    <Member Name="UF BACKWASH P-201B TRIP" Datatype="Bool" />
+    <Member Name="MGF FEED PUMP P-101 A MCB_FEEDBACK FAIL" Datatype="Bool" />
+    <Member Name="MGF FEED PUMP P-101 B MCB_FEEDBACK FAIL" Datatype="Bool" />
+    <Member Name="MGF BACK WASH  P-102 A MCB_FEEDBACK FAIL" Datatype="Bool" />
+    <Member Name="MGF BACK WASH P-102 B MCB_FEEDBACK FAIL" Datatype="Bool" />
+    <Member Name="UF FEED PUMP P-103 A MCB_FEEDBACK FAIL" Datatype="Bool" />
+    <Member Name="UF FEED PUMP P-103 B MCB_FEEDBACK FAIL" Datatype="Bool" />
+    <Member Name="UF BLOWER AB-201 A MCB_FEEDBACK FAIL" Datatype="Bool" />
+    <Member Name="UF BLOWER AB-201 B MCB_FEEDBACK FAIL" Datatype="Bool" />
+    <Member Name="DM FEED PUMP P-502 A MPCB_FEEDBACK FAIL" Datatype="Bool" />
+    <Member Name="DM FEED PUMP P-502 B MPCB_FEEDBACK FAIL" Datatype="Bool" />
+    <Member Name="DM FEED PUMP P-502 C MPCB_FEEDBACK FAIL" Datatype="Bool" />
+    <Member Name="CIP P-601_FEEDBACK FAIL" Datatype="Bool" />
+    <Member Name="BACK WASH RECOVERY P-801 A MPCB_FEEDBACK FAIL" Datatype="Bool" />
+    <Member Name="BACK WASH RECOVERY P-801 B MPCB_FEEDBACK FAIL" Datatype="Bool" />
+    <Member Name="UF BACKWASH P-201A_FEEDBACK FAIL" Datatype="Bool" />
+    <Member Name="UF BACKWASH P-201B_FEEDBACK FAIL" Datatype="Bool" />
+    <Member Name="MGF INLET VALVE ABFV-101 OPEN COMMOND FAIL" Datatype="Bool" />
+    <Member Name="MGF INLET VALVE ABFV-101 CLOSE COMMOND FAIL" Datatype="Bool" />
+    <Member Name="MGF BACKWASH OUTLET VALVE ABFV-102 OPEN COMMOND FAIL" Datatype="Bool" />
+    <Member Name="MGF BACKWASH OUTLET VALVE ABFV-102 CLOSE COMMOND FAIL" Datatype="Bool" />
+    <Member Name="MGF BACKWASH INLET VALVE ABFV-103 OPEN COMMOND FAIL" Datatype="Bool" />
+    <Member Name="MGF BACKWASH INLET VALVE ABFV-103 CLOSE COMMOND FAIL" Datatype="Bool" />
+    <Member Name="MGF OUTLET VALVE ABFV-104 OPEN COMMOND FAIL" Datatype="Bool" />
+    <Member Name="MGF OUTLET VALVE ABFV-104 CLOSE COMMOND FAIL" Datatype="Bool" />
+    <Member Name="MGF RINSE OUTLET VALVE ABFV-105 OPEN COMMOND FAIL" Datatype="Bool" />
+    <Member Name="MGF RINSE OUTLET VALVE ABFV-105 CLOSE COMMOND FAIL" Datatype="Bool" />
+    <Member Name="UF AIR SCOURING VALVE ABV-201 OPEN COMMOND FAIL" Datatype="Bool" />
+    <Member Name="UF AIR SCOURING VALVE ABV-201 CLOSE COMMOND FAIL" Datatype="Bool" />
+    <Member Name="UF INLET VALVE ABFV-201 OPEN COMMOND FAIL" Datatype="Bool" />
+    <Member Name="UF INLET VALVE ABFV-201 CLOSE COMMOND FAIL" Datatype="Bool" />
+    <Member Name="UF BOTTOM DAIN VALVE ABFV-202 OPEN COMMOND FAIL" Datatype="Bool" />
+    <Member Name="UF BOTTOM DAIN VALVE ABFV-202 CLOSE COMMOND FAIL" Datatype="Bool" />
+    <Member Name="UF TOP DAIN VALVE ABFV-203 OPEN COMMOND FAIL" Datatype="Bool" />
+    <Member Name="UF TOP DAIN VALVE ABFV-203 CLOSE COMMOND FAIL" Datatype="Bool" />
+    <Member Name="UF BACKWASH INLET VALVE ABFV-204 OPEN COMMOND FAIL" Datatype="Bool" />
+    <Member Name="UF BACKWASH INLET VALVE ABFV-204 CLOSE COMMOND FAIL" Datatype="Bool" />
+    <Member Name="UF PRODUCT OUT VALVE ABFV-205 OPEN COMMOND FAIL" Datatype="Bool" />
+    <Member Name="UF PRODUCT OUT VALVE ABFV-205 CLOSE COMMOND FAIL" Datatype="Bool" />
+    <Member Name="UF BACKWASH RECOVERY LINE VALVE ABFV-206 OPEN COMMOND FAIL" Datatype="Bool" />
+    <Member Name="UF BACKWASH RECOVERY LINE VALVE ABFV-206 CLOSE COMMOND FAIL" Datatype="Bool" />
+    <Member Name="UF BACKWASH DRAIN LINE VALVE ABFV-207 OPEN COMMOND FAIL" Datatype="Bool" />
+    <Member Name="UF BACKWASH DRAIN LINE VALVE ABFV-207 CLOSE COMMOND FAIL" Datatype="Bool" />
+    <Member Name="UF BACKWASH BYPASS VALVE ABFV-208 OPEN COMMOND FAIL" Datatype="Bool" />
+    <Member Name="UF BACKWASH BYPASS VALVE ABFV-208 CLOSE COMMOND FAIL" Datatype="Bool" />
+    <Member Name="RAW WATER COLLECTION TANK LEVEL ( LT-101)- LOW LOW" Datatype="Bool" />
+    <Member Name="RAW WATER COLLECTION TANK LEVEL ( LT-101)- HIGH HIGH" Datatype="Bool" />
+    <Member Name="FILTER WATER STORAGE TANK  LEVEL ( LT-102)- LOW LOW" Datatype="Bool" />
+    <Member Name="FILTER WATER STORAGE TANK LEVEL ( LT-102)- HIGH HIGH" Datatype="Bool" />
+    <Member Name="RO-01 FEED TANK LEVEL ( LT-201)- LOW LOW" Datatype="Bool" />
+    <Member Name="RO-01 FEED TANK LEVEL ( LT-201)- HIGH HIGH" Datatype="Bool" />
+    <Member Name="BACKWASH WASTE WATER COLLECTION TANK  LEVEL ( LT-801)- LOW LOW" Datatype="Bool" />
+    <Member Name="BACKWASH WASTE WATER COLLECTION TANK LEVEL ( LT-801)- HIGH HIGH" Datatype="Bool" />
+    <Member Name="PS-201 HIGH" Datatype="Bool" />
+    <Member Name="DPT-101 HIGH" Datatype="Bool" />
+    <Member Name="DPT-201 HIGH" Datatype="Bool" />
+    <Member Name="NRMB OUTLET PRESSURE PT-601 HIGH" Datatype="Bool" />
+    <Member Name="NRMB PRODUCT OUT pHIT-601 HIGH" Datatype="Bool" />
+    <Member Name="NRMB PRODUCT OUT pHIT-601 LOW" Datatype="Bool" />
+    <Member Name="NRMB PRODUCT OUT RIT-601 HIGH" Datatype="Bool" />
+    <Member Name="RIT-601 HIGH_SET VALIDATION TIME OVER_(SYSTEM STOP)" Datatype="Bool" />
+    <Member Name="UV-601 INTENSITY LOW" Datatype="Bool" />
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Standard</MemoryLayout>
+      <Name>ALARM DB</Name>
+      <Namespace />
+      <Number>20</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

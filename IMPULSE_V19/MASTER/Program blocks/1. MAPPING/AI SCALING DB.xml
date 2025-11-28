@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V19" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="MIN" Datatype="Struct">
+      <Member Name="LEVEL TRANSMITTER-101 ANALOG" Datatype="Real">
+        <StartValue>0.0</StartValue>
+      </Member>
+      <Member Name="LEVEL TRANSMITTER-102 ANALOG" Datatype="Real">
+        <StartValue>0.0</StartValue>
+      </Member>
+      <Member Name="DIFFRENTIAL PRESSURE TRANSMITTER-101 ANALOG" Datatype="Real">
+        <StartValue>0.0</StartValue>
+      </Member>
+      <Member Name="CONDUCTIVITY INDICATOR CUM TRANSMITTER-101" Datatype="Real">
+        <StartValue>0.0</StartValue>
+      </Member>
+      <Member Name="DIFFRENTIAL PRESSURE TRANSMITTER-201" Datatype="Real">
+        <StartValue>0.0</StartValue>
+      </Member>
+      <Member Name="FLOW INDICATIOR TOTALISER-201" Datatype="Real">
+        <StartValue>0.0</StartValue>
+      </Member>
+      <Member Name="LEVEL TRANSMITTER-201" Datatype="Real">
+        <StartValue>0.0</StartValue>
+      </Member>
+      <Member Name="LEVEL TRANSMITTER-801" Datatype="Real">
+        <StartValue>0.0</StartValue>
+      </Member>
+      <Member Name="RESISTIVITY CUM TRANSMITTER 601" Datatype="Real">
+        <AttributeList>
+          <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+        </AttributeList>
+        <StartValue>0.0</StartValue>
+      </Member>
+      <Member Name="PRESSURE TRANSMITTER 601" Datatype="Real">
+        <AttributeList>
+          <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+        </AttributeList>
+        <StartValue>0.0</StartValue>
+      </Member>
+      <Member Name="FLOW INDICATIOR TOTALISER 601" Datatype="Real">
+        <AttributeList>
+          <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+        </AttributeList>
+        <StartValue>0.0</StartValue>
+      </Member>
+      <Member Name="PH INDICATOR CUM TRANSMITTER 601" Datatype="Real">
+        <AttributeList>
+          <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+        </AttributeList>
+        <StartValue>0.0</StartValue>
+      </Member>
+      <Member Name="UV-601_SENSOR" Datatype="Real">
+        <AttributeList>
+          <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+        </AttributeList>
+        <StartValue>0.0</StartValue>
+      </Member>
+      <Member Name="SPARE(30)" Datatype="Real">
+        <AttributeList>
+          <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+        </AttributeList>
+        <StartValue>0.0</StartValue>
+      </Member>
+      <Member Name="SPARE(31)" Datatype="Real">
+        <AttributeList>
+          <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+        </AttributeList>
+        <StartValue>0.0</StartValue>
+      </Member>
+      <Member Name="SPARE(32)" Datatype="Real">
+        <AttributeList>
+          <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+        </AttributeList>
+        <StartValue>0.0</StartValue>
+      </Member>
+    </Member>
+    <Member Name="MAX" Datatype="Struct">
+      <Member Name="LEVEL TRANSMITTER-101 ANALOG" Datatype="Real">
+        <AttributeList>
+          <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+        </AttributeList>
+        <StartValue>100.0</StartValue>
+      </Member>
+      <Member Name="LEVEL TRANSMITTER-102 ANALOG" Datatype="Real">
+        <AttributeList>
+          <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+        </AttributeList>
+        <StartValue>100.0</StartValue>
+      </Member>
+      <Member Name="DIFFRENTIAL PRESSURE TRANSMITTER-101 ANALOG" Datatype="Real">
+        <AttributeList>
+          <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+        </AttributeList>
+        <StartValue>2.0</StartValue>
+      </Member>
+      <Member Name="CONDUCTIVITY INDICATOR CUM TRANSMITTER-101" Datatype="Real">
+        <AttributeList>
+          <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+        </AttributeList>
+        <StartValue>1999.0</StartValue>
+      </Member>
+      <Member Name="DIFFRENTIAL PRESSURE TRANSMITTER-201" Datatype="Real">
+        <AttributeList>
+          <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+        </AttributeList>
+        <StartValue>2.0</StartValue>
+      </Member>
+      <Member Name="FLOW INDICATIOR TOTALISER-201" Datatype="Real">
+        <AttributeList>
+          <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+        </AttributeList>
+        <StartValue>20.0</StartValue>
+      </Member>
+      <Member Name="LEVEL TRANSMITTER-201" Datatype="Real">
+        <AttributeList>
+          <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+        </AttributeList>
+        <StartValue>100.0</StartValue>
+      </Member>
+      <Member Name="LEVEL TRANSMITTER-801" Datatype="Real">
+        <AttributeList>
+          <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+        </AttributeList>
+        <StartValue>100.0</StartValue>
+      </Member>
+      <Member Name="RESISTIVITY CUM TRANSMITTER 601" Datatype="Real">
+        <AttributeList>
+          <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+        </AttributeList>
+        <StartValue>100.0</StartValue>
+      </Member>
+      <Member Name="PRESSURE TRANSMITTER 601" Datatype="Real">
+        <AttributeList>
+          <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+        </AttributeList>
+        <StartValue>10.0</StartValue>
+      </Member>
+      <Member Name="FLOW INDICATIOR TOTALISER 601" Datatype="Real">
+        <AttributeList>
+          <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+        </AttributeList>
+        <StartValue>56.0</StartValue>
+      </Member>
+      <Member Name="PH INDICATOR CUM TRANSMITTER 601" Datatype="Real">
+        <AttributeList>
+          <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+        </AttributeList>
+        <StartValue>14.0</StartValue>
+      </Member>
+      <Member Name="UV-601_SENSOR" Datatype="Real">
+        <AttributeList>
+          <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+        </AttributeList>
+        <StartValue>120.0</StartValue>
+      </Member>
+      <Member Name="SPARE(30)" Datatype="Real">
+        <AttributeList>
+          <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+        </AttributeList>
+      </Member>
+      <Member Name="SPARE(31)" Datatype="Real">
+        <AttributeList>
+          <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+        </AttributeList>
+      </Member>
+      <Member Name="SPARE(32)" Datatype="Real">
+        <AttributeList>
+          <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+        </AttributeList>
+      </Member>
+    </Member>
+    <Member Name="PV" Datatype="Struct">
+      <Member Name="LEVEL TRANSMITTER-101 ANALOG" Datatype="Real" />
+      <Member Name="LEVEL TRANSMITTER-102 ANALOG" Datatype="Real" />
+      <Member Name="DIFFRENTIAL PRESSURE TRANSMITTER-101 ANALOG" Datatype="Real" />
+      <Member Name="CONDUCTIVITY INDICATOR CUM TRANSMITTER-101" Datatype="Real" />
+      <Member Name="DIFFRENTIAL PRESSURE TRANSMITTER-201" Datatype="Real" />
+      <Member Name="FLOW INDICATIOR TOTALISER-201" Datatype="Real" />
+      <Member Name="LEVEL TRANSMITTER-201" Datatype="Real" />
+      <Member Name="LEVEL TRANSMITTER-801" Datatype="Real" />
+      <Member Name="RESISTIVITY CUM TRANSMITTER 601" Datatype="Real" />
+      <Member Name="PRESSURE TRANSMITTER 601" Datatype="Real" />
+      <Member Name="FLOW INDICATIOR TOTALISER 601" Datatype="Real" />
+      <Member Name="PH INDICATOR CUM TRANSMITTER 601" Datatype="Real" />
+      <Member Name="UV-601_SENSOR" Datatype="Real" />
+      <Member Name="SPARE(30)" Datatype="Real" />
+      <Member Name="SPARE(31)" Datatype="Real" />
+      <Member Name="SPARE(32)" Datatype="Real" />
+    </Member>
+    <Member Name="SPARE" Datatype="Bool" />
+    <Member Name="LT-101" Datatype="Struct">
+      <Member Name="LOW_BUFF" Datatype="Int" />
+      <Member Name="HIGH_BUFF" Datatype="Int" />
+    </Member>
+    <Member Name="LT-102" Datatype="Struct">
+      <Member Name="LOW_BUFF" Datatype="Int" />
+      <Member Name="HIGH_BUFF" Datatype="Int" />
+    </Member>
+    <Member Name="LT-201" Datatype="Struct">
+      <Member Name="LOW_BUFF" Datatype="Int" />
+      <Member Name="HIGH_BUFF" Datatype="Int" />
+    </Member>
+    <Member Name="LT-801" Datatype="Struct">
+      <Member Name="LOW_BUFF" Datatype="Int" />
+      <Member Name="HIGH_BUFF" Datatype="Int" />
+    </Member>
+    <Member Name="LT-101 SET VALVE" Datatype="Struct">
+      <Member Name="LL" Datatype="Real" />
+      <Member Name="L" Datatype="Real" />
+      <Member Name="H" Datatype="Real" />
+      <Member Name="HH" Datatype="Real" />
+    </Member>
+    <Member Name="LT-102 SET VALVE" Datatype="Struct">
+      <Member Name="LL" Datatype="Real" />
+      <Member Name="L" Datatype="Real" />
+      <Member Name="H" Datatype="Real" />
+      <Member Name="HH" Datatype="Real" />
+    </Member>
+    <Member Name="LT-201 SET VALVE" Datatype="Struct">
+      <Member Name="LL" Datatype="Real" />
+      <Member Name="L" Datatype="Real" />
+      <Member Name="H" Datatype="Real" />
+      <Member Name="HH" Datatype="Real" />
+    </Member>
+    <Member Name="LT-801 SET VALVE" Datatype="Struct">
+      <Member Name="LL" Datatype="Real" />
+      <Member Name="L" Datatype="Real" />
+      <Member Name="H" Datatype="Real" />
+      <Member Name="HH" Datatype="Real" />
+    </Member>
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Standard</MemoryLayout>
+      <Name>AI SCALING DB</Name>
+      <Namespace />
+      <Number>5</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V19" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="ERROR" Datatype="Bool" Remanence="Retain" />
+    <Member Name="CIT-101 HH" Datatype="Real" Remanence="Retain" />
+    <Member Name="PS-201 COIL" Datatype="Bool" Remanence="Retain" />
+    <Member Name="DPT-101 pressure is higher" Datatype="Real" Remanence="Retain" />
+    <Member Name="DPT-201" Datatype="Real" Remanence="Retain" />
+    <Member Name="UF INTERLOCK FOR LT-102 AND LT201 SYSTER PAUSE BUFF" Datatype="Int" Remanence="Retain" />
+    <Member Name="PT-601 HH SET" Datatype="Real" Remanence="Retain" />
+    <Member Name="pHIT-601 HIGH" Datatype="Real" Remanence="Retain" />
+    <Member Name="pHIT-601 LOW" Datatype="Real" Remanence="Retain" />
+    <Member Name="RIT-601 HIGH" Datatype="Real" Remanence="Retain" />
+    <Member Name="RIT-601 LOW" Datatype="Real" Remanence="Retain" />
+    <Member Name="UV ONLY ALARM" Datatype="Real" Remanence="Retain" />
+    <Member Name="BUFF" Datatype="Struct" Remanence="Retain">
+      <Member Name="PS-101 BUFF" Datatype="Int" />
+      <Member Name="CIT-101 HH BUFF" Datatype="Int" />
+      <Member Name="PS-201 BUFF" Datatype="Int" />
+      <Member Name="DPT-101 pressure is higher" Datatype="Int" />
+      <Member Name="DPT-201" Datatype="Int" />
+      <Member Name="PT-601 HH BUFF" Datatype="Int" />
+      <Member Name="pHIT-601 HIGH/LOW" Datatype="Int" />
+      <Member Name="RIT-601 HIGH BUFF" Datatype="Int" />
+      <Member Name="UV ONLY ALARM" Datatype="Bool" />
+    </Member>
+    <Member Name="TIMER SET" Datatype="Struct" Remanence="Retain">
+      <Member Name="CIT-101 HH TIMER SET" Datatype="Int" />
+      <Member Name="RIT-601 HIGH TIMER SET" Datatype="Int" />
+    </Member>
+    <Member Name="TIMER PV" Datatype="Struct" Remanence="Retain">
+      <Member Name="CIT-101 HH TIMER PV" Datatype="Int" />
+      <Member Name="RIT-601 HIGH TIMER PV" Datatype="Int" />
+    </Member>
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Standard</MemoryLayout>
+      <Name>INTERLOCK DB</Name>
+      <Namespace />
+      <Number>38</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

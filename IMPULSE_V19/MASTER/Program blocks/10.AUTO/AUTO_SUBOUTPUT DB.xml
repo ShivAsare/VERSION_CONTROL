@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V19" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="MGF FEED PUMP P-101 A" Datatype="Bool" />
+    <Member Name="MGF FEED PUMP P-101 B" Datatype="Bool" />
+    <Member Name="MGF BACK WASH P-102 A" Datatype="Bool" />
+    <Member Name="MGF BACK WASH P-102 B" Datatype="Bool" />
+    <Member Name="UF FEED PUMP P-103 A" Datatype="Bool" />
+    <Member Name="UF FEED PUMP P-103 B" Datatype="Bool" />
+    <Member Name="UF BLOWER AB-201 A" Datatype="Bool" />
+    <Member Name="UF BLOWER AB 201 B" Datatype="Bool" />
+    <Member Name="UF BACK WASH P-201 A" Datatype="Bool" />
+    <Member Name="UF BACK WASH  P-201 B" Datatype="Bool" />
+    <Member Name="DM FEED PUMP P-502 A" Datatype="Bool" />
+    <Member Name="DM FEED PUMP P-502 B" Datatype="Bool" />
+    <Member Name="DM FEED PUMP P-502 C" Datatype="Bool" />
+    <Member Name="CIP PUMP P-601" Datatype="Bool" />
+    <Member Name="BACK WASH RECOVERY P-801 A" Datatype="Bool" />
+    <Member Name="BACK WASH RECOVERY P-801 B" Datatype="Bool" />
+    <Member Name="SPARE" Datatype="Bool" />
+    <Member Name="SPARE(1)" Datatype="Bool" />
+    <Member Name="SPARE(2)" Datatype="Bool" />
+    <Member Name="DP-701" Datatype="Bool" />
+    <Member Name="DP-702" Datatype="Bool" />
+    <Member Name="NaOCL DOSING D-706 A" Datatype="Bool" />
+    <Member Name="NaOCL DOSING DP-706B" Datatype="Bool" />
+    <Member Name="ABFV-501" Datatype="Bool" />
+    <Member Name="ABFV-502" Datatype="Bool" />
+    <Member Name="ABFV 101 MULTIGRADE FILTER VALVE" Datatype="Bool" />
+    <Member Name="ABFV 102 MULTIGRADE FILTER VALVE" Datatype="Bool" />
+    <Member Name="ABFV 103 MULTIGRADE FILTER VALVE" Datatype="Bool" />
+    <Member Name="ABFV 104 MULTIGRADE FILTER VALVE" Datatype="Bool" />
+    <Member Name="ABFV 105 MULTIGRADE FILTER VALVE" Datatype="Bool" />
+    <Member Name="ABV 201 UF VALVE" Datatype="Bool" />
+    <Member Name="ABFV 201 UF VALVE" Datatype="Bool" />
+    <Member Name="ABFV 202 UF VALVE" Datatype="Bool" />
+    <Member Name="ABFV 203 UF VALVE" Datatype="Bool" />
+    <Member Name="ABFV 204 UF VALVE" Datatype="Bool" />
+    <Member Name="ABFV 205 UF VALVE" Datatype="Bool" />
+    <Member Name="ABFV 206 UF VALVE" Datatype="Bool" />
+    <Member Name="ABFV 207 UF VALVE" Datatype="Bool" />
+    <Member Name="ABFV 208 UF VALVE" Datatype="Bool" />
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>AUTO_SUBOUTPUT DB</Name>
+      <Namespace />
+      <Number>58</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

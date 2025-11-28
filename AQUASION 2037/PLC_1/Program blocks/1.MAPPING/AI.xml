@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V19" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="Min" Datatype="Struct" Remanence="Retain">
+      <Member Name="LT-1" Datatype="Real" />
+      <Member Name="LT-2" Datatype="Real" />
+      <Member Name="CT-1" Datatype="Real" />
+      <Member Name="CT-2" Datatype="Real" />
+    </Member>
+    <Member Name="Max" Datatype="Struct" Remanence="Retain">
+      <Member Name="LT-1" Datatype="Real" />
+      <Member Name="LT-2" Datatype="Real" />
+      <Member Name="CT-1" Datatype="Real" />
+      <Member Name="CT-2" Datatype="Real" />
+    </Member>
+    <Member Name="PV" Datatype="Struct">
+      <Member Name="LT-1" Datatype="Real" />
+      <Member Name="LT-2" Datatype="Real" />
+      <Member Name="CT-1" Datatype="Real" />
+      <Member Name="CT-2" Datatype="Real" />
+    </Member>
+    <Member Name="LT-1 SET VALVE" Datatype="Struct" Remanence="Retain">
+      <Member Name="LL" Datatype="Real" />
+      <Member Name="L" Datatype="Real" />
+      <Member Name="H" Datatype="Real" />
+      <Member Name="HH" Datatype="Real" />
+    </Member>
+    <Member Name="LT-1" Datatype="Struct">
+      <Member Name="LOW_BUFF" Datatype="Int" />
+      <Member Name="HIGH_BUFF" Datatype="Int" />
+    </Member>
+    <Member Name="LT-2 SET VALVE" Datatype="Struct" Remanence="Retain">
+      <Member Name="LL" Datatype="Real" />
+      <Member Name="L" Datatype="Real" />
+      <Member Name="H" Datatype="Real" />
+      <Member Name="HH" Datatype="Real" />
+    </Member>
+    <Member Name="LT-2" Datatype="Struct">
+      <Member Name="LOW_BUFF" Datatype="Int" />
+      <Member Name="HIGH_BUFF" Datatype="Int" />
+    </Member>
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>AI</Name>
+      <Namespace />
+      <Number>5</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

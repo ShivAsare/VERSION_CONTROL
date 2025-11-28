@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V19" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="MFG FEED PUMP OP" Datatype="Bool" />
+    <Member Name="RO 1 HPP PUMP OP" Datatype="Bool" />
+    <Member Name="RO 2 HPP PUMP OP" Datatype="Bool" />
+    <Member Name="CIP PUMP OP" Datatype="Bool" />
+    <Member Name="PW TRANSFER PUMP W OP" Datatype="Bool" />
+    <Member Name="PW TRANSFER PUMP S OP" Datatype="Bool" />
+    <Member Name="SPARE OP1" Datatype="Bool" />
+    <Member Name="SPARE OP2" Datatype="Bool" />
+    <Member Name="SPARE OP3" Datatype="Bool" />
+    <Member Name="DP-1 OP" Datatype="Bool" />
+    <Member Name="DP-2 OP" Datatype="Bool" />
+    <Member Name="UV-1 OP" Datatype="Bool" />
+    <Member Name="SPARE OP4" Datatype="Bool" />
+    <Member Name="SPARE OP5" Datatype="Bool" />
+    <Member Name="SPARE OP6" Datatype="Bool" />
+    <Member Name="SPARE OP7" Datatype="Bool" />
+    <Member Name="SPARE OP8" Datatype="Bool" />
+    <Member Name="HOOTER OP" Datatype="Bool" />
+    <Member Name="MFG OPEN V1" Datatype="Bool" />
+    <Member Name="MFG OPEN V2" Datatype="Bool" />
+    <Member Name="MFG OPEN V3" Datatype="Bool" />
+    <Member Name="MFG OPEN V4" Datatype="Bool" />
+    <Member Name="MFG OPEN V5" Datatype="Bool" />
+    <Member Name="MFG CLOSE V1" Datatype="Bool" />
+    <Member Name="MFG CLOSE V2" Datatype="Bool" />
+    <Member Name="MFG CLOSE V3" Datatype="Bool" />
+    <Member Name="MFG CLOSE V4" Datatype="Bool" />
+    <Member Name="MFG CLOSE V5" Datatype="Bool" />
+    <Member Name="ACF OPEN V1" Datatype="Bool" />
+    <Member Name="ACF OPEN V2" Datatype="Bool" />
+    <Member Name="ACF OPEN V3" Datatype="Bool" />
+    <Member Name="ACF OPEN V4" Datatype="Bool" />
+    <Member Name="ACF OPEN V5" Datatype="Bool" />
+    <Member Name="ACF CLOSE V1" Datatype="Bool" />
+    <Member Name="ACF CLOSE V2" Datatype="Bool" />
+    <Member Name="ACF CLOSE V3" Datatype="Bool" />
+    <Member Name="ACF CLOSE V4" Datatype="Bool" />
+    <Member Name="ACF CLOSE V5" Datatype="Bool" />
+    <Member Name="SF OPEN V1" Datatype="Bool" />
+    <Member Name="SF OPEN V2" Datatype="Bool" />
+    <Member Name="SF OPEN V3" Datatype="Bool" />
+    <Member Name="SF OPEN V4" Datatype="Bool" />
+    <Member Name="SF OPEN V5" Datatype="Bool" />
+    <Member Name="SF OPEN V6" Datatype="Bool" />
+    <Member Name="SF OPEN V7" Datatype="Bool" />
+    <Member Name="SF CLOSE V1" Datatype="Bool" />
+    <Member Name="SF CLOSE V2" Datatype="Bool" />
+    <Member Name="SF CLOSE V3" Datatype="Bool" />
+    <Member Name="SF CLOSE V4" Datatype="Bool" />
+    <Member Name="SF CLOSE V5" Datatype="Bool" />
+    <Member Name="SF CLOSE V6" Datatype="Bool" />
+    <Member Name="SF CLOSE V7" Datatype="Bool" />
+    <Member Name="AV 1" Datatype="Bool" />
+    <Member Name="AV 2" Datatype="Bool" />
+    <Member Name="AV 3" Datatype="Bool" />
+    <Member Name="AV 4" Datatype="Bool" />
+    <Member Name="SPARE OP9" Datatype="Bool" />
+    <Member Name="SPARE OP10" Datatype="Bool" />
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>NEW OUTPUTS</Name>
+      <Namespace />
+      <Number>70</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

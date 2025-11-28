@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V19" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="MGF FEED PUMP WORKING" Datatype="Bool" />
+    <Member Name="MFG FEED PUMP STANDBY" Datatype="Bool" />
+    <Member Name="RO FEED PUMP WORKING" Datatype="Bool" />
+    <Member Name="RO FEED PUMP STANDBY" Datatype="Bool" />
+    <Member Name="RO HPP PUMP WORKING" Datatype="Bool" />
+    <Member Name="RO HPP PUMP STANDBY" Datatype="Bool" />
+    <Member Name="SMBS AGT-1" Datatype="Bool" />
+    <Member Name="SALT TANK AGT-2" Datatype="Bool" />
+    <Member Name="RO SMBS AGT-3" Datatype="Bool" />
+    <Member Name="DP-1" Datatype="Bool" />
+    <Member Name="DP-2" Datatype="Bool" />
+    <Member Name="DP-3" Datatype="Bool" />
+    <Member Name="DP-4" Datatype="Bool" />
+    <Member Name="DP-5" Datatype="Bool" />
+    <Member Name="DP-6" Datatype="Bool" />
+    <Member Name="UV-1-DO" Datatype="Bool" />
+    <Member Name="UV-2-DO" Datatype="Bool" />
+    <Member Name="HOOTER" Datatype="Bool" />
+    <Member Name="PSFV-1 – OPEN" Datatype="Bool" />
+    <Member Name="PSFV-1 – CLOSE" Datatype="Bool" />
+    <Member Name="PSFV-2 – OPEN" Datatype="Bool" />
+    <Member Name="PSFV-2 – CLOSE" Datatype="Bool" />
+    <Member Name="PSFV-3 – OPEN" Datatype="Bool" />
+    <Member Name="PSFV-3 – CLOSE" Datatype="Bool" />
+    <Member Name="PSFV-4 – OPEN" Datatype="Bool" />
+    <Member Name="PSFV-4 – CLOSE" Datatype="Bool" />
+    <Member Name="PSFV-5 – OPEN" Datatype="Bool" />
+    <Member Name="PSFV-5 – CLOSE" Datatype="Bool" />
+    <Member Name="PSFV-6 – OPEN" Datatype="Bool" />
+    <Member Name="PSFV-6 – CLOSE" Datatype="Bool" />
+    <Member Name="ACFV-1 – OPEN" Datatype="Bool" />
+    <Member Name="ACFV-1 – CLOSE" Datatype="Bool" />
+    <Member Name="ACFV-2 – OPEN" Datatype="Bool" />
+    <Member Name="ACFV-2 – CLOSE" Datatype="Bool" />
+    <Member Name="ACFV-3 – OPEN" Datatype="Bool" />
+    <Member Name="ACFV-3 – CLOSE" Datatype="Bool" />
+    <Member Name="ACFV-4 – OPEN" Datatype="Bool" />
+    <Member Name="ACFV-4 - CLOSE" Datatype="Bool" />
+    <Member Name="ACFV-5 – OPEN" Datatype="Bool" />
+    <Member Name="ACFV-5 – CLOSE" Datatype="Bool" />
+    <Member Name="ACFV-6 – OPEN" Datatype="Bool" />
+    <Member Name="ACFV-6 – CLOSE" Datatype="Bool" />
+    <Member Name="SFV-1 – OPEN" Datatype="Bool" />
+    <Member Name="SFV-1 – CLOSE" Datatype="Bool" />
+    <Member Name="SFV-2 – OPEN" Datatype="Bool" />
+    <Member Name="SFV-2 – CLOSE" Datatype="Bool" />
+    <Member Name="SFV-3 – OPEN" Datatype="Bool" />
+    <Member Name="SFV-3 – CLOSE" Datatype="Bool" />
+    <Member Name="SFV-4 – OPEN" Datatype="Bool" />
+    <Member Name="SFV-4 – CLOSE" Datatype="Bool" />
+    <Member Name="SFV-5 – OPEN" Datatype="Bool" />
+    <Member Name="SFV-5 – CLOSE" Datatype="Bool" />
+    <Member Name="SFV-6 – OPEN" Datatype="Bool" />
+    <Member Name="SFV-6 – CLOSE" Datatype="Bool" />
+    <Member Name="SFV-7 – OPEN" Datatype="Bool" />
+    <Member Name="SFV-7 – CLOSE" Datatype="Bool" />
+    <Member Name="SFV-8 – OPEN" Datatype="Bool" />
+    <Member Name="SFV-8 – CLOSE" Datatype="Bool" />
+    <Member Name="AV-1 – OPEN" Datatype="Bool" />
+    <Member Name="AV-1 – CLOSE" Datatype="Bool" />
+    <Member Name="AV-2 – OPEN" Datatype="Bool" />
+    <Member Name="AV-2 – CLOSE" Datatype="Bool" />
+    <Member Name="AV-3 – OPEN" Datatype="Bool" />
+    <Member Name="AV-3 – CLOSE" Datatype="Bool" />
+    <Member Name="AV-4 – OPEN" Datatype="Bool" />
+    <Member Name="AV-4 – CLOSE" Datatype="Bool" />
+    <Member Name="MANUAL CIP PUMP" Datatype="Bool" />
+    <Member Name="new" Datatype="Struct">
+      <Member Name="RO2 HPP" Datatype="Bool" />
+      <Member Name="NEW OUTPUTS_PW TRANSFER PUMP S OP" Datatype="Bool" />
+      <Member Name="NEW OUTPUTS_PW TRANSFER PUMP W OP" Datatype="Bool" />
+    </Member>
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>MANUAL</Name>
+      <Namespace />
+      <Number>12</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

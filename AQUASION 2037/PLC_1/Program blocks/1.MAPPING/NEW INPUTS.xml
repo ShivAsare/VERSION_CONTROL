@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V19" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="EMG STOP IP" Datatype="Bool" />
+    <Member Name="PHASE FAIL IP" Datatype="Bool" />
+    <Member Name="HOOTER RESET IP" Datatype="Bool" />
+    <Member Name="HOOTER RESET HMI" Datatype="Bool" />
+    <Member Name="AUTO/MAN SW IP" Datatype="Bool" />
+    <Member Name="MGF FEED PUMP RUN IP" Datatype="Bool" />
+    <Member Name="RO 1 HPP RUN IP" Datatype="Bool" />
+    <Member Name="RO 2 HPP RUN IP" Datatype="Bool" />
+    <Member Name="CIP PUMP RUN IP" Datatype="Bool" />
+    <Member Name="PW TRANSFER PUMP - W RUN IP" Datatype="Bool" />
+    <Member Name="PW TRANSFER PUMP - S RUN IP" Datatype="Bool" />
+    <Member Name="PW TRANSFER W/P" Datatype="Bool" />
+    <Member Name="AIR PRESSURE FAIL" Datatype="Bool" />
+    <Member Name="SPARE IP3" Datatype="Bool" />
+    <Member Name="LS-5 TANK LOW IP" Datatype="Bool" />
+    <Member Name="LS-5 TANK HIGH IP" Datatype="Bool" />
+    <Member Name="SPARE IP4" Datatype="Bool" />
+    <Member Name="SPARE IP5" Datatype="Bool" />
+    <Member Name="SPARE IP6" Datatype="Bool" />
+    <Member Name="SPARE IP7" Datatype="Bool" />
+    <Member Name="SPARE IP8" Datatype="Bool" />
+    <Member Name="LPS-1" Datatype="Bool" />
+    <Member Name="LPS-2" Datatype="Bool" />
+    <Member Name="MGF V-1 OPEN FB" Datatype="Bool" />
+    <Member Name="MGF V-2 OPEN FB" Datatype="Bool" />
+    <Member Name="MGF V-3 OPEN FB" Datatype="Bool" />
+    <Member Name="MGF V-4 OPEN FB" Datatype="Bool" />
+    <Member Name="MGF V-1 CLOSE FB" Datatype="Bool" />
+    <Member Name="MGF V-2 CLOSE FB" Datatype="Bool" />
+    <Member Name="MGF V-3 CLOSE FB" Datatype="Bool" />
+    <Member Name="MGF V-4 CLOSE FB" Datatype="Bool" />
+    <Member Name="MGF V-5 OPEN FB" Datatype="Bool" />
+    <Member Name="MGF V-5 CLOSE FB" Datatype="Bool" />
+    <Member Name="ACF OPEN FB V1" Datatype="Bool" />
+    <Member Name="ACF OPEN FB V2" Datatype="Bool" />
+    <Member Name="ACF OPEN FB V3" Datatype="Bool" />
+    <Member Name="ACF OPEN FB V4" Datatype="Bool" />
+    <Member Name="ACF OPEN FB V5" Datatype="Bool" />
+    <Member Name="ACF CLOSE FB V1" Datatype="Bool" />
+    <Member Name="ACF CLOSE FB V2" Datatype="Bool" />
+    <Member Name="ACF CLOSE FB V3" Datatype="Bool" />
+    <Member Name="ACF CLOSE FB V4" Datatype="Bool" />
+    <Member Name="ACF CLOSE FB V5" Datatype="Bool" />
+    <Member Name="SF OPEN FB V1" Datatype="Bool" />
+    <Member Name="SF OPEN FB V2" Datatype="Bool" />
+    <Member Name="SF OPEN FB V3" Datatype="Bool" />
+    <Member Name="SF OPEN FB V4" Datatype="Bool" />
+    <Member Name="SF OPEN FB V5" Datatype="Bool" />
+    <Member Name="SF OPEN FB V6" Datatype="Bool" />
+    <Member Name="SF OPEN FB V7" Datatype="Bool" />
+    <Member Name="SF CLOSE FB V1" Datatype="Bool" />
+    <Member Name="SF CLOSE FB V2" Datatype="Bool" />
+    <Member Name="SF CLOSE FB V3" Datatype="Bool" />
+    <Member Name="SF CLOSE FB V4" Datatype="Bool" />
+    <Member Name="SF CLOSE FB V5" Datatype="Bool" />
+    <Member Name="SF CLOSE FB V6" Datatype="Bool" />
+    <Member Name="SF CLOSE FB V7" Datatype="Bool" />
+    <Member Name="SPARE IP9" Datatype="Bool" />
+    <Member Name="SPARE IP10" Datatype="Bool" />
+    <Member Name="SPARE IP11" Datatype="Bool" />
+    <Member Name="SPARE IP12" Datatype="Bool" />
+    <Member Name="SPARE IP13" Datatype="Bool" />
+    <Member Name="SPARE IP14" Datatype="Bool" />
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>NEW INPUTS</Name>
+      <Namespace />
+      <Number>68</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

@@ -1,0 +1,173 @@
+﻿FUNCTION "AI SCALING" : Void
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+
+BEGIN
+	// AI SCALING PROGRAM
+	
+	REGION LOAD CELL- MFG
+	    "@SCALING AI"("ANALOG INPUT" := "LOAD CELL- MFG",
+	                  "RAW MIN" := 0,
+	                  "RAW MAX" := 27648,
+	                  "SCALE MIN" := "AI SCALING DB".MIN."LOAD CELL- MFG",
+	                  "SCALE MAX" := "AI SCALING DB".MAX."LOAD CELL- MFG",
+	                  "PV VALUE" => "AI SCALING DB".PV."LOAD CELL- MFG");
+	END_REGION
+	
+	REGION LOAD CELL- PREMIXING
+	    "@SCALING AI"("ANALOG INPUT" := "LOAD CELL- PREMIXING",
+	                  "RAW MIN" := 0,
+	                  "RAW MAX" := 27648,
+	                  "SCALE MIN" := "AI SCALING DB".MIN."LOAD CELL- PREMIXING",
+	                  "SCALE MAX" := "AI SCALING DB".MAX."LOAD CELL- PREMIXING",
+	                  "PV VALUE" => "AI SCALING DB".PV."LOAD CELL- PREMIXING");
+	END_REGION
+	
+	REGION LOAD CELL- SUGAR
+	    "@SCALING AI"("ANALOG INPUT" := "LOAD CELL- SUGAR",
+	                  "RAW MIN" := 0,
+	                  "RAW MAX" := 27648,
+	                  "SCALE MIN" := "AI SCALING DB".MIN."LOAD CELL- SUGAR",
+	                  "SCALE MAX" := "AI SCALING DB".MAX."LOAD CELL- SUGAR",
+	                  "PV VALUE" => "AI SCALING DB".PV."LOAD CELL- SUGAR");
+	END_REGION
+	
+	REGION LOAD CELL- STORAGE-1
+	    "@SCALING AI"("ANALOG INPUT" := "LOAD CELL- STORAGE-1",
+	                  "RAW MIN" := 0,
+	                  "RAW MAX" := 27648,
+	                  "SCALE MIN" := "AI SCALING DB".MIN."LOAD CELL- STORAGE-1",
+	                  "SCALE MAX" := "AI SCALING DB".MAX."LOAD CELL- STORAGE-1",
+	                  "PV VALUE" => "AI SCALING DB".PV."LOAD CELL- STORAGE-1");
+	END_REGION
+	
+	REGION LOAD CELL- STORAGE-2
+	    "@SCALING AI"("ANALOG INPUT" := "LOAD CELL- STORAGE-2",
+	                  "RAW MIN" := 0,
+	                  "RAW MAX" := 27648,
+	                  "SCALE MIN" := "AI SCALING DB".MIN."LOAD CELL- STORAGE-2",
+	                  "SCALE MAX" := "AI SCALING DB".MAX."LOAD CELL- STORAGE-2",
+	                  "PV VALUE" => "AI SCALING DB".PV."LOAD CELL- STORAGE-2");
+	END_REGION
+	
+	REGION CONDUCTY METER
+	    "@SCALING AI"("ANALOG INPUT" := "CONDUCTIVITY METER",
+	                  "RAW MIN" := 0,
+	                  "RAW MAX" := 27648,
+	                  "SCALE MIN" := "AI SCALING DB".MIN."CONDUCTIVITY METER",
+	                  "SCALE MAX" := "AI SCALING DB".MAX."CONDUCTIVITY METER",
+	                  "PV VALUE" => "AI SCALING DB".PV."CONDUCTIVITY METER");
+	END_REGION
+	
+	REGION TEMP SENSOR- MFG INLET
+	    "@SCALING AI"("ANALOG INPUT" := "TEMP.SENSOR- MFG INLET",
+	                  "RAW MIN" := 0,
+	                  "RAW MAX" := 27648,
+	                  "SCALE MIN" := "AI SCALING DB".MIN."TEMP.SENSOR- MFG INLET",
+	                  "SCALE MAX" := "AI SCALING DB".MAX."TEMP.SENSOR- MFG INLET",
+	                  "PV VALUE" => "AI SCALING DB".PV."TEMP.SENSOR- MFG INLET");
+	END_REGION
+	
+	REGION TEMP SENSOR- MFG OUTLET
+	    "@SCALING AI"("ANALOG INPUT" := "TEMP.SENSOR- MFG OUTLET",
+	                  "RAW MIN" := 0,
+	                  "RAW MAX" := 27648,
+	                  "SCALE MIN" := "AI SCALING DB".MIN."TEMP.SENSOR- MFG OUTLET",
+	                  "SCALE MAX" := "AI SCALING DB".MAX."TEMP.SENSOR- MFG OUTLET",
+	                  "PV VALUE" => "AI SCALING DB".PV."TEMP.SENSOR- MFG OUTLET");
+	END_REGION
+	
+	REGION TEMP SENSOR- PREMIXING INLET
+	    "@SCALING AI"("ANALOG INPUT" := "TEMP.SENSOR- PREMIXING INLET",
+	                  "RAW MIN" := 0,
+	                  "RAW MAX" := 27648,
+	                  "SCALE MIN" := "AI SCALING DB".MIN."TEMP.SENSOR- PREMIXING INLET",
+	                  "SCALE MAX" := "AI SCALING DB".MAX."TEMP.SENSOR- PREMIXING INLET",
+	                  "PV VALUE" => "AI SCALING DB".PV."TEMP.SENSOR- PREMIXING INLET");
+	END_REGION
+	
+	REGION TEMP SENSOR- PREMIXING OUTLET
+	    "@SCALING AI"("ANALOG INPUT" := "TEMP.SENSOR- PREMIXING OUTLET",
+	                  "RAW MIN" := 0,
+	                  "RAW MAX" := 27648,
+	                  "SCALE MIN" := "AI SCALING DB".MIN."TEMP.SENSOR- PREMIXING OUTLET",
+	                  "SCALE MAX" := "AI SCALING DB".MAX."TEMP.SENSOR- PREMIXING OUTLET",
+	                  "PV VALUE" => "AI SCALING DB".PV."TEMP.SENSOR- PREMIXING OUTLET");
+	END_REGION
+	
+	REGION TEMP SENSOR- SUGAR INLET
+	    "@SCALING AI"("ANALOG INPUT" := "TEMP.SENSOR- SUGAR INLET",
+	                  "RAW MIN" := 0,
+	                  "RAW MAX" := 27648,
+	                  "SCALE MIN" := "AI SCALING DB".MIN."TEMP.SENSOR- SUGAR INLET",
+	                  "SCALE MAX" := "AI SCALING DB".MAX."TEMP.SENSOR- SUGAR INLET",
+	                  "PV VALUE" => "AI SCALING DB".PV."TEMP.SENSOR- SUGAR INLET");
+	END_REGION
+	
+	REGION TEMP SENSOR- SUGAR OUTLET
+	    "@SCALING AI"("ANALOG INPUT" := "TEMP.SENSOR- SUGAR OUTLET",
+	                  "RAW MIN" := 0,
+	                  "RAW MAX" := 27648,
+	                  "SCALE MIN" := "AI SCALING DB".MIN."TEMP.SENSOR- SUGAR OUTLET",
+	                  "SCALE MAX" := "AI SCALING DB".MAX."TEMP.SENSOR- SUGAR OUTLET",
+	                  "PV VALUE" => "AI SCALING DB".PV."TEMP.SENSOR- SUGAR OUTLET");
+	END_REGION
+	
+	REGION TEMP SENSOR- CIP
+	    "@SCALING AI"("ANALOG INPUT" := "TEMP.SENSOR- CIP",
+	                  "RAW MIN" := 0,
+	                  "RAW MAX" := 27648,
+	                  "SCALE MIN" := "AI SCALING DB".MIN."TEMP.SENSOR- CIP",
+	                  "SCALE MAX" := "AI SCALING DB".MAX."TEMP.SENSOR- CIP",
+	                  "PV VALUE" => "AI SCALING DB".PV."TEMP.SENSOR- CIP");
+	END_REGION
+	
+	REGION PRESSURE TRANSMTER- MFG
+	    "@SCALING AI"("ANALOG INPUT" := "PRESSURE TRANSMTER- MFG",
+	                  "RAW MIN" := 0,
+	                  "RAW MAX" := 27648,
+	                  "SCALE MIN" := "AI SCALING DB".MIN."PRESSURE TRANSMTER- MFG",
+	                  "SCALE MAX" := "AI SCALING DB".MAX."PRESSURE TRANSMTER- MFG",
+	                  "PV VALUE" => "AI SCALING DB".PV."PRESSURE TRANSMTER- MFG");
+	END_REGION
+	
+	REGION PRESSURE TRANSMTER- SUGAR
+	    "@SCALING AI"("ANALOG INPUT" := "PRESSURE TRANSMTER- SUGAR",
+	                  "RAW MIN" := 0,
+	                  "RAW MAX" := 27648,
+	                  "SCALE MIN" := "AI SCALING DB".MIN."PRESSURE TRANSMTER- SUGAR",
+	                  "SCALE MAX" := "AI SCALING DB".MAX."PRESSURE TRANSMTER- SUGAR",
+	                  "PV VALUE" => "AI SCALING DB".PV."PRESSURE TRANSMTER- SUGAR");
+	END_REGION
+	
+	REGION VACUUME TRANSMTER- MFG
+	    "@SCALING AI"("ANALOG INPUT" := "VACUUME TRANSMTER- MFG",
+	                  "RAW MIN" := 0,
+	                  "RAW MAX" := 27648,
+	                  "SCALE MIN" := "AI SCALING DB".MIN."VACUUME TRANSMTER- MFG",
+	                  "SCALE MAX" := "AI SCALING DB".MAX."VACUUME TRANSMTER- MFG",
+	                  "PV VALUE" => "AI SCALING DB".PV."VACUUME TRANSMTER- MFG");
+	END_REGION
+	
+	REGION VACUUME TRANSMTER- SUGAR
+	    "@SCALING AI"("ANALOG INPUT" := "VACUUME TRANSMTER- SUGAR",
+	                  "RAW MIN" := 0,
+	                  "RAW MAX" := 27648,
+	                  "SCALE MIN" := "AI SCALING DB".MIN."VACUUME TRANSMTER- SUGAR",
+	                  "SCALE MAX" := "AI SCALING DB".MAX."VACUUME TRANSMTER- SUGAR",
+	                  "PV VALUE" => "AI SCALING DB".PV."VACUUME TRANSMTER- SUGAR");
+	END_REGION
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+END_FUNCTION
+

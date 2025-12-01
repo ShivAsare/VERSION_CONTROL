@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V19" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="HOOTER-1" Datatype="Bool" />
+    <Member Name="HOOTER-2" Datatype="Bool" />
+    <Member Name="MFG VESSEL MOTOR" Datatype="Bool" />
+    <Member Name="PREMIXING VESSEL MOTOR" Datatype="Bool" />
+    <Member Name="STORAGE VESSEL-1 MOTOR" Datatype="Bool" />
+    <Member Name="STORAGE VESSEL-2 MOTOR" Datatype="Bool" />
+    <Member Name="INLINE HOMOGENIZER-1" Datatype="Bool" />
+    <Member Name="FILTER PRESS MOTOR" Datatype="Bool" />
+    <Member Name="INLINE HOMOGENIZER-2" Datatype="Bool" />
+    <Member Name="MFG LOBE PUMP" Datatype="Bool" />
+    <Member Name="STORAGE VESSEL-1 LOBE PUMP" Datatype="Bool" />
+    <Member Name="STORAGE VESSEL-2 LOBE PUMP" Datatype="Bool" />
+    <Member Name="SUGAR VESSEL MOTOR" Datatype="Bool" />
+    <Member Name="BASKET FILTER MOTOR" Datatype="Bool" />
+    <Member Name="VACUUME PUMP-1" Datatype="Bool" />
+    <Member Name="VACUUME PUMP-2" Datatype="Bool" />
+    <Member Name="CIP FORWARD PUMP" Datatype="Bool" />
+    <Member Name="CIP REVERSE PUMP" Datatype="Bool" />
+    <Member Name="DOSING PUMP-1 ALKALI" Datatype="Bool" />
+    <Member Name="DOSING PUMP-2 ACID" Datatype="Bool" />
+    <Member Name="MFG VESSEL LAMP" Datatype="Bool" />
+    <Member Name="PREMIXING VESSEL LAMP" Datatype="Bool" />
+    <Member Name="STORAGE VESSEL-1 LAMP" Datatype="Bool" />
+    <Member Name="STORAGE VESSEL-2 LAMP" Datatype="Bool" />
+    <Member Name="SUGAR VESSEL LAMP" Datatype="Bool" />
+    <Member Name="PBV-01 ON SUGAR SUCTION LINE" Datatype="Bool" />
+    <Member Name="PBV- 02 ON VACUUM INLET LINE" Datatype="Bool" />
+    <Member Name="PBV- 03 ON VENT FILTER" Datatype="Bool" />
+    <Member Name="PAV- 03 ON AIR INLET LINE" Datatype="Bool" />
+    <Member Name="PBV- 04 FROM BOTTOM OUTLET TO CIP INLET LINE" Datatype="Bool" />
+    <Member Name="PBV- 05 ON SPRAY BALL INLET LINE" Datatype="Bool" />
+    <Member Name="PBV- 06 ON PW INLET LINE" Datatype="Bool" />
+    <Member Name="PBV- 07 ON VACUUM VENT LINE" Datatype="Bool" />
+    <Member Name="PAV- 07 ON SEAL COOLING INLET LINE FOR STIRRER" Datatype="Bool" />
+    <Member Name="PAV- 08 ON AIR INLET LINE" Datatype="Bool" />
+    <Member Name="PAV- 09 ON STEAM INLET LINE" Datatype="Bool" />
+    <Member Name="PAV- 10 ON STEAM OUTLET LINE" Datatype="Bool" />
+    <Member Name="PAV- 11 ON SEAL COOLING INLET LINE" Datatype="Bool" />
+    <Member Name="PBV- 12 FROM BOTTOM OUTLET TO CIP DRAIN LINE" Datatype="Bool" />
+    <Member Name="PBV- 13 FROM BOTTOM OUTLET TO CIP INLET LINE" Datatype="Bool" />
+    <Member Name="PBV- 14 ON BOTTOM OUTLET LINE" Datatype="Bool" />
+    <Member Name="PBV- 15 FROM BOTTOM OUTLET TO DRAIN LINE" Datatype="Bool" />
+    <Member Name="PBV- 16 FROM BOTTOM OUTLET TO BASKET FILTER INLET LINE" Datatype="Bool" />
+    <Member Name="PBV- 17 ON BASKET FILTER INLET LINE" Datatype="Bool" />
+    <Member Name="PBV- 18 ON BASKET FILTER OUTLET LINE" Datatype="Bool" />
+    <Member Name="PBV- 19 ON SUGAR VESSEL CIP INLET LINE" Datatype="Bool" />
+    <Member Name="PBV- 20 ON PREMIXING VESEL CIP INLET LINE" Datatype="Bool" />
+    <Member Name="PBV- 21 ON PW INLET BYPASS LINE" Datatype="Bool" />
+    <Member Name="PBV- 22 ON PW INLET LINE" Datatype="Bool" />
+    <Member Name="PBV- 23 ON VENT FILTER" Datatype="Bool" />
+    <Member Name="PBV- 24 ON VACUUM INLET LINE" Datatype="Bool" />
+    <Member Name="PBV- 25 FROM BOTTOM OUTLET TO SPRAY BALL INLET LINE" Datatype="Bool" />
+    <Member Name="PBV- 26 ON SPRAY BALL INLET LINE" Datatype="Bool" />
+    <Member Name="PBV- 27 FROM SUGAR TO PREMIXING VESSEL INLET LINE" Datatype="Bool" />
+    <Member Name="PBV- 28 ON VESSEL TOP DISH" Datatype="Bool" />
+    <Member Name="PBV- 29 ON RECIRCULATION LINE" Datatype="Bool" />
+    <Member Name="PBV- 30 FROM PREMIXING TO STORAGE TRANSFER LINE" Datatype="Bool" />
+    <Member Name="PBV- 31 FROM SORBITOL VESSEL TO PREMIXING VESSEL TRANSFER LINE" Datatype="Bool" />
+    <Member Name="PBV- 32 FROM PREMIXING TO MFG TRANSFER LINE" Datatype="Bool" />
+    <Member Name="PAV- 33 ON STEAM INLET LINE" Datatype="Bool" />
+    <Member Name="PAV- 35 ON COOLING WATER OUTLET LINE" Datatype="Bool" />
+    <Member Name="PAV- 36 ON STEAM OUTLET LINE" Datatype="Bool" />
+    <Member Name="PAV- 37 ON BYPASS CONDENSATE LINE" Datatype="Bool" />
+    <Member Name="PAV- 38 ON COOLING WATER INLET LINE" Datatype="Bool" />
+    <Member Name="PBV- 39 FROM BOTTOM OUTLET TO SPRAY BALL INLET LINE" Datatype="Bool" />
+    <Member Name="PBV- 40 FROM BOTTOM OUTLET TO SPRAY BALL INLET LINE" Datatype="Bool" />
+    <Member Name="PBV- 41 FROM BOTTOM OUTLET TO DRAIN LINE" Datatype="Bool" />
+    <Member Name="PBV- 42 FROM BOTTOM OUTLET TO DRAIN LINE" Datatype="Bool" />
+    <Member Name="PBV- 43 FROM BOTTOM OUTLET TO INLINE HOMOGENIZER LINE" Datatype="Bool" />
+    <Member Name="PBV- 44 FROM VESSEL OUTLET TO FILTER PRESS LINE" Datatype="Bool" />
+    <Member Name="PBV- 45 FROM INLINE HOMOGENIZER TO STORAGE TRANSFER LINE" Datatype="Bool" />
+    <Member Name="PBV- 46 ON INLINE HOMOGENIZER INLET LINE" Datatype="Bool" />
+    <Member Name="PBV- 47 ON INLINE HOMOGENIZER RECIRCULATION LINE" Datatype="Bool" />
+    <Member Name="PAV- 48 ON SEAL COOLING INLET LINE FOR INLINE HOMOGENIZER" Datatype="Bool" />
+    <Member Name="PBV- 49 INLINE HOMOGENIZER DRAIN LINE" Datatype="Bool" />
+    <Member Name="PBV- 50 ON PW INLET LINE" Datatype="Bool" />
+    <Member Name="PBV- 51 FROM PW INLET TO DRAIN LINE" Datatype="Bool" />
+    <Member Name="PBV- 52 FROM SUGAR MELTING TO MFG VESSEL TRANSFER LINE" Datatype="Bool" />
+    <Member Name="PBV- 53 ON VENT FILTER" Datatype="Bool" />
+    <Member Name="PBV- 54 FROM BOTTOM OUTLET TO SPRAY BALL INLET LINE" Datatype="Bool" />
+    <Member Name="PBV- 55 ON SPRAY BALL INLET LINE" Datatype="Bool" />
+    <Member Name="PBV- 56 ON VACUUM INLET LINE" Datatype="Bool" />
+    <Member Name="PBV- 57 ON RECIRCULATION LINE" Datatype="Bool" />
+    <Member Name="PBV- 58 FROM INLINE HOMOGENIZER TO STORAGE TRANSFER LINE" Datatype="Bool" />
+    <Member Name="PBV- 59 FROM PREMIXING TO FILTER PRESS TRANSFER LINE" Datatype="Bool" />
+    <Member Name="PBV- 60 FROM PREMIXING LOBE PUMP TO FILTER PRESS LINE" Datatype="Bool" />
+    <Member Name="PAV- 61 ON COOLING OUTLET LINE" Datatype="Bool" />
+    <Member Name="PAV- 62 ON STEAM INLET LINE" Datatype="Bool" />
+    <Member Name="PAV- 63 ON COOLING INLET LINE" Datatype="Bool" />
+    <Member Name="PAV- 64 ON SEAL COOLING INLET LINE FOR STIRRER" Datatype="Bool" />
+    <Member Name="PAV- 65 ON STEAM OUTLET LINE" Datatype="Bool" />
+    <Member Name="PAV- 66 ON BYPASS CONDENSATE LINE" Datatype="Bool" />
+    <Member Name="PBV- 67 FROM BOTTOM OUTLET TO SPRAY BALL INLET LINE" Datatype="Bool" />
+    <Member Name="PBV- 68 FROM BOTTOM OUTLET TO SPRAY BALL INLET LINE" Datatype="Bool" />
+    <Member Name="PBV- 69 FROM BOTTOM OUTLET TO DRAIN LINE" Datatype="Bool" />
+    <Member Name="PBV- 70 FROM BOTTOM OUTLET TO DRAIN LINE" Datatype="Bool" />
+    <Member Name="PBV- 71 FROM BOTTOM OUTLET TO INLINE HOMOGENIZER LINE" Datatype="Bool" />
+    <Member Name="PBV- 72 ON INLINE HOMOGENIZER INLET LINE" Datatype="Bool" />
+    <Member Name="PBV- 73 ON RECIRCULATION LINE" Datatype="Bool" />
+    <Member Name="PBV- 74 FROM BOTTOM OUTLET TO INLINE HOMOGENIZER LINE" Datatype="Bool" />
+    <Member Name="PAV- 75 ON SEAL COOLING INLET LINE FOR HOMOGENIZER" Datatype="Bool" />
+    <Member Name="PBV- 76 FROM INLINE HOMOGENIZER TO DRAIN LINE" Datatype="Bool" />
+    <Member Name="PBV- 77 ON FILTER PRESS INLET LINE" Datatype="Bool" />
+    <Member Name="PBV- 78 ON FILTER PRESS OUTLET LINE" Datatype="Bool" />
+    <Member Name="PBV- 79 ON FILTER PRESS OUTLET LINE" Datatype="Bool" />
+    <Member Name="PBV- 80 FROM MFG TO STORAGE VESSEL TRANSFER LINE" Datatype="Bool" />
+    <Member Name="PBV- 81 ON VESSEL TOP DISH" Datatype="Bool" />
+    <Member Name="PBV- 82 FROM BOTTOM OUTLET TO SPRAY BALL INLET LINE" Datatype="Bool" />
+    <Member Name="PBV- 83 ON CIP INLET LINE" Datatype="Bool" />
+    <Member Name="PAV- 84 ON SEAL COOLING LINE OF BOTTOM STIRRER" Datatype="Bool" />
+    <Member Name="PBV- 85 FROM BOTTOM OUTLET TO SPRAY BALL INLET LINE" Datatype="Bool" />
+    <Member Name="PBV- 86 FROM BOTTOM OUTLET TO DRAIN LINE" Datatype="Bool" />
+    <Member Name="PBV- 87 FROM BOTTOM OUTLET TO SPRAY BALL INLET LINE" Datatype="Bool" />
+    <Member Name="PBV- 88 FROM BOTTOM OUTLET TO DRAIN LINE" Datatype="Bool" />
+    <Member Name="PBV- 89 FROM VESSEL BOTTOM OUTLET TO LOBE PUMP LINE" Datatype="Bool" />
+    <Member Name="PBV- 90 ON VESSEL TOP DISH" Datatype="Bool" />
+    <Member Name="PBV- 91 FROM BOTTOM OUTLET TO SPRAY BALL INLET LINE" Datatype="Bool" />
+    <Member Name="PBV- 92 ON SPRAY BALL INLET LINE" Datatype="Bool" />
+    <Member Name="PAV- 93 ON SEAL COOLING LINE OF BOTTOM STIRRER" Datatype="Bool" />
+    <Member Name="PBV- 94 FROM BOTTOM OUTLET TO SPRAY BALL INLET LINE" Datatype="Bool" />
+    <Member Name="PBV- 95 FROM BOTTOM OUTLET TO DRAIN LINE" Datatype="Bool" />
+    <Member Name="PBV- 96 FROM BOTTOM OUTLET TO SPRAY BALL INLET LINE" Datatype="Bool" />
+    <Member Name="PBV- 97 FROM BOTTOM OUTLET TO DRAIN LINE" Datatype="Bool" />
+    <Member Name="PBV- 98 FROM BOTTOM OUTLET TO LOBE PUMP LINE" Datatype="Bool" />
+    <Member Name="PBV- 99 ON VACUUM VENT LINE" Datatype="Bool" />
+    <Member Name="PFBV- 100 ON VESSEL BOTTOM DISH" Datatype="Bool" />
+    <Member Name="PFBV- 101 ON VESSEL BOTTOM DISH" Datatype="Bool" />
+    <Member Name="PFBV- 102 ON VESSEL BOTTOM DISH" Datatype="Bool" />
+    <Member Name="PFBV- 103 ON VESSEL BOTTOM DISH" Datatype="Bool" />
+    <Member Name="PFBV- 104 ON VESSEL BOTTOM DISH" Datatype="Bool" />
+    <Member Name="PAV- 105 ON AIR INLET LINE" Datatype="Bool" />
+    <Member Name="SPARE-1" Datatype="Bool" />
+    <Member Name="SPARE-2" Datatype="Bool" />
+    <Member Name="SPARE-3" Datatype="Bool" />
+    <Member Name="SPARE-4" Datatype="Bool" />
+    <Member Name="SPARE-5" Datatype="Bool" />
+    <Member Name="SPARE-6" Datatype="Bool" />
+    <Member Name="SPARE-7" Datatype="Bool" />
+    <Member Name="SPARE-8" Datatype="Bool" />
+    <Member Name="SPARE-9" Datatype="Bool" />
+    <Member Name="SPARE-10" Datatype="Bool" />
+    <Member Name="SPARE-11" Datatype="Bool" />
+    <Member Name="SPARE-12" Datatype="Bool" />
+    <Member Name="SPARE-13" Datatype="Bool" />
+    <Member Name="SPARE-14" Datatype="Bool" />
+    <Member Name="SPARE-15" Datatype="Bool" />
+    <Member Name="SPARE-16" Datatype="Bool" />
+    <Member Name="SPARE-17" Datatype="Bool" />
+    <Member Name="SPARE-18" Datatype="Bool" />
+    <Member Name="SPARE-19" Datatype="Bool" />
+    <Member Name="SPARE-20" Datatype="Bool" />
+    <Member Name="SPARE-21" Datatype="Bool" />
+    <Member Name="SPARE-22" Datatype="Bool" />
+    <Member Name="SPARE-23" Datatype="Bool" />
+    <Member Name="SPARE-24" Datatype="Bool" />
+    <Member Name="SPARE-25" Datatype="Bool" />
+    <Member Name="SPARE-26" Datatype="Bool" />
+    <Member Name="SPARE-27" Datatype="Bool" />
+    <Member Name="SPARE-28" Datatype="Bool" />
+    <Member Name="SPARE-29" Datatype="Bool" />
+    <Member Name="SPARE-30" Datatype="Bool" />
+    <Member Name="SPARE-31" Datatype="Bool" />
+    <Member Name="SPARE-32" Datatype="Bool" />
+    <Member Name="SPARE-33" Datatype="Bool" />
+    <Member Name="SPARE-34" Datatype="Bool" />
+    <Member Name="SPARE-35" Datatype="Bool" />
+    <Member Name="SPARE-36" Datatype="Bool" />
+    <Member Name="SPARE-37" Datatype="Bool" />
+    <Member Name="SPARE-38" Datatype="Bool" />
+    <Member Name="SPARE-39" Datatype="Bool" />
+    <Member Name="SPARE-40" Datatype="Bool" />
+    <Member Name="SPARE-41" Datatype="Bool" />
+    <Member Name="SPARE-42" Datatype="Bool" />
+    <Member Name="SPARE-43" Datatype="Bool" />
+    <Member Name="SPARE-44" Datatype="Bool" />
+    <Member Name="SPARE-45" Datatype="Bool" />
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>DO MAPING</Name>
+      <Namespace />
+      <Number>2</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

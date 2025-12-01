@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V19" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="EMG STOP-1" Datatype="Bool" />
+    <Member Name="EMG STOP-2" Datatype="Bool" />
+    <Member Name="HOOTER RESET-1" Datatype="Bool" />
+    <Member Name="HOOTER RESET-2" Datatype="Bool" />
+    <Member Name="AIR PRESSURE SWITCH" Datatype="Bool" />
+    <Member Name="PHASE FAIL" Datatype="Bool" />
+    <Member Name="MFG VESSEL MOTOR TRIP" Datatype="Bool" />
+    <Member Name="PREMIXING VESSEL MOTOR TRIP" Datatype="Bool" />
+    <Member Name="STORAGE VESSEL-1 MOTOR TRIP" Datatype="Bool" />
+    <Member Name="STORAGE VESSEL-2 MOTOR TRIP" Datatype="Bool" />
+    <Member Name="INLINE HOMOGENIZER-1 TRIP" Datatype="Bool" />
+    <Member Name="FILTER PRESS MOTOR TRIP" Datatype="Bool" />
+    <Member Name="INLINE HOMOGENIZER-2 TRIP" Datatype="Bool" />
+    <Member Name="MFG LOBE PUMP TRIP" Datatype="Bool" />
+    <Member Name="STORAGE VESSEL-1 LOBE PUMP TRIP" Datatype="Bool" />
+    <Member Name="STORAGE VESSEL-2 LOBE PUMP TRIP" Datatype="Bool" />
+    <Member Name="SUGAR VESSEL MOTOR TRIP" Datatype="Bool" />
+    <Member Name="BASKET FILTER MOTOR TRIP" Datatype="Bool" />
+    <Member Name="VACUUME PUMP-1 TRIP" Datatype="Bool" />
+    <Member Name="VACUUME PUMP-2 TRIP" Datatype="Bool" />
+    <Member Name="CIP FORWARD PUMP TRIP" Datatype="Bool" />
+    <Member Name="CIP REVERSE PUMP TRIP" Datatype="Bool" />
+    <Member Name="LEVEL SWITCH LOW-ALKALI" Datatype="Bool" />
+    <Member Name="LEVEL SWITCH HIGH-ALKALI" Datatype="Bool" />
+    <Member Name="LEVEL SWITCH LOW-ACID" Datatype="Bool" />
+    <Member Name="LEVEL SWITCH HIGH-ACID" Datatype="Bool" />
+    <Member Name="FLOW SWITCH- MFG" Datatype="Bool" />
+    <Member Name="FLOW SWITCH- PREMIXING" Datatype="Bool" />
+    <Member Name="FLOW SWITCH- STORAGE VESSEL-1" Datatype="Bool" />
+    <Member Name="FLOW SWITCH- STORAGE VESSEL-2" Datatype="Bool" />
+    <Member Name="FLOW SWITCH- SUGAR VESSEL" Datatype="Bool" />
+    <Member Name="FLOW SWITCH- HMOGENIZER-1" Datatype="Bool" />
+    <Member Name="FLOW SWITCH- HMOGENIZER-2" Datatype="Bool" />
+    <Member Name="LEVEL FLOW SWITCH-1" Datatype="Bool" />
+    <Member Name="LEVEL FLOW SWITCH-2" Datatype="Bool" />
+    <Member Name="DI SPARE_1" Datatype="Bool" />
+    <Member Name="DI SPARE_2" Datatype="Bool" />
+    <Member Name="DI SPARE_3" Datatype="Bool" />
+    <Member Name="DI SPARE_4" Datatype="Bool" />
+    <Member Name="DI SPARE_5" Datatype="Bool" />
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>DI MAPING</Name>
+      <Namespace />
+      <Number>1</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

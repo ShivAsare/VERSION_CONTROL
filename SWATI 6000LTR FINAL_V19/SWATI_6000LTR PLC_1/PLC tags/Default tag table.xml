@@ -86,7 +86,7 @@
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
           <LogicalAddress>%I0.4</LogicalAddress>
-          <Name>AIR PRESSURE SWITCH</Name>
+          <Name>MFG AIR PRESSURE SWITCH</Name>
         </AttributeList>
         <ObjectList>
           <MultilingualText ID="E" CompositionName="Comment">
@@ -599,7 +599,7 @@
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
           <LogicalAddress>%I3.7</LogicalAddress>
-          <Name>FLOW SWITCH- HMOGENIZER-1</Name>
+          <Name>FLOW SWITCH- INLINE HMOGENIZER-1</Name>
         </AttributeList>
         <ObjectList>
           <MultilingualText ID="5F" CompositionName="Comment">
@@ -618,7 +618,7 @@
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
           <LogicalAddress>%I4.0</LogicalAddress>
-          <Name>FLOW SWITCH- HMOGENIZER-2</Name>
+          <Name>FLOW SWITCH- INLINE HMOGENIZER-2</Name>
         </AttributeList>
         <ObjectList>
           <MultilingualText ID="62" CompositionName="Comment">
@@ -675,7 +675,7 @@
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
           <LogicalAddress>%I4.3</LogicalAddress>
-          <Name>DI SPARE_1</Name>
+          <Name>SUGAR AIR PRESSURE SWITCH</Name>
         </AttributeList>
         <ObjectList>
           <MultilingualText ID="6B" CompositionName="Comment">
@@ -694,7 +694,7 @@
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
           <LogicalAddress>%I4.4</LogicalAddress>
-          <Name>DI SPARE_2</Name>
+          <Name>DI SPARE_1</Name>
         </AttributeList>
         <ObjectList>
           <MultilingualText ID="6E" CompositionName="Comment">
@@ -713,7 +713,7 @@
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
           <LogicalAddress>%I4.5</LogicalAddress>
-          <Name>DI SPARE_3</Name>
+          <Name>DI SPARE_2</Name>
         </AttributeList>
         <ObjectList>
           <MultilingualText ID="71" CompositionName="Comment">
@@ -732,7 +732,7 @@
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
           <LogicalAddress>%I4.6</LogicalAddress>
-          <Name>DI SPARE_4</Name>
+          <Name>DI SPARE_3</Name>
         </AttributeList>
         <ObjectList>
           <MultilingualText ID="74" CompositionName="Comment">
@@ -751,7 +751,7 @@
         <AttributeList>
           <DataTypeName>Bool</DataTypeName>
           <LogicalAddress>%I4.7</LogicalAddress>
-          <Name>DI SPARE_5</Name>
+          <Name>DI SPARE_4</Name>
         </AttributeList>
         <ObjectList>
           <MultilingualText ID="77" CompositionName="Comment">
@@ -4247,7 +4247,7 @@
         <AttributeList>
           <DataTypeName>Int</DataTypeName>
           <LogicalAddress>%IW19</LogicalAddress>
-          <Name>TEMP.SENSOR- MFG OUTLET</Name>
+          <Name>TEMP.SENSOR- MFG PRODUCT</Name>
         </AttributeList>
         <ObjectList>
           <MultilingualText ID="29F" CompositionName="Comment">
@@ -4285,7 +4285,7 @@
         <AttributeList>
           <DataTypeName>Int</DataTypeName>
           <LogicalAddress>%IW23</LogicalAddress>
-          <Name>TEMP.SENSOR- PREMIXING OUTLET</Name>
+          <Name>TEMP.SENSOR- PREMIXING PRODUCT</Name>
         </AttributeList>
         <ObjectList>
           <MultilingualText ID="2A5" CompositionName="Comment">
@@ -4323,7 +4323,7 @@
         <AttributeList>
           <DataTypeName>Int</DataTypeName>
           <LogicalAddress>%IW27</LogicalAddress>
-          <Name>TEMP.SENSOR- SUGAR OUTLET</Name>
+          <Name>TEMP.SENSOR- SUGAR PRODUCT</Name>
         </AttributeList>
         <ObjectList>
           <MultilingualText ID="2AB" CompositionName="Comment">
@@ -4342,7 +4342,7 @@
         <AttributeList>
           <DataTypeName>Int</DataTypeName>
           <LogicalAddress>%IW29</LogicalAddress>
-          <Name>TEMP.SENSOR- CIP</Name>
+          <Name>TEMP.SENSOR- CIP1</Name>
         </AttributeList>
         <ObjectList>
           <MultilingualText ID="2AE" CompositionName="Comment">
@@ -4361,7 +4361,7 @@
         <AttributeList>
           <DataTypeName>Int</DataTypeName>
           <LogicalAddress>%IW31</LogicalAddress>
-          <Name>PRESSURE TRANSMTER- MFG</Name>
+          <Name>PRESSURE TRANSMTER- MFG AIRINLET</Name>
         </AttributeList>
         <ObjectList>
           <MultilingualText ID="2B1" CompositionName="Comment">
@@ -4380,7 +4380,7 @@
         <AttributeList>
           <DataTypeName>Int</DataTypeName>
           <LogicalAddress>%IW33</LogicalAddress>
-          <Name>PRESSURE TRANSMTER- SUGAR</Name>
+          <Name>PRESSURE TRANSMTER- SUGAR AIRINLET</Name>
         </AttributeList>
         <ObjectList>
           <MultilingualText ID="2B4" CompositionName="Comment">
@@ -4456,7 +4456,7 @@
         <AttributeList>
           <DataTypeName>Int</DataTypeName>
           <LogicalAddress>%IW41</LogicalAddress>
-          <Name>AI SPARE_1</Name>
+          <Name>TEMP.SENSOR CIP2</Name>
         </AttributeList>
         <ObjectList>
           <MultilingualText ID="2C0" CompositionName="Comment">
@@ -4475,7 +4475,7 @@
         <AttributeList>
           <DataTypeName>Int</DataTypeName>
           <LogicalAddress>%IW43</LogicalAddress>
-          <Name>AI SPARE_2</Name>
+          <Name>AI SPARE_1</Name>
         </AttributeList>
         <ObjectList>
           <MultilingualText ID="2C3" CompositionName="Comment">
@@ -4494,7 +4494,7 @@
         <AttributeList>
           <DataTypeName>Int</DataTypeName>
           <LogicalAddress>%IW45</LogicalAddress>
-          <Name>AI SPARE_3</Name>
+          <Name>AI SPARE_2</Name>
         </AttributeList>
         <ObjectList>
           <MultilingualText ID="2C6" CompositionName="Comment">
@@ -4513,7 +4513,7 @@
         <AttributeList>
           <DataTypeName>Int</DataTypeName>
           <LogicalAddress>%IW47</LogicalAddress>
-          <Name>AI SPARE_4</Name>
+          <Name>AI SPARE_3</Name>
         </AttributeList>
         <ObjectList>
           <MultilingualText ID="2C9" CompositionName="Comment">
@@ -4532,7 +4532,7 @@
         <AttributeList>
           <DataTypeName>Int</DataTypeName>
           <LogicalAddress>%IW49</LogicalAddress>
-          <Name>AI SPARE_5</Name>
+          <Name>AI SPARE_4</Name>
         </AttributeList>
         <ObjectList>
           <MultilingualText ID="2CC" CompositionName="Comment">
@@ -4551,7 +4551,7 @@
         <AttributeList>
           <DataTypeName>Int</DataTypeName>
           <LogicalAddress>%IW51</LogicalAddress>
-          <Name>AI SPARE_6</Name>
+          <Name>AI SPARE_5</Name>
         </AttributeList>
         <ObjectList>
           <MultilingualText ID="2CF" CompositionName="Comment">
@@ -4728,6 +4728,272 @@
           <MultilingualText ID="2EA" CompositionName="Comment">
             <ObjectList>
               <MultilingualTextItem ID="2EB" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="2EC" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>Byte</DataTypeName>
+          <LogicalAddress>%MB1</LogicalAddress>
+          <Name>System_Byte</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="2ED" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="2EE" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="2EF" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>Bool</DataTypeName>
+          <LogicalAddress>%M1.0</LogicalAddress>
+          <Name>FirstScan</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="2F0" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="2F1" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="2F2" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>Bool</DataTypeName>
+          <LogicalAddress>%M1.1</LogicalAddress>
+          <Name>DiagStatusUpdate</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="2F3" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="2F4" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="2F5" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>Bool</DataTypeName>
+          <LogicalAddress>%M1.2</LogicalAddress>
+          <Name>AlwaysTRUE</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="2F6" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="2F7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="2F8" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>Bool</DataTypeName>
+          <LogicalAddress>%M1.3</LogicalAddress>
+          <Name>AlwaysFALSE</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="2F9" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="2FA" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="2FB" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>Byte</DataTypeName>
+          <LogicalAddress>%MB0</LogicalAddress>
+          <Name>Clock_Byte</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="2FC" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="2FD" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="2FE" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>Bool</DataTypeName>
+          <LogicalAddress>%M0.0</LogicalAddress>
+          <Name>Clock_10Hz</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="2FF" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="300" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="301" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>Bool</DataTypeName>
+          <LogicalAddress>%M0.1</LogicalAddress>
+          <Name>Clock_5Hz</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="302" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="303" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="304" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>Bool</DataTypeName>
+          <LogicalAddress>%M0.2</LogicalAddress>
+          <Name>Clock_2.5Hz</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="305" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="306" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="307" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>Bool</DataTypeName>
+          <LogicalAddress>%M0.3</LogicalAddress>
+          <Name>Clock_2Hz</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="308" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="309" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="30A" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>Bool</DataTypeName>
+          <LogicalAddress>%M0.4</LogicalAddress>
+          <Name>Clock_1.25Hz</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="30B" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="30C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="30D" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>Bool</DataTypeName>
+          <LogicalAddress>%M0.5</LogicalAddress>
+          <Name>Clock_1Hz</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="30E" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="30F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="310" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>Bool</DataTypeName>
+          <LogicalAddress>%M0.6</LogicalAddress>
+          <Name>Clock_0.625Hz</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="311" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="312" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Tags.PlcTag>
+      <SW.Tags.PlcTag ID="313" CompositionName="Tags">
+        <AttributeList>
+          <DataTypeName>Bool</DataTypeName>
+          <LogicalAddress>%M0.7</LogicalAddress>
+          <Name>Clock_0.5Hz</Name>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="314" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="315" CompositionName="Items">
                 <AttributeList>
                   <Culture>en-US</Culture>
                   <Text />

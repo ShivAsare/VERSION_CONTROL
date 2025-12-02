@@ -13,23 +13,23 @@
       <Member Name="LOAD CELL- STORAGE-2" Datatype="Real" />
       <Member Name="CONDUCTIVITY METER" Datatype="Real" />
       <Member Name="TEMP.SENSOR- MFG INLET" Datatype="Real" />
-      <Member Name="TEMP.SENSOR- MFG OUTLET" Datatype="Real" />
+      <Member Name="TEMP.SENSOR- MFG PRODUCT" Datatype="Real" />
       <Member Name="TEMP.SENSOR- PREMIXING INLET" Datatype="Real" />
-      <Member Name="TEMP.SENSOR- PREMIXING OUTLET" Datatype="Real" />
+      <Member Name="TEMP.SENSOR- PREMIXING PRODUCT" Datatype="Real" />
       <Member Name="TEMP.SENSOR- SUGAR INLET" Datatype="Real" />
-      <Member Name="TEMP.SENSOR- SUGAR OUTLET" Datatype="Real" />
-      <Member Name="TEMP.SENSOR- CIP" Datatype="Real" />
+      <Member Name="TEMP.SENSOR- SUGAR PRODUCT" Datatype="Real" />
+      <Member Name="TEMP.SENSOR- CIP1" Datatype="Real" />
       <Member Name="PRESSURE TRANSMTER- MFG" Datatype="Real" />
       <Member Name="PRESSURE TRANSMTER- SUGAR" Datatype="Real" />
       <Member Name="VACUUME TRANSMTER- MFG" Datatype="Real" />
       <Member Name="VACUUME TRANSMTER- SUGAR" Datatype="Real" />
       <Member Name="VACUUME TRANSMTER- PREMIXING" Datatype="Real" />
+      <Member Name="TEMP.SENSOR- CIP2" Datatype="Real" />
       <Member Name="AI SPARE_1" Datatype="Real" />
       <Member Name="AI SPARE_2" Datatype="Real" />
       <Member Name="AI SPARE_3" Datatype="Real" />
       <Member Name="AI SPARE_4" Datatype="Real" />
       <Member Name="AI SPARE_5" Datatype="Real" />
-      <Member Name="AI SPARE_6" Datatype="Real" />
     </Member>
     <Member Name="MAX" Datatype="Struct" Remanence="Retain">
       <Member Name="LOAD CELL- MFG" Datatype="Real" />
@@ -39,23 +39,23 @@
       <Member Name="LOAD CELL- STORAGE-2" Datatype="Real" />
       <Member Name="CONDUCTIVITY METER" Datatype="Real" />
       <Member Name="TEMP.SENSOR- MFG INLET" Datatype="Real" />
-      <Member Name="TEMP.SENSOR- MFG OUTLET" Datatype="Real" />
+      <Member Name="TEMP.SENSOR- MFG PRODUCT" Datatype="Real" />
       <Member Name="TEMP.SENSOR- PREMIXING INLET" Datatype="Real" />
-      <Member Name="TEMP.SENSOR- PREMIXING OUTLET" Datatype="Real" />
+      <Member Name="TEMP.SENSOR- PREMIXING PRODUCT" Datatype="Real" />
       <Member Name="TEMP.SENSOR- SUGAR INLET" Datatype="Real" />
-      <Member Name="TEMP.SENSOR- SUGAR OUTLET" Datatype="Real" />
-      <Member Name="TEMP.SENSOR- CIP" Datatype="Real" />
+      <Member Name="TEMP.SENSOR- SUGAR PRODUCT" Datatype="Real" />
+      <Member Name="TEMP.SENSOR- CIP1" Datatype="Real" />
       <Member Name="PRESSURE TRANSMTER- MFG" Datatype="Real" />
       <Member Name="PRESSURE TRANSMTER- SUGAR" Datatype="Real" />
       <Member Name="VACUUME TRANSMTER- MFG" Datatype="Real" />
       <Member Name="VACUUME TRANSMTER- SUGAR" Datatype="Real" />
       <Member Name="VACUUME TRANSMTER- PREMIXING" Datatype="Real" />
+      <Member Name="TEMP.SENSOR- CIP2" Datatype="Real" />
       <Member Name="AI SPARE_1" Datatype="Real" />
       <Member Name="AI SPARE_2" Datatype="Real" />
       <Member Name="AI SPARE_3" Datatype="Real" />
       <Member Name="AI SPARE_4" Datatype="Real" />
       <Member Name="AI SPARE_5" Datatype="Real" />
-      <Member Name="AI SPARE_6" Datatype="Real" />
     </Member>
     <Member Name="PV" Datatype="Struct">
       <Member Name="LOAD CELL- MFG" Datatype="Real" />
@@ -65,23 +65,23 @@
       <Member Name="LOAD CELL- STORAGE-2" Datatype="Real" />
       <Member Name="CONDUCTIVITY METER" Datatype="Real" />
       <Member Name="TEMP.SENSOR- MFG INLET" Datatype="Real" />
-      <Member Name="TEMP.SENSOR- MFG OUTLET" Datatype="Real" />
+      <Member Name="TEMP.SENSOR- MFG PRODUCT" Datatype="Real" />
       <Member Name="TEMP.SENSOR- PREMIXING INLET" Datatype="Real" />
-      <Member Name="TEMP.SENSOR- PREMIXING OUTLET" Datatype="Real" />
+      <Member Name="TEMP.SENSOR- PREMIXING PRODUCT" Datatype="Real" />
       <Member Name="TEMP.SENSOR- SUGAR INLET" Datatype="Real" />
-      <Member Name="TEMP.SENSOR- SUGAR OUTLET" Datatype="Real" />
-      <Member Name="TEMP.SENSOR- CIP" Datatype="Real" />
+      <Member Name="TEMP.SENSOR- SUGAR PRODUCT" Datatype="Real" />
+      <Member Name="TEMP.SENSOR- CIP1" Datatype="Real" />
       <Member Name="PRESSURE TRANSMTER- MFG" Datatype="Real" />
       <Member Name="PRESSURE TRANSMTER- SUGAR" Datatype="Real" />
       <Member Name="VACUUME TRANSMTER- MFG" Datatype="Real" />
       <Member Name="VACUUME TRANSMTER- SUGAR" Datatype="Real" />
       <Member Name="VACUUME TRANSMTER- PREMIXING" Datatype="Real" />
+      <Member Name="TEMP.SENSOR- CIP2" Datatype="Real" />
       <Member Name="AI SPARE_1" Datatype="Real" />
       <Member Name="AI SPARE_2" Datatype="Real" />
       <Member Name="AI SPARE_3" Datatype="Real" />
       <Member Name="AI SPARE_4" Datatype="Real" />
       <Member Name="AI SPARE_5" Datatype="Real" />
-      <Member Name="AI SPARE_6" Datatype="Real" />
     </Member>
   </Section>
 </Sections></Interface>

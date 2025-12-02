@@ -9,7 +9,7 @@
     <Member Name="EMG STOP-2" Datatype="Bool" />
     <Member Name="HOOTER RESET-1" Datatype="Bool" />
     <Member Name="HOOTER RESET-2" Datatype="Bool" />
-    <Member Name="AIR PRESSURE SWITCH" Datatype="Bool" />
+    <Member Name="MFG AIR PRESSURE SWITCH" Datatype="Bool" />
     <Member Name="PHASE FAIL" Datatype="Bool" />
     <Member Name="MFG VESSEL MOTOR TRIP" Datatype="Bool" />
     <Member Name="PREMIXING VESSEL MOTOR TRIP" Datatype="Bool" />
@@ -36,15 +36,15 @@
     <Member Name="FLOW SWITCH- STORAGE VESSEL-1" Datatype="Bool" />
     <Member Name="FLOW SWITCH- STORAGE VESSEL-2" Datatype="Bool" />
     <Member Name="FLOW SWITCH- SUGAR VESSEL" Datatype="Bool" />
-    <Member Name="FLOW SWITCH- HMOGENIZER-1" Datatype="Bool" />
-    <Member Name="FLOW SWITCH- HMOGENIZER-2" Datatype="Bool" />
+    <Member Name="FLOW SWITCH- INLINE HMOGENIZER-1" Datatype="Bool" />
+    <Member Name="FLOW SWITCH- INLINE HMOGENIZER-2" Datatype="Bool" />
     <Member Name="LEVEL FLOW SWITCH-1" Datatype="Bool" />
     <Member Name="LEVEL FLOW SWITCH-2" Datatype="Bool" />
+    <Member Name="SUGAR AIR PRESSURE SWITCH" Datatype="Bool" />
     <Member Name="DI SPARE_1" Datatype="Bool" />
     <Member Name="DI SPARE_2" Datatype="Bool" />
     <Member Name="DI SPARE_3" Datatype="Bool" />
     <Member Name="DI SPARE_4" Datatype="Bool" />
-    <Member Name="DI SPARE_5" Datatype="Bool" />
   </Section>
 </Sections></Interface>
       <MemoryLayout>Optimized</MemoryLayout>

@@ -5,7 +5,7 @@
     <AttributeList>
       <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
   <Section Name="Static">
-    <Member Name="SET" Datatype="Struct">
+    <Member Name="SET" Datatype="Struct" Remanence="Retain">
       <Member Name="MFG VESSEL MOTOR SPEED" Datatype="Real" />
       <Member Name="PREMIXING VESSEL MOTOR SPEED" Datatype="Real" />
       <Member Name="STORAGE VESSEL-1 MOTOR SPEED" Datatype="Real" />

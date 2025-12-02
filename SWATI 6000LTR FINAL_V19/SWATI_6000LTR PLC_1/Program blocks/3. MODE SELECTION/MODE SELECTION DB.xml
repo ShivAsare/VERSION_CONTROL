@@ -8,8 +8,8 @@
     <Member Name="AUTO" Datatype="Bool" />
     <Member Name="MANUAL" Datatype="Bool" />
     <Member Name="STANDBY" Datatype="Bool" />
-    <Member Name="MODE BUFF" Datatype="Int" />
-    <Member Name="PROCESS BUFF" Datatype="Int" />
+    <Member Name="MODE BUFF" Datatype="Int" Remanence="Retain" />
+    <Member Name="PROCESS BUFF" Datatype="Int" Remanence="Retain" />
   </Section>
 </Sections></Interface>
       <MemoryLayout>Optimized</MemoryLayout>

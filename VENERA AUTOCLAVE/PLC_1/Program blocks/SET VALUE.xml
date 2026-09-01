@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V21" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="Static">
+            <Member Name="PWD DOSING TIME" Datatype="String[80]">
+              <StartValue>'  DOSING TIME (SEC)          :      60      '</StartValue>
+            </Member>
+            <Member Name="PWD WTR INLET TIME" Datatype="String[80]">
+              <StartValue>'  WATER INLET TIME (MIN)     :       7     '</StartValue>
+            </Member>
+            <Member Name="PWD CRC TIME" Datatype="String[80]">
+              <StartValue>'  CIRCULATION TIME (MIN)     :      10   '</StartValue>
+            </Member>
+            <Member Name="PWD DRAIN TIME" Datatype="String[80]">
+              <StartValue>'  DRAIN TIME (MIN)           :       7    '</StartValue>
+            </Member>
+            <Member Name="STERILE TEMP1" Datatype="String[80]">
+              <StartValue>'  HEAT UP-1 (DEG.C)          :    105.0  '</StartValue>
+            </Member>
+            <Member Name="STERILE TEMP2" Datatype="String[80]">
+              <StartValue>'  HEAT UP-2 (DEG.C)          :    110.0  '</StartValue>
+            </Member>
+            <Member Name="STERILE TEMP3" Datatype="String[80]">
+              <StartValue>'  HEAT UP-3 (DEG.C)          :    115.0  '</StartValue>
+            </Member>
+            <Member Name="STERILE TEMP4" Datatype="String[80]">
+              <StartValue>'  STERILE TEMP (DEG.C)       :    121.4 '</StartValue>
+            </Member>
+            <Member Name="STERILE HOLD1" Datatype="String[80]">
+              <StartValue>'  PULSE                      :       5    '</StartValue>
+            </Member>
+            <Member Name="STERILE HOLD2" Datatype="String[80]">
+              <StartValue>'  PULSE                      :       5    '</StartValue>
+            </Member>
+            <Member Name="STERILE HOLD3" Datatype="String[80]">
+              <StartValue>'  PULSE                      :       5    '</StartValue>
+            </Member>
+            <Member Name="STERILE HOLD4" Datatype="String[80]">
+              <StartValue>'  HOLD TIME (MIN)            :      30    '</StartValue>
+            </Member>
+            <Member Name="WFI DSG TIME" Datatype="String[80]">
+              <StartValue>'  DOSING TIME (SEC)          :      60 '</StartValue>
+            </Member>
+            <Member Name="WFI WTR TIME" Datatype="String[80]">
+              <StartValue>'  WATER INLET TIME (MIN)     :       7 '</StartValue>
+            </Member>
+            <Member Name="WFI CRC TIME" Datatype="String[80]">
+              <StartValue>'  CIRCULATION TIME (MIN)     :      10  '</StartValue>
+            </Member>
+            <Member Name="WFI DRAIN TIME" Datatype="String[80]">
+              <StartValue>'  DRAIN TIME (MIN)           :      10  '</StartValue>
+            </Member>
+            <Member Name="STERILE EXH PRESS" Datatype="String[80]">
+              <StartValue>'  EXHAUST PRESSURE (BAR)     :     0.05'</StartValue>
+            </Member>
+            <Member Name="DRY VCC" Datatype="String[80]">
+              <StartValue>'  VACUUM (BAR)               :    -0.500'</StartValue>
+            </Member>
+            <Member Name="DRY VCC TIME" Datatype="String[80]">
+              <StartValue>'  HOLD TIME (MIN)            :            '</StartValue>
+            </Member>
+            <Member Name="DRY ATS PRESSURE" Datatype="String[80]">
+              <StartValue>'  ATMOSPHERIC PRESSURE (BAR) :    -0.050'</StartValue>
+            </Member>
+            <Member Name="DRY TIME" Datatype="String[80]">
+              <StartValue>'  DRYING TIME(MIN)           :      20     '</StartValue>
+            </Member>
+            <Member Name="PWD TEMP" Datatype="String[80]">
+              <StartValue>'  PWD TEMP (DEG.C)           :     0.0    '</StartValue>
+            </Member>
+            <Member Name="STD TEMP1" Datatype="String[80]">
+              <StartValue>'  HEAT UP-1 TEMPERATURE (DEG.C)         :   114.0       '</StartValue>
+            </Member>
+            <Member Name="STD TEMP2" Datatype="String[80]">
+              <StartValue>'  HEAT UP-2 TEMPERATURE (DEG.C)         :   116.0       '</StartValue>
+            </Member>
+            <Member Name="STD TEMP3" Datatype="String[80]">
+              <StartValue>'  HEAT UP-3 TEMPERATURE (DEG.C)         :   119.0       '</StartValue>
+            </Member>
+            <Member Name="STD TIME1" Datatype="String[80]">
+              <StartValue>'  HEAT UP-1 HOLD TIME (MIN)             :      5     '</StartValue>
+            </Member>
+            <Member Name="STD TIME2" Datatype="String[80]">
+              <StartValue>'  HEAT UP-2 HOLD TIME (MIN)             :      3     '</StartValue>
+            </Member>
+            <Member Name="STD TIME3" Datatype="String[80]">
+              <StartValue>'  HEAT UP-3 HOLD TIME (MIN)             :      2     '</StartValue>
+            </Member>
+            <Member Name="LEAK" Datatype="String[80]">
+              <StartValue>'  VACUUM (BAR)               :    -0.700'</StartValue>
+            </Member>
+            <Member Name="DELAY BEFORE HOLD" Datatype="String[80]">
+              <StartValue>'  DELAY BEFORE HOLD (MIN)    :       5'</StartValue>
+            </Member>
+            <Member Name="ACCEPTANCE" Datatype="String[80]">
+              <StartValue>'  ACCEPTANCE LEAKAGE (BAR)   :     0.013'</StartValue>
+            </Member>
+            <Member Name="VCC HOLD" Datatype="String[80]">
+              <StartValue>'  HOLD TIME (MIN)            :     10     '</StartValue>
+            </Member>
+            <Member Name="VCC PRESS" Datatype="String[80]">
+              <StartValue>'  VENT PRESSURE (BAR)        :    -0.08'</StartValue>
+            </Member>
+            <Member Name="HPHV VCC" Datatype="String[80]">
+              <StartValue>'  PRE-VACUUM LEVEL (BAR)                :   -0.700      '</StartValue>
+            </Member>
+            <Member Name="HPHV VCC HOLD" Datatype="String[80]">
+              <StartValue>'  PRE-VACUUM HOLD TIME (MIN)            :      3        '</StartValue>
+            </Member>
+            <Member Name="HPHV HEATUP" Datatype="String[80]">
+              <StartValue>'  STERILIZATION TEMPERATURE (DEG.C)     :   121.4        '</StartValue>
+            </Member>
+            <Member Name="HPHV HEATUP HOLD" Datatype="String[80]">
+              <StartValue>'  STERILIZATION HOLD TIME (MIN)         :     30       '</StartValue>
+            </Member>
+            <Member Name="HPHV NO" Datatype="String[80]">
+              <StartValue>'  PRE-PULSE NUMBER                      :      3        '</StartValue>
+            </Member>
+            <Member Name="HPHV ATS" Datatype="String[80]">
+              <StartValue>'  POST-VACUUM LEVEL (BAR)               :   -0.700      '</StartValue>
+            </Member>
+            <Member Name="HPHV ATS HOLD" Datatype="String[80]">
+              <StartValue>'  POST-VACUUM HOLD TIME (MIN)           :     15        '</StartValue>
+            </Member>
+            <Member Name="HPHV EXH PRESS" Datatype="String[80]">
+              <StartValue>'  EXHAUST PRESSURE (BAR)                :    0.2         '</StartValue>
+            </Member>
+            <Member Name="HPHV HEATUP PRESS" Datatype="String[80]">
+              <StartValue>'  PRE-HEAT PRESSURE (BAR)               :    0.7        '</StartValue>
+            </Member>
+            <Member Name="HPHV END PRESS" Datatype="String[80]">
+              <StartValue>'  END PRESSURE (BAR)                    :   -0.08       '</StartValue>
+            </Member>
+            <Member Name="BOW VCC" Datatype="String[80]">
+              <StartValue>'  PRE-VACUUM LEVEL (BAR)                :   -0.700      '</StartValue>
+            </Member>
+            <Member Name="BOW VCC HOLD" Datatype="String[80]">
+              <StartValue>'  PRE-VACUUM HOLD TIME (MIN)            :      3        '</StartValue>
+            </Member>
+            <Member Name="BOW HEATUP" Datatype="String[80]">
+              <StartValue>'  STERILIZATION TEMPERATURE (DEG.C)     :   121.4        '</StartValue>
+            </Member>
+            <Member Name="BOW HEATUP HOLD" Datatype="String[80]">
+              <StartValue>'  STERILIZATION HOLD TIME (MIN)         :     10       '</StartValue>
+            </Member>
+            <Member Name="BOW PRE PULSES" Datatype="String[80]">
+              <StartValue>'  PRE-PULSE NUMBER                      :      3        '</StartValue>
+            </Member>
+            <Member Name="BOW POST VACUUM" Datatype="String[80]">
+              <StartValue>'  POST-VACUUM LEVEL (BAR)               :    0.0        '</StartValue>
+            </Member>
+            <Member Name="BOW POST VACUUM HOLD" Datatype="String[80]">
+              <Comment>
+                <MultiLanguageText Lang="en-US">40:</MultiLanguageText>
+              </Comment>
+              <StartValue>'  POST-VACUUM HOLD TIME (MIN)           :      0        '</StartValue>
+            </Member>
+            <Member Name="BOW EXH PRESS" Datatype="String[80]">
+              <StartValue>'  EXHAUST PRESSURE (BAR)                :    0.90        '</StartValue>
+            </Member>
+            <Member Name="BOW HEATUP PRESS" Datatype="String[80]">
+              <StartValue>'  PRE-HEAT PRESSURE (BAR)               :    0.7        '</StartValue>
+            </Member>
+            <Member Name="BOW END PRESS" Datatype="String[80]">
+              <StartValue>'  END PRESSURE (BAR)                    :    0.00       '</StartValue>
+            </Member>
+            <Member Name="STD UP PRESS" Datatype="String[80]">
+              <StartValue>'  PRE PRESSURE (BAR)         :               0.00'</StartValue>
+            </Member>
+            <Member Name="STD STOP TEMP" Datatype="String[80]">
+              <StartValue>'  STERILIZATION STOP TEMP (DEG.C)       :   120.9     '</StartValue>
+            </Member>
+            <Member Name="STD VCC HOLD" Datatype="String[80]">
+              <StartValue>'  VACUUM HOLD TIME (MIN)     :             '</StartValue>
+            </Member>
+            <Member Name="STD NO OF PULSES" Datatype="String[80]">
+              <StartValue>'  NO OF PULSES               :                 0'</StartValue>
+            </Member>
+            <Member Name="DONE BY" Datatype="String[80]">
+              <StartValue>''</StartValue>
+            </Member>
+            <Member Name="DATE" Datatype="String[80]">
+              <StartValue>''</StartValue>
+            </Member>
+            <Member Name="SUMARY" Datatype="String[80]">
+              <StartValue>''</StartValue>
+            </Member>
+            <Member Name="VACUUM START" Datatype="String[80]">
+              <StartValue>''</StartValue>
+            </Member>
+            <Member Name="VACCUM END" Datatype="String[80]">
+              <StartValue>''</StartValue>
+            </Member>
+            <Member Name="ACTUAL LEAK" Datatype="String[80]">
+              <StartValue>''</StartValue>
+            </Member>
+            <Member Name="ACCEPT LEAK" Datatype="String[80]">
+              <StartValue>''</StartValue>
+            </Member>
+            <Member Name="RESULT" Datatype="String[80]">
+              <StartValue>''</StartValue>
+            </Member>
+            <Member Name="PW NO OF PULSES_1" Datatype="String[80]">
+              <StartValue>'$L$RNO OF PULSES               :       2         '</StartValue>
+            </Member>
+            <Member Name="OVERSHOOT TEMP" Datatype="String[80]">
+              <StartValue>'$L$ROVERSHOOT TEMP (DEG.C)                :   124.0      '</StartValue>
+            </Member>
+            <Member Name="ABORT TEMP" Datatype="String[80]">
+              <StartValue>'$L$RCRITICAL TEMP (DEG.C)                 :   120.5          '</StartValue>
+            </Member>
+            <Member Name="ABORT DELAY" Datatype="String[80]">
+              <StartValue>'$L$RABORT DELAY (SEC)          :       1       '</StartValue>
+            </Member>
+            <Member Name="SET WFI COUNTS" Datatype="String[80]">
+              <StartValue>'$L$RNO OF PULSES               :       0        '</StartValue>
+            </Member>
+            <Member Name="SET HPHV HT1" Datatype="String[80]">
+              <StartValue>'  HEAT UP-1 TEMPEARUTRE (DEG.C)         :   114.0       '</StartValue>
+            </Member>
+            <Member Name="SET HPHV HT2" Datatype="String[80]">
+              <StartValue>'  HEAT UP-2 TEMPEARUTRE (DEG.C)         :   116.0       '</StartValue>
+            </Member>
+            <Member Name="SET HPHV HT3" Datatype="String[80]">
+              <StartValue>'  HEAT UP-3 TEMPEARUTRE (DEG.C)         :   119.0        '</StartValue>
+            </Member>
+            <Member Name="SET HPHV UP T1" Datatype="String[80]">
+              <StartValue>'  HEAT UP-1 HOLD TIME (MIN)             :      5     '</StartValue>
+            </Member>
+            <Member Name="SET HPHV UP T2" Datatype="String[80]">
+              <StartValue>'  HEAT UP-2 HOLD TIME (MIN)             :      3     '</StartValue>
+            </Member>
+            <Member Name="SET HPHV UP T3" Datatype="String[80]">
+              <StartValue>'  HEAT UP-3 HOLD TIME (MIN)             :      2     '</StartValue>
+            </Member>
+            <Member Name="SET BOW HT1" Datatype="String[80]">
+              <StartValue>'  HEAT UP-1 TEMPEARUTRE (DEG.C)         :   114.0     '</StartValue>
+            </Member>
+            <Member Name="SET BOW HT2" Datatype="String[80]">
+              <StartValue>'  HEAT UP-2 TEMPEARUTRE (DEG.C)         :   116.0      '</StartValue>
+            </Member>
+            <Member Name="SET BOW HT3" Datatype="String[80]">
+              <StartValue>'  HEAT UP-3 TEMPEARUTRE (DEG.C)         :   119.0      '</StartValue>
+            </Member>
+            <Member Name="SET BOW UP T1" Datatype="String[80]">
+              <StartValue>'  HEAT UP-1 HOLD TIME (MIN)             :      5     '</StartValue>
+            </Member>
+            <Member Name="SET BOW UP T2" Datatype="String[80]">
+              <StartValue>'  HEAT UP-2 HOLD TIME (MIN)             :      3     '</StartValue>
+            </Member>
+            <Member Name="SET BOW UP T3" Datatype="String[80]">
+              <StartValue>'  HEAT UP-3 HOLD TIME (MIN)             :      2     '</StartValue>
+            </Member>
+            <Member Name="SET HPHV POST PULSES" Datatype="String[80]">
+              <StartValue>'  POST-PULSE NUMBER                     :      1        '</StartValue>
+            </Member>
+            <Member Name="SET BOW POST PULSES" Datatype="String[80]">
+              <StartValue>'  POST-PULSE NUMBER                     :      0        '</StartValue>
+            </Member>
+            <Member Name="SET BOW STOP TMP" Datatype="String[80]">
+              <Comment>
+                <MultiLanguageText Lang="en-US">:41</MultiLanguageText>
+              </Comment>
+              <StartValue>'  STERILIZATION STOP TEMP (DEG.C)       :   120.9     '</StartValue>
+            </Member>
+            <Member Name="SET HPHV STOP TMP" Datatype="String[80]">
+              <StartValue>'  STERILIZATION STOP TEMP (DEG.C)       :   120.9     '</StartValue>
+            </Member>
+            <Member Name="CONTROL BAND" Datatype="String[80]">
+              <StartValue>'  CONTROL BAND TEMP (DEG.C)             :     0.2         '</StartValue>
+            </Member>
+            <Member Name="JACKET ALM TIME" Datatype="String[80]">
+              <StartValue>'  JACKET ALARM TIME (MIN)               :     10                   '</StartValue>
+            </Member>
+            <Member Name="HEAT ALM TIME" Datatype="String[80]">
+              <StartValue>'  HEATUP ALARM TIME (MIN)               :     10                   '</StartValue>
+            </Member>
+            <Member Name="PRINT INTERVAL" Datatype="String[80]">
+              <StartValue>'  PRINT INTERVAL TIME (SEC)             :     60               '</StartValue>
+            </Member>
+            <Member Name="STD STERILE TEMP" Datatype="String[80]">
+              <StartValue>'  STERILIZATION TEMPERATURE (DEG.C)     :   121.4        '</StartValue>
+            </Member>
+            <Member Name="STD STERILE HOLD" Datatype="String[80]">
+              <StartValue>'  STERILIZATION HOLD TIME (MIN)         :     10       '</StartValue>
+            </Member>
+            <Member Name="STD END PRESSURE" Datatype="String[80]">
+              <StartValue>'  END PRESSURE (BAR)                    :    0.08       '</StartValue>
+            </Member>
+            <Member Name="AMP_LEAK" Datatype="String[80]">
+              <StartValue>'  VACUUM (BAR)               :    -0.700'</StartValue>
+            </Member>
+            <Member Name="AMPVCC HOLD" Datatype="String[80]">
+              <StartValue>'  HOLD TIME (MIN)            :     10     '</StartValue>
+            </Member>
+            <Member Name="AMP VCC PRESS" Datatype="String[80]">
+              <StartValue>'  VENT PRESSURE (BAR)        :    -0.08'</StartValue>
+            </Member>
+          </Section>
+        </Sections>
+      </Interface>
+      <MemoryLayout>Standard</MemoryLayout>
+      <Name>SET VALUE</Name>
+      <Namespace />
+      <Number>85</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

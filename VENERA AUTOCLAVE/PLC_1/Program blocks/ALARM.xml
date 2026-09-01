@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V21" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="Static">
+            <Member Name="AL_EMG_STOP" Datatype="Bool" />
+            <Member Name="AL_LOW_PRESSURE" Datatype="Bool" />
+            <Member Name="AL_DOOR_OPEN" Datatype="Bool" />
+            <Member Name="AL_DRUM_MTR_TRIP" Datatype="Bool" />
+            <Member Name="AL_VACCUM_MTR_TRIP" Datatype="Bool" />
+            <Member Name="AL_RECRC_TRIP" Datatype="Bool" />
+            <Member Name="AL_PW_START" Datatype="Bool" />
+            <Member Name="AL_PW_OVER" Datatype="Bool" />
+            <Member Name="AL_WFI_START" Datatype="Bool" />
+            <Member Name="AL_WFI_OVER" Datatype="Bool" />
+            <Member Name="AL_STERILE_START" Datatype="Bool" />
+            <Member Name="AL_STERILE_OVER" Datatype="Bool" />
+            <Member Name="AL_DRY_START" Datatype="Bool" />
+            <Member Name="AL_DRY_OVER" Datatype="Bool" />
+            <Member Name="AL_PROCESS_COMP" Datatype="Bool" />
+            <Member Name="AL_PRESSURE_HIGH" Datatype="Bool" />
+            <Member Name="AL_RTD_FAIL" Datatype="Bool" />
+            <Member Name="AL_CHAMBER PRESS_FAIL" Datatype="Bool" />
+            <Member Name="AL DOOR1 CLOSE LMT FAIL" Datatype="Bool" />
+            <Member Name="AL DOOR2 CLOSE LMT FAIL" Datatype="Bool" />
+            <Member Name="AL CHAMBER PRESS HIGH" Datatype="Bool" />
+            <Member Name="AL JACKET RTD FAIL" Datatype="Bool" />
+            <Member Name="AL BOILER TEMP HIGH" Datatype="Bool" />
+            <Member Name="AL DOOR1 VCC FAIL" Datatype="Bool" />
+            <Member Name="AL DOOR2 VCC FAIL" Datatype="Bool" />
+            <Member Name="AL PHASE FAILURE" Datatype="Bool" />
+            <Member Name="AL TEMP OVERSHOOT" Datatype="Bool" />
+            <Member Name="AL CHAMBER RTD1 FAIL" Datatype="Bool" />
+            <Member Name="AL CHAMBER RTD2 FAIL" Datatype="Bool" />
+            <Member Name="AL CHAMBER RTD3 FAIL" Datatype="Bool" />
+            <Member Name="AL CHAMBER RTD4 FAIL" Datatype="Bool" />
+            <Member Name="AL JACKET PRESS FAIL" Datatype="Bool" />
+            <Member Name="AL DOOR1 PRESS FAIL" Datatype="Bool" />
+            <Member Name="AL DOOR2 PRESS FAIL" Datatype="Bool" />
+          </Section>
+        </Sections>
+      </Interface>
+      <MemoryLayout>Standard</MemoryLayout>
+      <Name>ALARM</Name>
+      <Namespace />
+      <Number>101</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

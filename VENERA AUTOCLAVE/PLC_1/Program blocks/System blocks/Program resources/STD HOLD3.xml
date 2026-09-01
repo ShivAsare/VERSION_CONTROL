@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V21" />
+  <SW.Blocks.InstanceDB ID="0">
+    <AttributeList>
+      <InstanceOfName>IEC_COUNTER</InstanceOfName>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="Static">
+            <Member Name="CU" Datatype="Bool" Remanence="Retain" />
+            <Member Name="CD" Datatype="Bool" Remanence="Retain" />
+            <Member Name="R" Datatype="Bool" Remanence="Retain" />
+            <Member Name="LD" Datatype="Bool" Remanence="Retain" />
+            <Member Name="QU" Datatype="Bool" Remanence="Retain" />
+            <Member Name="QD" Datatype="Bool" Remanence="Retain" />
+            <Member Name="PV" Datatype="Int" Remanence="Retain" />
+            <Member Name="CV" Datatype="Int" Remanence="Retain" />
+          </Section>
+        </Sections>
+      </Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <Name>STD HOLD3</Name>
+      <Namespace />
+      <Number>73</Number>
+      <OfSystemLibElement>IEC_COUNTER</OfSystemLibElement>
+      <OfSystemLibVersion>1.0</OfSystemLibVersion>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.InstanceDB>
+</Document>

@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V21" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="Static">
+            <Member Name="std end press" Datatype="String[80]" Remanence="Retain">
+              <StartValue>'$L$REND PRESSURE (BAR)                    :               '</StartValue>
+            </Member>
+            <Member Name="STD STERILE HOLD TEMP" Datatype="Array[0..12] of Real" Remanence="Retain">
+              <Subelement Path="0">
+                <StartValue>121.4</StartValue>
+              </Subelement>
+              <Subelement Path="1">
+                <StartValue>121.4</StartValue>
+              </Subelement>
+              <Subelement Path="2">
+                <StartValue>121.4</StartValue>
+              </Subelement>
+              <Subelement Path="3">
+                <StartValue>115.0</StartValue>
+              </Subelement>
+              <Subelement Path="4">
+                <StartValue>115.0</StartValue>
+              </Subelement>
+              <Subelement Path="5">
+                <StartValue>115.0</StartValue>
+              </Subelement>
+              <Subelement Path="6">
+                <StartValue>110.0</StartValue>
+              </Subelement>
+              <Subelement Path="7">
+                <StartValue>100.0</StartValue>
+              </Subelement>
+              <Subelement Path="8">
+                <StartValue>100.0</StartValue>
+              </Subelement>
+              <Subelement Path="9">
+                <StartValue>0.0</StartValue>
+              </Subelement>
+              <Subelement Path="10">
+                <StartValue>0.0</StartValue>
+              </Subelement>
+              <Subelement Path="11">
+                <StartValue>0.0</StartValue>
+              </Subelement>
+              <Subelement Path="12">
+                <StartValue>0.0</StartValue>
+              </Subelement>
+            </Member>
+            <Member Name="STD STERILE HOLD TIME" Datatype="Array[0..12] of Int" Remanence="Retain">
+              <Subelement Path="0">
+                <StartValue>30</StartValue>
+              </Subelement>
+              <Subelement Path="1">
+                <StartValue>20</StartValue>
+              </Subelement>
+              <Subelement Path="2">
+                <StartValue>15</StartValue>
+              </Subelement>
+              <Subelement Path="3">
+                <StartValue>35</StartValue>
+              </Subelement>
+              <Subelement Path="4">
+                <StartValue>30</StartValue>
+              </Subelement>
+              <Subelement Path="5">
+                <StartValue>15</StartValue>
+              </Subelement>
+              <Subelement Path="6">
+                <StartValue>15</StartValue>
+              </Subelement>
+              <Subelement Path="7">
+                <StartValue>35</StartValue>
+              </Subelement>
+              <Subelement Path="8">
+                <StartValue>20</StartValue>
+              </Subelement>
+              <Subelement Path="9">
+                <StartValue>0</StartValue>
+              </Subelement>
+              <Subelement Path="10">
+                <StartValue>0</StartValue>
+              </Subelement>
+              <Subelement Path="11">
+                <StartValue>0</StartValue>
+              </Subelement>
+              <Subelement Path="12">
+                <StartValue>0</StartValue>
+              </Subelement>
+            </Member>
+            <Member Name="STD BAND" Datatype="Array[0..12] of Real" Remanence="Retain">
+              <Subelement Path="0">
+                <StartValue>0.0</StartValue>
+              </Subelement>
+              <Subelement Path="1">
+                <StartValue>0.0</StartValue>
+              </Subelement>
+              <Subelement Path="2">
+                <StartValue>0.0</StartValue>
+              </Subelement>
+              <Subelement Path="3">
+                <StartValue>0.0</StartValue>
+              </Subelement>
+              <Subelement Path="4">
+                <StartValue>0.0</StartValue>
+              </Subelement>
+              <Subelement Path="5">
+                <StartValue>0.0</StartValue>
+              </Subelement>
+              <Subelement Path="6">
+                <StartValue>0.0</StartValue>
+              </Subelement>
+              <Subelement Path="7">
+                <StartValue>0.0</StartValue>
+              </Subelement>
+              <Subelement Path="8">
+                <StartValue>0.0</StartValue>
+              </Subelement>
+              <Subelement Path="9">
+                <StartValue>0.0</StartValue>
+              </Subelement>
+              <Subelement Path="10">
+                <StartValue>0.0</StartValue>
+              </Subelement>
+              <Subelement Path="11">
+                <StartValue>0.0</StartValue>
+              </Subelement>
+              <Subelement Path="12">
+                <StartValue>0.0</StartValue>
+              </Subelement>
+            </Member>
+            <Member Name="STD OVER TEMP" Datatype="Array[0..12] of Real" Remanence="Retain">
+              <Subelement Path="0">
+                <StartValue>124.0</StartValue>
+              </Subelement>
+              <Subelement Path="1">
+                <StartValue>124.0</StartValue>
+              </Subelement>
+              <Subelement Path="2">
+                <StartValue>124.0</StartValue>
+              </Subelement>
+              <Subelement Path="3">
+                <StartValue>118.0</StartValue>
+              </Subelement>
+              <Subelement Path="4">
+                <StartValue>118.0</StartValue>
+              </Subelement>
+              <Subelement Path="5">
+                <StartValue>118.0</StartValue>
+              </Subelement>
+              <Subelement Path="6">
+                <StartValue>113.0</StartValue>
+              </Subelement>
+              <Subelement Path="7">
+                <StartValue>103.0</StartValue>
+              </Subelement>
+              <Subelement Path="8">
+                <StartValue>103.0</StartValue>
+              </Subelement>
+              <Subelement Path="9">
+                <StartValue>124.0</StartValue>
+              </Subelement>
+              <Subelement Path="10">
+                <StartValue>124.0</StartValue>
+              </Subelement>
+              <Subelement Path="11">
+                <StartValue>0.0</StartValue>
+              </Subelement>
+              <Subelement Path="12">
+                <StartValue>0.0</StartValue>
+              </Subelement>
+            </Member>
+            <Member Name="STD ABORT TEMP" Datatype="Array[0..12] of Real" Remanence="Retain">
+              <Subelement Path="0">
+                <StartValue>120.5</StartValue>
+              </Subelement>
+              <Subelement Path="1">
+                <StartValue>120.5</StartValue>
+              </Subelement>
+              <Subelement Path="2">
+                <StartValue>120.5</StartValue>
+              </Subelement>
+              <Subelement Path="3">
+                <StartValue>114.5</StartValue>
+              </Subelement>
+              <Subelement Path="4">
+                <StartValue>114.5</StartValue>
+              </Subelement>
+              <Subelement Path="5">
+                <StartValue>114.5</StartValue>
+              </Subelement>
+              <Subelement Path="6">
+                <StartValue>109.5</StartValue>
+              </Subelement>
+              <Subelement Path="7">
+                <StartValue>109.5</StartValue>
+              </Subelement>
+              <Subelement Path="8">
+                <StartValue>99.5</StartValue>
+              </Subelement>
+              <Subelement Path="9">
+                <StartValue>120.5</StartValue>
+              </Subelement>
+              <Subelement Path="10">
+                <StartValue>120.5</StartValue>
+              </Subelement>
+              <Subelement Path="11">
+                <StartValue>0.0</StartValue>
+              </Subelement>
+              <Subelement Path="12">
+                <StartValue>0.0</StartValue>
+              </Subelement>
+            </Member>
+            <Member Name="STD STERILE STOP TEMP" Datatype="Array[0..12] of Real" Remanence="Retain">
+              <Subelement Path="0">
+                <StartValue>120.9</StartValue>
+              </Subelement>
+              <Subelement Path="1">
+                <StartValue>120.9</StartValue>
+              </Subelement>
+              <Subelement Path="2">
+                <StartValue>120.9</StartValue>
+              </Subelement>
+              <Subelement Path="3">
+                <StartValue>114.9</StartValue>
+              </Subelement>
+              <Subelement Path="4">
+                <StartValue>114.9</StartValue>
+              </Subelement>
+              <Subelement Path="5">
+                <StartValue>114.9</StartValue>
+              </Subelement>
+              <Subelement Path="6">
+                <StartValue>109.9</StartValue>
+              </Subelement>
+              <Subelement Path="7">
+                <StartValue>99.9</StartValue>
+              </Subelement>
+              <Subelement Path="8">
+                <StartValue>99.9</StartValue>
+              </Subelement>
+              <Subelement Path="9">
+                <StartValue>0.0</StartValue>
+              </Subelement>
+              <Subelement Path="10">
+                <StartValue>0.0</StartValue>
+              </Subelement>
+              <Subelement Path="11">
+                <StartValue>0.0</StartValue>
+              </Subelement>
+              <Subelement Path="12">
+                <StartValue>0.0</StartValue>
+              </Subelement>
+            </Member>
+            <Member Name="EXTRA TEMP" Datatype="Real" Remanence="Retain">
+              <StartValue>0.3</StartValue>
+            </Member>
+            <Member Name="HPHV SET TEMP" Datatype="Array[0..3] of Real" Remanence="Retain">
+              <Subelement Path="0">
+                <StartValue>114.0</StartValue>
+              </Subelement>
+              <Subelement Path="1">
+                <StartValue>116.0</StartValue>
+              </Subelement>
+              <Subelement Path="2">
+                <StartValue>119.0</StartValue>
+              </Subelement>
+              <Subelement Path="3">
+                <StartValue>0.0</StartValue>
+              </Subelement>
+            </Member>
+            <Member Name="BOW SET TEMP" Datatype="Array[0..3] of Real" Remanence="Retain">
+              <Subelement Path="0">
+                <StartValue>114.0</StartValue>
+              </Subelement>
+              <Subelement Path="1">
+                <StartValue>116.0</StartValue>
+              </Subelement>
+              <Subelement Path="2">
+                <StartValue>119.0</StartValue>
+              </Subelement>
+              <Subelement Path="3">
+                <StartValue>0.0</StartValue>
+              </Subelement>
+            </Member>
+            <Member Name="HPHV SET TIME" Datatype="Array[0..3] of Int" Remanence="Retain">
+              <Subelement Path="0">
+                <StartValue>5</StartValue>
+              </Subelement>
+              <Subelement Path="1">
+                <StartValue>3</StartValue>
+              </Subelement>
+              <Subelement Path="2">
+                <StartValue>2</StartValue>
+              </Subelement>
+              <Subelement Path="3">
+                <StartValue>1</StartValue>
+              </Subelement>
+            </Member>
+            <Member Name="BOW SET TIME" Datatype="Array[0..3] of Int" Remanence="Retain">
+              <Subelement Path="0">
+                <StartValue>5</StartValue>
+              </Subelement>
+              <Subelement Path="1">
+                <StartValue>3</StartValue>
+              </Subelement>
+              <Subelement Path="2">
+                <StartValue>2</StartValue>
+              </Subelement>
+              <Subelement Path="3">
+                <StartValue>0</StartValue>
+              </Subelement>
+            </Member>
+            <Member Name="HPHV STOP TEMP" Datatype="Real" Remanence="Retain">
+              <StartValue>120.9</StartValue>
+            </Member>
+            <Member Name="BOW STOP TEMP" Datatype="Real" Remanence="Retain">
+              <StartValue>120.9</StartValue>
+            </Member>
+            <Member Name="JACKET ALARM TIME" Datatype="Int" Remanence="Retain">
+              <StartValue>10</StartValue>
+            </Member>
+            <Member Name="HEATUP ALARM TIME" Datatype="Int" Remanence="Retain">
+              <StartValue>10</StartValue>
+            </Member>
+            <Member Name="TEMP OFFSET" Datatype="Array[0..10] of Real" Remanence="Retain">
+              <Subelement Path="0">
+                <StartValue>0.0</StartValue>
+              </Subelement>
+              <Subelement Path="1">
+                <StartValue>0.0</StartValue>
+              </Subelement>
+              <Subelement Path="2">
+                <StartValue>0.2</StartValue>
+              </Subelement>
+              <Subelement Path="3">
+                <StartValue>0.2</StartValue>
+              </Subelement>
+              <Subelement Path="4">
+                <StartValue>0.0</StartValue>
+              </Subelement>
+              <Subelement Path="5">
+                <StartValue>0.1</StartValue>
+              </Subelement>
+              <Subelement Path="6">
+                <StartValue>0.0</StartValue>
+              </Subelement>
+              <Subelement Path="7">
+                <StartValue>0.0</StartValue>
+              </Subelement>
+              <Subelement Path="8">
+                <StartValue>0.0</StartValue>
+              </Subelement>
+              <Subelement Path="9">
+                <StartValue>0.0</StartValue>
+              </Subelement>
+              <Subelement Path="10">
+                <StartValue>0.0</StartValue>
+              </Subelement>
+            </Member>
+            <Member Name="SET VACUUM ALARM TIME" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="SET LEAK VCC" Datatype="Real" Remanence="Retain">
+              <StartValue>-0.7</StartValue>
+            </Member>
+            <Member Name="SET VCC PRESS" Datatype="Real" Remanence="Retain">
+              <StartValue>-0.05</StartValue>
+            </Member>
+            <Member Name="SET DELAY BEFORE HOLD TIME" Datatype="Int" Remanence="Retain">
+              <StartValue>0</StartValue>
+            </Member>
+            <Member Name="SET VCC HOLD TIME" Datatype="Int" Remanence="Retain">
+              <StartValue>10</StartValue>
+            </Member>
+            <Member Name="SET ACCEPTANCE LEAK" Datatype="Real" Remanence="Retain">
+              <StartValue>0.013</StartValue>
+            </Member>
+          </Section>
+        </Sections>
+      </Interface>
+      <MemoryLayout>Standard</MemoryLayout>
+      <Name>new</Name>
+      <Namespace />
+      <Number>260</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

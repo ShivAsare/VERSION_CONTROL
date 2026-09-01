@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V21" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="Static">
+            <Member Name="WRITE CONVEYOR" Datatype="Struct">
+              <Member Name="RUN" Datatype="Int" />
+              <Member Name="SPEED" Datatype="Int" />
+            </Member>
+            <Member Name="WRITE TURBINE" Datatype="Struct">
+              <Member Name="RUN" Datatype="Int" />
+              <Member Name="SPEED" Datatype="Int" />
+            </Member>
+            <Member Name="WRITE TURBINE2" Datatype="Struct">
+              <Member Name="RUN" Datatype="Int" />
+              <Member Name="SPEED" Datatype="Int" />
+            </Member>
+            <Member Name="READ" Datatype="Struct">
+              <Member Name="CONVEYOR" Datatype="Int" />
+              <Member Name="TURBINE" Datatype="Int" />
+              <Member Name="TURBINE2" Datatype="Int" />
+            </Member>
+            <Member Name="CONVEYOR STATUS" Datatype="Struct">
+              <Member Name="W.DONE" Datatype="Bool" />
+              <Member Name="W.ERROR" Datatype="Bool" />
+              <Member Name="W.BUSY" Datatype="Bool" />
+              <Member Name="W.STATUS" Datatype="Word" />
+              <Member Name="R.DONE" Datatype="Bool" />
+              <Member Name="R.ERROR" Datatype="Bool" />
+              <Member Name="R.BUSY" Datatype="Bool" />
+              <Member Name="R.STATUS" Datatype="Word" />
+            </Member>
+            <Member Name="TURBINE STATUS" Datatype="Struct">
+              <Member Name="W.DONE" Datatype="Bool" />
+              <Member Name="W.ERROR" Datatype="Bool" />
+              <Member Name="W.BUSY" Datatype="Bool" />
+              <Member Name="W.STATUS" Datatype="Word" />
+              <Member Name="R.DONE" Datatype="Bool" />
+              <Member Name="R.ERROR" Datatype="Bool" />
+              <Member Name="R.BUSY" Datatype="Bool" />
+              <Member Name="R.STATUS" Datatype="Word" />
+            </Member>
+            <Member Name="TURBINE2 STATUS" Datatype="Struct">
+              <Member Name="W.DONE" Datatype="Bool" />
+              <Member Name="W.ERROR" Datatype="Bool" />
+              <Member Name="W.BUSY" Datatype="Bool" />
+              <Member Name="W.STATUS" Datatype="Word" />
+              <Member Name="R.DONE" Datatype="Bool" />
+              <Member Name="R.ERROR" Datatype="Bool" />
+              <Member Name="R.BUSY" Datatype="Bool" />
+              <Member Name="R.STATUS" Datatype="Word" />
+            </Member>
+            <Member Name="NOMX1" Datatype="Real" />
+            <Member Name="NOMX2" Datatype="Real" />
+            <Member Name="NOM 3" Datatype="Real" />
+            <Member Name="NOM 4" Datatype="Real" />
+            <Member Name="NOM5" Datatype="Real" />
+            <Member Name="NOM6" Datatype="Real" />
+            <Member Name="READ TURB" Datatype="Struct">
+              <Member Name="TURB1 READY" Datatype="Bool" />
+            </Member>
+            <Member Name="READ DRM" Datatype="Array[0..10] of Int" />
+          </Section>
+        </Sections>
+      </Interface>
+      <MemoryLayout>Standard</MemoryLayout>
+      <Name>MODBUS</Name>
+      <Namespace />
+      <Number>99</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

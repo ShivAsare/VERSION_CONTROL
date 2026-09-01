@@ -1,0 +1,547 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V21" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="Static">
+            <Member Name="PULSE" Datatype="Array[0..40] of Bool">
+              <Subelement Path="0">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="1">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="2">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="3">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="4">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="5">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="6">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="7">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="8">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="9">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="10">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="11">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="12">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="13">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="14">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="15">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="16">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="17">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="18">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="19">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="20">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="21">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="22">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="23">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="24">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="25">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="26">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="27">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="28">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="29">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="30">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="31">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="32">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="33">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="34">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="35">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="36">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="37">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="38">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="39">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="40">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+            </Member>
+            <Member Name="PWD STEAM ON" Datatype="Bool">
+              <StartValue>TRUE</StartValue>
+            </Member>
+            <Member Name="CHAMBER TEMP" Datatype="Real">
+              <StartValue>0.0</StartValue>
+            </Member>
+            <Member Name="CHAMBER PRESS" Datatype="Real">
+              <StartValue>0.0</StartValue>
+            </Member>
+            <Member Name="START VACCUM" Datatype="Real">
+              <StartValue>0.0</StartValue>
+            </Member>
+            <Member Name="END VACCUM" Datatype="Real">
+              <StartValue>0.0</StartValue>
+            </Member>
+            <Member Name="ACTUAL LEAK" Datatype="Real">
+              <StartValue>0.0</StartValue>
+            </Member>
+            <Member Name="STD TEMP1" Datatype="Real" Remanence="Retain">
+              <StartValue>114.0</StartValue>
+            </Member>
+            <Member Name="STD TEMP2" Datatype="Real" Remanence="Retain">
+              <StartValue>116.0</StartValue>
+            </Member>
+            <Member Name="STD TEMP3" Datatype="Real" Remanence="Retain">
+              <StartValue>119.0</StartValue>
+            </Member>
+            <Member Name="STD PRESS" Datatype="Real" Remanence="Retain">
+              <StartValue>0.1</StartValue>
+            </Member>
+            <Member Name="STD HOLD1" Datatype="Int" Remanence="Retain">
+              <StartValue>5</StartValue>
+            </Member>
+            <Member Name="STD HOLD2" Datatype="Int" Remanence="Retain">
+              <StartValue>3</StartValue>
+            </Member>
+            <Member Name="STD HOLD3" Datatype="Int" Remanence="Retain">
+              <StartValue>2</StartValue>
+            </Member>
+            <Member Name="STD VCC" Datatype="Real" Remanence="Retain">
+              <StartValue>0.0</StartValue>
+            </Member>
+            <Member Name="STD UP PRESS" Datatype="Real" Remanence="Retain">
+              <StartValue>0.0</StartValue>
+            </Member>
+            <Member Name="STD VCC HOLD" Datatype="Int" Remanence="Retain">
+              <StartValue>0</StartValue>
+            </Member>
+            <Member Name="NO OF STD PULSE" Datatype="Int" Remanence="Retain">
+              <StartValue>0</StartValue>
+            </Member>
+            <Member Name="DRUM VFD" Datatype="Real">
+              <StartValue>8192.0</StartValue>
+            </Member>
+            <Member Name="STR STEAM ON" Datatype="Bool">
+              <StartValue>FALSE</StartValue>
+            </Member>
+            <Member Name="PULSE1" Datatype="Array[0..50] of Bool">
+              <Subelement Path="0">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="1">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="2">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="3">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="4">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="5">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="6">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="7">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="8">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="9">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="10">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="11">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="12">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="13">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="14">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="15">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="16">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="17">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="18">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="19">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="20">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="21">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="22">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="23">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="24">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="25">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="26">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="27">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="28">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="29">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="30">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="31">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="32">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="33">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="34">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="35">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="36">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="37">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="38">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="39">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="40">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="41">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="42">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="43">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="44">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="45">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="46">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="47">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="48">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="49">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="50">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+            </Member>
+            <Member Name="pulse2" Datatype="Array[0..50] of Bool">
+              <Subelement Path="0">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="1">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="2">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="3">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="4">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="5">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="6">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="7">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="8">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="9">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="10">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="11">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="12">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="13">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="14">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="15">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="16">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="17">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="18">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="19">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="20">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="21">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="22">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="23">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="24">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="25">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="26">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="27">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="28">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="29">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="30">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="31">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="32">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="33">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="34">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="35">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="36">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="37">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="38">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="39">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="40">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="41">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="42">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="43">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="44">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="45">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="46">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="47">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="48">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="49">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="50">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+            </Member>
+            <Member Name="STERILE HOLD TEMP" Datatype="Real" Remanence="Retain">
+              <StartValue>121.4</StartValue>
+            </Member>
+            <Member Name="STERILE HOLD TIME" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="CONTROL BAND" Datatype="Real" Remanence="Retain">
+              <StartValue>0.0</StartValue>
+            </Member>
+            <Member Name="STERILE STOP TEMP" Datatype="Real" Remanence="Retain">
+              <StartValue>120.9</StartValue>
+            </Member>
+            <Member Name="STD CRITICAL TEMP" Datatype="Real" />
+          </Section>
+        </Sections>
+      </Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>AUXILIARY</Name>
+      <Namespace />
+      <Number>6</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

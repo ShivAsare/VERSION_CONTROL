@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V21" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="Static">
+            <Member Name="PRINT INTERVAL" Datatype="Int" Remanence="Retain">
+              <StartValue>0</StartValue>
+            </Member>
+            <Member Name="PRODUCT NAME" Datatype="String" Remanence="Retain">
+              <StartValue>''</StartValue>
+            </Member>
+            <Member Name="BATCH NO" Datatype="String" Remanence="Retain">
+              <StartValue>''</StartValue>
+            </Member>
+            <Member Name="OPERATOR NAME" Datatype="String" Remanence="Retain">
+              <StartValue>'UDAYLAL'</StartValue>
+            </Member>
+            <Member Name="RECIPE TYPE" Datatype="String" Remanence="Retain">
+              <StartValue>'  '</StartValue>
+            </Member>
+            <Member Name="EQUIPMENT ID" Datatype="String" Remanence="Retain">
+              <StartValue>'C1/A/INJ/AUT-05'</StartValue>
+            </Member>
+            <Member Name="TUNNEL MODE" Datatype="String" Remanence="Retain">
+              <StartValue>'STANDARD3 CYCLE SELECTED'</StartValue>
+            </Member>
+            <Member Name="BATCH SIZE" Datatype="String" Remanence="Retain">
+              <StartValue>'0488'</StartValue>
+            </Member>
+            <Member Name="CONTAINER NO" Datatype="String" Remanence="Retain">
+              <StartValue>''</StartValue>
+            </Member>
+            <Member Name="NEW" Datatype="String" Remanence="Retain">
+              <StartValue>''</StartValue>
+            </Member>
+            <Member Name="QUANTITY" Datatype="String" Remanence="Retain" />
+          </Section>
+        </Sections>
+      </Interface>
+      <MemoryLayout>Standard</MemoryLayout>
+      <Name>PRINT DATA</Name>
+      <Namespace />
+      <Number>39</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

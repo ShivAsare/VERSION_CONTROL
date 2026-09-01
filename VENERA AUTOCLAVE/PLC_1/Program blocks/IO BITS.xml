@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V21" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="Static">
+            <Member Name="DOOR1 PRESS BIT" Datatype="Bool">
+              <Comment>
+                <MultiLanguageText Lang="en-US">DOOR1 PRESS BIT</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="DOOR1 VCC BIT" Datatype="Bool">
+              <Comment>
+                <MultiLanguageText Lang="en-US">DOOR1 VCC BIT</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="DOOR2 VCC BIT" Datatype="Bool">
+              <Comment>
+                <MultiLanguageText Lang="en-US">DOOR2 VCC BIT</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="DOOR2 PRESS BIT" Datatype="Bool">
+              <Comment>
+                <MultiLanguageText Lang="en-US">DOOR2 PRESS BIT</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="JACKET SAFETY BIT" Datatype="Bool">
+              <Comment>
+                <MultiLanguageText Lang="en-US">JACKET SAFETY BIT</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="CHAMBER SAFETY BIT" Datatype="Bool">
+              <Comment>
+                <MultiLanguageText Lang="en-US">CHAMBER SAFETY BIT</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="PFR" Datatype="Bool">
+              <Comment>
+                <MultiLanguageText Lang="en-US">PFR</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="EMG SWITCH" Datatype="Bool">
+              <Comment>
+                <MultiLanguageText Lang="en-US">EMG SWITCH</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="RESET PB" Datatype="Bool">
+              <Comment>
+                <MultiLanguageText Lang="en-US">RESET PB</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="DRUM VFD TRIP" Datatype="Bool">
+              <Comment>
+                <MultiLanguageText Lang="en-US">DRUM VFD TRIP</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="VACCUM PUMP TRIP" Datatype="Bool" />
+            <Member Name="CRC PUMP TRIP" Datatype="Bool">
+              <Comment>
+                <MultiLanguageText Lang="en-US">CRC PUMP TRIP</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="DOOR1 OPEN LMT" Datatype="Bool">
+              <Comment>
+                <MultiLanguageText Lang="en-US">DOOR1 OPEN LMT</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="DOOR1 CLOSE LMT" Datatype="Bool">
+              <Comment>
+                <MultiLanguageText Lang="en-US">DOOR1 CLOSE LMT</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="DOOR2 OPEN LMT" Datatype="Bool">
+              <Comment>
+                <MultiLanguageText Lang="en-US">DOOR2 OPEN LMT</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="DOOR2 CLOSE LMT" Datatype="Bool">
+              <Comment>
+                <MultiLanguageText Lang="en-US">DOOR2 CLOSE LMT</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="DOOR2 CLOSE PB" Datatype="Bool">
+              <Comment>
+                <MultiLanguageText Lang="en-US">DOOR2 CLOSE PB</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="DOOR2 OPEN PB" Datatype="Bool">
+              <Comment>
+                <MultiLanguageText Lang="en-US">DOOR2 OPEN PB</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="AIR PREESURE SWS" Datatype="Bool">
+              <Comment>
+                <MultiLanguageText Lang="en-US">AIR PREESURE SWS</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="I1.4 SPARE" Datatype="Bool">
+              <Comment>
+                <MultiLanguageText Lang="en-US">I1.4 SPARE</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="I1.5 SPARE" Datatype="Bool">
+              <Comment>
+                <MultiLanguageText Lang="en-US">I1.5 SPARE</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="DUMMY" Datatype="Bool">
+              <Comment>
+                <MultiLanguageText Lang="en-US">DUMMY</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="DUMMY1" Datatype="Bool">
+              <Comment>
+                <MultiLanguageText Lang="en-US">DUMMY1</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="VCC PUMP" Datatype="Bool">
+              <Comment>
+                <MultiLanguageText Lang="en-US">VCC PUMP</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="DOOR1 GASKET" Datatype="Bool">
+              <Comment>
+                <MultiLanguageText Lang="en-US">DOOR1 GASKET</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="CRC MOTOR" Datatype="Bool">
+              <Comment>
+                <MultiLanguageText Lang="en-US">CRC MOTOR</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="JACKET STEAM VAL" Datatype="Bool">
+              <Comment>
+                <MultiLanguageText Lang="en-US">JACKET STEAM VAL</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="CHAMBER STEAM VAL" Datatype="Bool">
+              <Comment>
+                <MultiLanguageText Lang="en-US">CHAMBER STEAM VAL</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="CHAMBER EXHAUST VAL" Datatype="Bool">
+              <Comment>
+                <MultiLanguageText Lang="en-US">CHAMBER EXHAUST VAL</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="CHAMBER VENT VAL" Datatype="Bool">
+              <Comment>
+                <MultiLanguageText Lang="en-US">CHAMBER VENT VAL</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="CHAMBER CONDENSOR VAL" Datatype="Bool">
+              <Comment>
+                <MultiLanguageText Lang="en-US">CHAMBER CONDENSOR VAL</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="WFI VAL" Datatype="Bool">
+              <Comment>
+                <MultiLanguageText Lang="en-US">WFI VAL</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="PWD VAL" Datatype="Bool">
+              <Comment>
+                <MultiLanguageText Lang="en-US">PWD VAL</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="PWD CRC VAL" Datatype="Bool">
+              <Comment>
+                <MultiLanguageText Lang="en-US">PWD CRC VAL</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="DETERGENT DSG VAL" Datatype="Bool">
+              <Comment>
+                <MultiLanguageText Lang="en-US">DETERGENT DSG VAL</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="SILICON DSG VAL" Datatype="Bool">
+              <Comment>
+                <MultiLanguageText Lang="en-US">SILICON DSG VAL</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="DRAIN VAL" Datatype="Bool">
+              <Comment>
+                <MultiLanguageText Lang="en-US">DRAIN VAL</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="DOOR2 INTERLOCK VAL" Datatype="Bool">
+              <Comment>
+                <MultiLanguageText Lang="en-US">DOOR2 INTERLOCK VAL</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="DOOR1 INTERLOCK VAL" Datatype="Bool">
+              <Comment>
+                <MultiLanguageText Lang="en-US">DOOR1 INTERLOCK VAL</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="DOOR1 OPEN VAL" Datatype="Bool">
+              <Comment>
+                <MultiLanguageText Lang="en-US">DOOR1 OPEN VAL</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="DOOR1 CLOSE VAL" Datatype="Bool">
+              <Comment>
+                <MultiLanguageText Lang="en-US">DOOR1 CLOSE VAL</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="DOOR2 OPEN VAL" Datatype="Bool">
+              <Comment>
+                <MultiLanguageText Lang="en-US">DOOR2 OPEN VAL</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="DOOR2 CLOSE VAL" Datatype="Bool">
+              <Comment>
+                <MultiLanguageText Lang="en-US">DOOR2 CLOSE VAL</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="DOOR1 VCC" Datatype="Bool">
+              <Comment>
+                <MultiLanguageText Lang="en-US">DOOR1 VCC</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="DOOR2 GASKET" Datatype="Bool">
+              <Comment>
+                <MultiLanguageText Lang="en-US">DOOR2 GASKET</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="DOOR2 VCC" Datatype="Bool">
+              <Comment>
+                <MultiLanguageText Lang="en-US">DOOR2 VCC</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="HOOTER" Datatype="Bool">
+              <Comment>
+                <MultiLanguageText Lang="en-US">HOOTER</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="CHAMBER VACCUM VAL" Datatype="Bool" />
+            <Member Name="CHAMBER STEAM SMALL VAL" Datatype="Bool" />
+            <Member Name="CHAMBER AIR VENT FAST" Datatype="Bool" />
+            <Member Name="JACKET STEAM OUT" Datatype="Bool" />
+            <Member Name="BOW PULSE" Datatype="Array[0..100] of Bool" />
+            <Member Name="HPHV PULSE" Datatype="Array[0..100] of Bool" />
+            <Member Name="STANDARD PULSE" Datatype="Array[0..100] of Bool" />
+            <Member Name="VACUUM PULSE" Datatype="Array[0..100] of Bool" />
+          </Section>
+        </Sections>
+      </Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>IO BITS</Name>
+      <Namespace />
+      <Number>38</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

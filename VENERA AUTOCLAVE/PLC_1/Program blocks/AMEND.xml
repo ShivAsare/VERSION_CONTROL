@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V21" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="Static">
+            <Member Name="PRODUCT NAME" Datatype="String[80]">
+              <StartValue>'$L$RPRODUCT NAME        :'</StartValue>
+            </Member>
+            <Member Name="BATCH NO" Datatype="String[80]">
+              <StartValue>'$L$RBATCH NO            :'</StartValue>
+            </Member>
+            <Member Name="OPERATOR NAME" Datatype="String[80]">
+              <StartValue>'$L$ROPERATOR NAME       :UDAYLAL'</StartValue>
+            </Member>
+            <Member Name="RECIPE TYPE" Datatype="String[80]">
+              <StartValue>'$L$R        :'</StartValue>
+            </Member>
+            <Member Name="EQUIPMENT ID" Datatype="String[80]">
+              <StartValue>'$L$REQUIPMENT ID        :C1/A/INJ/AUT-05'</StartValue>
+            </Member>
+            <Member Name="OP PRODUCT NAME" Datatype="String[80]">
+              <StartValue>''</StartValue>
+            </Member>
+            <Member Name="TUNNEL MODE" Datatype="String[80]">
+              <StartValue>'$L$RPROCESS                    :    NONE'</StartValue>
+            </Member>
+            <Member Name="CIP" Datatype="String[30]">
+              <StartValue>'CLOSURE CYCLE SELECTED'</StartValue>
+            </Member>
+            <Member Name="STANDARD1" Datatype="String[30]">
+              <StartValue>'STANDARD1 CYCLE SELECTED'</StartValue>
+            </Member>
+            <Member Name="STANDARD2" Datatype="String[30]">
+              <StartValue>'STANDARD2 CYCLE SELECTED'</StartValue>
+            </Member>
+            <Member Name="BOWIE" Datatype="String[30]">
+              <StartValue>'BOWIE DICK CYCLE SELECTED'</StartValue>
+            </Member>
+            <Member Name="NONE" Datatype="String[30]">
+              <StartValue>'NONE'</StartValue>
+            </Member>
+            <Member Name="BATCH SIZE" Datatype="String[80]">
+              <StartValue>'  CYCLE NO            :0488'</StartValue>
+            </Member>
+            <Member Name="CONTAINER SIZE" Datatype="String[80]">
+              <StartValue>'  CONTAINER SIZE      :'</StartValue>
+            </Member>
+            <Member Name="HPHV" Datatype="String[80]">
+              <StartValue>'HPHV CYCLE SELECTED'</StartValue>
+            </Member>
+            <Member Name="LEAK" Datatype="String[80]">
+              <StartValue>'VACUUM LEAK TEST SELECTED'</StartValue>
+            </Member>
+            <Member Name="start" Datatype="String[80]">
+              <StartValue>'46'</StartValue>
+            </Member>
+            <Member Name="end" Datatype="String[80]">
+              <StartValue>'18:52:46'</StartValue>
+            </Member>
+            <Member Name="END PV" Datatype="String[80]">
+              <StartValue>'  18:52:46    0.086     48.4    103.2     92.2     93.1    105.8 '</StartValue>
+            </Member>
+            <Member Name="PRINT PV" Datatype="String[80]">
+              <StartValue>'$L$R18:52:46    0.086     48.4    103.2     92.2     93.1    105.8  NOT START'</StartValue>
+            </Member>
+            <Member Name="PRINT CYCLE ABORT" Datatype="String[80]">
+              <StartValue>'18:52:19   ******CYCLE ABORTED******     '</StartValue>
+            </Member>
+            <Member Name="QUANTITY" Datatype="String[80]">
+              <StartValue>'  '</StartValue>
+            </Member>
+          </Section>
+        </Sections>
+      </Interface>
+      <MemoryLayout>Standard</MemoryLayout>
+      <Name>AMEND</Name>
+      <Namespace />
+      <Number>36</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

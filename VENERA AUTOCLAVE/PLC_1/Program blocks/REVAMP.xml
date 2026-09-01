@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V21" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="Static">
+            <Member Name="L1" Datatype="String[80]">
+              <StartValue>'$L$R                       CLIENT:- M/s. KWALITY PHARMACEUTICALS LTD             '</StartValue>
+            </Member>
+            <Member Name="L2" Datatype="String[80]">
+              <StartValue>'$L$R 6TH MILE STONE, VILL.NAG KALAN, MAJITHA ROAD, AMRITSAR, PUNJAB-143601'</StartValue>
+            </Member>
+            <Member Name="L3" Datatype="String[80]">
+              <StartValue>'$L$R                                    BATCH DATA'</StartValue>
+            </Member>
+            <Member Name="L4" Datatype="String[80]">
+              <StartValue>'$L$R                                STEAM STERILIZER   '</StartValue>
+            </Member>
+            <Member Name="L5" Datatype="String[80]">
+              <StartValue>'$L$R             -----------------------------------------------------'</StartValue>
+            </Member>
+            <Member Name="L6" Datatype="String[80]">
+              <StartValue>'$L$REQUIPMENT ID        :'</StartValue>
+            </Member>
+            <Member Name="L7" Datatype="String[80]">
+              <StartValue>'$L$RPRODUCT NAME        :'</StartValue>
+            </Member>
+            <Member Name="L8" Datatype="String[80]">
+              <StartValue>'$L$RBATCH NO            :'</StartValue>
+            </Member>
+            <Member Name="L9" Datatype="String[80]">
+              <StartValue>'                                                             DATE: 04/05/2025'</StartValue>
+            </Member>
+            <Member Name="L10" Datatype="String[80]">
+              <StartValue>'  PROCESS STARTED AT  :13:09:19'</StartValue>
+            </Member>
+            <Member Name="L11" Datatype="String[80]">
+              <StartValue>'$L$ROPERATOR NAME       :'</StartValue>
+            </Member>
+            <Member Name="L12" Datatype="String[80]">
+              <StartValue>'$L$RPROCESS                    :    '</StartValue>
+            </Member>
+            <Member Name="L13" Datatype="String[80]">
+              <StartValue>'$L$R        :'</StartValue>
+            </Member>
+            <Member Name="L14" Datatype="String[80]">
+              <StartValue>'-------------'</StartValue>
+            </Member>
+            <Member Name="L15" Datatype="String[80]">
+              <StartValue>'$L$R   '</StartValue>
+            </Member>
+            <Member Name="L16" Datatype="String[80]">
+              <StartValue>'$L$R                           CYCLE COMPLETED   '</StartValue>
+            </Member>
+            <Member Name="L17" Datatype="String[80]">
+              <StartValue>'$L$R                 '</StartValue>
+            </Member>
+            <Member Name="L18" Datatype="String[80]">
+              <StartValue>'$L$R                                          '</StartValue>
+            </Member>
+            <Member Name="L19" Datatype="String[80]">
+              <StartValue>'$L$R DONE BY  :                                 CHECKED BY :'</StartValue>
+            </Member>
+            <Member Name="L20" Datatype="String[80]">
+              <StartValue>'$L$R******************************************************************************'</StartValue>
+            </Member>
+            <Member Name="L21" Datatype="String[80]">
+              <StartValue>'$L$R DATE  :                                     DATE :'</StartValue>
+            </Member>
+            <Member Name="L22" Datatype="String[80]">
+              <StartValue>'$L$R  SUMMARY OF VACUUM LEAK TEST  '</StartValue>
+            </Member>
+            <Member Name="L23" Datatype="String[80]">
+              <StartValue>'$L$R******************************************************************************'</StartValue>
+            </Member>
+            <Member Name="L24" Datatype="String[80]">
+              <StartValue>'$L$R  TIME  : PRESSURE:  CH-1  :  CH-2  :  CH-3  :  CH-4  :  CH-5  :  STATUS      '</StartValue>
+            </Member>
+            <Member Name="L25" Datatype="String[90]">
+              <StartValue>'$L$R           :  DZ    :  MHZ   :  ST IN :  ST OUT:  CZ UP :  CZDOWN:  SPEED '</StartValue>
+            </Member>
+            <Member Name="L26" Datatype="String[80]">
+              <StartValue>'$L$R        :  BAR    :  DEG.C :  DEG.C :  DEG.C :  DEG.C :  DEG.C :   '</StartValue>
+            </Member>
+            <Member Name="L27" Datatype="String[80]">
+              <StartValue>'$L$R------------------------------------------------------------------------------'</StartValue>
+            </Member>
+            <Member Name="L28" Datatype="String[80]">
+              <StartValue>'  13:09:20    1.032    116.2    120.6    119.9    119.4    120.2 HEATUP-1 HOLD'</StartValue>
+            </Member>
+            <Member Name="L29" Datatype="String[80]">
+              <StartValue>'$L$R                                                                   '</StartValue>
+            </Member>
+            <Member Name="L30" Datatype="String[80]">
+              <StartValue>'$L$R------------------------------------------------------------------------------'</StartValue>
+            </Member>
+            <Member Name="L31" Datatype="String[80]">
+              <StartValue>'               RECEIPE TYPE :                                                   '</StartValue>
+            </Member>
+            <Member Name="L32" Datatype="String[80]">
+              <StartValue>'--------------------------------------------------------------------------------'</StartValue>
+            </Member>
+            <Member Name="ALM1" Datatype="String[80]">
+              <StartValue>'$L$R13  9 20'</StartValue>
+            </Member>
+            <Member Name="ALM2" Datatype="String[80]">
+              <StartValue>'$L$R13  9 20'</StartValue>
+            </Member>
+            <Member Name="ALM3" Datatype="String[80]">
+              <StartValue>'$L$R13  9 20'</StartValue>
+            </Member>
+            <Member Name="ALM4" Datatype="String[80]">
+              <StartValue>'$L$R13  9 20'</StartValue>
+            </Member>
+            <Member Name="ALM5" Datatype="String[80]">
+              <StartValue>'$L$R13  9 20'</StartValue>
+            </Member>
+            <Member Name="ALM6" Datatype="String[80]">
+              <StartValue>'$L$R13  9 20'</StartValue>
+            </Member>
+            <Member Name="ALM7" Datatype="String[80]">
+              <StartValue>'$L$R13  9 20'</StartValue>
+            </Member>
+            <Member Name="ALM8" Datatype="String[80]">
+              <StartValue>'$L$R13  9 20'</StartValue>
+            </Member>
+            <Member Name="ALM9" Datatype="String[80]">
+              <StartValue>'$L$R13  9 20'</StartValue>
+            </Member>
+            <Member Name="ALM10" Datatype="String[80]">
+              <StartValue>'$L$R13  9 20'</StartValue>
+            </Member>
+            <Member Name="ALM11" Datatype="String[80]">
+              <StartValue>'$L$R13  9 20'</StartValue>
+            </Member>
+            <Member Name="ALM12" Datatype="String[80]">
+              <StartValue>'$L$R13  9 20'</StartValue>
+            </Member>
+            <Member Name="ALM13" Datatype="String[80]">
+              <StartValue>'$L$R13  9 20'</StartValue>
+            </Member>
+            <Member Name="ALM14" Datatype="String[80]">
+              <StartValue>'$L$R13  9 20'</StartValue>
+            </Member>
+            <Member Name="ALM15" Datatype="String[80]">
+              <StartValue>'$L$R13  9 20'</StartValue>
+            </Member>
+            <Member Name="ALM16" Datatype="String[80]">
+              <StartValue>'$L$R13  9 20'</StartValue>
+            </Member>
+            <Member Name="ALM17" Datatype="String[80]">
+              <StartValue>'$L$R13  9 20'</StartValue>
+            </Member>
+            <Member Name="ALM18" Datatype="String[80]">
+              <StartValue>'$L$R13  9 20'</StartValue>
+            </Member>
+            <Member Name="ALM19" Datatype="String[80]">
+              <StartValue>'$L$R13  9 20'</StartValue>
+            </Member>
+            <Member Name="ALM20" Datatype="String[80]">
+              <StartValue>'$L$R13  9 20'</StartValue>
+            </Member>
+            <Member Name="ALM21" Datatype="String[80]">
+              <StartValue>'$L$RCHECKED BY              :                   VERIFIED BY               :'</StartValue>
+            </Member>
+            <Member Name="BATCH SIZE" Datatype="String[80]">
+              <StartValue>'  CYCLE NO            :'</StartValue>
+            </Member>
+            <Member Name="CONTAINER SIZE" Datatype="String[80]">
+              <StartValue>'  CONTAINER SIZE      :'</StartValue>
+            </Member>
+            <Member Name="BLANK LINE" Datatype="String[80]">
+              <StartValue>'                                                                '</StartValue>
+            </Member>
+            <Member Name="ALM22" Datatype="String[80]">
+              <StartValue>'    :  :       STABILIZING ZONE PRESSURE LOW/PLEASE CHECK GAUGE OR BLOWER '</StartValue>
+            </Member>
+            <Member Name="zero" Datatype="String[80]">
+              <StartValue>'0'</StartValue>
+            </Member>
+            <Member Name="pv" Datatype="String[80]">
+              <StartValue>''</StartValue>
+            </Member>
+            <Member Name="COLAN" Datatype="String[80]">
+              <StartValue>':'</StartValue>
+            </Member>
+            <Member Name="T1" Datatype="String[80]">
+              <StartValue>'13:'</StartValue>
+            </Member>
+            <Member Name="T2" Datatype="String[80]">
+              <StartValue>'13:09'</StartValue>
+            </Member>
+            <Member Name="T3" Datatype="String[80]">
+              <StartValue>'13:09:'</StartValue>
+            </Member>
+            <Member Name="T4" Datatype="String[80]">
+              <StartValue>'13:09:20'</StartValue>
+            </Member>
+            <Member Name="T5" Datatype="String[80]">
+              <StartValue>''</StartValue>
+            </Member>
+            <Member Name="HOURS_P" Datatype="String[80]">
+              <StartValue>'13'</StartValue>
+            </Member>
+            <Member Name="MIN_P" Datatype="String[80]">
+              <StartValue>' 9'</StartValue>
+            </Member>
+            <Member Name="SEC_P" Datatype="String[80]">
+              <StartValue>'20'</StartValue>
+            </Member>
+            <Member Name="HOURS_P_1" Datatype="String[80]">
+              <StartValue>'13'</StartValue>
+            </Member>
+            <Member Name="MIN_P_1" Datatype="String[80]">
+              <StartValue>'09'</StartValue>
+            </Member>
+            <Member Name="SEC_P_1" Datatype="String[80]">
+              <StartValue>'20'</StartValue>
+            </Member>
+            <Member Name="CH1" Datatype="String[80]">
+              <StartValue>' 1.032'</StartValue>
+            </Member>
+            <Member Name="CH2" Datatype="String[80]">
+              <StartValue>'116.2'</StartValue>
+            </Member>
+            <Member Name="CH3" Datatype="String[80]">
+              <StartValue>'120.6'</StartValue>
+            </Member>
+            <Member Name="CH4" Datatype="String[80]">
+              <StartValue>'119.9'</StartValue>
+            </Member>
+            <Member Name="CH5" Datatype="String[80]">
+              <StartValue>'119.4'</StartValue>
+            </Member>
+            <Member Name="CH6" Datatype="String[80]">
+              <StartValue>'120.2'</StartValue>
+            </Member>
+            <Member Name="CONVEYOR" Datatype="String[80]">
+              <StartValue>'HEATUP-1 HOLD'</StartValue>
+            </Member>
+            <Member Name="SPACE_1" Datatype="String[80]">
+              <StartValue>' '</StartValue>
+            </Member>
+            <Member Name="SPACE_2" Datatype="String[80]">
+              <StartValue>'  '</StartValue>
+            </Member>
+            <Member Name="SPACE_3" Datatype="String[80]">
+              <StartValue>'   '</StartValue>
+            </Member>
+            <Member Name="SPACE_4" Datatype="String[80]">
+              <StartValue>'    '</StartValue>
+            </Member>
+            <Member Name="C1" Datatype="String[80]">
+              <StartValue>'  13:09:20    1.032    116.2    120.6    119.9    119.4    120.2 '</StartValue>
+            </Member>
+            <Member Name="C2" Datatype="String[80]">
+              <StartValue>''</StartValue>
+            </Member>
+            <Member Name="C3" Datatype="String[80]">
+              <StartValue>''</StartValue>
+            </Member>
+            <Member Name="L10_2" Datatype="String[80]">
+              <StartValue>'  PROCESS STARTED AT  :'</StartValue>
+            </Member>
+            <Member Name="L9_2" Datatype="String[80]">
+              <StartValue>'                                                             DATE: '</StartValue>
+            </Member>
+            <Member Name="DATE_P" Datatype="String[80]">
+              <StartValue>' 4'</StartValue>
+            </Member>
+            <Member Name="MONTH_P" Datatype="String[80]">
+              <StartValue>' 5'</StartValue>
+            </Member>
+            <Member Name="YEAR_P" Datatype="String[80]">
+              <StartValue>'2025'</StartValue>
+            </Member>
+            <Member Name="DATE_P_1" Datatype="String[80]">
+              <StartValue>'04'</StartValue>
+            </Member>
+            <Member Name="MONTH_P_1" Datatype="String[80]">
+              <StartValue>'05'</StartValue>
+            </Member>
+            <Member Name="YEAR_P_1" Datatype="String[80]">
+              <StartValue>'2025'</StartValue>
+            </Member>
+            <Member Name="SLASH" Datatype="String[80]">
+              <StartValue>'/'</StartValue>
+            </Member>
+            <Member Name="DATE CONCATE" Datatype="String[80]">
+              <StartValue>'04/05/2025'</StartValue>
+            </Member>
+            <Member Name="ALM_P_1" Datatype="String[80]">
+              <StartValue>'    EMERGENCY PRESSED '</StartValue>
+            </Member>
+            <Member Name="ALM_P_2" Datatype="String[80]">
+              <StartValue>'    TURBINE VFD TRIP '</StartValue>
+            </Member>
+            <Member Name="ALM_P_3" Datatype="String[80]">
+              <StartValue>'    CONVEYOR SUPPLY FAIL '</StartValue>
+            </Member>
+            <Member Name="ALM_P_4" Datatype="String[80]">
+              <StartValue>'     LAF SUPLY FAIL '</StartValue>
+            </Member>
+            <Member Name="ALM_P_5" Datatype="String[80]">
+              <StartValue>'    TURBINE SUPLY FAIL'</StartValue>
+            </Member>
+            <Member Name="ALM_P_6" Datatype="String[80]">
+              <StartValue>'    VAPOR EXHAUST SUPLY FAIL'</StartValue>
+            </Member>
+            <Member Name="ALM_P_7" Datatype="String[80]">
+              <StartValue>'    HEATER SUPLY FAIL'</StartValue>
+            </Member>
+            <Member Name="ALM_P_8" Datatype="String[80]">
+              <StartValue>'    TEMPERATURE OVERSHOOT'</StartValue>
+            </Member>
+            <Member Name="ALM_P_9" Datatype="String[80]">
+              <StartValue>'    VAPOUR EXHAUST TRIP'</StartValue>
+            </Member>
+            <Member Name="ALM_P_10" Datatype="String[80]">
+              <StartValue>'    PHASE FAIL '</StartValue>
+            </Member>
+            <Member Name="ALM_P_11" Datatype="String[80]">
+              <StartValue>'    DRYING ZONE PRESSURE LOW/PLEASE CHECK GAUGE OR BLOWER '</StartValue>
+            </Member>
+            <Member Name="ALM_P_12" Datatype="String[80]">
+              <StartValue>'    COOLING ZONE PRESSURE LOW/PLEASE CHECK GAUGE OR BLOWER '</StartValue>
+            </Member>
+            <Member Name="ALM_P_13" Datatype="String[80]">
+              <StartValue>'    STERILIZING ZONE PREESURE LOW/PLEASE CHECK GAUGE OR TURBINE '</StartValue>
+            </Member>
+            <Member Name="ALM_P_14" Datatype="String[80]">
+              <StartValue>'    CONVEYOR VFD OVERLOAD '</StartValue>
+            </Member>
+            <Member Name="ALM_P_15" Datatype="String[80]">
+              <StartValue>'    MAIN HEAT RTD SENSOR FAIL '</StartValue>
+            </Member>
+            <Member Name="ALM_P_16" Datatype="String[80]">
+              <StartValue>'    STERILE IN RTD SENSOR FAIL '</StartValue>
+            </Member>
+            <Member Name="ALM_P_17" Datatype="String[80]">
+              <StartValue>'    STERILE OUT RTD SENSOR FAIL '</StartValue>
+            </Member>
+            <Member Name="ALM_P_18" Datatype="String[80]">
+              <StartValue>'    DROP IN STERLIZATION ZONE TEMPERATURE '</StartValue>
+            </Member>
+            <Member Name="ALM_P_19" Datatype="String[80]">
+              <StartValue>'    SHUTDOWN CYCLE STARTED '</StartValue>
+            </Member>
+            <Member Name="ALM_P_20" Datatype="String[80]">
+              <StartValue>'    *****PROCESS COMPLETED*****'</StartValue>
+            </Member>
+            <Member Name="ALM_P_22" Datatype="String[80]">
+              <StartValue>'    STABILIZING ZONE PRESSURE LOW/PLEASE CHECK GAUGE OR BLOWER '</StartValue>
+            </Member>
+            <Member Name="ADD2" Datatype="String[80]">
+              <StartValue>'$L$R                  AMRITSAR-143001. P'</StartValue>
+            </Member>
+            <Member Name="CYCLE STOP" Datatype="String[80]">
+              <StartValue>'   ******CYCLE ABORTED****** '</StartValue>
+            </Member>
+          </Section>
+        </Sections>
+      </Interface>
+      <MemoryLayout>Standard</MemoryLayout>
+      <Name>REVAMP</Name>
+      <Namespace />
+      <Number>1</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

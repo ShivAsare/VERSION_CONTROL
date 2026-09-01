@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V21" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="Static">
+            <Member Name="SET TEMP1 STD3" Datatype="Real" Remanence="Retain">
+              <StartValue>100.0</StartValue>
+            </Member>
+            <Member Name="SET TEMP2 STD3" Datatype="Real" Remanence="Retain">
+              <StartValue>110.0</StartValue>
+            </Member>
+            <Member Name="SET TEMP3 STD3" Datatype="Real" Remanence="Retain">
+              <StartValue>121.4</StartValue>
+            </Member>
+            <Member Name="SET PRESS STD3" Datatype="Real" Remanence="Retain">
+              <StartValue>0.05</StartValue>
+            </Member>
+            <Member Name="SET HOLD1 STD3" Datatype="Int" Remanence="Retain">
+              <StartValue>5</StartValue>
+            </Member>
+            <Member Name="SET HOLD2 STD3" Datatype="Int" Remanence="Retain">
+              <StartValue>5</StartValue>
+            </Member>
+            <Member Name="SET HOLD3 STD3" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="SET VCC STD3" Datatype="Real" Remanence="Retain">
+              <StartValue>0.0</StartValue>
+            </Member>
+            <Member Name="SET UP PRESS STD3" Datatype="Real" Remanence="Retain">
+              <StartValue>0.0</StartValue>
+            </Member>
+            <Member Name="SET VCC HOLD STD3" Datatype="Int" Remanence="Retain">
+              <StartValue>0</StartValue>
+            </Member>
+            <Member Name="SET NO OF PULSE STD3" Datatype="Int" Remanence="Retain">
+              <StartValue>0</StartValue>
+            </Member>
+            <Member Name="SET TEMP1 STD4" Datatype="Real" Remanence="Retain">
+              <StartValue>100.0</StartValue>
+            </Member>
+            <Member Name="SET TEMP2 STD4" Datatype="Real" Remanence="Retain">
+              <StartValue>110.0</StartValue>
+            </Member>
+            <Member Name="SET TEMP3 STD4" Datatype="Real" Remanence="Retain">
+              <StartValue>121.4</StartValue>
+            </Member>
+            <Member Name="SET PRESS STD4" Datatype="Real" Remanence="Retain">
+              <StartValue>0.05</StartValue>
+            </Member>
+            <Member Name="SET HOLD1 STD4" Datatype="Int" Remanence="Retain">
+              <StartValue>5</StartValue>
+            </Member>
+            <Member Name="SET HOLD2 STD4" Datatype="Int" Remanence="Retain">
+              <StartValue>5</StartValue>
+            </Member>
+            <Member Name="SET HOLD3 STD4" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="SET VCC STD4" Datatype="Real" Remanence="Retain">
+              <StartValue>0.0</StartValue>
+            </Member>
+            <Member Name="SET UP PRESS STD4" Datatype="Real" Remanence="Retain">
+              <StartValue>0.0</StartValue>
+            </Member>
+            <Member Name="SET VCC HOLD STD4" Datatype="Int" Remanence="Retain">
+              <StartValue>0</StartValue>
+            </Member>
+            <Member Name="SET NO OF PULSE STD4" Datatype="Int" Remanence="Retain">
+              <StartValue>0</StartValue>
+            </Member>
+            <Member Name="SET TEMP1 STD5" Datatype="Real" Remanence="Retain">
+              <StartValue>100.0</StartValue>
+            </Member>
+            <Member Name="SET TEMP2 STD5" Datatype="Real" Remanence="Retain">
+              <StartValue>110.0</StartValue>
+            </Member>
+            <Member Name="SET TEMP3 STD5" Datatype="Real" Remanence="Retain">
+              <StartValue>121.4</StartValue>
+            </Member>
+            <Member Name="SET PRESS STD5" Datatype="Real" Remanence="Retain">
+              <StartValue>0.05</StartValue>
+            </Member>
+            <Member Name="SET HOLD1 STD5" Datatype="Int" Remanence="Retain">
+              <StartValue>5</StartValue>
+            </Member>
+            <Member Name="SET HOLD2 STD5" Datatype="Int" Remanence="Retain">
+              <StartValue>5</StartValue>
+            </Member>
+            <Member Name="SET HOLD3 STD5" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="SET VCC STD5" Datatype="Real" Remanence="Retain">
+              <StartValue>0.0</StartValue>
+            </Member>
+            <Member Name="SET UP PRESS STD5" Datatype="Real" Remanence="Retain">
+              <StartValue>0.0</StartValue>
+            </Member>
+            <Member Name="SET VCC HOLD STD5" Datatype="Int" Remanence="Retain">
+              <StartValue>0</StartValue>
+            </Member>
+            <Member Name="SET NO OF PULSE STD5" Datatype="Int" Remanence="Retain">
+              <StartValue>0</StartValue>
+            </Member>
+            <Member Name="SET TEMP1 STD6" Datatype="Real" Remanence="Retain">
+              <StartValue>100.0</StartValue>
+            </Member>
+            <Member Name="SET TEMP2 STD6" Datatype="Real" Remanence="Retain">
+              <StartValue>110.0</StartValue>
+            </Member>
+            <Member Name="SET TEMP3 STD6" Datatype="Real" Remanence="Retain">
+              <StartValue>121.4</StartValue>
+            </Member>
+            <Member Name="SET PRESS STD6" Datatype="Real" Remanence="Retain">
+              <StartValue>0.05</StartValue>
+            </Member>
+            <Member Name="SET HOLD1 STD6" Datatype="Int" Remanence="Retain">
+              <StartValue>5</StartValue>
+            </Member>
+            <Member Name="SET HOLD2 STD6" Datatype="Int" Remanence="Retain">
+              <StartValue>5</StartValue>
+            </Member>
+            <Member Name="SET HOLD3 STD6" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="SET VCC STD6" Datatype="Real" Remanence="Retain">
+              <StartValue>0.0</StartValue>
+            </Member>
+            <Member Name="SET UP PRESS STD6" Datatype="Real" Remanence="Retain">
+              <StartValue>0.0</StartValue>
+            </Member>
+            <Member Name="SET VCC HOLD STD6" Datatype="Int" Remanence="Retain">
+              <StartValue>0</StartValue>
+            </Member>
+            <Member Name="SET NO OF PULSE STD6" Datatype="Int" Remanence="Retain">
+              <StartValue>0</StartValue>
+            </Member>
+            <Member Name="SET TEMP1 STD7" Datatype="Real" Remanence="Retain">
+              <StartValue>100.0</StartValue>
+            </Member>
+            <Member Name="SET TEMP2 STD7" Datatype="Real" Remanence="Retain">
+              <StartValue>110.0</StartValue>
+            </Member>
+            <Member Name="SET TEMP3 STD7" Datatype="Real" Remanence="Retain">
+              <StartValue>121.4</StartValue>
+            </Member>
+            <Member Name="SET PRESS STD7" Datatype="Real" Remanence="Retain">
+              <StartValue>0.05</StartValue>
+            </Member>
+            <Member Name="SET HOLD1 STD7" Datatype="Int" Remanence="Retain">
+              <StartValue>5</StartValue>
+            </Member>
+            <Member Name="SET HOLD2 STD7" Datatype="Int" Remanence="Retain">
+              <StartValue>5</StartValue>
+            </Member>
+            <Member Name="SET HOLD3 STD7" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="SET VCC STD7" Datatype="Real" Remanence="Retain">
+              <StartValue>0.0</StartValue>
+            </Member>
+            <Member Name="SET UP PRESS STD7" Datatype="Real" Remanence="Retain">
+              <StartValue>0.0</StartValue>
+            </Member>
+            <Member Name="SET VCC HOLD STD7" Datatype="Int" Remanence="Retain">
+              <StartValue>0</StartValue>
+            </Member>
+            <Member Name="SET NO OF PULSE STD7" Datatype="Int" Remanence="Retain">
+              <StartValue>0</StartValue>
+            </Member>
+            <Member Name="SET TEMP1 STD8" Datatype="Real" Remanence="Retain">
+              <StartValue>100.0</StartValue>
+            </Member>
+            <Member Name="SET TEMP2 STD8" Datatype="Real" Remanence="Retain">
+              <StartValue>110.0</StartValue>
+            </Member>
+            <Member Name="SET TEMP3 STD8" Datatype="Real" Remanence="Retain">
+              <StartValue>121.4</StartValue>
+            </Member>
+            <Member Name="SET PRESS STD8" Datatype="Real" Remanence="Retain">
+              <StartValue>0.05</StartValue>
+            </Member>
+            <Member Name="SET HOLD1 STD8" Datatype="Int" Remanence="Retain">
+              <StartValue>5</StartValue>
+            </Member>
+            <Member Name="SET HOLD2 STD8" Datatype="Int" Remanence="Retain">
+              <StartValue>5</StartValue>
+            </Member>
+            <Member Name="SET HOLD3 STD8" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="SET VCC STD8" Datatype="Real" Remanence="Retain">
+              <StartValue>0.0</StartValue>
+            </Member>
+            <Member Name="SET UP PRESS STD8" Datatype="Real" Remanence="Retain">
+              <StartValue>0.0</StartValue>
+            </Member>
+            <Member Name="SET VCC HOLD STD8" Datatype="Int" Remanence="Retain">
+              <StartValue>0</StartValue>
+            </Member>
+            <Member Name="SET NO OF PULSE STD8" Datatype="Int" Remanence="Retain">
+              <StartValue>0</StartValue>
+            </Member>
+            <Member Name="SET TEMP1 STD9" Datatype="Real" Remanence="Retain">
+              <StartValue>100.0</StartValue>
+            </Member>
+            <Member Name="SET TEMP2 STD9" Datatype="Real" Remanence="Retain">
+              <StartValue>110.0</StartValue>
+            </Member>
+            <Member Name="SET TEMP3 STD9" Datatype="Real" Remanence="Retain">
+              <StartValue>121.4</StartValue>
+            </Member>
+            <Member Name="SET PRESS STD9" Datatype="Real" Remanence="Retain">
+              <StartValue>0.05</StartValue>
+            </Member>
+            <Member Name="SET HOLD1 STD9" Datatype="Int" Remanence="Retain">
+              <StartValue>5</StartValue>
+            </Member>
+            <Member Name="SET HOLD2 STD9" Datatype="Int" Remanence="Retain">
+              <StartValue>5</StartValue>
+            </Member>
+            <Member Name="SET HOLD3 STD9" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="SET VCC STD9" Datatype="Real" Remanence="Retain">
+              <StartValue>0.0</StartValue>
+            </Member>
+            <Member Name="SET UP PRESS STD9" Datatype="Real" Remanence="Retain">
+              <StartValue>0.0</StartValue>
+            </Member>
+            <Member Name="SET VCC HOLD STD9" Datatype="Int" Remanence="Retain">
+              <StartValue>0</StartValue>
+            </Member>
+            <Member Name="SET NO OF PULSE STD9" Datatype="Int" Remanence="Retain">
+              <StartValue>0</StartValue>
+            </Member>
+            <Member Name="SET LEAK VCC" Datatype="Real" Remanence="Retain">
+              <StartValue>-0.7</StartValue>
+            </Member>
+            <Member Name="SET VCC PRESS" Datatype="Real" Remanence="Retain">
+              <StartValue>-0.05</StartValue>
+            </Member>
+            <Member Name="SET DELAY BEFORE HOLD TIME" Datatype="Int" Remanence="Retain">
+              <StartValue>0</StartValue>
+            </Member>
+            <Member Name="SET VCC HOLD TIME" Datatype="Int" Remanence="Retain">
+              <StartValue>10</StartValue>
+            </Member>
+            <Member Name="SET ACCEPTANCE LEAK" Datatype="Real" Remanence="Retain">
+              <StartValue>0.013</StartValue>
+            </Member>
+          </Section>
+        </Sections>
+      </Interface>
+      <MemoryLayout>Standard</MemoryLayout>
+      <Name>ADD_ON</Name>
+      <Namespace />
+      <Number>263</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

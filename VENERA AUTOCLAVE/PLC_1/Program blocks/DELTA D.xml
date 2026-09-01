@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V21" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="Static">
+            <Member Name="TA" Datatype="Real">
+              <StartValue>122.9</StartValue>
+            </Member>
+            <Member Name="TB" Datatype="Real">
+              <StartValue>121.0</StartValue>
+            </Member>
+            <Member Name="Z" Datatype="Real">
+              <StartValue>10.0</StartValue>
+            </Member>
+            <Member Name="RATE" Datatype="Real">
+              <StartValue>0.1900001</StartValue>
+            </Member>
+            <Member Name="LEATHALTY" Datatype="Real">
+              <StartValue>1.548817</StartValue>
+            </Member>
+            <Member Name="DELTA T" Datatype="Int">
+              <StartValue>15</StartValue>
+            </Member>
+            <Member Name="F0" Datatype="Real">
+              <StartValue>13.06446</StartValue>
+            </Member>
+            <Member Name="MIN DRAIN" Datatype="Real">
+              <StartValue>51.8</StartValue>
+            </Member>
+            <Member Name="MAX DRAIN" Datatype="Real">
+              <StartValue>123.2</StartValue>
+            </Member>
+            <Member Name="MIN T1" Datatype="Real">
+              <StartValue>85.7</StartValue>
+            </Member>
+            <Member Name="MAX T1" Datatype="Real">
+              <StartValue>123.8</StartValue>
+            </Member>
+            <Member Name="MIN T2" Datatype="Real">
+              <StartValue>44.5</StartValue>
+            </Member>
+            <Member Name="MAX T2" Datatype="Real">
+              <StartValue>124.3</StartValue>
+            </Member>
+            <Member Name="MIN T3" Datatype="Real">
+              <StartValue>43.1</StartValue>
+            </Member>
+            <Member Name="MAX T3" Datatype="Real">
+              <StartValue>124.2</StartValue>
+            </Member>
+            <Member Name="MIN T4" Datatype="Real">
+              <StartValue>85.8</StartValue>
+            </Member>
+            <Member Name="MAX T4" Datatype="Real">
+              <StartValue>124.0</StartValue>
+            </Member>
+            <Member Name="MIN T5" Datatype="Real">
+              <StartValue>0.0</StartValue>
+            </Member>
+            <Member Name="MAX T5" Datatype="Real">
+              <StartValue>0.0</StartValue>
+            </Member>
+            <Member Name="HEAD" Datatype="String[80]">
+              <Comment>
+                <MultiLanguageText Lang="en-US">17,24,31,38,46</MultiLanguageText>
+              </Comment>
+              <StartValue>'$L$R                T1     T2     T3     T4      T5  '</StartValue>
+            </Member>
+            <Member Name="MIN TEMP" Datatype="String[80]">
+              <Comment>
+                <MultiLanguageText Lang="en-US">14</MultiLanguageText>
+              </Comment>
+              <StartValue>'$L$R  MIN TEMP  :                                                            '</StartValue>
+            </Member>
+            <Member Name="MAX TEMP" Datatype="String[80]">
+              <Comment>
+                <MultiLanguageText Lang="en-US">14</MultiLanguageText>
+              </Comment>
+              <StartValue>'$L$R  MAX TEMP  :                                                           '</StartValue>
+            </Member>
+            <Member Name="F ZERO" Datatype="String[80]">
+              <Comment>
+                <MultiLanguageText Lang="en-US">14</MultiLanguageText>
+              </Comment>
+              <StartValue>'$L$R  F0 VALUE  :                                                            '</StartValue>
+            </Member>
+            <Member Name="MIN F0" Datatype="String[80]">
+              <Comment>
+                <MultiLanguageText Lang="en-US">48</MultiLanguageText>
+              </Comment>
+              <StartValue>'$L$RTOTAL MINIMUM F0 VALUE ACHIEVED DURING CYLCE  :           '</StartValue>
+            </Member>
+            <Member Name="PRINT LINE" Datatype="String[80]">
+              <StartValue>'   '</StartValue>
+            </Member>
+            <Member Name="BIT" Datatype="Array[0..10] of Bool">
+              <Subelement Path="0">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="1">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="2">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="3">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="4">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="5">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="6">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="7">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="8">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="9">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+              <Subelement Path="10">
+                <StartValue>FALSE</StartValue>
+              </Subelement>
+            </Member>
+            <Member Name="F1" Datatype="Real">
+              <StartValue>23.23226</StartValue>
+            </Member>
+            <Member Name="F2" Datatype="Real">
+              <StartValue>27.93129</StartValue>
+            </Member>
+            <Member Name="F3" Datatype="Real">
+              <StartValue>30.62606</StartValue>
+            </Member>
+            <Member Name="F4" Datatype="Real">
+              <StartValue>30.62606</StartValue>
+            </Member>
+            <Member Name="F5" Datatype="Real">
+              <StartValue>29.24768</StartValue>
+            </Member>
+            <Member Name="DEL TA" Datatype="Array[0..5] of Real">
+              <Subelement Path="0">
+                <StartValue>123.7</StartValue>
+              </Subelement>
+              <Subelement Path="1">
+                <StartValue>124.1</StartValue>
+              </Subelement>
+              <Subelement Path="2">
+                <StartValue>124.1</StartValue>
+              </Subelement>
+              <Subelement Path="3">
+                <StartValue>123.9</StartValue>
+              </Subelement>
+              <Subelement Path="4">
+                <StartValue>0.0</StartValue>
+              </Subelement>
+              <Subelement Path="5">
+                <StartValue>0.0</StartValue>
+              </Subelement>
+            </Member>
+            <Member Name="DEL RATE" Datatype="Array[0..5] of Real">
+              <Subelement Path="0">
+                <StartValue>0.2699997</StartValue>
+              </Subelement>
+              <Subelement Path="1">
+                <StartValue>0.3099999</StartValue>
+              </Subelement>
+              <Subelement Path="2">
+                <StartValue>0.3099999</StartValue>
+              </Subelement>
+              <Subelement Path="3">
+                <StartValue>0.2900001</StartValue>
+              </Subelement>
+              <Subelement Path="4">
+                <StartValue>0.0</StartValue>
+              </Subelement>
+              <Subelement Path="5">
+                <StartValue>0.0</StartValue>
+              </Subelement>
+            </Member>
+            <Member Name="DEL LEATH" Datatype="Array[0..5] of Real">
+              <Subelement Path="0">
+                <StartValue>1.862086</StartValue>
+              </Subelement>
+              <Subelement Path="1">
+                <StartValue>2.041737</StartValue>
+              </Subelement>
+              <Subelement Path="2">
+                <StartValue>2.041737</StartValue>
+              </Subelement>
+              <Subelement Path="3">
+                <StartValue>1.949845</StartValue>
+              </Subelement>
+              <Subelement Path="4">
+                <StartValue>0.0</StartValue>
+              </Subelement>
+              <Subelement Path="5">
+                <StartValue>0.0</StartValue>
+              </Subelement>
+            </Member>
+            <Member Name="dummy" Datatype="Array[0..5] of Real" />
+          </Section>
+        </Sections>
+      </Interface>
+      <MemoryLayout>Standard</MemoryLayout>
+      <Name>DELTA D</Name>
+      <Namespace />
+      <Number>183</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

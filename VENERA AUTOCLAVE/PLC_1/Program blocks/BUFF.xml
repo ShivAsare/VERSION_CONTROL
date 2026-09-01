@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V21" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="Static">
+            <Member Name="MODE" Datatype="Int" />
+            <Member Name="PROCESS" Datatype="Int" />
+            <Member Name="DOOR1" Datatype="Int" />
+            <Member Name="DOOR2" Datatype="Int" />
+            <Member Name="SAFE" Datatype="Int" />
+            <Member Name="AUTO HMI" Datatype="Bool" />
+            <Member Name="MANUAL HMI" Datatype="Bool" />
+            <Member Name="STANDBY HMI" Datatype="Bool" />
+            <Member Name="START HMI" Datatype="Bool" />
+            <Member Name="STOP HMI" Datatype="Bool" />
+            <Member Name="SIP" Datatype="Bool" />
+            <Member Name="STANDARD" Datatype="Array[0..10] of Bool" />
+            <Member Name="STANDARD2" Datatype="Bool" />
+            <Member Name="BOWIE DICK" Datatype="Bool" />
+            <Member Name="HPHV" Datatype="Bool" />
+            <Member Name="VCC LEAK" Datatype="Bool" />
+            <Member Name="DUMMY" Datatype="Bool" />
+            <Member Name="DUMMY1" Datatype="Bool" />
+            <Member Name="MAN VCC PUMP" Datatype="Bool" />
+            <Member Name="MAN DOOR1 GASKET" Datatype="Bool" />
+            <Member Name="MAN CRC MOTOR" Datatype="Bool" />
+            <Member Name="MAN JACKET STEAM VAL" Datatype="Bool" />
+            <Member Name="MAN CHAMBER STEAM VAL" Datatype="Bool" />
+            <Member Name="MAN CHAMBER EXHAUST VAL" Datatype="Bool" />
+            <Member Name="MAN CHAMBER VENT VAL" Datatype="Bool" />
+            <Member Name="MAN CHAMBER CONDENSOR VAL" Datatype="Bool" />
+            <Member Name="MAN WFI VAL" Datatype="Bool" />
+            <Member Name="MAN PWD VAL" Datatype="Bool" />
+            <Member Name="MAN PWD CRC VAL" Datatype="Bool" />
+            <Member Name="MAN DETERGENT DSG VAL" Datatype="Bool" />
+            <Member Name="MAN SILICON DSG VAL" Datatype="Bool" />
+            <Member Name="MAN DRAIN VAL" Datatype="Bool" />
+            <Member Name="MAN DOOR2 INTERLOCK VAL" Datatype="Bool" />
+            <Member Name="MAN DOOR1 INTERLOCK VAL" Datatype="Bool" />
+            <Member Name="MAN DOOR1 OPEN VAL" Datatype="Bool" />
+            <Member Name="MAN DOOR1 CLOSE VAL" Datatype="Bool" />
+            <Member Name="MAN DOOR2 OPEN VAL" Datatype="Bool" />
+            <Member Name="MAN DOOR2 CLOSE VAL" Datatype="Bool" />
+            <Member Name="MAN DOOR1 VCC" Datatype="Bool" />
+            <Member Name="MAN DOOR2 GASKET" Datatype="Bool" />
+            <Member Name="MAN DOOR2 VCC" Datatype="Bool" />
+            <Member Name="MAN JACKET STEAM OUT" Datatype="Bool" />
+            <Member Name="DOOR1 OPEN" Datatype="Bool" />
+            <Member Name="DOOR1 CLOSE" Datatype="Bool" />
+            <Member Name="DOOR2 OPEN" Datatype="Bool" />
+            <Member Name="DOOR2 CLOSE" Datatype="Bool" />
+            <Member Name="MAN DRUM MOTOR" Datatype="Bool" />
+            <Member Name="MAN CHAMBER VACCUM VAL" Datatype="Bool" />
+            <Member Name="PRINT" Datatype="Bool" />
+            <Member Name="MAN CHAMBER STEAM SMALL" Datatype="Bool" />
+            <Member Name="MAN CHAMBER AIR VENT" Datatype="Bool" />
+            <Member Name="MAN JACKET STEAM OUT_1" Datatype="Bool" />
+            <Member Name="MAN BOILER HEATER" Datatype="Bool" />
+          </Section>
+        </Sections>
+      </Interface>
+      <MemoryLayout>Standard</MemoryLayout>
+      <Name>BUFF</Name>
+      <Namespace />
+      <Number>82</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

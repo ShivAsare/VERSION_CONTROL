@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V21" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="Static">
+            <Member Name="L1" Datatype="String[80]">
+              <StartValue>'                  M/s. LABORATE PHARMACEUTICALS INDIA LIMITED             '</StartValue>
+            </Member>
+            <Member Name="L2" Datatype="String[80]">
+              <StartValue>'               111, YAMUNA NAGAR ROAD, SATIWALA, PAONTA SAHIB,         '</StartValue>
+            </Member>
+            <Member Name="L3" Datatype="String[80]">
+              <StartValue>'               DISS.- SIRMOUR, HIMACHAL PRADESH - 173025 INDIA'</StartValue>
+            </Member>
+            <Member Name="L4" Datatype="String[80]">
+              <StartValue>'              STERILIZING DEPYROGENATION TUNNEL (MODEL NO- SDT-C-5H)    '</StartValue>
+            </Member>
+            <Member Name="L5" Datatype="String[80]">
+              <StartValue>'              ----------------------------------------------------------'</StartValue>
+            </Member>
+            <Member Name="L6" Datatype="String[80]">
+              <StartValue>'  EQUIPMENT ID        :'</StartValue>
+            </Member>
+            <Member Name="L7" Datatype="String[80]">
+              <StartValue>'  PRODUCT NAME        :'</StartValue>
+            </Member>
+            <Member Name="L8" Datatype="String[80]">
+              <StartValue>'  BATCH NO            :'</StartValue>
+            </Member>
+            <Member Name="L9" Datatype="String[80]">
+              <StartValue>'                                                             DATE:  /  /       '</StartValue>
+            </Member>
+            <Member Name="L10" Datatype="String[80]">
+              <StartValue>'  PROCESS STARTED AT  :   :  :     '</StartValue>
+            </Member>
+            <Member Name="L11" Datatype="String[80]">
+              <StartValue>'  OPERATOR NAME       :'</StartValue>
+            </Member>
+            <Member Name="L12" Datatype="String[80]">
+              <StartValue>'  TUNNEL MODE         :'</StartValue>
+            </Member>
+            <Member Name="L13" Datatype="String[80]">
+              <StartValue>'  RECEIPE TYPE        :'</StartValue>
+            </Member>
+            <Member Name="L14" Datatype="String[80]">
+              <StartValue>'-------------------------------------------------------------------------'</StartValue>
+            </Member>
+            <Member Name="L15" Datatype="String[80]">
+              <StartValue>'  CONTROL TEMP (DEG.C)    :                   CONVEYOR SPEED (mm/min)   :     '</StartValue>
+            </Member>
+            <Member Name="L16" Datatype="String[80]">
+              <StartValue>'  CONVEYOR ON TEMP (DEG.C):                   CONVEYOR OFF TEMP (DEG.C) :    '</StartValue>
+            </Member>
+            <Member Name="L17" Datatype="String[80]">
+              <StartValue>'  SHUTDOWN TEMP (DEG.C)   :                   PRINTING INTERVAL (SEC)   :       '</StartValue>
+            </Member>
+            <Member Name="L18" Datatype="String[80]">
+              <StartValue>'                                            '</StartValue>
+            </Member>
+            <Member Name="L19" Datatype="String[80]">
+              <StartValue>'  CHECKED BY:                                 VERIFIED BY:'</StartValue>
+            </Member>
+            <Member Name="L20" Datatype="String[80]">
+              <StartValue>'********************************************************************************'</StartValue>
+            </Member>
+            <Member Name="L21" Datatype="String[80]">
+              <StartValue>'  DZ=DRYING ZONE            MHZ=MAIN HEATING ZONE   ST IN=STERILIZATION IN'</StartValue>
+            </Member>
+            <Member Name="L22" Datatype="String[80]">
+              <StartValue>'  ST OUT=STERILIZATION OUT  CZ UP=COOLING ZONE UP   CZ DOWN=COOLING ZONE DOWN '</StartValue>
+            </Member>
+            <Member Name="L23" Datatype="String[80]">
+              <StartValue>'********************************************************************************'</StartValue>
+            </Member>
+            <Member Name="L24" Datatype="String[80]">
+              <StartValue>'             :  CH-1  :  CH-2  :  CH-3  :  CH-4  :  CH-5  :  CH-6  :  CONVEYOR  '</StartValue>
+            </Member>
+            <Member Name="L25" Datatype="String[90]">
+              <StartValue>'     TIME    :  DZ    :  MHZ   :  ST IN :  ST OUT:  CZ UP :  CZDOWN:  SPEED '</StartValue>
+            </Member>
+            <Member Name="L26" Datatype="String[80]">
+              <StartValue>'             :  DEG.C :  DEG.C :  DEG.C :  DEG.C :  DEG.C :  DEG.C :  mm/min '</StartValue>
+            </Member>
+            <Member Name="L27" Datatype="String[80]">
+              <StartValue>'--------------------------------------------------------------------------------'</StartValue>
+            </Member>
+            <Member Name="L28" Datatype="String[80]">
+              <StartValue>'    :  :                                                                     '</StartValue>
+            </Member>
+            <Member Name="L29" Datatype="String[80]">
+              <StartValue>'                                                                     '</StartValue>
+            </Member>
+            <Member Name="L30" Datatype="String[80]" />
+            <Member Name="L31" Datatype="String[80]">
+              <StartValue>'               RECEIPE TYPE :                                                   '</StartValue>
+            </Member>
+            <Member Name="L32" Datatype="String[80]">
+              <StartValue>'--------------------------------------------------------------------------------'</StartValue>
+            </Member>
+            <Member Name="ALM1" Datatype="String[80]">
+              <StartValue>'    :  :       EMERGENCY PRESSED '</StartValue>
+            </Member>
+            <Member Name="ALM2" Datatype="String[80]">
+              <StartValue>'    :  :       TURBIN VFD TRIP '</StartValue>
+            </Member>
+            <Member Name="ALM3" Datatype="String[80]">
+              <StartValue>'    :  :       CONVEYOR SUPPLY FAIL '</StartValue>
+            </Member>
+            <Member Name="ALM4" Datatype="String[80]">
+              <StartValue>'    :  :       LAF SUPPLY FAIL '</StartValue>
+            </Member>
+            <Member Name="ALM5" Datatype="String[80]">
+              <StartValue>'    :  :       TURBIN SUPPLY FAIL'</StartValue>
+            </Member>
+            <Member Name="ALM6" Datatype="String[80]">
+              <StartValue>'    :  :       VAPOR EXHAUST SUPPLY FAIL'</StartValue>
+            </Member>
+            <Member Name="ALM7" Datatype="String[80]">
+              <StartValue>'    :  :       HEATER SUPPLY FAIL'</StartValue>
+            </Member>
+            <Member Name="ALM8" Datatype="String[80]">
+              <StartValue>'    :  :       TEMPERATURE OVERSHOOT'</StartValue>
+            </Member>
+            <Member Name="ALM9" Datatype="String[80]">
+              <StartValue>'    :  :       VAPOUR EXHAUST TRIP'</StartValue>
+            </Member>
+            <Member Name="ALM10" Datatype="String[80]">
+              <StartValue>'    :  :       SINGLE PHASE FAIL '</StartValue>
+            </Member>
+            <Member Name="ALM11" Datatype="String[80]">
+              <StartValue>'    :  :       DRYING ZONE PRESSURE LOW/PLEASE CHECK SENSOR OR BLOWER '</StartValue>
+            </Member>
+            <Member Name="ALM12" Datatype="String[80]">
+              <StartValue>'    :  :       COOLING ZONE PRESSURE LOW/PLEASE CHECK SENSOR OR BLOWER '</StartValue>
+            </Member>
+            <Member Name="ALM13" Datatype="String[80]">
+              <StartValue>'    :  :       STERILIZING  PREESURE LOW/PLEASE CHECK SENSOR OR TURBINE '</StartValue>
+            </Member>
+            <Member Name="ALM14" Datatype="String[80]">
+              <StartValue>'    :  :       CONVEYOR VFD OVERLOAD '</StartValue>
+            </Member>
+            <Member Name="ALM15" Datatype="String[80]">
+              <StartValue>'    :  :       MAIN HEAT RTD SENSOR FAIL '</StartValue>
+            </Member>
+            <Member Name="ALM16" Datatype="String[80]">
+              <StartValue>'    :  :       STERILE IN RTD SENSOR FAIL '</StartValue>
+            </Member>
+            <Member Name="ALM17" Datatype="String[80]">
+              <StartValue>'    :  :       STERILE OUT RTD SENSOR FAIL '</StartValue>
+            </Member>
+            <Member Name="ALM18" Datatype="String[80]">
+              <StartValue>'    :  :       CONVEYOR VFD TRIP '</StartValue>
+            </Member>
+            <Member Name="ALM19" Datatype="String[80]">
+              <StartValue>'    :  :       SHUTDOWN CYCLE STARTED '</StartValue>
+            </Member>
+            <Member Name="ALM20" Datatype="String[80]">
+              <StartValue>'    :  :                     *****PROCESS COMPLETED*****'</StartValue>
+            </Member>
+            <Member Name="ALM21" Datatype="String[80]">
+              <StartValue>'  CHECKED BY:                                 VERIFIED BY:'</StartValue>
+            </Member>
+            <Member Name="BATCH SIZE" Datatype="String[80]">
+              <StartValue>'  BATCH SIZE          :'</StartValue>
+            </Member>
+            <Member Name="CONTAINER SIZE" Datatype="String[80]">
+              <StartValue>'  CONTAINER SIZE      :'</StartValue>
+            </Member>
+            <Member Name="BLANK LINE" Datatype="String[80]">
+              <StartValue>'                                                                '</StartValue>
+            </Member>
+            <Member Name="ADDRESS" Datatype="String[80]">
+              <StartValue>' '</StartValue>
+            </Member>
+          </Section>
+        </Sections>
+      </Interface>
+      <MemoryLayout>Standard</MemoryLayout>
+      <Name>PRINTING_1</Name>
+      <Namespace />
+      <Number>193</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

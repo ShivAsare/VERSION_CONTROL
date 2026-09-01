@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V21" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="None">
+            <Member Name="SET TEMP1" Datatype="Real">
+              <StartValue>0.0</StartValue>
+            </Member>
+            <Member Name="SET TEMP2" Datatype="Real">
+              <StartValue>0.0</StartValue>
+            </Member>
+            <Member Name="SET TEMP3" Datatype="Real">
+              <StartValue>0.0</StartValue>
+            </Member>
+            <Member Name="SET PRESS" Datatype="Real">
+              <StartValue>0.0</StartValue>
+            </Member>
+            <Member Name="SET HOLD1" Datatype="Int">
+              <StartValue>0</StartValue>
+            </Member>
+            <Member Name="SET HOLD2" Datatype="Int">
+              <StartValue>0</StartValue>
+            </Member>
+            <Member Name="SET HOLD3" Datatype="Int">
+              <StartValue>0</StartValue>
+            </Member>
+            <Member Name="SET VCC" Datatype="Real">
+              <StartValue>0.0</StartValue>
+            </Member>
+            <Member Name="SET UP PRESS" Datatype="Real">
+              <StartValue>0.0</StartValue>
+            </Member>
+            <Member Name="SET VCC HOLD" Datatype="Int">
+              <StartValue>0</StartValue>
+            </Member>
+            <Member Name="SET NO OF PULSE" Datatype="Int">
+              <StartValue>0</StartValue>
+            </Member>
+          </Section>
+        </Sections>
+      </Interface>
+      <Name>STD</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

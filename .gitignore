@@ -1,0 +1,16 @@
+# Siemens TIA Portal VCI Git Ignore
+# Ignore OS temporary files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Ignore editor/temp files
+*.tmp
+*.temp
+*.bak
+~$*
+
+# TIA Portal project lock/temporary files if any ever placed here
+*.lck
+*.lock

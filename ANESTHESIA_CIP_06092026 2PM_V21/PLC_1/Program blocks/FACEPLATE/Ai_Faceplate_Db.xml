@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V21" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="Static">
+            <Member Name="Ai01" Datatype="&quot;Ai_Faceplate&quot;">
+              <Comment>
+                <MultiLanguageText Lang="en-US">Ticr01NfcoLineTemp</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Ai02" Datatype="&quot;Ai_Faceplate&quot;">
+              <Comment>
+                <MultiLanguageText Lang="en-US">Ticr02VfcoLineTemp</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Ai03" Datatype="&quot;Ai_Faceplate&quot;">
+              <Comment>
+                <MultiLanguageText Lang="en-US">Ticr03SvcoLineTemp</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Ai04" Datatype="&quot;Ai_Faceplate&quot;">
+              <Comment>
+                <MultiLanguageText Lang="en-US">Ticr04VdcoTemp</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Ai05" Datatype="&quot;Ai_Faceplate&quot;">
+              <Comment>
+                <MultiLanguageText Lang="en-US">Ticr05CipPumpDrainTemp</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Ai06" Datatype="&quot;Ai_Faceplate&quot;">
+              <Comment>
+                <MultiLanguageText Lang="en-US">Ticr06Pf01InLineTemp</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Ai07" Datatype="&quot;Ai_Faceplate&quot;">
+              <Comment>
+                <MultiLanguageText Lang="en-US">Ticr07Pf02InLineTemp</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Ai08" Datatype="&quot;Ai_Faceplate&quot;">
+              <Comment>
+                <MultiLanguageText Lang="en-US">Ticr08Pf02OutLineTemp</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Ai09" Datatype="&quot;Ai_Faceplate&quot;">
+              <Comment>
+                <MultiLanguageText Lang="en-US">Ticr09PtlDrainTemp</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Ai10" Datatype="&quot;Ai_Faceplate&quot;">
+              <Comment>
+                <MultiLanguageText Lang="en-US">Ticr10VesselTemp</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Ai11" Datatype="&quot;Ai_Faceplate&quot;">
+              <Comment>
+                <MultiLanguageText Lang="en-US">Picr01VesselPressure</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Ai12" Datatype="&quot;Ai_Faceplate&quot;">
+              <Comment>
+                <MultiLanguageText Lang="en-US">Picr02VesselRclLine</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Ai13" Datatype="&quot;Ai_Faceplate&quot;">
+              <Comment>
+                <MultiLanguageText Lang="en-US">Picr03Pf01OutLinePressure</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Ai14" Datatype="&quot;Ai_Faceplate&quot;">
+              <Comment>
+                <MultiLanguageText Lang="en-US">Picr04Pf02OutLinePressure</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Ai15" Datatype="&quot;Ai_Faceplate&quot;">
+              <Comment>
+                <MultiLanguageText Lang="en-US">Cicr01ProcessDrainConductivity</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Ai16" Datatype="&quot;Ai_Faceplate&quot;">
+              <Comment>
+                <MultiLanguageText Lang="en-US">AiSpare1</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Ai17" Datatype="&quot;Ai_Faceplate&quot;">
+              <Comment>
+                <MultiLanguageText Lang="en-US">AiSpare2</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Ai18" Datatype="&quot;Ai_Faceplate&quot;">
+              <Comment>
+                <MultiLanguageText Lang="en-US">AiSpare3</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Ai19" Datatype="&quot;Ai_Faceplate&quot;">
+              <Comment>
+                <MultiLanguageText Lang="en-US">AiSpare4</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Ai20" Datatype="&quot;Ai_Faceplate&quot;">
+              <Comment>
+                <MultiLanguageText Lang="en-US">AiSpare5</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Ai21" Datatype="&quot;Ai_Faceplate&quot;">
+              <Comment>
+                <MultiLanguageText Lang="en-US">AiSpare6</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Ai22" Datatype="&quot;Ai_Faceplate&quot;">
+              <Comment>
+                <MultiLanguageText Lang="en-US">AiSpare7</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Ai23" Datatype="&quot;Ai_Faceplate&quot;">
+              <Comment>
+                <MultiLanguageText Lang="en-US">AiSpare8</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Ai24" Datatype="&quot;Ai_Faceplate&quot;">
+              <Comment>
+                <MultiLanguageText Lang="en-US">AiSpare9</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Ai25" Datatype="&quot;Ai_Faceplate&quot;" />
+            <Member Name="Ai26" Datatype="&quot;Ai_Faceplate&quot;" />
+          </Section>
+        </Sections>
+      </Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>Ai_Faceplate_Db</Name>
+      <Namespace />
+      <Number>107</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

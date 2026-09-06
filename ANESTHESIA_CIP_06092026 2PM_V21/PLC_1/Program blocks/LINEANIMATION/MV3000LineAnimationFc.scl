@@ -1,0 +1,361 @@
+﻿FUNCTION "MV3000LineAnimationFc" : Void
+{ S7_Optimized_Access := 'FALSE' }
+VERSION : 0.1
+
+BEGIN
+	//////////////////////////////////// AUTO ON ////////////////////////////////////////////
+	//AutoON
+	"MV3000LineAnimationDb"."Node 1".V01.AutoOn := "ValvesOutputDb".Cv01;
+	"MV3000LineAnimationDb"."Node 1".V02.AutoOn := "ValvesOutputDb".Cv02;
+	"MV3000LineAnimationDb"."Node 1".V03.AutoOn := "ValvesOutputDb".Cv10;
+	
+	
+	"MV3000LineAnimationDb"."Node 2".V01.AutoOn := "ValvesOutputDb".Cv03;
+	"MV3000LineAnimationDb"."Node 2".V02.AutoOn := "ValvesOutputDb".Cv04;
+	"MV3000LineAnimationDb"."Node 2".V03.AutoOn := "ValvesOutputDb".Cv05;
+	"MV3000LineAnimationDb"."Node 2".V04.AutoOn := "ValvesOutputDb".Cv06;
+	
+	
+	"MV3000LineAnimationDb"."Node 3".V01.AutoOn := "ValvesOutputDb".Cv07;
+	"MV3000LineAnimationDb"."Node 3".V02.AutoOn := "ValvesOutputDb".Cv08;
+	"MV3000LineAnimationDb"."Node 3".V03.AutoOn := "ValvesOutputDb".Cv09;
+	
+	
+	"MV3000LineAnimationDb"."Node 4".V01.AutoOn := "ValvesOutputDb".Cv16;
+	"MV3000LineAnimationDb"."Node 4".V02.AutoOn := "ValvesOutputDb".Cv17;
+	"MV3000LineAnimationDb"."Node 4".V03.AutoOn := "ValvesOutputDb".Cv22;
+	"MV3000LineAnimationDb"."Node 4".V04.AutoOn := "ValvesOutputDb".Cv23;
+	"MV3000LineAnimationDb"."Node 4".V05.AutoOn := "ValvesOutputDb".Cv24;
+	"MV3000LineAnimationDb"."Node 4".V06.AutoOn := "ValvesOutputDb".Cv25;
+	
+	
+	"MV3000LineAnimationDb"."Node 5".V01.AutoOn := "ValvesOutputDb".Cv22;
+	"MV3000LineAnimationDb"."Node 5".V02.AutoOn := "ValvesOutputDb".Cv25;
+	
+	
+	"MV3000LineAnimationDb"."Node 6".V01.AutoOn := "ValvesOutputDb".Cv18;
+	"MV3000LineAnimationDb"."Node 6".V02.AutoOn := "ValvesOutputDb".Cv19;
+	"MV3000LineAnimationDb"."Node 6".V03.AutoOn := "ValvesOutputDb".Cv20;
+	"MV3000LineAnimationDb"."Node 6".V04.AutoOn := "ValvesOutputDb".Cv21;
+	
+	"MV3000LineAnimationDb"."Node 7".V01.AutoOn := "ValvesOutputDb".Cv19;
+	"MV3000LineAnimationDb"."Node 7".V02.AutoOn := "ValvesOutputDb".Cv20;
+	
+	"MV3000LineAnimationDb"."Node 8".V01.AutoOn := "ValvesOutputDb".Cv16;
+	"MV3000LineAnimationDb"."Node 8".V02.AutoOn := "ValvesOutputDb".Cv15;
+	"MV3000LineAnimationDb"."Node 8".V03.AutoOn := "ValvesOutputDb".Cv63;
+	
+	"MV3000LineAnimationDb"."Node 9".V01.AutoOn := "ValvesOutputDb".Cv10;
+	"MV3000LineAnimationDb"."Node 9".V02.AutoOn := "ValvesOutputDb".Cv11;
+	"MV3000LineAnimationDb"."Node 9".V03.AutoOn := "ValvesOutputDb".Cv12;
+	"MV3000LineAnimationDb"."Node 9".V04.AutoOn := "ValvesOutputDb".Cv13;
+	"MV3000LineAnimationDb"."Node 9".V05.AutoOn := "ValvesOutputDb".Cv14;
+	"MV3000LineAnimationDb"."Node 9".V06.AutoOn := "ValvesOutputDb".Cv15;
+	
+	"MV3000LineAnimationDb"."Node 10".V01.AutoOn := "ValvesOutputDb".Cv11;
+	"MV3000LineAnimationDb"."Node 10".V02.AutoOn := "ValvesOutputDb".Cv39;
+	
+	"MV3000LineAnimationDb"."Node 11".V01.AutoOn := "ValvesOutputDb".Cv12;
+	"MV3000LineAnimationDb"."Node 11".V02.AutoOn := "ValvesOutputDb".Cv26;
+	"MV3000LineAnimationDb"."Node 11".V03.AutoOn := "ValvesOutputDb".Cv64;
+	
+	"MV3000LineAnimationDb"."Node 12".V01.AutoOn := "ValvesOutputDb".Cv31;
+	"MV3000LineAnimationDb"."Node 12".V02.AutoOn := "ValvesOutputDb".Cv41;
+	
+	"MV3000LineAnimationDb"."Node 13".V01.AutoOn := "ValvesOutputDb".Fbov01;
+	"MV3000LineAnimationDb"."Node 13".V02.AutoOn := "ValvesOutputDb".Cv30;
+	"MV3000LineAnimationDb"."Node 13".V03.AutoOn := "ValvesOutputDb".Cv31;
+	"MV3000LineAnimationDb"."Node 13".V04.AutoOn := "ValvesOutputDb".Cv32;
+	"MV3000LineAnimationDb"."Node 13".V05.AutoOn := "ValvesOutputDb".Cv33;
+	
+	"MV3000LineAnimationDb"."Node 14".V01.AutoOn := "ValvesOutputDb".Cv27;
+	"MV3000LineAnimationDb"."Node 14".V02.AutoOn := "ValvesOutputDb".Cv28;
+	"MV3000LineAnimationDb"."Node 14".V03.AutoOn := "ValvesOutputDb".Cv29;
+	
+	"MV3000LineAnimationDb"."Node 15".V01.AutoOn := "ValvesOutputDb".Cv30;
+	"MV3000LineAnimationDb"."Node 15".V02.AutoOn := "ValvesOutputDb".Cv33;
+	"MV3000LineAnimationDb"."Node 15".V03.AutoOn := "ValvesOutputDb".Cv34;
+	"MV3000LineAnimationDb"."Node 15".V04.AutoOn := "ValvesOutputDb".Cv35;
+	
+	"MV3000LineAnimationDb"."Node 16".V01.AutoOn := "ValvesOutputDb".Cv32;
+	"MV3000LineAnimationDb"."Node 16".V02.AutoOn := "ValvesOutputDb".Cv36;
+	"MV3000LineAnimationDb"."Node 16".V03.AutoOn := "ValvesOutputDb".Cv39;
+	"MV3000LineAnimationDb"."Node 16".V04.AutoOn := "ValvesOutputDb".Cv40;
+	
+	"MV3000LineAnimationDb"."Node 17".V01.AutoOn := "ValvesOutputDb".Cv40;
+	"MV3000LineAnimationDb"."Node 17".V02.AutoOn := "ValvesOutputDb".Cv41;
+	"MV3000LineAnimationDb"."Node 17".V03.AutoOn := "ValvesOutputDb".Cv42;
+	"MV3000LineAnimationDb"."Node 17".V04.AutoOn := "ValvesOutputDb".Cv43;
+	"MV3000LineAnimationDb"."Node 17".V05.AutoOn := "ValvesOutputDb".Cv44;
+	
+	"MV3000LineAnimationDb"."Node 18".V01.AutoOn := "ValvesOutputDb".Cv43;
+	"MV3000LineAnimationDb"."Node 18".V02.AutoOn := "ValvesOutputDb".Cv47;
+	"MV3000LineAnimationDb"."Node 18".V03.AutoOn := "ValvesOutputDb".Cv48;
+	"MV3000LineAnimationDb"."Node 18".V04.AutoOn := "ValvesOutputDb".Cv49;
+	"MV3000LineAnimationDb"."Node 18".V05.AutoOn := "ValvesOutputDb".Cv50;
+	
+	
+	"MV3000LineAnimationDb"."Node 19".V01.AutoOn := "ValvesOutputDb".Cv49;
+	"MV3000LineAnimationDb"."Node 19".V02.AutoOn := "ValvesOutputDb".Cv53;
+	"MV3000LineAnimationDb"."Node 19".V03.AutoOn := "ValvesOutputDb".Cv54;
+	"MV3000LineAnimationDb"."Node 19".V04.AutoOn := "ValvesOutputDb".Cv55;
+	"MV3000LineAnimationDb"."Node 19".V05.AutoOn := "ValvesOutputDb".Cv56;
+	
+	"MV3000LineAnimationDb"."Node 20".V01.AutoOn := "ValvesOutputDb".Cv55;
+	"MV3000LineAnimationDb"."Node 20".V02.AutoOn := "ValvesOutputDb".Cv61;
+	"MV3000LineAnimationDb"."Node 20".V03.AutoOn := "ValvesOutputDb".Cv62;
+	
+	
+	"MV3000LineAnimationDb"."Node 21".V01.AutoOn := "ValvesOutputDb".Cv59;
+	"MV3000LineAnimationDb"."Node 21".V02.AutoOn := "ValvesOutputDb".Cv60;
+	"MV3000LineAnimationDb"."Node 21".V03.AutoOn := "ValvesOutputDb".Cv61;
+	
+	"MV3000LineAnimationDb"."Node 22".V01.AutoOn := "ValvesOutputDb".Cv56;
+	"MV3000LineAnimationDb"."Node 22".V02.AutoOn := "ValvesOutputDb".Cv58;
+	"MV3000LineAnimationDb"."Node 22".V03.AutoOn := "ValvesOutputDb".Cv57;
+	
+	"MV3000LineAnimationDb"."Node 23".V01.AutoOn := "ValvesOutputDb".Cv50;
+	"MV3000LineAnimationDb"."Node 23".V02.AutoOn := "ValvesOutputDb".Cv51;
+	"MV3000LineAnimationDb"."Node 23".V03.AutoOn := "ValvesOutputDb".Cv52;
+	"MV3000LineAnimationDb"."Node 23".V04.AutoOn := "ValvesOutputDb".Cv53;
+	
+	
+	"MV3000LineAnimationDb"."Node 24".V01.AutoOn := "ValvesOutputDb".Cv44;
+	"MV3000LineAnimationDb"."Node 24".V02.AutoOn := "ValvesOutputDb".Cv45;
+	"MV3000LineAnimationDb"."Node 24".V03.AutoOn := "ValvesOutputDb".Cv46;
+	"MV3000LineAnimationDb"."Node 24".V04.AutoOn := "ValvesOutputDb".Cv47;
+	
+	"MV3000LineAnimationDb"."Node 25".V01.AutoOn := "ValvesOutputDb".Cv36;
+	"MV3000LineAnimationDb"."Node 25".V02.AutoOn := "ValvesOutputDb".Cv37;
+	"MV3000LineAnimationDb"."Node 25".V03.AutoOn := "ValvesOutputDb".Cv38;
+	
+	
+	"MV3000LineAnimationDb"."Node 26".V01.AutoOn := "ValvesOutputDb".Cv30;
+	"MV3000LineAnimationDb"."Node 26".V02.AutoOn := "ValvesOutputDb".Cv33;
+	"MV3000LineAnimationDb"."Node 26".V03.AutoOn := "ValvesOutputDb".Cv34;
+	"MV3000LineAnimationDb"."Node 26".V04.AutoOn := "ValvesOutputDb".Cv35;
+	
+	"MV3000LineAnimationDb"."Node 27".V01.AutoOn := "ValvesOutputDb".Cv28;
+	"MV3000LineAnimationDb"."Node 27".V02.AutoOn := "ValvesOutputDb".Cv34;
+	"MV3000LineAnimationDb"."Node 27".V03.AutoOn := "ValvesOutputDb".Cv37;
+	"MV3000LineAnimationDb"."Node 27".V04.AutoOn := "ValvesOutputDb".Cv45;
+	"MV3000LineAnimationDb"."Node 27".V05.AutoOn := "ValvesOutputDb".Cv51;
+	"MV3000LineAnimationDb"."Node 27".V06.AutoOn := "ValvesOutputDb".Cv57;
+	"MV3000LineAnimationDb"."Node 27".V07.AutoOn := "ValvesOutputDb".Cv60;
+	
+	"MV3000LineAnimationDb"."Node 28".V01.AutoOn := "ValvesOutputDb".Cv22;
+	"MV3000LineAnimationDb"."Node 28".V02.AutoOn := "ValvesOutputDb".Cv19;
+	"MV3000LineAnimationDb"."Node 28".V03.AutoOn := "ValvesOutputDb".Cv25;
+	"MV3000LineAnimationDb"."Node 28".V04.AutoOn := "ValvesOutputDb".Cv20;
+	"MV3000LineAnimationDb"."Node 28".V05.AutoOn := "ValvesOutputDb".Cv29;
+	"MV3000LineAnimationDb"."Node 28".V06.AutoOn := "ValvesOutputDb".Cv35;
+	"MV3000LineAnimationDb"."Node 28".V07.AutoOn := "ValvesOutputDb".Cv38;
+	"MV3000LineAnimationDb"."Node 28".V08.AutoOn := "ValvesOutputDb".Cv46;
+	"MV3000LineAnimationDb"."Node 28".V09.AutoOn := "ValvesOutputDb".Cv52;
+	"MV3000LineAnimationDb"."Node 28".V10.AutoOn := "ValvesOutputDb".Cv58;
+	"MV3000LineAnimationDb"."Node 28".V11.AutoOn := "ValvesOutputDb".Cv59;
+	
+	"MV3000LineAnimationDb"."Node 29".V01.AutoOn := "ValvesOutputDb".Cv04;
+	"MV3000LineAnimationDb"."Node 29".V02.AutoOn := "ValvesOutputDb".Cv01;
+	
+	"MV3000LineAnimationDb"."Node 30".V01.AutoOn := "ValvesOutputDb".Cv06;
+	"MV3000LineAnimationDb"."Node 30".V02.AutoOn := "ValvesOutputDb".Cv09;
+	
+	"MV3000LineAnimationDb"."Node31".V01.AutoOn :="ValvesOutputDb".Cv06;
+	"MV3000LineAnimationDb"."Node31".V02.AutoOn := "ValvesOutputDb".Cv09;
+	"MV3000LineAnimationDb"."Node31".V03.AutoOn := "ValvesOutputDb".Cv08;
+	
+	"MV3000LineAnimationDb".Node32.V01.AutoOn := "ValvesOutputDb".Cv05;
+	"MV3000LineAnimationDb".Node32.V02.AutoOn := "ValvesOutputDb".Cv24;
+	
+	"MV3000LineAnimationDb".Node33.V01.AutoOn := "ValvesOutputDb".Fbov01;
+	"MV3000LineAnimationDb".Node33.V02.AutoOn := "ValvesOutputDb".Cv26;
+	
+	
+	"MV3000LineAnimationDb".Node34.V01.AutoOn := "ValvesOutputDb".Cv42;
+	"MV3000LineAnimationDb".Node34.V02.AutoOn := "ValvesOutputDb".Cv54;
+	"MV3000LineAnimationDb".Node34.V03.AutoOn := "ValvesOutputDb".Cv48;
+	
+	
+	
+	
+	
+	//////////////////////////////////////////  MANUAL OPEN /////////////////////////////////////////////
+	
+	//ManualOpen
+	
+	"MV3000LineAnimationDb"."Node 1".V01.ManualOpen := "DO_FaceplateDb".Cv01.ValveOpen;
+	"MV3000LineAnimationDb"."Node 1".V02.ManualOpen := "DO_FaceplateDb".Cv02.ValveOpen;
+	"MV3000LineAnimationDb"."Node 1".V03.ManualOpen := "DO_FaceplateDb".Cv10.ValveOpen;
+	
+	
+	"MV3000LineAnimationDb"."Node 2".V01.ManualOpen := "DO_FaceplateDb".Cv03.ValveOpen;
+	"MV3000LineAnimationDb"."Node 2".V02.ManualOpen := "DO_FaceplateDb".Cv04.ValveOpen;
+	"MV3000LineAnimationDb"."Node 2".V03.ManualOpen := "DO_FaceplateDb".Cv05.ValveOpen;
+	"MV3000LineAnimationDb"."Node 2".V04.ManualOpen := "DO_FaceplateDb".Cv06.ValveOpen;
+	
+	
+	"MV3000LineAnimationDb"."Node 3".V01.ManualOpen := "DO_FaceplateDb".Cv07.ValveOpen;
+	"MV3000LineAnimationDb"."Node 3".V02.ManualOpen := "DO_FaceplateDb".Cv08.ValveOpen;
+	"MV3000LineAnimationDb"."Node 3".V03.ManualOpen := "DO_FaceplateDb".Cv09.ValveOpen;
+	
+	
+	"MV3000LineAnimationDb"."Node 4".V01.ManualOpen := "DO_FaceplateDb".Cv16.ValveOpen;
+	"MV3000LineAnimationDb"."Node 4".V02.ManualOpen := "DO_FaceplateDb".Cv17.ValveOpen;
+	"MV3000LineAnimationDb"."Node 4".V03.ManualOpen := "DO_FaceplateDb".Cv22.ValveOpen;
+	"MV3000LineAnimationDb"."Node 4".V04.ManualOpen := "DO_FaceplateDb".Cv23.ValveOpen;
+	"MV3000LineAnimationDb"."Node 4".V05.ManualOpen := "DO_FaceplateDb".Cv24.ValveOpen;
+	"MV3000LineAnimationDb"."Node 4".V06.ManualOpen := "DO_FaceplateDb".Cv25.ValveOpen;
+	
+	
+	"MV3000LineAnimationDb"."Node 5".V01.ManualOpen := "DO_FaceplateDb".Cv22.ValveOpen;
+	"MV3000LineAnimationDb"."Node 5".V02.ManualOpen := "DO_FaceplateDb".Cv25.ValveOpen;
+	
+	
+	"MV3000LineAnimationDb"."Node 6".V01.ManualOpen := "DO_FaceplateDb".Cv18.ValveOpen;
+	"MV3000LineAnimationDb"."Node 6".V02.ManualOpen := "DO_FaceplateDb".Cv19.ValveOpen;
+	"MV3000LineAnimationDb"."Node 6".V03.ManualOpen := "DO_FaceplateDb".Cv20.ValveOpen;
+	"MV3000LineAnimationDb"."Node 6".V04.ManualOpen := "DO_FaceplateDb".Cv21.ValveOpen;
+	
+	"MV3000LineAnimationDb"."Node 7".V01.ManualOpen := "DO_FaceplateDb".Cv19.ValveOpen;
+	"MV3000LineAnimationDb"."Node 7".V02.ManualOpen := "DO_FaceplateDb".Cv20.ValveOpen;
+	
+	"MV3000LineAnimationDb"."Node 8".V01.ManualOpen := "DO_FaceplateDb".Cv16.ValveOpen;
+	"MV3000LineAnimationDb"."Node 8".V02.ManualOpen := "DO_FaceplateDb".Cv15.ValveOpen;
+	"MV3000LineAnimationDb"."Node 8".V03.ManualOpen := "DO_FaceplateDb".Cv63.ValveOpen;
+	
+	"MV3000LineAnimationDb"."Node 9".V01.ManualOpen := "DO_FaceplateDb".Cv10.ValveOpen;
+	"MV3000LineAnimationDb"."Node 9".V02.ManualOpen := "DO_FaceplateDb".Cv11.ValveOpen;
+	"MV3000LineAnimationDb"."Node 9".V03.ManualOpen := "DO_FaceplateDb".Cv12.ValveOpen;
+	"MV3000LineAnimationDb"."Node 9".V04.ManualOpen := "DO_FaceplateDb".Cv13.ValveOpen;
+	"MV3000LineAnimationDb"."Node 9".V05.ManualOpen := "DO_FaceplateDb".Cv14.ValveOpen;
+	"MV3000LineAnimationDb"."Node 9".V06.ManualOpen := "DO_FaceplateDb".Cv15.ValveOpen;
+	
+	"MV3000LineAnimationDb"."Node 10".V01.ManualOpen := "DO_FaceplateDb".Cv11.ValveOpen;
+	"MV3000LineAnimationDb"."Node 10".V02.ManualOpen := "DO_FaceplateDb".Cv39.ValveOpen;
+	
+	"MV3000LineAnimationDb"."Node 11".V01.ManualOpen := "DO_FaceplateDb".Cv12.ValveOpen;
+	"MV3000LineAnimationDb"."Node 11".V02.ManualOpen := "DO_FaceplateDb".Cv26.ValveOpen;
+	"MV3000LineAnimationDb"."Node 11".V03.ManualOpen := "DO_FaceplateDb".Cv64.ValveOpen;
+	
+	"MV3000LineAnimationDb"."Node 12".V01.ManualOpen := "DO_FaceplateDb".Cv31.ValveOpen;
+	"MV3000LineAnimationDb"."Node 12".V02.ManualOpen := "DO_FaceplateDb".Cv41.ValveOpen;
+	
+	"MV3000LineAnimationDb"."Node 13".V01.ManualOpen := "DO_FaceplateDb".Fbov01.ValveOpen;
+	"MV3000LineAnimationDb"."Node 13".V02.ManualOpen := "DO_FaceplateDb".Cv30.ValveOpen;
+	"MV3000LineAnimationDb"."Node 13".V03.ManualOpen := "DO_FaceplateDb".Cv31.ValveOpen;
+	"MV3000LineAnimationDb"."Node 13".V04.ManualOpen := "DO_FaceplateDb".Cv32.ValveOpen;
+	"MV3000LineAnimationDb"."Node 13".V05.ManualOpen := "DO_FaceplateDb".Cv33.ValveOpen;
+	
+	"MV3000LineAnimationDb"."Node 14".V01.ManualOpen := "DO_FaceplateDb".Cv27.ValveOpen;
+	"MV3000LineAnimationDb"."Node 14".V02.ManualOpen := "DO_FaceplateDb".Cv28.ValveOpen;
+	"MV3000LineAnimationDb"."Node 14".V03.ManualOpen := "DO_FaceplateDb".Cv29.ValveOpen;
+	
+	"MV3000LineAnimationDb"."Node 15".V01.ManualOpen := "DO_FaceplateDb".Cv30.ValveOpen;
+	"MV3000LineAnimationDb"."Node 15".V02.ManualOpen := "DO_FaceplateDb".Cv33.ValveOpen;
+	"MV3000LineAnimationDb"."Node 15".V03.ManualOpen := "DO_FaceplateDb".Cv34.ValveOpen;
+	"MV3000LineAnimationDb"."Node 15".V04.ManualOpen := "DO_FaceplateDb".Cv35.ValveOpen;
+	
+	"MV3000LineAnimationDb"."Node 16".V01.ManualOpen := "DO_FaceplateDb".Cv32.ValveOpen;
+	"MV3000LineAnimationDb"."Node 16".V02.ManualOpen := "DO_FaceplateDb".Cv36.ValveOpen;
+	"MV3000LineAnimationDb"."Node 16".V03.ManualOpen := "DO_FaceplateDb".Cv39.ValveOpen;
+	"MV3000LineAnimationDb"."Node 16".V04.ManualOpen := "DO_FaceplateDb".Cv40.ValveOpen;
+	
+	"MV3000LineAnimationDb"."Node 17".V01.ManualOpen := "DO_FaceplateDb".Cv40.ValveOpen;
+	"MV3000LineAnimationDb"."Node 17".V02.ManualOpen := "DO_FaceplateDb".Cv41.ValveOpen;
+	"MV3000LineAnimationDb"."Node 17".V03.ManualOpen := "DO_FaceplateDb".Cv42.ValveOpen;
+	"MV3000LineAnimationDb"."Node 17".V04.ManualOpen := "DO_FaceplateDb".Cv43.ValveOpen;
+	"MV3000LineAnimationDb"."Node 17".V05.ManualOpen := "DO_FaceplateDb".Cv44.ValveOpen;
+	
+	"MV3000LineAnimationDb"."Node 18".V01.ManualOpen := "DO_FaceplateDb".Cv43.ValveOpen;
+	"MV3000LineAnimationDb"."Node 18".V02.ManualOpen := "DO_FaceplateDb".Cv47.ValveOpen;
+	"MV3000LineAnimationDb"."Node 18".V03.ManualOpen := "DO_FaceplateDb".Cv48.ValveOpen;
+	"MV3000LineAnimationDb"."Node 18".V04.ManualOpen := "DO_FaceplateDb".Cv49.ValveOpen;
+	"MV3000LineAnimationDb"."Node 18".V05.ManualOpen := "DO_FaceplateDb".Cv50.ValveOpen;
+	
+	
+	"MV3000LineAnimationDb"."Node 19".V01.ManualOpen := "DO_FaceplateDb".Cv49.ValveOpen;
+	"MV3000LineAnimationDb"."Node 19".V02.ManualOpen := "DO_FaceplateDb".Cv53.ValveOpen;
+	"MV3000LineAnimationDb"."Node 19".V03.ManualOpen := "DO_FaceplateDb".Cv54.ValveOpen;
+	"MV3000LineAnimationDb"."Node 19".V04.ManualOpen := "DO_FaceplateDb".Cv55.ValveOpen;
+	"MV3000LineAnimationDb"."Node 19".V05.ManualOpen := "DO_FaceplateDb".Cv56.ValveOpen;
+	
+	"MV3000LineAnimationDb"."Node 20".V01.ManualOpen := "DO_FaceplateDb".Cv55.ValveOpen;
+	"MV3000LineAnimationDb"."Node 20".V02.ManualOpen := "DO_FaceplateDb".Cv61.ValveOpen;
+	"MV3000LineAnimationDb"."Node 20".V03.ManualOpen := "DO_FaceplateDb".Cv62.ValveOpen;
+	
+	
+	"MV3000LineAnimationDb"."Node 21".V01.ManualOpen := "DO_FaceplateDb".Cv59.ValveOpen;
+	"MV3000LineAnimationDb"."Node 21".V02.ManualOpen := "DO_FaceplateDb".Cv60.ValveOpen;
+	"MV3000LineAnimationDb"."Node 21".V03.ManualOpen := "DO_FaceplateDb".Cv61.ValveOpen;
+	
+	"MV3000LineAnimationDb"."Node 22".V01.ManualOpen := "DO_FaceplateDb".Cv56.ValveOpen;
+	"MV3000LineAnimationDb"."Node 22".V02.ManualOpen := "DO_FaceplateDb".Cv58.ValveOpen;
+	"MV3000LineAnimationDb"."Node 22".V03.ManualOpen := "DO_FaceplateDb".Cv57.ValveOpen;
+	
+	"MV3000LineAnimationDb"."Node 23".V01.ManualOpen := "DO_FaceplateDb".Cv50.ValveOpen;
+	"MV3000LineAnimationDb"."Node 23".V02.ManualOpen := "DO_FaceplateDb".Cv51.ValveOpen;
+	"MV3000LineAnimationDb"."Node 23".V03.ManualOpen := "DO_FaceplateDb".Cv52.ValveOpen;
+	"MV3000LineAnimationDb"."Node 23".V04.ManualOpen := "DO_FaceplateDb".Cv53.ValveOpen;
+	
+	
+	"MV3000LineAnimationDb"."Node 24".V01.ManualOpen := "DO_FaceplateDb".Cv44.ValveOpen;
+	"MV3000LineAnimationDb"."Node 24".V02.ManualOpen := "DO_FaceplateDb".Cv45.ValveOpen;
+	"MV3000LineAnimationDb"."Node 24".V03.ManualOpen := "DO_FaceplateDb".Cv46.ValveOpen;
+	"MV3000LineAnimationDb"."Node 24".V04.ManualOpen := "DO_FaceplateDb".Cv47.ValveOpen;
+	
+	"MV3000LineAnimationDb"."Node 25".V01.ManualOpen := "DO_FaceplateDb".Cv36.ValveOpen;
+	"MV3000LineAnimationDb"."Node 25".V02.ManualOpen := "DO_FaceplateDb".Cv37.ValveOpen;
+	"MV3000LineAnimationDb"."Node 25".V03.ManualOpen := "DO_FaceplateDb".Cv38.ValveOpen;
+	
+	
+	"MV3000LineAnimationDb"."Node 26".V01.ManualOpen := "DO_FaceplateDb".Cv30.ValveOpen;
+	"MV3000LineAnimationDb"."Node 26".V02.ManualOpen := "DO_FaceplateDb".Cv33.ValveOpen;
+	"MV3000LineAnimationDb"."Node 26".V03.ManualOpen := "DO_FaceplateDb".Cv34.ValveOpen;
+	"MV3000LineAnimationDb"."Node 26".V04.ManualOpen := "DO_FaceplateDb".Cv35.ValveOpen;
+	
+	"MV3000LineAnimationDb"."Node 27".V01.ManualOpen := "DO_FaceplateDb".Cv28.ValveOpen;
+	"MV3000LineAnimationDb"."Node 27".V02.ManualOpen := "DO_FaceplateDb".Cv34.ValveOpen;
+	"MV3000LineAnimationDb"."Node 27".V03.ManualOpen := "DO_FaceplateDb".Cv37.ValveOpen;
+	"MV3000LineAnimationDb"."Node 27".V04.ManualOpen := "DO_FaceplateDb".Cv45.ValveOpen;
+	"MV3000LineAnimationDb"."Node 27".V05.ManualOpen := "DO_FaceplateDb".Cv51.ValveOpen;
+	"MV3000LineAnimationDb"."Node 27".V06.ManualOpen := "DO_FaceplateDb".Cv57.ValveOpen;
+	"MV3000LineAnimationDb"."Node 27".V07.ManualOpen := "DO_FaceplateDb".Cv60.ValveOpen;
+	
+	"MV3000LineAnimationDb"."Node 28".V01.ManualOpen := "DO_FaceplateDb".Cv22.ValveOpen;
+	"MV3000LineAnimationDb"."Node 28".V02.ManualOpen := "DO_FaceplateDb".Cv19.ValveOpen;
+	"MV3000LineAnimationDb"."Node 28".V03.ManualOpen := "DO_FaceplateDb".Cv25.ValveOpen;
+	"MV3000LineAnimationDb"."Node 28".V04.ManualOpen := "DO_FaceplateDb".Cv20.ValveOpen;
+	"MV3000LineAnimationDb"."Node 28".V05.ManualOpen := "DO_FaceplateDb".Cv29.ValveOpen;
+	"MV3000LineAnimationDb"."Node 28".V06.ManualOpen := "DO_FaceplateDb".Cv35.ValveOpen;
+	"MV3000LineAnimationDb"."Node 28".V07.ManualOpen := "DO_FaceplateDb".Cv38.ValveOpen;
+	"MV3000LineAnimationDb"."Node 28".V08.ManualOpen := "DO_FaceplateDb".Cv46.ValveOpen;
+	"MV3000LineAnimationDb"."Node 28".V09.ManualOpen := "DO_FaceplateDb".Cv52.ValveOpen;
+	"MV3000LineAnimationDb"."Node 28".V10.ManualOpen := "DO_FaceplateDb".Cv58.ValveOpen;
+	"MV3000LineAnimationDb"."Node 28".V11.ManualOpen := "DO_FaceplateDb".Cv59.ValveOpen;
+	
+	"MV3000LineAnimationDb"."Node 29".V01.ManualOpen := "DO_FaceplateDb".Cv04.ValveOpen;
+	"MV3000LineAnimationDb"."Node 29".V02.ManualOpen := "DO_FaceplateDb".Cv01.ValveOpen;
+	
+	"MV3000LineAnimationDb"."Node 30".V01.ManualOpen := "DO_FaceplateDb".Cv06.ValveOpen;
+	"MV3000LineAnimationDb"."Node 30".V02.ManualOpen := "DO_FaceplateDb".Cv09.ValveOpen;
+	
+	"MV3000LineAnimationDb"."Node31".V01.ManualOpen := "DO_FaceplateDb".Cv06.ValveOpen;
+	"MV3000LineAnimationDb"."Node31".V02.ManualOpen := "DO_FaceplateDb".Cv09.ValveOpen;
+	"MV3000LineAnimationDb"."Node31".V03.ManualOpen := "DO_FaceplateDb".Cv08.ValveOpen;
+	
+	
+	"MV3000LineAnimationDb".Node32.V01.ManualOpen := "DO_FaceplateDb".Cv05.ValveOpen;
+	"MV3000LineAnimationDb".Node32.V02.ManualOpen := "DO_FaceplateDb".Cv24.ValveOpen;
+	
+	"MV3000LineAnimationDb".Node33.V01.ManualOpen := "DO_FaceplateDb".Fbov01.ValveOpen;
+	"MV3000LineAnimationDb".Node33.V02.ManualOpen := "DO_FaceplateDb".Cv26.ValveOpen;
+	
+	"MV3000LineAnimationDb".Node34.V01.ManualOpen := "DO_FaceplateDb".Cv42.ValveOpen;
+	"MV3000LineAnimationDb".Node34.V02.ManualOpen := "DO_FaceplateDb".Cv54.ValveOpen;
+	"MV3000LineAnimationDb".Node34.V03.ManualOpen := "DO_FaceplateDb".Cv48.ValveOpen;
+	
+	
+	
+END_FUNCTION
+

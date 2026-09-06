@@ -1,0 +1,2356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V21" />
+  <SW.Blocks.FC ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="Input" />
+          <Section Name="Output" />
+          <Section Name="InOut" />
+          <Section Name="Temp" />
+          <Section Name="Constant" />
+          <Section Name="Return">
+            <Member Name="Ret_Val" Datatype="Void" />
+          </Section>
+        </Sections>
+      </Interface>
+      <MemoryLayout>Standard</MemoryLayout>
+      <Name>DoFc</Name>
+      <Namespace />
+      <Number>109</Number>
+      <ProgrammingLanguage>LAD</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="3" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="5" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="6" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="8" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="Sec_Pulse" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="HmiTags" />
+                    <Component Name="AlarmAck" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="AlwaysFALSE" />
+                  </Symbol>
+                </Access>
+                <Call UId="25">
+                  <CallInfo Name="DoFb" BlockType="FB">
+                    <Instance Scope="GlobalVariable" UId="26">
+                      <Component Name="DoDb" />
+                    </Instance>
+                    <Parameter Name="sec" Section="Input" Type="Bool" />
+                    <Parameter Name="AlarmAck" Section="Input" Type="Bool" />
+                    <Parameter Name="AlwaysTrue" Section="Input" Type="Bool" />
+                    <Parameter Name="AlwaysFalse" Section="Input" Type="Bool" />
+                    <Parameter Name="Interlock" Section="Input" Type="Bool" />
+                  </CallInfo>
+                </Call>
+              </Parts>
+              <Wires>
+                <Wire UId="28">
+                  <Powerrail />
+                  <NameCon UId="25" Name="en" />
+                </Wire>
+                <Wire UId="29">
+                  <IdentCon UId="21" />
+                  <NameCon UId="25" Name="sec" />
+                </Wire>
+                <Wire UId="30">
+                  <IdentCon UId="22" />
+                  <NameCon UId="25" Name="AlarmAck" />
+                </Wire>
+                <Wire UId="31">
+                  <IdentCon UId="23" />
+                  <NameCon UId="25" Name="AlwaysTrue" />
+                </Wire>
+                <Wire UId="32">
+                  <IdentCon UId="24" />
+                  <NameCon UId="25" Name="AlwaysFalse" />
+                </Wire>
+                <Wire UId="33">
+                  <OpenCon UId="27" />
+                  <NameCon UId="25" Name="Interlock" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="9" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="B" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>"DoDb"</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="D" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v4">
+              <Access Scope="GlobalVariable" UId="21">
+                <Symbol UId="22">
+                  <Component Name="Mm01Cmd" UId="23">
+                    <BooleanAttribute Name="HasQuotes" UId="24">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=":=" UId="25" />
+              <Blank UId="26" />
+              <Access Scope="GlobalVariable" UId="27">
+                <Symbol UId="28">
+                  <Component Name="DoDb" UId="29">
+                    <BooleanAttribute Name="HasQuotes" UId="30">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="31" />
+                  <Component Name="Do01" UId="32" />
+                  <Token Text="." UId="33" />
+                  <Component Name="Output" UId="34">
+                    <BooleanAttribute Name="HasQuotes" UId="35">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="36" />
+              <NewLine UId="37" />
+              <Access Scope="GlobalVariable" UId="38">
+                <Symbol UId="39">
+                  <Component Name="Cp01Cmd" UId="40">
+                    <BooleanAttribute Name="HasQuotes" UId="41">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Blank UId="42" />
+              <Token Text=":=" UId="43" />
+              <Blank UId="44" />
+              <Access Scope="GlobalVariable" UId="45">
+                <Symbol UId="46">
+                  <Component Name="DoDb" UId="47">
+                    <BooleanAttribute Name="HasQuotes" UId="48">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="49" />
+                  <Component Name="Do02" UId="50" />
+                  <Token Text="." UId="51" />
+                  <Component Name="Output" UId="52">
+                    <BooleanAttribute Name="HasQuotes" UId="53">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="54" />
+              <NewLine UId="55" />
+              <Access Scope="GlobalVariable" UId="56">
+                <Symbol UId="57">
+                  <Component Name="Htr" UId="58">
+                    <BooleanAttribute Name="HasQuotes" UId="59">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Blank UId="60" />
+              <Token Text=":=" UId="61" />
+              <Blank UId="62" />
+              <Access Scope="GlobalVariable" UId="63">
+                <Symbol UId="64">
+                  <Component Name="DoDb" UId="65">
+                    <BooleanAttribute Name="HasQuotes" UId="66">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="67" />
+                  <Component Name="Do03" UId="68" />
+                  <Token Text="." UId="69" />
+                  <Component Name="Output" UId="70">
+                    <BooleanAttribute Name="HasQuotes" UId="71">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Blank UId="72" />
+              <Token Text="OR" UId="73" />
+              <Blank UId="74" />
+              <Access Scope="GlobalVariable" UId="75">
+                <Symbol UId="76">
+                  <Component Name="DoDb" UId="77">
+                    <BooleanAttribute Name="HasQuotes" UId="78">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="79" />
+                  <Component Name="Do03" UId="80" />
+                  <Token Text="." UId="81" />
+                  <Component Name="Cmd" UId="82" />
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="83" />
+              <NewLine UId="84" />
+              <Access Scope="GlobalVariable" UId="85">
+                <Symbol UId="86">
+                  <Component Name="Lf01" UId="87">
+                    <BooleanAttribute Name="HasQuotes" UId="88">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Blank UId="89" />
+              <Token Text=":=" UId="90" />
+              <Blank UId="91" />
+              <Access Scope="GlobalVariable" UId="92">
+                <Symbol UId="93">
+                  <Component Name="DoDb" UId="94">
+                    <BooleanAttribute Name="HasQuotes" UId="95">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="96" />
+                  <Component Name="Do04" UId="97" />
+                  <Token Text="." UId="98" />
+                  <Component Name="Output" UId="99">
+                    <BooleanAttribute Name="HasQuotes" UId="100">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Blank UId="101" />
+              <Token Text="OR" UId="102" />
+              <Blank UId="103" />
+              <Access Scope="GlobalVariable" UId="104">
+                <Symbol UId="105">
+                  <Component Name="DoDb" UId="106">
+                    <BooleanAttribute Name="HasQuotes" UId="107">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="108" />
+                  <Component Name="Do04" UId="109" />
+                  <Token Text="." UId="110" />
+                  <Component Name="Cmd" UId="111" />
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="112" />
+              <NewLine UId="113" />
+              <Access Scope="GlobalVariable" UId="114">
+                <Symbol UId="115">
+                  <Component Name="DoSpare1" UId="116">
+                    <BooleanAttribute Name="HasQuotes" UId="117">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Blank UId="118" />
+              <Token Text=":=" UId="119" />
+              <Blank UId="120" />
+              <Access Scope="GlobalVariable" UId="121">
+                <Symbol UId="122">
+                  <Component Name="DoDb" UId="123">
+                    <BooleanAttribute Name="HasQuotes" UId="124">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="125" />
+                  <Component Name="Do05" UId="126" />
+                  <Token Text="." UId="127" />
+                  <Component Name="Output" UId="128">
+                    <BooleanAttribute Name="HasQuotes" UId="129">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="130" />
+              <NewLine UId="131" />
+              <Access Scope="GlobalVariable" UId="132">
+                <Symbol UId="133">
+                  <Component Name="DoSpare2" UId="134">
+                    <BooleanAttribute Name="HasQuotes" UId="135">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Blank UId="136" />
+              <Token Text=":=" UId="137" />
+              <Blank UId="138" />
+              <Access Scope="GlobalVariable" UId="139">
+                <Symbol UId="140">
+                  <Component Name="DoDb" UId="141">
+                    <BooleanAttribute Name="HasQuotes" UId="142">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="143" />
+                  <Component Name="Do06" UId="144" />
+                  <Token Text="." UId="145" />
+                  <Component Name="Output" UId="146">
+                    <BooleanAttribute Name="HasQuotes" UId="147">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="148" />
+              <NewLine UId="149" />
+              <Access Scope="GlobalVariable" UId="150">
+                <Symbol UId="151">
+                  <Component Name="DoSpare3" UId="152">
+                    <BooleanAttribute Name="HasQuotes" UId="153">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Blank UId="154" />
+              <Token Text=":=" UId="155" />
+              <Blank UId="156" />
+              <Access Scope="GlobalVariable" UId="157">
+                <Symbol UId="158">
+                  <Component Name="DoDb" UId="159">
+                    <BooleanAttribute Name="HasQuotes" UId="160">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="161" />
+                  <Component Name="Do07" UId="162" />
+                  <Token Text="." UId="163" />
+                  <Component Name="Output" UId="164">
+                    <BooleanAttribute Name="HasQuotes" UId="165">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="166" />
+              <NewLine UId="167" />
+              <Access Scope="GlobalVariable" UId="168">
+                <Symbol UId="169">
+                  <Component Name="DoSpare4" UId="170">
+                    <BooleanAttribute Name="HasQuotes" UId="171">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Blank UId="172" />
+              <Token Text=":=" UId="173" />
+              <Blank UId="174" />
+              <Access Scope="GlobalVariable" UId="175">
+                <Symbol UId="176">
+                  <Component Name="DoDb" UId="177">
+                    <BooleanAttribute Name="HasQuotes" UId="178">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="179" />
+                  <Component Name="Do08" UId="180" />
+                  <Token Text="." UId="181" />
+                  <Component Name="Output" UId="182">
+                    <BooleanAttribute Name="HasQuotes" UId="183">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="184" />
+              <NewLine UId="185" />
+              <Access Scope="GlobalVariable" UId="186">
+                <Symbol UId="187">
+                  <Component Name="DoSpare5" UId="188">
+                    <BooleanAttribute Name="HasQuotes" UId="189">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Blank UId="190" />
+              <Token Text=":=" UId="191" />
+              <Blank UId="192" />
+              <Access Scope="GlobalVariable" UId="193">
+                <Symbol UId="194">
+                  <Component Name="DoDb" UId="195">
+                    <BooleanAttribute Name="HasQuotes" UId="196">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="197" />
+                  <Component Name="Do09" UId="198" />
+                  <Token Text="." UId="199" />
+                  <Component Name="Output" UId="200">
+                    <BooleanAttribute Name="HasQuotes" UId="201">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="202" />
+              <NewLine UId="203" />
+              <Access Scope="GlobalVariable" UId="204">
+                <Symbol UId="205">
+                  <Component Name="DoSpare6" UId="206">
+                    <BooleanAttribute Name="HasQuotes" UId="207">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Blank UId="208" />
+              <Token Text=":=" UId="209" />
+              <Blank UId="210" />
+              <Access Scope="GlobalVariable" UId="211">
+                <Symbol UId="212">
+                  <Component Name="DoDb" UId="213">
+                    <BooleanAttribute Name="HasQuotes" UId="214">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="215" />
+                  <Component Name="Do10" UId="216" />
+                  <Token Text="." UId="217" />
+                  <Component Name="Output" UId="218">
+                    <BooleanAttribute Name="HasQuotes" UId="219">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="220" />
+              <NewLine Num="5" UId="221" />
+            </StructuredText>
+          </NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="E" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="10" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="11" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Digital Output</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="12" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v4">
+              <LineComment UId="21">
+                <Text UId="22">"DoDb".Do01.ManualModeSelected := "ModeDb".MV5000.Mode.ManualMode.Selected;</Text>
+              </LineComment>
+              <NewLine UId="23" />
+              <Access Scope="GlobalVariable" UId="24">
+                <Symbol UId="25">
+                  <Component Name="DoDb" UId="26">
+                    <BooleanAttribute Name="HasQuotes" UId="27">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="28" />
+                  <Component Name="Do01" UId="29" />
+                  <Token Text="." UId="30" />
+                  <Component Name="ModeSel" UId="31" />
+                </Symbol>
+              </Access>
+              <Blank UId="32" />
+              <Token Text=":=" UId="33" />
+              <Blank UId="34" />
+              <Access Scope="GlobalVariable" UId="35">
+                <Symbol UId="36">
+                  <Component Name="ModeDb_R" UId="37">
+                    <BooleanAttribute Name="HasQuotes" UId="38">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="39" />
+                  <Component Name="ManualMode" UId="40" />
+                  <Token Text="." UId="41" />
+                  <Component Name="Selected" UId="42" />
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="43" />
+              <NewLine UId="44" />
+              <Access Scope="GlobalVariable" UId="45">
+                <Symbol UId="46">
+                  <Component Name="DoDb" UId="47">
+                    <BooleanAttribute Name="HasQuotes" UId="48">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="49" />
+                  <Component Name="Do02" UId="50" />
+                  <Token Text="." UId="51" />
+                  <Component Name="ModeSel" UId="52" />
+                </Symbol>
+              </Access>
+              <Blank UId="53" />
+              <Token Text=":=" UId="54" />
+              <Blank UId="55" />
+              <Access Scope="GlobalVariable" UId="56">
+                <Symbol UId="57">
+                  <Component Name="ModeDb_R" UId="58">
+                    <BooleanAttribute Name="HasQuotes" UId="59">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="60" />
+                  <Component Name="ManualMode" UId="61" />
+                  <Token Text="." UId="62" />
+                  <Component Name="Selected" UId="63" />
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="64" />
+              <NewLine UId="65" />
+              <Access Scope="GlobalVariable" UId="66">
+                <Symbol UId="67">
+                  <Component Name="DoDb" UId="68">
+                    <BooleanAttribute Name="HasQuotes" UId="69">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="70" />
+                  <Component Name="Do03" UId="71" />
+                  <Token Text="." UId="72" />
+                  <Component Name="ModeSel" UId="73" />
+                </Symbol>
+              </Access>
+              <Blank UId="74" />
+              <Token Text=":=" UId="75" />
+              <Blank UId="76" />
+              <Access Scope="GlobalVariable" UId="77">
+                <Symbol UId="78">
+                  <Component Name="ModeDb_R" UId="79">
+                    <BooleanAttribute Name="HasQuotes" UId="80">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="81" />
+                  <Component Name="ManualMode" UId="82" />
+                  <Token Text="." UId="83" />
+                  <Component Name="Selected" UId="84" />
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="85" />
+              <NewLine UId="86" />
+              <Access Scope="GlobalVariable" UId="87">
+                <Symbol UId="88">
+                  <Component Name="DoDb" UId="89">
+                    <BooleanAttribute Name="HasQuotes" UId="90">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="91" />
+                  <Component Name="Do04" UId="92" />
+                  <Token Text="." UId="93" />
+                  <Component Name="ModeSel" UId="94" />
+                </Symbol>
+              </Access>
+              <Blank UId="95" />
+              <Token Text=":=" UId="96" />
+              <Blank UId="97" />
+              <Access Scope="GlobalVariable" UId="98">
+                <Symbol UId="99">
+                  <Component Name="ModeDb_R" UId="100">
+                    <BooleanAttribute Name="HasQuotes" UId="101">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="102" />
+                  <Component Name="ManualMode" UId="103" />
+                  <Token Text="." UId="104" />
+                  <Component Name="Selected" UId="105" />
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="106" />
+              <NewLine UId="107" />
+              <Access Scope="GlobalVariable" UId="108">
+                <Symbol UId="109">
+                  <Component Name="DoDb" UId="110">
+                    <BooleanAttribute Name="HasQuotes" UId="111">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="112" />
+                  <Component Name="Do05" UId="113" />
+                  <Token Text="." UId="114" />
+                  <Component Name="ModeSel" UId="115" />
+                </Symbol>
+              </Access>
+              <Blank UId="116" />
+              <Token Text=":=" UId="117" />
+              <Blank UId="118" />
+              <Access Scope="GlobalVariable" UId="119">
+                <Symbol UId="120">
+                  <Component Name="ModeDb_R" UId="121">
+                    <BooleanAttribute Name="HasQuotes" UId="122">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="123" />
+                  <Component Name="ManualMode" UId="124" />
+                  <Token Text="." UId="125" />
+                  <Component Name="Selected" UId="126" />
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="127" />
+            </StructuredText>
+          </NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="13" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="14" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="15" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="16" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>MANUAL MODE SELECTED</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="17" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="ModeDb_R" />
+                    <Component Name="ManualMode" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="DO_FaceplateDb" />
+                    <Component Name="Mm01 Ref" />
+                    <Component Name="ValveOpen" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="VesselWeight" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="25">
+                  <Symbol>
+                    <Component Name="EngineeringSettings" />
+                    <Component Name="MinimumWeightRequireToStartMm01MixerWithCooling" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="26">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle4" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="27">
+                  <Symbol>
+                    <Component Name="CipDo" />
+                    <Component Name="MM01CmdMagneticMixerMvCommand" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="28">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle2" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="29">
+                  <Symbol>
+                    <Component Name="Mm01Mixing" />
+                    <Component Name="MixerCmd" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="30">
+                  <Symbol>
+                    <Component Name="DoDb" />
+                    <Component Name="Do01" />
+                    <Component Name="Cmd" />
+                  </Symbol>
+                </Access>
+                <Part Name="Contact" UId="31" />
+                <Part Name="Contact" UId="32" />
+                <Part Name="Contact" UId="33" />
+                <Part Name="Gt" UId="34">
+                  <TemplateValue Name="SrcType" Type="Type">Real</TemplateValue>
+                </Part>
+                <Part Name="Contact" UId="35" />
+                <Part Name="Contact" UId="36" />
+                <Part Name="Contact" UId="37" />
+                <Part Name="Contact" UId="38" />
+                <Part Name="O" UId="39">
+                  <TemplateValue Name="Card" Type="Cardinality">3</TemplateValue>
+                </Part>
+                <Part Name="Coil" UId="40" />
+              </Parts>
+              <Wires>
+                <Wire UId="41">
+                  <Powerrail />
+                  <NameCon UId="31" Name="in" />
+                </Wire>
+                <Wire UId="42">
+                  <IdentCon UId="21" />
+                  <NameCon UId="31" Name="operand" />
+                </Wire>
+                <Wire UId="43">
+                  <NameCon UId="31" Name="out" />
+                  <NameCon UId="32" Name="in" />
+                  <NameCon UId="35" Name="in" />
+                  <NameCon UId="37" Name="in" />
+                </Wire>
+                <Wire UId="44">
+                  <IdentCon UId="22" />
+                  <NameCon UId="32" Name="operand" />
+                </Wire>
+                <Wire UId="45">
+                  <NameCon UId="32" Name="out" />
+                  <NameCon UId="33" Name="in" />
+                </Wire>
+                <Wire UId="46">
+                  <IdentCon UId="23" />
+                  <NameCon UId="33" Name="operand" />
+                </Wire>
+                <Wire UId="47">
+                  <NameCon UId="33" Name="out" />
+                  <NameCon UId="34" Name="pre" />
+                </Wire>
+                <Wire UId="48">
+                  <IdentCon UId="24" />
+                  <NameCon UId="34" Name="in1" />
+                </Wire>
+                <Wire UId="49">
+                  <IdentCon UId="25" />
+                  <NameCon UId="34" Name="in2" />
+                </Wire>
+                <Wire UId="50">
+                  <NameCon UId="34" Name="out" />
+                  <NameCon UId="39" Name="in1" />
+                </Wire>
+                <Wire UId="51">
+                  <IdentCon UId="26" />
+                  <NameCon UId="35" Name="operand" />
+                </Wire>
+                <Wire UId="52">
+                  <NameCon UId="35" Name="out" />
+                  <NameCon UId="36" Name="in" />
+                </Wire>
+                <Wire UId="53">
+                  <IdentCon UId="27" />
+                  <NameCon UId="36" Name="operand" />
+                </Wire>
+                <Wire UId="54">
+                  <NameCon UId="36" Name="out" />
+                  <NameCon UId="39" Name="in2" />
+                </Wire>
+                <Wire UId="55">
+                  <IdentCon UId="28" />
+                  <NameCon UId="37" Name="operand" />
+                </Wire>
+                <Wire UId="56">
+                  <NameCon UId="37" Name="out" />
+                  <NameCon UId="38" Name="in" />
+                </Wire>
+                <Wire UId="57">
+                  <IdentCon UId="29" />
+                  <NameCon UId="38" Name="operand" />
+                </Wire>
+                <Wire UId="58">
+                  <NameCon UId="38" Name="out" />
+                  <NameCon UId="39" Name="in3" />
+                </Wire>
+                <Wire UId="59">
+                  <NameCon UId="39" Name="out" />
+                  <NameCon UId="40" Name="in" />
+                </Wire>
+                <Wire UId="60">
+                  <IdentCon UId="30" />
+                  <NameCon UId="40" Name="operand" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="18" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="19" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="1A" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="1B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>"DoDb".Do01.Cmd MM01</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="1C" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="ModeDb_R" />
+                    <Component Name="ManualMode" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="DO_FaceplateDb" />
+                    <Component Name="Cp01 Ref" />
+                    <Component Name="ValveOpen" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle4" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="25">
+                  <Symbol>
+                    <Component Name="CipDo" />
+                    <Component Name="CP01CmdCentrifugalPumpMvAreaCommand" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="26">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle2" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="27">
+                  <Symbol>
+                    <Component Name="ProductRecicrulation" />
+                    <Component Name="MixerCmd" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="28">
+                  <Symbol>
+                    <Component Name="ProductTransfer" />
+                    <Component Name="Running" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="29">
+                  <Symbol>
+                    <Component Name="ProductTransfer" />
+                    <Component Name="TransferMethodSel" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="30">
+                  <Constant>
+                    <ConstantType>Int</ConstantType>
+                    <ConstantValue>0</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="31">
+                  <Symbol>
+                    <Component Name="ProductTransfer" />
+                    <Component Name="PumpCmd" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="32">
+                  <Symbol>
+                    <Component Name="DoDb" />
+                    <Component Name="Do02" />
+                    <Component Name="Cmd" />
+                  </Symbol>
+                </Access>
+                <Part Name="Contact" UId="33" />
+                <Part Name="Contact" UId="34" />
+                <Part Name="Contact" UId="35" />
+                <Part Name="Contact" UId="36" />
+                <Part Name="Contact" UId="37" />
+                <Part Name="Contact" UId="38" />
+                <Part Name="Contact" UId="39" />
+                <Part Name="Contact" UId="40" />
+                <Part Name="Eq" UId="41">
+                  <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+                </Part>
+                <Part Name="Contact" UId="42" />
+                <Part Name="O" UId="43">
+                  <TemplateValue Name="Card" Type="Cardinality">4</TemplateValue>
+                </Part>
+                <Part Name="Coil" UId="44" />
+              </Parts>
+              <Wires>
+                <Wire UId="45">
+                  <Powerrail />
+                  <NameCon UId="33" Name="in" />
+                </Wire>
+                <Wire UId="46">
+                  <IdentCon UId="21" />
+                  <NameCon UId="33" Name="operand" />
+                </Wire>
+                <Wire UId="47">
+                  <NameCon UId="33" Name="out" />
+                  <NameCon UId="34" Name="in" />
+                  <NameCon UId="36" Name="in" />
+                  <NameCon UId="38" Name="in" />
+                </Wire>
+                <Wire UId="48">
+                  <IdentCon UId="22" />
+                  <NameCon UId="34" Name="operand" />
+                </Wire>
+                <Wire UId="49">
+                  <NameCon UId="34" Name="out" />
+                  <NameCon UId="35" Name="in" />
+                </Wire>
+                <Wire UId="50">
+                  <IdentCon UId="23" />
+                  <NameCon UId="35" Name="operand" />
+                </Wire>
+                <Wire UId="51">
+                  <NameCon UId="35" Name="out" />
+                  <NameCon UId="43" Name="in1" />
+                </Wire>
+                <Wire UId="52">
+                  <IdentCon UId="24" />
+                  <NameCon UId="36" Name="operand" />
+                </Wire>
+                <Wire UId="53">
+                  <NameCon UId="36" Name="out" />
+                  <NameCon UId="37" Name="in" />
+                </Wire>
+                <Wire UId="54">
+                  <IdentCon UId="25" />
+                  <NameCon UId="37" Name="operand" />
+                </Wire>
+                <Wire UId="55">
+                  <NameCon UId="37" Name="out" />
+                  <NameCon UId="43" Name="in2" />
+                </Wire>
+                <Wire UId="56">
+                  <IdentCon UId="26" />
+                  <NameCon UId="38" Name="operand" />
+                </Wire>
+                <Wire UId="57">
+                  <NameCon UId="38" Name="out" />
+                  <NameCon UId="39" Name="in" />
+                  <NameCon UId="40" Name="in" />
+                </Wire>
+                <Wire UId="58">
+                  <IdentCon UId="27" />
+                  <NameCon UId="39" Name="operand" />
+                </Wire>
+                <Wire UId="59">
+                  <NameCon UId="39" Name="out" />
+                  <NameCon UId="43" Name="in3" />
+                </Wire>
+                <Wire UId="60">
+                  <IdentCon UId="28" />
+                  <NameCon UId="40" Name="operand" />
+                </Wire>
+                <Wire UId="61">
+                  <NameCon UId="40" Name="out" />
+                  <NameCon UId="41" Name="pre" />
+                </Wire>
+                <Wire UId="62">
+                  <IdentCon UId="29" />
+                  <NameCon UId="41" Name="in1" />
+                </Wire>
+                <Wire UId="63">
+                  <IdentCon UId="30" />
+                  <NameCon UId="41" Name="in2" />
+                </Wire>
+                <Wire UId="64">
+                  <NameCon UId="41" Name="out" />
+                  <NameCon UId="42" Name="in" />
+                </Wire>
+                <Wire UId="65">
+                  <IdentCon UId="31" />
+                  <NameCon UId="42" Name="operand" />
+                </Wire>
+                <Wire UId="66">
+                  <NameCon UId="42" Name="out" />
+                  <NameCon UId="43" Name="in4" />
+                </Wire>
+                <Wire UId="67">
+                  <NameCon UId="43" Name="out" />
+                  <NameCon UId="44" Name="in" />
+                </Wire>
+                <Wire UId="68">
+                  <IdentCon UId="32" />
+                  <NameCon UId="44" Name="operand" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="1D" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="1E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="1F" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="20" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>"DoDb".Do02.Cmd CP01</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="21" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="DoManualModeDb" />
+                    <Component Name="Htr" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="HmiTags" />
+                    <Component Name="Hooter" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="25">
+                  <Symbol>
+                    <Component Name="DoDb" />
+                    <Component Name="Do03" />
+                    <Component Name="Cmd" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="26">
+                  <Symbol>
+                    <Component Name="HmiTags" />
+                    <Component Name="AlarmAck" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="27">
+                  <Symbol>
+                    <Component Name="HmiTags" />
+                    <Component Name="Hooter" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="28">
+                  <Symbol>
+                    <Component Name="DoDb" />
+                    <Component Name="Do02" />
+                    <Component Name="FeedBackTripAlarm" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="29">
+                  <Symbol>
+                    <Component Name="DoManualModeDb" />
+                    <Component Name="Htr" />
+                  </Symbol>
+                </Access>
+                <Part Name="Contact" UId="30" />
+                <Part Name="Contact" UId="31" />
+                <Part Name="Contact" UId="32" />
+                <Part Name="Contact" UId="33" />
+                <Part Name="O" UId="34">
+                  <TemplateValue Name="Card" Type="Cardinality">2</TemplateValue>
+                </Part>
+                <Part Name="Coil" UId="35" />
+                <Part Name="Contact" UId="36" />
+                <Part Name="RCoil" UId="37" />
+                <Part Name="Contact" UId="38" />
+                <Part Name="RCoil" UId="39" />
+              </Parts>
+              <Wires>
+                <Wire UId="40">
+                  <Powerrail />
+                  <NameCon UId="30" Name="in" />
+                </Wire>
+                <Wire UId="41">
+                  <IdentCon UId="21" />
+                  <NameCon UId="30" Name="operand" />
+                </Wire>
+                <Wire UId="42">
+                  <NameCon UId="30" Name="out" />
+                  <NameCon UId="31" Name="in" />
+                  <NameCon UId="38" Name="in" />
+                </Wire>
+                <Wire UId="43">
+                  <IdentCon UId="22" />
+                  <NameCon UId="31" Name="operand" />
+                </Wire>
+                <Wire UId="44">
+                  <NameCon UId="31" Name="out" />
+                  <NameCon UId="32" Name="in" />
+                  <NameCon UId="33" Name="in" />
+                  <NameCon UId="36" Name="in" />
+                </Wire>
+                <Wire UId="45">
+                  <IdentCon UId="23" />
+                  <NameCon UId="32" Name="operand" />
+                </Wire>
+                <Wire UId="46">
+                  <NameCon UId="32" Name="out" />
+                  <NameCon UId="34" Name="in1" />
+                </Wire>
+                <Wire UId="47">
+                  <IdentCon UId="24" />
+                  <NameCon UId="33" Name="operand" />
+                </Wire>
+                <Wire UId="48">
+                  <NameCon UId="33" Name="out" />
+                  <NameCon UId="34" Name="in2" />
+                </Wire>
+                <Wire UId="49">
+                  <NameCon UId="34" Name="out" />
+                  <NameCon UId="35" Name="in" />
+                </Wire>
+                <Wire UId="50">
+                  <IdentCon UId="25" />
+                  <NameCon UId="35" Name="operand" />
+                </Wire>
+                <Wire UId="51">
+                  <IdentCon UId="26" />
+                  <NameCon UId="36" Name="operand" />
+                </Wire>
+                <Wire UId="52">
+                  <NameCon UId="36" Name="out" />
+                  <NameCon UId="37" Name="in" />
+                </Wire>
+                <Wire UId="53">
+                  <IdentCon UId="27" />
+                  <NameCon UId="37" Name="operand" />
+                </Wire>
+                <Wire UId="54">
+                  <IdentCon UId="28" />
+                  <NameCon UId="38" Name="operand" />
+                </Wire>
+                <Wire UId="55">
+                  <NameCon UId="38" Name="out" />
+                  <NameCon UId="39" Name="in" />
+                </Wire>
+                <Wire UId="56">
+                  <IdentCon UId="29" />
+                  <NameCon UId="39" Name="operand" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="22" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="23" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="24" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="25" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>"DoDb".Do03.Cmd HTR</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="26" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="DoManualModeDb" />
+                    <Component Name="Lf01" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="DoDb" />
+                    <Component Name="Do04" />
+                    <Component Name="Cmd" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="Vessel_Lamp" />
+                    <Component Name="DONE_BIT" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="25">
+                  <Symbol>
+                    <Component Name="DoManualModeDb" />
+                    <Component Name="Lf01" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="26">
+                  <Symbol>
+                    <Component Name="Lf01" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="27">
+                  <Symbol>
+                    <Component Name="DoManualModeDb" />
+                    <Component Name="Lf01" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="28">
+                  <Symbol>
+                    <Component Name="Sec_Pulse" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="29">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="30">
+                  <Symbol>
+                    <Component Name="EngineeringSettings" />
+                    <Component Name="Lf01OffDelay" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="31">
+                  <Symbol>
+                    <Component Name="Vessel_Lamp" />
+                    <Component Name="DONE_BIT" />
+                  </Symbol>
+                </Access>
+                <Part Name="Contact" UId="32" />
+                <Part Name="Contact" UId="33" />
+                <Part Name="Coil" UId="34" />
+                <Part Name="Contact" UId="35" />
+                <Part Name="RCoil" UId="36" />
+                <Part Name="Contact" UId="37">
+                  <Negated Name="operand" />
+                </Part>
+                <Call UId="38">
+                  <CallInfo Name="TIMER" BlockType="FB">
+                    <Instance Scope="GlobalVariable" UId="39">
+                      <Component Name="Vessel_Lamp" />
+                    </Instance>
+                    <Parameter Name="TIME_START" Section="Input" Type="Bool" />
+                    <Parameter Name="TIME_PULSE" Section="Input" Type="Bool" />
+                    <Parameter Name="TIME_TRSET" Section="Input" Type="Bool" />
+                    <Parameter Name="MINI_ENABLE" Section="Input" Type="Bool" />
+                    <Parameter Name="TIME_IN_MINI" Section="Input" Type="DInt" />
+                    <Parameter Name="TIME_IN_SEC" Section="Input" Type="DInt" />
+                    <Parameter Name="DONE_BIT" Section="Output" Type="Bool" />
+                    <Parameter Name="ES_MINIT" Section="Output" Type="DInt" />
+                    <Parameter Name="ES_SEC" Section="Output" Type="DInt" />
+                    <Parameter Name="TEMP_1" Section="InOut" Type="DInt" />
+                    <Parameter Name="TEMP_5" Section="InOut" Type="DInt" />
+                    <Parameter Name="TEMP_2" Section="InOut" Type="DInt" />
+                    <Parameter Name="TEMP_3" Section="InOut" Type="DInt" />
+                    <Parameter Name="TEMP_BIT_1" Section="InOut" Type="Bool" />
+                    <Parameter Name="TEMP_BIT_2" Section="InOut" Type="Bool" />
+                  </CallInfo>
+                </Call>
+              </Parts>
+              <Wires>
+                <Wire UId="49">
+                  <Powerrail />
+                  <NameCon UId="32" Name="in" />
+                  <NameCon UId="37" Name="in" />
+                </Wire>
+                <Wire UId="50">
+                  <IdentCon UId="21" />
+                  <NameCon UId="32" Name="operand" />
+                </Wire>
+                <Wire UId="51">
+                  <NameCon UId="32" Name="out" />
+                  <NameCon UId="33" Name="in" />
+                  <NameCon UId="35" Name="in" />
+                  <NameCon UId="38" Name="en" />
+                </Wire>
+                <Wire UId="52">
+                  <IdentCon UId="22" />
+                  <NameCon UId="33" Name="operand" />
+                </Wire>
+                <Wire UId="53">
+                  <NameCon UId="33" Name="out" />
+                  <NameCon UId="34" Name="in" />
+                </Wire>
+                <Wire UId="54">
+                  <IdentCon UId="23" />
+                  <NameCon UId="34" Name="operand" />
+                </Wire>
+                <Wire UId="55">
+                  <IdentCon UId="24" />
+                  <NameCon UId="35" Name="operand" />
+                </Wire>
+                <Wire UId="56">
+                  <NameCon UId="35" Name="out" />
+                  <NameCon UId="36" Name="in" />
+                </Wire>
+                <Wire UId="57">
+                  <IdentCon UId="25" />
+                  <NameCon UId="36" Name="operand" />
+                </Wire>
+                <Wire UId="58">
+                  <IdentCon UId="26" />
+                  <NameCon UId="37" Name="operand" />
+                </Wire>
+                <Wire UId="59">
+                  <NameCon UId="37" Name="out" />
+                  <NameCon UId="38" Name="TIME_TRSET" />
+                </Wire>
+                <Wire UId="60">
+                  <IdentCon UId="27" />
+                  <NameCon UId="38" Name="TIME_START" />
+                </Wire>
+                <Wire UId="61">
+                  <IdentCon UId="28" />
+                  <NameCon UId="38" Name="TIME_PULSE" />
+                </Wire>
+                <Wire UId="62">
+                  <IdentCon UId="29" />
+                  <NameCon UId="38" Name="MINI_ENABLE" />
+                </Wire>
+                <Wire UId="63">
+                  <OpenCon UId="40" />
+                  <NameCon UId="38" Name="TIME_IN_MINI" />
+                </Wire>
+                <Wire UId="64">
+                  <IdentCon UId="30" />
+                  <NameCon UId="38" Name="TIME_IN_SEC" />
+                </Wire>
+                <Wire UId="65">
+                  <OpenCon UId="41" />
+                  <NameCon UId="38" Name="TEMP_1" />
+                </Wire>
+                <Wire UId="66">
+                  <OpenCon UId="42" />
+                  <NameCon UId="38" Name="TEMP_5" />
+                </Wire>
+                <Wire UId="67">
+                  <OpenCon UId="43" />
+                  <NameCon UId="38" Name="TEMP_2" />
+                </Wire>
+                <Wire UId="68">
+                  <OpenCon UId="44" />
+                  <NameCon UId="38" Name="TEMP_3" />
+                </Wire>
+                <Wire UId="69">
+                  <OpenCon UId="45" />
+                  <NameCon UId="38" Name="TEMP_BIT_1" />
+                </Wire>
+                <Wire UId="70">
+                  <OpenCon UId="46" />
+                  <NameCon UId="38" Name="TEMP_BIT_2" />
+                </Wire>
+                <Wire UId="71">
+                  <NameCon UId="38" Name="DONE_BIT" />
+                  <IdentCon UId="31" />
+                </Wire>
+                <Wire UId="72">
+                  <NameCon UId="38" Name="ES_MINIT" />
+                  <OpenCon UId="47" />
+                </Wire>
+                <Wire UId="73">
+                  <NameCon UId="38" Name="ES_SEC" />
+                  <OpenCon UId="48" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="27" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="28" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="29" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="2A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>"DoDb".Do04.Cmd</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="2B" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="DoManualModeDb" />
+                    <Component Name="DoSpare1" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="DoDb" />
+                    <Component Name="Do05" />
+                    <Component Name="Cmd" />
+                  </Symbol>
+                </Access>
+                <Part Name="Contact" UId="24" />
+                <Part Name="Contact" UId="25" />
+                <Part Name="Coil" UId="26" />
+              </Parts>
+              <Wires>
+                <Wire UId="27">
+                  <Powerrail />
+                  <NameCon UId="24" Name="in" />
+                </Wire>
+                <Wire UId="28">
+                  <IdentCon UId="21" />
+                  <NameCon UId="24" Name="operand" />
+                </Wire>
+                <Wire UId="29">
+                  <NameCon UId="24" Name="out" />
+                  <NameCon UId="25" Name="in" />
+                </Wire>
+                <Wire UId="30">
+                  <IdentCon UId="22" />
+                  <NameCon UId="25" Name="operand" />
+                </Wire>
+                <Wire UId="31">
+                  <NameCon UId="25" Name="out" />
+                  <NameCon UId="26" Name="in" />
+                </Wire>
+                <Wire UId="32">
+                  <IdentCon UId="23" />
+                  <NameCon UId="26" Name="operand" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="2C" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="2D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="2E" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="2F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>"DoDb".Do05.Cmd</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="30" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="DoManualModeDb" />
+                    <Component Name="DoSpare2" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="DoDb" />
+                    <Component Name="Do06" />
+                    <Component Name="Cmd" />
+                  </Symbol>
+                </Access>
+                <Part Name="Contact" UId="24" />
+                <Part Name="Contact" UId="25" />
+                <Part Name="Coil" UId="26" />
+              </Parts>
+              <Wires>
+                <Wire UId="27">
+                  <Powerrail />
+                  <NameCon UId="24" Name="in" />
+                </Wire>
+                <Wire UId="28">
+                  <IdentCon UId="21" />
+                  <NameCon UId="24" Name="operand" />
+                </Wire>
+                <Wire UId="29">
+                  <NameCon UId="24" Name="out" />
+                  <NameCon UId="25" Name="in" />
+                </Wire>
+                <Wire UId="30">
+                  <IdentCon UId="22" />
+                  <NameCon UId="25" Name="operand" />
+                </Wire>
+                <Wire UId="31">
+                  <NameCon UId="25" Name="out" />
+                  <NameCon UId="26" Name="in" />
+                </Wire>
+                <Wire UId="32">
+                  <IdentCon UId="23" />
+                  <NameCon UId="26" Name="operand" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="31" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="32" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="33" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="34" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>"DoDb".Do06.Cmd</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="35" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="DoManualModeDb" />
+                    <Component Name="DoSpare3" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="DoDb" />
+                    <Component Name="Do07" />
+                    <Component Name="Cmd" />
+                  </Symbol>
+                </Access>
+                <Part Name="Contact" UId="24" />
+                <Part Name="Contact" UId="25" />
+                <Part Name="Coil" UId="26" />
+              </Parts>
+              <Wires>
+                <Wire UId="27">
+                  <Powerrail />
+                  <NameCon UId="24" Name="in" />
+                </Wire>
+                <Wire UId="28">
+                  <IdentCon UId="21" />
+                  <NameCon UId="24" Name="operand" />
+                </Wire>
+                <Wire UId="29">
+                  <NameCon UId="24" Name="out" />
+                  <NameCon UId="25" Name="in" />
+                </Wire>
+                <Wire UId="30">
+                  <IdentCon UId="22" />
+                  <NameCon UId="25" Name="operand" />
+                </Wire>
+                <Wire UId="31">
+                  <NameCon UId="25" Name="out" />
+                  <NameCon UId="26" Name="in" />
+                </Wire>
+                <Wire UId="32">
+                  <IdentCon UId="23" />
+                  <NameCon UId="26" Name="operand" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="36" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="37" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="38" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="39" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>"DoDb".Do07.Cmd</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="3A" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="DoManualModeDb" />
+                    <Component Name="DoSpare4" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="DoDb" />
+                    <Component Name="Do08" />
+                    <Component Name="Cmd" />
+                  </Symbol>
+                </Access>
+                <Part Name="Contact" UId="24" />
+                <Part Name="Contact" UId="25" />
+                <Part Name="Coil" UId="26" />
+              </Parts>
+              <Wires>
+                <Wire UId="27">
+                  <Powerrail />
+                  <NameCon UId="24" Name="in" />
+                </Wire>
+                <Wire UId="28">
+                  <IdentCon UId="21" />
+                  <NameCon UId="24" Name="operand" />
+                </Wire>
+                <Wire UId="29">
+                  <NameCon UId="24" Name="out" />
+                  <NameCon UId="25" Name="in" />
+                </Wire>
+                <Wire UId="30">
+                  <IdentCon UId="22" />
+                  <NameCon UId="25" Name="operand" />
+                </Wire>
+                <Wire UId="31">
+                  <NameCon UId="25" Name="out" />
+                  <NameCon UId="26" Name="in" />
+                </Wire>
+                <Wire UId="32">
+                  <IdentCon UId="23" />
+                  <NameCon UId="26" Name="operand" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="3B" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="3C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="3D" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="3E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>"DoDb".Do08.Cmd</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="3F" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="DoManualModeDb" />
+                    <Component Name="DoSpare5" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="DoDb" />
+                    <Component Name="Do09" />
+                    <Component Name="Cmd" />
+                  </Symbol>
+                </Access>
+                <Part Name="Contact" UId="24" />
+                <Part Name="Contact" UId="25" />
+                <Part Name="Coil" UId="26" />
+              </Parts>
+              <Wires>
+                <Wire UId="27">
+                  <Powerrail />
+                  <NameCon UId="24" Name="in" />
+                </Wire>
+                <Wire UId="28">
+                  <IdentCon UId="21" />
+                  <NameCon UId="24" Name="operand" />
+                </Wire>
+                <Wire UId="29">
+                  <NameCon UId="24" Name="out" />
+                  <NameCon UId="25" Name="in" />
+                </Wire>
+                <Wire UId="30">
+                  <IdentCon UId="22" />
+                  <NameCon UId="25" Name="operand" />
+                </Wire>
+                <Wire UId="31">
+                  <NameCon UId="25" Name="out" />
+                  <NameCon UId="26" Name="in" />
+                </Wire>
+                <Wire UId="32">
+                  <IdentCon UId="23" />
+                  <NameCon UId="26" Name="operand" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="40" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="41" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="42" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="43" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>"DoDb".Do09.Cmd</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="44" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="DoManualModeDb" />
+                    <Component Name="DoSpare6" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="DoDb" />
+                    <Component Name="Do10" />
+                    <Component Name="Cmd" />
+                  </Symbol>
+                </Access>
+                <Part Name="Contact" UId="24" />
+                <Part Name="Contact" UId="25" />
+                <Part Name="Coil" UId="26" />
+              </Parts>
+              <Wires>
+                <Wire UId="27">
+                  <Powerrail />
+                  <NameCon UId="24" Name="in" />
+                </Wire>
+                <Wire UId="28">
+                  <IdentCon UId="21" />
+                  <NameCon UId="24" Name="operand" />
+                </Wire>
+                <Wire UId="29">
+                  <NameCon UId="24" Name="out" />
+                  <NameCon UId="25" Name="in" />
+                </Wire>
+                <Wire UId="30">
+                  <IdentCon UId="22" />
+                  <NameCon UId="25" Name="operand" />
+                </Wire>
+                <Wire UId="31">
+                  <NameCon UId="25" Name="out" />
+                  <NameCon UId="26" Name="in" />
+                </Wire>
+                <Wire UId="32">
+                  <IdentCon UId="23" />
+                  <NameCon UId="26" Name="operand" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="45" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="46" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="47" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="48" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>"DoDb".Do10.Cmd</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="49" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v4">
+              <Access Scope="GlobalVariable" UId="21">
+                <Symbol UId="22">
+                  <Component Name="DoDb" UId="23">
+                    <BooleanAttribute Name="HasQuotes" UId="24">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="25" />
+                  <Component Name="Do01" UId="26" />
+                  <Token Text="." UId="27" />
+                  <Component Name="FBCheckDelay" UId="28" />
+                </Symbol>
+              </Access>
+              <Blank UId="29" />
+              <Token Text=":=" UId="30" />
+              <Blank UId="31" />
+              <Access Scope="GlobalVariable" UId="32">
+                <Symbol UId="33">
+                  <Component Name="EngineeringSettings" UId="34">
+                    <BooleanAttribute Name="HasQuotes" UId="35">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="36" />
+                  <Component Name="Mm01F/BDelay" UId="37" />
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="38" />
+              <NewLine UId="39" />
+              <Access Scope="GlobalVariable" UId="40">
+                <Symbol UId="41">
+                  <Component Name="DoDb" UId="42">
+                    <BooleanAttribute Name="HasQuotes" UId="43">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="44" />
+                  <Component Name="Do02" UId="45" />
+                  <Token Text="." UId="46" />
+                  <Component Name="FBCheckDelay" UId="47" />
+                </Symbol>
+              </Access>
+              <Blank UId="48" />
+              <Token Text=":=" UId="49" />
+              <Blank UId="50" />
+              <Access Scope="GlobalVariable" UId="51">
+                <Symbol UId="52">
+                  <Component Name="EngineeringSettings" UId="53">
+                    <BooleanAttribute Name="HasQuotes" UId="54">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="55" />
+                  <Component Name="Cp01F/BDelay" UId="56" />
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="57" />
+              <NewLine UId="58" />
+              <LineComment UId="59">
+                <Text UId="60">"VesselLamp_DB".LF01.TIME_IN_SEC := "EngineeringSettings".Lf01OffDelay;</Text>
+              </LineComment>
+            </StructuredText>
+          </NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4A" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="4B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="4C" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="4D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Fb delay</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="4E" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v4">
+              <Access Scope="GlobalVariable" UId="21">
+                <Symbol UId="22">
+                  <Component Name="DoDb" UId="23">
+                    <BooleanAttribute Name="HasQuotes" UId="24">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="25" />
+                  <Component Name="Do01" UId="26" />
+                  <Token Text="." UId="27" />
+                  <Component Name="MotorFeedbackInputSelection" UId="28" />
+                </Symbol>
+              </Access>
+              <Blank UId="29" />
+              <Token Text=":=" UId="30" />
+              <Blank UId="31" />
+              <Access Scope="LiteralConstant" UId="32">
+                <Constant UId="33">
+                  <ConstantValue UId="35">1</ConstantValue>
+                </Constant>
+              </Access>
+              <Token Text=";" UId="36" />
+              <NewLine UId="37" />
+              <Access Scope="GlobalVariable" UId="38">
+                <Symbol UId="39">
+                  <Component Name="DoDb" UId="40">
+                    <BooleanAttribute Name="HasQuotes" UId="41">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="42" />
+                  <Component Name="Do02" UId="43" />
+                  <Token Text="." UId="44" />
+                  <Component Name="MotorFeedbackInputSelection" UId="45" />
+                </Symbol>
+              </Access>
+              <Blank UId="46" />
+              <Token Text=":=" UId="47" />
+              <Blank UId="48" />
+              <Access Scope="LiteralConstant" UId="49">
+                <Constant UId="50">
+                  <ConstantValue UId="52">1</ConstantValue>
+                </Constant>
+              </Access>
+              <Token Text=";" UId="53" />
+              <NewLine Num="2" UId="54" />
+              <Access Scope="GlobalVariable" UId="55">
+                <Symbol UId="56">
+                  <Component Name="DoDb" UId="57">
+                    <BooleanAttribute Name="HasQuotes" UId="58">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="59" />
+                  <Component Name="Do01" UId="60" />
+                  <Token Text="." UId="61" />
+                  <Component Name="MotorFeedbackInput" UId="62" />
+                </Symbol>
+              </Access>
+              <Blank UId="63" />
+              <Token Text=":=" UId="64" />
+              <Blank UId="65" />
+              <Access Scope="GlobalVariable" UId="66">
+                <Symbol UId="67">
+                  <Component Name="DiFinal" UId="68">
+                    <BooleanAttribute Name="HasQuotes" UId="69">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="70" />
+                  <Component Name="MagneticMixerFeedback" UId="71" />
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="72" />
+              <NewLine UId="73" />
+              <Access Scope="GlobalVariable" UId="74">
+                <Symbol UId="75">
+                  <Component Name="DoDb" UId="76">
+                    <BooleanAttribute Name="HasQuotes" UId="77">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="78" />
+                  <Component Name="Do02" UId="79" />
+                  <Token Text="." UId="80" />
+                  <Component Name="MotorFeedbackInput" UId="81" />
+                </Symbol>
+              </Access>
+              <Blank UId="82" />
+              <Token Text=":=" UId="83" />
+              <Blank UId="84" />
+              <Access Scope="GlobalVariable" UId="85">
+                <Symbol UId="86">
+                  <Component Name="DiFinal" UId="87">
+                    <BooleanAttribute Name="HasQuotes" UId="88">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="89" />
+                  <Component Name="CipPumpFeedback" UId="90" />
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="91" />
+              <NewLine Num="2" UId="92" />
+              <Access Scope="GlobalVariable" UId="93">
+                <Symbol UId="94">
+                  <Component Name="DoDb" UId="95">
+                    <BooleanAttribute Name="HasQuotes" UId="96">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="97" />
+                  <Component Name="Do02" UId="98" />
+                  <Token Text="." UId="99" />
+                  <Component Name="FeedBackTripAlarm" UId="100" />
+                </Symbol>
+              </Access>
+              <Blank UId="101" />
+              <Token Text=":=" UId="102" />
+              <Blank UId="103" />
+              <Access Scope="GlobalVariable" UId="104">
+                <Symbol UId="105">
+                  <Component Name="SafetyAlarms" UId="106">
+                    <BooleanAttribute Name="HasQuotes" UId="107">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="108" />
+                  <Component Name="Cp01FeedbackTrip" UId="109" />
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="110" />
+              <NewLine UId="111" />
+              <Access Scope="GlobalVariable" UId="112">
+                <Symbol UId="113">
+                  <Component Name="DoDb" UId="114">
+                    <BooleanAttribute Name="HasQuotes" UId="115">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="116" />
+                  <Component Name="Do01" UId="117" />
+                  <Token Text="." UId="118" />
+                  <Component Name="FeedBackTripAlarm" UId="119" />
+                </Symbol>
+              </Access>
+              <Blank UId="120" />
+              <Token Text=":=" UId="121" />
+              <Blank UId="122" />
+              <Access Scope="GlobalVariable" UId="123">
+                <Symbol UId="124">
+                  <Component Name="SafetyAlarms" UId="125">
+                    <BooleanAttribute Name="HasQuotes" UId="126">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="127" />
+                  <Component Name="Mm01FeedbackTrip" UId="128" />
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="129" />
+              <NewLine Num="3" UId="130" />
+              <Access Scope="GlobalVariable" UId="131">
+                <Symbol UId="132">
+                  <Component Name="SafetyAlarms" UId="133">
+                    <BooleanAttribute Name="HasQuotes" UId="134">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="135" />
+                  <Component Name="Mm01FeedbackTrip" UId="136" />
+                </Symbol>
+              </Access>
+              <Blank UId="137" />
+              <Token Text=":=" UId="138" />
+              <Blank UId="139" />
+              <Access Scope="GlobalVariable" UId="140">
+                <Symbol UId="141">
+                  <Component Name="DoDb" UId="142">
+                    <BooleanAttribute Name="HasQuotes" UId="143">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="144" />
+                  <Component Name="Do01" UId="145" />
+                  <Token Text="." UId="146" />
+                  <Component Name="FeedBackTripAlarm" UId="147" />
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="148" />
+              <NewLine UId="149" />
+              <Access Scope="GlobalVariable" UId="150">
+                <Symbol UId="151">
+                  <Component Name="SafetyAlarms" UId="152">
+                    <BooleanAttribute Name="HasQuotes" UId="153">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="154" />
+                  <Component Name="Cp01FeedbackTrip" UId="155" />
+                </Symbol>
+              </Access>
+              <Blank UId="156" />
+              <Token Text=":=" UId="157" />
+              <Blank UId="158" />
+              <Access Scope="GlobalVariable" UId="159">
+                <Symbol UId="160">
+                  <Component Name="DoDb" UId="161">
+                    <BooleanAttribute Name="HasQuotes" UId="162">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="163" />
+                  <Component Name="Do02" UId="164" />
+                  <Token Text="." UId="165" />
+                  <Component Name="FeedBackTripAlarm" UId="166" />
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="167" />
+              <NewLine Num="2" UId="168" />
+              <Access Scope="GlobalVariable" UId="169">
+                <Symbol UId="170">
+                  <Component Name="SafetyAlarms" UId="171">
+                    <BooleanAttribute Name="HasQuotes" UId="172">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="173" />
+                  <Component Name="Mm01FeedbackTrip" UId="174" />
+                </Symbol>
+              </Access>
+              <Blank UId="175" />
+              <Token Text=":=" UId="176" />
+              <Blank UId="177" />
+              <Access Scope="GlobalVariable" UId="178">
+                <Symbol UId="179">
+                  <Component Name="DoDb" UId="180">
+                    <BooleanAttribute Name="HasQuotes" UId="181">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="182" />
+                  <Component Name="Do01" UId="183" />
+                  <Token Text="." UId="184" />
+                  <Component Name="OpFbTrip" UId="185" />
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="186" />
+              <NewLine UId="187" />
+              <Access Scope="GlobalVariable" UId="188">
+                <Symbol UId="189">
+                  <Component Name="SafetyAlarms" UId="190">
+                    <BooleanAttribute Name="HasQuotes" UId="191">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="192" />
+                  <Component Name="Cp01FeedbackTrip" UId="193" />
+                </Symbol>
+              </Access>
+              <Blank UId="194" />
+              <Token Text=":=" UId="195" />
+              <Blank UId="196" />
+              <Access Scope="GlobalVariable" UId="197">
+                <Symbol UId="198">
+                  <Component Name="DoDb" UId="199">
+                    <BooleanAttribute Name="HasQuotes" UId="200">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="201" />
+                  <Component Name="Do02" UId="202" />
+                  <Token Text="." UId="203" />
+                  <Component Name="OpFbTrip" UId="204" />
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="205" />
+              <NewLine Num="2" UId="206" />
+              <Access Scope="GlobalVariable" UId="207">
+                <Symbol UId="208">
+                  <Component Name="DoDb" UId="209">
+                    <BooleanAttribute Name="HasQuotes" UId="210">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="211" />
+                  <Component Name="Do01" UId="212" />
+                  <Token Text="." UId="213" />
+                  <Component Name="AlarmAck" UId="214" />
+                </Symbol>
+              </Access>
+              <Blank UId="215" />
+              <Token Text=":=" UId="216" />
+              <Blank UId="217" />
+              <Access Scope="GlobalVariable" UId="218">
+                <Symbol UId="219">
+                  <Component Name="HmiTags" UId="220">
+                    <BooleanAttribute Name="HasQuotes" UId="221">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="222" />
+                  <Component Name="AlarmAck" UId="223" />
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="224" />
+              <NewLine UId="225" />
+              <Access Scope="GlobalVariable" UId="226">
+                <Symbol UId="227">
+                  <Component Name="DoDb" UId="228">
+                    <BooleanAttribute Name="HasQuotes" UId="229">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="230" />
+                  <Component Name="Do02" UId="231" />
+                  <Token Text="." UId="232" />
+                  <Component Name="AlarmAck" UId="233" />
+                </Symbol>
+              </Access>
+              <Blank UId="234" />
+              <Token Text=":=" UId="235" />
+              <Blank UId="236" />
+              <Access Scope="GlobalVariable" UId="237">
+                <Symbol UId="238">
+                  <Component Name="HmiTags" UId="239">
+                    <BooleanAttribute Name="HasQuotes" UId="240">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="241" />
+                  <Component Name="AlarmAck" UId="242" />
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="243" />
+            </StructuredText>
+          </NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4F" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="50" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="51" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="52" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>FeedBack Alarms And Input</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="53" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="54" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FC>
+</Document>

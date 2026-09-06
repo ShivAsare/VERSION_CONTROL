@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V21" />
+  <SW.Blocks.InstanceDB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <HeaderAuthor>PRECISE</HeaderAuthor>
+      <HeaderFamily>PRECISE</HeaderFamily>
+      <InstanceOfName>FB607</InstanceOfName>
+      <InstanceOfType>FB</InstanceOfType>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="Input">
+            <Member Name="CipSelected" Datatype="Bool" />
+            <Member Name="CycleEnable" Datatype="Bool" />
+            <Member Name="CycleRunning" Datatype="Bool" />
+            <Member Name="SecPulse" Datatype="Bool" />
+            <Member Name="AlwaysTrue" Datatype="Bool" />
+            <Member Name="MixingTimeBaseSel" Datatype="Bool" />
+            <Member Name="SetTimeMins" Datatype="Int" />
+            <Member Name="SetTimeSecs" Datatype="Int" />
+            <Member Name="ActualRepetition" Datatype="Int" />
+          </Section>
+          <Section Name="Output">
+            <Member Name="Started" Datatype="Bool" />
+            <Member Name="Mixer" Datatype="Bool" />
+            <Member Name="TimeMinsPv" Datatype="DInt" />
+            <Member Name="TimeSecsPv" Datatype="DInt" />
+            <Member Name="StepStatus" Datatype="String[60]" />
+            <Member Name="Print" Datatype="&quot;MixingPrint&quot;" />
+          </Section>
+          <Section Name="InOut">
+            <Member Name="Over" Datatype="Bool" />
+          </Section>
+          <Section Name="Static">
+            <Member Name="RE1" Datatype="Bool" />
+            <Member Name="RE2" Datatype="Bool" />
+            <Member Name="RE3" Datatype="Bool" />
+            <Member Name="MixingTimer" Datatype="&quot;FB101&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+          </Section>
+        </Sections>
+      </Interface>
+      <Name>DB607</Name>
+      <Namespace />
+      <Number>607</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.InstanceDB>
+</Document>

@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V21" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="Static">
+            <Member Name="Cv01" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv02" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv03" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv04" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv05" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv06" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv07" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv08" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv09" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv10" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv11" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv12" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv13" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv14" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv15" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv16" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv17" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv18" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv19" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv20" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv21" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv22" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv23" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv24" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv25" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv26" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv27" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv28" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv29" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv30" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv31" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv32" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv33" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv34" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv35" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv36" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv37" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv38" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv39" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv40" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv41" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv42" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv43" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv44" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv45" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv46" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv47" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv48" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv49" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv50" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv51" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv52" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv53" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv54" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv55" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv56" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv57" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv58" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv59" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv60" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv61" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv62" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv63" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Cv64" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Fbov01" Datatype="&quot;Do_Faceplate&quot;" />
+            <Member Name="Mm01 Ref" Datatype="&quot;Do_Faceplate&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="Cp01 Ref" Datatype="&quot;Do_Faceplate&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+          </Section>
+        </Sections>
+      </Interface>
+      <MemoryLayout>Standard</MemoryLayout>
+      <Name>DO_FaceplateDb</Name>
+      <Namespace />
+      <Number>101</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

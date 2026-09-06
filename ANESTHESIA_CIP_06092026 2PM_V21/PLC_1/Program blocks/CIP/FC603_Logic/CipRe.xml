@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V21" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="Static">
+            <Member Name="CipLinePrintText" Datatype="Array[0..20] of String">
+              <Subelement Path="1">
+                <StartValue>'PRE RINSE CYCLE - RINSING ON STARTED'</StartValue>
+              </Subelement>
+              <Subelement Path="2">
+                <StartValue>'PRE RINSE CYCLE - DRAIN ON STARTED'</StartValue>
+              </Subelement>
+              <Subelement Path="3">
+                <StartValue>'PRE RINSE CYCLE - SYSTEM DRAIN STARTED'</StartValue>
+              </Subelement>
+              <Subelement Path="4">
+                <StartValue>'PRE RINSE CYCLE - AIR PURGING STARTED'</StartValue>
+              </Subelement>
+              <Subelement Path="5">
+                <StartValue>'FILLING CYCLE - FILLING ON STARTED'</StartValue>
+              </Subelement>
+              <Subelement Path="6">
+                <StartValue>'FILLING CYCLE - MIXING ON STARTED'</StartValue>
+              </Subelement>
+              <Subelement Path="7">
+                <StartValue>'FILLING CYCLE - DRAIN ON STARTED'</StartValue>
+              </Subelement>
+              <Subelement Path="8">
+                <StartValue>'FILLING CYCLE - SYSTEM DRAIN STARTED'</StartValue>
+              </Subelement>
+              <Subelement Path="9">
+                <StartValue>'FILLING CYCLE - AIR PURGING ON STARTED'</StartValue>
+              </Subelement>
+              <Subelement Path="10">
+                <StartValue>'WAITING FOR ACKNOWLEDGE'</StartValue>
+              </Subelement>
+              <Subelement Path="11">
+                <StartValue>'CYCLE PAUSED'</StartValue>
+              </Subelement>
+              <Subelement Path="12">
+                <StartValue>'CIP CYCLE OVER'</StartValue>
+              </Subelement>
+              <Subelement Path="13">
+                <StartValue>'CYCLE RESETED'</StartValue>
+              </Subelement>
+              <Subelement Path="14">
+                <StartValue>'FILLING CYCLE - RECIRCULATION STARTED'</StartValue>
+              </Subelement>
+              <Subelement Path="15">
+                <StartValue>'FINAL RINSE CYCLE - FILLING ON STARTED'</StartValue>
+              </Subelement>
+              <Subelement Path="16">
+                <StartValue>'FINAL RINSE CYCLE - MIXING ON STARTED'</StartValue>
+              </Subelement>
+              <Subelement Path="17">
+                <StartValue>'FINAL RINSE CYCLE - DRAIN ON STARTED'</StartValue>
+              </Subelement>
+              <Subelement Path="18">
+                <StartValue>'FINAL RINSE CYCLE - SYSTEM DRAIN STARTED'</StartValue>
+              </Subelement>
+              <Subelement Path="19">
+                <StartValue>'FINAL RINSE CYCLE - AIR PURGING ON STARTED'</StartValue>
+              </Subelement>
+              <Subelement Path="20">
+                <StartValue>'FINAL RINSE CYCLE - RECIRCULATION STARTED'</StartValue>
+              </Subelement>
+            </Member>
+          </Section>
+        </Sections>
+      </Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>CipRe</Name>
+      <Namespace />
+      <Number>42</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

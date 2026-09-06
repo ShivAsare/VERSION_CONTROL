@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V21" />
+  <SW.Blocks.InstanceDB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <HeaderAuthor>PRECISE</HeaderAuthor>
+      <HeaderFamily>PRECISE</HeaderFamily>
+      <InstanceOfName>FB311</InstanceOfName>
+      <InstanceOfType>FB</InstanceOfType>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="Input">
+            <Member Name="Enable" Datatype="Bool" />
+            <Member Name="Disable" Datatype="Bool" />
+            <Member Name="Fault" Datatype="Bool" />
+            <Member Name="SecPulse" Datatype="Bool" />
+            <Member Name="AlwaysTrue" Datatype="Bool" />
+            <Member Name="StartConfirmationPopupSel" Datatype="Bool" />
+            <Member Name="EndConfirmationPopupSel" Datatype="Bool" />
+            <Member Name="TimebaseSel" Datatype="Bool" />
+            <Member Name="TemperatureMaintainSel" Datatype="Bool" />
+            <Member Name="BypassSel" Datatype="Bool">
+              <StartValue>true</StartValue>
+            </Member>
+            <Member Name="JacketAirPurgingSel" Datatype="Bool" />
+            <Member Name="TemperatureControlSel" Datatype="Int" Remanence="Retain" />
+            <Member Name="SensorSel" Datatype="Int" />
+            <Member Name="BatchSizeSel" Datatype="Int" />
+            <Member Name="HeatingUtilitySel" Datatype="Int" />
+            <Member Name="CoolingUtilitySelection" Datatype="Int">
+              <StartValue>0</StartValue>
+            </Member>
+            <Member Name="SetTemperature" Datatype="Real" Remanence="Retain" />
+            <Member Name="TimeMin" Datatype="Int" Remanence="Retain">
+              <StartValue>1</StartValue>
+            </Member>
+            <Member Name="TimeSec" Datatype="Int">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="ActualTemperatureVessel" Datatype="Real" />
+            <Member Name="ActualTemperatureJacket" Datatype="Real" />
+            <Member Name="JVDelay" Datatype="Int" />
+            <Member Name="JDDelay" Datatype="Int" />
+            <Member Name="TemperatureTol" Datatype="Real" />
+            <Member Name="CoolingThreshold" Datatype="Real" />
+            <Member Name="ChillingThreshold" Datatype="Real" />
+            <Member Name="HeatHighTemperatureTol" Datatype="Real" />
+            <Member Name="CoolLowTemperatureTol" Datatype="Real" />
+            <Member Name="JacketAirPurgingTimeSec" Datatype="Int" />
+          </Section>
+          <Section Name="Output">
+            <Member Name="JacketAirValve" Datatype="Bool" />
+            <Member Name="BypassValve" Datatype="Bool" />
+            <Member Name="JacketVentValve1" Datatype="Bool" />
+            <Member Name="JacketDrainValve1" Datatype="Bool" />
+            <Member Name="CoolingWaterInletValve1" Datatype="Bool" />
+            <Member Name="CoolingWaterOutletValve1" Datatype="Bool" />
+            <Member Name="ChilledWaterInletValve1" Datatype="Bool" />
+            <Member Name="ChilledWaterOutletValve1" Datatype="Bool" />
+            <Member Name="BrineWaterInletValve1" Datatype="Bool" />
+            <Member Name="BrineWaterOutletValve1" Datatype="Bool" />
+            <Member Name="HotWaterInletValve1" Datatype="Bool" />
+            <Member Name="HotWaterOutletValve1" Datatype="Bool" />
+            <Member Name="SteamInlet1" Datatype="Bool" />
+            <Member Name="Condensateoutlet1" Datatype="Bool" />
+            <Member Name="JacketVentValve2" Datatype="Bool" />
+            <Member Name="JacketDrainValve2" Datatype="Bool" />
+            <Member Name="CoolingWaterInletValve2" Datatype="Bool" />
+            <Member Name="CoolingWaterOutletValve2" Datatype="Bool" />
+            <Member Name="ChilledWaterInletValve2" Datatype="Bool" />
+            <Member Name="ChilledWaterOutletValve2" Datatype="Bool" />
+            <Member Name="BrineWaterInletValve2" Datatype="Bool" />
+            <Member Name="BrineWaterOutletValve2" Datatype="Bool" />
+            <Member Name="HotWaterInletValve2" Datatype="Bool" />
+            <Member Name="HotWaterOutletValve2" Datatype="Bool" />
+            <Member Name="SteamInlet2" Datatype="Bool" />
+            <Member Name="Condensateoutlet2" Datatype="Bool" />
+            <Member Name="AlarmHeatHighTemperature" Datatype="Bool" />
+            <Member Name="AlarmCoolLowTemperature" Datatype="Bool" />
+            <Member Name="StartConfirmationPopup" Datatype="Bool" />
+            <Member Name="EndConfirmationPopup" Datatype="Bool" />
+            <Member Name="JacketAirPurgingPopup" Datatype="Bool" />
+            <Member Name="TimeMinPV" Datatype="DInt" />
+            <Member Name="TimeSecPV" Datatype="DInt" />
+            <Member Name="JacketAirPurgingTimeSecPV" Datatype="Int" />
+            <Member Name="PrintTrigger" Datatype="Bool" />
+            <Member Name="PrintWord" Datatype="Int" />
+            <Member Name="PrintStatus" Datatype="String[50]" />
+          </Section>
+          <Section Name="InOut">
+            <Member Name="Start" Datatype="Bool" />
+            <Member Name="Stop" Datatype="Bool" />
+            <Member Name="Reset" Datatype="Bool" />
+            <Member Name="StartConfirmationAck" Datatype="Bool" />
+            <Member Name="EndConfirmationAck" Datatype="Bool" />
+            <Member Name="JacketAirPurgingAck" Datatype="Bool" />
+            <Member Name="AlarmAck" Datatype="Bool" />
+            <Member Name="SpareBtn1" Datatype="Bool" />
+            <Member Name="Running" Datatype="Bool" />
+            <Member Name="Selected" Datatype="Bool" Remanence="Retain" />
+            <Member Name="Paused" Datatype="Bool" />
+            <Member Name="StartConfirmationPopupTemp" Datatype="Bool" Remanence="Retain" />
+            <Member Name="EndConfirmationPopupTemp" Datatype="Bool" Remanence="Retain" />
+            <Member Name="Started" Datatype="Bool" Remanence="Retain" />
+            <Member Name="Over" Datatype="Bool" Remanence="Retain" />
+            <Member Name="StartJVDelay" Datatype="Bool">
+              <StartValue>1</StartValue>
+            </Member>
+            <Member Name="StartJDDelay" Datatype="Bool" />
+            <Member Name="StartUtility" Datatype="Bool" />
+            <Member Name="StartChilling" Datatype="Bool" />
+            <Member Name="StartBrine" Datatype="Bool" />
+            <Member Name="StartJacketAirPurging" Datatype="Bool" />
+            <Member Name="HeatTempReached" Datatype="Bool" />
+            <Member Name="CoolTempReached" Datatype="Bool" />
+            <Member Name="TemperatureTolNeg" Datatype="Real" />
+            <Member Name="TemperatureTolPos" Datatype="Real" />
+            <Member Name="HeatHighTemperatureTolCal" Datatype="Real" />
+            <Member Name="CoolLowTemperatureTolCal" Datatype="Real" />
+            <Member Name="JacketPressureSelection" Datatype="Bool" />
+            <Member Name="JacketPressureReached" Datatype="Bool" />
+            <Member Name="JacketUtilityPressureValve" Datatype="Bool" />
+            <Member Name="JAcketAlarms" Datatype="Bool" />
+            <Member Name="Temp" Datatype="Bool" />
+            <Member Name="JacketTime" Datatype="Int" />
+            <Member Name="JacketSafetyPressure" Datatype="Real" />
+            <Member Name="JAcketActPressure" Datatype="Real" />
+          </Section>
+          <Section Name="Static">
+            <Member Name="PrintTriggerTemp" Datatype="Bool" />
+            <Member Name="RE1" Datatype="Bool" />
+            <Member Name="RE2" Datatype="Bool" />
+            <Member Name="RE3" Datatype="Bool" />
+            <Member Name="RE4" Datatype="Bool" />
+            <Member Name="RE5" Datatype="Bool" />
+            <Member Name="RE6" Datatype="Bool" />
+            <Member Name="RE7" Datatype="Bool" />
+            <Member Name="RE8" Datatype="Bool" />
+            <Member Name="RE9" Datatype="Bool" />
+            <Member Name="RE10" Datatype="Bool" />
+            <Member Name="RE11" Datatype="Bool" />
+            <Member Name="Timer" Datatype="&quot;FB101&quot;" />
+            <Member Name="PrintTriggerResetTimer" Datatype="TON_TIME" Version="1.0">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="BtnResetTimer" Datatype="TON_TIME" Version="1.0">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="JVDelayTime" Datatype="&quot;FB103&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="JDDelayTime" Datatype="&quot;FB103&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="JAPTime" Datatype="&quot;FB103&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="ActualTemperature" Datatype="Real" />
+            <Member Name="JacketpressureTimer" Datatype="&quot;FB103&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="FB101_Instance" Datatype="&quot;FB101&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+          </Section>
+        </Sections>
+      </Interface>
+      <Name>TemperatureControl</Name>
+      <Namespace />
+      <Number>303</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.InstanceDB>
+</Document>

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V21" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="Static">
+            <Member Name="Fv1_Cv01" Datatype="Struct" Remanence="Retain">
+              <Member Name="Set Value" Datatype="Real" />
+              <Member Name="P" Datatype="Real">
+                <StartValue>8.0</StartValue>
+              </Member>
+              <Member Name="I" Datatype="Real">
+                <StartValue>80.0</StartValue>
+              </Member>
+              <Member Name="D" Datatype="Real">
+                <StartValue>0.0</StartValue>
+              </Member>
+              <Member Name="Mode" Datatype="Int" />
+              <Member Name="Output" Datatype="Real" />
+              <Member Name="OutputCoil" Datatype="Bool" />
+              <Member Name="State" Datatype="Int" />
+              <Member Name="Error" Datatype="Word" />
+              <Member Name="Reset" Datatype="Bool" />
+              <Member Name="InputValue" Datatype="Real" />
+            </Member>
+          </Section>
+        </Sections>
+      </Interface>
+      <MemoryLayout>Standard</MemoryLayout>
+      <Name>PidParameters</Name>
+      <Namespace />
+      <Number>58</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

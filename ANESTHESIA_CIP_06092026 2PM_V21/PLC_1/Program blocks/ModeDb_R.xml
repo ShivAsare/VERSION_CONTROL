@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V21" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="Static">
+            <Member Name="ManualMode" Datatype="&quot;ManualModePara&quot;" Remanence="Retain">
+              <Comment>
+                <MultiLanguageText Lang="en-US">MANUAL MODE</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="RunningCycle" Datatype="&quot;CycleDetails&quot;" Remanence="Retain">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+              <Sections>
+                <Section Name="None">
+                  <Member Name="PrintInterval" Datatype="Int">
+                    <StartValue>30</StartValue>
+                  </Member>
+                </Section>
+              </Sections>
+            </Member>
+            <Member Name="BaseReportPath" Datatype="String" Remanence="Retain">
+              <StartValue>'/media/simatic/data-storage/Reports/Pdf/'</StartValue>
+            </Member>
+            <Member Name="FinalReportPath" Datatype="String" Remanence="Retain" />
+            <Member Name="ReportId" Datatype="Int" Remanence="Retain" />
+            <Member Name="Cycle1" Datatype="&quot;ModeParaR&quot;" Remanence="Retain">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+              <Comment>
+                <MultiLanguageText Lang="en-US">PHT</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Cycle2" Datatype="&quot;ModeParaR&quot;" Remanence="Retain">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+              <Comment>
+                <MultiLanguageText Lang="en-US">BATCH</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Cycle3" Datatype="&quot;ModeParaR&quot;" Remanence="Retain">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+              <Comment>
+                <MultiLanguageText Lang="en-US">SIP</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Cycle4" Datatype="&quot;ModeParaR&quot;" Remanence="Retain">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+              <Comment>
+                <MultiLanguageText Lang="en-US">CIP</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Cycle5" Datatype="&quot;ModeParaR&quot;" Remanence="Retain">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+              <Comment>
+                <MultiLanguageText Lang="en-US">LOAD CELL CALIBRATION</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="ReportName" Datatype="String[100]" Remanence="Retain" />
+          </Section>
+        </Sections>
+      </Interface>
+      <MemoryLayout>Standard</MemoryLayout>
+      <Name>ModeDb_R</Name>
+      <Namespace />
+      <Number>110</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

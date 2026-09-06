@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V21" />
+  <SW.Blocks.FC ID="0">
+    <AttributeList>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="Input" />
+          <Section Name="Output" />
+          <Section Name="InOut" />
+          <Section Name="Temp" />
+          <Section Name="Constant" />
+          <Section Name="Return">
+            <Member Name="Ret_Val" Datatype="Void" />
+          </Section>
+        </Sections>
+      </Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <Name>Loadcell_Profinet</Name>
+      <Namespace />
+      <Number>37</Number>
+      <ProgrammingLanguage>LAD</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="3" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="CV15" />
+                    <Component Name="Tag_IB89" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="23">
+                  <Constant>
+                    <ConstantType>DInt</ConstantType>
+                    <ConstantValue>65536</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="CV15" />
+                    <Component Name="Tag_MD340" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="25">
+                  <Symbol>
+                    <Component Name="CV15" />
+                    <Component Name="Tag_IB97" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="26">
+                  <Constant>
+                    <ConstantType>DInt</ConstantType>
+                    <ConstantValue>256</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="27">
+                  <Symbol>
+                    <Component Name="CV15" />
+                    <Component Name="Tag_MD344" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="28">
+                  <Symbol>
+                    <Component Name="CV15" />
+                    <Component Name="Tag_MD344" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="29">
+                  <Symbol>
+                    <Component Name="CV15" />
+                    <Component Name="Tag_IB96" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="30">
+                  <Symbol>
+                    <Component Name="CV15" />
+                    <Component Name="Tag_MD340" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="31">
+                  <Symbol>
+                    <Component Name="CV15" />
+                    <Component Name="Tag_MD348" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="32">
+                  <Symbol>
+                    <Component Name="CV15" />
+                    <Component Name="Tag_MD348" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="33">
+                  <Symbol>
+                    <Component Name="CV15" />
+                    <Component Name="Tag_MD352" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="34">
+                  <Symbol>
+                    <Component Name="CV15" />
+                    <Component Name="Tag_MD352" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="35">
+                  <Constant>
+                    <ConstantType>Real</ConstantType>
+                    <ConstantValue>100.0</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="36">
+                  <Symbol>
+                    <Component Name="CV15" />
+                    <Component Name="Tag_MD316" />
+                  </Symbol>
+                </Access>
+                <Part Name="Contact" UId="37" />
+                <Part Name="Mul" UId="38" DisabledENO="true">
+                  <TemplateValue Name="Card" Type="Cardinality">2</TemplateValue>
+                  <TemplateValue Name="SrcType" Type="Type">DInt</TemplateValue>
+                </Part>
+                <Part Name="Mul" UId="39" DisabledENO="true">
+                  <TemplateValue Name="Card" Type="Cardinality">2</TemplateValue>
+                  <TemplateValue Name="SrcType" Type="Type">DInt</TemplateValue>
+                </Part>
+                <Part Name="Add" UId="40" DisabledENO="true">
+                  <TemplateValue Name="Card" Type="Cardinality">3</TemplateValue>
+                  <AutomaticTyped Name="SrcType" />
+                </Part>
+                <Part Name="Convert" UId="41" DisabledENO="true">
+                  <TemplateValue Name="SrcType" Type="Type">DInt</TemplateValue>
+                  <TemplateValue Name="DestType" Type="Type">Real</TemplateValue>
+                </Part>
+                <Part Name="Div" UId="42" DisabledENO="true">
+                  <TemplateValue Name="SrcType" Type="Type">Real</TemplateValue>
+                </Part>
+              </Parts>
+              <Wires>
+                <Wire UId="43">
+                  <Powerrail />
+                  <NameCon UId="37" Name="in" />
+                </Wire>
+                <Wire UId="44">
+                  <IdentCon UId="21" />
+                  <NameCon UId="37" Name="operand" />
+                </Wire>
+                <Wire UId="45">
+                  <NameCon UId="37" Name="out" />
+                  <NameCon UId="38" Name="en" />
+                  <NameCon UId="42" Name="en" />
+                </Wire>
+                <Wire UId="46">
+                  <IdentCon UId="22" />
+                  <NameCon UId="38" Name="in1" />
+                </Wire>
+                <Wire UId="47">
+                  <IdentCon UId="23" />
+                  <NameCon UId="38" Name="in2" />
+                </Wire>
+                <Wire UId="48">
+                  <NameCon UId="38" Name="eno" />
+                  <NameCon UId="39" Name="en" />
+                </Wire>
+                <Wire UId="49">
+                  <NameCon UId="38" Name="out" />
+                  <IdentCon UId="24" />
+                </Wire>
+                <Wire UId="50">
+                  <IdentCon UId="25" />
+                  <NameCon UId="39" Name="in1" />
+                </Wire>
+                <Wire UId="51">
+                  <IdentCon UId="26" />
+                  <NameCon UId="39" Name="in2" />
+                </Wire>
+                <Wire UId="52">
+                  <NameCon UId="39" Name="eno" />
+                  <NameCon UId="40" Name="en" />
+                </Wire>
+                <Wire UId="53">
+                  <NameCon UId="39" Name="out" />
+                  <IdentCon UId="27" />
+                </Wire>
+                <Wire UId="54">
+                  <IdentCon UId="28" />
+                  <NameCon UId="40" Name="in1" />
+                </Wire>
+                <Wire UId="55">
+                  <IdentCon UId="29" />
+                  <NameCon UId="40" Name="in2" />
+                </Wire>
+                <Wire UId="56">
+                  <IdentCon UId="30" />
+                  <NameCon UId="40" Name="in3" />
+                </Wire>
+                <Wire UId="57">
+                  <NameCon UId="40" Name="eno" />
+                  <NameCon UId="41" Name="en" />
+                </Wire>
+                <Wire UId="58">
+                  <NameCon UId="40" Name="out" />
+                  <IdentCon UId="31" />
+                </Wire>
+                <Wire UId="59">
+                  <IdentCon UId="32" />
+                  <NameCon UId="41" Name="in" />
+                </Wire>
+                <Wire UId="60">
+                  <NameCon UId="41" Name="out" />
+                  <IdentCon UId="33" />
+                </Wire>
+                <Wire UId="61">
+                  <IdentCon UId="34" />
+                  <NameCon UId="42" Name="in1" />
+                </Wire>
+                <Wire UId="62">
+                  <IdentCon UId="35" />
+                  <NameCon UId="42" Name="in2" />
+                </Wire>
+                <Wire UId="63">
+                  <NameCon UId="42" Name="out" />
+                  <IdentCon UId="36" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="5" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="6" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>LoadcellCV15</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="8" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="9" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FC>
+</Document>

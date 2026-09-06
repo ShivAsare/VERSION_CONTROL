@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V21" />
+  <SW.Blocks.InstanceDB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <InstanceOfName>FB104</InstanceOfName>
+      <InstanceOfType>FB</InstanceOfType>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="Input">
+            <Member Name="Enable" Datatype="Bool" />
+            <Member Name="SecPulse" Datatype="Bool" />
+            <Member Name="AlwaysTrue" Datatype="Bool" />
+            <Member Name="DigitalOrAnalog" Datatype="Bool" />
+            <Member Name="InvertPIDSel" Datatype="Bool" />
+            <Member Name="ActValue" Datatype="Real" />
+            <Member Name="SetValue" Datatype="Real" />
+            <Member Name="SetPoint1" Datatype="Real" />
+            <Member Name="SetPoint2" Datatype="Real" />
+            <Member Name="SetPoint3" Datatype="Real" />
+            <Member Name="SetPoint4" Datatype="Real" />
+            <Member Name="SetPoint5" Datatype="Real" />
+            <Member Name="SetPoint6" Datatype="Real" />
+            <Member Name="SetPoint7" Datatype="Real" />
+            <Member Name="SetPoint8" Datatype="Real" />
+            <Member Name="SetPoint9" Datatype="Real" />
+            <Member Name="SetPoint10" Datatype="Real" />
+            <Member Name="SetRef1" Datatype="Real" />
+            <Member Name="SetRef2" Datatype="Real" />
+            <Member Name="SetRef3" Datatype="Real" />
+            <Member Name="SetRef4" Datatype="Real" />
+            <Member Name="SetRef5" Datatype="Real" />
+            <Member Name="SetRef6" Datatype="Real" />
+            <Member Name="SetRef7" Datatype="Real" />
+            <Member Name="SetRef8" Datatype="Real" />
+            <Member Name="SetRef9" Datatype="Real" />
+            <Member Name="SetRef10" Datatype="Real" />
+            <Member Name="OnTime1" Datatype="Int" />
+            <Member Name="OnTime2" Datatype="Int" />
+            <Member Name="OnTime3" Datatype="Int" />
+            <Member Name="OnTime4" Datatype="Int" />
+            <Member Name="OnTime5" Datatype="Int" />
+            <Member Name="OnTime6" Datatype="Int" />
+            <Member Name="OnTime7" Datatype="Int" />
+            <Member Name="OnTime8" Datatype="Int" />
+            <Member Name="OnTime9" Datatype="Int" />
+            <Member Name="OnTime10" Datatype="Int" />
+            <Member Name="OffTime1" Datatype="Int" />
+            <Member Name="OffTime2" Datatype="Int" />
+            <Member Name="OffTime3" Datatype="Int" />
+            <Member Name="OffTime4" Datatype="Int" />
+            <Member Name="OffTime5" Datatype="Int" />
+            <Member Name="OffTime6" Datatype="Int" />
+            <Member Name="OffTime7" Datatype="Int" />
+            <Member Name="OffTime8" Datatype="Int" />
+            <Member Name="OffTime9" Datatype="Int" />
+            <Member Name="OffTime10" Datatype="Int" />
+          </Section>
+          <Section Name="Output">
+            <Member Name="Valve" Datatype="Bool" />
+            <Member Name="SetRef" Datatype="Real" />
+          </Section>
+          <Section Name="InOut">
+            <Member Name="ControlValue1" Datatype="Real" />
+            <Member Name="ControlValue2" Datatype="Real" />
+            <Member Name="ControlValue3" Datatype="Real" />
+            <Member Name="ControlValue4" Datatype="Real" />
+            <Member Name="ControlValue5" Datatype="Real" />
+            <Member Name="ControlValue6" Datatype="Real" />
+            <Member Name="ControlValue7" Datatype="Real" />
+            <Member Name="ControlValue8" Datatype="Real" />
+            <Member Name="ControlValue9" Datatype="Real" />
+            <Member Name="ControlValue10" Datatype="Real" />
+          </Section>
+          <Section Name="Static">
+            <Member Name="OnOffDelay" Datatype="&quot;FB102&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="OnTime" Datatype="Int" />
+            <Member Name="OffTime" Datatype="Int" />
+          </Section>
+        </Sections>
+      </Interface>
+      <Name>TemperatureControlValve</Name>
+      <Namespace />
+      <Number>304</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.InstanceDB>
+</Document>

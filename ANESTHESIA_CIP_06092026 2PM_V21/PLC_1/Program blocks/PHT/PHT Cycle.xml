@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V21" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="Static">
+            <Member Name="Start" Datatype="Bool" />
+            <Member Name="Stop" Datatype="Bool" />
+            <Member Name="Abort" Datatype="Bool" />
+            <Member Name="fault" Datatype="Bool" />
+            <Member Name="Running" Datatype="Bool" />
+            <Member Name="Selected" Datatype="Bool" />
+            <Member Name="Actual_Min_Pressure" Datatype="Real" />
+            <Member Name="Actual_Max_Pressure" Datatype="Real" />
+            <Member Name="Actual Stabilization Time" Datatype="DInt" />
+            <Member Name="Actual Pressurise Hold Mins" Datatype="DInt" />
+            <Member Name="Actual Pressurise Hold Secs" Datatype="DInt" />
+            <Member Name="PHT Step Status int" Datatype="Int" />
+            <Member Name="Step Status" Datatype="String[50]" />
+            <Member Name="Event Status" Datatype="String[50]" />
+            <Member Name="print_event" Datatype="Bool" />
+            <Member Name="Startup Popup" Datatype="Bool" />
+            <Member Name="Startup Popup Ack" Datatype="Bool" />
+            <Member Name="Startup Popup Acked" Datatype="Bool" />
+            <Member Name="Startup parameter popup" Datatype="Bool" />
+            <Member Name="Abort Confirmation Popup" Datatype="Bool" />
+            <Member Name="PHT Result" Datatype="Int" />
+            <Member Name="VesselSel" Datatype="Int">
+              <Comment>
+                <MultiLanguageText Lang="en-US">1=Mv1, 2=Mv2, 3=Mv1&amp;Mv2</MultiLanguageText>
+              </Comment>
+              <StartValue>1</StartValue>
+            </Member>
+            <Member Name="Result" Datatype="String[50]" />
+            <Member Name="Continue_Button" Datatype="Bool" />
+            <Member Name="Abort_Button" Datatype="Bool" />
+            <Member Name="Actual Delay to Open Cai" Datatype="Int" />
+            <Member Name="PhtTemp" Datatype="Bool" />
+            <Member Name="HOLD_FAIL" Datatype="Bool" />
+            <Member Name="Startup parameter popup No" Datatype="Bool" />
+            <Member Name="Startup parameter popup Yes" Datatype="Bool" />
+            <Member Name="Actual Delay to Open N2I" Datatype="Int" />
+            <Member Name="N2IControl Valve" Datatype="Bool" />
+            <Member Name="EndOverPopup" Datatype="Bool" />
+            <Member Name="EndOverPopupAck" Datatype="Bool" />
+            <Member Name="CycleAbortEvent" Datatype="Bool" />
+            <Member Name="Abort confirmation popup Yes" Datatype="Bool" />
+            <Member Name="Abort confirmation popup No" Datatype="Bool" />
+            <Member Name="InitialPressure" Datatype="Real" />
+            <Member Name="FinalPressure" Datatype="Real" />
+            <Member Name="HoldStartTimeLog" Datatype="DTL" Version="1.0" />
+            <Member Name="HoldEndTimeLog" Datatype="DTL" Version="1.0" />
+            <Member Name="TempTime" Datatype="Time" />
+            <Member Name="RoundedTime" Datatype="Time" />
+            <Member Name="TempMs" Datatype="DInt" />
+            <Member Name="RoundedTime_Pos" Datatype="Time" />
+            <Member Name="Hours" Datatype="Int" />
+            <Member Name="Minutes" Datatype="Int" />
+            <Member Name="Seconds" Datatype="Int" />
+            <Member Name="TotalSecondsTag" Datatype="DInt" />
+            <Member Name="PhtTimeDifference" Datatype="Time" />
+          </Section>
+        </Sections>
+      </Interface>
+      <MemoryLayout>Standard</MemoryLayout>
+      <Name>PHT Cycle</Name>
+      <Namespace />
+      <Number>1201</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

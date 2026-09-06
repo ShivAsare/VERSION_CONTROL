@@ -1,0 +1,3537 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V21" />
+  <SW.Blocks.FC ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="Input" />
+          <Section Name="Output" />
+          <Section Name="InOut" />
+          <Section Name="Temp" />
+          <Section Name="Constant" />
+          <Section Name="Return">
+            <Member Name="Ret_Val" Datatype="Void" />
+          </Section>
+        </Sections>
+      </Interface>
+      <MemoryLayout>Standard</MemoryLayout>
+      <Name>PHT_Logic</Name>
+      <Namespace />
+      <Number>1206</Number>
+      <ProgrammingLanguage>LAD</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="3" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle1" />
+                    <Component Name="Start" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="Pht_Block" />
+                    <Component Name="EndMsg" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="ModeDb_R" />
+                    <Component Name="Cycle1" />
+                    <Component Name="SaveReportFile" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="25">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="Start" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="26">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle1" />
+                    <Component Name="Start" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="27">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle1" />
+                    <Component Name="Stop" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="28">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle1" />
+                    <Component Name="Abort" />
+                  </Symbol>
+                </Access>
+                <Access Scope="TypedConstant" UId="29">
+                  <Constant>
+                    <ConstantValue>T#1s</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="30">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle1" />
+                    <Component Name="Start" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="31">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle1" />
+                    <Component Name="Stop" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="32">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle1" />
+                    <Component Name="Abort" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="33">
+                  <Symbol>
+                    <Component Name="Pht_Block" />
+                    <Component Name="Popup2Ack" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="34">
+                  <Symbol>
+                    <Component Name="Pht_Block" />
+                    <Component Name="StartupMsgYes" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="35">
+                  <Symbol>
+                    <Component Name="Pht_Block" />
+                    <Component Name="StartupMsgNo" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="36">
+                  <Symbol>
+                    <Component Name="Pht_Block" />
+                    <Component Name="EndMsgAck" />
+                  </Symbol>
+                </Access>
+                <Access Scope="TypedConstant" UId="37">
+                  <Constant>
+                    <ConstantValue>T#1s</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="38">
+                  <Symbol>
+                    <Component Name="Pht_Block" />
+                    <Component Name="Popup2Ack" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="39">
+                  <Symbol>
+                    <Component Name="Pht_Block" />
+                    <Component Name="StartupMsgYes" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="40">
+                  <Symbol>
+                    <Component Name="Pht_Block" />
+                    <Component Name="StartupMsgNo" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="41">
+                  <Symbol>
+                    <Component Name="Pht_Block" />
+                    <Component Name="EndMsgAck" />
+                  </Symbol>
+                </Access>
+                <Part Name="Contact" UId="42" />
+                <Part Name="Contact" UId="43" />
+                <Part Name="Contact" UId="44">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="Contact" UId="45">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="Coil" UId="46" />
+                <Part Name="Contact" UId="47" />
+                <Part Name="Contact" UId="48" />
+                <Part Name="Contact" UId="49" />
+                <Part Name="O" UId="50">
+                  <TemplateValue Name="Card" Type="Cardinality">3</TemplateValue>
+                </Part>
+                <Part Name="TON" Version="1.0" UId="51">
+                  <Instance Scope="GlobalVariable" UId="52">
+                    <Component Name="IEC_Timer_0_DB_3" />
+                  </Instance>
+                  <TemplateValue Name="time_type" Type="Type">Time</TemplateValue>
+                </Part>
+                <Part Name="RCoil" UId="53" />
+                <Part Name="RCoil" UId="54" />
+                <Part Name="RCoil" UId="55" />
+                <Part Name="Contact" UId="56" />
+                <Part Name="Contact" UId="57" />
+                <Part Name="Contact" UId="58" />
+                <Part Name="Contact" UId="59" />
+                <Part Name="O" UId="60">
+                  <TemplateValue Name="Card" Type="Cardinality">4</TemplateValue>
+                </Part>
+                <Part Name="TON" Version="1.0" UId="61">
+                  <Instance Scope="GlobalVariable" UId="62">
+                    <Component Name="IEC_Timer_0_DB_4" />
+                  </Instance>
+                  <TemplateValue Name="time_type" Type="Type">Time</TemplateValue>
+                </Part>
+                <Part Name="RCoil" UId="63" />
+                <Part Name="RCoil" UId="64" />
+                <Part Name="RCoil" UId="65" />
+                <Part Name="RCoil" UId="66" />
+              </Parts>
+              <Wires>
+                <Wire UId="69">
+                  <Powerrail />
+                  <NameCon UId="42" Name="in" />
+                </Wire>
+                <Wire UId="70">
+                  <IdentCon UId="21" />
+                  <NameCon UId="42" Name="operand" />
+                </Wire>
+                <Wire UId="71">
+                  <NameCon UId="42" Name="out" />
+                  <NameCon UId="43" Name="in" />
+                  <NameCon UId="47" Name="in" />
+                  <NameCon UId="48" Name="in" />
+                  <NameCon UId="49" Name="in" />
+                  <NameCon UId="56" Name="in" />
+                  <NameCon UId="57" Name="in" />
+                  <NameCon UId="58" Name="in" />
+                  <NameCon UId="59" Name="in" />
+                </Wire>
+                <Wire UId="72">
+                  <IdentCon UId="22" />
+                  <NameCon UId="43" Name="operand" />
+                </Wire>
+                <Wire UId="73">
+                  <NameCon UId="43" Name="out" />
+                  <NameCon UId="44" Name="in" />
+                </Wire>
+                <Wire UId="74">
+                  <IdentCon UId="23" />
+                  <NameCon UId="44" Name="operand" />
+                </Wire>
+                <Wire UId="75">
+                  <NameCon UId="44" Name="out" />
+                  <NameCon UId="45" Name="in" />
+                </Wire>
+                <Wire UId="76">
+                  <IdentCon UId="24" />
+                  <NameCon UId="45" Name="operand" />
+                </Wire>
+                <Wire UId="77">
+                  <NameCon UId="45" Name="out" />
+                  <NameCon UId="46" Name="in" />
+                </Wire>
+                <Wire UId="78">
+                  <IdentCon UId="25" />
+                  <NameCon UId="46" Name="operand" />
+                </Wire>
+                <Wire UId="79">
+                  <IdentCon UId="26" />
+                  <NameCon UId="47" Name="operand" />
+                </Wire>
+                <Wire UId="80">
+                  <NameCon UId="47" Name="out" />
+                  <NameCon UId="50" Name="in1" />
+                </Wire>
+                <Wire UId="81">
+                  <IdentCon UId="27" />
+                  <NameCon UId="48" Name="operand" />
+                </Wire>
+                <Wire UId="82">
+                  <NameCon UId="48" Name="out" />
+                  <NameCon UId="50" Name="in2" />
+                </Wire>
+                <Wire UId="83">
+                  <IdentCon UId="28" />
+                  <NameCon UId="49" Name="operand" />
+                </Wire>
+                <Wire UId="84">
+                  <NameCon UId="49" Name="out" />
+                  <NameCon UId="50" Name="in3" />
+                </Wire>
+                <Wire UId="85">
+                  <NameCon UId="50" Name="out" />
+                  <NameCon UId="51" Name="IN" />
+                </Wire>
+                <Wire UId="86">
+                  <IdentCon UId="29" />
+                  <NameCon UId="51" Name="PT" />
+                </Wire>
+                <Wire UId="87">
+                  <NameCon UId="51" Name="Q" />
+                  <NameCon UId="53" Name="in" />
+                  <NameCon UId="54" Name="in" />
+                  <NameCon UId="55" Name="in" />
+                </Wire>
+                <Wire UId="88">
+                  <NameCon UId="51" Name="ET" />
+                  <OpenCon UId="67" />
+                </Wire>
+                <Wire UId="89">
+                  <IdentCon UId="30" />
+                  <NameCon UId="53" Name="operand" />
+                </Wire>
+                <Wire UId="90">
+                  <IdentCon UId="31" />
+                  <NameCon UId="54" Name="operand" />
+                </Wire>
+                <Wire UId="91">
+                  <IdentCon UId="32" />
+                  <NameCon UId="55" Name="operand" />
+                </Wire>
+                <Wire UId="92">
+                  <IdentCon UId="33" />
+                  <NameCon UId="56" Name="operand" />
+                </Wire>
+                <Wire UId="93">
+                  <NameCon UId="56" Name="out" />
+                  <NameCon UId="60" Name="in1" />
+                </Wire>
+                <Wire UId="94">
+                  <IdentCon UId="34" />
+                  <NameCon UId="57" Name="operand" />
+                </Wire>
+                <Wire UId="95">
+                  <NameCon UId="57" Name="out" />
+                  <NameCon UId="60" Name="in2" />
+                </Wire>
+                <Wire UId="96">
+                  <IdentCon UId="35" />
+                  <NameCon UId="58" Name="operand" />
+                </Wire>
+                <Wire UId="97">
+                  <NameCon UId="58" Name="out" />
+                  <NameCon UId="60" Name="in3" />
+                </Wire>
+                <Wire UId="98">
+                  <IdentCon UId="36" />
+                  <NameCon UId="59" Name="operand" />
+                </Wire>
+                <Wire UId="99">
+                  <NameCon UId="59" Name="out" />
+                  <NameCon UId="60" Name="in4" />
+                </Wire>
+                <Wire UId="100">
+                  <NameCon UId="60" Name="out" />
+                  <NameCon UId="61" Name="IN" />
+                </Wire>
+                <Wire UId="101">
+                  <IdentCon UId="37" />
+                  <NameCon UId="61" Name="PT" />
+                </Wire>
+                <Wire UId="102">
+                  <NameCon UId="61" Name="Q" />
+                  <NameCon UId="63" Name="in" />
+                  <NameCon UId="64" Name="in" />
+                  <NameCon UId="65" Name="in" />
+                  <NameCon UId="66" Name="in" />
+                </Wire>
+                <Wire UId="103">
+                  <NameCon UId="61" Name="ET" />
+                  <OpenCon UId="68" />
+                </Wire>
+                <Wire UId="104">
+                  <IdentCon UId="38" />
+                  <NameCon UId="63" Name="operand" />
+                </Wire>
+                <Wire UId="105">
+                  <IdentCon UId="39" />
+                  <NameCon UId="64" Name="operand" />
+                </Wire>
+                <Wire UId="106">
+                  <IdentCon UId="40" />
+                  <NameCon UId="65" Name="operand" />
+                </Wire>
+                <Wire UId="107">
+                  <IdentCon UId="41" />
+                  <NameCon UId="66" Name="operand" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="5" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="6" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>"PHT Cycle".Start</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="8" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle1" />
+                    <Component Name="Abort" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="Abort" />
+                  </Symbol>
+                </Access>
+                <Part Name="Contact" UId="23" />
+                <Part Name="Coil" UId="24" />
+              </Parts>
+              <Wires>
+                <Wire UId="25">
+                  <Powerrail />
+                  <NameCon UId="23" Name="in" />
+                </Wire>
+                <Wire UId="26">
+                  <IdentCon UId="21" />
+                  <NameCon UId="23" Name="operand" />
+                </Wire>
+                <Wire UId="27">
+                  <NameCon UId="23" Name="out" />
+                  <NameCon UId="24" Name="in" />
+                </Wire>
+                <Wire UId="28">
+                  <IdentCon UId="22" />
+                  <NameCon UId="24" Name="operand" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="9" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="B" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>"PHT Cycle".Abort</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="D" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle1" />
+                    <Component Name="Stop" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="Stop" />
+                  </Symbol>
+                </Access>
+                <Part Name="Contact" UId="23" />
+                <Part Name="Coil" UId="24" />
+              </Parts>
+              <Wires>
+                <Wire UId="25">
+                  <Powerrail />
+                  <NameCon UId="23" Name="in" />
+                </Wire>
+                <Wire UId="26">
+                  <IdentCon UId="21" />
+                  <NameCon UId="23" Name="operand" />
+                </Wire>
+                <Wire UId="27">
+                  <NameCon UId="23" Name="out" />
+                  <NameCon UId="24" Name="in" />
+                </Wire>
+                <Wire UId="28">
+                  <IdentCon UId="22" />
+                  <NameCon UId="24" Name="operand" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="E" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="10" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="11" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>"PHT Cycle".Stop</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="12" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="AiDb" />
+                    <Component Name="Ai11" />
+                    <Component Name="ActValue" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="Actual_Min_Pressure" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="Actual_Max_Pressure" />
+                  </Symbol>
+                </Access>
+                <Part Name="Contact" UId="25" />
+                <Part Name="Move" UId="26" DisabledENO="true">
+                  <TemplateValue Name="Card" Type="Cardinality">2</TemplateValue>
+                </Part>
+              </Parts>
+              <Wires>
+                <Wire UId="27">
+                  <Powerrail />
+                  <NameCon UId="25" Name="in" />
+                </Wire>
+                <Wire UId="28">
+                  <IdentCon UId="21" />
+                  <NameCon UId="25" Name="operand" />
+                </Wire>
+                <Wire UId="29">
+                  <NameCon UId="25" Name="out" />
+                  <NameCon UId="26" Name="en" />
+                </Wire>
+                <Wire UId="30">
+                  <IdentCon UId="22" />
+                  <NameCon UId="26" Name="in" />
+                </Wire>
+                <Wire UId="31">
+                  <NameCon UId="26" Name="out1" />
+                  <IdentCon UId="23" />
+                </Wire>
+                <Wire UId="32">
+                  <NameCon UId="26" Name="out2" />
+                  <IdentCon UId="24" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="13" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="14" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="15" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="16" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Minimum Pressure</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="17" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="SafetyAlarms" />
+                    <Component Name="ControlKeyOff" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="SafetyAlarms" />
+                    <Component Name="EmergencyStopPressed" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="SafetyAlarms" />
+                    <Component Name="PowerReset" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="25">
+                  <Symbol>
+                    <Component Name="SafetyAlarms" />
+                    <Component Name="CompresseDairPressurelow" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="26">
+                  <Symbol>
+                    <Component Name="SafetyAlarms" />
+                    <Component Name="PowerFailure" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="27">
+                  <Symbol>
+                    <Component Name="SafetyAlarms" />
+                    <Component Name="Picr01WireBreak" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="28">
+                  <Symbol>
+                    <Component Name="SafetyAlarms" />
+                    <Component Name="VesselHighPressure" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="29">
+                  <Symbol>
+                    <Component Name="SafetyAlarms" />
+                    <Component Name="PlcToHmiCommunicationFailed" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="30">
+                  <Symbol>
+                    <Component Name="SafetyAlarms" />
+                    <Component Name="PlcRestarted" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="31">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="fault" />
+                  </Symbol>
+                </Access>
+                <Part Name="Contact" UId="32" />
+                <Part Name="Contact" UId="33" />
+                <Part Name="Contact" UId="34" />
+                <Part Name="Contact" UId="35" />
+                <Part Name="Contact" UId="36" />
+                <Part Name="Contact" UId="37" />
+                <Part Name="Contact" UId="38" />
+                <Part Name="Contact" UId="39" />
+                <Part Name="Contact" UId="40" />
+                <Part Name="Contact" UId="41" />
+                <Part Name="O" UId="42">
+                  <TemplateValue Name="Card" Type="Cardinality">9</TemplateValue>
+                </Part>
+                <Part Name="Coil" UId="43" />
+              </Parts>
+              <Wires>
+                <Wire UId="44">
+                  <Powerrail />
+                  <NameCon UId="32" Name="in" />
+                </Wire>
+                <Wire UId="45">
+                  <IdentCon UId="21" />
+                  <NameCon UId="32" Name="operand" />
+                </Wire>
+                <Wire UId="46">
+                  <NameCon UId="32" Name="out" />
+                  <NameCon UId="33" Name="in" />
+                  <NameCon UId="34" Name="in" />
+                  <NameCon UId="35" Name="in" />
+                  <NameCon UId="36" Name="in" />
+                  <NameCon UId="37" Name="in" />
+                  <NameCon UId="38" Name="in" />
+                  <NameCon UId="39" Name="in" />
+                  <NameCon UId="40" Name="in" />
+                  <NameCon UId="41" Name="in" />
+                </Wire>
+                <Wire UId="47">
+                  <IdentCon UId="22" />
+                  <NameCon UId="33" Name="operand" />
+                </Wire>
+                <Wire UId="48">
+                  <NameCon UId="33" Name="out" />
+                  <NameCon UId="42" Name="in1" />
+                </Wire>
+                <Wire UId="49">
+                  <IdentCon UId="23" />
+                  <NameCon UId="34" Name="operand" />
+                </Wire>
+                <Wire UId="50">
+                  <NameCon UId="34" Name="out" />
+                  <NameCon UId="42" Name="in2" />
+                </Wire>
+                <Wire UId="51">
+                  <IdentCon UId="24" />
+                  <NameCon UId="35" Name="operand" />
+                </Wire>
+                <Wire UId="52">
+                  <NameCon UId="35" Name="out" />
+                  <NameCon UId="42" Name="in3" />
+                </Wire>
+                <Wire UId="53">
+                  <IdentCon UId="25" />
+                  <NameCon UId="36" Name="operand" />
+                </Wire>
+                <Wire UId="54">
+                  <NameCon UId="36" Name="out" />
+                  <NameCon UId="42" Name="in4" />
+                </Wire>
+                <Wire UId="55">
+                  <IdentCon UId="26" />
+                  <NameCon UId="37" Name="operand" />
+                </Wire>
+                <Wire UId="56">
+                  <NameCon UId="37" Name="out" />
+                  <NameCon UId="42" Name="in5" />
+                </Wire>
+                <Wire UId="57">
+                  <IdentCon UId="27" />
+                  <NameCon UId="38" Name="operand" />
+                </Wire>
+                <Wire UId="58">
+                  <NameCon UId="38" Name="out" />
+                  <NameCon UId="42" Name="in6" />
+                </Wire>
+                <Wire UId="59">
+                  <IdentCon UId="28" />
+                  <NameCon UId="39" Name="operand" />
+                </Wire>
+                <Wire UId="60">
+                  <NameCon UId="39" Name="out" />
+                  <NameCon UId="42" Name="in7" />
+                </Wire>
+                <Wire UId="61">
+                  <IdentCon UId="29" />
+                  <NameCon UId="40" Name="operand" />
+                </Wire>
+                <Wire UId="62">
+                  <NameCon UId="40" Name="out" />
+                  <NameCon UId="42" Name="in8" />
+                </Wire>
+                <Wire UId="63">
+                  <IdentCon UId="30" />
+                  <NameCon UId="41" Name="operand" />
+                </Wire>
+                <Wire UId="64">
+                  <NameCon UId="41" Name="out" />
+                  <NameCon UId="42" Name="in9" />
+                </Wire>
+                <Wire UId="65">
+                  <NameCon UId="42" Name="out" />
+                  <NameCon UId="43" Name="in" />
+                </Wire>
+                <Wire UId="66">
+                  <IdentCon UId="31" />
+                  <NameCon UId="43" Name="operand" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="18" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="19" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="1A" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="1B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>"PHT Cycle".fault</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="1C" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle1" />
+                    <Component Name="Start" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle1" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="Pht_Block" />
+                    <Component Name="Fault" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="25">
+                  <Symbol>
+                    <Component Name="Pht_Block" />
+                    <Component Name="EndMsg" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="26">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="Start" />
+                  </Symbol>
+                </Access>
+                <Part Name="Contact" UId="27" />
+                <Part Name="Contact" UId="28" />
+                <Part Name="Contact" UId="29">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="Contact" UId="30">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="Contact" UId="31">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="SCoil" UId="32" />
+              </Parts>
+              <Wires>
+                <Wire UId="33">
+                  <Powerrail />
+                  <NameCon UId="27" Name="in" />
+                </Wire>
+                <Wire UId="34">
+                  <IdentCon UId="21" />
+                  <NameCon UId="27" Name="operand" />
+                </Wire>
+                <Wire UId="35">
+                  <NameCon UId="27" Name="out" />
+                  <NameCon UId="28" Name="in" />
+                </Wire>
+                <Wire UId="36">
+                  <IdentCon UId="22" />
+                  <NameCon UId="28" Name="operand" />
+                </Wire>
+                <Wire UId="37">
+                  <NameCon UId="28" Name="out" />
+                  <NameCon UId="29" Name="in" />
+                </Wire>
+                <Wire UId="38">
+                  <IdentCon UId="23" />
+                  <NameCon UId="29" Name="operand" />
+                </Wire>
+                <Wire UId="39">
+                  <NameCon UId="29" Name="out" />
+                  <NameCon UId="30" Name="in" />
+                </Wire>
+                <Wire UId="40">
+                  <IdentCon UId="24" />
+                  <NameCon UId="30" Name="operand" />
+                </Wire>
+                <Wire UId="41">
+                  <NameCon UId="30" Name="out" />
+                  <NameCon UId="31" Name="in" />
+                </Wire>
+                <Wire UId="42">
+                  <IdentCon UId="25" />
+                  <NameCon UId="31" Name="operand" />
+                </Wire>
+                <Wire UId="43">
+                  <NameCon UId="31" Name="out" />
+                  <NameCon UId="32" Name="in" />
+                </Wire>
+                <Wire UId="44">
+                  <IdentCon UId="26" />
+                  <NameCon UId="32" Name="operand" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="1D" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="1E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="1F" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="20" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>PhtTrigger</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="21" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="Pht_Block" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle1" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Part Name="Contact" UId="23" />
+                <Part Name="Coil" UId="24" />
+              </Parts>
+              <Wires>
+                <Wire UId="25">
+                  <Powerrail />
+                  <NameCon UId="23" Name="in" />
+                </Wire>
+                <Wire UId="26">
+                  <IdentCon UId="21" />
+                  <NameCon UId="23" Name="operand" />
+                </Wire>
+                <Wire UId="27">
+                  <NameCon UId="23" Name="out" />
+                  <NameCon UId="24" Name="in" />
+                </Wire>
+                <Wire UId="28">
+                  <IdentCon UId="22" />
+                  <NameCon UId="24" Name="operand" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="22" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="23" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="24" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="25" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Selected</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="26" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle1" />
+                    <Component Name="Start" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle1" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="Start" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle1" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="25">
+                  <Symbol>
+                    <Component Name="Pht_Block" />
+                    <Component Name="EndMsg" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="26">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="Stop" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="27">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="fault" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="28">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle1" />
+                    <Component Name="Abort" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="29">
+                  <Symbol>
+                    <Component Name="HmiTags" />
+                    <Component Name="MasterReset" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="30">
+                  <Symbol>
+                    <Component Name="Sec_Pulse" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="31">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="32">
+                  <Constant>
+                    <ConstantType>Bool</ConstantType>
+                    <ConstantValue>1</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="33">
+                  <Symbol>
+                    <Component Name="Pht_Block" />
+                    <Component Name="EndMsgAck" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="34">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="fault" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="35">
+                  <Constant>
+                    <ConstantType>Bool</ConstantType>
+                    <ConstantValue>1</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="LiteralConstant" UId="36">
+                  <Constant>
+                    <ConstantType>Bool</ConstantType>
+                    <ConstantValue>0</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="37">
+                  <Symbol>
+                    <Component Name="PhtRecipe" />
+                    <Component Name="PressureStabilizeTime" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="38">
+                  <Symbol>
+                    <Component Name="PhtRecipe" />
+                    <Component Name="HoldPressure" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="39">
+                  <Symbol>
+                    <Component Name="PhtRecipe" />
+                    <Component Name="ReleasePressure" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="40">
+                  <Symbol>
+                    <Component Name="PhtRecipe" />
+                    <Component Name="AcceptableLeakage" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="41">
+                  <Symbol>
+                    <Component Name="PhtRecipe" />
+                    <Component Name="PressureHoldTime" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="42">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="Actual_Min_Pressure" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="43">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="Actual_Max_Pressure" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="44">
+                  <Symbol>
+                    <Component Name="ModeDb_R" />
+                    <Component Name="RunningCycle" />
+                    <Component Name="PrintInterval" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="45">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="Running" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="46">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="Startup parameter popup Yes" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="47">
+                  <Symbol>
+                    <Component Name="Pht_Block" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="48">
+                  <Symbol>
+                    <Component Name="Pht_Block" />
+                    <Component Name="EndMsg" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="49">
+                  <Symbol>
+                    <Component Name="Pht_Block" />
+                    <Component Name="StabilizeActualSecs" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="50">
+                  <Symbol>
+                    <Component Name="Pht_Block" />
+                    <Component Name="HoldActualMins" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="51">
+                  <Symbol>
+                    <Component Name="Pht_Block" />
+                    <Component Name="HoldActualSecs" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="52">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="Step Status" />
+                  </Symbol>
+                </Access>
+                <Part Name="Contact" UId="53" />
+                <Part Name="Contact" UId="54" />
+                <Part Name="Contact" UId="55" />
+                <Part Name="Contact" UId="56">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="O" UId="57">
+                  <TemplateValue Name="Card" Type="Cardinality">2</TemplateValue>
+                </Part>
+                <Part Name="Contact" UId="58">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="Contact" UId="59" />
+                <Part Name="Contact" UId="60" />
+                <Part Name="O" UId="61">
+                  <TemplateValue Name="Card" Type="Cardinality">2</TemplateValue>
+                </Part>
+                <Part Name="Contact" UId="62" />
+                <Part Name="Contact" UId="63" />
+                <Part Name="O" UId="64">
+                  <TemplateValue Name="Card" Type="Cardinality">2</TemplateValue>
+                </Part>
+                <Call UId="65">
+                  <CallInfo Name="PHT Block" BlockType="FB">
+                    <Instance Scope="GlobalVariable" UId="66">
+                      <Component Name="Pht_Block" />
+                    </Instance>
+                    <Parameter Name="Secs" Section="Input" Type="Bool" />
+                    <Parameter Name="Start" Section="Input" Type="Bool" />
+                    <Parameter Name="Stop" Section="Input" Type="Bool" />
+                    <Parameter Name="Abort" Section="Input" Type="Bool" />
+                    <Parameter Name="AlarmAck" Section="Input" Type="Bool" />
+                    <Parameter Name="AlwaysTrue" Section="Input" Type="Bool" />
+                    <Parameter Name="StartupMsgSelection" Section="Input" Type="Bool" />
+                    <Parameter Name="spare1" Section="Input" Type="Bool" />
+                    <Parameter Name="spare2" Section="Input" Type="Bool" />
+                    <Parameter Name="EndMsgSelection" Section="Input" Type="Bool" />
+                    <Parameter Name="EndMsgAck" Section="Input" Type="Bool" />
+                    <Parameter Name="Fault" Section="Input" Type="Bool" />
+                    <Parameter Name="Popup1Enable" Section="Input" Type="Bool" />
+                    <Parameter Name="Popup2Enable" Section="Input" Type="Bool" />
+                    <Parameter Name="ScadaHmi" Section="Input" Type="Bool" />
+                    <Parameter Name="StabilizeTime" Section="Input" Type="Int" />
+                    <Parameter Name="SetPressure" Section="Input" Type="Real" />
+                    <Parameter Name="ReleasePressure" Section="Input" Type="Real" />
+                    <Parameter Name="FailPressure" Section="Input" Type="Real" />
+                    <Parameter Name="AcceptableLeakage" Section="Input" Type="Real" />
+                    <Parameter Name="HoldTime" Section="Input" Type="Int" />
+                    <Parameter Name="UtilityValveDelay" Section="Input" Type="Int" />
+                    <Parameter Name="Actual Minimum Pressure" Section="Input" Type="Real" />
+                    <Parameter Name="Actual Maximum Pressure" Section="Input" Type="Real" />
+                    <Parameter Name="MaximumAttemptToFailedSelection" Section="Input" Type="Int" />
+                    <Parameter Name="MaximumNoAttemptToFailed" Section="Input" Type="Int" />
+                    <Parameter Name="PrintInterval" Section="Input" Type="Int" />
+                    <Parameter Name="StartupMsg1" Section="Output" Type="Bool" />
+                    <Parameter Name="CycleOver" Section="Output" Type="Bool" />
+                    <Parameter Name="LineValves" Section="Output" Type="Bool" />
+                    <Parameter Name="ControlValve" Section="Output" Type="Bool" />
+                    <Parameter Name="UtilityValve" Section="Output" Type="Bool" />
+                    <Parameter Name="StartupMsg" Section="Output" Type="Bool" />
+                    <Parameter Name="EndMsg" Section="Output" Type="Bool" />
+                    <Parameter Name="TestPassAlarm" Section="Output" Type="Bool" />
+                    <Parameter Name="TestFailAlarm" Section="Output" Type="Bool" />
+                    <Parameter Name="DrainValves" Section="Output" Type="Bool" />
+                    <Parameter Name="StartupMsg2" Section="Output" Type="Bool" />
+                    <Parameter Name="StabilizeActualSecs" Section="Output" Type="DInt" />
+                    <Parameter Name="HoldActualMins" Section="Output" Type="DInt" />
+                    <Parameter Name="HoldActualSecs" Section="Output" Type="DInt" />
+                    <Parameter Name="Status" Section="Output" Type="Int" />
+                    <Parameter Name="StatusStr" Section="Output" Type="String[60]" />
+                    <Parameter Name="UtilityValveActualDelay" Section="Output" Type="Int" />
+                    <Parameter Name="Event" Section="Output" Type="Word" />
+                    <Parameter Name="Selected" Section="InOut" Type="Bool" />
+                    <Parameter Name="CycleSelected" Section="InOut" Type="Bool" />
+                    <Parameter Name="Running" Section="InOut" Type="Bool" />
+                    <Parameter Name="VesselPressurised" Section="InOut" Type="Bool" />
+                    <Parameter Name="DataLogCmd" Section="InOut" Type="Bool" />
+                    <Parameter Name="StartLog" Section="InOut" Type="Bool" />
+                    <Parameter Name="EndLog" Section="InOut" Type="Bool" />
+                    <Parameter Name="DataLogYes" Section="InOut" Type="Bool" />
+                    <Parameter Name="ResetPhtTimer" Section="InOut" Type="Bool" />
+                    <Parameter Name="VesselStabilised" Section="InOut" Type="Bool" />
+                    <Parameter Name="DelayToConfirmVesselPressurized" Section="InOut" Type="Bool" />
+                    <Parameter Name="PressureDropDuringStabilizeTime" Section="InOut" Type="Bool" />
+                    <Parameter Name="PressureDropDuringHoldTime" Section="InOut" Type="Bool" />
+                    <Parameter Name="TestPassedRW" Section="InOut" Type="Bool" />
+                    <Parameter Name="DelayToStartReleaseDone" Section="InOut" Type="Bool" />
+                    <Parameter Name="DrainValve" Section="InOut" Type="Bool" />
+                    <Parameter Name="StabilizePopup" Section="InOut" Type="Bool" />
+                    <Parameter Name="LineValvesOpeningTime" Section="InOut" Type="Int" />
+                    <Parameter Name="DrainValvesOpeningTime" Section="InOut" Type="Int" />
+                    <Parameter Name="AcceptablePressure" Section="InOut" Type="Real" />
+                    <Parameter Name="PHT Selected" Section="InOut" Type="Bool" />
+                    <Parameter Name="TestAborted" Section="InOut" Type="Bool" />
+                    <Parameter Name="ResetBit" Section="InOut" Type="Bool" />
+                    <Parameter Name="Popup2Ack" Section="InOut" Type="Bool" />
+                    <Parameter Name="StartupMsgYes" Section="InOut" Type="Bool" />
+                    <Parameter Name="StartupMsgNo" Section="InOut" Type="Bool" />
+                    <Parameter Name="MaximumNoAttemptToFailedTemp" Section="InOut" Type="Int" />
+                  </CallInfo>
+                </Call>
+              </Parts>
+              <Wires>
+                <Wire UId="113">
+                  <Powerrail />
+                  <NameCon UId="65" Name="en" />
+                  <NameCon UId="53" Name="in" />
+                  <NameCon UId="55" Name="in" />
+                  <NameCon UId="59" Name="in" />
+                  <NameCon UId="60" Name="in" />
+                  <NameCon UId="62" Name="in" />
+                  <NameCon UId="63" Name="in" />
+                </Wire>
+                <Wire UId="114">
+                  <IdentCon UId="21" />
+                  <NameCon UId="53" Name="operand" />
+                </Wire>
+                <Wire UId="115">
+                  <NameCon UId="53" Name="out" />
+                  <NameCon UId="54" Name="in" />
+                </Wire>
+                <Wire UId="116">
+                  <IdentCon UId="22" />
+                  <NameCon UId="54" Name="operand" />
+                </Wire>
+                <Wire UId="117">
+                  <NameCon UId="54" Name="out" />
+                  <NameCon UId="57" Name="in1" />
+                </Wire>
+                <Wire UId="118">
+                  <IdentCon UId="23" />
+                  <NameCon UId="55" Name="operand" />
+                </Wire>
+                <Wire UId="119">
+                  <NameCon UId="55" Name="out" />
+                  <NameCon UId="56" Name="in" />
+                </Wire>
+                <Wire UId="120">
+                  <IdentCon UId="24" />
+                  <NameCon UId="56" Name="operand" />
+                </Wire>
+                <Wire UId="121">
+                  <NameCon UId="56" Name="out" />
+                  <NameCon UId="57" Name="in2" />
+                </Wire>
+                <Wire UId="122">
+                  <NameCon UId="57" Name="out" />
+                  <NameCon UId="58" Name="in" />
+                </Wire>
+                <Wire UId="123">
+                  <IdentCon UId="25" />
+                  <NameCon UId="58" Name="operand" />
+                </Wire>
+                <Wire UId="124">
+                  <NameCon UId="58" Name="out" />
+                  <NameCon UId="65" Name="Start" />
+                </Wire>
+                <Wire UId="125">
+                  <IdentCon UId="26" />
+                  <NameCon UId="59" Name="operand" />
+                </Wire>
+                <Wire UId="126">
+                  <NameCon UId="59" Name="out" />
+                  <NameCon UId="61" Name="in1" />
+                </Wire>
+                <Wire UId="127">
+                  <IdentCon UId="27" />
+                  <NameCon UId="60" Name="operand" />
+                </Wire>
+                <Wire UId="128">
+                  <NameCon UId="60" Name="out" />
+                  <NameCon UId="61" Name="in2" />
+                </Wire>
+                <Wire UId="129">
+                  <NameCon UId="61" Name="out" />
+                  <NameCon UId="65" Name="Stop" />
+                </Wire>
+                <Wire UId="130">
+                  <IdentCon UId="28" />
+                  <NameCon UId="62" Name="operand" />
+                </Wire>
+                <Wire UId="131">
+                  <NameCon UId="62" Name="out" />
+                  <NameCon UId="64" Name="in1" />
+                </Wire>
+                <Wire UId="132">
+                  <IdentCon UId="29" />
+                  <NameCon UId="63" Name="operand" />
+                </Wire>
+                <Wire UId="133">
+                  <NameCon UId="63" Name="out" />
+                  <NameCon UId="64" Name="in2" />
+                </Wire>
+                <Wire UId="134">
+                  <NameCon UId="64" Name="out" />
+                  <NameCon UId="65" Name="Abort" />
+                </Wire>
+                <Wire UId="135">
+                  <IdentCon UId="30" />
+                  <NameCon UId="65" Name="Secs" />
+                </Wire>
+                <Wire UId="136">
+                  <OpenCon UId="67" />
+                  <NameCon UId="65" Name="AlarmAck" />
+                </Wire>
+                <Wire UId="137">
+                  <IdentCon UId="31" />
+                  <NameCon UId="65" Name="AlwaysTrue" />
+                </Wire>
+                <Wire UId="138">
+                  <OpenCon UId="68" />
+                  <NameCon UId="65" Name="StartupMsgSelection" />
+                </Wire>
+                <Wire UId="139">
+                  <OpenCon UId="69" />
+                  <NameCon UId="65" Name="spare1" />
+                </Wire>
+                <Wire UId="140">
+                  <OpenCon UId="70" />
+                  <NameCon UId="65" Name="spare2" />
+                </Wire>
+                <Wire UId="141">
+                  <IdentCon UId="32" />
+                  <NameCon UId="65" Name="EndMsgSelection" />
+                </Wire>
+                <Wire UId="142">
+                  <IdentCon UId="33" />
+                  <NameCon UId="65" Name="EndMsgAck" />
+                </Wire>
+                <Wire UId="143">
+                  <IdentCon UId="34" />
+                  <NameCon UId="65" Name="Fault" />
+                </Wire>
+                <Wire UId="144">
+                  <IdentCon UId="35" />
+                  <NameCon UId="65" Name="Popup1Enable" />
+                </Wire>
+                <Wire UId="145">
+                  <IdentCon UId="36" />
+                  <NameCon UId="65" Name="Popup2Enable" />
+                </Wire>
+                <Wire UId="146">
+                  <OpenCon UId="71" />
+                  <NameCon UId="65" Name="ScadaHmi" />
+                </Wire>
+                <Wire UId="147">
+                  <IdentCon UId="37" />
+                  <NameCon UId="65" Name="StabilizeTime" />
+                </Wire>
+                <Wire UId="148">
+                  <IdentCon UId="38" />
+                  <NameCon UId="65" Name="SetPressure" />
+                </Wire>
+                <Wire UId="149">
+                  <IdentCon UId="39" />
+                  <NameCon UId="65" Name="ReleasePressure" />
+                </Wire>
+                <Wire UId="150">
+                  <OpenCon UId="72" />
+                  <NameCon UId="65" Name="FailPressure" />
+                </Wire>
+                <Wire UId="151">
+                  <IdentCon UId="40" />
+                  <NameCon UId="65" Name="AcceptableLeakage" />
+                </Wire>
+                <Wire UId="152">
+                  <IdentCon UId="41" />
+                  <NameCon UId="65" Name="HoldTime" />
+                </Wire>
+                <Wire UId="153">
+                  <OpenCon UId="73" />
+                  <NameCon UId="65" Name="UtilityValveDelay" />
+                </Wire>
+                <Wire UId="154">
+                  <IdentCon UId="42" />
+                  <NameCon UId="65" Name="Actual Minimum Pressure" />
+                </Wire>
+                <Wire UId="155">
+                  <IdentCon UId="43" />
+                  <NameCon UId="65" Name="Actual Maximum Pressure" />
+                </Wire>
+                <Wire UId="156">
+                  <OpenCon UId="74" />
+                  <NameCon UId="65" Name="MaximumAttemptToFailedSelection" />
+                </Wire>
+                <Wire UId="157">
+                  <OpenCon UId="75" />
+                  <NameCon UId="65" Name="MaximumNoAttemptToFailed" />
+                </Wire>
+                <Wire UId="158">
+                  <IdentCon UId="44" />
+                  <NameCon UId="65" Name="PrintInterval" />
+                </Wire>
+                <Wire UId="159">
+                  <OpenCon UId="76" />
+                  <NameCon UId="65" Name="Selected" />
+                </Wire>
+                <Wire UId="160">
+                  <OpenCon UId="77" />
+                  <NameCon UId="65" Name="CycleSelected" />
+                </Wire>
+                <Wire UId="161">
+                  <IdentCon UId="45" />
+                  <NameCon UId="65" Name="Running" />
+                </Wire>
+                <Wire UId="162">
+                  <OpenCon UId="78" />
+                  <NameCon UId="65" Name="VesselPressurised" />
+                </Wire>
+                <Wire UId="163">
+                  <OpenCon UId="79" />
+                  <NameCon UId="65" Name="DataLogCmd" />
+                </Wire>
+                <Wire UId="164">
+                  <OpenCon UId="80" />
+                  <NameCon UId="65" Name="StartLog" />
+                </Wire>
+                <Wire UId="165">
+                  <OpenCon UId="81" />
+                  <NameCon UId="65" Name="EndLog" />
+                </Wire>
+                <Wire UId="166">
+                  <IdentCon UId="46" />
+                  <NameCon UId="65" Name="DataLogYes" />
+                </Wire>
+                <Wire UId="167">
+                  <OpenCon UId="82" />
+                  <NameCon UId="65" Name="ResetPhtTimer" />
+                </Wire>
+                <Wire UId="168">
+                  <OpenCon UId="83" />
+                  <NameCon UId="65" Name="VesselStabilised" />
+                </Wire>
+                <Wire UId="169">
+                  <OpenCon UId="84" />
+                  <NameCon UId="65" Name="DelayToConfirmVesselPressurized" />
+                </Wire>
+                <Wire UId="170">
+                  <OpenCon UId="85" />
+                  <NameCon UId="65" Name="PressureDropDuringStabilizeTime" />
+                </Wire>
+                <Wire UId="171">
+                  <OpenCon UId="86" />
+                  <NameCon UId="65" Name="PressureDropDuringHoldTime" />
+                </Wire>
+                <Wire UId="172">
+                  <OpenCon UId="87" />
+                  <NameCon UId="65" Name="TestPassedRW" />
+                </Wire>
+                <Wire UId="173">
+                  <OpenCon UId="88" />
+                  <NameCon UId="65" Name="DelayToStartReleaseDone" />
+                </Wire>
+                <Wire UId="174">
+                  <OpenCon UId="89" />
+                  <NameCon UId="65" Name="DrainValve" />
+                </Wire>
+                <Wire UId="175">
+                  <OpenCon UId="90" />
+                  <NameCon UId="65" Name="StabilizePopup" />
+                </Wire>
+                <Wire UId="176">
+                  <OpenCon UId="91" />
+                  <NameCon UId="65" Name="LineValvesOpeningTime" />
+                </Wire>
+                <Wire UId="177">
+                  <OpenCon UId="92" />
+                  <NameCon UId="65" Name="DrainValvesOpeningTime" />
+                </Wire>
+                <Wire UId="178">
+                  <OpenCon UId="93" />
+                  <NameCon UId="65" Name="AcceptablePressure" />
+                </Wire>
+                <Wire UId="179">
+                  <IdentCon UId="47" />
+                  <NameCon UId="65" Name="PHT Selected" />
+                </Wire>
+                <Wire UId="180">
+                  <OpenCon UId="94" />
+                  <NameCon UId="65" Name="TestAborted" />
+                </Wire>
+                <Wire UId="181">
+                  <OpenCon UId="95" />
+                  <NameCon UId="65" Name="ResetBit" />
+                </Wire>
+                <Wire UId="182">
+                  <OpenCon UId="96" />
+                  <NameCon UId="65" Name="Popup2Ack" />
+                </Wire>
+                <Wire UId="183">
+                  <OpenCon UId="97" />
+                  <NameCon UId="65" Name="StartupMsgYes" />
+                </Wire>
+                <Wire UId="184">
+                  <OpenCon UId="98" />
+                  <NameCon UId="65" Name="StartupMsgNo" />
+                </Wire>
+                <Wire UId="185">
+                  <OpenCon UId="99" />
+                  <NameCon UId="65" Name="MaximumNoAttemptToFailedTemp" />
+                </Wire>
+                <Wire UId="186">
+                  <NameCon UId="65" Name="StartupMsg1" />
+                  <OpenCon UId="100" />
+                </Wire>
+                <Wire UId="187">
+                  <NameCon UId="65" Name="CycleOver" />
+                  <OpenCon UId="101" />
+                </Wire>
+                <Wire UId="188">
+                  <NameCon UId="65" Name="LineValves" />
+                  <OpenCon UId="102" />
+                </Wire>
+                <Wire UId="189">
+                  <NameCon UId="65" Name="ControlValve" />
+                  <OpenCon UId="103" />
+                </Wire>
+                <Wire UId="190">
+                  <NameCon UId="65" Name="UtilityValve" />
+                  <OpenCon UId="104" />
+                </Wire>
+                <Wire UId="191">
+                  <NameCon UId="65" Name="StartupMsg" />
+                  <OpenCon UId="105" />
+                </Wire>
+                <Wire UId="192">
+                  <NameCon UId="65" Name="EndMsg" />
+                  <IdentCon UId="48" />
+                </Wire>
+                <Wire UId="193">
+                  <NameCon UId="65" Name="TestPassAlarm" />
+                  <OpenCon UId="106" />
+                </Wire>
+                <Wire UId="194">
+                  <NameCon UId="65" Name="TestFailAlarm" />
+                  <OpenCon UId="107" />
+                </Wire>
+                <Wire UId="195">
+                  <NameCon UId="65" Name="DrainValves" />
+                  <OpenCon UId="108" />
+                </Wire>
+                <Wire UId="196">
+                  <NameCon UId="65" Name="StartupMsg2" />
+                  <OpenCon UId="109" />
+                </Wire>
+                <Wire UId="197">
+                  <NameCon UId="65" Name="StabilizeActualSecs" />
+                  <IdentCon UId="49" />
+                </Wire>
+                <Wire UId="198">
+                  <NameCon UId="65" Name="HoldActualMins" />
+                  <IdentCon UId="50" />
+                </Wire>
+                <Wire UId="199">
+                  <NameCon UId="65" Name="HoldActualSecs" />
+                  <IdentCon UId="51" />
+                </Wire>
+                <Wire UId="200">
+                  <NameCon UId="65" Name="Status" />
+                  <OpenCon UId="110" />
+                </Wire>
+                <Wire UId="201">
+                  <NameCon UId="65" Name="StatusStr" />
+                  <IdentCon UId="52" />
+                </Wire>
+                <Wire UId="202">
+                  <NameCon UId="65" Name="UtilityValveActualDelay" />
+                  <OpenCon UId="111" />
+                </Wire>
+                <Wire UId="203">
+                  <NameCon UId="65" Name="Event" />
+                  <OpenCon UId="112" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="27" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="28" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="29" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="2A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>PHT Block</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="2B" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="HOLD_FAIL" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="Pht_Block" />
+                    <Component Name="TestFailAlarm" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="PHTRe" />
+                    <Component Name="RE" AccessModifier="Array">
+                      <Access Scope="LiteralConstant">
+                        <Constant>
+                          <ConstantType>DInt</ConstantType>
+                          <ConstantValue>2</ConstantValue>
+                        </Constant>
+                      </Access>
+                    </Component>
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="25">
+                  <Symbol>
+                    <Component Name="ProcessAlarms" />
+                    <Component Name="PhtFailed" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="26">
+                  <Symbol>
+                    <Component Name="Pht_Block" />
+                    <Component Name="TestPassAlarm" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="27">
+                  <Symbol>
+                    <Component Name="PHTRe" />
+                    <Component Name="RE" AccessModifier="Array">
+                      <Access Scope="LiteralConstant">
+                        <Constant>
+                          <ConstantType>DInt</ConstantType>
+                          <ConstantValue>3</ConstantValue>
+                        </Constant>
+                      </Access>
+                    </Component>
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="28">
+                  <Symbol>
+                    <Component Name="ProcessAlarms" />
+                    <Component Name="PhtPassed" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="29">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="HOLD_FAIL" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="30">
+                  <Symbol>
+                    <Component Name="Pht_Block" />
+                    <Component Name="CycleOver" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="31">
+                  <Symbol>
+                    <Component Name="PHTRe" />
+                    <Component Name="RE" AccessModifier="Array">
+                      <Access Scope="LiteralConstant">
+                        <Constant>
+                          <ConstantType>DInt</ConstantType>
+                          <ConstantValue>4</ConstantValue>
+                        </Constant>
+                      </Access>
+                    </Component>
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="32">
+                  <Symbol>
+                    <Component Name="ProcessAlarms" />
+                    <Component Name="PhtOver" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="33">
+                  <Symbol>
+                    <Component Name="HmiTags" />
+                    <Component Name="AlarmAck" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="34">
+                  <Symbol>
+                    <Component Name="ProcessAlarms" />
+                    <Component Name="PhtOver" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="35">
+                  <Symbol>
+                    <Component Name="ProcessAlarms" />
+                    <Component Name="PhtPassed" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="36">
+                  <Symbol>
+                    <Component Name="ProcessAlarms" />
+                    <Component Name="PhtFailed" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="37">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="HOLD_FAIL" />
+                  </Symbol>
+                </Access>
+                <Part Name="Contact" UId="38" />
+                <Part Name="Contact" UId="39" />
+                <Part Name="PContact" UId="40" />
+                <Part Name="O" UId="41">
+                  <TemplateValue Name="Card" Type="Cardinality">2</TemplateValue>
+                </Part>
+                <Part Name="SCoil" UId="42" />
+                <Part Name="PContact" UId="43" />
+                <Part Name="SCoil" UId="44" />
+                <Part Name="Contact" UId="45">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="PContact" UId="46" />
+                <Part Name="SCoil" UId="47" />
+                <Part Name="Contact" UId="48" />
+                <Part Name="RCoil" UId="49" />
+                <Part Name="RCoil" UId="50" />
+                <Part Name="RCoil" UId="51" />
+                <Part Name="RCoil" UId="52" />
+              </Parts>
+              <Wires>
+                <Wire UId="53">
+                  <Powerrail />
+                  <NameCon UId="38" Name="in" />
+                </Wire>
+                <Wire UId="54">
+                  <IdentCon UId="21" />
+                  <NameCon UId="38" Name="operand" />
+                </Wire>
+                <Wire UId="55">
+                  <NameCon UId="38" Name="out" />
+                  <NameCon UId="39" Name="in" />
+                  <NameCon UId="40" Name="pre" />
+                  <NameCon UId="43" Name="pre" />
+                  <NameCon UId="45" Name="in" />
+                  <NameCon UId="48" Name="in" />
+                </Wire>
+                <Wire UId="56">
+                  <IdentCon UId="22" />
+                  <NameCon UId="39" Name="operand" />
+                </Wire>
+                <Wire UId="57">
+                  <NameCon UId="39" Name="out" />
+                  <NameCon UId="41" Name="in1" />
+                </Wire>
+                <Wire UId="58">
+                  <IdentCon UId="24" />
+                  <NameCon UId="40" Name="bit" />
+                </Wire>
+                <Wire UId="59">
+                  <IdentCon UId="23" />
+                  <NameCon UId="40" Name="operand" />
+                </Wire>
+                <Wire UId="60">
+                  <NameCon UId="40" Name="out" />
+                  <NameCon UId="41" Name="in2" />
+                </Wire>
+                <Wire UId="61">
+                  <NameCon UId="41" Name="out" />
+                  <NameCon UId="42" Name="in" />
+                </Wire>
+                <Wire UId="62">
+                  <IdentCon UId="25" />
+                  <NameCon UId="42" Name="operand" />
+                </Wire>
+                <Wire UId="63">
+                  <IdentCon UId="27" />
+                  <NameCon UId="43" Name="bit" />
+                </Wire>
+                <Wire UId="64">
+                  <IdentCon UId="26" />
+                  <NameCon UId="43" Name="operand" />
+                </Wire>
+                <Wire UId="65">
+                  <NameCon UId="43" Name="out" />
+                  <NameCon UId="44" Name="in" />
+                </Wire>
+                <Wire UId="66">
+                  <IdentCon UId="28" />
+                  <NameCon UId="44" Name="operand" />
+                </Wire>
+                <Wire UId="67">
+                  <IdentCon UId="29" />
+                  <NameCon UId="45" Name="operand" />
+                </Wire>
+                <Wire UId="68">
+                  <NameCon UId="45" Name="out" />
+                  <NameCon UId="46" Name="pre" />
+                </Wire>
+                <Wire UId="69">
+                  <IdentCon UId="31" />
+                  <NameCon UId="46" Name="bit" />
+                </Wire>
+                <Wire UId="70">
+                  <IdentCon UId="30" />
+                  <NameCon UId="46" Name="operand" />
+                </Wire>
+                <Wire UId="71">
+                  <NameCon UId="46" Name="out" />
+                  <NameCon UId="47" Name="in" />
+                </Wire>
+                <Wire UId="72">
+                  <IdentCon UId="32" />
+                  <NameCon UId="47" Name="operand" />
+                </Wire>
+                <Wire UId="73">
+                  <IdentCon UId="33" />
+                  <NameCon UId="48" Name="operand" />
+                </Wire>
+                <Wire UId="74">
+                  <NameCon UId="48" Name="out" />
+                  <NameCon UId="49" Name="in" />
+                  <NameCon UId="50" Name="in" />
+                  <NameCon UId="51" Name="in" />
+                  <NameCon UId="52" Name="in" />
+                </Wire>
+                <Wire UId="75">
+                  <IdentCon UId="34" />
+                  <NameCon UId="49" Name="operand" />
+                </Wire>
+                <Wire UId="76">
+                  <IdentCon UId="35" />
+                  <NameCon UId="50" Name="operand" />
+                </Wire>
+                <Wire UId="77">
+                  <IdentCon UId="36" />
+                  <NameCon UId="51" Name="operand" />
+                </Wire>
+                <Wire UId="78">
+                  <IdentCon UId="37" />
+                  <NameCon UId="52" Name="operand" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="2C" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="2D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="2E" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="2F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>PHT ALARMS</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="30" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="Start" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="Stop" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="Abort" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="Startup parameter popup Yes" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="25">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="Startup parameter popup No" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="26">
+                  <Symbol>
+                    <Component Name="HmiTags" />
+                    <Component Name="MasterReset" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="27">
+                  <Symbol>
+                    <Component Name="Pht_Block" />
+                    <Component Name="Popup2Ack" />
+                  </Symbol>
+                </Access>
+                <Access Scope="TypedConstant" UId="28">
+                  <Constant>
+                    <ConstantValue>T#2S</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="29">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="Start" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="30">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="Stop" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="31">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="Abort" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="32">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="Startup parameter popup Yes" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="33">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="Startup parameter popup No" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="34">
+                  <Symbol>
+                    <Component Name="HmiTags" />
+                    <Component Name="MasterReset" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="35">
+                  <Symbol>
+                    <Component Name="Pht_Block" />
+                    <Component Name="Popup2Ack" />
+                  </Symbol>
+                </Access>
+                <Part Name="Contact" UId="36" />
+                <Part Name="Contact" UId="37" />
+                <Part Name="Contact" UId="38" />
+                <Part Name="Contact" UId="39" />
+                <Part Name="Contact" UId="40" />
+                <Part Name="Contact" UId="41" />
+                <Part Name="Contact" UId="42" />
+                <Part Name="O" UId="43">
+                  <TemplateValue Name="Card" Type="Cardinality">7</TemplateValue>
+                </Part>
+                <Part Name="TON" Version="1.0" UId="44">
+                  <Instance Scope="GlobalVariable" UId="45">
+                    <Component Name="PhtTimer" />
+                    <Component Name="TIMER" />
+                  </Instance>
+                  <TemplateValue Name="time_type" Type="Type">Time</TemplateValue>
+                </Part>
+                <Part Name="RCoil" UId="46" />
+                <Part Name="RCoil" UId="47" />
+                <Part Name="RCoil" UId="48" />
+                <Part Name="RCoil" UId="49" />
+                <Part Name="RCoil" UId="50" />
+                <Part Name="RCoil" UId="51" />
+                <Part Name="RCoil" UId="52" />
+              </Parts>
+              <Wires>
+                <Wire UId="54">
+                  <Powerrail />
+                  <NameCon UId="36" Name="in" />
+                  <NameCon UId="37" Name="in" />
+                  <NameCon UId="38" Name="in" />
+                  <NameCon UId="39" Name="in" />
+                  <NameCon UId="40" Name="in" />
+                  <NameCon UId="41" Name="in" />
+                  <NameCon UId="42" Name="in" />
+                </Wire>
+                <Wire UId="55">
+                  <IdentCon UId="21" />
+                  <NameCon UId="36" Name="operand" />
+                </Wire>
+                <Wire UId="56">
+                  <NameCon UId="36" Name="out" />
+                  <NameCon UId="43" Name="in1" />
+                </Wire>
+                <Wire UId="57">
+                  <IdentCon UId="22" />
+                  <NameCon UId="37" Name="operand" />
+                </Wire>
+                <Wire UId="58">
+                  <NameCon UId="37" Name="out" />
+                  <NameCon UId="43" Name="in2" />
+                </Wire>
+                <Wire UId="59">
+                  <IdentCon UId="23" />
+                  <NameCon UId="38" Name="operand" />
+                </Wire>
+                <Wire UId="60">
+                  <NameCon UId="38" Name="out" />
+                  <NameCon UId="43" Name="in3" />
+                </Wire>
+                <Wire UId="61">
+                  <IdentCon UId="24" />
+                  <NameCon UId="39" Name="operand" />
+                </Wire>
+                <Wire UId="62">
+                  <NameCon UId="39" Name="out" />
+                  <NameCon UId="43" Name="in4" />
+                </Wire>
+                <Wire UId="63">
+                  <IdentCon UId="25" />
+                  <NameCon UId="40" Name="operand" />
+                </Wire>
+                <Wire UId="64">
+                  <NameCon UId="40" Name="out" />
+                  <NameCon UId="43" Name="in5" />
+                </Wire>
+                <Wire UId="65">
+                  <IdentCon UId="26" />
+                  <NameCon UId="41" Name="operand" />
+                </Wire>
+                <Wire UId="66">
+                  <NameCon UId="41" Name="out" />
+                  <NameCon UId="43" Name="in6" />
+                </Wire>
+                <Wire UId="67">
+                  <IdentCon UId="27" />
+                  <NameCon UId="42" Name="operand" />
+                </Wire>
+                <Wire UId="68">
+                  <NameCon UId="42" Name="out" />
+                  <NameCon UId="43" Name="in7" />
+                </Wire>
+                <Wire UId="69">
+                  <NameCon UId="43" Name="out" />
+                  <NameCon UId="44" Name="IN" />
+                </Wire>
+                <Wire UId="70">
+                  <IdentCon UId="28" />
+                  <NameCon UId="44" Name="PT" />
+                </Wire>
+                <Wire UId="71">
+                  <NameCon UId="44" Name="Q" />
+                  <NameCon UId="46" Name="in" />
+                  <NameCon UId="47" Name="in" />
+                  <NameCon UId="48" Name="in" />
+                  <NameCon UId="49" Name="in" />
+                  <NameCon UId="50" Name="in" />
+                  <NameCon UId="51" Name="in" />
+                  <NameCon UId="52" Name="in" />
+                </Wire>
+                <Wire UId="72">
+                  <NameCon UId="44" Name="ET" />
+                  <OpenCon UId="53" />
+                </Wire>
+                <Wire UId="73">
+                  <IdentCon UId="29" />
+                  <NameCon UId="46" Name="operand" />
+                </Wire>
+                <Wire UId="74">
+                  <IdentCon UId="30" />
+                  <NameCon UId="47" Name="operand" />
+                </Wire>
+                <Wire UId="75">
+                  <IdentCon UId="31" />
+                  <NameCon UId="48" Name="operand" />
+                </Wire>
+                <Wire UId="76">
+                  <IdentCon UId="32" />
+                  <NameCon UId="49" Name="operand" />
+                </Wire>
+                <Wire UId="77">
+                  <IdentCon UId="33" />
+                  <NameCon UId="50" Name="operand" />
+                </Wire>
+                <Wire UId="78">
+                  <IdentCon UId="34" />
+                  <NameCon UId="51" Name="operand" />
+                </Wire>
+                <Wire UId="79">
+                  <IdentCon UId="35" />
+                  <NameCon UId="52" Name="operand" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="31" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="32" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="33" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="34" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>RESET BUTTONS</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="35" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="Abort" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="HmiTags" />
+                    <Component Name="MasterReset" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="24">
+                  <Constant>
+                    <ConstantType>String</ConstantType>
+                    <ConstantValue>'PHT ABORTED'</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="25">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="Result" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="26">
+                  <Symbol>
+                    <Component Name="ProcessAlarms" />
+                    <Component Name="PhtPassed" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="27">
+                  <Constant>
+                    <ConstantType>String</ConstantType>
+                    <ConstantValue>'PHT PASSED'</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="28">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="Result" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="29">
+                  <Symbol>
+                    <Component Name="ProcessAlarms" />
+                    <Component Name="PhtFailed" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="30">
+                  <Constant>
+                    <ConstantType>String</ConstantType>
+                    <ConstantValue>'PHT FAILED'</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="31">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="Result" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="32">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="Result" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="33">
+                  <Symbol>
+                    <Component Name="ModeDb_R" />
+                    <Component Name="Cycle1" />
+                    <Component Name="CycleResult" />
+                  </Symbol>
+                </Access>
+                <Part Name="Contact" UId="34" />
+                <Part Name="Contact" UId="35" />
+                <Part Name="Contact" UId="36" />
+                <Part Name="O" UId="37">
+                  <TemplateValue Name="Card" Type="Cardinality">2</TemplateValue>
+                </Part>
+                <Part Name="S_Move" UId="38" DisabledENO="true" />
+                <Part Name="Contact" UId="39" />
+                <Part Name="S_Move" UId="40" DisabledENO="true" />
+                <Part Name="Contact" UId="41" />
+                <Part Name="S_Move" UId="42" DisabledENO="true" />
+                <Part Name="S_Move" UId="43" DisabledENO="true" />
+              </Parts>
+              <Wires>
+                <Wire UId="44">
+                  <Powerrail />
+                  <NameCon UId="34" Name="in" />
+                </Wire>
+                <Wire UId="45">
+                  <IdentCon UId="21" />
+                  <NameCon UId="34" Name="operand" />
+                </Wire>
+                <Wire UId="46">
+                  <NameCon UId="34" Name="out" />
+                  <NameCon UId="35" Name="in" />
+                  <NameCon UId="36" Name="in" />
+                  <NameCon UId="39" Name="in" />
+                  <NameCon UId="41" Name="in" />
+                  <NameCon UId="43" Name="en" />
+                </Wire>
+                <Wire UId="47">
+                  <IdentCon UId="22" />
+                  <NameCon UId="35" Name="operand" />
+                </Wire>
+                <Wire UId="48">
+                  <NameCon UId="35" Name="out" />
+                  <NameCon UId="37" Name="in1" />
+                </Wire>
+                <Wire UId="49">
+                  <IdentCon UId="23" />
+                  <NameCon UId="36" Name="operand" />
+                </Wire>
+                <Wire UId="50">
+                  <NameCon UId="36" Name="out" />
+                  <NameCon UId="37" Name="in2" />
+                </Wire>
+                <Wire UId="51">
+                  <NameCon UId="37" Name="out" />
+                  <NameCon UId="38" Name="en" />
+                </Wire>
+                <Wire UId="52">
+                  <IdentCon UId="24" />
+                  <NameCon UId="38" Name="in" />
+                </Wire>
+                <Wire UId="53">
+                  <NameCon UId="38" Name="out" />
+                  <IdentCon UId="25" />
+                </Wire>
+                <Wire UId="54">
+                  <IdentCon UId="26" />
+                  <NameCon UId="39" Name="operand" />
+                </Wire>
+                <Wire UId="55">
+                  <NameCon UId="39" Name="out" />
+                  <NameCon UId="40" Name="en" />
+                </Wire>
+                <Wire UId="56">
+                  <IdentCon UId="27" />
+                  <NameCon UId="40" Name="in" />
+                </Wire>
+                <Wire UId="57">
+                  <NameCon UId="40" Name="out" />
+                  <IdentCon UId="28" />
+                </Wire>
+                <Wire UId="58">
+                  <IdentCon UId="29" />
+                  <NameCon UId="41" Name="operand" />
+                </Wire>
+                <Wire UId="59">
+                  <NameCon UId="41" Name="out" />
+                  <NameCon UId="42" Name="en" />
+                </Wire>
+                <Wire UId="60">
+                  <IdentCon UId="30" />
+                  <NameCon UId="42" Name="in" />
+                </Wire>
+                <Wire UId="61">
+                  <NameCon UId="42" Name="out" />
+                  <IdentCon UId="31" />
+                </Wire>
+                <Wire UId="62">
+                  <IdentCon UId="32" />
+                  <NameCon UId="43" Name="in" />
+                </Wire>
+                <Wire UId="63">
+                  <NameCon UId="43" Name="out" />
+                  <IdentCon UId="33" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="36" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="37" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="38" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="39" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>RESULT</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="3A" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="Abort" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="Abort Confirmation Popup" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="Abort Confirmation Popup" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle1" />
+                    <Component Name="Abort" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="25">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="Abort Confirmation Popup" />
+                  </Symbol>
+                </Access>
+                <Part Name="Contact" UId="26" />
+                <Part Name="SCoil" UId="27" />
+                <Part Name="Contact" UId="28" />
+                <Part Name="Contact" UId="29" />
+                <Part Name="RCoil" UId="30" />
+              </Parts>
+              <Wires>
+                <Wire UId="31">
+                  <Powerrail />
+                  <NameCon UId="26" Name="in" />
+                </Wire>
+                <Wire UId="32">
+                  <IdentCon UId="21" />
+                  <NameCon UId="26" Name="operand" />
+                </Wire>
+                <Wire UId="33">
+                  <NameCon UId="26" Name="out" />
+                  <NameCon UId="27" Name="in" />
+                  <NameCon UId="28" Name="in" />
+                </Wire>
+                <Wire UId="34">
+                  <IdentCon UId="22" />
+                  <NameCon UId="27" Name="operand" />
+                </Wire>
+                <Wire UId="35">
+                  <IdentCon UId="23" />
+                  <NameCon UId="28" Name="operand" />
+                </Wire>
+                <Wire UId="36">
+                  <NameCon UId="28" Name="out" />
+                  <NameCon UId="29" Name="in" />
+                </Wire>
+                <Wire UId="37">
+                  <IdentCon UId="24" />
+                  <NameCon UId="29" Name="operand" />
+                </Wire>
+                <Wire UId="38">
+                  <NameCon UId="29" Name="out" />
+                  <NameCon UId="30" Name="in" />
+                </Wire>
+                <Wire UId="39">
+                  <IdentCon UId="25" />
+                  <NameCon UId="30" Name="operand" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="3B" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="3C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="3D" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="3E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>"MvPHT Cycle"."Abort Confirmation Popup"</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="3F" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="Pht_Block" />
+                    <Component Name="Event" SliceAccessModifier="x10" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="PHTRe" />
+                    <Component Name="RE" AccessModifier="Array">
+                      <Access Scope="LiteralConstant">
+                        <Constant>
+                          <ConstantType>DInt</ConstantType>
+                          <ConstantValue>6</ConstantValue>
+                        </Constant>
+                      </Access>
+                    </Component>
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="AiDb" />
+                    <Component Name="Ai11" />
+                    <Component Name="ActValue" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="25">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="InitialPressure" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="26">
+                  <Symbol>
+                    <Component Name="Pht_Block" />
+                    <Component Name="Event" SliceAccessModifier="x11" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="27">
+                  <Symbol>
+                    <Component Name="PHTRe" />
+                    <Component Name="RE" AccessModifier="Array">
+                      <Access Scope="LiteralConstant">
+                        <Constant>
+                          <ConstantType>DInt</ConstantType>
+                          <ConstantValue>7</ConstantValue>
+                        </Constant>
+                      </Access>
+                    </Component>
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="28">
+                  <Symbol>
+                    <Component Name="AiDb" />
+                    <Component Name="Ai11" />
+                    <Component Name="ActValue" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="29">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="FinalPressure" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="30">
+                  <Symbol>
+                    <Component Name="Pht_Block" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="31">
+                  <Symbol>
+                    <Component Name="PHTRe" />
+                    <Component Name="RE" AccessModifier="Array">
+                      <Access Scope="LiteralConstant">
+                        <Constant>
+                          <ConstantType>DInt</ConstantType>
+                          <ConstantValue>8</ConstantValue>
+                        </Constant>
+                      </Access>
+                    </Component>
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="32">
+                  <Constant>
+                    <ConstantType>Real</ConstantType>
+                    <ConstantValue>0.0</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="33">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="FinalPressure" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="34">
+                  <Constant>
+                    <ConstantType>Real</ConstantType>
+                    <ConstantValue>0.0</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="35">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="InitialPressure" />
+                  </Symbol>
+                </Access>
+                <Part Name="Contact" UId="36" />
+                <Part Name="Contact" UId="37" />
+                <Part Name="PBox" UId="38" />
+                <Part Name="Move" UId="39" DisabledENO="true">
+                  <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+                </Part>
+                <Part Name="Contact" UId="40" />
+                <Part Name="PBox" UId="41" />
+                <Part Name="Move" UId="42" DisabledENO="true">
+                  <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+                </Part>
+                <Part Name="Contact" UId="43" />
+                <Part Name="PBox" UId="44" />
+                <Part Name="Move" UId="45" DisabledENO="true">
+                  <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+                </Part>
+                <Part Name="Move" UId="46" DisabledENO="true">
+                  <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+                </Part>
+              </Parts>
+              <Wires>
+                <Wire UId="47">
+                  <Powerrail />
+                  <NameCon UId="36" Name="in" />
+                </Wire>
+                <Wire UId="48">
+                  <IdentCon UId="21" />
+                  <NameCon UId="36" Name="operand" />
+                </Wire>
+                <Wire UId="49">
+                  <NameCon UId="36" Name="out" />
+                  <NameCon UId="37" Name="in" />
+                  <NameCon UId="40" Name="in" />
+                  <NameCon UId="43" Name="in" />
+                </Wire>
+                <Wire UId="50">
+                  <IdentCon UId="22" />
+                  <NameCon UId="37" Name="operand" />
+                </Wire>
+                <Wire UId="51">
+                  <NameCon UId="37" Name="out" />
+                  <NameCon UId="38" Name="in" />
+                </Wire>
+                <Wire UId="52">
+                  <IdentCon UId="23" />
+                  <NameCon UId="38" Name="bit" />
+                </Wire>
+                <Wire UId="53">
+                  <NameCon UId="38" Name="out" />
+                  <NameCon UId="39" Name="en" />
+                </Wire>
+                <Wire UId="54">
+                  <IdentCon UId="24" />
+                  <NameCon UId="39" Name="in" />
+                </Wire>
+                <Wire UId="55">
+                  <NameCon UId="39" Name="out1" />
+                  <IdentCon UId="25" />
+                </Wire>
+                <Wire UId="56">
+                  <IdentCon UId="26" />
+                  <NameCon UId="40" Name="operand" />
+                </Wire>
+                <Wire UId="57">
+                  <NameCon UId="40" Name="out" />
+                  <NameCon UId="41" Name="in" />
+                </Wire>
+                <Wire UId="58">
+                  <IdentCon UId="27" />
+                  <NameCon UId="41" Name="bit" />
+                </Wire>
+                <Wire UId="59">
+                  <NameCon UId="41" Name="out" />
+                  <NameCon UId="42" Name="en" />
+                </Wire>
+                <Wire UId="60">
+                  <IdentCon UId="28" />
+                  <NameCon UId="42" Name="in" />
+                </Wire>
+                <Wire UId="61">
+                  <NameCon UId="42" Name="out1" />
+                  <IdentCon UId="29" />
+                </Wire>
+                <Wire UId="62">
+                  <IdentCon UId="30" />
+                  <NameCon UId="43" Name="operand" />
+                </Wire>
+                <Wire UId="63">
+                  <NameCon UId="43" Name="out" />
+                  <NameCon UId="44" Name="in" />
+                </Wire>
+                <Wire UId="64">
+                  <IdentCon UId="31" />
+                  <NameCon UId="44" Name="bit" />
+                </Wire>
+                <Wire UId="65">
+                  <NameCon UId="44" Name="out" />
+                  <NameCon UId="45" Name="en" />
+                  <NameCon UId="46" Name="en" />
+                </Wire>
+                <Wire UId="66">
+                  <IdentCon UId="32" />
+                  <NameCon UId="45" Name="in" />
+                </Wire>
+                <Wire UId="67">
+                  <NameCon UId="45" Name="out1" />
+                  <IdentCon UId="33" />
+                </Wire>
+                <Wire UId="68">
+                  <IdentCon UId="34" />
+                  <NameCon UId="46" Name="in" />
+                </Wire>
+                <Wire UId="69">
+                  <NameCon UId="46" Name="out1" />
+                  <IdentCon UId="35" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="40" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="41" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="42" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="43" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Initial and Final Pressure for HMI Print</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="44" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="Pht_Block" />
+                    <Component Name="Event" SliceAccessModifier="x10" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="PhtTemp" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="PHTRe" />
+                    <Component Name="RE" AccessModifier="Array">
+                      <Access Scope="LiteralConstant">
+                        <Constant>
+                          <ConstantType>DInt</ConstantType>
+                          <ConstantValue>9</ConstantValue>
+                        </Constant>
+                      </Access>
+                    </Component>
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="25">
+                  <Symbol>
+                    <Component Name="DateTime" />
+                    <Component Name="time_system_read" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="26">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="HoldStartTimeLog" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="27">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="PhtTemp" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="28">
+                  <Symbol>
+                    <Component Name="Pht_Block" />
+                    <Component Name="Event" SliceAccessModifier="x11" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="29">
+                  <Symbol>
+                    <Component Name="Pht_Block" />
+                    <Component Name="ResetBit" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="30">
+                  <Symbol>
+                    <Component Name="PHTRe" />
+                    <Component Name="RE" AccessModifier="Array">
+                      <Access Scope="LiteralConstant">
+                        <Constant>
+                          <ConstantType>DInt</ConstantType>
+                          <ConstantValue>10</ConstantValue>
+                        </Constant>
+                      </Access>
+                    </Component>
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="31">
+                  <Symbol>
+                    <Component Name="DateTime" />
+                    <Component Name="time_system_read" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="32">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="HoldEndTimeLog" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="33">
+                  <Symbol>
+                    <Component Name="Pht_Block" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="34">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="PhtTemp" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="35">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="HoldEndTimeLog" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="36">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="HoldStartTimeLog" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="37">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="PhtTimeDifference" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="38">
+                  <Symbol>
+                    <Component Name="Pht_Block" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="39">
+                  <Symbol>
+                    <Component Name="SIPCycle" />
+                    <Component Name="RE1" AccessModifier="Array">
+                      <Access Scope="LiteralConstant">
+                        <Constant>
+                          <ConstantType>DInt</ConstantType>
+                          <ConstantValue>3</ConstantValue>
+                        </Constant>
+                      </Access>
+                    </Component>
+                  </Symbol>
+                </Access>
+                <Access Scope="TypedConstant" UId="40">
+                  <Constant>
+                    <ConstantValue>DTL#1970-01-01-00:00:00</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="41">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="HoldStartTimeLog" />
+                  </Symbol>
+                </Access>
+                <Access Scope="TypedConstant" UId="42">
+                  <Constant>
+                    <ConstantValue>DTL#1970-01-01-00:00:00</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="43">
+                  <Symbol>
+                    <Component Name="PHT Cycle" />
+                    <Component Name="HoldEndTimeLog" />
+                  </Symbol>
+                </Access>
+                <Part Name="Contact" UId="44" />
+                <Part Name="Contact" UId="45" />
+                <Part Name="Contact" UId="46">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="PBox" UId="47" />
+                <Part Name="Move" UId="48" DisabledENO="true">
+                  <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+                </Part>
+                <Part Name="SCoil" UId="49" />
+                <Part Name="Contact" UId="50" />
+                <Part Name="Contact" UId="51">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="PBox" UId="52" />
+                <Part Name="Move" UId="53" DisabledENO="true">
+                  <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+                </Part>
+                <Part Name="Contact" UId="54">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="RCoil" UId="55" />
+                <Part Name="T_DIFF" Version="2.1" UId="56">
+                  <TemplateValue Name="date_type" Type="Type">DTL</TemplateValue>
+                  <TemplateValue Name="time_type" Type="Type">Time</TemplateValue>
+                </Part>
+                <Part Name="Contact" UId="57" />
+                <Part Name="PBox" UId="58" />
+                <Part Name="Move" UId="59" DisabledENO="true">
+                  <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+                </Part>
+                <Part Name="Move" UId="60" DisabledENO="true">
+                  <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+                </Part>
+              </Parts>
+              <Wires>
+                <Wire UId="61">
+                  <Powerrail />
+                  <NameCon UId="44" Name="in" />
+                </Wire>
+                <Wire UId="62">
+                  <IdentCon UId="21" />
+                  <NameCon UId="44" Name="operand" />
+                </Wire>
+                <Wire UId="63">
+                  <NameCon UId="44" Name="out" />
+                  <NameCon UId="45" Name="in" />
+                  <NameCon UId="50" Name="in" />
+                  <NameCon UId="54" Name="in" />
+                  <NameCon UId="56" Name="en" />
+                  <NameCon UId="57" Name="in" />
+                </Wire>
+                <Wire UId="64">
+                  <IdentCon UId="22" />
+                  <NameCon UId="45" Name="operand" />
+                </Wire>
+                <Wire UId="65">
+                  <NameCon UId="45" Name="out" />
+                  <NameCon UId="46" Name="in" />
+                </Wire>
+                <Wire UId="66">
+                  <IdentCon UId="23" />
+                  <NameCon UId="46" Name="operand" />
+                </Wire>
+                <Wire UId="67">
+                  <NameCon UId="46" Name="out" />
+                  <NameCon UId="47" Name="in" />
+                </Wire>
+                <Wire UId="68">
+                  <IdentCon UId="24" />
+                  <NameCon UId="47" Name="bit" />
+                </Wire>
+                <Wire UId="69">
+                  <NameCon UId="47" Name="out" />
+                  <NameCon UId="48" Name="en" />
+                  <NameCon UId="49" Name="in" />
+                </Wire>
+                <Wire UId="70">
+                  <IdentCon UId="25" />
+                  <NameCon UId="48" Name="in" />
+                </Wire>
+                <Wire UId="71">
+                  <NameCon UId="48" Name="out1" />
+                  <IdentCon UId="26" />
+                </Wire>
+                <Wire UId="72">
+                  <IdentCon UId="27" />
+                  <NameCon UId="49" Name="operand" />
+                </Wire>
+                <Wire UId="73">
+                  <IdentCon UId="28" />
+                  <NameCon UId="50" Name="operand" />
+                </Wire>
+                <Wire UId="74">
+                  <NameCon UId="50" Name="out" />
+                  <NameCon UId="51" Name="in" />
+                </Wire>
+                <Wire UId="75">
+                  <IdentCon UId="29" />
+                  <NameCon UId="51" Name="operand" />
+                </Wire>
+                <Wire UId="76">
+                  <NameCon UId="51" Name="out" />
+                  <NameCon UId="52" Name="in" />
+                </Wire>
+                <Wire UId="77">
+                  <IdentCon UId="30" />
+                  <NameCon UId="52" Name="bit" />
+                </Wire>
+                <Wire UId="78">
+                  <NameCon UId="52" Name="out" />
+                  <NameCon UId="53" Name="en" />
+                </Wire>
+                <Wire UId="79">
+                  <IdentCon UId="31" />
+                  <NameCon UId="53" Name="in" />
+                </Wire>
+                <Wire UId="80">
+                  <NameCon UId="53" Name="out1" />
+                  <IdentCon UId="32" />
+                </Wire>
+                <Wire UId="81">
+                  <IdentCon UId="33" />
+                  <NameCon UId="54" Name="operand" />
+                </Wire>
+                <Wire UId="82">
+                  <NameCon UId="54" Name="out" />
+                  <NameCon UId="55" Name="in" />
+                </Wire>
+                <Wire UId="83">
+                  <IdentCon UId="34" />
+                  <NameCon UId="55" Name="operand" />
+                </Wire>
+                <Wire UId="84">
+                  <IdentCon UId="35" />
+                  <NameCon UId="56" Name="IN1" />
+                </Wire>
+                <Wire UId="85">
+                  <IdentCon UId="36" />
+                  <NameCon UId="56" Name="IN2" />
+                </Wire>
+                <Wire UId="86">
+                  <NameCon UId="56" Name="OUT" />
+                  <IdentCon UId="37" />
+                </Wire>
+                <Wire UId="87">
+                  <IdentCon UId="38" />
+                  <NameCon UId="57" Name="operand" />
+                </Wire>
+                <Wire UId="88">
+                  <NameCon UId="57" Name="out" />
+                  <NameCon UId="58" Name="in" />
+                </Wire>
+                <Wire UId="89">
+                  <IdentCon UId="39" />
+                  <NameCon UId="58" Name="bit" />
+                </Wire>
+                <Wire UId="90">
+                  <NameCon UId="58" Name="out" />
+                  <NameCon UId="59" Name="en" />
+                  <NameCon UId="60" Name="en" />
+                </Wire>
+                <Wire UId="91">
+                  <IdentCon UId="40" />
+                  <NameCon UId="59" Name="in" />
+                </Wire>
+                <Wire UId="92">
+                  <NameCon UId="59" Name="out1" />
+                  <IdentCon UId="41" />
+                </Wire>
+                <Wire UId="93">
+                  <IdentCon UId="42" />
+                  <NameCon UId="60" Name="in" />
+                </Wire>
+                <Wire UId="94">
+                  <NameCon UId="60" Name="out1" />
+                  <IdentCon UId="43" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="45" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="46" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="47" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="48" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>"PHT Cycle".HoldStartTimeLog</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="49" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v4">
+              <LineComment UId="21">
+                <Text UId="22"> Step 1: get TIME</Text>
+              </LineComment>
+              <NewLine UId="23" />
+              <Access Scope="GlobalVariable" UId="24">
+                <Symbol UId="25">
+                  <Component Name="PHT Cycle" UId="26" />
+                  <Token Text="." UId="27" />
+                  <Component Name="TempTime" UId="28" />
+                </Symbol>
+              </Access>
+              <Blank UId="29" />
+              <Token Text=":=" UId="30" />
+              <Blank UId="31" />
+              <Access Scope="GlobalVariable" UId="32">
+                <Symbol UId="33">
+                  <Component Name="PHT Cycle" UId="34" />
+                  <Token Text="." UId="35" />
+                  <Component Name="PhtTimeDifference" UId="36" />
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="37" />
+              <NewLine Num="2" UId="38" />
+              <LineComment UId="39">
+                <Text UId="40"> Step 2: TIME → milliseconds</Text>
+              </LineComment>
+              <NewLine UId="41" />
+              <Access Scope="GlobalVariable" UId="42">
+                <Symbol UId="43">
+                  <Component Name="PHT Cycle" UId="44" />
+                  <Token Text="." UId="45" />
+                  <Component Name="TempMs" UId="46" />
+                </Symbol>
+              </Access>
+              <Blank UId="47" />
+              <Token Text=":=" UId="48" />
+              <Blank UId="49" />
+              <Access Scope="Call" UId="50">
+                <Instruction Name="TIME_TO_DINT" UId="51">
+                  <Token Text="(" UId="52" />
+                  <NamelessParameter UId="53">
+                    <Access Scope="GlobalVariable" UId="54">
+                      <Symbol UId="55">
+                        <Component Name="PHT Cycle" UId="56" />
+                        <Token Text="." UId="57" />
+                        <Component Name="TempTime" UId="58" />
+                      </Symbol>
+                    </Access>
+                  </NamelessParameter>
+                  <Token Text=")" UId="60" />
+                </Instruction>
+              </Access>
+              <Token Text=";" UId="61" />
+              <NewLine Num="2" UId="62" />
+              <LineComment UId="63">
+                <Text UId="64"> Step 3: make positive (optional)</Text>
+              </LineComment>
+              <NewLine UId="65" />
+              <LineComment UId="66">
+                <Text UId="67">"PHT Cycle".TempMs := ABS("PHT Cycle".TempMs);</Text>
+              </LineComment>
+              <NewLine Num="2" UId="68" />
+              <LineComment UId="69">
+                <Text UId="70"> Step 4: ROUND milliseconds to seconds</Text>
+              </LineComment>
+              <NewLine UId="71" />
+              <Access Scope="GlobalVariable" UId="72">
+                <Symbol UId="73">
+                  <Component Name="PHT Cycle" UId="74" />
+                  <Token Text="." UId="75" />
+                  <Component Name="TotalSecondsTag" UId="76" />
+                </Symbol>
+              </Access>
+              <Blank UId="77" />
+              <Token Text=":=" UId="78" />
+              <Blank UId="79" />
+              <Token Text="(" UId="80" />
+              <Access Scope="GlobalVariable" UId="81">
+                <Symbol UId="82">
+                  <Component Name="PHT Cycle" UId="83" />
+                  <Token Text="." UId="84" />
+                  <Component Name="TempMs" UId="85" />
+                </Symbol>
+              </Access>
+              <Blank UId="86" />
+              <Token Text="+" UId="87" />
+              <Blank UId="88" />
+              <Access Scope="LiteralConstant" UId="89">
+                <Constant UId="90">
+                  <ConstantValue UId="92">500</ConstantValue>
+                </Constant>
+              </Access>
+              <Token Text=")" UId="93" />
+              <Blank UId="94" />
+              <Token Text="/" UId="95" />
+              <Blank UId="96" />
+              <Access Scope="LiteralConstant" UId="97">
+                <Constant UId="98">
+                  <ConstantValue UId="100">1000</ConstantValue>
+                </Constant>
+              </Access>
+              <Token Text=";" UId="101" />
+              <NewLine Num="2" UId="102" />
+              <LineComment UId="103">
+                <Text UId="104"> Step 5: split HH MM SS</Text>
+              </LineComment>
+              <NewLine UId="105" />
+              <Access Scope="GlobalVariable" UId="106">
+                <Symbol UId="107">
+                  <Component Name="PHT Cycle" UId="108" />
+                  <Token Text="." UId="109" />
+                  <Component Name="Hours" UId="110" />
+                </Symbol>
+              </Access>
+              <Blank UId="111" />
+              <Token Text=":=" UId="112" />
+              <Blank UId="113" />
+              <Access Scope="Call" UId="114">
+                <Instruction Name="DINT_TO_INT" UId="115">
+                  <Token Text="(" UId="116" />
+                  <NamelessParameter UId="117">
+                    <Access Scope="GlobalVariable" UId="118">
+                      <Symbol UId="119">
+                        <Component Name="PHT Cycle" UId="120" />
+                        <Token Text="." UId="121" />
+                        <Component Name="TotalSecondsTag" UId="122" />
+                      </Symbol>
+                    </Access>
+                    <Blank UId="123" />
+                    <Token Text="/" UId="124" />
+                    <Blank UId="125" />
+                    <Access Scope="LiteralConstant" UId="126">
+                      <Constant UId="127">
+                        <ConstantValue UId="129">3600</ConstantValue>
+                      </Constant>
+                    </Access>
+                  </NamelessParameter>
+                  <Token Text=")" UId="131" />
+                </Instruction>
+              </Access>
+              <Token Text=";" UId="132" />
+              <NewLine Num="2" UId="133" />
+              <Access Scope="GlobalVariable" UId="134">
+                <Symbol UId="135">
+                  <Component Name="PHT Cycle" UId="136" />
+                  <Token Text="." UId="137" />
+                  <Component Name="Minutes" UId="138" />
+                </Symbol>
+              </Access>
+              <Blank UId="139" />
+              <Token Text=":=" UId="140" />
+              <Blank UId="141" />
+              <Access Scope="Call" UId="142">
+                <Instruction Name="DINT_TO_INT" UId="143">
+                  <Token Text="(" UId="144" />
+                  <NewLine UId="145" />
+                  <NamelessParameter UId="146">
+                    <Token Text="(" UId="147" />
+                    <Access Scope="GlobalVariable" UId="148">
+                      <Symbol UId="149">
+                        <Component Name="PHT Cycle" UId="150" />
+                        <Token Text="." UId="151" />
+                        <Component Name="TotalSecondsTag" UId="152" />
+                      </Symbol>
+                    </Access>
+                    <Blank UId="153" />
+                    <Token Text="MOD" UId="154" />
+                    <Blank UId="155" />
+                    <Access Scope="LiteralConstant" UId="156">
+                      <Constant UId="157">
+                        <ConstantValue UId="159">3600</ConstantValue>
+                      </Constant>
+                    </Access>
+                    <Token Text=")" UId="160" />
+                    <Blank UId="161" />
+                    <Token Text="/" UId="162" />
+                    <Blank UId="163" />
+                    <Access Scope="LiteralConstant" UId="164">
+                      <Constant UId="165">
+                        <ConstantValue UId="167">60</ConstantValue>
+                      </Constant>
+                    </Access>
+                  </NamelessParameter>
+                  <NewLine UId="168" />
+                  <Token Text=")" UId="170" />
+                </Instruction>
+              </Access>
+              <Token Text=";" UId="171" />
+              <NewLine Num="2" UId="172" />
+              <Access Scope="GlobalVariable" UId="173">
+                <Symbol UId="174">
+                  <Component Name="PHT Cycle" UId="175" />
+                  <Token Text="." UId="176" />
+                  <Component Name="Seconds" UId="177" />
+                </Symbol>
+              </Access>
+              <Blank UId="178" />
+              <Token Text=":=" UId="179" />
+              <Blank UId="180" />
+              <Access Scope="Call" UId="181">
+                <Instruction Name="DINT_TO_INT" UId="182">
+                  <Token Text="(" UId="183" />
+                  <NewLine UId="184" />
+                  <Blank UId="185" />
+                  <NamelessParameter UId="186">
+                    <Access Scope="GlobalVariable" UId="187">
+                      <Symbol UId="188">
+                        <Component Name="PHT Cycle" UId="189" />
+                        <Token Text="." UId="190" />
+                        <Component Name="TotalSecondsTag" UId="191" />
+                      </Symbol>
+                    </Access>
+                    <Blank UId="192" />
+                    <Token Text="MOD" UId="193" />
+                    <Blank UId="194" />
+                    <Access Scope="LiteralConstant" UId="195">
+                      <Constant UId="196">
+                        <ConstantValue UId="198">60</ConstantValue>
+                      </Constant>
+                    </Access>
+                  </NamelessParameter>
+                  <NewLine UId="199" />
+                  <Token Text=")" UId="201" />
+                </Instruction>
+              </Access>
+              <Token Text=";" UId="202" />
+            </StructuredText>
+          </NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4A" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="4B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="4C" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="4D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>SCL ROUNDOFF</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="4E" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4F" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="50" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="51" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="52" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="53" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="54" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FC>
+</Document>

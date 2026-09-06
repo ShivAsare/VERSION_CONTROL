@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V21" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="Static">
+            <Member Name="MasterReset" Datatype="Bool" />
+            <Member Name="SystemRestart" Datatype="Bool" />
+            <Member Name="ManualModeFAULT" Datatype="Bool" />
+            <Member Name="AlarmAck" Datatype="Bool" />
+            <Member Name="Hooter" Datatype="Bool" />
+            <Member Name="ResetButton" Datatype="Bool" />
+            <Member Name="VesselStatus" Datatype="Int" />
+            <Member Name="Weight_int" Datatype="Int" />
+            <Member Name="Weight_Temp" Datatype="Real" />
+            <Member Name="VesselMaxPressure" Datatype="Real">
+              <StartValue>5.0</StartValue>
+            </Member>
+            <Member Name="CycleDataLog" Datatype="Bool" />
+            <Member Name="CyclePrintData" Datatype="Bool" />
+            <Member Name="AlarmPath" Datatype="String">
+              <StartValue>'/media/simatic/data-storage/Reports/Pdf/Alarm.pdf'</StartValue>
+            </Member>
+            <Member Name="HelpPath" Datatype="String">
+              <StartValue>' /media/simatic/data-storage/OPM/R-OPM.pdf'</StartValue>
+            </Member>
+            <Member Name="AlarmStarTime" Datatype="DTL" Version="1.0" />
+            <Member Name="AlarmEndTime" Datatype="DTL" Version="1.0" />
+            <Member Name="EpoxyMMActual" Datatype="Real">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="PlcHmiComBreak" Datatype="Bool" />
+            <Member Name="AuditStartTime" Datatype="DTL" Version="1.0" />
+            <Member Name="AuditEndTime" Datatype="DTL" Version="1.0" />
+            <Member Name="AuditPath" Datatype="String">
+              <StartValue>'/media/simatic/data-storage/Reports/Pdf/Audit.pdf'</StartValue>
+            </Member>
+            <Member Name="UserAuditStartTime" Datatype="DTL" Version="1.0" />
+            <Member Name="UserAuditEndTime" Datatype="DTL" Version="1.0" />
+            <Member Name="UserAuditPath" Datatype="String">
+              <StartValue>'/media/simatic/data-storage/Reports/Pdf/UserAudit.pdf'</StartValue>
+            </Member>
+            <Member Name="LF_time_delay" Datatype="Int" />
+            <Member Name="JacketRecoveryCycSelected" Datatype="Bool" />
+            <Member Name="JacketRecoveryFault" Datatype="Bool" />
+            <Member Name="JacketRecoveryCycEnable" Datatype="Bool" />
+            <Member Name="pulse" Datatype="Array[0..14] of Bool" />
+            <Member Name="BatchDetailsBlankPopup" Datatype="Bool" />
+            <Member Name="BatchDetailsBlankPopupAck" Datatype="Bool" />
+            <Member Name="AccessTablePath" Datatype="String">
+              <StartValue>'/media/simatic/data-storage/Reports/Pdf/AccessTable.pdf'</StartValue>
+            </Member>
+            <Member Name="LoadCellResult" Datatype="String" />
+          </Section>
+        </Sections>
+      </Interface>
+      <MemoryLayout>Standard</MemoryLayout>
+      <Name>HmiTags</Name>
+      <Namespace />
+      <Number>16</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

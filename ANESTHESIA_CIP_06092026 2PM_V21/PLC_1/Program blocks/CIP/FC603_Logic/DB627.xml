@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V21" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="Static">
+            <Member Name="RinseTimeSv" Datatype="Int" />
+            <Member Name="RinseTimePv" Datatype="DInt" />
+            <Member Name="FillTimeSv" Datatype="DInt" />
+            <Member Name="FillTimePv" Datatype="DInt" />
+            <Member Name="RepSv" Datatype="Int" />
+            <Member Name="RepPv" Datatype="Int" />
+            <Member Name="FillQtySv" Datatype="Real" />
+            <Member Name="FillQtyPv" Datatype="Real" />
+            <Member Name="MixingSv" Datatype="Int" />
+            <Member Name="MixingPv" Datatype="DInt" />
+            <Member Name="SdSv" Datatype="Int" />
+            <Member Name="SdPv" Datatype="DInt" />
+            <Member Name="APSv" Datatype="Int" />
+            <Member Name="ApPv" Datatype="DInt" />
+            <Member Name="ApReleaseTimeSv" Datatype="Int" />
+            <Member Name="ApReleaseTimePv" Datatype="DInt" />
+            <Member Name="CurrentStepNo" Datatype="Int" />
+            <Member Name="CycleStatus" Datatype="String[60]" />
+            <Member Name="StepStatus" Datatype="String[60]" />
+            <Member Name="ApSetPressureSv" Datatype="Real" />
+            <Member Name="ApSetPressurePv" Datatype="Real" />
+            <Member Name="CombineAPSv" Datatype="Int" />
+            <Member Name="CombineApPv" Datatype="DInt" />
+            <Member Name="CombineApReleaseTimeSv" Datatype="Int" />
+            <Member Name="CombineApReleaseTimePv" Datatype="DInt" />
+            <Member Name="DosingTimePv" Datatype="DInt" />
+            <Member Name="PulsingTimeSv" Datatype="Int" />
+            <Member Name="RecirculationSv" Datatype="Int" />
+            <Member Name="RecirculationPv" Datatype="DInt" />
+            <Member Name="ConductivitySv" Datatype="Real" />
+            <Member Name="ConductivityPv" Datatype="Real" />
+          </Section>
+        </Sections>
+      </Interface>
+      <MemoryLayout>Standard</MemoryLayout>
+      <Name>DB627</Name>
+      <Namespace />
+      <Number>627</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>SCREEN PROCESS VALUE</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

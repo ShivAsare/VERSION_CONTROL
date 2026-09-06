@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V21" />
+  <SW.Blocks.InstanceDB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <HeaderAuthor>PRECISE</HeaderAuthor>
+      <HeaderFamily>PRECISE</HeaderFamily>
+      <InstanceOfName>FB603</InstanceOfName>
+      <InstanceOfType>FB</InstanceOfType>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="Input">
+            <Member Name="CycleEnable" Datatype="Bool" />
+            <Member Name="CycleRunning" Datatype="Bool" />
+            <Member Name="SecPulse" Datatype="Bool" />
+            <Member Name="AlwaysTrue" Datatype="Bool" />
+            <Member Name="CycleSelection" Datatype="&quot;CIP&quot;" />
+            <Member Name="ConductivitySuccessWhileRinse" Datatype="Bool" />
+            <Member Name="ConductivitySuccessWhileDrain" Datatype="Bool" />
+            <Member Name="ConductivitySuccessWhileTransfer" Datatype="Bool" />
+          </Section>
+          <Section Name="Output">
+            <Member Name="Started" Datatype="Bool" />
+            <Member Name="VentValve" Datatype="Bool" />
+            <Member Name="PrintActualRep" Datatype="Int" />
+          </Section>
+          <Section Name="InOut">
+            <Member Name="Over" Datatype="Bool" />
+            <Member Name="OverTemp" Datatype="Bool" />
+            <Member Name="RepeatCycle" Datatype="Bool" />
+            <Member Name="ActualRepetition" Datatype="Int" />
+            <Member Name="CycleStart" Datatype="&quot;CipCycleStarted&quot;" />
+            <Member Name="CycleOver" Datatype="&quot;CipCycleOver&quot;" />
+            <Member Name="ConductivityStatus" Datatype="Bool" />
+            <Member Name="TimeSaveModeRep" Datatype="Int" />
+            <Member Name="StartFillingToSaveTime" Datatype="Bool" />
+            <Member Name="Reset" Datatype="Bool" />
+            <Member Name="RecirculationPopupTemp" Datatype="Bool" />
+            <Member Name="RecirculationPopupTempAck" Datatype="Bool" />
+          </Section>
+          <Section Name="Static">
+            <Member Name="Re" Datatype="Array[0..30] of Bool" />
+          </Section>
+        </Sections>
+      </Interface>
+      <Name>DB603</Name>
+      <Namespace />
+      <Number>603</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>CycleSelection</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>DB603</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.InstanceDB>
+</Document>

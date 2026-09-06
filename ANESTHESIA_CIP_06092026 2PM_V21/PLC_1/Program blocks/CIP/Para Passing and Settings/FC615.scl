@@ -1,0 +1,503 @@
+﻿FUNCTION "FC615" : Void
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+
+BEGIN
+	REGION Common
+	    IF "DB615".SelectStep = TRUE THEN
+	        "DB615".TempStep := "DB615".CurrentStep;
+	        REPEAT
+	        "DB615".TempStep := "DB615".TempStep + 1;
+	        UNTIL "DB623".StepEnable["DB615".TempStep] = TRUE OR ("DB615".TempStep > "DB616".TotalStep) END_REPEAT;
+	        IF "DB615".TempStep <= "DB616".TotalStep THEN
+	            "DB615".CurrentStep := "DB615".TempStep;
+	        ELSE
+	            "DB615".ProcessOver := 1;
+	        END_IF;         
+	        "DB615".SelectStep := false;
+	    END_IF;
+	    
+	    
+	    
+	    IF "DB622".MainPopupMsg2 = 1 THEN
+	        POKE_BLK(area_src := 16#84,
+	                 dbNumber_src := 626,
+	                 byteOffset_src := 0,
+	                 area_dest := 16#84,
+	                 dbNumber_dest := 625,
+	                 byteOffset_dest := 0,
+	                 count := 2382);  
+	    END_IF;
+	    
+	END_REGION
+	
+	REGION common Set Para
+	    "DB603".CycleSelection := "DB616".CycleSelection["DB615".CurrentStep];
+	    
+	    "DB604".ParaIn := "DB616".FillingInputPara["DB615".CurrentStep];
+	    "DB607".SetTimeSecs := "DB616".MixingTimeInput["DB615".CurrentStep];
+	    "DB608".ParaIn := "DB616".RecirculationInput["DB615".CurrentStep];
+	    "DB609".ParaIn := "DB616".DrainInputs["DB615".CurrentStep];
+	    "DB610".SetTime := "DB616".SystemDrainSetTimeInput["DB615".CurrentStep];
+	    "DB611".ParaIn := "DB616".AirPurgingInputPara["DB615".CurrentStep];
+	    "DB603".CycleSelection := "DB616".CycleSelection["DB615".CurrentStep];
+	    
+	    "DB609".ActualPressure := "AiDb".Ai11.ActValue;
+	    "DB627".RepSv := "DB616".CycleSelection["DB615".CurrentStep].StepSelection.SetRepetition;
+	    "DB627".RepPv := "DB603".ActualRepetition;
+	    "DB604".ActualQuantity := "ModeDb".VesselWeight;
+	    "DB609".ActualWeight := "ModeDb".VesselWeight;
+	  //  "DB611".ActualPressure := "AiDb".Ai07.ActValue;
+	    "DB609".ActualConductivityVessel := "AiDb".Ai15.ActValue;
+	    "DB609".ParaIn.Parameters.SetConductivity := "DB623".FinalRinseSetCond;
+	    "DB611".ActualPressure := "DB615".ApActPressure;
+	    
+	
+	    "DB616".DrainInputs["DB615".CurrentStep].PreciseEngineering.DrainWeight := "DB624".VesselDrainWeight;
+	    "DB616".DrainInputs["DB615".CurrentStep].Parameters.SetPressure := "DB623".DrainPressure;
+	    "DB616".DrainInputs["DB615".CurrentStep].Parameters.PressureTolerance := "DB624".DrainPressureTolerance;
+	    "DB616".DrainInputs["DB615".CurrentStep].ProductionSetting.CaiDelay := "CommonProductionSettings".CAIDelay;
+	    
+	    "DB616".SystemDrainSetTimeInput["DB615".CurrentStep] := "DB623".SystemDrainTime;
+	    
+	    "DB616".AirPurgingInputPara["DB615".CurrentStep].Parameters.SetPressure := "DB623".AirPurgingPressure;
+	    "DB616".AirPurgingInputPara["DB615".CurrentStep].Parameters.PressureTolerance := "DB624".AirPurgingPressureTolerence;
+	    "DB616".AirPurgingInputPara["DB615".CurrentStep].Parameters.VentOnTime := "DB624".AirPurgingReleaseTime;
+	    "DB616".AirPurgingInputPara["DB615".CurrentStep].ProductionSetting.CAIDelay := "CommonProductionSettings".CAIDelay;
+	    
+	    
+	    IF "DB611".StepDelay."Noof StepsPv" <= 1 THEN
+	        "DB616".AirPurgingInputPara["DB615".CurrentStep].Selections.PressureMode := 0;
+	    ELSE
+	        "DB616".AirPurgingInputPara["DB615".CurrentStep].Selections.PressureMode := 1;
+	    END_IF;
+	    
+	    "DB616".AirPurgingInputPara["DB615".CurrentStep].ProductionSetting.LoopDelay1 := "DB624".AirPurgeSamplingLineDelay;
+	    "DB616".AirPurgingInputPara["DB615".CurrentStep].ProductionSetting.LoopDelay2 := "DB624".AirPurgeBlankeingLineDelay;
+	    "DB616".AirPurgingInputPara["DB615".CurrentStep].ProductionSetting.LoopDelay3 := "DB624".AirPurgeJTubeLineDelay;
+	    "DB616".AirPurgingInputPara["DB615".CurrentStep].ProductionSetting.LoopDelay4 := "DB624".AirPurgeSpargingLineDelay;
+	    "DB616".AirPurgingInputPara["DB615".CurrentStep].ProductionSetting.LoopDelay5 := "DB624".AirPurgeSbiLineDelay;
+	    "DB616".AirPurgingInputPara["DB615".CurrentStep].ProductionSetting.LoopDelay6 := "DB624".AirPurgeRecirculationlineDelay;
+	    "DB616".AirPurgingInputPara["DB615".CurrentStep].ProductionSetting.LoopDelay7 := "DB624".AirPurgeVesselBypassLineDelay;
+	    "DB616".AirPurgingInputPara["DB615".CurrentStep].ProductionSetting.LoopDelay8 := "DB624".AirPurgeVesselDrainLineDelay;
+	    "DB616".AirPurgingInputPara["DB615".CurrentStep].ProductionSetting.LoopDelay9 := "DB624".AirPurgePumpBypassLineDelay;
+	    "DB616".AirPurgingInputPara["DB615".CurrentStep].ProductionSetting.LoopDelay10 := "DB624".AirPurgePf01InLineDelay;
+	    "DB616".AirPurgingInputPara["DB615".CurrentStep].ProductionSetting.LoopDelay11 := "DB624".AirPurgePf01VentLineDelay;
+	    "DB616".AirPurgingInputPara["DB615".CurrentStep].ProductionSetting.LoopDelay12 := "DB624".AirPurgePf02InLineDelay;
+	    "DB616".AirPurgingInputPara["DB615".CurrentStep].ProductionSetting.LoopDelay13 := "DB624".AirPurgePf02VentLineDelay;
+	    "DB616".AirPurgingInputPara["DB615".CurrentStep].ProductionSetting.LoopDelay14 := "DB624".AirPurgePf02OutLineDelay;
+	    "DB616".AirPurgingInputPara["DB615".CurrentStep].ProductionSetting.LoopDelay15 := "DB624".AirPurgePf01BypassLineDelay;
+	    "DB616".AirPurgingInputPara["DB615".CurrentStep].ProductionSetting.LoopDelay16 := "DB624".AirPurgePf02BypassLineDelay;
+	    "DB616".AirPurgingInputPara["DB615".CurrentStep].ProductionSetting.LoopDelay17 := "DB624".AirPurgePtlLineDelay;
+	    
+	END_REGION
+	
+	REGION Cycle 1 - PRE RINSE  CYCLE
+	    
+	    "DB616".CycleSelection[1].StepSelection.SetRepetition := "DB623".PreRinseCycleNoOfRep;
+	    
+	    "DB616".FillingInputPara[1].ProductionSetting.ZDVDelay := "CommonProductionSettings".WFIDelay;
+	    "DB616".FillingInputPara[1].Parameters.PulsingOnTime := "DB623".SbiOnTime;
+	    "DB616".FillingInputPara[1].Parameters.PulsingOffTime := "DB623".SbiOffTime;
+	
+	    "DB616".FillingInputPara[1].ProductionSetting.LoopDelay1 := "DB624".FillRinseSamplingLineDelay;
+	    "DB616".FillingInputPara[1].ProductionSetting.LoopDelay2 := "DB624".FillRinseBlanketingLineDelay;
+	    "DB616".FillingInputPara[1].ProductionSetting.LoopDelay3 := "DB624".FillRinseJTubeLineDelay;
+	    "DB616".FillingInputPara[1].ProductionSetting.LoopDelay4 := "DB624".FillRinseSpargingLineDelay;
+	    "DB616".FillingInputPara[1].ProductionSetting.LoopDelay5 := "DB624".FillRinseSbiLineDelay;
+	    "DB616".FillingInputPara[1].ProductionSetting.LoopDelay6 := "DB624".FillRinseRecirculationlineDelay;
+	    "DB616".FillingInputPara[1].ProductionSetting.LoopDelay7 := "DB624".FillRinseVesselBypassLineDelay;
+	    "DB616".FillingInputPara[1].ProductionSetting.LoopDelay8 := "DB624".FillRinsePumpBypassLineDelay;
+	    "DB616".FillingInputPara[1].ProductionSetting.LoopDelay9 := "DB624".FillRinsePf01InLineDelay;
+	    "DB616".FillingInputPara[1].ProductionSetting.LoopDelay10 := "DB624".FillRinsePf01VentLineDelay;
+	    "DB616".FillingInputPara[1].ProductionSetting.LoopDelay11 := "DB624".FillRinsePf02InLineDelay;
+	    "DB616".FillingInputPara[1].ProductionSetting.LoopDelay12 := "DB624".FillRinsePf02VentLineDelay;
+	    "DB616".FillingInputPara[1].ProductionSetting.LoopDelay13 := "DB624".FillRinsePf02OutLineDelay;
+	    "DB616".FillingInputPara[1].ProductionSetting.LoopDelay14 := "DB624".FillRinsePf01BypassLineDelay;
+	    "DB616".FillingInputPara[1].ProductionSetting.LoopDelay15 := "DB624".FillRinsePf02BypassLineDelay;
+	    "DB616".FillingInputPara[1].ProductionSetting.LoopDelay16 := "DB624".FillRinsePtlLineDelay;
+	    
+	    
+	    // "DB616".AirPurgingInputPara[1].ProductionSetting.LoopDelay1 := "DB624".AirPurgeSamplingLineDelay;
+	    // "DB616".AirPurgingInputPara[1].ProductionSetting.LoopDelay2 := "DB624".AirPurgeBlankeingLineDelay;
+	    // "DB616".AirPurgingInputPara[1].ProductionSetting.LoopDelay3 := "DB624".AirPurgeJTubeLineDelay;
+	    // "DB616".AirPurgingInputPara[1].ProductionSetting.LoopDelay4 := "DB624".AirPurgeSpargingLineDelay;
+	    // "DB616".AirPurgingInputPara[1].ProductionSetting.LoopDelay5 := "DB624".AirPurgeSbiLineDelay;
+	    // "DB616".AirPurgingInputPara[1].ProductionSetting.LoopDelay6 := "DB624".AirPurgeRecirculationlineDelay;
+	    // "DB616".AirPurgingInputPara[1].ProductionSetting.LoopDelay7 := "DB624".AirPurgeVesselBypassLineDelay;
+	    // "DB616".AirPurgingInputPara[1].ProductionSetting.LoopDelay8 := "DB624".AirPurgeVesselDrainLineDelay ;
+	    // "DB616".AirPurgingInputPara[1].ProductionSetting.LoopDelay9 := "DB624".AirPurgePumpBypassLineDelay ;
+	    // "DB616".AirPurgingInputPara[1].ProductionSetting.LoopDelay10 := "DB624".AirPurgePf01InLineDelay ;
+	    // "DB616".AirPurgingInputPara[1].ProductionSetting.LoopDelay11 := "DB624".AirPurgePf01VentLineDelay ;
+	    // "DB616".AirPurgingInputPara[1].ProductionSetting.LoopDelay12 := "DB624".AirPurgePf02InLineDelay ;
+	    // "DB616".AirPurgingInputPara[1].ProductionSetting.LoopDelay13 := "DB624".AirPurgePf02VentLineDelay ;
+	    // "DB616".AirPurgingInputPara[1].ProductionSetting.LoopDelay14 := "DB624".AirPurgePf02OutLineDelay ;
+	    // "DB616".AirPurgingInputPara[1].ProductionSetting.LoopDelay15 := "DB624".AirPurgePf01BypassLineDelay ;
+	    // "DB616".AirPurgingInputPara[1].ProductionSetting.LoopDelay16 := "DB624".AirPurgePf02BypassLineDelay ;
+	    // "DB616".AirPurgingInputPara[1].ProductionSetting.LoopDelay17 :="DB624".AirPurgePtlLineDelay ;
+	    
+	    // CASE "DB611".StepDelay."Noof StepsPv" OF
+	    //     0..5:
+	    //         "DB616".AirPurgingInputPara[1].Selections.PressureMode := 1;
+	    //     6:
+	    //         "DB616".AirPurgingInputPara[1].Selections.PressureMode := 0;
+	    //     7..16:
+	    //         "DB616".AirPurgingInputPara[1].Selections.PressureMode := 1;
+	    //     ELSE
+	    //         "DB616".AirPurgingInputPara[1].Selections.PressureMode := 1;
+	    // END_CASE;
+	            
+	    
+	    
+	    REGION FILLING
+	        IF "DB615".CurrentStep = 1 THEN
+	            "DB616".FillingOutputPara[1] := "DB604".ParaOut;
+	            "DB625".FillingPrint[1] := "DB604".Print;
+	        ELSE
+	            "DB616".FillingOutputPara[1] := "DB616".FillingOutputPara[0];
+	        END_IF;
+	    END_REGION
+	    
+	    REGION DRAIN
+	        IF "DB615".CurrentStep = 1 AND "DB609".CycleEnable = 1 THEN
+	            "DB616".DrainOutputs[1] := "DB609".ParaOut;
+	
+	        ELSE
+	            "DB616".DrainOutputs[2] := "DB616".DrainOutputs[0];
+	        END_IF;
+	    END_REGION
+	    
+	    REGION SYSTEM DRAIN      
+	        IF "DB615".CurrentStep = 1 THEN
+	            "DB616".SystemDrainOutPara[1] := "DB610".ParaOut;
+	        ELSE
+	            "DB616".SystemDrainOutPara[1] := "DB616".SystemDrainOutPara[0];
+	        END_IF;
+	    END_REGION
+	    
+	    REGION AIR PURGE
+	        IF "DB615".CurrentStep = 1 THEN
+	            "DB616".AirPurgingOutPara[1] := "DB611".ParaOut;
+	        ELSE
+	            "DB616".AirPurgingOutPara[1] := "DB616".AirPurgingOutPara[0];
+	        END_IF;
+	    END_REGION
+	    
+	    REGION ON SCREEN PV
+	        IF "DB615".CurrentStep = 1 THEN
+	            //"DB627".FillQtySv := "DB623".Cyc1FillQty;
+	            "DB627".FillQtyPv := "DB604".ActualQuantity;
+	            //"DB627".TempSv := "DB623".Cyc1SetTemp;
+	           // "DB627".TempPv := "DB605".ActualTemperature;
+	            "DB627".MixingPv := "DB607".MixingTimer.TimeSecPV;
+	            "DB627".MixingSv := "DB616".MixingTimeInput[1];
+	        //    "DB627".APSv := "DB616".AirPurgingOutPara[1].Out.TimeSV;
+	            "DB627".ApPv := "DB616".AirPurgingOutPara[1].Out.TimePV;
+	            "DB627".APSv := "DB611".ParaOut.Out.TimeSV;
+	            "DB627".ApReleaseTimeSv := "DB616".AirPurgingInputPara[1].Parameters.VentOnTime;
+	            "DB627".ApReleaseTimePv := "DB616".AirPurgingOutPara[1].Out.PressureReleaseTimePV;
+	            "DB627".SdSv := "DB623".SystemDrainTime;
+	            "DB627".SdPv := "DB610".TimePv;
+	           "DB627".RecirculationSv := "DB616".RecirculationOutput[1].Out.TimeSV;
+	           "DB627".RecirculationPv := "DB616".RecirculationOutput[1].Out.TimePV;
+	           "DB627".ConductivitySv := "DB609".ParaIn.Parameters.SetConductivity;
+	           "DB627".ConductivityPv := "DB609".ActualConductivityVessel;
+	         //   "DB627".DosingTimeSv := 0;
+	         //   "DB627".DosingTimePv := 0;
+	            "DB627".ApSetPressureSv := "DB623".AirPurgingPressure;
+	            "DB627".ApSetPressurePv := "DB611".ActualPressure;
+	            
+	        END_IF;
+	    END_REGION
+	END_REGION
+	
+	REGION Cycle 2 - FILLING CYCLE
+	    
+	    "DB616".CycleSelection[2].StepSelection.SetRepetition := "DB623".FillingCycleNoOfRep;
+	    
+	    "DB616".FillingInputPara[2].ProductionSetting.ZDVDelay := "CommonProductionSettings".WFIDelay;
+	   
+	    "DB616".FillingInputPara[2].Parameters.FillQuantity1 := "DB623".FillingCycleFillQty;
+	    
+	    "DB616".FillingInputPara[2].ProductionSetting.LoopDelay1 := "DB624".FillRinseSamplingLineDelay;
+	    "DB616".FillingInputPara[2].ProductionSetting.LoopDelay2 := "DB624".FillRinseBlanketingLineDelay;
+	    "DB616".FillingInputPara[2].ProductionSetting.LoopDelay3 := "DB624".FillRinseJTubeLineDelay;
+	    "DB616".FillingInputPara[2].ProductionSetting.LoopDelay4 := "DB624".FillRinseSpargingLineDelay;
+	    
+	    "DB616".MixingTimeInput[2] := "DB623".FillingCycleMixingTime;
+	    
+	    "DB616".RecirculationInput[2].Parameters.RecirculationInputToRunTime := "Cp01Cmd";
+	    
+	    "DB616".RecirculationInput[2].Parameters.LoopDelay1 := "DB624".RecSamplingLineDelay;
+	    "DB616".RecirculationInput[2].Parameters.LoopDelay2 := "DB624".RecBlanketingLineDelay;
+	    "DB616".RecirculationInput[2].Parameters.LoopDelay3 := "DB624".RecJTubeLineDelay;
+	    "DB616".RecirculationInput[2].Parameters.LoopDelay4 := "DB624".RecSpargingLineDelay;
+	    "DB616".RecirculationInput[2].Parameters.LoopDelay5 := "DB624".RecSbiLineDelay;
+	    
+	    IF "DB609".StepDelay."Noof StepsPv" <= 2 THEN
+	        "DB616".DrainInputs[2].Selections.PressureModeSel := 1;
+	        "DB616".DrainInputs[2].Selections.DrainPumpSel := 0;
+	    ELSE
+	        "DB616".DrainInputs[2].Selections.PressureModeSel := 0;
+	        "DB616".DrainInputs[2].Selections.DrainPumpSel := 1;
+	    END_IF;
+	    
+	    "DB616".DrainInputs[2].Selections.InputToRunPump := "DiFinal".Cp01FlowSwitch;
+	    
+	    "DB616".DrainInputs[2].ProductionSetting.LoopDelay1 := "DB624".DrainVesselDrainLineDelay;
+	    "DB616".DrainInputs[2].ProductionSetting.LoopDelay2 := "DB624".DrainPumpBypassLineDelay;
+	    "DB616".DrainInputs[2].ProductionSetting.LoopDelay3 := "DB624".DrainPf01InLineDelay;
+	    "DB616".DrainInputs[2].ProductionSetting.LoopDelay4 := "DB624".DrainPf01VentLineDelay;
+	    "DB616".DrainInputs[2].ProductionSetting.LoopDelay5 := "DB624".DrainPf02InLineDelay;
+	    "DB616".DrainInputs[2].ProductionSetting.LoopDelay6 :="DB624".DrainPf02VentLineDelay ;
+	    "DB616".DrainInputs[2].ProductionSetting.LoopDelay7 :="DB624".DrainPf02OutLineDelay ;
+	    "DB616".DrainInputs[2].ProductionSetting.LoopDelay8 :="DB624".DrainPf01BypassLineDelay ;
+	    "DB616".DrainInputs[2].ProductionSetting.LoopDelay9 :="DB624".DrainPf02BypassLineDelay ;
+	    
+	    // IF "DB611".StepDelay."Noof StepsPv" = 1 THEN
+	    //     "DB616".AirPurgingInputPara[2].Selections.PressureMode := 0;
+	    // ELSE
+	    //     "DB616".AirPurgingInputPara[2].Selections.PressureMode := 1;
+	    // END_IF;
+	    
+	    // "DB616".AirPurgingInputPara[2].ProductionSetting.LoopDelay1 := "DB624".AirPurgeSamplingLineDelay;
+	    // "DB616".AirPurgingInputPara[2].ProductionSetting.LoopDelay2 := "DB624".AirPurgeBlankeingLineDelay;
+	    // "DB616".AirPurgingInputPara[2].ProductionSetting.LoopDelay3 := "DB624".AirPurgeJTubeLineDelay;
+	    // "DB616".AirPurgingInputPara[2].ProductionSetting.LoopDelay4 := "DB624".AirPurgeSpargingLineDelay;
+	    // "DB616".AirPurgingInputPara[2].ProductionSetting.LoopDelay5 := "DB624".AirPurgeSbiLineDelay;
+	    // "DB616".AirPurgingInputPara[2].ProductionSetting.LoopDelay6 := "DB624".AirPurgeVesselDrainLineDelay;
+	    // "DB616".AirPurgingInputPara[2].ProductionSetting.LoopDelay7 := "DB624".AirPurgePumpBypassLineDelay;
+	    // "DB616".AirPurgingInputPara[2].ProductionSetting.LoopDelay8 := "DB624".AirPurgePf01InLineDelay;
+	    // "DB616".AirPurgingInputPara[2].ProductionSetting.LoopDelay9 := "DB624".AirPurgePf01VentLineDelay;
+	    // "DB616".AirPurgingInputPara[2].ProductionSetting.LoopDelay10 := "DB624".AirPurgePf02InLineDelay;
+	    // "DB616".AirPurgingInputPara[2].ProductionSetting.LoopDelay11 := "DB624".AirPurgePf02VentLineDelay;
+	    // "DB616".AirPurgingInputPara[2].ProductionSetting.LoopDelay12 := "DB624".AirPurgePf02OutLineDelay;
+	    // "DB616".AirPurgingInputPara[2].ProductionSetting.LoopDelay13 := "DB624".AirPurgePf01BypassLineDelay;
+	    // "DB616".AirPurgingInputPara[2].ProductionSetting.LoopDelay14 := "DB624".AirPurgePf02BypassLineDelay;
+	    // "DB616".AirPurgingInputPara[2].ProductionSetting.LoopDelay15 := "DB624".AirPurgePtlLineDelay;
+	    
+	    REGION FILLING
+	        IF "DB615".CurrentStep = 2 THEN
+	            "DB616".FillingOutputPara[2] := "DB604".ParaOut;
+	            "DB625".FillingPrint[2] := "DB604".Print;
+	        ELSE
+	            "DB616".FillingOutputPara[2] := "DB616".FillingOutputPara[0];
+	        END_IF;
+	    END_REGION
+	   
+	    REGION MIXING
+	        IF "DB615".CurrentStep = 2 AND "DB607".CycleEnable = 1 THEN
+	            "DB625".MixingTime[2] := "DB607".Print;
+	        END_IF;
+	    END_REGION
+	    
+	    REGION RECIRCULATION
+	        IF "DB615".CurrentStep = 2 THEN
+	            "DB616".RecirculationOutput[2] := "DB608".ParaOut;
+	            //"DB625".RecirculationPrint[2] := "DB608".Print;
+	        ELSE
+	            "DB616".RecirculationOutput[2] := "DB616".RecirculationOutput[0];
+	        END_IF;
+	    END_REGION
+	    
+	    REGION DRAIN
+	        IF "DB615".CurrentStep = 2 AND "DB609".CycleEnable = 1 THEN
+	            "DB616".DrainOutputs[2] := "DB609".ParaOut;
+	
+	        ELSE
+	            "DB616".DrainOutputs[2] := "DB616".DrainOutputs[0];
+	        END_IF;
+	    END_REGION
+	    
+	    REGION SYSTEM DRAIN      
+	        IF "DB615".CurrentStep = 2 THEN
+	            "DB616".SystemDrainOutPara[2] := "DB610".ParaOut;
+	        ELSE
+	            "DB616".SystemDrainOutPara[2] := "DB616".SystemDrainOutPara[0];
+	        END_IF;
+	    END_REGION
+	    
+	    REGION AIR PURGE
+	        IF "DB615".CurrentStep = 2 THEN
+	            "DB616".AirPurgingOutPara[2] := "DB611".ParaOut;
+	        ELSE
+	            "DB616".AirPurgingOutPara[2] := "DB616".AirPurgingOutPara[0];
+	        END_IF;
+	    END_REGION
+	    
+	    REGION ON SCREEN PV
+	        IF "DB615".CurrentStep = 2 THEN
+	            "DB627".RinseTimeSv := 0;
+	            "DB627".RinseTimePv := 0;
+	            "DB627".RepSv :=  "DB623".FillingCycleNoOfRep;
+	            "DB627".RepPv := "DB603".ActualRepetition;
+	            "DB627".SdSv := "DB623".SystemDrainTime;
+	            "DB627".SdPv := "DB610".Timer.TimeSecPV;
+	            "DB627".MixingSv := "DB616".MixingTimeInput[2] ;
+	            "DB627".MixingPv := "DB607".MixingTimer.TimeSecPV;
+	            //"DB627".FillQtySv :=  "DB616".FillingInputPara[2].Parameters.FillQuantity1;
+	            "DB627".FillQtyPv :=  "ModeDb".VesselWeight;
+	            "DB627".ApReleaseTimeSv := "DB624".AirPurgingReleaseTime;
+	            "DB627".ApReleaseTimePv := "DB611".ParaOut.Out.PressureReleaseTimePV;
+	            "DB627".FillQtySv := "DB623".FillingCycleFillQty;
+	          //  "DB627".FillQtyPv := "DB604".ActualQuantity;
+	            //"DB627".TempSv := "DB623".Cyc1SetTemp;
+	            // "DB627".TempPv := "DB605".ActualTemperature;
+	        //    "DB627".APSv := "DB616".AirPurgingOutPara[2].Out.TimeSV;
+	            "DB627".ApPv := "DB616".AirPurgingOutPara[2].Out.TimePV;
+	            "DB627".APSv := "DB611".ParaOut.Out.TimeSV;
+	          //  "DB627".RecirculationSv := "DB616".RecirculationOutput[2].Out.TimeSV;
+	            "DB627".RecirculationPv := "DB616".RecirculationOutput[2].Out.TimePV;
+	            "DB627".RecirculationSv := "DB608".ParaOut.Out.TimeSV;
+	            "DB627".ConductivitySv := "DB609".ParaIn.Parameters.SetConductivity;
+	            "DB627".ConductivityPv := "DB609".ActualConductivityVessel;
+	            //   "DB627".DosingTimeSv := 0;
+	            //   "DB627".DosingTimePv := 0;
+	            "DB627".ApSetPressureSv := "DB623".AirPurgingPressure;
+	            "DB627".ApSetPressurePv := "DB611".ActualPressure;
+	            
+	        END_IF;
+	    END_REGION
+	END_REGION
+	
+	REGION Cycle 3 - FINAL RINSE CYCLE
+	    
+	    "DB616".CycleSelection[3].StepSelection.SetRepetition := "DB624"."FinalRinseCycleNo.OfRep";
+	    
+	    "DB616".FillingInputPara[3].ProductionSetting.ZDVDelay := "CommonProductionSettings".WFIDelay;
+	    
+	    "DB616".FillingInputPara[3].Parameters.FillQuantity1 := "DB623".FinalRinseCycleFillQty;
+	    
+	    "DB616".FillingInputPara[3].ProductionSetting.LoopDelay1 := "DB624".FillRinseSamplingLineDelay;
+	    "DB616".FillingInputPara[3].ProductionSetting.LoopDelay2 := "DB624".FillRinseBlanketingLineDelay;
+	    "DB616".FillingInputPara[3].ProductionSetting.LoopDelay3 := "DB624".FillRinseJTubeLineDelay;
+	    "DB616".FillingInputPara[3].ProductionSetting.LoopDelay4 := "DB624".FillRinseSpargingLineDelay;
+	    
+	    "DB616".MixingTimeInput[3] := "DB623".FinalRinseCycleMixingTime;
+	    
+	    "DB616".RecirculationInput[3].Parameters.RecirculationInputToRunTime := "Cp01Cmd";
+	    "DB616".RecirculationInput[3].Parameters.LoopDelay1 := "DB624".RecSamplingLineDelay;
+	    "DB616".RecirculationInput[3].Parameters.LoopDelay2 := "DB624".RecBlanketingLineDelay;
+	    "DB616".RecirculationInput[3].Parameters.LoopDelay3 := "DB624".RecJTubeLineDelay;
+	    "DB616".RecirculationInput[3].Parameters.LoopDelay4 := "DB624".RecSpargingLineDelay;
+	    "DB616".RecirculationInput[3].Parameters.LoopDelay5 := "DB624".RecSbiLineDelay;
+	    
+	    //"DB616".DrainInputs[3].ProductionSetting.LoopDelay1 := "DB624".FinalRinseCycleVesselDrainLineDelay;
+	    "DB616".DrainInputs[3].ProductionSetting.DelayToCheckConductivity := "DB624".DelayToCheckConductivity;
+	    "DB616".DrainInputs[3].ProductionSetting.ConductivityCheckTime := "DB624".ConductivityCheckTime;
+	    
+	    IF "DB609".StepDelay."Noof StepsPv" <= 2 THEN
+	        "DB616".DrainInputs[3].Selections.PressureModeSel := 1;
+	        "DB616".DrainInputs[3].Selections.DrainPumpSel := 0;
+	    ELSE
+	        "DB616".DrainInputs[3].Selections.PressureModeSel := 0;
+	        "DB616".DrainInputs[3].Selections.DrainPumpSel := 1;
+	    END_IF;
+	    
+	    "DB616".DrainInputs[3].Selections.InputToRunPump := "DiFinal".Cp01FlowSwitch;
+	    
+	    "DB616".DrainInputs[3].ProductionSetting.LoopDelay1 := "DB624".DrainVesselDrainLineDelay;
+	    "DB616".DrainInputs[3].ProductionSetting.LoopDelay2 := "DB624".DrainPumpBypassLineDelay;
+	    "DB616".DrainInputs[3].ProductionSetting.LoopDelay3 := "DB624".DrainPf01InLineDelay;
+	    "DB616".DrainInputs[3].ProductionSetting.LoopDelay4 := "DB624".DrainPf01VentLineDelay;
+	    "DB616".DrainInputs[3].ProductionSetting.LoopDelay5 := "DB624".DrainPf02InLineDelay;
+	    "DB616".DrainInputs[3].ProductionSetting.LoopDelay6 := "DB624".DrainPf02VentLineDelay;
+	    "DB616".DrainInputs[3].ProductionSetting.LoopDelay7 := "DB624".DrainPf02OutLineDelay;
+	    "DB616".DrainInputs[3].ProductionSetting.LoopDelay8 := "DB624".DrainPf01BypassLineDelay;
+	    "DB616".DrainInputs[3].ProductionSetting.LoopDelay9 := "DB624".DrainPf02BypassLineDelay;
+	    
+	    // "DB616".AirPurgingInputPara[2].ProductionSetting.LoopDelay1 := "DB624".AirPurgeSamplingLineDelay;
+	    // "DB616".AirPurgingInputPara[2].ProductionSetting.LoopDelay2 := "DB624".AirPurgeBlankeingLineDelay;
+	    // "DB616".AirPurgingInputPara[2].ProductionSetting.LoopDelay3 := "DB624".AirPurgeJTubeLineDelay;
+	    // "DB616".AirPurgingInputPara[2].ProductionSetting.LoopDelay4 := "DB624".AirPurgeSpargingLineDelay;
+	    // "DB616".AirPurgingInputPara[2].ProductionSetting.LoopDelay5 := "DB624".AirPurgeSbiLineDelay;
+	    // "DB616".AirPurgingInputPara[2].ProductionSetting.LoopDelay6 := "DB624".AirPurgeVesselDrainLineDelay;
+	    
+	END_REGION
+	REGION FILLING
+	    IF "DB615".CurrentStep = 3 THEN
+	        "DB616".FillingOutputPara[3] := "DB604".ParaOut;
+	        "DB625".FillingPrint[3] := "DB604".Print;
+	    ELSE
+	        "DB616".FillingOutputPara[3] := "DB616".FillingOutputPara[0];
+	    END_IF;
+	END_REGION
+	
+	REGION MIXING
+	    IF "DB615".CurrentStep = 3 AND "DB607".CycleEnable = 1 THEN
+	        "DB625".MixingTime[3] := "DB607".Print;
+	    END_IF;
+	END_REGION
+	
+	REGION RECIRCULATION
+	    IF "DB615".CurrentStep = 3 THEN
+	        "DB616".RecirculationOutput[3] := "DB608".ParaOut;
+	        //"DB625".RecirculationPrint[2] := "DB608".Print;
+	    ELSE
+	        "DB616".RecirculationOutput[3] := "DB616".RecirculationOutput[0];
+	    END_IF;
+	END_REGION
+	
+	REGION DRAIN
+	    IF "DB615".CurrentStep = 3 AND "DB609".CycleEnable = 1 THEN
+	        "DB616".DrainOutputs[3] := "DB609".ParaOut;
+	        
+	    ELSE
+	        "DB616".DrainOutputs[3] := "DB616".DrainOutputs[0];
+	    END_IF;
+	END_REGION
+	
+	REGION SYSTEM DRAIN      
+	    IF "DB615".CurrentStep = 3 THEN
+	        "DB616".SystemDrainOutPara[3] := "DB610".ParaOut;
+	    ELSE
+	        "DB616".SystemDrainOutPara[3] := "DB616".SystemDrainOutPara[0];
+	    END_IF;
+	END_REGION
+	
+	REGION AIR PURGE
+	    IF "DB615".CurrentStep = 3 THEN
+	        "DB616".AirPurgingOutPara[3] := "DB611".ParaOut;
+	    ELSE
+	        "DB616".AirPurgingOutPara[3] := "DB616".AirPurgingOutPara[0];
+	    END_IF;
+	END_REGION
+	REGION ON SCREEN PV
+	    IF "DB615".CurrentStep = 3 THEN
+	        "DB627".RinseTimeSv := 0;
+	        "DB627".RinseTimePv := 0;
+	        "DB627".RepSv := "DB623".FillingCycleNoOfRep;
+	        "DB627".RepPv := "DB603".ActualRepetition;
+	        "DB627".SdSv := "DB623".SystemDrainTime;
+	        "DB627".SdPv := "DB610".Timer.TimeSecPV;
+	        "DB627".MixingSv := "DB616".MixingTimeInput[3];
+	        "DB627".MixingPv := "DB607".MixingTimer.TimeSecPV;
+	        //"DB627".FillQtySv :=  "DB616".FillingInputPara[2].Parameters.FillQuantity1;
+	        "DB627".FillQtyPv := "ModeDb".VesselWeight;
+	        "DB627".ApReleaseTimeSv := "DB624".AirPurgingReleaseTime;
+	        "DB627".ApReleaseTimePv := "DB611".ParaOut.Out.PressureReleaseTimePV;
+	        "DB627".FillQtySv := "DB623".FinalRinseCycleFillQty;
+	        //  "DB627".FillQtyPv := "DB604".ActualQuantity;
+	        //"DB627".TempSv := "DB623".Cyc1SetTemp;
+	        // "DB627".TempPv := "DB605".ActualTemperature;
+	      //  "DB627".APSv := "DB616".AirPurgingOutPara[2].Out.TimeSV;
+	        "DB627".ApPv := "DB616".AirPurgingOutPara[3].Out.TimePV;
+	        "DB627".APSv := "DB611".ParaOut.Out.TimeSV;
+	      //  "DB627".RecirculationSv := "DB616".RecirculationOutput[2].Out.TimeSV;
+	        "DB627".RecirculationPv := "DB616".RecirculationOutput[3].Out.TimePV;
+	        "DB627".RecirculationSv := "DB608".ParaOut.Out.TimeSV;
+	        "DB627".ConductivitySv := "DB609".ParaIn.Parameters.SetConductivity;
+	        "DB627".ConductivityPv := "DB609".ActualConductivityVessel;
+	        //   "DB627".DosingTimeSv := 0;
+	        //   "DB627".DosingTimePv := 0;
+	        "DB627".ApSetPressureSv := "DB623".AirPurgingPressure;
+	        "DB627".ApSetPressurePv := "DB611".ActualPressure;
+	        
+	    END_IF;
+	END_REGION
+	
+	
+	
+	
+END_FUNCTION
+

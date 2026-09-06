@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V21" />
+  <SW.Blocks.InstanceDB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <HeaderAuthor>PRECISE</HeaderAuthor>
+      <HeaderFamily>PRECISE</HeaderFamily>
+      <InstanceOfName>FB608</InstanceOfName>
+      <InstanceOfType>FB</InstanceOfType>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="Input">
+            <Member Name="CycleEnable" Datatype="Bool" />
+            <Member Name="CycleRunning" Datatype="Bool" />
+            <Member Name="SecPulse" Datatype="Bool" />
+            <Member Name="AlwaysTrue" Datatype="Bool" />
+            <Member Name="ActualTemperature" Datatype="Real" />
+            <Member Name="ParaIn" Datatype="&quot;RecirculationInputs&quot;" />
+            <Member Name="ActualPressure" Datatype="Real" />
+            <Member Name="ActualConductivity" Datatype="Real" />
+          </Section>
+          <Section Name="Output">
+            <Member Name="Started" Datatype="Bool" />
+            <Member Name="PressureUtilityValve" Datatype="Bool" />
+            <Member Name="AlkaliInValve" Datatype="Bool" />
+            <Member Name="AlkaliPump" Datatype="Bool" />
+            <Member Name="AcidInValve" Datatype="Bool" />
+            <Member Name="AcidPump" Datatype="Bool" />
+            <Member Name="DosingValve(Cond)" Datatype="Bool" />
+            <Member Name="DosingPump(Cond)" Datatype="Bool" />
+            <Member Name="HsbCmd" Datatype="Bool" />
+            <Member Name="RecPump" Datatype="Bool" />
+            <Member Name="ParaOut" Datatype="&quot;RecirculationOutputs&quot;" />
+            <Member Name="TimePv" Datatype="DInt" />
+            <Member Name="StepStatus" Datatype="String[60]" />
+          </Section>
+          <Section Name="InOut">
+            <Member Name="Over" Datatype="Bool" />
+            <Member Name="OverTemp" Datatype="Bool" />
+            <Member Name="ControlStarted" Datatype="Bool" />
+            <Member Name="TimerPaused" Datatype="Bool" />
+            <Member Name="PressurePostiveTol" Datatype="Real" />
+            <Member Name="PressureNegativeTol" Datatype="Real" />
+            <Member Name="LineValves" Datatype="Bool" />
+            <Member Name="ActualRepetition" Datatype="Int" />
+            <Member Name="SetTemperature" Datatype="Real">
+              <AttributeList>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="SetpH" Datatype="Real" />
+            <Member Name="SetConductivity" Datatype="Real" />
+            <Member Name="pHReached" Datatype="Bool" />
+            <Member Name="ConductivityReached" Datatype="Bool" />
+            <Member Name="CipSelected" Datatype="Bool" />
+          </Section>
+          <Section Name="Static">
+            <Member Name="ValveOnDelayPV" Datatype="Int" />
+            <Member Name="ValveOffDelayPV" Datatype="Int" />
+            <Member Name="ValveOnDelayPV_1" Datatype="Int" />
+            <Member Name="ValveOffDelayPV_1" Datatype="Int" />
+            <Member Name="ValveOnDelayPV_2" Datatype="Int" />
+            <Member Name="ValveOffDelayPV_2" Datatype="Int" />
+            <Member Name="TempPos" Datatype="Real" />
+            <Member Name="RE1" Datatype="Bool" />
+            <Member Name="StepDelay" Datatype="&quot;FB110&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="RE2" Datatype="Bool">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="RE3" Datatype="Bool" />
+            <Member Name="RE4" Datatype="Bool" />
+            <Member Name="RE5" Datatype="Bool" />
+            <Member Name="Re6" Datatype="Bool" />
+            <Member Name="Re7" Datatype="Bool" />
+            <Member Name="timer" Datatype="IEC_TIMER" Version="1.0" />
+          </Section>
+        </Sections>
+      </Interface>
+      <Name>DB608</Name>
+      <Namespace />
+      <Number>608</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>CIP RECIRCULATION</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>DB608</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.InstanceDB>
+</Document>

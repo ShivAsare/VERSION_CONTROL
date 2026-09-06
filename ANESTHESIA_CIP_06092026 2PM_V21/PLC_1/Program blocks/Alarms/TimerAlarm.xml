@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V21" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="Static">
+            <Member Name="ControlKeyOff" Datatype="IEC_TIMER" Version="1.0" />
+            <Member Name="EmergencyStopPressed" Datatype="IEC_TIMER" Version="1.0" />
+            <Member Name="PowerReset" Datatype="IEC_TIMER" Version="1.0" />
+            <Member Name="CompresseDairPressurelow" Datatype="IEC_TIMER" Version="1.0" />
+            <Member Name="PowerFailure" Datatype="IEC_TIMER" Version="1.0" />
+            <Member Name="PlcRestarted" Datatype="IEC_TIMER" Version="1.0" />
+            <Member Name="Mm01FeedbackTrip" Datatype="IEC_TIMER" Version="1.0" />
+            <Member Name="Cp01FeedbackTrip" Datatype="IEC_TIMER" Version="1.0" />
+            <Member Name="Mm01OverloadTrip" Datatype="IEC_TIMER" Version="1.0" />
+            <Member Name="Cp01OverloadTrip" Datatype="IEC_TIMER" Version="1.0" />
+            <Member Name="MinimumWeightRequiredToStartmm01" Datatype="IEC_TIMER" Version="1.0" />
+            <Member Name="Ticr01WireBreak" Datatype="IEC_TIMER" Version="1.0" />
+            <Member Name="Ticr02WireBreak" Datatype="IEC_TIMER" Version="1.0" />
+            <Member Name="Ticr03WireBreak" Datatype="IEC_TIMER" Version="1.0" />
+            <Member Name="Ticr04WireBreak" Datatype="IEC_TIMER" Version="1.0" />
+            <Member Name="Ticr05WireBreak" Datatype="IEC_TIMER" Version="1.0" />
+            <Member Name="Ticr06WireBreak" Datatype="IEC_TIMER" Version="1.0" />
+            <Member Name="Ticr07WireBreak" Datatype="IEC_TIMER" Version="1.0" />
+            <Member Name="Ticr08WireBreak" Datatype="IEC_TIMER" Version="1.0" />
+            <Member Name="Ticr09WireBreak" Datatype="IEC_TIMER" Version="1.0" />
+            <Member Name="Ticr10WireBreak" Datatype="IEC_TIMER" Version="1.0" />
+            <Member Name="Picr01WireBreak" Datatype="IEC_TIMER" Version="1.0" />
+            <Member Name="Picr02WireBreak" Datatype="IEC_TIMER" Version="1.0" />
+            <Member Name="Picr03WireBreak" Datatype="IEC_TIMER" Version="1.0" />
+            <Member Name="Picr04WireBreak" Datatype="IEC_TIMER" Version="1.0" />
+            <Member Name="Cicr01WireBreak" Datatype="IEC_TIMER" Version="1.0" />
+            <Member Name="Lc01CommunicationFailed" Datatype="IEC_TIMER" Version="1.0" />
+            <Member Name="VesselHighPressure" Datatype="IEC_TIMER" Version="1.0" />
+            <Member Name="Mm01SpeedSensorTrip" Datatype="IEC_TIMER" Version="1.0" />
+            <Member Name="PlcToHmiCommunicationFailed" Datatype="IEC_TIMER" Version="1.0" />
+            <Member Name="CipCycleOver" Datatype="IEC_TIMER" Version="1.0" />
+            <Member Name="CipCycleConductivityReached" Datatype="IEC_TIMER" Version="1.0" />
+            <Member Name="CipCycleConductivityNotReached" Datatype="IEC_TIMER" Version="1.0" />
+            <Member Name="ConductivityNotSampled" Datatype="IEC_TIMER" Version="1.0" />
+            <Member Name="CipReportDataNotLogged" Datatype="IEC_TIMER" Version="1.0" />
+            <Member Name="PhtFailed" Datatype="IEC_TIMER" Version="1.0" />
+            <Member Name="PhtPass" Datatype="IEC_TIMER" Version="1.0" />
+            <Member Name="PhtOver" Datatype="IEC_TIMER" Version="1.0" />
+            <Member Name="PhtReportDataNotLogged" Datatype="IEC_TIMER" Version="1.0" />
+            <Member Name="SterilizationTimeOver" Datatype="IEC_TIMER" Version="1.0" />
+            <Member Name="SteamFlowLow" Datatype="IEC_TIMER" Version="1.0" />
+            <Member Name="SterilizationHighTemperature" Datatype="IEC_TIMER" Version="1.0" />
+            <Member Name="SterilizationCycleCompleted" Datatype="IEC_TIMER" Version="1.0" />
+            <Member Name="SterilizationReportDataNotLogged" Datatype="IEC_TIMER" Version="1.0" />
+            <Member Name="WfiFlowLow" Datatype="IEC_TIMER" Version="1.0" />
+            <Member Name="BatchReportDataNotLogged" Datatype="IEC_TIMER" Version="1.0" />
+            <Member Name="LifeBitAlarm" Datatype="IEC_TIMER" Version="1.0">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="AlarmAck_Reset" Datatype="IEC_TIMER" Version="1.0">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="MasterReset" Datatype="IEC_TIMER" Version="1.0">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+          </Section>
+        </Sections>
+      </Interface>
+      <MemoryLayout>Standard</MemoryLayout>
+      <Name>TimerAlarm</Name>
+      <Namespace />
+      <Number>185</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

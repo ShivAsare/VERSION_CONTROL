@@ -1,0 +1,805 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V21" />
+  <SW.Blocks.FC ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="Input" />
+          <Section Name="Output" />
+          <Section Name="InOut" />
+          <Section Name="Temp" />
+          <Section Name="Constant" />
+          <Section Name="Return">
+            <Member Name="Ret_Val" Datatype="Void" />
+          </Section>
+        </Sections>
+      </Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <Name>DiFc</Name>
+      <Namespace />
+      <Number>101</Number>
+      <ProgrammingLanguage>LAD</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="3" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v4">
+              <Access Scope="GlobalVariable" UId="21">
+                <Symbol UId="22">
+                  <Component Name="DiFinal" UId="23">
+                    <BooleanAttribute Name="HasQuotes" UId="24">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="25" />
+                  <Component Name="ControlKey" UId="26" />
+                </Symbol>
+              </Access>
+              <Blank UId="27" />
+              <Token Text=":=" UId="28" />
+              <Blank UId="29" />
+              <Access Scope="GlobalVariable" UId="30">
+                <Symbol UId="31">
+                  <Component Name="DiSimulation" UId="32">
+                    <BooleanAttribute Name="HasQuotes" UId="33">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="34" />
+                  <Component Name="ControlKey" UId="35" />
+                </Symbol>
+              </Access>
+              <Blank UId="36" />
+              <Token Text="OR" UId="37" />
+              <Blank UId="38" />
+              <Access Scope="GlobalVariable" UId="39">
+                <Symbol UId="40">
+                  <Component Name="ControlKey" UId="41">
+                    <BooleanAttribute Name="HasQuotes" UId="42">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="43" />
+              <NewLine UId="44" />
+              <Access Scope="GlobalVariable" UId="45">
+                <Symbol UId="46">
+                  <Component Name="DiFinal" UId="47">
+                    <BooleanAttribute Name="HasQuotes" UId="48">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="49" />
+                  <Component Name="EmergencyStop" UId="50" />
+                </Symbol>
+              </Access>
+              <Blank UId="51" />
+              <Token Text=":=" UId="52" />
+              <Blank UId="53" />
+              <Access Scope="GlobalVariable" UId="54">
+                <Symbol UId="55">
+                  <Component Name="DiSimulation" UId="56">
+                    <BooleanAttribute Name="HasQuotes" UId="57">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="58" />
+                  <Component Name="EmergencyStop" UId="59" />
+                </Symbol>
+              </Access>
+              <Blank UId="60" />
+              <Token Text="OR" UId="61" />
+              <Blank UId="62" />
+              <Access Scope="GlobalVariable" UId="63">
+                <Symbol UId="64">
+                  <Component Name="EmergencyStop" UId="65">
+                    <BooleanAttribute Name="HasQuotes" UId="66">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="67" />
+              <NewLine UId="68" />
+              <Access Scope="GlobalVariable" UId="69">
+                <Symbol UId="70">
+                  <Component Name="DiFinal" UId="71">
+                    <BooleanAttribute Name="HasQuotes" UId="72">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="73" />
+                  <Component Name="CompressedAirPressureLow" UId="74" />
+                </Symbol>
+              </Access>
+              <Blank UId="75" />
+              <Token Text=":=" UId="76" />
+              <Blank UId="77" />
+              <Access Scope="GlobalVariable" UId="78">
+                <Symbol UId="79">
+                  <Component Name="DiSimulation" UId="80">
+                    <BooleanAttribute Name="HasQuotes" UId="81">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="82" />
+                  <Component Name="CompressedAirPressureLow" UId="83" />
+                </Symbol>
+              </Access>
+              <Blank UId="84" />
+              <Token Text="OR" UId="85" />
+              <Blank UId="86" />
+              <Access Scope="GlobalVariable" UId="87">
+                <Symbol UId="88">
+                  <Component Name="CompressedAirPressureLow" UId="89">
+                    <BooleanAttribute Name="HasQuotes" UId="90">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="91" />
+              <NewLine UId="92" />
+              <Access Scope="GlobalVariable" UId="93">
+                <Symbol UId="94">
+                  <Component Name="DiFinal" UId="95">
+                    <BooleanAttribute Name="HasQuotes" UId="96">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="97" />
+                  <Component Name="PowerFailure" UId="98" />
+                </Symbol>
+              </Access>
+              <Blank UId="99" />
+              <Token Text=":=" UId="100" />
+              <Blank UId="101" />
+              <Access Scope="GlobalVariable" UId="102">
+                <Symbol UId="103">
+                  <Component Name="DiSimulation" UId="104">
+                    <BooleanAttribute Name="HasQuotes" UId="105">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="106" />
+                  <Component Name="PowerFailure" UId="107" />
+                </Symbol>
+              </Access>
+              <Blank UId="108" />
+              <Token Text="OR" UId="109" />
+              <Blank UId="110" />
+              <Access Scope="GlobalVariable" UId="111">
+                <Symbol UId="112">
+                  <Component Name="PowerFailure" UId="113">
+                    <BooleanAttribute Name="HasQuotes" UId="114">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="115" />
+              <NewLine UId="116" />
+              <Access Scope="GlobalVariable" UId="117">
+                <Symbol UId="118">
+                  <Component Name="DiFinal" UId="119">
+                    <BooleanAttribute Name="HasQuotes" UId="120">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="121" />
+                  <Component Name="PowerReset" UId="122" />
+                </Symbol>
+              </Access>
+              <Blank UId="123" />
+              <Token Text=":=" UId="124" />
+              <Blank UId="125" />
+              <Access Scope="GlobalVariable" UId="126">
+                <Symbol UId="127">
+                  <Component Name="DiSimulation" UId="128">
+                    <BooleanAttribute Name="HasQuotes" UId="129">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="130" />
+                  <Component Name="PowerReset" UId="131" />
+                </Symbol>
+              </Access>
+              <Blank UId="132" />
+              <Token Text="OR" UId="133" />
+              <Blank UId="134" />
+              <Access Scope="GlobalVariable" UId="135">
+                <Symbol UId="136">
+                  <Component Name="PowerReset" UId="137">
+                    <BooleanAttribute Name="HasQuotes" UId="138">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="139" />
+              <NewLine UId="140" />
+              <Access Scope="GlobalVariable" UId="141">
+                <Symbol UId="142">
+                  <Component Name="DiFinal" UId="143">
+                    <BooleanAttribute Name="HasQuotes" UId="144">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="145" />
+                  <Component Name="MagneticMixerFeedback" UId="146" />
+                </Symbol>
+              </Access>
+              <Blank UId="147" />
+              <Token Text=":=" UId="148" />
+              <Blank UId="149" />
+              <Access Scope="GlobalVariable" UId="150">
+                <Symbol UId="151">
+                  <Component Name="DiSimulation" UId="152">
+                    <BooleanAttribute Name="HasQuotes" UId="153">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="154" />
+                  <Component Name="MagneticMixerFeedback" UId="155" />
+                </Symbol>
+              </Access>
+              <Blank UId="156" />
+              <Token Text="OR" UId="157" />
+              <Blank UId="158" />
+              <Access Scope="GlobalVariable" UId="159">
+                <Symbol UId="160">
+                  <Component Name="MagneticMixerFeedback" UId="161">
+                    <BooleanAttribute Name="HasQuotes" UId="162">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="163" />
+              <NewLine UId="164" />
+              <Access Scope="GlobalVariable" UId="165">
+                <Symbol UId="166">
+                  <Component Name="DiFinal" UId="167">
+                    <BooleanAttribute Name="HasQuotes" UId="168">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="169" />
+                  <Component Name="CipPumpFeedback" UId="170" />
+                </Symbol>
+              </Access>
+              <Blank UId="171" />
+              <Token Text=":=" UId="172" />
+              <Blank UId="173" />
+              <Access Scope="GlobalVariable" UId="174">
+                <Symbol UId="175">
+                  <Component Name="DiSimulation" UId="176">
+                    <BooleanAttribute Name="HasQuotes" UId="177">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="178" />
+                  <Component Name="CipPumpFeedback" UId="179" />
+                </Symbol>
+              </Access>
+              <Blank UId="180" />
+              <Token Text="OR" UId="181" />
+              <Blank UId="182" />
+              <Access Scope="GlobalVariable" UId="183">
+                <Symbol UId="184">
+                  <Component Name="CipPumpFeedback" UId="185">
+                    <BooleanAttribute Name="HasQuotes" UId="186">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="187" />
+              <NewLine UId="188" />
+              <Access Scope="GlobalVariable" UId="189">
+                <Symbol UId="190">
+                  <Component Name="DiFinal" UId="191">
+                    <BooleanAttribute Name="HasQuotes" UId="192">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="193" />
+                  <Component Name="MagneticMixerOverload" UId="194" />
+                </Symbol>
+              </Access>
+              <Blank UId="195" />
+              <Token Text=":=" UId="196" />
+              <Blank UId="197" />
+              <Access Scope="GlobalVariable" UId="198">
+                <Symbol UId="199">
+                  <Component Name="DiSimulation" UId="200">
+                    <BooleanAttribute Name="HasQuotes" UId="201">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="202" />
+                  <Component Name="MagneticMixerOverload" UId="203" />
+                </Symbol>
+              </Access>
+              <Blank UId="204" />
+              <Token Text="OR" UId="205" />
+              <Blank UId="206" />
+              <Access Scope="GlobalVariable" UId="207">
+                <Symbol UId="208">
+                  <Component Name="MagneticMixerOverload" UId="209">
+                    <BooleanAttribute Name="HasQuotes" UId="210">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="211" />
+              <NewLine UId="212" />
+              <Access Scope="GlobalVariable" UId="213">
+                <Symbol UId="214">
+                  <Component Name="DiFinal" UId="215">
+                    <BooleanAttribute Name="HasQuotes" UId="216">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="217" />
+                  <Component Name="CipPumpOverload" UId="218" />
+                </Symbol>
+              </Access>
+              <Blank UId="219" />
+              <Token Text=":=" UId="220" />
+              <Blank UId="221" />
+              <Access Scope="GlobalVariable" UId="222">
+                <Symbol UId="223">
+                  <Component Name="DiSimulation" UId="224">
+                    <BooleanAttribute Name="HasQuotes" UId="225">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="226" />
+                  <Component Name="CipPumpOverload" UId="227" />
+                </Symbol>
+              </Access>
+              <Blank UId="228" />
+              <Token Text="OR" UId="229" />
+              <Blank UId="230" />
+              <Access Scope="GlobalVariable" UId="231">
+                <Symbol UId="232">
+                  <Component Name="CipPumpOverload" UId="233">
+                    <BooleanAttribute Name="HasQuotes" UId="234">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="235" />
+              <NewLine UId="236" />
+              <Access Scope="GlobalVariable" UId="237">
+                <Symbol UId="238">
+                  <Component Name="DiFinal" UId="239">
+                    <BooleanAttribute Name="HasQuotes" UId="240">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="241" />
+                  <Component Name="RuptureDisc" UId="242" />
+                </Symbol>
+              </Access>
+              <Blank UId="243" />
+              <Token Text=":=" UId="244" />
+              <Blank UId="245" />
+              <Access Scope="GlobalVariable" UId="246">
+                <Symbol UId="247">
+                  <Component Name="DiSimulation" UId="248">
+                    <BooleanAttribute Name="HasQuotes" UId="249">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="250" />
+                  <Component Name="RuptureDisc" UId="251" />
+                </Symbol>
+              </Access>
+              <Blank UId="252" />
+              <Token Text="OR" UId="253" />
+              <Blank UId="254" />
+              <Access Scope="GlobalVariable" UId="255">
+                <Symbol UId="256">
+                  <Component Name="RuptureDisc" UId="257">
+                    <BooleanAttribute Name="HasQuotes" UId="258">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="259" />
+              <NewLine UId="260" />
+              <Access Scope="GlobalVariable" UId="261">
+                <Symbol UId="262">
+                  <Component Name="DiFinal" UId="263">
+                    <BooleanAttribute Name="HasQuotes" UId="264">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="265" />
+                  <Component Name="Cp01FlowSwitch" UId="266" />
+                </Symbol>
+              </Access>
+              <Blank UId="267" />
+              <Token Text=":=" UId="268" />
+              <Blank UId="269" />
+              <Access Scope="GlobalVariable" UId="270">
+                <Symbol UId="271">
+                  <Component Name="DiSimulation" UId="272">
+                    <BooleanAttribute Name="HasQuotes" UId="273">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="274" />
+                  <Component Name="Cp01FlowSwitch" UId="275" />
+                </Symbol>
+              </Access>
+              <Blank UId="276" />
+              <Token Text="OR" UId="277" />
+              <Blank UId="278" />
+              <Access Scope="GlobalVariable" UId="279">
+                <Symbol UId="280">
+                  <Component Name="Cp01FlowSwitch" UId="281">
+                    <BooleanAttribute Name="HasQuotes" UId="282">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="283" />
+              <NewLine UId="284" />
+              <Access Scope="GlobalVariable" UId="285">
+                <Symbol UId="286">
+                  <Component Name="DiFinal" UId="287">
+                    <BooleanAttribute Name="HasQuotes" UId="288">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="289" />
+                  <Component Name="DiSpare1" UId="290" />
+                </Symbol>
+              </Access>
+              <Blank UId="291" />
+              <Token Text=":=" UId="292" />
+              <Blank UId="293" />
+              <Access Scope="GlobalVariable" UId="294">
+                <Symbol UId="295">
+                  <Component Name="DiSimulation" UId="296">
+                    <BooleanAttribute Name="HasQuotes" UId="297">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="298" />
+                  <Component Name="DiSpare1" UId="299" />
+                </Symbol>
+              </Access>
+              <Blank UId="300" />
+              <Token Text="OR" UId="301" />
+              <Blank UId="302" />
+              <Access Scope="GlobalVariable" UId="303">
+                <Symbol UId="304">
+                  <Component Name="DiSpare1" UId="305">
+                    <BooleanAttribute Name="HasQuotes" UId="306">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="307" />
+              <NewLine UId="308" />
+              <Access Scope="GlobalVariable" UId="309">
+                <Symbol UId="310">
+                  <Component Name="DiFinal" UId="311">
+                    <BooleanAttribute Name="HasQuotes" UId="312">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="313" />
+                  <Component Name="DiSpare2" UId="314" />
+                </Symbol>
+              </Access>
+              <Blank UId="315" />
+              <Token Text=":=" UId="316" />
+              <Blank UId="317" />
+              <Access Scope="GlobalVariable" UId="318">
+                <Symbol UId="319">
+                  <Component Name="DiSimulation" UId="320">
+                    <BooleanAttribute Name="HasQuotes" UId="321">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="322" />
+                  <Component Name="DiSpare2" UId="323" />
+                </Symbol>
+              </Access>
+              <Blank UId="324" />
+              <Token Text="OR" UId="325" />
+              <Blank UId="326" />
+              <Access Scope="GlobalVariable" UId="327">
+                <Symbol UId="328">
+                  <Component Name="DiSpare2" UId="329">
+                    <BooleanAttribute Name="HasQuotes" UId="330">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="331" />
+              <NewLine UId="332" />
+              <Access Scope="GlobalVariable" UId="333">
+                <Symbol UId="334">
+                  <Component Name="DiFinal" UId="335">
+                    <BooleanAttribute Name="HasQuotes" UId="336">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="337" />
+                  <Component Name="MMHighSpeedSensor" UId="338" />
+                </Symbol>
+              </Access>
+              <Blank UId="339" />
+              <Token Text=":=" UId="340" />
+              <Blank UId="341" />
+              <Access Scope="GlobalVariable" UId="342">
+                <Symbol UId="343">
+                  <Component Name="DiSimulation" UId="344">
+                    <BooleanAttribute Name="HasQuotes" UId="345">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="346" />
+                  <Component Name="MMHighSpeedSensor" UId="347" />
+                </Symbol>
+              </Access>
+              <Blank UId="348" />
+              <Token Text="OR" UId="349" />
+              <Blank UId="350" />
+              <Access Scope="GlobalVariable" UId="351">
+                <Symbol UId="352">
+                  <Component Name="MMHighSpeedSensor" UId="353">
+                    <BooleanAttribute Name="HasQuotes" UId="354">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="355" />
+              <NewLine UId="356" />
+              <Access Scope="GlobalVariable" UId="357">
+                <Symbol UId="358">
+                  <Component Name="DiFinal" UId="359">
+                    <BooleanAttribute Name="HasQuotes" UId="360">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="361" />
+                  <Component Name="DiSpare3" UId="362" />
+                </Symbol>
+              </Access>
+              <Blank UId="363" />
+              <Token Text=":=" UId="364" />
+              <Blank UId="365" />
+              <Access Scope="GlobalVariable" UId="366">
+                <Symbol UId="367">
+                  <Component Name="DiSimulation" UId="368">
+                    <BooleanAttribute Name="HasQuotes" UId="369">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="370" />
+                  <Component Name="DiSpare3" UId="371" />
+                </Symbol>
+              </Access>
+              <Blank UId="372" />
+              <Token Text="OR" UId="373" />
+              <Blank UId="374" />
+              <Access Scope="GlobalVariable" UId="375">
+                <Symbol UId="376">
+                  <Component Name="DiSpare3" UId="377">
+                    <BooleanAttribute Name="HasQuotes" UId="378">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="379" />
+              <NewLine UId="380" />
+              <Access Scope="GlobalVariable" UId="381">
+                <Symbol UId="382">
+                  <Component Name="DiFinal" UId="383">
+                    <BooleanAttribute Name="HasQuotes" UId="384">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="385" />
+                  <Component Name="DiSpare4" UId="386" />
+                </Symbol>
+              </Access>
+              <Blank UId="387" />
+              <Token Text=":=" UId="388" />
+              <Blank UId="389" />
+              <Access Scope="GlobalVariable" UId="390">
+                <Symbol UId="391">
+                  <Component Name="DiSimulation" UId="392">
+                    <BooleanAttribute Name="HasQuotes" UId="393">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="394" />
+                  <Component Name="DiSpare4" UId="395" />
+                </Symbol>
+              </Access>
+              <Blank UId="396" />
+              <Token Text="OR" UId="397" />
+              <Blank UId="398" />
+              <Access Scope="GlobalVariable" UId="399">
+                <Symbol UId="400">
+                  <Component Name="DiSpare4" UId="401">
+                    <BooleanAttribute Name="HasQuotes" UId="402">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="403" />
+              <NewLine UId="404" />
+              <Access Scope="GlobalVariable" UId="405">
+                <Symbol UId="406">
+                  <Component Name="DiFinal" UId="407">
+                    <BooleanAttribute Name="HasQuotes" UId="408">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="409" />
+                  <Component Name="DiSpare5" UId="410" />
+                </Symbol>
+              </Access>
+              <Blank UId="411" />
+              <Token Text=":=" UId="412" />
+              <Blank UId="413" />
+              <Access Scope="GlobalVariable" UId="414">
+                <Symbol UId="415">
+                  <Component Name="DiSimulation" UId="416">
+                    <BooleanAttribute Name="HasQuotes" UId="417">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="418" />
+                  <Component Name="DiSpare5" UId="419" />
+                </Symbol>
+              </Access>
+              <Blank UId="420" />
+              <Token Text="OR" UId="421" />
+              <Blank UId="422" />
+              <Access Scope="GlobalVariable" UId="423">
+                <Symbol UId="424">
+                  <Component Name="DiSpare5" UId="425">
+                    <BooleanAttribute Name="HasQuotes" UId="426">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="427" />
+              <NewLine UId="428" />
+              <Access Scope="GlobalVariable" UId="429">
+                <Symbol UId="430">
+                  <Component Name="DiFinal" UId="431">
+                    <BooleanAttribute Name="HasQuotes" UId="432">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="433" />
+                  <Component Name="DiSpare6" UId="434" />
+                </Symbol>
+              </Access>
+              <Blank UId="435" />
+              <Token Text=":=" UId="436" />
+              <Blank UId="437" />
+              <Access Scope="GlobalVariable" UId="438">
+                <Symbol UId="439">
+                  <Component Name="DiSimulation" UId="440">
+                    <BooleanAttribute Name="HasQuotes" UId="441">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="442" />
+                  <Component Name="DiSpare6" UId="443" />
+                </Symbol>
+              </Access>
+              <Blank UId="444" />
+              <Token Text="OR" UId="445" />
+              <Blank UId="446" />
+              <Access Scope="GlobalVariable" UId="447">
+                <Symbol UId="448">
+                  <Component Name="DiSpare6" UId="449">
+                    <BooleanAttribute Name="HasQuotes" UId="450">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="451" />
+              <NewLine UId="452" />
+              <Access Scope="GlobalVariable" UId="453">
+                <Symbol UId="454">
+                  <Component Name="DiFinal" UId="455">
+                    <BooleanAttribute Name="HasQuotes" UId="456">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="457" />
+                  <Component Name="DiSpare7" UId="458" />
+                </Symbol>
+              </Access>
+              <Blank UId="459" />
+              <Token Text=":=" UId="460" />
+              <Blank UId="461" />
+              <Access Scope="GlobalVariable" UId="462">
+                <Symbol UId="463">
+                  <Component Name="DiSimulation" UId="464">
+                    <BooleanAttribute Name="HasQuotes" UId="465">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="466" />
+                  <Component Name="DiSpare7" UId="467" />
+                </Symbol>
+              </Access>
+              <Blank UId="468" />
+              <Token Text="OR" UId="469" />
+              <Blank UId="470" />
+              <Access Scope="GlobalVariable" UId="471">
+                <Symbol UId="472">
+                  <Component Name="DiSpare7" UId="473">
+                    <BooleanAttribute Name="HasQuotes" UId="474">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="475" />
+              <NewLine UId="476" />
+              <Access Scope="GlobalVariable" UId="477">
+                <Symbol UId="478">
+                  <Component Name="DiFinal" UId="479">
+                    <BooleanAttribute Name="HasQuotes" UId="480">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="481" />
+                  <Component Name="DiSpare8" UId="482" />
+                </Symbol>
+              </Access>
+              <Blank UId="483" />
+              <Token Text=":=" UId="484" />
+              <Blank UId="485" />
+              <Access Scope="GlobalVariable" UId="486">
+                <Symbol UId="487">
+                  <Component Name="DiSimulation" UId="488">
+                    <BooleanAttribute Name="HasQuotes" UId="489">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="490" />
+                  <Component Name="DiSpare8" UId="491" />
+                </Symbol>
+              </Access>
+              <Blank UId="492" />
+              <Token Text="OR" UId="493" />
+              <Blank UId="494" />
+              <Access Scope="GlobalVariable" UId="495">
+                <Symbol UId="496">
+                  <Component Name="DiSpare8" UId="497">
+                    <BooleanAttribute Name="HasQuotes" UId="498">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="499" />
+              <NewLine UId="500" />
+              <Access Scope="GlobalVariable" UId="501">
+                <Symbol UId="502">
+                  <Component Name="DiFinal" UId="503">
+                    <BooleanAttribute Name="HasQuotes" UId="504">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="505" />
+                  <Component Name="DiSpare9" UId="506" />
+                </Symbol>
+              </Access>
+              <Token Text=":=" UId="507" />
+              <Blank UId="508" />
+              <Access Scope="GlobalVariable" UId="509">
+                <Symbol UId="510">
+                  <Component Name="DiSimulation" UId="511">
+                    <BooleanAttribute Name="HasQuotes" UId="512">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="513" />
+                  <Component Name="DiSpare9" UId="514" />
+                </Symbol>
+              </Access>
+              <Blank UId="515" />
+              <Token Text="OR" UId="516" />
+              <Blank UId="517" />
+              <Access Scope="GlobalVariable" UId="518">
+                <Symbol UId="519">
+                  <Component Name="DiSpare9" UId="520">
+                    <BooleanAttribute Name="HasQuotes" UId="521">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="522" />
+              <NewLine UId="523" />
+              <Access Scope="GlobalVariable" UId="524">
+                <Symbol UId="525">
+                  <Component Name="DiFinal" UId="526">
+                    <BooleanAttribute Name="HasQuotes" UId="527">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="528" />
+                  <Component Name="DiSpare10" UId="529" />
+                </Symbol>
+              </Access>
+              <Blank UId="530" />
+              <Token Text=":=" UId="531" />
+              <Blank UId="532" />
+              <Access Scope="GlobalVariable" UId="533">
+                <Symbol UId="534">
+                  <Component Name="DiSimulation" UId="535">
+                    <BooleanAttribute Name="HasQuotes" UId="536">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="537" />
+                  <Component Name="DiSpare10" UId="538" />
+                </Symbol>
+              </Access>
+              <Blank UId="539" />
+              <Token Text="OR" UId="540" />
+              <Blank UId="541" />
+              <Access Scope="GlobalVariable" UId="542">
+                <Symbol UId="543">
+                  <Component Name="DiSpare10" UId="544">
+                    <BooleanAttribute Name="HasQuotes" UId="545">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="546" />
+              <NewLine Num="4" UId="547" />
+            </StructuredText>
+          </NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="5" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="6" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>DI Final</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="8" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="9" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>DIFC</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FC>
+</Document>

@@ -1,0 +1,678 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V21" />
+  <SW.Blocks.FC ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="Input" />
+          <Section Name="Output" />
+          <Section Name="InOut" />
+          <Section Name="Temp" />
+          <Section Name="Constant" />
+          <Section Name="Return">
+            <Member Name="Ret_Val" Datatype="Void" />
+          </Section>
+        </Sections>
+      </Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <Name>AiFc</Name>
+      <Namespace />
+      <Number>108</Number>
+      <ProgrammingLanguage>LAD</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="3" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Call UId="21">
+                  <CallInfo Name="AiFb" BlockType="FB">
+                    <Instance Scope="GlobalVariable" UId="22">
+                      <Component Name="AiDb" />
+                    </Instance>
+                  </CallInfo>
+                </Call>
+              </Parts>
+              <Wires>
+                <Wire UId="23">
+                  <Powerrail />
+                  <NameCon UId="21" Name="en" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="5" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="6" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>"AiDb"</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="8" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v4">
+              <Access Scope="GlobalVariable" UId="21">
+                <Symbol UId="22">
+                  <Component Name="AiDb" UId="23">
+                    <BooleanAttribute Name="HasQuotes" UId="24">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="25" />
+                  <Component Name="Ai01" UId="26" />
+                  <Token Text="." UId="27" />
+                  <Component Name="AnalogInputIw" UId="28" />
+                </Symbol>
+              </Access>
+              <Blank UId="29" />
+              <Token Text=":=" UId="30" />
+              <Blank UId="31" />
+              <Access Scope="GlobalVariable" UId="32">
+                <Symbol UId="33">
+                  <Component Name="Ticr01NfcoLineTemp" UId="34">
+                    <BooleanAttribute Name="HasQuotes" UId="35">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="36" />
+              <NewLine UId="37" />
+              <Access Scope="GlobalVariable" UId="38">
+                <Symbol UId="39">
+                  <Component Name="AiDb" UId="40">
+                    <BooleanAttribute Name="HasQuotes" UId="41">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="42" />
+                  <Component Name="Ai02" UId="43" />
+                  <Token Text="." UId="44" />
+                  <Component Name="AnalogInputIw" UId="45" />
+                </Symbol>
+              </Access>
+              <Blank UId="46" />
+              <Token Text=":=" UId="47" />
+              <Blank UId="48" />
+              <Access Scope="GlobalVariable" UId="49">
+                <Symbol UId="50">
+                  <Component Name="Ticr02VfcoLineTemp" UId="51">
+                    <BooleanAttribute Name="HasQuotes" UId="52">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="53" />
+              <NewLine UId="54" />
+              <Access Scope="GlobalVariable" UId="55">
+                <Symbol UId="56">
+                  <Component Name="AiDb" UId="57">
+                    <BooleanAttribute Name="HasQuotes" UId="58">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="59" />
+                  <Component Name="Ai03" UId="60" />
+                  <Token Text="." UId="61" />
+                  <Component Name="AnalogInputIw" UId="62" />
+                </Symbol>
+              </Access>
+              <Blank UId="63" />
+              <Token Text=":=" UId="64" />
+              <Blank UId="65" />
+              <Access Scope="GlobalVariable" UId="66">
+                <Symbol UId="67">
+                  <Component Name="AiSpare01" UId="68">
+                    <BooleanAttribute Name="HasQuotes" UId="69">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="70" />
+              <NewLine UId="71" />
+              <Access Scope="GlobalVariable" UId="72">
+                <Symbol UId="73">
+                  <Component Name="AiDb" UId="74">
+                    <BooleanAttribute Name="HasQuotes" UId="75">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="76" />
+                  <Component Name="Ai04" UId="77" />
+                  <Token Text="." UId="78" />
+                  <Component Name="AnalogInputIw" UId="79" />
+                </Symbol>
+              </Access>
+              <Blank UId="80" />
+              <Token Text=":=" UId="81" />
+              <Blank UId="82" />
+              <Access Scope="GlobalVariable" UId="83">
+                <Symbol UId="84">
+                  <Component Name="AiSpare02" UId="85">
+                    <BooleanAttribute Name="HasQuotes" UId="86">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="87" />
+              <NewLine UId="88" />
+              <Access Scope="GlobalVariable" UId="89">
+                <Symbol UId="90">
+                  <Component Name="AiDb" UId="91">
+                    <BooleanAttribute Name="HasQuotes" UId="92">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="93" />
+                  <Component Name="Ai05" UId="94" />
+                  <Token Text="." UId="95" />
+                  <Component Name="AnalogInputIw" UId="96" />
+                </Symbol>
+              </Access>
+              <Blank UId="97" />
+              <Token Text=":=" UId="98" />
+              <Blank UId="99" />
+              <Access Scope="GlobalVariable" UId="100">
+                <Symbol UId="101">
+                  <Component Name="AiSpare03" UId="102">
+                    <BooleanAttribute Name="HasQuotes" UId="103">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="104" />
+              <NewLine UId="105" />
+              <Access Scope="GlobalVariable" UId="106">
+                <Symbol UId="107">
+                  <Component Name="AiDb" UId="108">
+                    <BooleanAttribute Name="HasQuotes" UId="109">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="110" />
+                  <Component Name="Ai06" UId="111" />
+                  <Token Text="." UId="112" />
+                  <Component Name="AnalogInputIw" UId="113" />
+                </Symbol>
+              </Access>
+              <Blank UId="114" />
+              <Token Text=":=" UId="115" />
+              <Blank UId="116" />
+              <Access Scope="GlobalVariable" UId="117">
+                <Symbol UId="118">
+                  <Component Name="Ticr06Pf01InLineTemp" UId="119">
+                    <BooleanAttribute Name="HasQuotes" UId="120">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="121" />
+              <NewLine UId="122" />
+              <Access Scope="GlobalVariable" UId="123">
+                <Symbol UId="124">
+                  <Component Name="AiDb" UId="125">
+                    <BooleanAttribute Name="HasQuotes" UId="126">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="127" />
+                  <Component Name="Ai07" UId="128" />
+                  <Token Text="." UId="129" />
+                  <Component Name="AnalogInputIw" UId="130" />
+                </Symbol>
+              </Access>
+              <Blank UId="131" />
+              <Token Text=":=" UId="132" />
+              <Blank UId="133" />
+              <Access Scope="GlobalVariable" UId="134">
+                <Symbol UId="135">
+                  <Component Name="Ticr07Pf02InLineTemp" UId="136">
+                    <BooleanAttribute Name="HasQuotes" UId="137">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="138" />
+              <NewLine UId="139" />
+              <Access Scope="GlobalVariable" UId="140">
+                <Symbol UId="141">
+                  <Component Name="AiDb" UId="142">
+                    <BooleanAttribute Name="HasQuotes" UId="143">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="144" />
+                  <Component Name="Ai08" UId="145" />
+                  <Token Text="." UId="146" />
+                  <Component Name="AnalogInputIw" UId="147" />
+                </Symbol>
+              </Access>
+              <Blank UId="148" />
+              <Token Text=":=" UId="149" />
+              <Blank UId="150" />
+              <Access Scope="GlobalVariable" UId="151">
+                <Symbol UId="152">
+                  <Component Name="Ticr08Pf02OutLineTemp" UId="153">
+                    <BooleanAttribute Name="HasQuotes" UId="154">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="155" />
+              <NewLine UId="156" />
+              <Access Scope="GlobalVariable" UId="157">
+                <Symbol UId="158">
+                  <Component Name="AiDb" UId="159">
+                    <BooleanAttribute Name="HasQuotes" UId="160">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="161" />
+                  <Component Name="Ai09" UId="162" />
+                  <Token Text="." UId="163" />
+                  <Component Name="AnalogInputIw" UId="164" />
+                </Symbol>
+              </Access>
+              <Blank UId="165" />
+              <Token Text=":=" UId="166" />
+              <Blank UId="167" />
+              <Access Scope="GlobalVariable" UId="168">
+                <Symbol UId="169">
+                  <Component Name="Ticr09PtlDrainTemp" UId="170">
+                    <BooleanAttribute Name="HasQuotes" UId="171">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="172" />
+              <NewLine UId="173" />
+              <Access Scope="GlobalVariable" UId="174">
+                <Symbol UId="175">
+                  <Component Name="AiDb" UId="176">
+                    <BooleanAttribute Name="HasQuotes" UId="177">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="178" />
+                  <Component Name="Ai10" UId="179" />
+                  <Token Text="." UId="180" />
+                  <Component Name="AnalogInputIw" UId="181" />
+                </Symbol>
+              </Access>
+              <Blank UId="182" />
+              <Token Text=":=" UId="183" />
+              <Blank UId="184" />
+              <Access Scope="GlobalVariable" UId="185">
+                <Symbol UId="186">
+                  <Component Name="Ticr10VesselTemp" UId="187">
+                    <BooleanAttribute Name="HasQuotes" UId="188">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="189" />
+              <NewLine UId="190" />
+              <Access Scope="GlobalVariable" UId="191">
+                <Symbol UId="192">
+                  <Component Name="AiDb" UId="193">
+                    <BooleanAttribute Name="HasQuotes" UId="194">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="195" />
+                  <Component Name="Ai11" UId="196" />
+                  <Token Text="." UId="197" />
+                  <Component Name="AnalogInputIw" UId="198" />
+                </Symbol>
+              </Access>
+              <Blank UId="199" />
+              <Token Text=":=" UId="200" />
+              <Blank UId="201" />
+              <Access Scope="GlobalVariable" UId="202">
+                <Symbol UId="203">
+                  <Component Name="Picr01VesselPressure" UId="204">
+                    <BooleanAttribute Name="HasQuotes" UId="205">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="206" />
+              <NewLine UId="207" />
+              <Access Scope="GlobalVariable" UId="208">
+                <Symbol UId="209">
+                  <Component Name="AiDb" UId="210">
+                    <BooleanAttribute Name="HasQuotes" UId="211">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="212" />
+                  <Component Name="Ai12" UId="213" />
+                  <Token Text="." UId="214" />
+                  <Component Name="AnalogInputIw" UId="215" />
+                </Symbol>
+              </Access>
+              <Blank UId="216" />
+              <Token Text=":=" UId="217" />
+              <Blank UId="218" />
+              <Access Scope="GlobalVariable" UId="219">
+                <Symbol UId="220">
+                  <Component Name="Picr02VesselRclLine" UId="221">
+                    <BooleanAttribute Name="HasQuotes" UId="222">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="223" />
+              <NewLine UId="224" />
+              <Access Scope="GlobalVariable" UId="225">
+                <Symbol UId="226">
+                  <Component Name="AiDb" UId="227">
+                    <BooleanAttribute Name="HasQuotes" UId="228">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="229" />
+                  <Component Name="Ai13" UId="230" />
+                  <Token Text="." UId="231" />
+                  <Component Name="AnalogInputIw" UId="232" />
+                </Symbol>
+              </Access>
+              <Blank UId="233" />
+              <Token Text=":=" UId="234" />
+              <Blank UId="235" />
+              <Access Scope="GlobalVariable" UId="236">
+                <Symbol UId="237">
+                  <Component Name="Picr03Pf01OutLinePressure" UId="238">
+                    <BooleanAttribute Name="HasQuotes" UId="239">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="240" />
+              <NewLine UId="241" />
+              <Access Scope="GlobalVariable" UId="242">
+                <Symbol UId="243">
+                  <Component Name="AiDb" UId="244">
+                    <BooleanAttribute Name="HasQuotes" UId="245">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="246" />
+                  <Component Name="Ai14" UId="247" />
+                  <Token Text="." UId="248" />
+                  <Component Name="AnalogInputIw" UId="249" />
+                </Symbol>
+              </Access>
+              <Blank UId="250" />
+              <Token Text=":=" UId="251" />
+              <Blank UId="252" />
+              <Access Scope="GlobalVariable" UId="253">
+                <Symbol UId="254">
+                  <Component Name="Picr04Pf02OutLinePressure" UId="255">
+                    <BooleanAttribute Name="HasQuotes" UId="256">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="257" />
+              <NewLine UId="258" />
+              <Access Scope="GlobalVariable" UId="259">
+                <Symbol UId="260">
+                  <Component Name="AiDb" UId="261">
+                    <BooleanAttribute Name="HasQuotes" UId="262">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="263" />
+                  <Component Name="Ai15" UId="264" />
+                  <Token Text="." UId="265" />
+                  <Component Name="AnalogInputIw" UId="266" />
+                </Symbol>
+              </Access>
+              <Blank UId="267" />
+              <Token Text=":=" UId="268" />
+              <Blank UId="269" />
+              <Access Scope="GlobalVariable" UId="270">
+                <Symbol UId="271">
+                  <Component Name="Cicr01ProcessDrainConductivity" UId="272">
+                    <BooleanAttribute Name="HasQuotes" UId="273">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="274" />
+              <NewLine UId="275" />
+              <Access Scope="GlobalVariable" UId="276">
+                <Symbol UId="277">
+                  <Component Name="AiDb" UId="278">
+                    <BooleanAttribute Name="HasQuotes" UId="279">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="280" />
+                  <Component Name="Ai16" UId="281" />
+                  <Token Text="." UId="282" />
+                  <Component Name="AnalogInputIw" UId="283" />
+                </Symbol>
+              </Access>
+              <Blank UId="284" />
+              <Token Text=":=" UId="285" />
+              <Blank UId="286" />
+              <Access Scope="GlobalVariable" UId="287">
+                <Symbol UId="288">
+                  <Component Name="AiSpare04" UId="289">
+                    <BooleanAttribute Name="HasQuotes" UId="290">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="291" />
+              <NewLine UId="292" />
+              <Access Scope="GlobalVariable" UId="293">
+                <Symbol UId="294">
+                  <Component Name="AiDb" UId="295">
+                    <BooleanAttribute Name="HasQuotes" UId="296">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="297" />
+                  <Component Name="Ai17" UId="298" />
+                  <Token Text="." UId="299" />
+                  <Component Name="AnalogInputIw" UId="300" />
+                </Symbol>
+              </Access>
+              <Blank UId="301" />
+              <Token Text=":=" UId="302" />
+              <Blank UId="303" />
+              <Access Scope="GlobalVariable" UId="304">
+                <Symbol UId="305">
+                  <Component Name="AiSpare05" UId="306">
+                    <BooleanAttribute Name="HasQuotes" UId="307">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="308" />
+              <NewLine UId="309" />
+              <Access Scope="GlobalVariable" UId="310">
+                <Symbol UId="311">
+                  <Component Name="AiDb" UId="312">
+                    <BooleanAttribute Name="HasQuotes" UId="313">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="314" />
+                  <Component Name="Ai18" UId="315" />
+                  <Token Text="." UId="316" />
+                  <Component Name="AnalogInputIw" UId="317" />
+                </Symbol>
+              </Access>
+              <Blank UId="318" />
+              <Token Text=":=" UId="319" />
+              <Blank UId="320" />
+              <Access Scope="GlobalVariable" UId="321">
+                <Symbol UId="322">
+                  <Component Name="AiSpare06" UId="323">
+                    <BooleanAttribute Name="HasQuotes" UId="324">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="325" />
+              <NewLine UId="326" />
+              <Access Scope="GlobalVariable" UId="327">
+                <Symbol UId="328">
+                  <Component Name="AiDb" UId="329">
+                    <BooleanAttribute Name="HasQuotes" UId="330">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="331" />
+                  <Component Name="Ai19" UId="332" />
+                  <Token Text="." UId="333" />
+                  <Component Name="AnalogInputIw" UId="334" />
+                </Symbol>
+              </Access>
+              <Blank UId="335" />
+              <Token Text=":=" UId="336" />
+              <Blank UId="337" />
+              <Access Scope="GlobalVariable" UId="338">
+                <Symbol UId="339">
+                  <Component Name="AiSpare07" UId="340">
+                    <BooleanAttribute Name="HasQuotes" UId="341">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="342" />
+              <NewLine UId="343" />
+              <Access Scope="GlobalVariable" UId="344">
+                <Symbol UId="345">
+                  <Component Name="AiDb" UId="346">
+                    <BooleanAttribute Name="HasQuotes" UId="347">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="348" />
+                  <Component Name="Ai20" UId="349" />
+                  <Token Text="." UId="350" />
+                  <Component Name="AnalogInputIw" UId="351" />
+                </Symbol>
+              </Access>
+              <Blank UId="352" />
+              <Token Text=":=" UId="353" />
+              <Blank UId="354" />
+              <Access Scope="GlobalVariable" UId="355">
+                <Symbol UId="356">
+                  <Component Name="AiSpare08" UId="357">
+                    <BooleanAttribute Name="HasQuotes" UId="358">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="359" />
+              <NewLine UId="360" />
+              <Access Scope="GlobalVariable" UId="361">
+                <Symbol UId="362">
+                  <Component Name="AiDb" UId="363">
+                    <BooleanAttribute Name="HasQuotes" UId="364">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="365" />
+                  <Component Name="Ai21" UId="366" />
+                  <Token Text="." UId="367" />
+                  <Component Name="AnalogInputIw" UId="368" />
+                </Symbol>
+              </Access>
+              <Blank UId="369" />
+              <Token Text=":=" UId="370" />
+              <Blank UId="371" />
+              <Access Scope="GlobalVariable" UId="372">
+                <Symbol UId="373">
+                  <Component Name="AiSpare09" UId="374">
+                    <BooleanAttribute Name="HasQuotes" UId="375">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="376" />
+              <NewLine UId="377" />
+              <Access Scope="GlobalVariable" UId="378">
+                <Symbol UId="379">
+                  <Component Name="AiDb" UId="380">
+                    <BooleanAttribute Name="HasQuotes" UId="381">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="382" />
+                  <Component Name="Ai22" UId="383" />
+                  <Token Text="." UId="384" />
+                  <Component Name="AnalogInputIw" UId="385" />
+                </Symbol>
+              </Access>
+              <Blank UId="386" />
+              <Token Text=":=" UId="387" />
+              <Blank UId="388" />
+              <Access Scope="GlobalVariable" UId="389">
+                <Symbol UId="390">
+                  <Component Name="AiSpare10" UId="391">
+                    <BooleanAttribute Name="HasQuotes" UId="392">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="393" />
+              <NewLine UId="394" />
+              <Access Scope="GlobalVariable" UId="395">
+                <Symbol UId="396">
+                  <Component Name="AiDb" UId="397">
+                    <BooleanAttribute Name="HasQuotes" UId="398">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="399" />
+                  <Component Name="Ai23" UId="400" />
+                  <Token Text="." UId="401" />
+                  <Component Name="AnalogInputIw" UId="402" />
+                </Symbol>
+              </Access>
+              <Blank UId="403" />
+              <Token Text=":=" UId="404" />
+              <Blank UId="405" />
+              <Access Scope="GlobalVariable" UId="406">
+                <Symbol UId="407">
+                  <Component Name="AiSpare11" UId="408">
+                    <BooleanAttribute Name="HasQuotes" UId="409">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="410" />
+              <NewLine UId="411" />
+              <Access Scope="GlobalVariable" UId="412">
+                <Symbol UId="413">
+                  <Component Name="AiDb" UId="414">
+                    <BooleanAttribute Name="HasQuotes" UId="415">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="416" />
+                  <Component Name="Ai24" UId="417" />
+                  <Token Text="." UId="418" />
+                  <Component Name="AnalogInputIw" UId="419" />
+                </Symbol>
+              </Access>
+              <Blank UId="420" />
+              <Token Text=":=" UId="421" />
+              <Blank UId="422" />
+              <Access Scope="GlobalVariable" UId="423">
+                <Symbol UId="424">
+                  <Component Name="AiSpare12" UId="425">
+                    <BooleanAttribute Name="HasQuotes" UId="426">true</BooleanAttribute>
+                  </Component>
+                </Symbol>
+              </Access>
+              <Token Text=";" UId="427" />
+              <NewLine UId="428" />
+            </StructuredText>
+          </NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="9" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="B" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>AnalogInputIw</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="D" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="E" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FC>
+</Document>

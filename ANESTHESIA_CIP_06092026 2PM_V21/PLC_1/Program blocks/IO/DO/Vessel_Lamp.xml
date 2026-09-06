@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V21" />
+  <SW.Blocks.InstanceDB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <InstanceOfName>TIMER</InstanceOfName>
+      <InstanceOfType>FB</InstanceOfType>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="Input">
+            <Member Name="TIME_START" Datatype="Bool" />
+            <Member Name="TIME_PULSE" Datatype="Bool" />
+            <Member Name="TIME_TRSET" Datatype="Bool" />
+            <Member Name="MINI_ENABLE" Datatype="Bool" />
+            <Member Name="TIME_IN_MINI" Datatype="DInt" />
+            <Member Name="TIME_IN_SEC" Datatype="DInt" />
+          </Section>
+          <Section Name="Output">
+            <Member Name="DONE_BIT" Datatype="Bool" />
+            <Member Name="ES_MINIT" Datatype="DInt" />
+            <Member Name="ES_SEC" Datatype="DInt" />
+          </Section>
+          <Section Name="InOut">
+            <Member Name="TEMP_1" Datatype="DInt" />
+            <Member Name="TEMP_5" Datatype="DInt" />
+            <Member Name="TEMP_2" Datatype="DInt" />
+            <Member Name="TEMP_3" Datatype="DInt" />
+            <Member Name="TEMP_BIT_1" Datatype="Bool" />
+            <Member Name="TEMP_BIT_2" Datatype="Bool" />
+          </Section>
+          <Section Name="Static" />
+        </Sections>
+      </Interface>
+      <Name>Vessel_Lamp</Name>
+      <Namespace />
+      <Number>1</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.InstanceDB>
+</Document>

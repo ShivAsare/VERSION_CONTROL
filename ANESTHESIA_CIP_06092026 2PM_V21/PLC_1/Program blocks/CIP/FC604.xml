@@ -1,0 +1,2159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V21" />
+  <SW.Blocks.FC ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="Input" />
+          <Section Name="Output" />
+          <Section Name="InOut" />
+          <Section Name="Temp" />
+          <Section Name="Constant" />
+          <Section Name="Return">
+            <Member Name="Ret_Val" Datatype="Void" />
+          </Section>
+        </Sections>
+      </Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <Name>FC604</Name>
+      <Namespace />
+      <Number>604</Number>
+      <ProgrammingLanguage>LAD</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>CIP BLOCK CALL</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="3" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="DB615" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="DB615" />
+                    <Component Name="DelayToTriggerStep" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="DB615" />
+                    <Component Name="SelectStep" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="DB615" />
+                    <Component Name="ProcessOver" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="25">
+                  <Symbol>
+                    <Component Name="DB615" />
+                    <Component Name="Running" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="26">
+                  <Symbol>
+                    <Component Name="DB615" />
+                    <Component Name="DelayToTriggerStep" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="27">
+                  <Symbol>
+                    <Component Name="DB615" />
+                    <Component Name="SelectStep" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="28">
+                  <Symbol>
+                    <Component Name="DB615" />
+                    <Component Name="ProcessOver" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="29">
+                  <Symbol>
+                    <Component Name="Sec_Pulse" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="30">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="31">
+                  <Symbol>
+                    <Component Name="DB609" />
+                    <Component Name="ConductivitySuccess" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="32">
+                  <Symbol>
+                    <Component Name="DB615" />
+                    <Component Name="CycleStarted" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="33">
+                  <Symbol>
+                    <Component Name="DB615" />
+                    <Component Name="CycleOver" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="34">
+                  <Symbol>
+                    <Component Name="DB625" />
+                    <Component Name="RepetitionPrint" AccessModifier="Array">
+                      <Access Scope="GlobalVariable">
+                        <Symbol>
+                          <Component Name="DB615" />
+                          <Component Name="CurrentStep" />
+                        </Symbol>
+                      </Access>
+                    </Component>
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="35">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle4" />
+                    <Component Name="Abort" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="36">
+                  <Symbol>
+                    <Component Name="DB603" />
+                    <Component Name="Reset" />
+                  </Symbol>
+                </Access>
+                <Part Name="Contact" UId="37" />
+                <Part Name="Contact" UId="38">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="Contact" UId="39">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="Contact" UId="40">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="Contact" UId="41" />
+                <Part Name="Contact" UId="42">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="Contact" UId="43">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="Contact" UId="44">
+                  <Negated Name="operand" />
+                </Part>
+                <Call UId="45">
+                  <CallInfo Name="FB603" BlockType="FB">
+                    <Instance Scope="GlobalVariable" UId="46">
+                      <Component Name="DB603" />
+                    </Instance>
+                    <Parameter Name="CycleEnable" Section="Input" Type="Bool" />
+                    <Parameter Name="CycleRunning" Section="Input" Type="Bool" />
+                    <Parameter Name="SecPulse" Section="Input" Type="Bool" />
+                    <Parameter Name="AlwaysTrue" Section="Input" Type="Bool" />
+                    <Parameter Name="CycleSelection" Section="Input" Type="&quot;CIP&quot;" />
+                    <Parameter Name="ConductivitySuccessWhileRinse" Section="Input" Type="Bool" />
+                    <Parameter Name="ConductivitySuccessWhileDrain" Section="Input" Type="Bool" />
+                    <Parameter Name="ConductivitySuccessWhileTransfer" Section="Input" Type="Bool" />
+                    <Parameter Name="Started" Section="Output" Type="Bool" />
+                    <Parameter Name="VentValve" Section="Output" Type="Bool" />
+                    <Parameter Name="PrintActualRep" Section="Output" Type="Int" />
+                    <Parameter Name="Over" Section="InOut" Type="Bool" />
+                    <Parameter Name="OverTemp" Section="InOut" Type="Bool" />
+                    <Parameter Name="RepeatCycle" Section="InOut" Type="Bool" />
+                    <Parameter Name="ActualRepetition" Section="InOut" Type="Int" />
+                    <Parameter Name="CycleStart" Section="InOut" Type="&quot;CipCycleStarted&quot;" />
+                    <Parameter Name="CycleOver" Section="InOut" Type="&quot;CipCycleOver&quot;" />
+                    <Parameter Name="ConductivityStatus" Section="InOut" Type="Bool" />
+                    <Parameter Name="TimeSaveModeRep" Section="InOut" Type="Int" />
+                    <Parameter Name="StartFillingToSaveTime" Section="InOut" Type="Bool" />
+                    <Parameter Name="Reset" Section="InOut" Type="Bool" />
+                    <Parameter Name="RecirculationPopupTemp" Section="InOut" Type="Bool" />
+                    <Parameter Name="RecirculationPopupTempAck" Section="InOut" Type="Bool" />
+                  </CallInfo>
+                </Call>
+                <Part Name="Contact" UId="47" />
+                <Part Name="Coil" UId="48" />
+              </Parts>
+              <Wires>
+                <Wire UId="64">
+                  <Powerrail />
+                  <NameCon UId="45" Name="en" />
+                  <NameCon UId="37" Name="in" />
+                  <NameCon UId="41" Name="in" />
+                  <NameCon UId="47" Name="in" />
+                </Wire>
+                <Wire UId="65">
+                  <IdentCon UId="21" />
+                  <NameCon UId="37" Name="operand" />
+                </Wire>
+                <Wire UId="66">
+                  <NameCon UId="37" Name="out" />
+                  <NameCon UId="38" Name="in" />
+                </Wire>
+                <Wire UId="67">
+                  <IdentCon UId="22" />
+                  <NameCon UId="38" Name="operand" />
+                </Wire>
+                <Wire UId="68">
+                  <NameCon UId="38" Name="out" />
+                  <NameCon UId="39" Name="in" />
+                </Wire>
+                <Wire UId="69">
+                  <IdentCon UId="23" />
+                  <NameCon UId="39" Name="operand" />
+                </Wire>
+                <Wire UId="70">
+                  <NameCon UId="39" Name="out" />
+                  <NameCon UId="40" Name="in" />
+                </Wire>
+                <Wire UId="71">
+                  <IdentCon UId="24" />
+                  <NameCon UId="40" Name="operand" />
+                </Wire>
+                <Wire UId="72">
+                  <NameCon UId="40" Name="out" />
+                  <NameCon UId="45" Name="CycleEnable" />
+                </Wire>
+                <Wire UId="73">
+                  <IdentCon UId="25" />
+                  <NameCon UId="41" Name="operand" />
+                </Wire>
+                <Wire UId="74">
+                  <NameCon UId="41" Name="out" />
+                  <NameCon UId="42" Name="in" />
+                </Wire>
+                <Wire UId="75">
+                  <IdentCon UId="26" />
+                  <NameCon UId="42" Name="operand" />
+                </Wire>
+                <Wire UId="76">
+                  <NameCon UId="42" Name="out" />
+                  <NameCon UId="43" Name="in" />
+                </Wire>
+                <Wire UId="77">
+                  <IdentCon UId="27" />
+                  <NameCon UId="43" Name="operand" />
+                </Wire>
+                <Wire UId="78">
+                  <NameCon UId="43" Name="out" />
+                  <NameCon UId="44" Name="in" />
+                </Wire>
+                <Wire UId="79">
+                  <IdentCon UId="28" />
+                  <NameCon UId="44" Name="operand" />
+                </Wire>
+                <Wire UId="80">
+                  <NameCon UId="44" Name="out" />
+                  <NameCon UId="45" Name="CycleRunning" />
+                </Wire>
+                <Wire UId="81">
+                  <IdentCon UId="29" />
+                  <NameCon UId="45" Name="SecPulse" />
+                </Wire>
+                <Wire UId="82">
+                  <IdentCon UId="30" />
+                  <NameCon UId="45" Name="AlwaysTrue" />
+                </Wire>
+                <Wire UId="83">
+                  <OpenCon UId="49" />
+                  <NameCon UId="45" Name="CycleSelection" />
+                </Wire>
+                <Wire UId="84">
+                  <OpenCon UId="50" />
+                  <NameCon UId="45" Name="ConductivitySuccessWhileRinse" />
+                </Wire>
+                <Wire UId="85">
+                  <IdentCon UId="31" />
+                  <NameCon UId="45" Name="ConductivitySuccessWhileDrain" />
+                </Wire>
+                <Wire UId="86">
+                  <OpenCon UId="51" />
+                  <NameCon UId="45" Name="ConductivitySuccessWhileTransfer" />
+                </Wire>
+                <Wire UId="87">
+                  <OpenCon UId="52" />
+                  <NameCon UId="45" Name="Over" />
+                </Wire>
+                <Wire UId="88">
+                  <OpenCon UId="53" />
+                  <NameCon UId="45" Name="OverTemp" />
+                </Wire>
+                <Wire UId="89">
+                  <OpenCon UId="54" />
+                  <NameCon UId="45" Name="RepeatCycle" />
+                </Wire>
+                <Wire UId="90">
+                  <OpenCon UId="55" />
+                  <NameCon UId="45" Name="ActualRepetition" />
+                </Wire>
+                <Wire UId="91">
+                  <IdentCon UId="32" />
+                  <NameCon UId="45" Name="CycleStart" />
+                </Wire>
+                <Wire UId="92">
+                  <IdentCon UId="33" />
+                  <NameCon UId="45" Name="CycleOver" />
+                </Wire>
+                <Wire UId="93">
+                  <OpenCon UId="56" />
+                  <NameCon UId="45" Name="ConductivityStatus" />
+                </Wire>
+                <Wire UId="94">
+                  <OpenCon UId="57" />
+                  <NameCon UId="45" Name="TimeSaveModeRep" />
+                </Wire>
+                <Wire UId="95">
+                  <OpenCon UId="58" />
+                  <NameCon UId="45" Name="StartFillingToSaveTime" />
+                </Wire>
+                <Wire UId="96">
+                  <OpenCon UId="59" />
+                  <NameCon UId="45" Name="Reset" />
+                </Wire>
+                <Wire UId="97">
+                  <OpenCon UId="60" />
+                  <NameCon UId="45" Name="RecirculationPopupTemp" />
+                </Wire>
+                <Wire UId="98">
+                  <OpenCon UId="61" />
+                  <NameCon UId="45" Name="RecirculationPopupTempAck" />
+                </Wire>
+                <Wire UId="99">
+                  <NameCon UId="45" Name="Started" />
+                  <OpenCon UId="62" />
+                </Wire>
+                <Wire UId="100">
+                  <NameCon UId="45" Name="VentValve" />
+                  <OpenCon UId="63" />
+                </Wire>
+                <Wire UId="101">
+                  <NameCon UId="45" Name="PrintActualRep" />
+                  <IdentCon UId="34" />
+                </Wire>
+                <Wire UId="102">
+                  <IdentCon UId="35" />
+                  <NameCon UId="47" Name="operand" />
+                </Wire>
+                <Wire UId="103">
+                  <NameCon UId="47" Name="out" />
+                  <NameCon UId="48" Name="in" />
+                </Wire>
+                <Wire UId="104">
+                  <IdentCon UId="36" />
+                  <NameCon UId="48" Name="operand" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="5" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="6" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>#CycleSelection</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="8" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="DB615" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="DB615" />
+                    <Component Name="CycleStarted" />
+                    <Component Name="Started" />
+                    <Component Name="FillingStarted" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="DB615" />
+                    <Component Name="Running" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="DB615" />
+                    <Component Name="CycleStarted" />
+                    <Component Name="Started" />
+                    <Component Name="FillingStarted" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="25">
+                  <Symbol>
+                    <Component Name="DB615" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="26">
+                  <Symbol>
+                    <Component Name="Sec_Pulse" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="27">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="28">
+                  <Symbol>
+                    <Component Name="DB603" />
+                    <Component Name="ActualRepetition" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="29">
+                  <Symbol>
+                    <Component Name="DB615" />
+                    <Component Name="CycleOver" />
+                    <Component Name="Over" />
+                    <Component Name="FillingOver" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="30">
+                  <Symbol>
+                    <Component Name="DB625" />
+                    <Component Name="FillingPrint" AccessModifier="Array">
+                      <Access Scope="GlobalVariable">
+                        <Symbol>
+                          <Component Name="DB615" />
+                          <Component Name="CurrentStep" />
+                        </Symbol>
+                      </Access>
+                    </Component>
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="31">
+                  <Symbol>
+                    <Component Name="DB625" />
+                    <Component Name="Pulsingtime" AccessModifier="Array">
+                      <Access Scope="GlobalVariable">
+                        <Symbol>
+                          <Component Name="DB615" />
+                          <Component Name="CurrentStep" />
+                        </Symbol>
+                      </Access>
+                    </Component>
+                  </Symbol>
+                </Access>
+                <Part Name="Contact" UId="32" />
+                <Part Name="Contact" UId="33" />
+                <Part Name="Contact" UId="34" />
+                <Part Name="Contact" UId="35" />
+                <Call UId="36">
+                  <CallInfo Name="FB604" BlockType="FB">
+                    <Instance Scope="GlobalVariable" UId="37">
+                      <Component Name="DB604" />
+                    </Instance>
+                    <Parameter Name="CipSelected" Section="Input" Type="Bool" />
+                    <Parameter Name="CycleEnable" Section="Input" Type="Bool" />
+                    <Parameter Name="CycleRunning" Section="Input" Type="Bool" />
+                    <Parameter Name="SecPulse" Section="Input" Type="Bool" />
+                    <Parameter Name="AlwaysTrue" Section="Input" Type="Bool" />
+                    <Parameter Name="ActualQuantity" Section="Input" Type="Real" />
+                    <Parameter Name="ActualConductivity" Section="Input" Type="Real" />
+                    <Parameter Name="DrainWeight" Section="Input" Type="Real" />
+                    <Parameter Name="ActualRepetition" Section="Input" Type="Int" />
+                    <Parameter Name="ParaIn" Section="Input" Type="&quot;FillingInputs&quot;" />
+                    <Parameter Name="Started" Section="Output" Type="Bool" />
+                    <Parameter Name="SWZDV" Section="Output" Type="Bool" />
+                    <Parameter Name="PWZDV" Section="Output" Type="Bool" />
+                    <Parameter Name="WFIZDV" Section="Output" Type="Bool" />
+                    <Parameter Name="RinsePump" Section="Output" Type="Bool" />
+                    <Parameter Name="ParaOut" Section="Output" Type="&quot;FillingOutputs&quot;" />
+                    <Parameter Name="FillTimeMinPV" Section="Output" Type="DInt" />
+                    <Parameter Name="FillTimeSecPV" Section="Output" Type="DInt" />
+                    <Parameter Name="PulsingTimePV" Section="Output" Type="Int" />
+                    <Parameter Name="RinseTimePV" Section="Output" Type="Int" />
+                    <Parameter Name="StepStatus" Section="Output" Type="String[60]" />
+                    <Parameter Name="Print" Section="Output" Type="&quot;FillingPrint&quot;" />
+                    <Parameter Name="Print_1" Section="Output" Type="&quot;PulsingPrint&quot;" />
+                    <Parameter Name="Over" Section="InOut" Type="Bool" />
+                    <Parameter Name="OverTemp" Section="InOut" Type="Bool" />
+                    <Parameter Name="LineValvesTemp" Section="InOut" Type="Bool" />
+                    <Parameter Name="ZDVTemp" Section="InOut" Type="Bool" />
+                    <Parameter Name="PulsingValveTemp" Section="InOut" Type="Bool" />
+                    <Parameter Name="ActualFillQuantity" Section="InOut" Type="Real" />
+                    <Parameter Name="FillQuantityToleranceCalc" Section="InOut" Type="Real" />
+                    <Parameter Name="Temp1" Section="InOut" Type="Int" />
+                    <Parameter Name="Temp2" Section="InOut" Type="Int" />
+                    <Parameter Name="SampledConductivity" Section="InOut" Type="Real" />
+                    <Parameter Name="ConductivitySuccess" Section="InOut" Type="Bool" />
+                    <Parameter Name="RE1" Section="InOut" Type="Bool" />
+                    <Parameter Name="RE2" Section="InOut" Type="Bool" />
+                    <Parameter Name="RE3" Section="InOut" Type="Bool" />
+                    <Parameter Name="LineValves" Section="InOut" Type="Bool" />
+                  </CallInfo>
+                </Call>
+              </Parts>
+              <Wires>
+                <Wire UId="67">
+                  <Powerrail />
+                  <NameCon UId="36" Name="en" />
+                  <NameCon UId="32" Name="in" />
+                  <NameCon UId="34" Name="in" />
+                </Wire>
+                <Wire UId="68">
+                  <IdentCon UId="21" />
+                  <NameCon UId="32" Name="operand" />
+                </Wire>
+                <Wire UId="69">
+                  <NameCon UId="32" Name="out" />
+                  <NameCon UId="33" Name="in" />
+                </Wire>
+                <Wire UId="70">
+                  <IdentCon UId="22" />
+                  <NameCon UId="33" Name="operand" />
+                </Wire>
+                <Wire UId="71">
+                  <NameCon UId="33" Name="out" />
+                  <NameCon UId="36" Name="CycleEnable" />
+                </Wire>
+                <Wire UId="72">
+                  <IdentCon UId="23" />
+                  <NameCon UId="34" Name="operand" />
+                </Wire>
+                <Wire UId="73">
+                  <NameCon UId="34" Name="out" />
+                  <NameCon UId="35" Name="in" />
+                </Wire>
+                <Wire UId="74">
+                  <IdentCon UId="24" />
+                  <NameCon UId="35" Name="operand" />
+                </Wire>
+                <Wire UId="75">
+                  <NameCon UId="35" Name="out" />
+                  <NameCon UId="36" Name="CycleRunning" />
+                </Wire>
+                <Wire UId="76">
+                  <IdentCon UId="25" />
+                  <NameCon UId="36" Name="CipSelected" />
+                </Wire>
+                <Wire UId="77">
+                  <IdentCon UId="26" />
+                  <NameCon UId="36" Name="SecPulse" />
+                </Wire>
+                <Wire UId="78">
+                  <IdentCon UId="27" />
+                  <NameCon UId="36" Name="AlwaysTrue" />
+                </Wire>
+                <Wire UId="79">
+                  <OpenCon UId="38" />
+                  <NameCon UId="36" Name="ActualQuantity" />
+                </Wire>
+                <Wire UId="80">
+                  <OpenCon UId="39" />
+                  <NameCon UId="36" Name="ActualConductivity" />
+                </Wire>
+                <Wire UId="81">
+                  <OpenCon UId="40" />
+                  <NameCon UId="36" Name="DrainWeight" />
+                </Wire>
+                <Wire UId="82">
+                  <IdentCon UId="28" />
+                  <NameCon UId="36" Name="ActualRepetition" />
+                </Wire>
+                <Wire UId="83">
+                  <OpenCon UId="41" />
+                  <NameCon UId="36" Name="ParaIn" />
+                </Wire>
+                <Wire UId="84">
+                  <IdentCon UId="29" />
+                  <NameCon UId="36" Name="Over" />
+                </Wire>
+                <Wire UId="85">
+                  <OpenCon UId="42" />
+                  <NameCon UId="36" Name="OverTemp" />
+                </Wire>
+                <Wire UId="86">
+                  <OpenCon UId="43" />
+                  <NameCon UId="36" Name="LineValvesTemp" />
+                </Wire>
+                <Wire UId="87">
+                  <OpenCon UId="44" />
+                  <NameCon UId="36" Name="ZDVTemp" />
+                </Wire>
+                <Wire UId="88">
+                  <OpenCon UId="45" />
+                  <NameCon UId="36" Name="PulsingValveTemp" />
+                </Wire>
+                <Wire UId="89">
+                  <OpenCon UId="46" />
+                  <NameCon UId="36" Name="ActualFillQuantity" />
+                </Wire>
+                <Wire UId="90">
+                  <OpenCon UId="47" />
+                  <NameCon UId="36" Name="FillQuantityToleranceCalc" />
+                </Wire>
+                <Wire UId="91">
+                  <OpenCon UId="48" />
+                  <NameCon UId="36" Name="Temp1" />
+                </Wire>
+                <Wire UId="92">
+                  <OpenCon UId="49" />
+                  <NameCon UId="36" Name="Temp2" />
+                </Wire>
+                <Wire UId="93">
+                  <OpenCon UId="50" />
+                  <NameCon UId="36" Name="SampledConductivity" />
+                </Wire>
+                <Wire UId="94">
+                  <OpenCon UId="51" />
+                  <NameCon UId="36" Name="ConductivitySuccess" />
+                </Wire>
+                <Wire UId="95">
+                  <OpenCon UId="52" />
+                  <NameCon UId="36" Name="RE1" />
+                </Wire>
+                <Wire UId="96">
+                  <OpenCon UId="53" />
+                  <NameCon UId="36" Name="RE2" />
+                </Wire>
+                <Wire UId="97">
+                  <OpenCon UId="54" />
+                  <NameCon UId="36" Name="RE3" />
+                </Wire>
+                <Wire UId="98">
+                  <OpenCon UId="55" />
+                  <NameCon UId="36" Name="LineValves" />
+                </Wire>
+                <Wire UId="99">
+                  <NameCon UId="36" Name="Started" />
+                  <OpenCon UId="56" />
+                </Wire>
+                <Wire UId="100">
+                  <NameCon UId="36" Name="SWZDV" />
+                  <OpenCon UId="57" />
+                </Wire>
+                <Wire UId="101">
+                  <NameCon UId="36" Name="PWZDV" />
+                  <OpenCon UId="58" />
+                </Wire>
+                <Wire UId="102">
+                  <NameCon UId="36" Name="WFIZDV" />
+                  <OpenCon UId="59" />
+                </Wire>
+                <Wire UId="103">
+                  <NameCon UId="36" Name="RinsePump" />
+                  <OpenCon UId="60" />
+                </Wire>
+                <Wire UId="104">
+                  <NameCon UId="36" Name="ParaOut" />
+                  <OpenCon UId="61" />
+                </Wire>
+                <Wire UId="105">
+                  <NameCon UId="36" Name="FillTimeMinPV" />
+                  <OpenCon UId="62" />
+                </Wire>
+                <Wire UId="106">
+                  <NameCon UId="36" Name="FillTimeSecPV" />
+                  <OpenCon UId="63" />
+                </Wire>
+                <Wire UId="107">
+                  <NameCon UId="36" Name="PulsingTimePV" />
+                  <OpenCon UId="64" />
+                </Wire>
+                <Wire UId="108">
+                  <NameCon UId="36" Name="RinseTimePV" />
+                  <OpenCon UId="65" />
+                </Wire>
+                <Wire UId="109">
+                  <NameCon UId="36" Name="StepStatus" />
+                  <OpenCon UId="66" />
+                </Wire>
+                <Wire UId="110">
+                  <NameCon UId="36" Name="Print" />
+                  <IdentCon UId="30" />
+                </Wire>
+                <Wire UId="111">
+                  <NameCon UId="36" Name="Print_1" />
+                  <IdentCon UId="31" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="9" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="B" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>#Filling</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="D" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="DB615" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="DB615" />
+                    <Component Name="CycleStarted" />
+                    <Component Name="Started" />
+                    <Component Name="MIxingStarted" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="DB615" />
+                    <Component Name="Running" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="DB615" />
+                    <Component Name="CycleStarted" />
+                    <Component Name="Started" />
+                    <Component Name="MIxingStarted" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="25">
+                  <Symbol>
+                    <Component Name="Sec_Pulse" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="26">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="27">
+                  <Constant>
+                    <ConstantType>Bool</ConstantType>
+                    <ConstantValue>0</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="28">
+                  <Symbol>
+                    <Component Name="DB603" />
+                    <Component Name="ActualRepetition" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="29">
+                  <Symbol>
+                    <Component Name="DB615" />
+                    <Component Name="CycleOver" />
+                    <Component Name="Over" />
+                    <Component Name="MIxingOver" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="30">
+                  <Symbol>
+                    <Component Name="DB625" />
+                    <Component Name="MixingTime" AccessModifier="Array">
+                      <Access Scope="GlobalVariable">
+                        <Symbol>
+                          <Component Name="DB615" />
+                          <Component Name="CurrentStep" />
+                        </Symbol>
+                      </Access>
+                    </Component>
+                  </Symbol>
+                </Access>
+                <Part Name="Contact" UId="31" />
+                <Part Name="Contact" UId="32" />
+                <Part Name="Contact" UId="33" />
+                <Part Name="Contact" UId="34" />
+                <Call UId="35">
+                  <CallInfo Name="FB607" BlockType="FB">
+                    <Instance Scope="GlobalVariable" UId="36">
+                      <Component Name="DB607" />
+                    </Instance>
+                    <Parameter Name="CipSelected" Section="Input" Type="Bool" />
+                    <Parameter Name="CycleEnable" Section="Input" Type="Bool" />
+                    <Parameter Name="CycleRunning" Section="Input" Type="Bool" />
+                    <Parameter Name="SecPulse" Section="Input" Type="Bool" />
+                    <Parameter Name="AlwaysTrue" Section="Input" Type="Bool" />
+                    <Parameter Name="MixingTimeBaseSel" Section="Input" Type="Bool" />
+                    <Parameter Name="SetTimeMins" Section="Input" Type="Int" />
+                    <Parameter Name="SetTimeSecs" Section="Input" Type="Int" />
+                    <Parameter Name="ActualRepetition" Section="Input" Type="Int" />
+                    <Parameter Name="Started" Section="Output" Type="Bool" />
+                    <Parameter Name="Mixer" Section="Output" Type="Bool" />
+                    <Parameter Name="TimeMinsPv" Section="Output" Type="DInt" />
+                    <Parameter Name="TimeSecsPv" Section="Output" Type="DInt" />
+                    <Parameter Name="StepStatus" Section="Output" Type="String[60]" />
+                    <Parameter Name="Print" Section="Output" Type="&quot;MixingPrint&quot;" />
+                    <Parameter Name="Over" Section="InOut" Type="Bool" />
+                  </CallInfo>
+                </Call>
+              </Parts>
+              <Wires>
+                <Wire UId="45">
+                  <Powerrail />
+                  <NameCon UId="35" Name="en" />
+                  <NameCon UId="31" Name="in" />
+                  <NameCon UId="33" Name="in" />
+                </Wire>
+                <Wire UId="46">
+                  <IdentCon UId="21" />
+                  <NameCon UId="31" Name="operand" />
+                </Wire>
+                <Wire UId="47">
+                  <NameCon UId="31" Name="out" />
+                  <NameCon UId="32" Name="in" />
+                </Wire>
+                <Wire UId="48">
+                  <IdentCon UId="22" />
+                  <NameCon UId="32" Name="operand" />
+                </Wire>
+                <Wire UId="49">
+                  <NameCon UId="32" Name="out" />
+                  <NameCon UId="35" Name="CycleEnable" />
+                </Wire>
+                <Wire UId="50">
+                  <IdentCon UId="23" />
+                  <NameCon UId="33" Name="operand" />
+                </Wire>
+                <Wire UId="51">
+                  <NameCon UId="33" Name="out" />
+                  <NameCon UId="34" Name="in" />
+                </Wire>
+                <Wire UId="52">
+                  <IdentCon UId="24" />
+                  <NameCon UId="34" Name="operand" />
+                </Wire>
+                <Wire UId="53">
+                  <NameCon UId="34" Name="out" />
+                  <NameCon UId="35" Name="CycleRunning" />
+                </Wire>
+                <Wire UId="54">
+                  <OpenCon UId="37" />
+                  <NameCon UId="35" Name="CipSelected" />
+                </Wire>
+                <Wire UId="55">
+                  <IdentCon UId="25" />
+                  <NameCon UId="35" Name="SecPulse" />
+                </Wire>
+                <Wire UId="56">
+                  <IdentCon UId="26" />
+                  <NameCon UId="35" Name="AlwaysTrue" />
+                </Wire>
+                <Wire UId="57">
+                  <IdentCon UId="27" />
+                  <NameCon UId="35" Name="MixingTimeBaseSel" />
+                </Wire>
+                <Wire UId="58">
+                  <OpenCon UId="38" />
+                  <NameCon UId="35" Name="SetTimeMins" />
+                </Wire>
+                <Wire UId="59">
+                  <OpenCon UId="39" />
+                  <NameCon UId="35" Name="SetTimeSecs" />
+                </Wire>
+                <Wire UId="60">
+                  <IdentCon UId="28" />
+                  <NameCon UId="35" Name="ActualRepetition" />
+                </Wire>
+                <Wire UId="61">
+                  <IdentCon UId="29" />
+                  <NameCon UId="35" Name="Over" />
+                </Wire>
+                <Wire UId="62">
+                  <NameCon UId="35" Name="Started" />
+                  <OpenCon UId="40" />
+                </Wire>
+                <Wire UId="63">
+                  <NameCon UId="35" Name="Mixer" />
+                  <OpenCon UId="41" />
+                </Wire>
+                <Wire UId="64">
+                  <NameCon UId="35" Name="TimeMinsPv" />
+                  <OpenCon UId="42" />
+                </Wire>
+                <Wire UId="65">
+                  <NameCon UId="35" Name="TimeSecsPv" />
+                  <OpenCon UId="43" />
+                </Wire>
+                <Wire UId="66">
+                  <NameCon UId="35" Name="StepStatus" />
+                  <OpenCon UId="44" />
+                </Wire>
+                <Wire UId="67">
+                  <NameCon UId="35" Name="Print" />
+                  <IdentCon UId="30" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="E" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="10" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="11" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>#Mixing</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="12" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="DB615" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="DB615" />
+                    <Component Name="CycleStarted" />
+                    <Component Name="Started" />
+                    <Component Name="RecirculationStarted" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="DB615" />
+                    <Component Name="Running" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="DB615" />
+                    <Component Name="CycleStarted" />
+                    <Component Name="Started" />
+                    <Component Name="RecirculationStarted" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="25">
+                  <Symbol>
+                    <Component Name="Sec_Pulse" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="26">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="27">
+                  <Symbol>
+                    <Component Name="DB615" />
+                    <Component Name="CycleOver" />
+                    <Component Name="Over" />
+                    <Component Name="RecirculationOver" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="28">
+                  <Symbol>
+                    <Component Name="DB603" />
+                    <Component Name="ActualRepetition" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="29">
+                  <Symbol>
+                    <Component Name="DB615" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Part Name="Contact" UId="30" />
+                <Part Name="Contact" UId="31" />
+                <Part Name="Contact" UId="32" />
+                <Part Name="Contact" UId="33" />
+                <Call UId="34">
+                  <CallInfo Name="FB608" BlockType="FB">
+                    <Instance Scope="GlobalVariable" UId="35">
+                      <Component Name="DB608" />
+                    </Instance>
+                    <Parameter Name="CycleEnable" Section="Input" Type="Bool" />
+                    <Parameter Name="CycleRunning" Section="Input" Type="Bool" />
+                    <Parameter Name="SecPulse" Section="Input" Type="Bool" />
+                    <Parameter Name="AlwaysTrue" Section="Input" Type="Bool" />
+                    <Parameter Name="ActualTemperature" Section="Input" Type="Real" />
+                    <Parameter Name="ParaIn" Section="Input" Type="&quot;RecirculationInputs&quot;" />
+                    <Parameter Name="ActualPressure" Section="Input" Type="Real" />
+                    <Parameter Name="ActualConductivity" Section="Input" Type="Real" />
+                    <Parameter Name="Started" Section="Output" Type="Bool" />
+                    <Parameter Name="PressureUtilityValve" Section="Output" Type="Bool" />
+                    <Parameter Name="AlkaliInValve" Section="Output" Type="Bool" />
+                    <Parameter Name="AlkaliPump" Section="Output" Type="Bool" />
+                    <Parameter Name="AcidInValve" Section="Output" Type="Bool" />
+                    <Parameter Name="AcidPump" Section="Output" Type="Bool" />
+                    <Parameter Name="DosingValve(Cond)" Section="Output" Type="Bool" />
+                    <Parameter Name="DosingPump(Cond)" Section="Output" Type="Bool" />
+                    <Parameter Name="HsbCmd" Section="Output" Type="Bool" />
+                    <Parameter Name="RecPump" Section="Output" Type="Bool" />
+                    <Parameter Name="ParaOut" Section="Output" Type="&quot;RecirculationOutputs&quot;" />
+                    <Parameter Name="TimePv" Section="Output" Type="DInt" />
+                    <Parameter Name="StepStatus" Section="Output" Type="String[60]" />
+                    <Parameter Name="Over" Section="InOut" Type="Bool" />
+                    <Parameter Name="OverTemp" Section="InOut" Type="Bool" />
+                    <Parameter Name="ControlStarted" Section="InOut" Type="Bool" />
+                    <Parameter Name="TimerPaused" Section="InOut" Type="Bool" />
+                    <Parameter Name="PressurePostiveTol" Section="InOut" Type="Real" />
+                    <Parameter Name="PressureNegativeTol" Section="InOut" Type="Real" />
+                    <Parameter Name="LineValves" Section="InOut" Type="Bool" />
+                    <Parameter Name="ActualRepetition" Section="InOut" Type="Int" />
+                    <Parameter Name="SetTemperature" Section="InOut" Type="Real" />
+                    <Parameter Name="SetpH" Section="InOut" Type="Real" />
+                    <Parameter Name="SetConductivity" Section="InOut" Type="Real" />
+                    <Parameter Name="pHReached" Section="InOut" Type="Bool" />
+                    <Parameter Name="ConductivityReached" Section="InOut" Type="Bool" />
+                    <Parameter Name="CipSelected" Section="InOut" Type="Bool" />
+                  </CallInfo>
+                </Call>
+              </Parts>
+              <Wires>
+                <Wire UId="64">
+                  <Powerrail />
+                  <NameCon UId="34" Name="en" />
+                  <NameCon UId="30" Name="in" />
+                  <NameCon UId="32" Name="in" />
+                </Wire>
+                <Wire UId="65">
+                  <IdentCon UId="21" />
+                  <NameCon UId="30" Name="operand" />
+                </Wire>
+                <Wire UId="66">
+                  <NameCon UId="30" Name="out" />
+                  <NameCon UId="31" Name="in" />
+                </Wire>
+                <Wire UId="67">
+                  <IdentCon UId="22" />
+                  <NameCon UId="31" Name="operand" />
+                </Wire>
+                <Wire UId="68">
+                  <NameCon UId="31" Name="out" />
+                  <NameCon UId="34" Name="CycleEnable" />
+                </Wire>
+                <Wire UId="69">
+                  <IdentCon UId="23" />
+                  <NameCon UId="32" Name="operand" />
+                </Wire>
+                <Wire UId="70">
+                  <NameCon UId="32" Name="out" />
+                  <NameCon UId="33" Name="in" />
+                </Wire>
+                <Wire UId="71">
+                  <IdentCon UId="24" />
+                  <NameCon UId="33" Name="operand" />
+                </Wire>
+                <Wire UId="72">
+                  <NameCon UId="33" Name="out" />
+                  <NameCon UId="34" Name="CycleRunning" />
+                </Wire>
+                <Wire UId="73">
+                  <IdentCon UId="25" />
+                  <NameCon UId="34" Name="SecPulse" />
+                </Wire>
+                <Wire UId="74">
+                  <IdentCon UId="26" />
+                  <NameCon UId="34" Name="AlwaysTrue" />
+                </Wire>
+                <Wire UId="75">
+                  <OpenCon UId="36" />
+                  <NameCon UId="34" Name="ActualTemperature" />
+                </Wire>
+                <Wire UId="76">
+                  <OpenCon UId="37" />
+                  <NameCon UId="34" Name="ParaIn" />
+                </Wire>
+                <Wire UId="77">
+                  <OpenCon UId="38" />
+                  <NameCon UId="34" Name="ActualPressure" />
+                </Wire>
+                <Wire UId="78">
+                  <OpenCon UId="39" />
+                  <NameCon UId="34" Name="ActualConductivity" />
+                </Wire>
+                <Wire UId="79">
+                  <IdentCon UId="27" />
+                  <NameCon UId="34" Name="Over" />
+                </Wire>
+                <Wire UId="80">
+                  <OpenCon UId="40" />
+                  <NameCon UId="34" Name="OverTemp" />
+                </Wire>
+                <Wire UId="81">
+                  <OpenCon UId="41" />
+                  <NameCon UId="34" Name="ControlStarted" />
+                </Wire>
+                <Wire UId="82">
+                  <OpenCon UId="42" />
+                  <NameCon UId="34" Name="TimerPaused" />
+                </Wire>
+                <Wire UId="83">
+                  <OpenCon UId="43" />
+                  <NameCon UId="34" Name="PressurePostiveTol" />
+                </Wire>
+                <Wire UId="84">
+                  <OpenCon UId="44" />
+                  <NameCon UId="34" Name="PressureNegativeTol" />
+                </Wire>
+                <Wire UId="85">
+                  <OpenCon UId="45" />
+                  <NameCon UId="34" Name="LineValves" />
+                </Wire>
+                <Wire UId="86">
+                  <IdentCon UId="28" />
+                  <NameCon UId="34" Name="ActualRepetition" />
+                </Wire>
+                <Wire UId="87">
+                  <OpenCon UId="46" />
+                  <NameCon UId="34" Name="SetTemperature" />
+                </Wire>
+                <Wire UId="88">
+                  <OpenCon UId="47" />
+                  <NameCon UId="34" Name="SetpH" />
+                </Wire>
+                <Wire UId="89">
+                  <OpenCon UId="48" />
+                  <NameCon UId="34" Name="SetConductivity" />
+                </Wire>
+                <Wire UId="90">
+                  <OpenCon UId="49" />
+                  <NameCon UId="34" Name="pHReached" />
+                </Wire>
+                <Wire UId="91">
+                  <OpenCon UId="50" />
+                  <NameCon UId="34" Name="ConductivityReached" />
+                </Wire>
+                <Wire UId="92">
+                  <IdentCon UId="29" />
+                  <NameCon UId="34" Name="CipSelected" />
+                </Wire>
+                <Wire UId="93">
+                  <NameCon UId="34" Name="Started" />
+                  <OpenCon UId="51" />
+                </Wire>
+                <Wire UId="94">
+                  <NameCon UId="34" Name="PressureUtilityValve" />
+                  <OpenCon UId="52" />
+                </Wire>
+                <Wire UId="95">
+                  <NameCon UId="34" Name="AlkaliInValve" />
+                  <OpenCon UId="53" />
+                </Wire>
+                <Wire UId="96">
+                  <NameCon UId="34" Name="AlkaliPump" />
+                  <OpenCon UId="54" />
+                </Wire>
+                <Wire UId="97">
+                  <NameCon UId="34" Name="AcidInValve" />
+                  <OpenCon UId="55" />
+                </Wire>
+                <Wire UId="98">
+                  <NameCon UId="34" Name="AcidPump" />
+                  <OpenCon UId="56" />
+                </Wire>
+                <Wire UId="99">
+                  <NameCon UId="34" Name="DosingValve(Cond)" />
+                  <OpenCon UId="57" />
+                </Wire>
+                <Wire UId="100">
+                  <NameCon UId="34" Name="DosingPump(Cond)" />
+                  <OpenCon UId="58" />
+                </Wire>
+                <Wire UId="101">
+                  <NameCon UId="34" Name="HsbCmd" />
+                  <OpenCon UId="59" />
+                </Wire>
+                <Wire UId="102">
+                  <NameCon UId="34" Name="RecPump" />
+                  <OpenCon UId="60" />
+                </Wire>
+                <Wire UId="103">
+                  <NameCon UId="34" Name="ParaOut" />
+                  <OpenCon UId="61" />
+                </Wire>
+                <Wire UId="104">
+                  <NameCon UId="34" Name="TimePv" />
+                  <OpenCon UId="62" />
+                </Wire>
+                <Wire UId="105">
+                  <NameCon UId="34" Name="StepStatus" />
+                  <OpenCon UId="63" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="13" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="14" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="15" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="16" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>#Recirculation</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="17" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="DB615" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="DB615" />
+                    <Component Name="CycleStarted" />
+                    <Component Name="Started" />
+                    <Component Name="DrainStarted" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="DB615" />
+                    <Component Name="Running" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="DB615" />
+                    <Component Name="CycleStarted" />
+                    <Component Name="Started" />
+                    <Component Name="DrainStarted" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="25">
+                  <Symbol>
+                    <Component Name="Sec_Pulse" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="26">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="27">
+                  <Symbol>
+                    <Component Name="DB609" />
+                    <Component Name="ParaIn" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="28">
+                  <Symbol>
+                    <Component Name="DB615" />
+                    <Component Name="CycleOver" />
+                    <Component Name="Over" />
+                    <Component Name="DrainOver" />
+                  </Symbol>
+                </Access>
+                <Part Name="Contact" UId="29" />
+                <Part Name="Contact" UId="30" />
+                <Part Name="Contact" UId="31" />
+                <Part Name="Contact" UId="32" />
+                <Call UId="33">
+                  <CallInfo Name="FB609" BlockType="FB">
+                    <Instance Scope="GlobalVariable" UId="34">
+                      <Component Name="DB609" />
+                    </Instance>
+                    <Parameter Name="CipSelected" Section="Input" Type="Bool" />
+                    <Parameter Name="CycleEnable" Section="Input" Type="Bool" />
+                    <Parameter Name="CycleRunning" Section="Input" Type="Bool" />
+                    <Parameter Name="SecPulse" Section="Input" Type="Bool" />
+                    <Parameter Name="AlwaysTrue" Section="Input" Type="Bool" />
+                    <Parameter Name="ParaIn" Section="Input" Type="&quot;DrainInputs&quot;" />
+                    <Parameter Name="ActualWeight" Section="Input" Type="Real" />
+                    <Parameter Name="ActualPressure" Section="Input" Type="Real" />
+                    <Parameter Name="ActualConductivityVessel" Section="Input" Type="Real" />
+                    <Parameter Name="ActualRepetition" Section="Input" Type="Int" />
+                    <Parameter Name="ActualSkidWeight" Section="Input" Type="Real" />
+                    <Parameter Name="Started" Section="Output" Type="Bool" />
+                    <Parameter Name="PressureUtilityValve" Section="Output" Type="Bool" />
+                    <Parameter Name="Line Valves" Section="Output" Type="Bool" />
+                    <Parameter Name="ParaOut" Section="Output" Type="&quot;DrainOutputs&quot;" />
+                    <Parameter Name="StepStatus" Section="Output" Type="String[60]" />
+                    <Parameter Name="Print" Section="Output" Type="&quot;DrainPrint&quot;" />
+                    <Parameter Name="PrintConductivityNotSampled" Section="Output" Type="&quot;ConductivityNotSampled&quot;" />
+                    <Parameter Name="Over" Section="InOut" Type="Bool" />
+                    <Parameter Name="OverTemp" Section="InOut" Type="Bool" />
+                    <Parameter Name="PressurePostiveTol" Section="InOut" Type="Real" />
+                    <Parameter Name="PressureNegativeTol" Section="InOut" Type="Real" />
+                    <Parameter Name="Temp1" Section="InOut" Type="Int" />
+                    <Parameter Name="Temp2" Section="InOut" Type="Int" />
+                    <Parameter Name="SampledConductivityVessel" Section="InOut" Type="Real" />
+                    <Parameter Name="ConductivitySuccess" Section="InOut" Type="Bool" />
+                    <Parameter Name="ConductivityNotSampled" Section="InOut" Type="Bool" />
+                    <Parameter Name="RE1" Section="InOut" Type="Bool" />
+                    <Parameter Name="RE2" Section="InOut" Type="Bool" />
+                    <Parameter Name="RE3" Section="InOut" Type="Bool" />
+                    <Parameter Name="RE4" Section="InOut" Type="Bool" />
+                    <Parameter Name="RE5" Section="InOut" Type="Bool" />
+                    <Parameter Name="ControlStarted" Section="InOut" Type="Bool" />
+                    <Parameter Name="SetPressureReached" Section="InOut" Type="Bool" />
+                    <Parameter Name="DrainOverValve" Section="InOut" Type="Bool" />
+                    <Parameter Name="ConductivityCheckBit" Section="InOut" Type="Bool" />
+                    <Parameter Name="ActualConductivityPTL" Section="InOut" Type="Real" />
+                    <Parameter Name="SampledConductivityPTL" Section="InOut" Type="Real" />
+                    <Parameter Name="ConductivitySuccessVessel" Section="InOut" Type="Bool" />
+                    <Parameter Name="ConductivitySuccessPtl" Section="InOut" Type="Bool" />
+                    <Parameter Name="Temp3" Section="InOut" Type="Int" />
+                    <Parameter Name="Temp4" Section="InOut" Type="Int" />
+                    <Parameter Name="Temp5" Section="InOut" Type="Int" />
+                    <Parameter Name="Temp6" Section="InOut" Type="Int" />
+                    <Parameter Name="Temp7" Section="InOut" Type="Int" />
+                    <Parameter Name="Temp8" Section="InOut" Type="Int" />
+                    <Parameter Name="EndConfirmationPopupSel" Section="InOut" Type="Bool" />
+                    <Parameter Name="EndConfirmationPopup" Section="InOut" Type="Bool" />
+                    <Parameter Name="EndConfirmationPopupAck" Section="InOut" Type="Bool" />
+                    <Parameter Name="RE_1" Section="InOut" Type="Bool" />
+                    <Parameter Name="TempBit" Section="InOut" Type="Bool" />
+                    <Parameter Name="RE6" Section="InOut" Type="Bool" />
+                  </CallInfo>
+                </Call>
+              </Parts>
+              <Wires>
+                <Wire UId="81">
+                  <Powerrail />
+                  <NameCon UId="33" Name="en" />
+                  <NameCon UId="29" Name="in" />
+                  <NameCon UId="31" Name="in" />
+                </Wire>
+                <Wire UId="82">
+                  <IdentCon UId="21" />
+                  <NameCon UId="29" Name="operand" />
+                </Wire>
+                <Wire UId="83">
+                  <NameCon UId="29" Name="out" />
+                  <NameCon UId="30" Name="in" />
+                </Wire>
+                <Wire UId="84">
+                  <IdentCon UId="22" />
+                  <NameCon UId="30" Name="operand" />
+                </Wire>
+                <Wire UId="85">
+                  <NameCon UId="30" Name="out" />
+                  <NameCon UId="33" Name="CycleEnable" />
+                </Wire>
+                <Wire UId="86">
+                  <IdentCon UId="23" />
+                  <NameCon UId="31" Name="operand" />
+                </Wire>
+                <Wire UId="87">
+                  <NameCon UId="31" Name="out" />
+                  <NameCon UId="32" Name="in" />
+                </Wire>
+                <Wire UId="88">
+                  <IdentCon UId="24" />
+                  <NameCon UId="32" Name="operand" />
+                </Wire>
+                <Wire UId="89">
+                  <NameCon UId="32" Name="out" />
+                  <NameCon UId="33" Name="CycleRunning" />
+                </Wire>
+                <Wire UId="90">
+                  <OpenCon UId="35" />
+                  <NameCon UId="33" Name="CipSelected" />
+                </Wire>
+                <Wire UId="91">
+                  <IdentCon UId="25" />
+                  <NameCon UId="33" Name="SecPulse" />
+                </Wire>
+                <Wire UId="92">
+                  <IdentCon UId="26" />
+                  <NameCon UId="33" Name="AlwaysTrue" />
+                </Wire>
+                <Wire UId="93">
+                  <IdentCon UId="27" />
+                  <NameCon UId="33" Name="ParaIn" />
+                </Wire>
+                <Wire UId="94">
+                  <OpenCon UId="36" />
+                  <NameCon UId="33" Name="ActualWeight" />
+                </Wire>
+                <Wire UId="95">
+                  <OpenCon UId="37" />
+                  <NameCon UId="33" Name="ActualPressure" />
+                </Wire>
+                <Wire UId="96">
+                  <OpenCon UId="38" />
+                  <NameCon UId="33" Name="ActualConductivityVessel" />
+                </Wire>
+                <Wire UId="97">
+                  <OpenCon UId="39" />
+                  <NameCon UId="33" Name="ActualRepetition" />
+                </Wire>
+                <Wire UId="98">
+                  <OpenCon UId="40" />
+                  <NameCon UId="33" Name="ActualSkidWeight" />
+                </Wire>
+                <Wire UId="99">
+                  <IdentCon UId="28" />
+                  <NameCon UId="33" Name="Over" />
+                </Wire>
+                <Wire UId="100">
+                  <OpenCon UId="41" />
+                  <NameCon UId="33" Name="OverTemp" />
+                </Wire>
+                <Wire UId="101">
+                  <OpenCon UId="42" />
+                  <NameCon UId="33" Name="PressurePostiveTol" />
+                </Wire>
+                <Wire UId="102">
+                  <OpenCon UId="43" />
+                  <NameCon UId="33" Name="PressureNegativeTol" />
+                </Wire>
+                <Wire UId="103">
+                  <OpenCon UId="44" />
+                  <NameCon UId="33" Name="Temp1" />
+                </Wire>
+                <Wire UId="104">
+                  <OpenCon UId="45" />
+                  <NameCon UId="33" Name="Temp2" />
+                </Wire>
+                <Wire UId="105">
+                  <OpenCon UId="46" />
+                  <NameCon UId="33" Name="SampledConductivityVessel" />
+                </Wire>
+                <Wire UId="106">
+                  <OpenCon UId="47" />
+                  <NameCon UId="33" Name="ConductivitySuccess" />
+                </Wire>
+                <Wire UId="107">
+                  <OpenCon UId="48" />
+                  <NameCon UId="33" Name="ConductivityNotSampled" />
+                </Wire>
+                <Wire UId="108">
+                  <OpenCon UId="49" />
+                  <NameCon UId="33" Name="RE1" />
+                </Wire>
+                <Wire UId="109">
+                  <OpenCon UId="50" />
+                  <NameCon UId="33" Name="RE2" />
+                </Wire>
+                <Wire UId="110">
+                  <OpenCon UId="51" />
+                  <NameCon UId="33" Name="RE3" />
+                </Wire>
+                <Wire UId="111">
+                  <OpenCon UId="52" />
+                  <NameCon UId="33" Name="RE4" />
+                </Wire>
+                <Wire UId="112">
+                  <OpenCon UId="53" />
+                  <NameCon UId="33" Name="RE5" />
+                </Wire>
+                <Wire UId="113">
+                  <OpenCon UId="54" />
+                  <NameCon UId="33" Name="ControlStarted" />
+                </Wire>
+                <Wire UId="114">
+                  <OpenCon UId="55" />
+                  <NameCon UId="33" Name="SetPressureReached" />
+                </Wire>
+                <Wire UId="115">
+                  <OpenCon UId="56" />
+                  <NameCon UId="33" Name="DrainOverValve" />
+                </Wire>
+                <Wire UId="116">
+                  <OpenCon UId="57" />
+                  <NameCon UId="33" Name="ConductivityCheckBit" />
+                </Wire>
+                <Wire UId="117">
+                  <OpenCon UId="58" />
+                  <NameCon UId="33" Name="ActualConductivityPTL" />
+                </Wire>
+                <Wire UId="118">
+                  <OpenCon UId="59" />
+                  <NameCon UId="33" Name="SampledConductivityPTL" />
+                </Wire>
+                <Wire UId="119">
+                  <OpenCon UId="60" />
+                  <NameCon UId="33" Name="ConductivitySuccessVessel" />
+                </Wire>
+                <Wire UId="120">
+                  <OpenCon UId="61" />
+                  <NameCon UId="33" Name="ConductivitySuccessPtl" />
+                </Wire>
+                <Wire UId="121">
+                  <OpenCon UId="62" />
+                  <NameCon UId="33" Name="Temp3" />
+                </Wire>
+                <Wire UId="122">
+                  <OpenCon UId="63" />
+                  <NameCon UId="33" Name="Temp4" />
+                </Wire>
+                <Wire UId="123">
+                  <OpenCon UId="64" />
+                  <NameCon UId="33" Name="Temp5" />
+                </Wire>
+                <Wire UId="124">
+                  <OpenCon UId="65" />
+                  <NameCon UId="33" Name="Temp6" />
+                </Wire>
+                <Wire UId="125">
+                  <OpenCon UId="66" />
+                  <NameCon UId="33" Name="Temp7" />
+                </Wire>
+                <Wire UId="126">
+                  <OpenCon UId="67" />
+                  <NameCon UId="33" Name="Temp8" />
+                </Wire>
+                <Wire UId="127">
+                  <OpenCon UId="68" />
+                  <NameCon UId="33" Name="EndConfirmationPopupSel" />
+                </Wire>
+                <Wire UId="128">
+                  <OpenCon UId="69" />
+                  <NameCon UId="33" Name="EndConfirmationPopup" />
+                </Wire>
+                <Wire UId="129">
+                  <OpenCon UId="70" />
+                  <NameCon UId="33" Name="EndConfirmationPopupAck" />
+                </Wire>
+                <Wire UId="130">
+                  <OpenCon UId="71" />
+                  <NameCon UId="33" Name="RE_1" />
+                </Wire>
+                <Wire UId="131">
+                  <OpenCon UId="72" />
+                  <NameCon UId="33" Name="TempBit" />
+                </Wire>
+                <Wire UId="132">
+                  <OpenCon UId="73" />
+                  <NameCon UId="33" Name="RE6" />
+                </Wire>
+                <Wire UId="133">
+                  <NameCon UId="33" Name="Started" />
+                  <OpenCon UId="74" />
+                </Wire>
+                <Wire UId="134">
+                  <NameCon UId="33" Name="PressureUtilityValve" />
+                  <OpenCon UId="75" />
+                </Wire>
+                <Wire UId="135">
+                  <NameCon UId="33" Name="Line Valves" />
+                  <OpenCon UId="76" />
+                </Wire>
+                <Wire UId="136">
+                  <NameCon UId="33" Name="ParaOut" />
+                  <OpenCon UId="77" />
+                </Wire>
+                <Wire UId="137">
+                  <NameCon UId="33" Name="StepStatus" />
+                  <OpenCon UId="78" />
+                </Wire>
+                <Wire UId="138">
+                  <NameCon UId="33" Name="Print" />
+                  <OpenCon UId="79" />
+                </Wire>
+                <Wire UId="139">
+                  <NameCon UId="33" Name="PrintConductivityNotSampled" />
+                  <OpenCon UId="80" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="18" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="19" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="1A" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="1B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>#Drain</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="1C" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="DB615" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="DB615" />
+                    <Component Name="CycleStarted" />
+                    <Component Name="Started" />
+                    <Component Name="SystemDrainStarted" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="DB615" />
+                    <Component Name="Running" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="DB615" />
+                    <Component Name="CycleStarted" />
+                    <Component Name="Started" />
+                    <Component Name="SystemDrainStarted" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="25">
+                  <Symbol>
+                    <Component Name="Sec_Pulse" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="26">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="27">
+                  <Symbol>
+                    <Component Name="DB615" />
+                    <Component Name="CycleOver" />
+                    <Component Name="Over" />
+                    <Component Name="SystemDrainOver" />
+                  </Symbol>
+                </Access>
+                <Part Name="Contact" UId="28" />
+                <Part Name="Contact" UId="29" />
+                <Part Name="Contact" UId="30" />
+                <Part Name="Contact" UId="31" />
+                <Call UId="32">
+                  <CallInfo Name="FB610" BlockType="FB">
+                    <Instance Scope="GlobalVariable" UId="33">
+                      <Component Name="DB610" />
+                    </Instance>
+                    <Parameter Name="CycleEnable" Section="Input" Type="Bool" />
+                    <Parameter Name="CycleRunning" Section="Input" Type="Bool" />
+                    <Parameter Name="SecPulse" Section="Input" Type="Bool" />
+                    <Parameter Name="AlwaysTrue" Section="Input" Type="Bool" />
+                    <Parameter Name="SetTime" Section="Input" Type="Int" />
+                    <Parameter Name="Loops" Section="Input" Type="Int" />
+                    <Parameter Name="DelayBetweenLoops" Section="Input" Type="Int" />
+                    <Parameter Name="Started" Section="Output" Type="Bool" />
+                    <Parameter Name="ParaOut" Section="Output" Type="&quot;SystemDrainOutputs&quot;" />
+                    <Parameter Name="TimePv" Section="Output" Type="DInt" />
+                    <Parameter Name="StepStatus" Section="Output" Type="String[60]" />
+                    <Parameter Name="Over" Section="InOut" Type="Bool" />
+                    <Parameter Name="OverTemp" Section="InOut" Type="Bool" />
+                    <Parameter Name="Popup" Section="InOut" Type="Bool" />
+                    <Parameter Name="PopupAck" Section="InOut" Type="Bool" />
+                    <Parameter Name="PopUpSel" Section="InOut" Type="Bool" />
+                  </CallInfo>
+                </Call>
+              </Parts>
+              <Wires>
+                <Wire UId="45">
+                  <Powerrail />
+                  <NameCon UId="32" Name="en" />
+                  <NameCon UId="28" Name="in" />
+                  <NameCon UId="30" Name="in" />
+                </Wire>
+                <Wire UId="46">
+                  <IdentCon UId="21" />
+                  <NameCon UId="28" Name="operand" />
+                </Wire>
+                <Wire UId="47">
+                  <NameCon UId="28" Name="out" />
+                  <NameCon UId="29" Name="in" />
+                </Wire>
+                <Wire UId="48">
+                  <IdentCon UId="22" />
+                  <NameCon UId="29" Name="operand" />
+                </Wire>
+                <Wire UId="49">
+                  <NameCon UId="29" Name="out" />
+                  <NameCon UId="32" Name="CycleEnable" />
+                </Wire>
+                <Wire UId="50">
+                  <IdentCon UId="23" />
+                  <NameCon UId="30" Name="operand" />
+                </Wire>
+                <Wire UId="51">
+                  <NameCon UId="30" Name="out" />
+                  <NameCon UId="31" Name="in" />
+                </Wire>
+                <Wire UId="52">
+                  <IdentCon UId="24" />
+                  <NameCon UId="31" Name="operand" />
+                </Wire>
+                <Wire UId="53">
+                  <NameCon UId="31" Name="out" />
+                  <NameCon UId="32" Name="CycleRunning" />
+                </Wire>
+                <Wire UId="54">
+                  <IdentCon UId="25" />
+                  <NameCon UId="32" Name="SecPulse" />
+                </Wire>
+                <Wire UId="55">
+                  <IdentCon UId="26" />
+                  <NameCon UId="32" Name="AlwaysTrue" />
+                </Wire>
+                <Wire UId="56">
+                  <OpenCon UId="34" />
+                  <NameCon UId="32" Name="SetTime" />
+                </Wire>
+                <Wire UId="57">
+                  <OpenCon UId="35" />
+                  <NameCon UId="32" Name="Loops" />
+                </Wire>
+                <Wire UId="58">
+                  <OpenCon UId="36" />
+                  <NameCon UId="32" Name="DelayBetweenLoops" />
+                </Wire>
+                <Wire UId="59">
+                  <IdentCon UId="27" />
+                  <NameCon UId="32" Name="Over" />
+                </Wire>
+                <Wire UId="60">
+                  <OpenCon UId="37" />
+                  <NameCon UId="32" Name="OverTemp" />
+                </Wire>
+                <Wire UId="61">
+                  <OpenCon UId="38" />
+                  <NameCon UId="32" Name="Popup" />
+                </Wire>
+                <Wire UId="62">
+                  <OpenCon UId="39" />
+                  <NameCon UId="32" Name="PopupAck" />
+                </Wire>
+                <Wire UId="63">
+                  <OpenCon UId="40" />
+                  <NameCon UId="32" Name="PopUpSel" />
+                </Wire>
+                <Wire UId="64">
+                  <NameCon UId="32" Name="Started" />
+                  <OpenCon UId="41" />
+                </Wire>
+                <Wire UId="65">
+                  <NameCon UId="32" Name="ParaOut" />
+                  <OpenCon UId="42" />
+                </Wire>
+                <Wire UId="66">
+                  <NameCon UId="32" Name="TimePv" />
+                  <OpenCon UId="43" />
+                </Wire>
+                <Wire UId="67">
+                  <NameCon UId="32" Name="StepStatus" />
+                  <OpenCon UId="44" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="1D" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="1E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="1F" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="20" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>#SystemDrain</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="21" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="DB615" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="DB615" />
+                    <Component Name="CycleStarted" />
+                    <Component Name="Started" />
+                    <Component Name="AirPurgingStarted" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="DB615" />
+                    <Component Name="Running" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="DB615" />
+                    <Component Name="CycleStarted" />
+                    <Component Name="Started" />
+                    <Component Name="AirPurgingStarted" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="25">
+                  <Symbol>
+                    <Component Name="Sec_Pulse" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="26">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="27">
+                  <Symbol>
+                    <Component Name="DB603" />
+                    <Component Name="ActualRepetition" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="28">
+                  <Symbol>
+                    <Component Name="DB615" />
+                    <Component Name="CycleOver" />
+                    <Component Name="Over" />
+                    <Component Name="AirPurgingOver" />
+                  </Symbol>
+                </Access>
+                <Part Name="Contact" UId="29" />
+                <Part Name="Contact" UId="30" />
+                <Part Name="Contact" UId="31" />
+                <Part Name="Contact" UId="32" />
+                <Call UId="33">
+                  <CallInfo Name="FB611" BlockType="FB">
+                    <Instance Scope="GlobalVariable" UId="34">
+                      <Component Name="DB611" />
+                    </Instance>
+                    <Parameter Name="CycleEnable" Section="Input" Type="Bool" />
+                    <Parameter Name="CycleRunning" Section="Input" Type="Bool" />
+                    <Parameter Name="SecPulse" Section="Input" Type="Bool" />
+                    <Parameter Name="AlwaysTrue" Section="Input" Type="Bool" />
+                    <Parameter Name="ActualTemperature" Section="Input" Type="Real" />
+                    <Parameter Name="ActualPressure" Section="Input" Type="Real" />
+                    <Parameter Name="ActualRepetition" Section="Input" Type="Int" />
+                    <Parameter Name="ParaIn" Section="Input" Type="&quot;AirPurgingInputs&quot;" />
+                    <Parameter Name="Started" Section="Output" Type="Bool" />
+                    <Parameter Name="UtilityValve" Section="Output" Type="Bool" />
+                    <Parameter Name="VentValve" Section="Output" Type="Bool" />
+                    <Parameter Name="ParaOut" Section="Output" Type="&quot;AirPurgingOutputs&quot;" />
+                    <Parameter Name="StepStatus" Section="Output" Type="String[60]" />
+                    <Parameter Name="TempValve" Section="Output" Type="Bool" />
+                    <Parameter Name="TempValve_close" Section="Output" Type="Bool" />
+                    <Parameter Name="Over" Section="InOut" Type="Bool" />
+                    <Parameter Name="OverTemp" Section="InOut" Type="Bool" />
+                    <Parameter Name="PressurePostiveTol" Section="InOut" Type="Real" />
+                    <Parameter Name="PressureNegativeTol" Section="InOut" Type="Real" />
+                    <Parameter Name="ControlStarted" Section="InOut" Type="Bool" />
+                    <Parameter Name="TempPostiveTol" Section="InOut" Type="Real" />
+                    <Parameter Name="TempNegativeTol" Section="InOut" Type="Real" />
+                    <Parameter Name="HotAirValve" Section="InOut" Type="Bool" />
+                    <Parameter Name="PopupSel" Section="InOut" Type="Bool" />
+                    <Parameter Name="Popup" Section="InOut" Type="Bool" />
+                    <Parameter Name="PopupAck" Section="InOut" Type="Bool" />
+                    <Parameter Name="ControlStartedTemp" Section="InOut" Type="Bool" />
+                    <Parameter Name="re_5" Section="InOut" Type="Bool" />
+                    <Parameter Name="TempReached" Section="InOut" Type="Bool" />
+                    <Parameter Name="re_6" Section="InOut" Type="Bool" />
+                  </CallInfo>
+                </Call>
+              </Parts>
+              <Wires>
+                <Wire UId="59">
+                  <Powerrail />
+                  <NameCon UId="33" Name="en" />
+                  <NameCon UId="29" Name="in" />
+                  <NameCon UId="31" Name="in" />
+                </Wire>
+                <Wire UId="60">
+                  <IdentCon UId="21" />
+                  <NameCon UId="29" Name="operand" />
+                </Wire>
+                <Wire UId="61">
+                  <NameCon UId="29" Name="out" />
+                  <NameCon UId="30" Name="in" />
+                </Wire>
+                <Wire UId="62">
+                  <IdentCon UId="22" />
+                  <NameCon UId="30" Name="operand" />
+                </Wire>
+                <Wire UId="63">
+                  <NameCon UId="30" Name="out" />
+                  <NameCon UId="33" Name="CycleEnable" />
+                </Wire>
+                <Wire UId="64">
+                  <IdentCon UId="23" />
+                  <NameCon UId="31" Name="operand" />
+                </Wire>
+                <Wire UId="65">
+                  <NameCon UId="31" Name="out" />
+                  <NameCon UId="32" Name="in" />
+                </Wire>
+                <Wire UId="66">
+                  <IdentCon UId="24" />
+                  <NameCon UId="32" Name="operand" />
+                </Wire>
+                <Wire UId="67">
+                  <NameCon UId="32" Name="out" />
+                  <NameCon UId="33" Name="CycleRunning" />
+                </Wire>
+                <Wire UId="68">
+                  <IdentCon UId="25" />
+                  <NameCon UId="33" Name="SecPulse" />
+                </Wire>
+                <Wire UId="69">
+                  <IdentCon UId="26" />
+                  <NameCon UId="33" Name="AlwaysTrue" />
+                </Wire>
+                <Wire UId="70">
+                  <OpenCon UId="35" />
+                  <NameCon UId="33" Name="ActualTemperature" />
+                </Wire>
+                <Wire UId="71">
+                  <OpenCon UId="36" />
+                  <NameCon UId="33" Name="ActualPressure" />
+                </Wire>
+                <Wire UId="72">
+                  <IdentCon UId="27" />
+                  <NameCon UId="33" Name="ActualRepetition" />
+                </Wire>
+                <Wire UId="73">
+                  <OpenCon UId="37" />
+                  <NameCon UId="33" Name="ParaIn" />
+                </Wire>
+                <Wire UId="74">
+                  <IdentCon UId="28" />
+                  <NameCon UId="33" Name="Over" />
+                </Wire>
+                <Wire UId="75">
+                  <OpenCon UId="38" />
+                  <NameCon UId="33" Name="OverTemp" />
+                </Wire>
+                <Wire UId="76">
+                  <OpenCon UId="39" />
+                  <NameCon UId="33" Name="PressurePostiveTol" />
+                </Wire>
+                <Wire UId="77">
+                  <OpenCon UId="40" />
+                  <NameCon UId="33" Name="PressureNegativeTol" />
+                </Wire>
+                <Wire UId="78">
+                  <OpenCon UId="41" />
+                  <NameCon UId="33" Name="ControlStarted" />
+                </Wire>
+                <Wire UId="79">
+                  <OpenCon UId="42" />
+                  <NameCon UId="33" Name="TempPostiveTol" />
+                </Wire>
+                <Wire UId="80">
+                  <OpenCon UId="43" />
+                  <NameCon UId="33" Name="TempNegativeTol" />
+                </Wire>
+                <Wire UId="81">
+                  <OpenCon UId="44" />
+                  <NameCon UId="33" Name="HotAirValve" />
+                </Wire>
+                <Wire UId="82">
+                  <OpenCon UId="45" />
+                  <NameCon UId="33" Name="PopupSel" />
+                </Wire>
+                <Wire UId="83">
+                  <OpenCon UId="46" />
+                  <NameCon UId="33" Name="Popup" />
+                </Wire>
+                <Wire UId="84">
+                  <OpenCon UId="47" />
+                  <NameCon UId="33" Name="PopupAck" />
+                </Wire>
+                <Wire UId="85">
+                  <OpenCon UId="48" />
+                  <NameCon UId="33" Name="ControlStartedTemp" />
+                </Wire>
+                <Wire UId="86">
+                  <OpenCon UId="49" />
+                  <NameCon UId="33" Name="re_5" />
+                </Wire>
+                <Wire UId="87">
+                  <OpenCon UId="50" />
+                  <NameCon UId="33" Name="TempReached" />
+                </Wire>
+                <Wire UId="88">
+                  <OpenCon UId="51" />
+                  <NameCon UId="33" Name="re_6" />
+                </Wire>
+                <Wire UId="89">
+                  <NameCon UId="33" Name="Started" />
+                  <OpenCon UId="52" />
+                </Wire>
+                <Wire UId="90">
+                  <NameCon UId="33" Name="UtilityValve" />
+                  <OpenCon UId="53" />
+                </Wire>
+                <Wire UId="91">
+                  <NameCon UId="33" Name="VentValve" />
+                  <OpenCon UId="54" />
+                </Wire>
+                <Wire UId="92">
+                  <NameCon UId="33" Name="ParaOut" />
+                  <OpenCon UId="55" />
+                </Wire>
+                <Wire UId="93">
+                  <NameCon UId="33" Name="StepStatus" />
+                  <OpenCon UId="56" />
+                </Wire>
+                <Wire UId="94">
+                  <NameCon UId="33" Name="TempValve" />
+                  <OpenCon UId="57" />
+                </Wire>
+                <Wire UId="95">
+                  <NameCon UId="33" Name="TempValve_close" />
+                  <OpenCon UId="58" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="22" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="23" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="24" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="25" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>#AirPurging</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="26" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="27" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>FC604</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FC>
+</Document>

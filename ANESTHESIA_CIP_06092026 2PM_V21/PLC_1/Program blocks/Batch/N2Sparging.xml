@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V21" />
+  <SW.Blocks.InstanceDB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <HeaderAuthor>PRECISE</HeaderAuthor>
+      <HeaderFamily>PRECISE</HeaderFamily>
+      <InstanceOfName>FB303</InstanceOfName>
+      <InstanceOfType>FB</InstanceOfType>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="Input">
+            <Member Name="Enable" Datatype="Bool" />
+            <Member Name="Disable" Datatype="Bool" />
+            <Member Name="Fault" Datatype="Bool" />
+            <Member Name="SecPulse" Datatype="Bool" />
+            <Member Name="AlwaysTrue" Datatype="Bool">
+              <AttributeList>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="StartConfirmationPopupSel" Datatype="Bool" />
+            <Member Name="EndConfirmationPopupSel" Datatype="Bool" />
+            <Member Name="SpargingModeSel" Datatype="Int">
+              <StartValue>1</StartValue>
+            </Member>
+            <Member Name="SpargingTimebaseSel" Datatype="Bool" />
+            <Member Name="SpargingLineSel" Datatype="Bool">
+              <Comment>
+                <MultiLanguageText Lang="en-US">Sparging LineSelection: 0-THRU N2 FILTER /1-THRU VV</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="GasSel" Datatype="Int" Remanence="Retain">
+              <Comment>
+                <MultiLanguageText Lang="en-US">N2 Selection - 0-AIR/1-N2</MultiLanguageText>
+              </Comment>
+              <StartValue>1</StartValue>
+            </Member>
+            <Member Name="SetDO" Datatype="Real" Remanence="Retain">
+              <StartValue>10.2</StartValue>
+            </Member>
+            <Member Name="SpargingTimeMin" Datatype="Int" Remanence="Retain">
+              <StartValue>2</StartValue>
+            </Member>
+            <Member Name="SpargingTimeSec" Datatype="Int">
+              <StartValue>0</StartValue>
+            </Member>
+            <Member Name="PressuretoOpenVV" Datatype="Real" />
+            <Member Name="PressuretoCloseVV" Datatype="Real" />
+            <Member Name="ActualDO" Datatype="Real" />
+            <Member Name="ActualPressure" Datatype="Real" />
+            <Member Name="DelaytoOpenGasIn" Datatype="Int" />
+          </Section>
+          <Section Name="Output">
+            <Member Name="AirValve" Datatype="Bool" />
+            <Member Name="N2Valve" Datatype="Bool" />
+            <Member Name="SpargingLineValves" Datatype="Bool" />
+            <Member Name="VentValve" Datatype="Bool" />
+            <Member Name="StartConfirmationPopup" Datatype="Bool" />
+            <Member Name="EndConfirmationPopup" Datatype="Bool" />
+            <Member Name="SpargingTimeMinPV" Datatype="DInt" Remanence="Retain" />
+            <Member Name="SpargingTimeSecPV" Datatype="DInt" Remanence="Retain" />
+            <Member Name="PrintTrigger" Datatype="Bool">
+              <AttributeList>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="PrintWord" Datatype="Int" />
+            <Member Name="PrintStatus" Datatype="String[50]" />
+          </Section>
+          <Section Name="InOut">
+            <Member Name="Start" Datatype="Bool" />
+            <Member Name="Stop" Datatype="Bool" />
+            <Member Name="Reset" Datatype="Bool" />
+            <Member Name="StartConfirmationAck" Datatype="Bool" />
+            <Member Name="EndConfirmationAck" Datatype="Bool" />
+            <Member Name="SpareBtn1" Datatype="Bool" />
+            <Member Name="SpareBtn2" Datatype="Bool" />
+            <Member Name="SpareBtn3" Datatype="Bool" />
+            <Member Name="Running" Datatype="Bool" />
+            <Member Name="Selected" Datatype="Bool" Remanence="Retain" />
+            <Member Name="Paused" Datatype="Bool" />
+            <Member Name="StartConfirmationPopupTemp" Datatype="Bool" Remanence="Retain" />
+            <Member Name="EndConfirmationPopupTemp" Datatype="Bool" Remanence="Retain" />
+            <Member Name="SpargingStarted" Datatype="Bool" Remanence="Retain" />
+            <Member Name="SpargingOver" Datatype="Bool" />
+            <Member Name="SpargingTimerRunning" Datatype="Bool" />
+          </Section>
+          <Section Name="Static">
+            <Member Name="ValveOnDelayPV" Datatype="Int" />
+            <Member Name="ValveOffDelayPV" Datatype="Int" />
+            <Member Name="PrintTriggerTemp" Datatype="Bool" />
+            <Member Name="RE1" Datatype="Bool" />
+            <Member Name="RE2" Datatype="Bool" />
+            <Member Name="RE3" Datatype="Bool" />
+            <Member Name="RE4" Datatype="Bool" />
+            <Member Name="RE5" Datatype="Bool" />
+            <Member Name="RE6" Datatype="Bool" />
+            <Member Name="RE7" Datatype="Bool" />
+            <Member Name="SpargingTimer" Datatype="&quot;FB101&quot;" />
+            <Member Name="PrintTriggerResetTimer" Datatype="TON_TIME" Version="1.0">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="BtnResetTimer" Datatype="TON_TIME" Version="1.0">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+          </Section>
+        </Sections>
+      </Interface>
+      <Name>N2Sparging</Name>
+      <Namespace />
+      <Number>307</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.InstanceDB>
+</Document>

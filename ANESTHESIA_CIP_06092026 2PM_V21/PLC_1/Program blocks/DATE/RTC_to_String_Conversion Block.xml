@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V21" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="Static">
+            <Member Name="date_int" Datatype="Int" />
+            <Member Name="date_string" Datatype="String[6]" />
+            <Member Name="month_int" Datatype="Int" />
+            <Member Name="month_string" Datatype="String[6]" />
+            <Member Name="year_string" Datatype="String[6]" />
+            <Member Name="hour_int" Datatype="Int" />
+            <Member Name="hour_string" Datatype="String[6]" />
+            <Member Name="minute_int" Datatype="Int" />
+            <Member Name="minute_string" Datatype="String[6]" />
+            <Member Name="second_int" Datatype="Int" />
+            <Member Name="second_string" Datatype="String[6]" />
+            <Member Name="date_temp" Datatype="String[6]" />
+            <Member Name="date_zero" Datatype="Int" />
+            <Member Name="date_actual" Datatype="String[12]" />
+            <Member Name="month_temp" Datatype="String[6]" />
+            <Member Name="month_zero" Datatype="Int" />
+            <Member Name="month_actual" Datatype="String[6]" />
+            <Member Name="year_actual" Datatype="String[6]" />
+            <Member Name="hour_temp" Datatype="String[6]" />
+            <Member Name="hour_zero" Datatype="Int" />
+            <Member Name="hour_actual" Datatype="String[6]" />
+            <Member Name="minute_temp" Datatype="String[6]" />
+            <Member Name="minute_zero" Datatype="Int" />
+            <Member Name="minute_actual" Datatype="String[6]" />
+            <Member Name="second_temp" Datatype="String[6]" />
+            <Member Name="second_zero" Datatype="Int" />
+            <Member Name="second_actual" Datatype="String[12]" />
+            <Member Name="Final_Date" Datatype="String[12]" />
+            <Member Name="Final_time_HRS" Datatype="String[12]" />
+            <Member Name="Final_time_MINS" Datatype="String[12]" />
+            <Member Name="Final_time_1" Datatype="String[12]" />
+            <Member Name="Final_time" Datatype="String[8]" />
+            <Member Name="SPACE" Datatype="String[10]" />
+          </Section>
+        </Sections>
+      </Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>RTC_to_String_Conversion Block</Name>
+      <Namespace />
+      <Number>119</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V21" />
+  <SW.Blocks.InstanceDB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <InstanceOfName>FB305</InstanceOfName>
+      <InstanceOfType>FB</InstanceOfType>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="Input">
+            <Member Name="Enable" Datatype="Bool" />
+            <Member Name="Disable" Datatype="Bool" />
+            <Member Name="Fault" Datatype="Bool" />
+            <Member Name="SecPulse" Datatype="Bool" />
+            <Member Name="AlwaysTrue" Datatype="Bool" />
+            <Member Name="StartConfirmationPopupSel" Datatype="Bool" />
+            <Member Name="EndConfirmationPopupSel" Datatype="Bool" />
+            <Member Name="WeightBasedSel" Datatype="Bool" />
+            <Member Name="AdditionMethodSel" Datatype="Bool" />
+            <Member Name="TransferTypeSel" Datatype="Bool" />
+            <Member Name="TransferVesselPressureCheckSel" Datatype="Bool" />
+            <Member Name="PressureReleaseSel" Datatype="Bool" />
+            <Member Name="DelaytoEmptyLineSel" Datatype="Bool" />
+            <Member Name="FlowSwitchCheckSel" Datatype="Bool" />
+            <Member Name="TransfertoFMSel" Datatype="Bool" />
+            <Member Name="RecBasedTransferSel" Datatype="Bool" />
+            <Member Name="TemperatureControlSel" Datatype="Bool" />
+            <Member Name="TransferMethodSel" Datatype="Int" Remanence="Retain" />
+            <Member Name="GasSel" Datatype="Int" Remanence="Retain" />
+            <Member Name="SetPressure" Datatype="Real" Remanence="Retain" />
+            <Member Name="SetVacuum" Datatype="Real" />
+            <Member Name="SetQuantity" Datatype="Real" Remanence="Retain" />
+            <Member Name="SetSpeed" Datatype="Real" />
+            <Member Name="ActualPressure" Datatype="Real" />
+            <Member Name="ActualVacuum" Datatype="Real" />
+            <Member Name="ActualQuantity" Datatype="Real" />
+            <Member Name="ActualQuantityVessel" Datatype="Real" />
+            <Member Name="FlowSwitchInput" Datatype="Bool" />
+            <Member Name="FMHealthyInput" Datatype="Bool" />
+            <Member Name="TemperatureReachedInput" Datatype="Bool" />
+            <Member Name="PressureTol" Datatype="Real" />
+            <Member Name="VacuumTol" Datatype="Real" />
+            <Member Name="InflightQuantity" Datatype="Real" />
+            <Member Name="VesselEmptyWeight" Datatype="Real" />
+            <Member Name="DelaytoEmptyLine" Datatype="Int" />
+            <Member Name="DelaytoReleaseTransferVesselPressure" Datatype="Int" />
+            <Member Name="DelaytoReleasePressure" Datatype="Int" />
+            <Member Name="DelaytoStartPump" Datatype="Int" />
+            <Member Name="DelaytoOpenGasIn" Datatype="Int" />
+          </Section>
+          <Section Name="Output">
+            <Member Name="AirValve" Datatype="Bool" />
+            <Member Name="N2Valve" Datatype="Bool" />
+            <Member Name="VacuumInValve" Datatype="Bool" />
+            <Member Name="VacuumLineValves" Datatype="Bool" />
+            <Member Name="LineValves" Datatype="Bool" />
+            <Member Name="SuctionInValve" Datatype="Bool" />
+            <Member Name="VesselOutletValve" Datatype="Bool" />
+            <Member Name="RecirculationLineValves" Datatype="Bool" />
+            <Member Name="FMInValve" Datatype="Bool" />
+            <Member Name="PumpCmd" Datatype="Bool" />
+            <Member Name="VacuumPumpCmd" Datatype="Bool" />
+            <Member Name="StartConfirmationPopup" Datatype="Bool" />
+            <Member Name="EndConfirmationPopup" Datatype="Bool" />
+            <Member Name="ActualSpeed" Datatype="Real" />
+            <Member Name="PrintTrigger" Datatype="Bool" />
+            <Member Name="PrintWord" Datatype="Int" />
+            <Member Name="PrintStatus" Datatype="String[50]" />
+          </Section>
+          <Section Name="InOut">
+            <Member Name="Start" Datatype="Bool" />
+            <Member Name="Stop" Datatype="Bool" />
+            <Member Name="Reset" Datatype="Bool" />
+            <Member Name="StartConfirmationAck" Datatype="Bool" />
+            <Member Name="EndConfirmationAck" Datatype="Bool" />
+            <Member Name="SpareBtn1" Datatype="Bool" />
+            <Member Name="SpareBtn2" Datatype="Bool" />
+            <Member Name="SpareBtn3" Datatype="Bool" />
+            <Member Name="Running" Datatype="Bool" />
+            <Member Name="Selected" Datatype="Bool" Remanence="Retain" />
+            <Member Name="Paused" Datatype="Bool" />
+            <Member Name="StartConfirmationPopupTemp" Datatype="Bool" Remanence="Retain" />
+            <Member Name="EndConfirmationPopupTemp" Datatype="Bool" Remanence="Retain" />
+            <Member Name="Started" Datatype="Bool" Remanence="Retain" />
+            <Member Name="Over" Datatype="Bool" />
+            <Member Name="PumpBasedSelected" Datatype="Bool" />
+            <Member Name="PressureBasedSelected" Datatype="Bool" />
+            <Member Name="VacuumBasedSelected" Datatype="Bool" />
+            <Member Name="StartDelaytoEmptyLine" Datatype="Bool" />
+            <Member Name="StartDelaytoReleasePressure" Datatype="Bool" />
+            <Member Name="SecondPopup" Datatype="Bool" />
+            <Member Name="SecondPopupAck" Datatype="Bool" />
+            <Member Name="PressureTolNeg" Datatype="Real" />
+            <Member Name="VacuumTolNeg" Datatype="Real" />
+            <Member Name="ActualSetQuantityCalc" Datatype="Real" />
+            <Member Name="ActualSetQuantity" Datatype="Real" />
+          </Section>
+          <Section Name="Static">
+            <Member Name="ValveOnDelayPV" Datatype="Int" />
+            <Member Name="ValveOffDelayPV" Datatype="Int" />
+            <Member Name="PrintTriggerTemp" Datatype="Bool" />
+            <Member Name="RE1" Datatype="Bool" />
+            <Member Name="RE2" Datatype="Bool" />
+            <Member Name="RE3" Datatype="Bool" />
+            <Member Name="RE4" Datatype="Bool" />
+            <Member Name="RE5" Datatype="Bool" />
+            <Member Name="RE6" Datatype="Bool" />
+            <Member Name="RE7" Datatype="Bool" />
+            <Member Name="PrintTriggerResetTimer" Datatype="TON_TIME" Version="1.0">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="BtnResetTimer" Datatype="TON_TIME" Version="1.0">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="TransferVesselPressureCheckDelay" Datatype="&quot;FB103&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="PressureReleaseDelay" Datatype="&quot;FB103&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="EmptyLineDelay" Datatype="&quot;FB103&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="PumpOnDelayPv" Datatype="Int">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+          </Section>
+        </Sections>
+      </Interface>
+      <Name>ProductTransfer</Name>
+      <Namespace />
+      <Number>310</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.InstanceDB>
+</Document>

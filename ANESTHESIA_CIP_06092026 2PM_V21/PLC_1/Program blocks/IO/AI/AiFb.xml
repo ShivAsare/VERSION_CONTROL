@@ -1,0 +1,3295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V21" />
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="Input" />
+          <Section Name="Output" />
+          <Section Name="InOut" />
+          <Section Name="Static">
+            <Member Name="Ai01" Datatype="&quot;FB:Analog_Scaling&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+              <Comment>
+                <MultiLanguageText Lang="en-US">NfcoLineTemp(Ticr01)</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Ai02" Datatype="&quot;FB:Analog_Scaling&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+              <Comment>
+                <MultiLanguageText Lang="en-US">VfcoLineTemp(Ticr02)</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Ai03" Datatype="&quot;FB:Analog_Scaling&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+              <Comment>
+                <MultiLanguageText Lang="en-US">AiSpare01</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Ai04" Datatype="&quot;FB:Analog_Scaling&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+              <Comment>
+                <MultiLanguageText Lang="en-US">AiSpare02</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Ai05" Datatype="&quot;FB:Analog_Scaling&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+              <Comment>
+                <MultiLanguageText Lang="en-US">AiSpare03</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Ai06" Datatype="&quot;FB:Analog_Scaling&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+              <Comment>
+                <MultiLanguageText Lang="en-US">Pf01InLineTemp(Ticr06)</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Ai07" Datatype="&quot;FB:Analog_Scaling&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+              <Comment>
+                <MultiLanguageText Lang="en-US">Pf02InLineTemp(Ticr07)</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Ai08" Datatype="&quot;FB:Analog_Scaling&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+              <Comment>
+                <MultiLanguageText Lang="en-US">Pf02OutLineTemp(Ticr08)</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Ai09" Datatype="&quot;FB:Analog_Scaling&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+              <Comment>
+                <MultiLanguageText Lang="en-US">PtlDrainTemp(Ticr09)</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Ai10" Datatype="&quot;FB:Analog_Scaling&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+              <Comment>
+                <MultiLanguageText Lang="en-US">VesselTemp(Ticr10)</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Ai11" Datatype="&quot;FB:Analog_Scaling&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+              <Comment>
+                <MultiLanguageText Lang="en-US">VesselPressure(Picr01)</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Ai12" Datatype="&quot;FB:Analog_Scaling&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+              <Comment>
+                <MultiLanguageText Lang="en-US">VesselRclLine(Picr02)</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Ai13" Datatype="&quot;FB:Analog_Scaling&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+              <Comment>
+                <MultiLanguageText Lang="en-US">Pf01OutLinePressure(Picr03)</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Ai14" Datatype="&quot;FB:Analog_Scaling&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+              <Comment>
+                <MultiLanguageText Lang="en-US">Pf02OutLinePressure(Picr04)</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Ai15" Datatype="&quot;FB:Analog_Scaling&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+              <Comment>
+                <MultiLanguageText Lang="en-US">ProcessDrainConductivity</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Ai16" Datatype="&quot;FB:Analog_Scaling&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+              <Comment>
+                <MultiLanguageText Lang="en-US">AiSpare04</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Ai17" Datatype="&quot;FB:Analog_Scaling&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+              <Comment>
+                <MultiLanguageText Lang="en-US">AiSpare05</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Ai18" Datatype="&quot;FB:Analog_Scaling&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+              <Comment>
+                <MultiLanguageText Lang="en-US">AiSpare06</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Ai19" Datatype="&quot;FB:Analog_Scaling&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+              <Comment>
+                <MultiLanguageText Lang="en-US">AiSpare07</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Ai20" Datatype="&quot;FB:Analog_Scaling&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+              <Comment>
+                <MultiLanguageText Lang="en-US">AiSpare08</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Ai21" Datatype="&quot;FB:Analog_Scaling&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+              <Comment>
+                <MultiLanguageText Lang="en-US">AiSpare09</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Ai22" Datatype="&quot;FB:Analog_Scaling&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+              <Comment>
+                <MultiLanguageText Lang="en-US">AiSpare10</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Ai23" Datatype="&quot;FB:Analog_Scaling&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+              <Comment>
+                <MultiLanguageText Lang="en-US">AiSpare11</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Ai24" Datatype="&quot;FB:Analog_Scaling&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+              <Comment>
+                <MultiLanguageText Lang="en-US">AiSpare12</MultiLanguageText>
+              </Comment>
+            </Member>
+          </Section>
+          <Section Name="Temp" />
+          <Section Name="Constant" />
+        </Sections>
+      </Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>AiFb</Name>
+      <Namespace />
+      <Number>108</Number>
+      <ProgrammingLanguage>LAD</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="3" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Call UId="21">
+                  <CallInfo Name="FB:Analog_Scaling" BlockType="FB">
+                    <Instance Scope="LocalVariable" UId="22">
+                      <Component Name="Ai01" />
+                    </Instance>
+                    <Parameter Name="AnalogInputIw" Section="Input" Type="Int" />
+                    <Parameter Name="AlmHighLimit" Section="Input" Type="Real" />
+                    <Parameter Name="AlmLowlimit" Section="Input" Type="Real" />
+                    <Parameter Name="Correction" Section="Input" Type="Real" />
+                    <Parameter Name="SimValue" Section="Input" Type="Real" />
+                    <Parameter Name="SimBit" Section="Input" Type="Bool" />
+                    <Parameter Name="HighRange" Section="Input" Type="Real" />
+                    <Parameter Name="LowRange" Section="Input" Type="Real" />
+                    <Parameter Name="Tol" Section="Input" Type="Real" />
+                    <Parameter Name="ActValue" Section="Output" Type="Real" />
+                    <Parameter Name="WireBreakStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="LowAlarmStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="HighAlarmStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="LoTol" Section="Output" Type="Real" />
+                    <Parameter Name="HighTol" Section="Output" Type="Real" />
+                    <Parameter Name="4To20mA" Section="Output" Type="Real" />
+                  </CallInfo>
+                </Call>
+              </Parts>
+              <Wires>
+                <Wire UId="39">
+                  <Powerrail />
+                  <NameCon UId="21" Name="en" />
+                </Wire>
+                <Wire UId="40">
+                  <OpenCon UId="23" />
+                  <NameCon UId="21" Name="AnalogInputIw" />
+                </Wire>
+                <Wire UId="41">
+                  <OpenCon UId="24" />
+                  <NameCon UId="21" Name="AlmHighLimit" />
+                </Wire>
+                <Wire UId="42">
+                  <OpenCon UId="25" />
+                  <NameCon UId="21" Name="AlmLowlimit" />
+                </Wire>
+                <Wire UId="43">
+                  <OpenCon UId="26" />
+                  <NameCon UId="21" Name="Correction" />
+                </Wire>
+                <Wire UId="44">
+                  <OpenCon UId="27" />
+                  <NameCon UId="21" Name="SimValue" />
+                </Wire>
+                <Wire UId="45">
+                  <OpenCon UId="28" />
+                  <NameCon UId="21" Name="SimBit" />
+                </Wire>
+                <Wire UId="46">
+                  <OpenCon UId="29" />
+                  <NameCon UId="21" Name="HighRange" />
+                </Wire>
+                <Wire UId="47">
+                  <OpenCon UId="30" />
+                  <NameCon UId="21" Name="LowRange" />
+                </Wire>
+                <Wire UId="48">
+                  <OpenCon UId="31" />
+                  <NameCon UId="21" Name="Tol" />
+                </Wire>
+                <Wire UId="49">
+                  <NameCon UId="21" Name="ActValue" />
+                  <OpenCon UId="32" />
+                </Wire>
+                <Wire UId="50">
+                  <NameCon UId="21" Name="WireBreakStatus" />
+                  <OpenCon UId="33" />
+                </Wire>
+                <Wire UId="51">
+                  <NameCon UId="21" Name="LowAlarmStatus" />
+                  <OpenCon UId="34" />
+                </Wire>
+                <Wire UId="52">
+                  <NameCon UId="21" Name="HighAlarmStatus" />
+                  <OpenCon UId="35" />
+                </Wire>
+                <Wire UId="53">
+                  <NameCon UId="21" Name="LoTol" />
+                  <OpenCon UId="36" />
+                </Wire>
+                <Wire UId="54">
+                  <NameCon UId="21" Name="HighTol" />
+                  <OpenCon UId="37" />
+                </Wire>
+                <Wire UId="55">
+                  <NameCon UId="21" Name="4To20mA" />
+                  <OpenCon UId="38" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="5" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="6" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>#Ai01--- NfcoLineTemp</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="8" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Call UId="21">
+                  <CallInfo Name="FB:Analog_Scaling" BlockType="FB">
+                    <Instance Scope="LocalVariable" UId="22">
+                      <Component Name="Ai02" />
+                    </Instance>
+                    <Parameter Name="AnalogInputIw" Section="Input" Type="Int" />
+                    <Parameter Name="AlmHighLimit" Section="Input" Type="Real" />
+                    <Parameter Name="AlmLowlimit" Section="Input" Type="Real" />
+                    <Parameter Name="Correction" Section="Input" Type="Real" />
+                    <Parameter Name="SimValue" Section="Input" Type="Real" />
+                    <Parameter Name="SimBit" Section="Input" Type="Bool" />
+                    <Parameter Name="HighRange" Section="Input" Type="Real" />
+                    <Parameter Name="LowRange" Section="Input" Type="Real" />
+                    <Parameter Name="Tol" Section="Input" Type="Real" />
+                    <Parameter Name="ActValue" Section="Output" Type="Real" />
+                    <Parameter Name="WireBreakStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="LowAlarmStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="HighAlarmStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="LoTol" Section="Output" Type="Real" />
+                    <Parameter Name="HighTol" Section="Output" Type="Real" />
+                    <Parameter Name="4To20mA" Section="Output" Type="Real" />
+                  </CallInfo>
+                </Call>
+              </Parts>
+              <Wires>
+                <Wire UId="39">
+                  <Powerrail />
+                  <NameCon UId="21" Name="en" />
+                </Wire>
+                <Wire UId="40">
+                  <OpenCon UId="23" />
+                  <NameCon UId="21" Name="AnalogInputIw" />
+                </Wire>
+                <Wire UId="41">
+                  <OpenCon UId="24" />
+                  <NameCon UId="21" Name="AlmHighLimit" />
+                </Wire>
+                <Wire UId="42">
+                  <OpenCon UId="25" />
+                  <NameCon UId="21" Name="AlmLowlimit" />
+                </Wire>
+                <Wire UId="43">
+                  <OpenCon UId="26" />
+                  <NameCon UId="21" Name="Correction" />
+                </Wire>
+                <Wire UId="44">
+                  <OpenCon UId="27" />
+                  <NameCon UId="21" Name="SimValue" />
+                </Wire>
+                <Wire UId="45">
+                  <OpenCon UId="28" />
+                  <NameCon UId="21" Name="SimBit" />
+                </Wire>
+                <Wire UId="46">
+                  <OpenCon UId="29" />
+                  <NameCon UId="21" Name="HighRange" />
+                </Wire>
+                <Wire UId="47">
+                  <OpenCon UId="30" />
+                  <NameCon UId="21" Name="LowRange" />
+                </Wire>
+                <Wire UId="48">
+                  <OpenCon UId="31" />
+                  <NameCon UId="21" Name="Tol" />
+                </Wire>
+                <Wire UId="49">
+                  <NameCon UId="21" Name="ActValue" />
+                  <OpenCon UId="32" />
+                </Wire>
+                <Wire UId="50">
+                  <NameCon UId="21" Name="WireBreakStatus" />
+                  <OpenCon UId="33" />
+                </Wire>
+                <Wire UId="51">
+                  <NameCon UId="21" Name="LowAlarmStatus" />
+                  <OpenCon UId="34" />
+                </Wire>
+                <Wire UId="52">
+                  <NameCon UId="21" Name="HighAlarmStatus" />
+                  <OpenCon UId="35" />
+                </Wire>
+                <Wire UId="53">
+                  <NameCon UId="21" Name="LoTol" />
+                  <OpenCon UId="36" />
+                </Wire>
+                <Wire UId="54">
+                  <NameCon UId="21" Name="HighTol" />
+                  <OpenCon UId="37" />
+                </Wire>
+                <Wire UId="55">
+                  <NameCon UId="21" Name="4To20mA" />
+                  <OpenCon UId="38" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="9" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="B" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>#Ai02 -- VfcoLineTemp</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="D" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Call UId="21">
+                  <CallInfo Name="FB:Analog_Scaling" BlockType="FB">
+                    <Instance Scope="LocalVariable" UId="22">
+                      <Component Name="Ai03" />
+                    </Instance>
+                    <Parameter Name="AnalogInputIw" Section="Input" Type="Int" />
+                    <Parameter Name="AlmHighLimit" Section="Input" Type="Real" />
+                    <Parameter Name="AlmLowlimit" Section="Input" Type="Real" />
+                    <Parameter Name="Correction" Section="Input" Type="Real" />
+                    <Parameter Name="SimValue" Section="Input" Type="Real" />
+                    <Parameter Name="SimBit" Section="Input" Type="Bool" />
+                    <Parameter Name="HighRange" Section="Input" Type="Real" />
+                    <Parameter Name="LowRange" Section="Input" Type="Real" />
+                    <Parameter Name="Tol" Section="Input" Type="Real" />
+                    <Parameter Name="ActValue" Section="Output" Type="Real" />
+                    <Parameter Name="WireBreakStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="LowAlarmStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="HighAlarmStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="LoTol" Section="Output" Type="Real" />
+                    <Parameter Name="HighTol" Section="Output" Type="Real" />
+                    <Parameter Name="4To20mA" Section="Output" Type="Real" />
+                  </CallInfo>
+                </Call>
+              </Parts>
+              <Wires>
+                <Wire UId="39">
+                  <Powerrail />
+                  <NameCon UId="21" Name="en" />
+                </Wire>
+                <Wire UId="40">
+                  <OpenCon UId="23" />
+                  <NameCon UId="21" Name="AnalogInputIw" />
+                </Wire>
+                <Wire UId="41">
+                  <OpenCon UId="24" />
+                  <NameCon UId="21" Name="AlmHighLimit" />
+                </Wire>
+                <Wire UId="42">
+                  <OpenCon UId="25" />
+                  <NameCon UId="21" Name="AlmLowlimit" />
+                </Wire>
+                <Wire UId="43">
+                  <OpenCon UId="26" />
+                  <NameCon UId="21" Name="Correction" />
+                </Wire>
+                <Wire UId="44">
+                  <OpenCon UId="27" />
+                  <NameCon UId="21" Name="SimValue" />
+                </Wire>
+                <Wire UId="45">
+                  <OpenCon UId="28" />
+                  <NameCon UId="21" Name="SimBit" />
+                </Wire>
+                <Wire UId="46">
+                  <OpenCon UId="29" />
+                  <NameCon UId="21" Name="HighRange" />
+                </Wire>
+                <Wire UId="47">
+                  <OpenCon UId="30" />
+                  <NameCon UId="21" Name="LowRange" />
+                </Wire>
+                <Wire UId="48">
+                  <OpenCon UId="31" />
+                  <NameCon UId="21" Name="Tol" />
+                </Wire>
+                <Wire UId="49">
+                  <NameCon UId="21" Name="ActValue" />
+                  <OpenCon UId="32" />
+                </Wire>
+                <Wire UId="50">
+                  <NameCon UId="21" Name="WireBreakStatus" />
+                  <OpenCon UId="33" />
+                </Wire>
+                <Wire UId="51">
+                  <NameCon UId="21" Name="LowAlarmStatus" />
+                  <OpenCon UId="34" />
+                </Wire>
+                <Wire UId="52">
+                  <NameCon UId="21" Name="HighAlarmStatus" />
+                  <OpenCon UId="35" />
+                </Wire>
+                <Wire UId="53">
+                  <NameCon UId="21" Name="LoTol" />
+                  <OpenCon UId="36" />
+                </Wire>
+                <Wire UId="54">
+                  <NameCon UId="21" Name="HighTol" />
+                  <OpenCon UId="37" />
+                </Wire>
+                <Wire UId="55">
+                  <NameCon UId="21" Name="4To20mA" />
+                  <OpenCon UId="38" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="E" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="10" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="11" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>#Ai03 Ai Spare 01</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="12" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Call UId="21">
+                  <CallInfo Name="FB:Analog_Scaling" BlockType="FB">
+                    <Instance Scope="LocalVariable" UId="22">
+                      <Component Name="Ai04" />
+                    </Instance>
+                    <Parameter Name="AnalogInputIw" Section="Input" Type="Int" />
+                    <Parameter Name="AlmHighLimit" Section="Input" Type="Real" />
+                    <Parameter Name="AlmLowlimit" Section="Input" Type="Real" />
+                    <Parameter Name="Correction" Section="Input" Type="Real" />
+                    <Parameter Name="SimValue" Section="Input" Type="Real" />
+                    <Parameter Name="SimBit" Section="Input" Type="Bool" />
+                    <Parameter Name="HighRange" Section="Input" Type="Real" />
+                    <Parameter Name="LowRange" Section="Input" Type="Real" />
+                    <Parameter Name="Tol" Section="Input" Type="Real" />
+                    <Parameter Name="ActValue" Section="Output" Type="Real" />
+                    <Parameter Name="WireBreakStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="LowAlarmStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="HighAlarmStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="LoTol" Section="Output" Type="Real" />
+                    <Parameter Name="HighTol" Section="Output" Type="Real" />
+                    <Parameter Name="4To20mA" Section="Output" Type="Real" />
+                  </CallInfo>
+                </Call>
+              </Parts>
+              <Wires>
+                <Wire UId="39">
+                  <Powerrail />
+                  <NameCon UId="21" Name="en" />
+                </Wire>
+                <Wire UId="40">
+                  <OpenCon UId="23" />
+                  <NameCon UId="21" Name="AnalogInputIw" />
+                </Wire>
+                <Wire UId="41">
+                  <OpenCon UId="24" />
+                  <NameCon UId="21" Name="AlmHighLimit" />
+                </Wire>
+                <Wire UId="42">
+                  <OpenCon UId="25" />
+                  <NameCon UId="21" Name="AlmLowlimit" />
+                </Wire>
+                <Wire UId="43">
+                  <OpenCon UId="26" />
+                  <NameCon UId="21" Name="Correction" />
+                </Wire>
+                <Wire UId="44">
+                  <OpenCon UId="27" />
+                  <NameCon UId="21" Name="SimValue" />
+                </Wire>
+                <Wire UId="45">
+                  <OpenCon UId="28" />
+                  <NameCon UId="21" Name="SimBit" />
+                </Wire>
+                <Wire UId="46">
+                  <OpenCon UId="29" />
+                  <NameCon UId="21" Name="HighRange" />
+                </Wire>
+                <Wire UId="47">
+                  <OpenCon UId="30" />
+                  <NameCon UId="21" Name="LowRange" />
+                </Wire>
+                <Wire UId="48">
+                  <OpenCon UId="31" />
+                  <NameCon UId="21" Name="Tol" />
+                </Wire>
+                <Wire UId="49">
+                  <NameCon UId="21" Name="ActValue" />
+                  <OpenCon UId="32" />
+                </Wire>
+                <Wire UId="50">
+                  <NameCon UId="21" Name="WireBreakStatus" />
+                  <OpenCon UId="33" />
+                </Wire>
+                <Wire UId="51">
+                  <NameCon UId="21" Name="LowAlarmStatus" />
+                  <OpenCon UId="34" />
+                </Wire>
+                <Wire UId="52">
+                  <NameCon UId="21" Name="HighAlarmStatus" />
+                  <OpenCon UId="35" />
+                </Wire>
+                <Wire UId="53">
+                  <NameCon UId="21" Name="LoTol" />
+                  <OpenCon UId="36" />
+                </Wire>
+                <Wire UId="54">
+                  <NameCon UId="21" Name="HighTol" />
+                  <OpenCon UId="37" />
+                </Wire>
+                <Wire UId="55">
+                  <NameCon UId="21" Name="4To20mA" />
+                  <OpenCon UId="38" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="13" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="14" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="15" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="16" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>#Ai04_ AI Spare 02</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="17" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Call UId="21">
+                  <CallInfo Name="FB:Analog_Scaling" BlockType="FB">
+                    <Instance Scope="LocalVariable" UId="22">
+                      <Component Name="Ai05" />
+                    </Instance>
+                    <Parameter Name="AnalogInputIw" Section="Input" Type="Int" />
+                    <Parameter Name="AlmHighLimit" Section="Input" Type="Real" />
+                    <Parameter Name="AlmLowlimit" Section="Input" Type="Real" />
+                    <Parameter Name="Correction" Section="Input" Type="Real" />
+                    <Parameter Name="SimValue" Section="Input" Type="Real" />
+                    <Parameter Name="SimBit" Section="Input" Type="Bool" />
+                    <Parameter Name="HighRange" Section="Input" Type="Real" />
+                    <Parameter Name="LowRange" Section="Input" Type="Real" />
+                    <Parameter Name="Tol" Section="Input" Type="Real" />
+                    <Parameter Name="ActValue" Section="Output" Type="Real" />
+                    <Parameter Name="WireBreakStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="LowAlarmStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="HighAlarmStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="LoTol" Section="Output" Type="Real" />
+                    <Parameter Name="HighTol" Section="Output" Type="Real" />
+                    <Parameter Name="4To20mA" Section="Output" Type="Real" />
+                  </CallInfo>
+                </Call>
+              </Parts>
+              <Wires>
+                <Wire UId="39">
+                  <Powerrail />
+                  <NameCon UId="21" Name="en" />
+                </Wire>
+                <Wire UId="40">
+                  <OpenCon UId="23" />
+                  <NameCon UId="21" Name="AnalogInputIw" />
+                </Wire>
+                <Wire UId="41">
+                  <OpenCon UId="24" />
+                  <NameCon UId="21" Name="AlmHighLimit" />
+                </Wire>
+                <Wire UId="42">
+                  <OpenCon UId="25" />
+                  <NameCon UId="21" Name="AlmLowlimit" />
+                </Wire>
+                <Wire UId="43">
+                  <OpenCon UId="26" />
+                  <NameCon UId="21" Name="Correction" />
+                </Wire>
+                <Wire UId="44">
+                  <OpenCon UId="27" />
+                  <NameCon UId="21" Name="SimValue" />
+                </Wire>
+                <Wire UId="45">
+                  <OpenCon UId="28" />
+                  <NameCon UId="21" Name="SimBit" />
+                </Wire>
+                <Wire UId="46">
+                  <OpenCon UId="29" />
+                  <NameCon UId="21" Name="HighRange" />
+                </Wire>
+                <Wire UId="47">
+                  <OpenCon UId="30" />
+                  <NameCon UId="21" Name="LowRange" />
+                </Wire>
+                <Wire UId="48">
+                  <OpenCon UId="31" />
+                  <NameCon UId="21" Name="Tol" />
+                </Wire>
+                <Wire UId="49">
+                  <NameCon UId="21" Name="ActValue" />
+                  <OpenCon UId="32" />
+                </Wire>
+                <Wire UId="50">
+                  <NameCon UId="21" Name="WireBreakStatus" />
+                  <OpenCon UId="33" />
+                </Wire>
+                <Wire UId="51">
+                  <NameCon UId="21" Name="LowAlarmStatus" />
+                  <OpenCon UId="34" />
+                </Wire>
+                <Wire UId="52">
+                  <NameCon UId="21" Name="HighAlarmStatus" />
+                  <OpenCon UId="35" />
+                </Wire>
+                <Wire UId="53">
+                  <NameCon UId="21" Name="LoTol" />
+                  <OpenCon UId="36" />
+                </Wire>
+                <Wire UId="54">
+                  <NameCon UId="21" Name="HighTol" />
+                  <OpenCon UId="37" />
+                </Wire>
+                <Wire UId="55">
+                  <NameCon UId="21" Name="4To20mA" />
+                  <OpenCon UId="38" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="18" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="19" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="1A" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="1B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>#Ai05--- #Ai04_ AI Spare 03</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="1C" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Call UId="21">
+                  <CallInfo Name="FB:Analog_Scaling" BlockType="FB">
+                    <Instance Scope="LocalVariable" UId="22">
+                      <Component Name="Ai06" />
+                    </Instance>
+                    <Parameter Name="AnalogInputIw" Section="Input" Type="Int" />
+                    <Parameter Name="AlmHighLimit" Section="Input" Type="Real" />
+                    <Parameter Name="AlmLowlimit" Section="Input" Type="Real" />
+                    <Parameter Name="Correction" Section="Input" Type="Real" />
+                    <Parameter Name="SimValue" Section="Input" Type="Real" />
+                    <Parameter Name="SimBit" Section="Input" Type="Bool" />
+                    <Parameter Name="HighRange" Section="Input" Type="Real" />
+                    <Parameter Name="LowRange" Section="Input" Type="Real" />
+                    <Parameter Name="Tol" Section="Input" Type="Real" />
+                    <Parameter Name="ActValue" Section="Output" Type="Real" />
+                    <Parameter Name="WireBreakStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="LowAlarmStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="HighAlarmStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="LoTol" Section="Output" Type="Real" />
+                    <Parameter Name="HighTol" Section="Output" Type="Real" />
+                    <Parameter Name="4To20mA" Section="Output" Type="Real" />
+                  </CallInfo>
+                </Call>
+              </Parts>
+              <Wires>
+                <Wire UId="39">
+                  <Powerrail />
+                  <NameCon UId="21" Name="en" />
+                </Wire>
+                <Wire UId="40">
+                  <OpenCon UId="23" />
+                  <NameCon UId="21" Name="AnalogInputIw" />
+                </Wire>
+                <Wire UId="41">
+                  <OpenCon UId="24" />
+                  <NameCon UId="21" Name="AlmHighLimit" />
+                </Wire>
+                <Wire UId="42">
+                  <OpenCon UId="25" />
+                  <NameCon UId="21" Name="AlmLowlimit" />
+                </Wire>
+                <Wire UId="43">
+                  <OpenCon UId="26" />
+                  <NameCon UId="21" Name="Correction" />
+                </Wire>
+                <Wire UId="44">
+                  <OpenCon UId="27" />
+                  <NameCon UId="21" Name="SimValue" />
+                </Wire>
+                <Wire UId="45">
+                  <OpenCon UId="28" />
+                  <NameCon UId="21" Name="SimBit" />
+                </Wire>
+                <Wire UId="46">
+                  <OpenCon UId="29" />
+                  <NameCon UId="21" Name="HighRange" />
+                </Wire>
+                <Wire UId="47">
+                  <OpenCon UId="30" />
+                  <NameCon UId="21" Name="LowRange" />
+                </Wire>
+                <Wire UId="48">
+                  <OpenCon UId="31" />
+                  <NameCon UId="21" Name="Tol" />
+                </Wire>
+                <Wire UId="49">
+                  <NameCon UId="21" Name="ActValue" />
+                  <OpenCon UId="32" />
+                </Wire>
+                <Wire UId="50">
+                  <NameCon UId="21" Name="WireBreakStatus" />
+                  <OpenCon UId="33" />
+                </Wire>
+                <Wire UId="51">
+                  <NameCon UId="21" Name="LowAlarmStatus" />
+                  <OpenCon UId="34" />
+                </Wire>
+                <Wire UId="52">
+                  <NameCon UId="21" Name="HighAlarmStatus" />
+                  <OpenCon UId="35" />
+                </Wire>
+                <Wire UId="53">
+                  <NameCon UId="21" Name="LoTol" />
+                  <OpenCon UId="36" />
+                </Wire>
+                <Wire UId="54">
+                  <NameCon UId="21" Name="HighTol" />
+                  <OpenCon UId="37" />
+                </Wire>
+                <Wire UId="55">
+                  <NameCon UId="21" Name="4To20mA" />
+                  <OpenCon UId="38" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="1D" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="1E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="1F" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="20" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>#Ai06--- Pf01InLineTemp</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="21" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Call UId="21">
+                  <CallInfo Name="FB:Analog_Scaling" BlockType="FB">
+                    <Instance Scope="LocalVariable" UId="22">
+                      <Component Name="Ai07" />
+                    </Instance>
+                    <Parameter Name="AnalogInputIw" Section="Input" Type="Int" />
+                    <Parameter Name="AlmHighLimit" Section="Input" Type="Real" />
+                    <Parameter Name="AlmLowlimit" Section="Input" Type="Real" />
+                    <Parameter Name="Correction" Section="Input" Type="Real" />
+                    <Parameter Name="SimValue" Section="Input" Type="Real" />
+                    <Parameter Name="SimBit" Section="Input" Type="Bool" />
+                    <Parameter Name="HighRange" Section="Input" Type="Real" />
+                    <Parameter Name="LowRange" Section="Input" Type="Real" />
+                    <Parameter Name="Tol" Section="Input" Type="Real" />
+                    <Parameter Name="ActValue" Section="Output" Type="Real" />
+                    <Parameter Name="WireBreakStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="LowAlarmStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="HighAlarmStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="LoTol" Section="Output" Type="Real" />
+                    <Parameter Name="HighTol" Section="Output" Type="Real" />
+                    <Parameter Name="4To20mA" Section="Output" Type="Real" />
+                  </CallInfo>
+                </Call>
+              </Parts>
+              <Wires>
+                <Wire UId="39">
+                  <Powerrail />
+                  <NameCon UId="21" Name="en" />
+                </Wire>
+                <Wire UId="40">
+                  <OpenCon UId="23" />
+                  <NameCon UId="21" Name="AnalogInputIw" />
+                </Wire>
+                <Wire UId="41">
+                  <OpenCon UId="24" />
+                  <NameCon UId="21" Name="AlmHighLimit" />
+                </Wire>
+                <Wire UId="42">
+                  <OpenCon UId="25" />
+                  <NameCon UId="21" Name="AlmLowlimit" />
+                </Wire>
+                <Wire UId="43">
+                  <OpenCon UId="26" />
+                  <NameCon UId="21" Name="Correction" />
+                </Wire>
+                <Wire UId="44">
+                  <OpenCon UId="27" />
+                  <NameCon UId="21" Name="SimValue" />
+                </Wire>
+                <Wire UId="45">
+                  <OpenCon UId="28" />
+                  <NameCon UId="21" Name="SimBit" />
+                </Wire>
+                <Wire UId="46">
+                  <OpenCon UId="29" />
+                  <NameCon UId="21" Name="HighRange" />
+                </Wire>
+                <Wire UId="47">
+                  <OpenCon UId="30" />
+                  <NameCon UId="21" Name="LowRange" />
+                </Wire>
+                <Wire UId="48">
+                  <OpenCon UId="31" />
+                  <NameCon UId="21" Name="Tol" />
+                </Wire>
+                <Wire UId="49">
+                  <NameCon UId="21" Name="ActValue" />
+                  <OpenCon UId="32" />
+                </Wire>
+                <Wire UId="50">
+                  <NameCon UId="21" Name="WireBreakStatus" />
+                  <OpenCon UId="33" />
+                </Wire>
+                <Wire UId="51">
+                  <NameCon UId="21" Name="LowAlarmStatus" />
+                  <OpenCon UId="34" />
+                </Wire>
+                <Wire UId="52">
+                  <NameCon UId="21" Name="HighAlarmStatus" />
+                  <OpenCon UId="35" />
+                </Wire>
+                <Wire UId="53">
+                  <NameCon UId="21" Name="LoTol" />
+                  <OpenCon UId="36" />
+                </Wire>
+                <Wire UId="54">
+                  <NameCon UId="21" Name="HighTol" />
+                  <OpenCon UId="37" />
+                </Wire>
+                <Wire UId="55">
+                  <NameCon UId="21" Name="4To20mA" />
+                  <OpenCon UId="38" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="22" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="23" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="24" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="25" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>#Ai07--- Pf02InLineTemp</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="26" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Call UId="21">
+                  <CallInfo Name="FB:Analog_Scaling" BlockType="FB">
+                    <Instance Scope="LocalVariable" UId="22">
+                      <Component Name="Ai08" />
+                    </Instance>
+                    <Parameter Name="AnalogInputIw" Section="Input" Type="Int" />
+                    <Parameter Name="AlmHighLimit" Section="Input" Type="Real" />
+                    <Parameter Name="AlmLowlimit" Section="Input" Type="Real" />
+                    <Parameter Name="Correction" Section="Input" Type="Real" />
+                    <Parameter Name="SimValue" Section="Input" Type="Real" />
+                    <Parameter Name="SimBit" Section="Input" Type="Bool" />
+                    <Parameter Name="HighRange" Section="Input" Type="Real" />
+                    <Parameter Name="LowRange" Section="Input" Type="Real" />
+                    <Parameter Name="Tol" Section="Input" Type="Real" />
+                    <Parameter Name="ActValue" Section="Output" Type="Real" />
+                    <Parameter Name="WireBreakStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="LowAlarmStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="HighAlarmStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="LoTol" Section="Output" Type="Real" />
+                    <Parameter Name="HighTol" Section="Output" Type="Real" />
+                    <Parameter Name="4To20mA" Section="Output" Type="Real" />
+                  </CallInfo>
+                </Call>
+              </Parts>
+              <Wires>
+                <Wire UId="39">
+                  <Powerrail />
+                  <NameCon UId="21" Name="en" />
+                </Wire>
+                <Wire UId="40">
+                  <OpenCon UId="23" />
+                  <NameCon UId="21" Name="AnalogInputIw" />
+                </Wire>
+                <Wire UId="41">
+                  <OpenCon UId="24" />
+                  <NameCon UId="21" Name="AlmHighLimit" />
+                </Wire>
+                <Wire UId="42">
+                  <OpenCon UId="25" />
+                  <NameCon UId="21" Name="AlmLowlimit" />
+                </Wire>
+                <Wire UId="43">
+                  <OpenCon UId="26" />
+                  <NameCon UId="21" Name="Correction" />
+                </Wire>
+                <Wire UId="44">
+                  <OpenCon UId="27" />
+                  <NameCon UId="21" Name="SimValue" />
+                </Wire>
+                <Wire UId="45">
+                  <OpenCon UId="28" />
+                  <NameCon UId="21" Name="SimBit" />
+                </Wire>
+                <Wire UId="46">
+                  <OpenCon UId="29" />
+                  <NameCon UId="21" Name="HighRange" />
+                </Wire>
+                <Wire UId="47">
+                  <OpenCon UId="30" />
+                  <NameCon UId="21" Name="LowRange" />
+                </Wire>
+                <Wire UId="48">
+                  <OpenCon UId="31" />
+                  <NameCon UId="21" Name="Tol" />
+                </Wire>
+                <Wire UId="49">
+                  <NameCon UId="21" Name="ActValue" />
+                  <OpenCon UId="32" />
+                </Wire>
+                <Wire UId="50">
+                  <NameCon UId="21" Name="WireBreakStatus" />
+                  <OpenCon UId="33" />
+                </Wire>
+                <Wire UId="51">
+                  <NameCon UId="21" Name="LowAlarmStatus" />
+                  <OpenCon UId="34" />
+                </Wire>
+                <Wire UId="52">
+                  <NameCon UId="21" Name="HighAlarmStatus" />
+                  <OpenCon UId="35" />
+                </Wire>
+                <Wire UId="53">
+                  <NameCon UId="21" Name="LoTol" />
+                  <OpenCon UId="36" />
+                </Wire>
+                <Wire UId="54">
+                  <NameCon UId="21" Name="HighTol" />
+                  <OpenCon UId="37" />
+                </Wire>
+                <Wire UId="55">
+                  <NameCon UId="21" Name="4To20mA" />
+                  <OpenCon UId="38" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="27" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="28" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="29" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="2A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>#Ai08----- Pf02OutLineTemp</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="2B" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Part Name="Contact" UId="22" />
+                <Call UId="23">
+                  <CallInfo Name="FB:Analog_Scaling" BlockType="FB">
+                    <Instance Scope="LocalVariable" UId="24">
+                      <Component Name="Ai09" />
+                    </Instance>
+                    <Parameter Name="AnalogInputIw" Section="Input" Type="Int" />
+                    <Parameter Name="AlmHighLimit" Section="Input" Type="Real" />
+                    <Parameter Name="AlmLowlimit" Section="Input" Type="Real" />
+                    <Parameter Name="Correction" Section="Input" Type="Real" />
+                    <Parameter Name="SimValue" Section="Input" Type="Real" />
+                    <Parameter Name="SimBit" Section="Input" Type="Bool" />
+                    <Parameter Name="HighRange" Section="Input" Type="Real" />
+                    <Parameter Name="LowRange" Section="Input" Type="Real" />
+                    <Parameter Name="Tol" Section="Input" Type="Real" />
+                    <Parameter Name="ActValue" Section="Output" Type="Real" />
+                    <Parameter Name="WireBreakStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="LowAlarmStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="HighAlarmStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="LoTol" Section="Output" Type="Real" />
+                    <Parameter Name="HighTol" Section="Output" Type="Real" />
+                    <Parameter Name="4To20mA" Section="Output" Type="Real" />
+                  </CallInfo>
+                </Call>
+              </Parts>
+              <Wires>
+                <Wire UId="41">
+                  <Powerrail />
+                  <NameCon UId="22" Name="in" />
+                </Wire>
+                <Wire UId="42">
+                  <IdentCon UId="21" />
+                  <NameCon UId="22" Name="operand" />
+                </Wire>
+                <Wire UId="43">
+                  <NameCon UId="22" Name="out" />
+                  <NameCon UId="23" Name="en" />
+                </Wire>
+                <Wire UId="44">
+                  <OpenCon UId="25" />
+                  <NameCon UId="23" Name="AnalogInputIw" />
+                </Wire>
+                <Wire UId="45">
+                  <OpenCon UId="26" />
+                  <NameCon UId="23" Name="AlmHighLimit" />
+                </Wire>
+                <Wire UId="46">
+                  <OpenCon UId="27" />
+                  <NameCon UId="23" Name="AlmLowlimit" />
+                </Wire>
+                <Wire UId="47">
+                  <OpenCon UId="28" />
+                  <NameCon UId="23" Name="Correction" />
+                </Wire>
+                <Wire UId="48">
+                  <OpenCon UId="29" />
+                  <NameCon UId="23" Name="SimValue" />
+                </Wire>
+                <Wire UId="49">
+                  <OpenCon UId="30" />
+                  <NameCon UId="23" Name="SimBit" />
+                </Wire>
+                <Wire UId="50">
+                  <OpenCon UId="31" />
+                  <NameCon UId="23" Name="HighRange" />
+                </Wire>
+                <Wire UId="51">
+                  <OpenCon UId="32" />
+                  <NameCon UId="23" Name="LowRange" />
+                </Wire>
+                <Wire UId="52">
+                  <OpenCon UId="33" />
+                  <NameCon UId="23" Name="Tol" />
+                </Wire>
+                <Wire UId="53">
+                  <NameCon UId="23" Name="ActValue" />
+                  <OpenCon UId="34" />
+                </Wire>
+                <Wire UId="54">
+                  <NameCon UId="23" Name="WireBreakStatus" />
+                  <OpenCon UId="35" />
+                </Wire>
+                <Wire UId="55">
+                  <NameCon UId="23" Name="LowAlarmStatus" />
+                  <OpenCon UId="36" />
+                </Wire>
+                <Wire UId="56">
+                  <NameCon UId="23" Name="HighAlarmStatus" />
+                  <OpenCon UId="37" />
+                </Wire>
+                <Wire UId="57">
+                  <NameCon UId="23" Name="LoTol" />
+                  <OpenCon UId="38" />
+                </Wire>
+                <Wire UId="58">
+                  <NameCon UId="23" Name="HighTol" />
+                  <OpenCon UId="39" />
+                </Wire>
+                <Wire UId="59">
+                  <NameCon UId="23" Name="4To20mA" />
+                  <OpenCon UId="40" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="2C" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="2D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="2E" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="2F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>#Ai09---- PtlDrainTemp</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="30" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Call UId="21">
+                  <CallInfo Name="FB:Analog_Scaling" BlockType="FB">
+                    <Instance Scope="LocalVariable" UId="22">
+                      <Component Name="Ai10" />
+                    </Instance>
+                    <Parameter Name="AnalogInputIw" Section="Input" Type="Int" />
+                    <Parameter Name="AlmHighLimit" Section="Input" Type="Real" />
+                    <Parameter Name="AlmLowlimit" Section="Input" Type="Real" />
+                    <Parameter Name="Correction" Section="Input" Type="Real" />
+                    <Parameter Name="SimValue" Section="Input" Type="Real" />
+                    <Parameter Name="SimBit" Section="Input" Type="Bool" />
+                    <Parameter Name="HighRange" Section="Input" Type="Real" />
+                    <Parameter Name="LowRange" Section="Input" Type="Real" />
+                    <Parameter Name="Tol" Section="Input" Type="Real" />
+                    <Parameter Name="ActValue" Section="Output" Type="Real" />
+                    <Parameter Name="WireBreakStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="LowAlarmStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="HighAlarmStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="LoTol" Section="Output" Type="Real" />
+                    <Parameter Name="HighTol" Section="Output" Type="Real" />
+                    <Parameter Name="4To20mA" Section="Output" Type="Real" />
+                  </CallInfo>
+                </Call>
+              </Parts>
+              <Wires>
+                <Wire UId="39">
+                  <Powerrail />
+                  <NameCon UId="21" Name="en" />
+                </Wire>
+                <Wire UId="40">
+                  <OpenCon UId="23" />
+                  <NameCon UId="21" Name="AnalogInputIw" />
+                </Wire>
+                <Wire UId="41">
+                  <OpenCon UId="24" />
+                  <NameCon UId="21" Name="AlmHighLimit" />
+                </Wire>
+                <Wire UId="42">
+                  <OpenCon UId="25" />
+                  <NameCon UId="21" Name="AlmLowlimit" />
+                </Wire>
+                <Wire UId="43">
+                  <OpenCon UId="26" />
+                  <NameCon UId="21" Name="Correction" />
+                </Wire>
+                <Wire UId="44">
+                  <OpenCon UId="27" />
+                  <NameCon UId="21" Name="SimValue" />
+                </Wire>
+                <Wire UId="45">
+                  <OpenCon UId="28" />
+                  <NameCon UId="21" Name="SimBit" />
+                </Wire>
+                <Wire UId="46">
+                  <OpenCon UId="29" />
+                  <NameCon UId="21" Name="HighRange" />
+                </Wire>
+                <Wire UId="47">
+                  <OpenCon UId="30" />
+                  <NameCon UId="21" Name="LowRange" />
+                </Wire>
+                <Wire UId="48">
+                  <OpenCon UId="31" />
+                  <NameCon UId="21" Name="Tol" />
+                </Wire>
+                <Wire UId="49">
+                  <NameCon UId="21" Name="ActValue" />
+                  <OpenCon UId="32" />
+                </Wire>
+                <Wire UId="50">
+                  <NameCon UId="21" Name="WireBreakStatus" />
+                  <OpenCon UId="33" />
+                </Wire>
+                <Wire UId="51">
+                  <NameCon UId="21" Name="LowAlarmStatus" />
+                  <OpenCon UId="34" />
+                </Wire>
+                <Wire UId="52">
+                  <NameCon UId="21" Name="HighAlarmStatus" />
+                  <OpenCon UId="35" />
+                </Wire>
+                <Wire UId="53">
+                  <NameCon UId="21" Name="LoTol" />
+                  <OpenCon UId="36" />
+                </Wire>
+                <Wire UId="54">
+                  <NameCon UId="21" Name="HighTol" />
+                  <OpenCon UId="37" />
+                </Wire>
+                <Wire UId="55">
+                  <NameCon UId="21" Name="4To20mA" />
+                  <OpenCon UId="38" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="31" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="32" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="33" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="34" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>#Ai10--- VesselTemp</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="35" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Call UId="21">
+                  <CallInfo Name="FB:Analog_Scaling" BlockType="FB">
+                    <Instance Scope="LocalVariable" UId="22">
+                      <Component Name="Ai11" />
+                    </Instance>
+                    <Parameter Name="AnalogInputIw" Section="Input" Type="Int" />
+                    <Parameter Name="AlmHighLimit" Section="Input" Type="Real" />
+                    <Parameter Name="AlmLowlimit" Section="Input" Type="Real" />
+                    <Parameter Name="Correction" Section="Input" Type="Real" />
+                    <Parameter Name="SimValue" Section="Input" Type="Real" />
+                    <Parameter Name="SimBit" Section="Input" Type="Bool" />
+                    <Parameter Name="HighRange" Section="Input" Type="Real" />
+                    <Parameter Name="LowRange" Section="Input" Type="Real" />
+                    <Parameter Name="Tol" Section="Input" Type="Real" />
+                    <Parameter Name="ActValue" Section="Output" Type="Real" />
+                    <Parameter Name="WireBreakStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="LowAlarmStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="HighAlarmStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="LoTol" Section="Output" Type="Real" />
+                    <Parameter Name="HighTol" Section="Output" Type="Real" />
+                    <Parameter Name="4To20mA" Section="Output" Type="Real" />
+                  </CallInfo>
+                </Call>
+              </Parts>
+              <Wires>
+                <Wire UId="39">
+                  <Powerrail />
+                  <NameCon UId="21" Name="en" />
+                </Wire>
+                <Wire UId="40">
+                  <OpenCon UId="23" />
+                  <NameCon UId="21" Name="AnalogInputIw" />
+                </Wire>
+                <Wire UId="41">
+                  <OpenCon UId="24" />
+                  <NameCon UId="21" Name="AlmHighLimit" />
+                </Wire>
+                <Wire UId="42">
+                  <OpenCon UId="25" />
+                  <NameCon UId="21" Name="AlmLowlimit" />
+                </Wire>
+                <Wire UId="43">
+                  <OpenCon UId="26" />
+                  <NameCon UId="21" Name="Correction" />
+                </Wire>
+                <Wire UId="44">
+                  <OpenCon UId="27" />
+                  <NameCon UId="21" Name="SimValue" />
+                </Wire>
+                <Wire UId="45">
+                  <OpenCon UId="28" />
+                  <NameCon UId="21" Name="SimBit" />
+                </Wire>
+                <Wire UId="46">
+                  <OpenCon UId="29" />
+                  <NameCon UId="21" Name="HighRange" />
+                </Wire>
+                <Wire UId="47">
+                  <OpenCon UId="30" />
+                  <NameCon UId="21" Name="LowRange" />
+                </Wire>
+                <Wire UId="48">
+                  <OpenCon UId="31" />
+                  <NameCon UId="21" Name="Tol" />
+                </Wire>
+                <Wire UId="49">
+                  <NameCon UId="21" Name="ActValue" />
+                  <OpenCon UId="32" />
+                </Wire>
+                <Wire UId="50">
+                  <NameCon UId="21" Name="WireBreakStatus" />
+                  <OpenCon UId="33" />
+                </Wire>
+                <Wire UId="51">
+                  <NameCon UId="21" Name="LowAlarmStatus" />
+                  <OpenCon UId="34" />
+                </Wire>
+                <Wire UId="52">
+                  <NameCon UId="21" Name="HighAlarmStatus" />
+                  <OpenCon UId="35" />
+                </Wire>
+                <Wire UId="53">
+                  <NameCon UId="21" Name="LoTol" />
+                  <OpenCon UId="36" />
+                </Wire>
+                <Wire UId="54">
+                  <NameCon UId="21" Name="HighTol" />
+                  <OpenCon UId="37" />
+                </Wire>
+                <Wire UId="55">
+                  <NameCon UId="21" Name="4To20mA" />
+                  <OpenCon UId="38" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="36" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="37" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="38" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="39" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>#Ai11---- VesselPressure</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="3A" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Call UId="21">
+                  <CallInfo Name="FB:Analog_Scaling" BlockType="FB">
+                    <Instance Scope="LocalVariable" UId="22">
+                      <Component Name="Ai12" />
+                    </Instance>
+                    <Parameter Name="AnalogInputIw" Section="Input" Type="Int" />
+                    <Parameter Name="AlmHighLimit" Section="Input" Type="Real" />
+                    <Parameter Name="AlmLowlimit" Section="Input" Type="Real" />
+                    <Parameter Name="Correction" Section="Input" Type="Real" />
+                    <Parameter Name="SimValue" Section="Input" Type="Real" />
+                    <Parameter Name="SimBit" Section="Input" Type="Bool" />
+                    <Parameter Name="HighRange" Section="Input" Type="Real" />
+                    <Parameter Name="LowRange" Section="Input" Type="Real" />
+                    <Parameter Name="Tol" Section="Input" Type="Real" />
+                    <Parameter Name="ActValue" Section="Output" Type="Real" />
+                    <Parameter Name="WireBreakStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="LowAlarmStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="HighAlarmStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="LoTol" Section="Output" Type="Real" />
+                    <Parameter Name="HighTol" Section="Output" Type="Real" />
+                    <Parameter Name="4To20mA" Section="Output" Type="Real" />
+                  </CallInfo>
+                </Call>
+              </Parts>
+              <Wires>
+                <Wire UId="39">
+                  <Powerrail />
+                  <NameCon UId="21" Name="en" />
+                </Wire>
+                <Wire UId="40">
+                  <OpenCon UId="23" />
+                  <NameCon UId="21" Name="AnalogInputIw" />
+                </Wire>
+                <Wire UId="41">
+                  <OpenCon UId="24" />
+                  <NameCon UId="21" Name="AlmHighLimit" />
+                </Wire>
+                <Wire UId="42">
+                  <OpenCon UId="25" />
+                  <NameCon UId="21" Name="AlmLowlimit" />
+                </Wire>
+                <Wire UId="43">
+                  <OpenCon UId="26" />
+                  <NameCon UId="21" Name="Correction" />
+                </Wire>
+                <Wire UId="44">
+                  <OpenCon UId="27" />
+                  <NameCon UId="21" Name="SimValue" />
+                </Wire>
+                <Wire UId="45">
+                  <OpenCon UId="28" />
+                  <NameCon UId="21" Name="SimBit" />
+                </Wire>
+                <Wire UId="46">
+                  <OpenCon UId="29" />
+                  <NameCon UId="21" Name="HighRange" />
+                </Wire>
+                <Wire UId="47">
+                  <OpenCon UId="30" />
+                  <NameCon UId="21" Name="LowRange" />
+                </Wire>
+                <Wire UId="48">
+                  <OpenCon UId="31" />
+                  <NameCon UId="21" Name="Tol" />
+                </Wire>
+                <Wire UId="49">
+                  <NameCon UId="21" Name="ActValue" />
+                  <OpenCon UId="32" />
+                </Wire>
+                <Wire UId="50">
+                  <NameCon UId="21" Name="WireBreakStatus" />
+                  <OpenCon UId="33" />
+                </Wire>
+                <Wire UId="51">
+                  <NameCon UId="21" Name="LowAlarmStatus" />
+                  <OpenCon UId="34" />
+                </Wire>
+                <Wire UId="52">
+                  <NameCon UId="21" Name="HighAlarmStatus" />
+                  <OpenCon UId="35" />
+                </Wire>
+                <Wire UId="53">
+                  <NameCon UId="21" Name="LoTol" />
+                  <OpenCon UId="36" />
+                </Wire>
+                <Wire UId="54">
+                  <NameCon UId="21" Name="HighTol" />
+                  <OpenCon UId="37" />
+                </Wire>
+                <Wire UId="55">
+                  <NameCon UId="21" Name="4To20mA" />
+                  <OpenCon UId="38" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="3B" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="3C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="3D" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="3E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>#Ai12 ---- VesselRclLine</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="3F" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Call UId="21">
+                  <CallInfo Name="FB:Analog_Scaling" BlockType="FB">
+                    <Instance Scope="LocalVariable" UId="22">
+                      <Component Name="Ai13" />
+                    </Instance>
+                    <Parameter Name="AnalogInputIw" Section="Input" Type="Int" />
+                    <Parameter Name="AlmHighLimit" Section="Input" Type="Real" />
+                    <Parameter Name="AlmLowlimit" Section="Input" Type="Real" />
+                    <Parameter Name="Correction" Section="Input" Type="Real" />
+                    <Parameter Name="SimValue" Section="Input" Type="Real" />
+                    <Parameter Name="SimBit" Section="Input" Type="Bool" />
+                    <Parameter Name="HighRange" Section="Input" Type="Real" />
+                    <Parameter Name="LowRange" Section="Input" Type="Real" />
+                    <Parameter Name="Tol" Section="Input" Type="Real" />
+                    <Parameter Name="ActValue" Section="Output" Type="Real" />
+                    <Parameter Name="WireBreakStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="LowAlarmStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="HighAlarmStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="LoTol" Section="Output" Type="Real" />
+                    <Parameter Name="HighTol" Section="Output" Type="Real" />
+                    <Parameter Name="4To20mA" Section="Output" Type="Real" />
+                  </CallInfo>
+                </Call>
+              </Parts>
+              <Wires>
+                <Wire UId="39">
+                  <Powerrail />
+                  <NameCon UId="21" Name="en" />
+                </Wire>
+                <Wire UId="40">
+                  <OpenCon UId="23" />
+                  <NameCon UId="21" Name="AnalogInputIw" />
+                </Wire>
+                <Wire UId="41">
+                  <OpenCon UId="24" />
+                  <NameCon UId="21" Name="AlmHighLimit" />
+                </Wire>
+                <Wire UId="42">
+                  <OpenCon UId="25" />
+                  <NameCon UId="21" Name="AlmLowlimit" />
+                </Wire>
+                <Wire UId="43">
+                  <OpenCon UId="26" />
+                  <NameCon UId="21" Name="Correction" />
+                </Wire>
+                <Wire UId="44">
+                  <OpenCon UId="27" />
+                  <NameCon UId="21" Name="SimValue" />
+                </Wire>
+                <Wire UId="45">
+                  <OpenCon UId="28" />
+                  <NameCon UId="21" Name="SimBit" />
+                </Wire>
+                <Wire UId="46">
+                  <OpenCon UId="29" />
+                  <NameCon UId="21" Name="HighRange" />
+                </Wire>
+                <Wire UId="47">
+                  <OpenCon UId="30" />
+                  <NameCon UId="21" Name="LowRange" />
+                </Wire>
+                <Wire UId="48">
+                  <OpenCon UId="31" />
+                  <NameCon UId="21" Name="Tol" />
+                </Wire>
+                <Wire UId="49">
+                  <NameCon UId="21" Name="ActValue" />
+                  <OpenCon UId="32" />
+                </Wire>
+                <Wire UId="50">
+                  <NameCon UId="21" Name="WireBreakStatus" />
+                  <OpenCon UId="33" />
+                </Wire>
+                <Wire UId="51">
+                  <NameCon UId="21" Name="LowAlarmStatus" />
+                  <OpenCon UId="34" />
+                </Wire>
+                <Wire UId="52">
+                  <NameCon UId="21" Name="HighAlarmStatus" />
+                  <OpenCon UId="35" />
+                </Wire>
+                <Wire UId="53">
+                  <NameCon UId="21" Name="LoTol" />
+                  <OpenCon UId="36" />
+                </Wire>
+                <Wire UId="54">
+                  <NameCon UId="21" Name="HighTol" />
+                  <OpenCon UId="37" />
+                </Wire>
+                <Wire UId="55">
+                  <NameCon UId="21" Name="4To20mA" />
+                  <OpenCon UId="38" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="40" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="41" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="42" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="43" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>#Ai13--- Pf01OutLinePressure</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="44" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Call UId="21">
+                  <CallInfo Name="FB:Analog_Scaling" BlockType="FB">
+                    <Instance Scope="LocalVariable" UId="22">
+                      <Component Name="Ai14" />
+                    </Instance>
+                    <Parameter Name="AnalogInputIw" Section="Input" Type="Int" />
+                    <Parameter Name="AlmHighLimit" Section="Input" Type="Real" />
+                    <Parameter Name="AlmLowlimit" Section="Input" Type="Real" />
+                    <Parameter Name="Correction" Section="Input" Type="Real" />
+                    <Parameter Name="SimValue" Section="Input" Type="Real" />
+                    <Parameter Name="SimBit" Section="Input" Type="Bool" />
+                    <Parameter Name="HighRange" Section="Input" Type="Real" />
+                    <Parameter Name="LowRange" Section="Input" Type="Real" />
+                    <Parameter Name="Tol" Section="Input" Type="Real" />
+                    <Parameter Name="ActValue" Section="Output" Type="Real" />
+                    <Parameter Name="WireBreakStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="LowAlarmStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="HighAlarmStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="LoTol" Section="Output" Type="Real" />
+                    <Parameter Name="HighTol" Section="Output" Type="Real" />
+                    <Parameter Name="4To20mA" Section="Output" Type="Real" />
+                  </CallInfo>
+                </Call>
+              </Parts>
+              <Wires>
+                <Wire UId="39">
+                  <Powerrail />
+                  <NameCon UId="21" Name="en" />
+                </Wire>
+                <Wire UId="40">
+                  <OpenCon UId="23" />
+                  <NameCon UId="21" Name="AnalogInputIw" />
+                </Wire>
+                <Wire UId="41">
+                  <OpenCon UId="24" />
+                  <NameCon UId="21" Name="AlmHighLimit" />
+                </Wire>
+                <Wire UId="42">
+                  <OpenCon UId="25" />
+                  <NameCon UId="21" Name="AlmLowlimit" />
+                </Wire>
+                <Wire UId="43">
+                  <OpenCon UId="26" />
+                  <NameCon UId="21" Name="Correction" />
+                </Wire>
+                <Wire UId="44">
+                  <OpenCon UId="27" />
+                  <NameCon UId="21" Name="SimValue" />
+                </Wire>
+                <Wire UId="45">
+                  <OpenCon UId="28" />
+                  <NameCon UId="21" Name="SimBit" />
+                </Wire>
+                <Wire UId="46">
+                  <OpenCon UId="29" />
+                  <NameCon UId="21" Name="HighRange" />
+                </Wire>
+                <Wire UId="47">
+                  <OpenCon UId="30" />
+                  <NameCon UId="21" Name="LowRange" />
+                </Wire>
+                <Wire UId="48">
+                  <OpenCon UId="31" />
+                  <NameCon UId="21" Name="Tol" />
+                </Wire>
+                <Wire UId="49">
+                  <NameCon UId="21" Name="ActValue" />
+                  <OpenCon UId="32" />
+                </Wire>
+                <Wire UId="50">
+                  <NameCon UId="21" Name="WireBreakStatus" />
+                  <OpenCon UId="33" />
+                </Wire>
+                <Wire UId="51">
+                  <NameCon UId="21" Name="LowAlarmStatus" />
+                  <OpenCon UId="34" />
+                </Wire>
+                <Wire UId="52">
+                  <NameCon UId="21" Name="HighAlarmStatus" />
+                  <OpenCon UId="35" />
+                </Wire>
+                <Wire UId="53">
+                  <NameCon UId="21" Name="LoTol" />
+                  <OpenCon UId="36" />
+                </Wire>
+                <Wire UId="54">
+                  <NameCon UId="21" Name="HighTol" />
+                  <OpenCon UId="37" />
+                </Wire>
+                <Wire UId="55">
+                  <NameCon UId="21" Name="4To20mA" />
+                  <OpenCon UId="38" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="45" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="46" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="47" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="48" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>#Ai14 ---- Pf02OutLinePressure</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="49" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Part Name="Contact" UId="22">
+                  <Negated Name="operand" />
+                </Part>
+                <Call UId="23">
+                  <CallInfo Name="FB:Analog_Scaling" BlockType="FB">
+                    <Instance Scope="LocalVariable" UId="24">
+                      <Component Name="Ai15" />
+                    </Instance>
+                    <Parameter Name="AnalogInputIw" Section="Input" Type="Int" />
+                    <Parameter Name="AlmHighLimit" Section="Input" Type="Real" />
+                    <Parameter Name="AlmLowlimit" Section="Input" Type="Real" />
+                    <Parameter Name="Correction" Section="Input" Type="Real" />
+                    <Parameter Name="SimValue" Section="Input" Type="Real" />
+                    <Parameter Name="SimBit" Section="Input" Type="Bool" />
+                    <Parameter Name="HighRange" Section="Input" Type="Real" />
+                    <Parameter Name="LowRange" Section="Input" Type="Real" />
+                    <Parameter Name="Tol" Section="Input" Type="Real" />
+                    <Parameter Name="ActValue" Section="Output" Type="Real" />
+                    <Parameter Name="WireBreakStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="LowAlarmStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="HighAlarmStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="LoTol" Section="Output" Type="Real" />
+                    <Parameter Name="HighTol" Section="Output" Type="Real" />
+                    <Parameter Name="4To20mA" Section="Output" Type="Real" />
+                  </CallInfo>
+                </Call>
+              </Parts>
+              <Wires>
+                <Wire UId="41">
+                  <Powerrail />
+                  <NameCon UId="22" Name="in" />
+                </Wire>
+                <Wire UId="42">
+                  <IdentCon UId="21" />
+                  <NameCon UId="22" Name="operand" />
+                </Wire>
+                <Wire UId="43">
+                  <NameCon UId="22" Name="out" />
+                  <NameCon UId="23" Name="en" />
+                </Wire>
+                <Wire UId="44">
+                  <OpenCon UId="25" />
+                  <NameCon UId="23" Name="AnalogInputIw" />
+                </Wire>
+                <Wire UId="45">
+                  <OpenCon UId="26" />
+                  <NameCon UId="23" Name="AlmHighLimit" />
+                </Wire>
+                <Wire UId="46">
+                  <OpenCon UId="27" />
+                  <NameCon UId="23" Name="AlmLowlimit" />
+                </Wire>
+                <Wire UId="47">
+                  <OpenCon UId="28" />
+                  <NameCon UId="23" Name="Correction" />
+                </Wire>
+                <Wire UId="48">
+                  <OpenCon UId="29" />
+                  <NameCon UId="23" Name="SimValue" />
+                </Wire>
+                <Wire UId="49">
+                  <OpenCon UId="30" />
+                  <NameCon UId="23" Name="SimBit" />
+                </Wire>
+                <Wire UId="50">
+                  <OpenCon UId="31" />
+                  <NameCon UId="23" Name="HighRange" />
+                </Wire>
+                <Wire UId="51">
+                  <OpenCon UId="32" />
+                  <NameCon UId="23" Name="LowRange" />
+                </Wire>
+                <Wire UId="52">
+                  <OpenCon UId="33" />
+                  <NameCon UId="23" Name="Tol" />
+                </Wire>
+                <Wire UId="53">
+                  <NameCon UId="23" Name="ActValue" />
+                  <OpenCon UId="34" />
+                </Wire>
+                <Wire UId="54">
+                  <NameCon UId="23" Name="WireBreakStatus" />
+                  <OpenCon UId="35" />
+                </Wire>
+                <Wire UId="55">
+                  <NameCon UId="23" Name="LowAlarmStatus" />
+                  <OpenCon UId="36" />
+                </Wire>
+                <Wire UId="56">
+                  <NameCon UId="23" Name="HighAlarmStatus" />
+                  <OpenCon UId="37" />
+                </Wire>
+                <Wire UId="57">
+                  <NameCon UId="23" Name="LoTol" />
+                  <OpenCon UId="38" />
+                </Wire>
+                <Wire UId="58">
+                  <NameCon UId="23" Name="HighTol" />
+                  <OpenCon UId="39" />
+                </Wire>
+                <Wire UId="59">
+                  <NameCon UId="23" Name="4To20mA" />
+                  <OpenCon UId="40" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4A" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="4B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="4C" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="4D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>#Ai15---- ProcessDrainConductivity</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="4E" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Call UId="21">
+                  <CallInfo Name="FB:Analog_Scaling" BlockType="FB">
+                    <Instance Scope="LocalVariable" UId="22">
+                      <Component Name="Ai16" />
+                    </Instance>
+                    <Parameter Name="AnalogInputIw" Section="Input" Type="Int" />
+                    <Parameter Name="AlmHighLimit" Section="Input" Type="Real" />
+                    <Parameter Name="AlmLowlimit" Section="Input" Type="Real" />
+                    <Parameter Name="Correction" Section="Input" Type="Real" />
+                    <Parameter Name="SimValue" Section="Input" Type="Real" />
+                    <Parameter Name="SimBit" Section="Input" Type="Bool" />
+                    <Parameter Name="HighRange" Section="Input" Type="Real" />
+                    <Parameter Name="LowRange" Section="Input" Type="Real" />
+                    <Parameter Name="Tol" Section="Input" Type="Real" />
+                    <Parameter Name="ActValue" Section="Output" Type="Real" />
+                    <Parameter Name="WireBreakStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="LowAlarmStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="HighAlarmStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="LoTol" Section="Output" Type="Real" />
+                    <Parameter Name="HighTol" Section="Output" Type="Real" />
+                    <Parameter Name="4To20mA" Section="Output" Type="Real" />
+                  </CallInfo>
+                </Call>
+              </Parts>
+              <Wires>
+                <Wire UId="39">
+                  <Powerrail />
+                  <NameCon UId="21" Name="en" />
+                </Wire>
+                <Wire UId="40">
+                  <OpenCon UId="23" />
+                  <NameCon UId="21" Name="AnalogInputIw" />
+                </Wire>
+                <Wire UId="41">
+                  <OpenCon UId="24" />
+                  <NameCon UId="21" Name="AlmHighLimit" />
+                </Wire>
+                <Wire UId="42">
+                  <OpenCon UId="25" />
+                  <NameCon UId="21" Name="AlmLowlimit" />
+                </Wire>
+                <Wire UId="43">
+                  <OpenCon UId="26" />
+                  <NameCon UId="21" Name="Correction" />
+                </Wire>
+                <Wire UId="44">
+                  <OpenCon UId="27" />
+                  <NameCon UId="21" Name="SimValue" />
+                </Wire>
+                <Wire UId="45">
+                  <OpenCon UId="28" />
+                  <NameCon UId="21" Name="SimBit" />
+                </Wire>
+                <Wire UId="46">
+                  <OpenCon UId="29" />
+                  <NameCon UId="21" Name="HighRange" />
+                </Wire>
+                <Wire UId="47">
+                  <OpenCon UId="30" />
+                  <NameCon UId="21" Name="LowRange" />
+                </Wire>
+                <Wire UId="48">
+                  <OpenCon UId="31" />
+                  <NameCon UId="21" Name="Tol" />
+                </Wire>
+                <Wire UId="49">
+                  <NameCon UId="21" Name="ActValue" />
+                  <OpenCon UId="32" />
+                </Wire>
+                <Wire UId="50">
+                  <NameCon UId="21" Name="WireBreakStatus" />
+                  <OpenCon UId="33" />
+                </Wire>
+                <Wire UId="51">
+                  <NameCon UId="21" Name="LowAlarmStatus" />
+                  <OpenCon UId="34" />
+                </Wire>
+                <Wire UId="52">
+                  <NameCon UId="21" Name="HighAlarmStatus" />
+                  <OpenCon UId="35" />
+                </Wire>
+                <Wire UId="53">
+                  <NameCon UId="21" Name="LoTol" />
+                  <OpenCon UId="36" />
+                </Wire>
+                <Wire UId="54">
+                  <NameCon UId="21" Name="HighTol" />
+                  <OpenCon UId="37" />
+                </Wire>
+                <Wire UId="55">
+                  <NameCon UId="21" Name="4To20mA" />
+                  <OpenCon UId="38" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4F" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="50" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="51" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="52" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>#Ai16--AI SPARE 04</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="53" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Call UId="21">
+                  <CallInfo Name="FB:Analog_Scaling" BlockType="FB">
+                    <Instance Scope="LocalVariable" UId="22">
+                      <Component Name="Ai17" />
+                    </Instance>
+                    <Parameter Name="AnalogInputIw" Section="Input" Type="Int" />
+                    <Parameter Name="AlmHighLimit" Section="Input" Type="Real" />
+                    <Parameter Name="AlmLowlimit" Section="Input" Type="Real" />
+                    <Parameter Name="Correction" Section="Input" Type="Real" />
+                    <Parameter Name="SimValue" Section="Input" Type="Real" />
+                    <Parameter Name="SimBit" Section="Input" Type="Bool" />
+                    <Parameter Name="HighRange" Section="Input" Type="Real" />
+                    <Parameter Name="LowRange" Section="Input" Type="Real" />
+                    <Parameter Name="Tol" Section="Input" Type="Real" />
+                    <Parameter Name="ActValue" Section="Output" Type="Real" />
+                    <Parameter Name="WireBreakStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="LowAlarmStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="HighAlarmStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="LoTol" Section="Output" Type="Real" />
+                    <Parameter Name="HighTol" Section="Output" Type="Real" />
+                    <Parameter Name="4To20mA" Section="Output" Type="Real" />
+                  </CallInfo>
+                </Call>
+              </Parts>
+              <Wires>
+                <Wire UId="39">
+                  <Powerrail />
+                  <NameCon UId="21" Name="en" />
+                </Wire>
+                <Wire UId="40">
+                  <OpenCon UId="23" />
+                  <NameCon UId="21" Name="AnalogInputIw" />
+                </Wire>
+                <Wire UId="41">
+                  <OpenCon UId="24" />
+                  <NameCon UId="21" Name="AlmHighLimit" />
+                </Wire>
+                <Wire UId="42">
+                  <OpenCon UId="25" />
+                  <NameCon UId="21" Name="AlmLowlimit" />
+                </Wire>
+                <Wire UId="43">
+                  <OpenCon UId="26" />
+                  <NameCon UId="21" Name="Correction" />
+                </Wire>
+                <Wire UId="44">
+                  <OpenCon UId="27" />
+                  <NameCon UId="21" Name="SimValue" />
+                </Wire>
+                <Wire UId="45">
+                  <OpenCon UId="28" />
+                  <NameCon UId="21" Name="SimBit" />
+                </Wire>
+                <Wire UId="46">
+                  <OpenCon UId="29" />
+                  <NameCon UId="21" Name="HighRange" />
+                </Wire>
+                <Wire UId="47">
+                  <OpenCon UId="30" />
+                  <NameCon UId="21" Name="LowRange" />
+                </Wire>
+                <Wire UId="48">
+                  <OpenCon UId="31" />
+                  <NameCon UId="21" Name="Tol" />
+                </Wire>
+                <Wire UId="49">
+                  <NameCon UId="21" Name="ActValue" />
+                  <OpenCon UId="32" />
+                </Wire>
+                <Wire UId="50">
+                  <NameCon UId="21" Name="WireBreakStatus" />
+                  <OpenCon UId="33" />
+                </Wire>
+                <Wire UId="51">
+                  <NameCon UId="21" Name="LowAlarmStatus" />
+                  <OpenCon UId="34" />
+                </Wire>
+                <Wire UId="52">
+                  <NameCon UId="21" Name="HighAlarmStatus" />
+                  <OpenCon UId="35" />
+                </Wire>
+                <Wire UId="53">
+                  <NameCon UId="21" Name="LoTol" />
+                  <OpenCon UId="36" />
+                </Wire>
+                <Wire UId="54">
+                  <NameCon UId="21" Name="HighTol" />
+                  <OpenCon UId="37" />
+                </Wire>
+                <Wire UId="55">
+                  <NameCon UId="21" Name="4To20mA" />
+                  <OpenCon UId="38" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="54" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="55" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="56" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="57" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>#Ai17--AI SPARE 05</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="58" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Call UId="21">
+                  <CallInfo Name="FB:Analog_Scaling" BlockType="FB">
+                    <Instance Scope="LocalVariable" UId="22">
+                      <Component Name="Ai18" />
+                    </Instance>
+                    <Parameter Name="AnalogInputIw" Section="Input" Type="Int" />
+                    <Parameter Name="AlmHighLimit" Section="Input" Type="Real" />
+                    <Parameter Name="AlmLowlimit" Section="Input" Type="Real" />
+                    <Parameter Name="Correction" Section="Input" Type="Real" />
+                    <Parameter Name="SimValue" Section="Input" Type="Real" />
+                    <Parameter Name="SimBit" Section="Input" Type="Bool" />
+                    <Parameter Name="HighRange" Section="Input" Type="Real" />
+                    <Parameter Name="LowRange" Section="Input" Type="Real" />
+                    <Parameter Name="Tol" Section="Input" Type="Real" />
+                    <Parameter Name="ActValue" Section="Output" Type="Real" />
+                    <Parameter Name="WireBreakStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="LowAlarmStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="HighAlarmStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="LoTol" Section="Output" Type="Real" />
+                    <Parameter Name="HighTol" Section="Output" Type="Real" />
+                    <Parameter Name="4To20mA" Section="Output" Type="Real" />
+                  </CallInfo>
+                </Call>
+              </Parts>
+              <Wires>
+                <Wire UId="39">
+                  <Powerrail />
+                  <NameCon UId="21" Name="en" />
+                </Wire>
+                <Wire UId="40">
+                  <OpenCon UId="23" />
+                  <NameCon UId="21" Name="AnalogInputIw" />
+                </Wire>
+                <Wire UId="41">
+                  <OpenCon UId="24" />
+                  <NameCon UId="21" Name="AlmHighLimit" />
+                </Wire>
+                <Wire UId="42">
+                  <OpenCon UId="25" />
+                  <NameCon UId="21" Name="AlmLowlimit" />
+                </Wire>
+                <Wire UId="43">
+                  <OpenCon UId="26" />
+                  <NameCon UId="21" Name="Correction" />
+                </Wire>
+                <Wire UId="44">
+                  <OpenCon UId="27" />
+                  <NameCon UId="21" Name="SimValue" />
+                </Wire>
+                <Wire UId="45">
+                  <OpenCon UId="28" />
+                  <NameCon UId="21" Name="SimBit" />
+                </Wire>
+                <Wire UId="46">
+                  <OpenCon UId="29" />
+                  <NameCon UId="21" Name="HighRange" />
+                </Wire>
+                <Wire UId="47">
+                  <OpenCon UId="30" />
+                  <NameCon UId="21" Name="LowRange" />
+                </Wire>
+                <Wire UId="48">
+                  <OpenCon UId="31" />
+                  <NameCon UId="21" Name="Tol" />
+                </Wire>
+                <Wire UId="49">
+                  <NameCon UId="21" Name="ActValue" />
+                  <OpenCon UId="32" />
+                </Wire>
+                <Wire UId="50">
+                  <NameCon UId="21" Name="WireBreakStatus" />
+                  <OpenCon UId="33" />
+                </Wire>
+                <Wire UId="51">
+                  <NameCon UId="21" Name="LowAlarmStatus" />
+                  <OpenCon UId="34" />
+                </Wire>
+                <Wire UId="52">
+                  <NameCon UId="21" Name="HighAlarmStatus" />
+                  <OpenCon UId="35" />
+                </Wire>
+                <Wire UId="53">
+                  <NameCon UId="21" Name="LoTol" />
+                  <OpenCon UId="36" />
+                </Wire>
+                <Wire UId="54">
+                  <NameCon UId="21" Name="HighTol" />
+                  <OpenCon UId="37" />
+                </Wire>
+                <Wire UId="55">
+                  <NameCon UId="21" Name="4To20mA" />
+                  <OpenCon UId="38" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="59" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="5A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="5B" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="5C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>#Ai18--AI SPARE 06</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="5D" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Call UId="21">
+                  <CallInfo Name="FB:Analog_Scaling" BlockType="FB">
+                    <Instance Scope="LocalVariable" UId="22">
+                      <Component Name="Ai19" />
+                    </Instance>
+                    <Parameter Name="AnalogInputIw" Section="Input" Type="Int" />
+                    <Parameter Name="AlmHighLimit" Section="Input" Type="Real" />
+                    <Parameter Name="AlmLowlimit" Section="Input" Type="Real" />
+                    <Parameter Name="Correction" Section="Input" Type="Real" />
+                    <Parameter Name="SimValue" Section="Input" Type="Real" />
+                    <Parameter Name="SimBit" Section="Input" Type="Bool" />
+                    <Parameter Name="HighRange" Section="Input" Type="Real" />
+                    <Parameter Name="LowRange" Section="Input" Type="Real" />
+                    <Parameter Name="Tol" Section="Input" Type="Real" />
+                    <Parameter Name="ActValue" Section="Output" Type="Real" />
+                    <Parameter Name="WireBreakStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="LowAlarmStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="HighAlarmStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="LoTol" Section="Output" Type="Real" />
+                    <Parameter Name="HighTol" Section="Output" Type="Real" />
+                    <Parameter Name="4To20mA" Section="Output" Type="Real" />
+                  </CallInfo>
+                </Call>
+              </Parts>
+              <Wires>
+                <Wire UId="39">
+                  <Powerrail />
+                  <NameCon UId="21" Name="en" />
+                </Wire>
+                <Wire UId="40">
+                  <OpenCon UId="23" />
+                  <NameCon UId="21" Name="AnalogInputIw" />
+                </Wire>
+                <Wire UId="41">
+                  <OpenCon UId="24" />
+                  <NameCon UId="21" Name="AlmHighLimit" />
+                </Wire>
+                <Wire UId="42">
+                  <OpenCon UId="25" />
+                  <NameCon UId="21" Name="AlmLowlimit" />
+                </Wire>
+                <Wire UId="43">
+                  <OpenCon UId="26" />
+                  <NameCon UId="21" Name="Correction" />
+                </Wire>
+                <Wire UId="44">
+                  <OpenCon UId="27" />
+                  <NameCon UId="21" Name="SimValue" />
+                </Wire>
+                <Wire UId="45">
+                  <OpenCon UId="28" />
+                  <NameCon UId="21" Name="SimBit" />
+                </Wire>
+                <Wire UId="46">
+                  <OpenCon UId="29" />
+                  <NameCon UId="21" Name="HighRange" />
+                </Wire>
+                <Wire UId="47">
+                  <OpenCon UId="30" />
+                  <NameCon UId="21" Name="LowRange" />
+                </Wire>
+                <Wire UId="48">
+                  <OpenCon UId="31" />
+                  <NameCon UId="21" Name="Tol" />
+                </Wire>
+                <Wire UId="49">
+                  <NameCon UId="21" Name="ActValue" />
+                  <OpenCon UId="32" />
+                </Wire>
+                <Wire UId="50">
+                  <NameCon UId="21" Name="WireBreakStatus" />
+                  <OpenCon UId="33" />
+                </Wire>
+                <Wire UId="51">
+                  <NameCon UId="21" Name="LowAlarmStatus" />
+                  <OpenCon UId="34" />
+                </Wire>
+                <Wire UId="52">
+                  <NameCon UId="21" Name="HighAlarmStatus" />
+                  <OpenCon UId="35" />
+                </Wire>
+                <Wire UId="53">
+                  <NameCon UId="21" Name="LoTol" />
+                  <OpenCon UId="36" />
+                </Wire>
+                <Wire UId="54">
+                  <NameCon UId="21" Name="HighTol" />
+                  <OpenCon UId="37" />
+                </Wire>
+                <Wire UId="55">
+                  <NameCon UId="21" Name="4To20mA" />
+                  <OpenCon UId="38" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="5E" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="5F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="60" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="61" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>#Ai19--AI SPARE 07</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="62" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Call UId="21">
+                  <CallInfo Name="FB:Analog_Scaling" BlockType="FB">
+                    <Instance Scope="LocalVariable" UId="22">
+                      <Component Name="Ai20" />
+                    </Instance>
+                    <Parameter Name="AnalogInputIw" Section="Input" Type="Int" />
+                    <Parameter Name="AlmHighLimit" Section="Input" Type="Real" />
+                    <Parameter Name="AlmLowlimit" Section="Input" Type="Real" />
+                    <Parameter Name="Correction" Section="Input" Type="Real" />
+                    <Parameter Name="SimValue" Section="Input" Type="Real" />
+                    <Parameter Name="SimBit" Section="Input" Type="Bool" />
+                    <Parameter Name="HighRange" Section="Input" Type="Real" />
+                    <Parameter Name="LowRange" Section="Input" Type="Real" />
+                    <Parameter Name="Tol" Section="Input" Type="Real" />
+                    <Parameter Name="ActValue" Section="Output" Type="Real" />
+                    <Parameter Name="WireBreakStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="LowAlarmStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="HighAlarmStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="LoTol" Section="Output" Type="Real" />
+                    <Parameter Name="HighTol" Section="Output" Type="Real" />
+                    <Parameter Name="4To20mA" Section="Output" Type="Real" />
+                  </CallInfo>
+                </Call>
+              </Parts>
+              <Wires>
+                <Wire UId="39">
+                  <Powerrail />
+                  <NameCon UId="21" Name="en" />
+                </Wire>
+                <Wire UId="40">
+                  <OpenCon UId="23" />
+                  <NameCon UId="21" Name="AnalogInputIw" />
+                </Wire>
+                <Wire UId="41">
+                  <OpenCon UId="24" />
+                  <NameCon UId="21" Name="AlmHighLimit" />
+                </Wire>
+                <Wire UId="42">
+                  <OpenCon UId="25" />
+                  <NameCon UId="21" Name="AlmLowlimit" />
+                </Wire>
+                <Wire UId="43">
+                  <OpenCon UId="26" />
+                  <NameCon UId="21" Name="Correction" />
+                </Wire>
+                <Wire UId="44">
+                  <OpenCon UId="27" />
+                  <NameCon UId="21" Name="SimValue" />
+                </Wire>
+                <Wire UId="45">
+                  <OpenCon UId="28" />
+                  <NameCon UId="21" Name="SimBit" />
+                </Wire>
+                <Wire UId="46">
+                  <OpenCon UId="29" />
+                  <NameCon UId="21" Name="HighRange" />
+                </Wire>
+                <Wire UId="47">
+                  <OpenCon UId="30" />
+                  <NameCon UId="21" Name="LowRange" />
+                </Wire>
+                <Wire UId="48">
+                  <OpenCon UId="31" />
+                  <NameCon UId="21" Name="Tol" />
+                </Wire>
+                <Wire UId="49">
+                  <NameCon UId="21" Name="ActValue" />
+                  <OpenCon UId="32" />
+                </Wire>
+                <Wire UId="50">
+                  <NameCon UId="21" Name="WireBreakStatus" />
+                  <OpenCon UId="33" />
+                </Wire>
+                <Wire UId="51">
+                  <NameCon UId="21" Name="LowAlarmStatus" />
+                  <OpenCon UId="34" />
+                </Wire>
+                <Wire UId="52">
+                  <NameCon UId="21" Name="HighAlarmStatus" />
+                  <OpenCon UId="35" />
+                </Wire>
+                <Wire UId="53">
+                  <NameCon UId="21" Name="LoTol" />
+                  <OpenCon UId="36" />
+                </Wire>
+                <Wire UId="54">
+                  <NameCon UId="21" Name="HighTol" />
+                  <OpenCon UId="37" />
+                </Wire>
+                <Wire UId="55">
+                  <NameCon UId="21" Name="4To20mA" />
+                  <OpenCon UId="38" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="63" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="64" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="65" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="66" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>#Ai20--AI SPARE 08</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="67" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Call UId="21">
+                  <CallInfo Name="FB:Analog_Scaling" BlockType="FB">
+                    <Instance Scope="LocalVariable" UId="22">
+                      <Component Name="Ai21" />
+                    </Instance>
+                    <Parameter Name="AnalogInputIw" Section="Input" Type="Int" />
+                    <Parameter Name="AlmHighLimit" Section="Input" Type="Real" />
+                    <Parameter Name="AlmLowlimit" Section="Input" Type="Real" />
+                    <Parameter Name="Correction" Section="Input" Type="Real" />
+                    <Parameter Name="SimValue" Section="Input" Type="Real" />
+                    <Parameter Name="SimBit" Section="Input" Type="Bool" />
+                    <Parameter Name="HighRange" Section="Input" Type="Real" />
+                    <Parameter Name="LowRange" Section="Input" Type="Real" />
+                    <Parameter Name="Tol" Section="Input" Type="Real" />
+                    <Parameter Name="ActValue" Section="Output" Type="Real" />
+                    <Parameter Name="WireBreakStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="LowAlarmStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="HighAlarmStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="LoTol" Section="Output" Type="Real" />
+                    <Parameter Name="HighTol" Section="Output" Type="Real" />
+                    <Parameter Name="4To20mA" Section="Output" Type="Real" />
+                  </CallInfo>
+                </Call>
+              </Parts>
+              <Wires>
+                <Wire UId="39">
+                  <Powerrail />
+                  <NameCon UId="21" Name="en" />
+                </Wire>
+                <Wire UId="40">
+                  <OpenCon UId="23" />
+                  <NameCon UId="21" Name="AnalogInputIw" />
+                </Wire>
+                <Wire UId="41">
+                  <OpenCon UId="24" />
+                  <NameCon UId="21" Name="AlmHighLimit" />
+                </Wire>
+                <Wire UId="42">
+                  <OpenCon UId="25" />
+                  <NameCon UId="21" Name="AlmLowlimit" />
+                </Wire>
+                <Wire UId="43">
+                  <OpenCon UId="26" />
+                  <NameCon UId="21" Name="Correction" />
+                </Wire>
+                <Wire UId="44">
+                  <OpenCon UId="27" />
+                  <NameCon UId="21" Name="SimValue" />
+                </Wire>
+                <Wire UId="45">
+                  <OpenCon UId="28" />
+                  <NameCon UId="21" Name="SimBit" />
+                </Wire>
+                <Wire UId="46">
+                  <OpenCon UId="29" />
+                  <NameCon UId="21" Name="HighRange" />
+                </Wire>
+                <Wire UId="47">
+                  <OpenCon UId="30" />
+                  <NameCon UId="21" Name="LowRange" />
+                </Wire>
+                <Wire UId="48">
+                  <OpenCon UId="31" />
+                  <NameCon UId="21" Name="Tol" />
+                </Wire>
+                <Wire UId="49">
+                  <NameCon UId="21" Name="ActValue" />
+                  <OpenCon UId="32" />
+                </Wire>
+                <Wire UId="50">
+                  <NameCon UId="21" Name="WireBreakStatus" />
+                  <OpenCon UId="33" />
+                </Wire>
+                <Wire UId="51">
+                  <NameCon UId="21" Name="LowAlarmStatus" />
+                  <OpenCon UId="34" />
+                </Wire>
+                <Wire UId="52">
+                  <NameCon UId="21" Name="HighAlarmStatus" />
+                  <OpenCon UId="35" />
+                </Wire>
+                <Wire UId="53">
+                  <NameCon UId="21" Name="LoTol" />
+                  <OpenCon UId="36" />
+                </Wire>
+                <Wire UId="54">
+                  <NameCon UId="21" Name="HighTol" />
+                  <OpenCon UId="37" />
+                </Wire>
+                <Wire UId="55">
+                  <NameCon UId="21" Name="4To20mA" />
+                  <OpenCon UId="38" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="68" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="69" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="6A" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="6B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>#Ai21--AI SPARE 09</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="6C" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Call UId="21">
+                  <CallInfo Name="FB:Analog_Scaling" BlockType="FB">
+                    <Instance Scope="LocalVariable" UId="22">
+                      <Component Name="Ai22" />
+                    </Instance>
+                    <Parameter Name="AnalogInputIw" Section="Input" Type="Int" />
+                    <Parameter Name="AlmHighLimit" Section="Input" Type="Real" />
+                    <Parameter Name="AlmLowlimit" Section="Input" Type="Real" />
+                    <Parameter Name="Correction" Section="Input" Type="Real" />
+                    <Parameter Name="SimValue" Section="Input" Type="Real" />
+                    <Parameter Name="SimBit" Section="Input" Type="Bool" />
+                    <Parameter Name="HighRange" Section="Input" Type="Real" />
+                    <Parameter Name="LowRange" Section="Input" Type="Real" />
+                    <Parameter Name="Tol" Section="Input" Type="Real" />
+                    <Parameter Name="ActValue" Section="Output" Type="Real" />
+                    <Parameter Name="WireBreakStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="LowAlarmStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="HighAlarmStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="LoTol" Section="Output" Type="Real" />
+                    <Parameter Name="HighTol" Section="Output" Type="Real" />
+                    <Parameter Name="4To20mA" Section="Output" Type="Real" />
+                  </CallInfo>
+                </Call>
+              </Parts>
+              <Wires>
+                <Wire UId="39">
+                  <Powerrail />
+                  <NameCon UId="21" Name="en" />
+                </Wire>
+                <Wire UId="40">
+                  <OpenCon UId="23" />
+                  <NameCon UId="21" Name="AnalogInputIw" />
+                </Wire>
+                <Wire UId="41">
+                  <OpenCon UId="24" />
+                  <NameCon UId="21" Name="AlmHighLimit" />
+                </Wire>
+                <Wire UId="42">
+                  <OpenCon UId="25" />
+                  <NameCon UId="21" Name="AlmLowlimit" />
+                </Wire>
+                <Wire UId="43">
+                  <OpenCon UId="26" />
+                  <NameCon UId="21" Name="Correction" />
+                </Wire>
+                <Wire UId="44">
+                  <OpenCon UId="27" />
+                  <NameCon UId="21" Name="SimValue" />
+                </Wire>
+                <Wire UId="45">
+                  <OpenCon UId="28" />
+                  <NameCon UId="21" Name="SimBit" />
+                </Wire>
+                <Wire UId="46">
+                  <OpenCon UId="29" />
+                  <NameCon UId="21" Name="HighRange" />
+                </Wire>
+                <Wire UId="47">
+                  <OpenCon UId="30" />
+                  <NameCon UId="21" Name="LowRange" />
+                </Wire>
+                <Wire UId="48">
+                  <OpenCon UId="31" />
+                  <NameCon UId="21" Name="Tol" />
+                </Wire>
+                <Wire UId="49">
+                  <NameCon UId="21" Name="ActValue" />
+                  <OpenCon UId="32" />
+                </Wire>
+                <Wire UId="50">
+                  <NameCon UId="21" Name="WireBreakStatus" />
+                  <OpenCon UId="33" />
+                </Wire>
+                <Wire UId="51">
+                  <NameCon UId="21" Name="LowAlarmStatus" />
+                  <OpenCon UId="34" />
+                </Wire>
+                <Wire UId="52">
+                  <NameCon UId="21" Name="HighAlarmStatus" />
+                  <OpenCon UId="35" />
+                </Wire>
+                <Wire UId="53">
+                  <NameCon UId="21" Name="LoTol" />
+                  <OpenCon UId="36" />
+                </Wire>
+                <Wire UId="54">
+                  <NameCon UId="21" Name="HighTol" />
+                  <OpenCon UId="37" />
+                </Wire>
+                <Wire UId="55">
+                  <NameCon UId="21" Name="4To20mA" />
+                  <OpenCon UId="38" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="6D" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="6E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="6F" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="70" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>#Ai22--AI SPARE 10</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="71" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Call UId="21">
+                  <CallInfo Name="FB:Analog_Scaling" BlockType="FB">
+                    <Instance Scope="LocalVariable" UId="22">
+                      <Component Name="Ai23" />
+                    </Instance>
+                    <Parameter Name="AnalogInputIw" Section="Input" Type="Int" />
+                    <Parameter Name="AlmHighLimit" Section="Input" Type="Real" />
+                    <Parameter Name="AlmLowlimit" Section="Input" Type="Real" />
+                    <Parameter Name="Correction" Section="Input" Type="Real" />
+                    <Parameter Name="SimValue" Section="Input" Type="Real" />
+                    <Parameter Name="SimBit" Section="Input" Type="Bool" />
+                    <Parameter Name="HighRange" Section="Input" Type="Real" />
+                    <Parameter Name="LowRange" Section="Input" Type="Real" />
+                    <Parameter Name="Tol" Section="Input" Type="Real" />
+                    <Parameter Name="ActValue" Section="Output" Type="Real" />
+                    <Parameter Name="WireBreakStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="LowAlarmStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="HighAlarmStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="LoTol" Section="Output" Type="Real" />
+                    <Parameter Name="HighTol" Section="Output" Type="Real" />
+                    <Parameter Name="4To20mA" Section="Output" Type="Real" />
+                  </CallInfo>
+                </Call>
+              </Parts>
+              <Wires>
+                <Wire UId="39">
+                  <Powerrail />
+                  <NameCon UId="21" Name="en" />
+                </Wire>
+                <Wire UId="40">
+                  <OpenCon UId="23" />
+                  <NameCon UId="21" Name="AnalogInputIw" />
+                </Wire>
+                <Wire UId="41">
+                  <OpenCon UId="24" />
+                  <NameCon UId="21" Name="AlmHighLimit" />
+                </Wire>
+                <Wire UId="42">
+                  <OpenCon UId="25" />
+                  <NameCon UId="21" Name="AlmLowlimit" />
+                </Wire>
+                <Wire UId="43">
+                  <OpenCon UId="26" />
+                  <NameCon UId="21" Name="Correction" />
+                </Wire>
+                <Wire UId="44">
+                  <OpenCon UId="27" />
+                  <NameCon UId="21" Name="SimValue" />
+                </Wire>
+                <Wire UId="45">
+                  <OpenCon UId="28" />
+                  <NameCon UId="21" Name="SimBit" />
+                </Wire>
+                <Wire UId="46">
+                  <OpenCon UId="29" />
+                  <NameCon UId="21" Name="HighRange" />
+                </Wire>
+                <Wire UId="47">
+                  <OpenCon UId="30" />
+                  <NameCon UId="21" Name="LowRange" />
+                </Wire>
+                <Wire UId="48">
+                  <OpenCon UId="31" />
+                  <NameCon UId="21" Name="Tol" />
+                </Wire>
+                <Wire UId="49">
+                  <NameCon UId="21" Name="ActValue" />
+                  <OpenCon UId="32" />
+                </Wire>
+                <Wire UId="50">
+                  <NameCon UId="21" Name="WireBreakStatus" />
+                  <OpenCon UId="33" />
+                </Wire>
+                <Wire UId="51">
+                  <NameCon UId="21" Name="LowAlarmStatus" />
+                  <OpenCon UId="34" />
+                </Wire>
+                <Wire UId="52">
+                  <NameCon UId="21" Name="HighAlarmStatus" />
+                  <OpenCon UId="35" />
+                </Wire>
+                <Wire UId="53">
+                  <NameCon UId="21" Name="LoTol" />
+                  <OpenCon UId="36" />
+                </Wire>
+                <Wire UId="54">
+                  <NameCon UId="21" Name="HighTol" />
+                  <OpenCon UId="37" />
+                </Wire>
+                <Wire UId="55">
+                  <NameCon UId="21" Name="4To20mA" />
+                  <OpenCon UId="38" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="72" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="73" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="74" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="75" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>#Ai23--AI SPARE 11</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="76" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Call UId="21">
+                  <CallInfo Name="FB:Analog_Scaling" BlockType="FB">
+                    <Instance Scope="LocalVariable" UId="22">
+                      <Component Name="Ai24" />
+                    </Instance>
+                    <Parameter Name="AnalogInputIw" Section="Input" Type="Int" />
+                    <Parameter Name="AlmHighLimit" Section="Input" Type="Real" />
+                    <Parameter Name="AlmLowlimit" Section="Input" Type="Real" />
+                    <Parameter Name="Correction" Section="Input" Type="Real" />
+                    <Parameter Name="SimValue" Section="Input" Type="Real" />
+                    <Parameter Name="SimBit" Section="Input" Type="Bool" />
+                    <Parameter Name="HighRange" Section="Input" Type="Real" />
+                    <Parameter Name="LowRange" Section="Input" Type="Real" />
+                    <Parameter Name="Tol" Section="Input" Type="Real" />
+                    <Parameter Name="ActValue" Section="Output" Type="Real" />
+                    <Parameter Name="WireBreakStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="LowAlarmStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="HighAlarmStatus" Section="Output" Type="Bool" />
+                    <Parameter Name="LoTol" Section="Output" Type="Real" />
+                    <Parameter Name="HighTol" Section="Output" Type="Real" />
+                    <Parameter Name="4To20mA" Section="Output" Type="Real" />
+                  </CallInfo>
+                </Call>
+              </Parts>
+              <Wires>
+                <Wire UId="39">
+                  <Powerrail />
+                  <NameCon UId="21" Name="en" />
+                </Wire>
+                <Wire UId="40">
+                  <OpenCon UId="23" />
+                  <NameCon UId="21" Name="AnalogInputIw" />
+                </Wire>
+                <Wire UId="41">
+                  <OpenCon UId="24" />
+                  <NameCon UId="21" Name="AlmHighLimit" />
+                </Wire>
+                <Wire UId="42">
+                  <OpenCon UId="25" />
+                  <NameCon UId="21" Name="AlmLowlimit" />
+                </Wire>
+                <Wire UId="43">
+                  <OpenCon UId="26" />
+                  <NameCon UId="21" Name="Correction" />
+                </Wire>
+                <Wire UId="44">
+                  <OpenCon UId="27" />
+                  <NameCon UId="21" Name="SimValue" />
+                </Wire>
+                <Wire UId="45">
+                  <OpenCon UId="28" />
+                  <NameCon UId="21" Name="SimBit" />
+                </Wire>
+                <Wire UId="46">
+                  <OpenCon UId="29" />
+                  <NameCon UId="21" Name="HighRange" />
+                </Wire>
+                <Wire UId="47">
+                  <OpenCon UId="30" />
+                  <NameCon UId="21" Name="LowRange" />
+                </Wire>
+                <Wire UId="48">
+                  <OpenCon UId="31" />
+                  <NameCon UId="21" Name="Tol" />
+                </Wire>
+                <Wire UId="49">
+                  <NameCon UId="21" Name="ActValue" />
+                  <OpenCon UId="32" />
+                </Wire>
+                <Wire UId="50">
+                  <NameCon UId="21" Name="WireBreakStatus" />
+                  <OpenCon UId="33" />
+                </Wire>
+                <Wire UId="51">
+                  <NameCon UId="21" Name="LowAlarmStatus" />
+                  <OpenCon UId="34" />
+                </Wire>
+                <Wire UId="52">
+                  <NameCon UId="21" Name="HighAlarmStatus" />
+                  <OpenCon UId="35" />
+                </Wire>
+                <Wire UId="53">
+                  <NameCon UId="21" Name="LoTol" />
+                  <OpenCon UId="36" />
+                </Wire>
+                <Wire UId="54">
+                  <NameCon UId="21" Name="HighTol" />
+                  <OpenCon UId="37" />
+                </Wire>
+                <Wire UId="55">
+                  <NameCon UId="21" Name="4To20mA" />
+                  <OpenCon UId="38" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="77" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="78" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="79" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="7A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>#Ai24--AI SPARE 12</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="7B" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="7C" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>

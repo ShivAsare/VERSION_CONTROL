@@ -1,0 +1,3577 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V21" />
+  <SW.Blocks.FC ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="Input" />
+          <Section Name="Output" />
+          <Section Name="InOut" />
+          <Section Name="Temp" />
+          <Section Name="Constant" />
+          <Section Name="Return">
+            <Member Name="Ret_Val" Datatype="Void" />
+          </Section>
+        </Sections>
+      </Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <Name>ModeSelect</Name>
+      <Namespace />
+      <Number>7</Number>
+      <ProgrammingLanguage>LAD</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="3" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="5" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="6" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>****************************MV3000_Enable *****************************</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="8" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle1" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle2" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle3" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="25">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle4" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="26">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle5" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="27">
+                  <Symbol>
+                    <Component Name="ModeDb_R" />
+                    <Component Name="ManualMode" />
+                    <Component Name="Enable" />
+                  </Symbol>
+                </Access>
+                <Part Name="Contact" UId="28" />
+                <Part Name="Contact" UId="29">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="Contact" UId="30">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="Contact" UId="31">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="Contact" UId="32">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="Contact" UId="33">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="Coil" UId="34" />
+              </Parts>
+              <Wires>
+                <Wire UId="35">
+                  <Powerrail />
+                  <NameCon UId="28" Name="in" />
+                </Wire>
+                <Wire UId="36">
+                  <IdentCon UId="21" />
+                  <NameCon UId="28" Name="operand" />
+                </Wire>
+                <Wire UId="37">
+                  <NameCon UId="28" Name="out" />
+                  <NameCon UId="29" Name="in" />
+                </Wire>
+                <Wire UId="38">
+                  <IdentCon UId="22" />
+                  <NameCon UId="29" Name="operand" />
+                </Wire>
+                <Wire UId="39">
+                  <NameCon UId="29" Name="out" />
+                  <NameCon UId="30" Name="in" />
+                </Wire>
+                <Wire UId="40">
+                  <IdentCon UId="23" />
+                  <NameCon UId="30" Name="operand" />
+                </Wire>
+                <Wire UId="41">
+                  <NameCon UId="30" Name="out" />
+                  <NameCon UId="31" Name="in" />
+                </Wire>
+                <Wire UId="42">
+                  <IdentCon UId="24" />
+                  <NameCon UId="31" Name="operand" />
+                </Wire>
+                <Wire UId="43">
+                  <NameCon UId="31" Name="out" />
+                  <NameCon UId="32" Name="in" />
+                </Wire>
+                <Wire UId="44">
+                  <IdentCon UId="25" />
+                  <NameCon UId="32" Name="operand" />
+                </Wire>
+                <Wire UId="45">
+                  <NameCon UId="32" Name="out" />
+                  <NameCon UId="33" Name="in" />
+                </Wire>
+                <Wire UId="46">
+                  <IdentCon UId="26" />
+                  <NameCon UId="33" Name="operand" />
+                </Wire>
+                <Wire UId="47">
+                  <NameCon UId="33" Name="out" />
+                  <NameCon UId="34" Name="in" />
+                </Wire>
+                <Wire UId="48">
+                  <IdentCon UId="27" />
+                  <NameCon UId="34" Name="operand" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="9" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="B" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>"ModeDb".MV3000.Mode.ManualMode.Enable</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="D" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle2" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle3" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle4" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="25">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle5" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="26">
+                  <Symbol>
+                    <Component Name="ModeDb_R" />
+                    <Component Name="ManualMode" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="27">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle1" />
+                    <Component Name="Enable" />
+                  </Symbol>
+                </Access>
+                <Part Name="Contact" UId="28" />
+                <Part Name="Contact" UId="29">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="Contact" UId="30">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="Contact" UId="31">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="Contact" UId="32">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="Contact" UId="33">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="Coil" UId="34" />
+              </Parts>
+              <Wires>
+                <Wire UId="35">
+                  <Powerrail />
+                  <NameCon UId="28" Name="in" />
+                </Wire>
+                <Wire UId="36">
+                  <IdentCon UId="21" />
+                  <NameCon UId="28" Name="operand" />
+                </Wire>
+                <Wire UId="37">
+                  <NameCon UId="28" Name="out" />
+                  <NameCon UId="29" Name="in" />
+                </Wire>
+                <Wire UId="38">
+                  <IdentCon UId="22" />
+                  <NameCon UId="29" Name="operand" />
+                </Wire>
+                <Wire UId="39">
+                  <NameCon UId="29" Name="out" />
+                  <NameCon UId="30" Name="in" />
+                </Wire>
+                <Wire UId="40">
+                  <IdentCon UId="23" />
+                  <NameCon UId="30" Name="operand" />
+                </Wire>
+                <Wire UId="41">
+                  <NameCon UId="30" Name="out" />
+                  <NameCon UId="31" Name="in" />
+                </Wire>
+                <Wire UId="42">
+                  <IdentCon UId="24" />
+                  <NameCon UId="31" Name="operand" />
+                </Wire>
+                <Wire UId="43">
+                  <NameCon UId="31" Name="out" />
+                  <NameCon UId="32" Name="in" />
+                </Wire>
+                <Wire UId="44">
+                  <IdentCon UId="25" />
+                  <NameCon UId="32" Name="operand" />
+                </Wire>
+                <Wire UId="45">
+                  <NameCon UId="32" Name="out" />
+                  <NameCon UId="33" Name="in" />
+                </Wire>
+                <Wire UId="46">
+                  <IdentCon UId="26" />
+                  <NameCon UId="33" Name="operand" />
+                </Wire>
+                <Wire UId="47">
+                  <NameCon UId="33" Name="out" />
+                  <NameCon UId="34" Name="in" />
+                </Wire>
+                <Wire UId="48">
+                  <IdentCon UId="27" />
+                  <NameCon UId="34" Name="operand" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="E" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="10" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="11" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>"ModeDb".MV3000.Mode.Cycle1.Enable_PHT </Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="12" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle2" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle4" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle5" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="25">
+                  <Symbol>
+                    <Component Name="ModeDb_R" />
+                    <Component Name="ManualMode" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="26">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle1" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="27">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle3" />
+                    <Component Name="Enable" />
+                  </Symbol>
+                </Access>
+                <Part Name="Contact" UId="28" />
+                <Part Name="Contact" UId="29">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="Contact" UId="30">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="Contact" UId="31">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="Contact" UId="32">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="Contact" UId="33">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="Coil" UId="34" />
+              </Parts>
+              <Wires>
+                <Wire UId="35">
+                  <Powerrail />
+                  <NameCon UId="28" Name="in" />
+                </Wire>
+                <Wire UId="36">
+                  <IdentCon UId="21" />
+                  <NameCon UId="28" Name="operand" />
+                </Wire>
+                <Wire UId="37">
+                  <NameCon UId="28" Name="out" />
+                  <NameCon UId="29" Name="in" />
+                </Wire>
+                <Wire UId="38">
+                  <IdentCon UId="22" />
+                  <NameCon UId="29" Name="operand" />
+                </Wire>
+                <Wire UId="39">
+                  <NameCon UId="29" Name="out" />
+                  <NameCon UId="30" Name="in" />
+                </Wire>
+                <Wire UId="40">
+                  <IdentCon UId="23" />
+                  <NameCon UId="30" Name="operand" />
+                </Wire>
+                <Wire UId="41">
+                  <NameCon UId="30" Name="out" />
+                  <NameCon UId="31" Name="in" />
+                </Wire>
+                <Wire UId="42">
+                  <IdentCon UId="24" />
+                  <NameCon UId="31" Name="operand" />
+                </Wire>
+                <Wire UId="43">
+                  <NameCon UId="31" Name="out" />
+                  <NameCon UId="32" Name="in" />
+                </Wire>
+                <Wire UId="44">
+                  <IdentCon UId="25" />
+                  <NameCon UId="32" Name="operand" />
+                </Wire>
+                <Wire UId="45">
+                  <NameCon UId="32" Name="out" />
+                  <NameCon UId="33" Name="in" />
+                </Wire>
+                <Wire UId="46">
+                  <IdentCon UId="26" />
+                  <NameCon UId="33" Name="operand" />
+                </Wire>
+                <Wire UId="47">
+                  <NameCon UId="33" Name="out" />
+                  <NameCon UId="34" Name="in" />
+                </Wire>
+                <Wire UId="48">
+                  <IdentCon UId="27" />
+                  <NameCon UId="34" Name="operand" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="13" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="14" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="15" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="16" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>"ModeDb".MV3000.Mode.Cycle2.Enable_CIP </Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="17" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle4" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle5" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="ModeDb_R" />
+                    <Component Name="ManualMode" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="25">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle1" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="26">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle3" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="27">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle2" />
+                    <Component Name="Enable" />
+                  </Symbol>
+                </Access>
+                <Part Name="Contact" UId="28" />
+                <Part Name="Contact" UId="29">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="Contact" UId="30">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="Contact" UId="31">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="Contact" UId="32">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="Contact" UId="33">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="Coil" UId="34" />
+              </Parts>
+              <Wires>
+                <Wire UId="35">
+                  <Powerrail />
+                  <NameCon UId="28" Name="in" />
+                </Wire>
+                <Wire UId="36">
+                  <IdentCon UId="21" />
+                  <NameCon UId="28" Name="operand" />
+                </Wire>
+                <Wire UId="37">
+                  <NameCon UId="28" Name="out" />
+                  <NameCon UId="29" Name="in" />
+                </Wire>
+                <Wire UId="38">
+                  <IdentCon UId="22" />
+                  <NameCon UId="29" Name="operand" />
+                </Wire>
+                <Wire UId="39">
+                  <NameCon UId="29" Name="out" />
+                  <NameCon UId="30" Name="in" />
+                </Wire>
+                <Wire UId="40">
+                  <IdentCon UId="23" />
+                  <NameCon UId="30" Name="operand" />
+                </Wire>
+                <Wire UId="41">
+                  <NameCon UId="30" Name="out" />
+                  <NameCon UId="31" Name="in" />
+                </Wire>
+                <Wire UId="42">
+                  <IdentCon UId="24" />
+                  <NameCon UId="31" Name="operand" />
+                </Wire>
+                <Wire UId="43">
+                  <NameCon UId="31" Name="out" />
+                  <NameCon UId="32" Name="in" />
+                </Wire>
+                <Wire UId="44">
+                  <IdentCon UId="25" />
+                  <NameCon UId="32" Name="operand" />
+                </Wire>
+                <Wire UId="45">
+                  <NameCon UId="32" Name="out" />
+                  <NameCon UId="33" Name="in" />
+                </Wire>
+                <Wire UId="46">
+                  <IdentCon UId="26" />
+                  <NameCon UId="33" Name="operand" />
+                </Wire>
+                <Wire UId="47">
+                  <NameCon UId="33" Name="out" />
+                  <NameCon UId="34" Name="in" />
+                </Wire>
+                <Wire UId="48">
+                  <IdentCon UId="27" />
+                  <NameCon UId="34" Name="operand" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="18" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="19" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="1A" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="1B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>"ModeDb".MV3000.Mode.Cycle3.Enable_SIP </Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="1C" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle5" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="ModeDb_R" />
+                    <Component Name="ManualMode" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle1" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="25">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle3" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="26">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle2" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="27">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle4" />
+                    <Component Name="Enable" />
+                  </Symbol>
+                </Access>
+                <Part Name="Contact" UId="28" />
+                <Part Name="Contact" UId="29">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="Contact" UId="30">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="Contact" UId="31">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="Contact" UId="32">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="Contact" UId="33">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="Coil" UId="34" />
+              </Parts>
+              <Wires>
+                <Wire UId="35">
+                  <Powerrail />
+                  <NameCon UId="28" Name="in" />
+                </Wire>
+                <Wire UId="36">
+                  <IdentCon UId="21" />
+                  <NameCon UId="28" Name="operand" />
+                </Wire>
+                <Wire UId="37">
+                  <NameCon UId="28" Name="out" />
+                  <NameCon UId="29" Name="in" />
+                </Wire>
+                <Wire UId="38">
+                  <IdentCon UId="22" />
+                  <NameCon UId="29" Name="operand" />
+                </Wire>
+                <Wire UId="39">
+                  <NameCon UId="29" Name="out" />
+                  <NameCon UId="30" Name="in" />
+                </Wire>
+                <Wire UId="40">
+                  <IdentCon UId="23" />
+                  <NameCon UId="30" Name="operand" />
+                </Wire>
+                <Wire UId="41">
+                  <NameCon UId="30" Name="out" />
+                  <NameCon UId="31" Name="in" />
+                </Wire>
+                <Wire UId="42">
+                  <IdentCon UId="24" />
+                  <NameCon UId="31" Name="operand" />
+                </Wire>
+                <Wire UId="43">
+                  <NameCon UId="31" Name="out" />
+                  <NameCon UId="32" Name="in" />
+                </Wire>
+                <Wire UId="44">
+                  <IdentCon UId="25" />
+                  <NameCon UId="32" Name="operand" />
+                </Wire>
+                <Wire UId="45">
+                  <NameCon UId="32" Name="out" />
+                  <NameCon UId="33" Name="in" />
+                </Wire>
+                <Wire UId="46">
+                  <IdentCon UId="26" />
+                  <NameCon UId="33" Name="operand" />
+                </Wire>
+                <Wire UId="47">
+                  <NameCon UId="33" Name="out" />
+                  <NameCon UId="34" Name="in" />
+                </Wire>
+                <Wire UId="48">
+                  <IdentCon UId="27" />
+                  <NameCon UId="34" Name="operand" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="1D" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="1E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="1F" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="20" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>"ModeDb".MV3000.Mode.Cycle4.Enable_Batch</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="21" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="ModeDb_R" />
+                    <Component Name="ManualMode" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle1" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle2" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="25">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle3" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="26">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle4" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="27">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle5" />
+                    <Component Name="Enable" />
+                  </Symbol>
+                </Access>
+                <Part Name="Contact" UId="28" />
+                <Part Name="Contact" UId="29">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="Contact" UId="30">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="Contact" UId="31">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="Contact" UId="32">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="Contact" UId="33">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="Coil" UId="34" />
+              </Parts>
+              <Wires>
+                <Wire UId="35">
+                  <Powerrail />
+                  <NameCon UId="28" Name="in" />
+                </Wire>
+                <Wire UId="36">
+                  <IdentCon UId="21" />
+                  <NameCon UId="28" Name="operand" />
+                </Wire>
+                <Wire UId="37">
+                  <NameCon UId="28" Name="out" />
+                  <NameCon UId="29" Name="in" />
+                </Wire>
+                <Wire UId="38">
+                  <IdentCon UId="22" />
+                  <NameCon UId="29" Name="operand" />
+                </Wire>
+                <Wire UId="39">
+                  <NameCon UId="29" Name="out" />
+                  <NameCon UId="30" Name="in" />
+                </Wire>
+                <Wire UId="40">
+                  <IdentCon UId="23" />
+                  <NameCon UId="30" Name="operand" />
+                </Wire>
+                <Wire UId="41">
+                  <NameCon UId="30" Name="out" />
+                  <NameCon UId="31" Name="in" />
+                </Wire>
+                <Wire UId="42">
+                  <IdentCon UId="24" />
+                  <NameCon UId="31" Name="operand" />
+                </Wire>
+                <Wire UId="43">
+                  <NameCon UId="31" Name="out" />
+                  <NameCon UId="32" Name="in" />
+                </Wire>
+                <Wire UId="44">
+                  <IdentCon UId="25" />
+                  <NameCon UId="32" Name="operand" />
+                </Wire>
+                <Wire UId="45">
+                  <NameCon UId="32" Name="out" />
+                  <NameCon UId="33" Name="in" />
+                </Wire>
+                <Wire UId="46">
+                  <IdentCon UId="26" />
+                  <NameCon UId="33" Name="operand" />
+                </Wire>
+                <Wire UId="47">
+                  <NameCon UId="33" Name="out" />
+                  <NameCon UId="34" Name="in" />
+                </Wire>
+                <Wire UId="48">
+                  <IdentCon UId="27" />
+                  <NameCon UId="34" Name="operand" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="22" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="23" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="24" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="25" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>"ModeDb"..MV3000.Mode.Cycle5.Enable_LoadCell</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="26" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="27" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="28" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="29" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="2A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>-------------------------------------------------  SELECTION BUTTON ------------------------------------------------- </Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="2B" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="ModeDb_R" />
+                    <Component Name="ManualMode" />
+                    <Component Name="Enable" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="ModeDb_R" />
+                    <Component Name="ManualMode" />
+                    <Component Name="SelectionButton" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="ModeDb_R" />
+                    <Component Name="ManualMode" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="ModeDb_R" />
+                    <Component Name="ManualMode" />
+                    <Component Name="SelectionButton" />
+                  </Symbol>
+                </Access>
+                <Part Name="Contact" UId="25" />
+                <Part Name="Contact" UId="26" />
+                <Part Name="SCoil" UId="27" />
+                <Part Name="RCoil" UId="28" />
+              </Parts>
+              <Wires>
+                <Wire UId="29">
+                  <Powerrail />
+                  <NameCon UId="25" Name="in" />
+                </Wire>
+                <Wire UId="30">
+                  <IdentCon UId="21" />
+                  <NameCon UId="25" Name="operand" />
+                </Wire>
+                <Wire UId="31">
+                  <NameCon UId="25" Name="out" />
+                  <NameCon UId="26" Name="in" />
+                </Wire>
+                <Wire UId="32">
+                  <IdentCon UId="22" />
+                  <NameCon UId="26" Name="operand" />
+                </Wire>
+                <Wire UId="33">
+                  <NameCon UId="26" Name="out" />
+                  <NameCon UId="27" Name="in" />
+                  <NameCon UId="28" Name="in" />
+                </Wire>
+                <Wire UId="34">
+                  <IdentCon UId="23" />
+                  <NameCon UId="27" Name="operand" />
+                </Wire>
+                <Wire UId="35">
+                  <IdentCon UId="24" />
+                  <NameCon UId="28" Name="operand" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="2C" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="2D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="2E" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="2F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Manual Mode Selection Button</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="30" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="31" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="32" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="33" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="34" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>__________________________ VESSEL STATUS__________________________</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="35" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="ModeDb_R" />
+                    <Component Name="ManualMode" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle1" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle2" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="25">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle3" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="26">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle4" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="27">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle5" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="28">
+                  <Constant>
+                    <ConstantType>Int</ConstantType>
+                    <ConstantValue>0</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="29">
+                  <Symbol>
+                    <Component Name="HmiTags" />
+                    <Component Name="VesselStatus" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="30">
+                  <Symbol>
+                    <Component Name="ModeDb_R" />
+                    <Component Name="ManualMode" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="31">
+                  <Constant>
+                    <ConstantType>Int</ConstantType>
+                    <ConstantValue>1</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="32">
+                  <Symbol>
+                    <Component Name="HmiTags" />
+                    <Component Name="VesselStatus" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="33">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle1" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="34">
+                  <Constant>
+                    <ConstantType>Int</ConstantType>
+                    <ConstantValue>2</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="35">
+                  <Symbol>
+                    <Component Name="HmiTags" />
+                    <Component Name="VesselStatus" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="36">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle2" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="37">
+                  <Constant>
+                    <ConstantType>Int</ConstantType>
+                    <ConstantValue>3</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="38">
+                  <Symbol>
+                    <Component Name="HmiTags" />
+                    <Component Name="VesselStatus" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="39">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle3" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="40">
+                  <Constant>
+                    <ConstantType>Int</ConstantType>
+                    <ConstantValue>4</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="41">
+                  <Symbol>
+                    <Component Name="HmiTags" />
+                    <Component Name="VesselStatus" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="42">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle4" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="43">
+                  <Constant>
+                    <ConstantType>Int</ConstantType>
+                    <ConstantValue>5</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="44">
+                  <Symbol>
+                    <Component Name="HmiTags" />
+                    <Component Name="VesselStatus" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="45">
+                  <Symbol>
+                    <Component Name="ModeDb" />
+                    <Component Name="Cycle5" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="46">
+                  <Constant>
+                    <ConstantType>Int</ConstantType>
+                    <ConstantValue>6</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="47">
+                  <Symbol>
+                    <Component Name="HmiTags" />
+                    <Component Name="VesselStatus" />
+                  </Symbol>
+                </Access>
+                <Part Name="Contact" UId="48" />
+                <Part Name="Contact" UId="49">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="Contact" UId="50">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="Contact" UId="51">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="Contact" UId="52">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="Contact" UId="53">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="Contact" UId="54">
+                  <Negated Name="operand" />
+                </Part>
+                <Part Name="Move" UId="55" DisabledENO="true">
+                  <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+                </Part>
+                <Part Name="Contact" UId="56" />
+                <Part Name="Move" UId="57" DisabledENO="true">
+                  <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+                </Part>
+                <Part Name="Contact" UId="58" />
+                <Part Name="Move" UId="59" DisabledENO="true">
+                  <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+                </Part>
+                <Part Name="Contact" UId="60" />
+                <Part Name="Move" UId="61" DisabledENO="true">
+                  <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+                </Part>
+                <Part Name="Contact" UId="62" />
+                <Part Name="Move" UId="63" DisabledENO="true">
+                  <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+                </Part>
+                <Part Name="Contact" UId="64" />
+                <Part Name="Move" UId="65" DisabledENO="true">
+                  <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+                </Part>
+                <Part Name="Contact" UId="66" />
+                <Part Name="Move" UId="67" DisabledENO="true">
+                  <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+                </Part>
+              </Parts>
+              <Wires>
+                <Wire UId="68">
+                  <Powerrail />
+                  <NameCon UId="48" Name="in" />
+                </Wire>
+                <Wire UId="69">
+                  <IdentCon UId="21" />
+                  <NameCon UId="48" Name="operand" />
+                </Wire>
+                <Wire UId="70">
+                  <NameCon UId="48" Name="out" />
+                  <NameCon UId="49" Name="in" />
+                  <NameCon UId="56" Name="in" />
+                  <NameCon UId="58" Name="in" />
+                  <NameCon UId="60" Name="in" />
+                  <NameCon UId="62" Name="in" />
+                  <NameCon UId="64" Name="in" />
+                  <NameCon UId="66" Name="in" />
+                </Wire>
+                <Wire UId="71">
+                  <IdentCon UId="22" />
+                  <NameCon UId="49" Name="operand" />
+                </Wire>
+                <Wire UId="72">
+                  <NameCon UId="49" Name="out" />
+                  <NameCon UId="50" Name="in" />
+                </Wire>
+                <Wire UId="73">
+                  <IdentCon UId="23" />
+                  <NameCon UId="50" Name="operand" />
+                </Wire>
+                <Wire UId="74">
+                  <NameCon UId="50" Name="out" />
+                  <NameCon UId="51" Name="in" />
+                </Wire>
+                <Wire UId="75">
+                  <IdentCon UId="24" />
+                  <NameCon UId="51" Name="operand" />
+                </Wire>
+                <Wire UId="76">
+                  <NameCon UId="51" Name="out" />
+                  <NameCon UId="52" Name="in" />
+                </Wire>
+                <Wire UId="77">
+                  <IdentCon UId="25" />
+                  <NameCon UId="52" Name="operand" />
+                </Wire>
+                <Wire UId="78">
+                  <NameCon UId="52" Name="out" />
+                  <NameCon UId="53" Name="in" />
+                </Wire>
+                <Wire UId="79">
+                  <IdentCon UId="26" />
+                  <NameCon UId="53" Name="operand" />
+                </Wire>
+                <Wire UId="80">
+                  <NameCon UId="53" Name="out" />
+                  <NameCon UId="54" Name="in" />
+                </Wire>
+                <Wire UId="81">
+                  <IdentCon UId="27" />
+                  <NameCon UId="54" Name="operand" />
+                </Wire>
+                <Wire UId="82">
+                  <NameCon UId="54" Name="out" />
+                  <NameCon UId="55" Name="en" />
+                </Wire>
+                <Wire UId="83">
+                  <IdentCon UId="28" />
+                  <NameCon UId="55" Name="in" />
+                </Wire>
+                <Wire UId="84">
+                  <NameCon UId="55" Name="out1" />
+                  <IdentCon UId="29" />
+                </Wire>
+                <Wire UId="85">
+                  <IdentCon UId="30" />
+                  <NameCon UId="56" Name="operand" />
+                </Wire>
+                <Wire UId="86">
+                  <NameCon UId="56" Name="out" />
+                  <NameCon UId="57" Name="en" />
+                </Wire>
+                <Wire UId="87">
+                  <IdentCon UId="31" />
+                  <NameCon UId="57" Name="in" />
+                </Wire>
+                <Wire UId="88">
+                  <NameCon UId="57" Name="out1" />
+                  <IdentCon UId="32" />
+                </Wire>
+                <Wire UId="89">
+                  <IdentCon UId="33" />
+                  <NameCon UId="58" Name="operand" />
+                </Wire>
+                <Wire UId="90">
+                  <NameCon UId="58" Name="out" />
+                  <NameCon UId="59" Name="en" />
+                </Wire>
+                <Wire UId="91">
+                  <IdentCon UId="34" />
+                  <NameCon UId="59" Name="in" />
+                </Wire>
+                <Wire UId="92">
+                  <NameCon UId="59" Name="out1" />
+                  <IdentCon UId="35" />
+                </Wire>
+                <Wire UId="93">
+                  <IdentCon UId="36" />
+                  <NameCon UId="60" Name="operand" />
+                </Wire>
+                <Wire UId="94">
+                  <NameCon UId="60" Name="out" />
+                  <NameCon UId="61" Name="en" />
+                </Wire>
+                <Wire UId="95">
+                  <IdentCon UId="37" />
+                  <NameCon UId="61" Name="in" />
+                </Wire>
+                <Wire UId="96">
+                  <NameCon UId="61" Name="out1" />
+                  <IdentCon UId="38" />
+                </Wire>
+                <Wire UId="97">
+                  <IdentCon UId="39" />
+                  <NameCon UId="62" Name="operand" />
+                </Wire>
+                <Wire UId="98">
+                  <NameCon UId="62" Name="out" />
+                  <NameCon UId="63" Name="en" />
+                </Wire>
+                <Wire UId="99">
+                  <IdentCon UId="40" />
+                  <NameCon UId="63" Name="in" />
+                </Wire>
+                <Wire UId="100">
+                  <NameCon UId="63" Name="out1" />
+                  <IdentCon UId="41" />
+                </Wire>
+                <Wire UId="101">
+                  <IdentCon UId="42" />
+                  <NameCon UId="64" Name="operand" />
+                </Wire>
+                <Wire UId="102">
+                  <NameCon UId="64" Name="out" />
+                  <NameCon UId="65" Name="en" />
+                </Wire>
+                <Wire UId="103">
+                  <IdentCon UId="43" />
+                  <NameCon UId="65" Name="in" />
+                </Wire>
+                <Wire UId="104">
+                  <NameCon UId="65" Name="out1" />
+                  <IdentCon UId="44" />
+                </Wire>
+                <Wire UId="105">
+                  <IdentCon UId="45" />
+                  <NameCon UId="66" Name="operand" />
+                </Wire>
+                <Wire UId="106">
+                  <NameCon UId="66" Name="out" />
+                  <NameCon UId="67" Name="en" />
+                </Wire>
+                <Wire UId="107">
+                  <IdentCon UId="46" />
+                  <NameCon UId="67" Name="in" />
+                </Wire>
+                <Wire UId="108">
+                  <NameCon UId="67" Name="out1" />
+                  <IdentCon UId="47" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="36" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="37" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="38" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="39" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>"HmiTags".Cv200VesselStatus</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="3A" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="HmiTags" />
+                    <Component Name="AlarmAck" />
+                  </Symbol>
+                </Access>
+                <Access Scope="TypedConstant" UId="22">
+                  <Constant>
+                    <ConstantValue>T#600MS</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="HmiTags" />
+                    <Component Name="AlarmAck" />
+                  </Symbol>
+                </Access>
+                <Part Name="Contact" UId="24" />
+                <Part Name="TON" Version="1.0" UId="25">
+                  <Instance Scope="GlobalVariable" UId="26">
+                    <Component Name="TimerAlarm" />
+                    <Component Name="AlarmAck_Reset" />
+                  </Instance>
+                  <TemplateValue Name="time_type" Type="Type">Time</TemplateValue>
+                </Part>
+                <Part Name="RCoil" UId="27" />
+              </Parts>
+              <Wires>
+                <Wire UId="29">
+                  <Powerrail />
+                  <NameCon UId="24" Name="in" />
+                </Wire>
+                <Wire UId="30">
+                  <IdentCon UId="21" />
+                  <NameCon UId="24" Name="operand" />
+                </Wire>
+                <Wire UId="31">
+                  <NameCon UId="24" Name="out" />
+                  <NameCon UId="25" Name="IN" />
+                </Wire>
+                <Wire UId="32">
+                  <IdentCon UId="22" />
+                  <NameCon UId="25" Name="PT" />
+                </Wire>
+                <Wire UId="33">
+                  <NameCon UId="25" Name="Q" />
+                  <NameCon UId="27" Name="in" />
+                </Wire>
+                <Wire UId="34">
+                  <NameCon UId="25" Name="ET" />
+                  <OpenCon UId="28" />
+                </Wire>
+                <Wire UId="35">
+                  <IdentCon UId="23" />
+                  <NameCon UId="27" Name="operand" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="3B" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="3C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="3D" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="3E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>"HmiTags".AlarmAck</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="3F" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="Address" UId="22">
+                  <Address Area="DB" Type="Bool" BlockNumber="153" BitOffset="8" />
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="LifeBeatMonitor" />
+                    <Component Name="StartupBit" />
+                  </Symbol>
+                </Access>
+                <Access Scope="Address" UId="24">
+                  <Address Area="DB" Type="Bool" BlockNumber="153" BitOffset="9" />
+                </Access>
+                <Access Scope="GlobalVariable" UId="25">
+                  <Symbol>
+                    <Component Name="LifeBeatMonitor" />
+                    <Component Name="OnlineOfflineBeat" />
+                  </Symbol>
+                </Access>
+                <Access Scope="Address" UId="26">
+                  <Address Area="DB" Type="Bool" BlockNumber="153" BitOffset="10" />
+                </Access>
+                <Access Scope="GlobalVariable" UId="27">
+                  <Symbol>
+                    <Component Name="LifeBeatMonitor" />
+                    <Component Name="LifeBit" />
+                  </Symbol>
+                </Access>
+                <Part Name="Contact" UId="28" />
+                <Part Name="Contact" UId="29" />
+                <Part Name="Coil" UId="30" />
+                <Part Name="Contact" UId="31" />
+                <Part Name="Coil" UId="32" />
+                <Part Name="Contact" UId="33" />
+                <Part Name="Coil" UId="34" />
+              </Parts>
+              <Wires>
+                <Wire UId="35">
+                  <Powerrail />
+                  <NameCon UId="28" Name="in" />
+                </Wire>
+                <Wire UId="36">
+                  <IdentCon UId="21" />
+                  <NameCon UId="28" Name="operand" />
+                </Wire>
+                <Wire UId="37">
+                  <NameCon UId="28" Name="out" />
+                  <NameCon UId="29" Name="in" />
+                  <NameCon UId="31" Name="in" />
+                  <NameCon UId="33" Name="in" />
+                </Wire>
+                <Wire UId="38">
+                  <IdentCon UId="22" />
+                  <NameCon UId="29" Name="operand" />
+                </Wire>
+                <Wire UId="39">
+                  <NameCon UId="29" Name="out" />
+                  <NameCon UId="30" Name="in" />
+                </Wire>
+                <Wire UId="40">
+                  <IdentCon UId="23" />
+                  <NameCon UId="30" Name="operand" />
+                </Wire>
+                <Wire UId="41">
+                  <IdentCon UId="24" />
+                  <NameCon UId="31" Name="operand" />
+                </Wire>
+                <Wire UId="42">
+                  <NameCon UId="31" Name="out" />
+                  <NameCon UId="32" Name="in" />
+                </Wire>
+                <Wire UId="43">
+                  <IdentCon UId="25" />
+                  <NameCon UId="32" Name="operand" />
+                </Wire>
+                <Wire UId="44">
+                  <IdentCon UId="26" />
+                  <NameCon UId="33" Name="operand" />
+                </Wire>
+                <Wire UId="45">
+                  <NameCon UId="33" Name="out" />
+                  <NameCon UId="34" Name="in" />
+                </Wire>
+                <Wire UId="46">
+                  <IdentCon UId="27" />
+                  <NameCon UId="34" Name="operand" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="40" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="41" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="42" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="43" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>"LifeBeatMonitor"</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="44" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="ModeDb_R" />
+                    <Component Name="ManualMode" />
+                    <Component Name="Selected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="HmiTags" />
+                    <Component Name="AlarmAck" />
+                  </Symbol>
+                </Access>
+                <Access Scope="Address" UId="24">
+                  <Address Area="DB" Type="DWord" BlockNumber="181" BitOffset="0" />
+                </Access>
+                <Access Scope="LiteralConstant" UId="25">
+                  <Constant>
+                    <ConstantType>DInt</ConstantType>
+                    <ConstantValue>0</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="LiteralConstant" UId="26">
+                  <Constant>
+                    <ConstantType>DWord</ConstantType>
+                    <ConstantValue>0</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="Address" UId="27">
+                  <Address Area="DB" Type="DWord" BlockNumber="162" BitOffset="0" />
+                </Access>
+                <Part Name="Contact" UId="28" />
+                <Part Name="Contact" UId="29" />
+                <Part Name="Contact" UId="30" />
+                <Part Name="Ne" UId="31">
+                  <TemplateValue Name="SrcType" Type="Type">DInt</TemplateValue>
+                </Part>
+                <Part Name="Move" UId="32" DisabledENO="true">
+                  <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+                </Part>
+              </Parts>
+              <Wires>
+                <Wire UId="33">
+                  <Powerrail />
+                  <NameCon UId="28" Name="in" />
+                </Wire>
+                <Wire UId="34">
+                  <IdentCon UId="21" />
+                  <NameCon UId="28" Name="operand" />
+                </Wire>
+                <Wire UId="35">
+                  <NameCon UId="28" Name="out" />
+                  <NameCon UId="29" Name="in" />
+                </Wire>
+                <Wire UId="36">
+                  <IdentCon UId="22" />
+                  <NameCon UId="29" Name="operand" />
+                </Wire>
+                <Wire UId="37">
+                  <NameCon UId="29" Name="out" />
+                  <NameCon UId="30" Name="in" />
+                </Wire>
+                <Wire UId="38">
+                  <IdentCon UId="23" />
+                  <NameCon UId="30" Name="operand" />
+                </Wire>
+                <Wire UId="39">
+                  <NameCon UId="30" Name="out" />
+                  <NameCon UId="31" Name="pre" />
+                </Wire>
+                <Wire UId="40">
+                  <IdentCon UId="24" />
+                  <NameCon UId="31" Name="in1" />
+                </Wire>
+                <Wire UId="41">
+                  <IdentCon UId="25" />
+                  <NameCon UId="31" Name="in2" />
+                </Wire>
+                <Wire UId="42">
+                  <NameCon UId="31" Name="out" />
+                  <NameCon UId="32" Name="en" />
+                </Wire>
+                <Wire UId="43">
+                  <IdentCon UId="26" />
+                  <NameCon UId="32" Name="in" />
+                </Wire>
+                <Wire UId="44">
+                  <NameCon UId="32" Name="out1" />
+                  <IdentCon UId="27" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="45" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="46" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="47" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="48" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>ManualModeReset By Safety Alarm </Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="49" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="HmiTags" />
+                    <Component Name="MasterReset" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="HmiTags" />
+                    <Component Name="AlarmAck" />
+                  </Symbol>
+                </Access>
+                <Access Scope="TypedConstant" UId="23">
+                  <Constant>
+                    <ConstantValue>T#1s</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="HmiTags" />
+                    <Component Name="MasterReset" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="25">
+                  <Symbol>
+                    <Component Name="HmiTags" />
+                    <Component Name="AlarmAck" />
+                  </Symbol>
+                </Access>
+                <Part Name="Contact" UId="26" />
+                <Part Name="Contact" UId="27" />
+                <Part Name="O" UId="28">
+                  <TemplateValue Name="Card" Type="Cardinality">2</TemplateValue>
+                </Part>
+                <Part Name="TON" Version="1.0" UId="29">
+                  <Instance Scope="GlobalVariable" UId="30">
+                    <Component Name="TimerAlarm" />
+                    <Component Name="MasterReset" />
+                  </Instance>
+                  <TemplateValue Name="time_type" Type="Type">Time</TemplateValue>
+                </Part>
+                <Part Name="RCoil" UId="31" />
+                <Part Name="RCoil" UId="32" />
+              </Parts>
+              <Wires>
+                <Wire UId="34">
+                  <Powerrail />
+                  <NameCon UId="26" Name="in" />
+                  <NameCon UId="27" Name="in" />
+                </Wire>
+                <Wire UId="35">
+                  <IdentCon UId="21" />
+                  <NameCon UId="26" Name="operand" />
+                </Wire>
+                <Wire UId="36">
+                  <NameCon UId="26" Name="out" />
+                  <NameCon UId="28" Name="in1" />
+                </Wire>
+                <Wire UId="37">
+                  <IdentCon UId="22" />
+                  <NameCon UId="27" Name="operand" />
+                </Wire>
+                <Wire UId="38">
+                  <NameCon UId="27" Name="out" />
+                  <NameCon UId="28" Name="in2" />
+                </Wire>
+                <Wire UId="39">
+                  <NameCon UId="28" Name="out" />
+                  <NameCon UId="29" Name="IN" />
+                </Wire>
+                <Wire UId="40">
+                  <IdentCon UId="23" />
+                  <NameCon UId="29" Name="PT" />
+                </Wire>
+                <Wire UId="41">
+                  <NameCon UId="29" Name="Q" />
+                  <NameCon UId="31" Name="in" />
+                  <NameCon UId="32" Name="in" />
+                </Wire>
+                <Wire UId="42">
+                  <NameCon UId="29" Name="ET" />
+                  <OpenCon UId="33" />
+                </Wire>
+                <Wire UId="43">
+                  <IdentCon UId="24" />
+                  <NameCon UId="31" Name="operand" />
+                </Wire>
+                <Wire UId="44">
+                  <IdentCon UId="25" />
+                  <NameCon UId="32" Name="operand" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4A" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="4B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="4C" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="4D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Master Reset</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="4E" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v4">
+              <Token Text="IF" UId="21" />
+              <Blank UId="22" />
+              <Token Text="(" UId="23" />
+              <Access Scope="GlobalVariable" UId="24">
+                <Symbol UId="25">
+                  <Component Name="ModeDb_R" UId="26">
+                    <BooleanAttribute Name="HasQuotes" UId="27">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="28" />
+                  <Component Name="ManualMode" UId="29" />
+                  <Token Text="." UId="30" />
+                  <Component Name="Abort" UId="31" />
+                </Symbol>
+              </Access>
+              <Blank Num="2" UId="32" />
+              <Token Text="=" UId="33" />
+              <Blank UId="34" />
+              <Access Scope="LiteralConstant" UId="35">
+                <Constant UId="36">
+                  <ConstantValue UId="38">1</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="39" />
+              <Token Text="OR" UId="40" />
+              <Blank UId="41" />
+              <Access Scope="GlobalVariable" UId="42">
+                <Symbol UId="43">
+                  <Component Name="HmiTags" UId="44">
+                    <BooleanAttribute Name="HasQuotes" UId="45">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="46" />
+                  <Component Name="MasterReset" UId="47" />
+                </Symbol>
+              </Access>
+              <Blank UId="48" />
+              <Token Text="=" UId="49" />
+              <Blank UId="50" />
+              <Access Scope="LiteralConstant" UId="51">
+                <Constant UId="52">
+                  <ConstantValue UId="54">1</ConstantValue>
+                </Constant>
+              </Access>
+              <Token Text=")" UId="55" />
+              <Blank UId="56" />
+              <Token Text="AND" UId="57" />
+              <Blank UId="58" />
+              <Access Scope="GlobalVariable" UId="59">
+                <Symbol UId="60">
+                  <Component Name="ModeDb_R" UId="61">
+                    <BooleanAttribute Name="HasQuotes" UId="62">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="63" />
+                  <Component Name="ManualMode" UId="64" />
+                  <Token Text="." UId="65" />
+                  <Component Name="Selected" UId="66" />
+                </Symbol>
+              </Access>
+              <Blank UId="67" />
+              <Token Text="=" UId="68" />
+              <Blank UId="69" />
+              <Access Scope="LiteralConstant" UId="70">
+                <Constant UId="71">
+                  <ConstantValue UId="73">1</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="74" />
+              <Token Text="AND" UId="75" />
+              <NewLine UId="76" />
+              <Blank Num="4" UId="77" />
+              <Access Scope="GlobalVariable" UId="78">
+                <Symbol UId="79">
+                  <Component Name="ValveDb" UId="80">
+                    <BooleanAttribute Name="HasQuotes" UId="81">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="82" />
+                  <Component Name="Cv01" UId="83" />
+                  <Token Text="." UId="84" />
+                  <Component Name="OpenClose" UId="85" />
+                </Symbol>
+              </Access>
+              <Blank UId="86" />
+              <Token Text="=" UId="87" />
+              <Access Scope="LiteralConstant" UId="88">
+                <Constant UId="89">
+                  <ConstantValue UId="91">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="92" />
+              <Token Text="AND" UId="93" />
+              <NewLine UId="94" />
+              <Blank Num="4" UId="95" />
+              <Access Scope="GlobalVariable" UId="96">
+                <Symbol UId="97">
+                  <Component Name="ValveDb" UId="98">
+                    <BooleanAttribute Name="HasQuotes" UId="99">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="100" />
+                  <Component Name="Cv02" UId="101" />
+                  <Token Text="." UId="102" />
+                  <Component Name="OpenClose" UId="103" />
+                </Symbol>
+              </Access>
+              <Blank UId="104" />
+              <Token Text="=" UId="105" />
+              <Access Scope="LiteralConstant" UId="106">
+                <Constant UId="107">
+                  <ConstantValue UId="109">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="110" />
+              <Token Text="AND" UId="111" />
+              <NewLine UId="112" />
+              <Blank Num="4" UId="113" />
+              <Access Scope="GlobalVariable" UId="114">
+                <Symbol UId="115">
+                  <Component Name="ValveDb" UId="116">
+                    <BooleanAttribute Name="HasQuotes" UId="117">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="118" />
+                  <Component Name="Cv03" UId="119" />
+                  <Token Text="." UId="120" />
+                  <Component Name="OpenClose" UId="121" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="122" />
+              <Access Scope="LiteralConstant" UId="123">
+                <Constant UId="124">
+                  <ConstantValue UId="126">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank Num="2" UId="127" />
+              <Token Text="AND" UId="128" />
+              <NewLine UId="129" />
+              <Blank Num="4" UId="130" />
+              <Access Scope="GlobalVariable" UId="131">
+                <Symbol UId="132">
+                  <Component Name="ValveDb" UId="133">
+                    <BooleanAttribute Name="HasQuotes" UId="134">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="135" />
+                  <Component Name="Cv04" UId="136" />
+                  <Token Text="." UId="137" />
+                  <Component Name="OpenClose" UId="138" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="139" />
+              <Access Scope="LiteralConstant" UId="140">
+                <Constant UId="141">
+                  <ConstantValue UId="143">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="144" />
+              <Token Text="AND" UId="145" />
+              <NewLine UId="146" />
+              <Blank Num="4" UId="147" />
+              <Access Scope="GlobalVariable" UId="148">
+                <Symbol UId="149">
+                  <Component Name="ValveDb" UId="150">
+                    <BooleanAttribute Name="HasQuotes" UId="151">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="152" />
+                  <Component Name="Cv05" UId="153" />
+                  <Token Text="." UId="154" />
+                  <Component Name="OpenClose" UId="155" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="156" />
+              <Access Scope="LiteralConstant" UId="157">
+                <Constant UId="158">
+                  <ConstantValue UId="160">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="161" />
+              <Token Text="AND" UId="162" />
+              <NewLine UId="163" />
+              <Blank Num="4" UId="164" />
+              <Access Scope="GlobalVariable" UId="165">
+                <Symbol UId="166">
+                  <Component Name="ValveDb" UId="167">
+                    <BooleanAttribute Name="HasQuotes" UId="168">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="169" />
+                  <Component Name="Cv06" UId="170" />
+                  <Token Text="." UId="171" />
+                  <Component Name="OpenClose" UId="172" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="173" />
+              <Access Scope="LiteralConstant" UId="174">
+                <Constant UId="175">
+                  <ConstantValue UId="177">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="178" />
+              <Token Text="AND" UId="179" />
+              <NewLine UId="180" />
+              <Blank Num="4" UId="181" />
+              <Access Scope="GlobalVariable" UId="182">
+                <Symbol UId="183">
+                  <Component Name="ValveDb" UId="184">
+                    <BooleanAttribute Name="HasQuotes" UId="185">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="186" />
+                  <Component Name="Cv07" UId="187" />
+                  <Token Text="." UId="188" />
+                  <Component Name="OpenClose" UId="189" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="190" />
+              <Access Scope="LiteralConstant" UId="191">
+                <Constant UId="192">
+                  <ConstantValue UId="194">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="195" />
+              <Token Text="AND" UId="196" />
+              <NewLine UId="197" />
+              <Blank Num="4" UId="198" />
+              <Access Scope="GlobalVariable" UId="199">
+                <Symbol UId="200">
+                  <Component Name="ValveDb" UId="201">
+                    <BooleanAttribute Name="HasQuotes" UId="202">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="203" />
+                  <Component Name="Cv08" UId="204" />
+                  <Token Text="." UId="205" />
+                  <Component Name="OpenClose" UId="206" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="207" />
+              <Access Scope="LiteralConstant" UId="208">
+                <Constant UId="209">
+                  <ConstantValue UId="211">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="212" />
+              <Token Text="AND" UId="213" />
+              <NewLine UId="214" />
+              <Blank Num="4" UId="215" />
+              <Access Scope="GlobalVariable" UId="216">
+                <Symbol UId="217">
+                  <Component Name="ValveDb" UId="218">
+                    <BooleanAttribute Name="HasQuotes" UId="219">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="220" />
+                  <Component Name="Cv09" UId="221" />
+                  <Token Text="." UId="222" />
+                  <Component Name="OpenClose" UId="223" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="224" />
+              <Access Scope="LiteralConstant" UId="225">
+                <Constant UId="226">
+                  <ConstantValue UId="228">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="229" />
+              <Token Text="AND" UId="230" />
+              <NewLine UId="231" />
+              <Blank Num="4" UId="232" />
+              <Access Scope="GlobalVariable" UId="233">
+                <Symbol UId="234">
+                  <Component Name="ValveDb" UId="235">
+                    <BooleanAttribute Name="HasQuotes" UId="236">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="237" />
+                  <Component Name="Cv10" UId="238" />
+                  <Token Text="." UId="239" />
+                  <Component Name="OpenClose" UId="240" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="241" />
+              <Access Scope="LiteralConstant" UId="242">
+                <Constant UId="243">
+                  <ConstantValue UId="245">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="246" />
+              <Token Text="AND" UId="247" />
+              <NewLine UId="248" />
+              <Blank Num="4" UId="249" />
+              <Access Scope="GlobalVariable" UId="250">
+                <Symbol UId="251">
+                  <Component Name="ValveDb" UId="252">
+                    <BooleanAttribute Name="HasQuotes" UId="253">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="254" />
+                  <Component Name="Cv11" UId="255" />
+                  <Token Text="." UId="256" />
+                  <Component Name="OpenClose" UId="257" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="258" />
+              <Access Scope="LiteralConstant" UId="259">
+                <Constant UId="260">
+                  <ConstantValue UId="262">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="263" />
+              <Token Text="AND" UId="264" />
+              <NewLine UId="265" />
+              <Blank Num="4" UId="266" />
+              <Access Scope="GlobalVariable" UId="267">
+                <Symbol UId="268">
+                  <Component Name="ValveDb" UId="269">
+                    <BooleanAttribute Name="HasQuotes" UId="270">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="271" />
+                  <Component Name="Cv12" UId="272" />
+                  <Token Text="." UId="273" />
+                  <Component Name="OpenClose" UId="274" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="275" />
+              <Access Scope="LiteralConstant" UId="276">
+                <Constant UId="277">
+                  <ConstantValue UId="279">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="280" />
+              <Token Text="AND" UId="281" />
+              <NewLine UId="282" />
+              <Blank Num="4" UId="283" />
+              <Access Scope="GlobalVariable" UId="284">
+                <Symbol UId="285">
+                  <Component Name="ValveDb" UId="286">
+                    <BooleanAttribute Name="HasQuotes" UId="287">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="288" />
+                  <Component Name="Cv13" UId="289" />
+                  <Token Text="." UId="290" />
+                  <Component Name="OpenClose" UId="291" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="292" />
+              <Access Scope="LiteralConstant" UId="293">
+                <Constant UId="294">
+                  <ConstantValue UId="296">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="297" />
+              <Token Text="AND" UId="298" />
+              <NewLine UId="299" />
+              <Blank Num="4" UId="300" />
+              <Access Scope="GlobalVariable" UId="301">
+                <Symbol UId="302">
+                  <Component Name="ValveDb" UId="303">
+                    <BooleanAttribute Name="HasQuotes" UId="304">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="305" />
+                  <Component Name="Cv14" UId="306" />
+                  <Token Text="." UId="307" />
+                  <Component Name="OpenClose" UId="308" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="309" />
+              <Access Scope="LiteralConstant" UId="310">
+                <Constant UId="311">
+                  <ConstantValue UId="313">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="314" />
+              <Token Text="AND" UId="315" />
+              <NewLine UId="316" />
+              <Blank Num="4" UId="317" />
+              <Access Scope="GlobalVariable" UId="318">
+                <Symbol UId="319">
+                  <Component Name="ValveDb" UId="320">
+                    <BooleanAttribute Name="HasQuotes" UId="321">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="322" />
+                  <Component Name="Cv15" UId="323" />
+                  <Token Text="." UId="324" />
+                  <Component Name="OpenClose" UId="325" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="326" />
+              <Access Scope="LiteralConstant" UId="327">
+                <Constant UId="328">
+                  <ConstantValue UId="330">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="331" />
+              <Token Text="AND" UId="332" />
+              <NewLine UId="333" />
+              <Blank Num="4" UId="334" />
+              <Access Scope="GlobalVariable" UId="335">
+                <Symbol UId="336">
+                  <Component Name="ValveDb" UId="337">
+                    <BooleanAttribute Name="HasQuotes" UId="338">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="339" />
+                  <Component Name="Cv16" UId="340" />
+                  <Token Text="." UId="341" />
+                  <Component Name="OpenClose" UId="342" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="343" />
+              <Access Scope="LiteralConstant" UId="344">
+                <Constant UId="345">
+                  <ConstantValue UId="347">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="348" />
+              <Token Text="AND" UId="349" />
+              <NewLine UId="350" />
+              <Blank Num="4" UId="351" />
+              <Access Scope="GlobalVariable" UId="352">
+                <Symbol UId="353">
+                  <Component Name="ValveDb" UId="354">
+                    <BooleanAttribute Name="HasQuotes" UId="355">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="356" />
+                  <Component Name="Cv17" UId="357" />
+                  <Token Text="." UId="358" />
+                  <Component Name="OpenClose" UId="359" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="360" />
+              <Access Scope="LiteralConstant" UId="361">
+                <Constant UId="362">
+                  <ConstantValue UId="364">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="365" />
+              <Token Text="AND" UId="366" />
+              <NewLine UId="367" />
+              <Blank Num="4" UId="368" />
+              <Access Scope="GlobalVariable" UId="369">
+                <Symbol UId="370">
+                  <Component Name="ValveDb" UId="371">
+                    <BooleanAttribute Name="HasQuotes" UId="372">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="373" />
+                  <Component Name="Cv18" UId="374" />
+                  <Token Text="." UId="375" />
+                  <Component Name="OpenClose" UId="376" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="377" />
+              <Access Scope="LiteralConstant" UId="378">
+                <Constant UId="379">
+                  <ConstantValue UId="381">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="382" />
+              <Token Text="AND" UId="383" />
+              <NewLine UId="384" />
+              <Blank Num="4" UId="385" />
+              <Access Scope="GlobalVariable" UId="386">
+                <Symbol UId="387">
+                  <Component Name="ValveDb" UId="388">
+                    <BooleanAttribute Name="HasQuotes" UId="389">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="390" />
+                  <Component Name="Cv19" UId="391" />
+                  <Token Text="." UId="392" />
+                  <Component Name="OpenClose" UId="393" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="394" />
+              <Access Scope="LiteralConstant" UId="395">
+                <Constant UId="396">
+                  <ConstantValue UId="398">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="399" />
+              <Token Text="AND" UId="400" />
+              <NewLine UId="401" />
+              <Blank Num="4" UId="402" />
+              <Access Scope="GlobalVariable" UId="403">
+                <Symbol UId="404">
+                  <Component Name="ValveDb" UId="405">
+                    <BooleanAttribute Name="HasQuotes" UId="406">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="407" />
+                  <Component Name="Cv20" UId="408" />
+                  <Token Text="." UId="409" />
+                  <Component Name="OpenClose" UId="410" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="411" />
+              <Access Scope="LiteralConstant" UId="412">
+                <Constant UId="413">
+                  <ConstantValue UId="415">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="416" />
+              <Token Text="AND" UId="417" />
+              <NewLine UId="418" />
+              <Blank Num="4" UId="419" />
+              <Access Scope="GlobalVariable" UId="420">
+                <Symbol UId="421">
+                  <Component Name="ValveDb" UId="422">
+                    <BooleanAttribute Name="HasQuotes" UId="423">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="424" />
+                  <Component Name="Cv21" UId="425" />
+                  <Token Text="." UId="426" />
+                  <Component Name="OpenClose" UId="427" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="428" />
+              <Access Scope="LiteralConstant" UId="429">
+                <Constant UId="430">
+                  <ConstantValue UId="432">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="433" />
+              <Token Text="AND" UId="434" />
+              <NewLine UId="435" />
+              <Blank Num="4" UId="436" />
+              <Access Scope="GlobalVariable" UId="437">
+                <Symbol UId="438">
+                  <Component Name="ValveDb" UId="439">
+                    <BooleanAttribute Name="HasQuotes" UId="440">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="441" />
+                  <Component Name="Cv22" UId="442" />
+                  <Token Text="." UId="443" />
+                  <Component Name="OpenClose" UId="444" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="445" />
+              <Access Scope="LiteralConstant" UId="446">
+                <Constant UId="447">
+                  <ConstantValue UId="449">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="450" />
+              <Token Text="AND" UId="451" />
+              <NewLine UId="452" />
+              <Blank Num="4" UId="453" />
+              <Access Scope="GlobalVariable" UId="454">
+                <Symbol UId="455">
+                  <Component Name="ValveDb" UId="456">
+                    <BooleanAttribute Name="HasQuotes" UId="457">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="458" />
+                  <Component Name="Cv23" UId="459" />
+                  <Token Text="." UId="460" />
+                  <Component Name="OpenClose" UId="461" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="462" />
+              <Access Scope="LiteralConstant" UId="463">
+                <Constant UId="464">
+                  <ConstantValue UId="466">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="467" />
+              <Token Text="AND" UId="468" />
+              <NewLine UId="469" />
+              <Blank Num="4" UId="470" />
+              <Access Scope="GlobalVariable" UId="471">
+                <Symbol UId="472">
+                  <Component Name="ValveDb" UId="473">
+                    <BooleanAttribute Name="HasQuotes" UId="474">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="475" />
+                  <Component Name="Cv24" UId="476" />
+                  <Token Text="." UId="477" />
+                  <Component Name="OpenClose" UId="478" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="479" />
+              <Access Scope="LiteralConstant" UId="480">
+                <Constant UId="481">
+                  <ConstantValue UId="483">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="484" />
+              <Token Text="AND" UId="485" />
+              <NewLine UId="486" />
+              <Blank Num="4" UId="487" />
+              <Access Scope="GlobalVariable" UId="488">
+                <Symbol UId="489">
+                  <Component Name="ValveDb" UId="490">
+                    <BooleanAttribute Name="HasQuotes" UId="491">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="492" />
+                  <Component Name="Cv25" UId="493" />
+                  <Token Text="." UId="494" />
+                  <Component Name="OpenClose" UId="495" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="496" />
+              <Access Scope="LiteralConstant" UId="497">
+                <Constant UId="498">
+                  <ConstantValue UId="500">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="501" />
+              <Token Text="AND" UId="502" />
+              <NewLine UId="503" />
+              <Blank Num="4" UId="504" />
+              <Access Scope="GlobalVariable" UId="505">
+                <Symbol UId="506">
+                  <Component Name="ValveDb" UId="507">
+                    <BooleanAttribute Name="HasQuotes" UId="508">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="509" />
+                  <Component Name="Cv26" UId="510" />
+                  <Token Text="." UId="511" />
+                  <Component Name="OpenClose" UId="512" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="513" />
+              <Access Scope="LiteralConstant" UId="514">
+                <Constant UId="515">
+                  <ConstantValue UId="517">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="518" />
+              <Token Text="AND" UId="519" />
+              <NewLine UId="520" />
+              <Blank Num="4" UId="521" />
+              <Access Scope="GlobalVariable" UId="522">
+                <Symbol UId="523">
+                  <Component Name="ValveDb" UId="524">
+                    <BooleanAttribute Name="HasQuotes" UId="525">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="526" />
+                  <Component Name="Cv27" UId="527" />
+                  <Token Text="." UId="528" />
+                  <Component Name="OpenClose" UId="529" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="530" />
+              <Access Scope="LiteralConstant" UId="531">
+                <Constant UId="532">
+                  <ConstantValue UId="534">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="535" />
+              <Token Text="AND" UId="536" />
+              <NewLine UId="537" />
+              <Blank Num="4" UId="538" />
+              <Access Scope="GlobalVariable" UId="539">
+                <Symbol UId="540">
+                  <Component Name="ValveDb" UId="541">
+                    <BooleanAttribute Name="HasQuotes" UId="542">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="543" />
+                  <Component Name="Cv28" UId="544" />
+                  <Token Text="." UId="545" />
+                  <Component Name="OpenClose" UId="546" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="547" />
+              <Access Scope="LiteralConstant" UId="548">
+                <Constant UId="549">
+                  <ConstantValue UId="551">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="552" />
+              <Token Text="AND" UId="553" />
+              <NewLine UId="554" />
+              <Blank Num="4" UId="555" />
+              <Access Scope="GlobalVariable" UId="556">
+                <Symbol UId="557">
+                  <Component Name="ValveDb" UId="558">
+                    <BooleanAttribute Name="HasQuotes" UId="559">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="560" />
+                  <Component Name="Cv29" UId="561" />
+                  <Token Text="." UId="562" />
+                  <Component Name="OpenClose" UId="563" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="564" />
+              <Access Scope="LiteralConstant" UId="565">
+                <Constant UId="566">
+                  <ConstantValue UId="568">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="569" />
+              <Token Text="AND" UId="570" />
+              <NewLine UId="571" />
+              <Blank Num="4" UId="572" />
+              <Access Scope="GlobalVariable" UId="573">
+                <Symbol UId="574">
+                  <Component Name="ValveDb" UId="575">
+                    <BooleanAttribute Name="HasQuotes" UId="576">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="577" />
+                  <Component Name="Cv30" UId="578" />
+                  <Token Text="." UId="579" />
+                  <Component Name="OpenClose" UId="580" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="581" />
+              <Access Scope="LiteralConstant" UId="582">
+                <Constant UId="583">
+                  <ConstantValue UId="585">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="586" />
+              <Token Text="AND" UId="587" />
+              <NewLine UId="588" />
+              <Blank Num="4" UId="589" />
+              <Access Scope="GlobalVariable" UId="590">
+                <Symbol UId="591">
+                  <Component Name="ValveDb" UId="592">
+                    <BooleanAttribute Name="HasQuotes" UId="593">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="594" />
+                  <Component Name="Cv31" UId="595" />
+                  <Token Text="." UId="596" />
+                  <Component Name="OpenClose" UId="597" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="598" />
+              <Access Scope="LiteralConstant" UId="599">
+                <Constant UId="600">
+                  <ConstantValue UId="602">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="603" />
+              <Token Text="AND" UId="604" />
+              <NewLine UId="605" />
+              <Blank Num="4" UId="606" />
+              <Access Scope="GlobalVariable" UId="607">
+                <Symbol UId="608">
+                  <Component Name="ValveDb" UId="609">
+                    <BooleanAttribute Name="HasQuotes" UId="610">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="611" />
+                  <Component Name="Cv32" UId="612" />
+                  <Token Text="." UId="613" />
+                  <Component Name="OpenClose" UId="614" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="615" />
+              <Access Scope="LiteralConstant" UId="616">
+                <Constant UId="617">
+                  <ConstantValue UId="619">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="620" />
+              <Token Text="AND" UId="621" />
+              <NewLine UId="622" />
+              <Blank Num="4" UId="623" />
+              <Access Scope="GlobalVariable" UId="624">
+                <Symbol UId="625">
+                  <Component Name="ValveDb" UId="626">
+                    <BooleanAttribute Name="HasQuotes" UId="627">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="628" />
+                  <Component Name="Cv33" UId="629" />
+                  <Token Text="." UId="630" />
+                  <Component Name="OpenClose" UId="631" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="632" />
+              <Access Scope="LiteralConstant" UId="633">
+                <Constant UId="634">
+                  <ConstantValue UId="636">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="637" />
+              <Token Text="AND" UId="638" />
+              <NewLine UId="639" />
+              <Blank Num="4" UId="640" />
+              <Access Scope="GlobalVariable" UId="641">
+                <Symbol UId="642">
+                  <Component Name="ValveDb" UId="643">
+                    <BooleanAttribute Name="HasQuotes" UId="644">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="645" />
+                  <Component Name="Cv34" UId="646" />
+                  <Token Text="." UId="647" />
+                  <Component Name="OpenClose" UId="648" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="649" />
+              <Access Scope="LiteralConstant" UId="650">
+                <Constant UId="651">
+                  <ConstantValue UId="653">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="654" />
+              <Token Text="AND" UId="655" />
+              <NewLine UId="656" />
+              <Blank Num="4" UId="657" />
+              <Access Scope="GlobalVariable" UId="658">
+                <Symbol UId="659">
+                  <Component Name="ValveDb" UId="660">
+                    <BooleanAttribute Name="HasQuotes" UId="661">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="662" />
+                  <Component Name="Cv35" UId="663" />
+                  <Token Text="." UId="664" />
+                  <Component Name="OpenClose" UId="665" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="666" />
+              <Access Scope="LiteralConstant" UId="667">
+                <Constant UId="668">
+                  <ConstantValue UId="670">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="671" />
+              <Token Text="AND" UId="672" />
+              <NewLine UId="673" />
+              <Blank Num="4" UId="674" />
+              <Access Scope="GlobalVariable" UId="675">
+                <Symbol UId="676">
+                  <Component Name="ValveDb" UId="677">
+                    <BooleanAttribute Name="HasQuotes" UId="678">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="679" />
+                  <Component Name="Cv36" UId="680" />
+                  <Token Text="." UId="681" />
+                  <Component Name="OpenClose" UId="682" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="683" />
+              <Access Scope="LiteralConstant" UId="684">
+                <Constant UId="685">
+                  <ConstantValue UId="687">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="688" />
+              <Token Text="AND" UId="689" />
+              <NewLine UId="690" />
+              <Blank Num="4" UId="691" />
+              <Access Scope="GlobalVariable" UId="692">
+                <Symbol UId="693">
+                  <Component Name="ValveDb" UId="694">
+                    <BooleanAttribute Name="HasQuotes" UId="695">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="696" />
+                  <Component Name="Cv37" UId="697" />
+                  <Token Text="." UId="698" />
+                  <Component Name="OpenClose" UId="699" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="700" />
+              <Access Scope="LiteralConstant" UId="701">
+                <Constant UId="702">
+                  <ConstantValue UId="704">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="705" />
+              <Token Text="AND" UId="706" />
+              <NewLine UId="707" />
+              <Blank Num="4" UId="708" />
+              <Access Scope="GlobalVariable" UId="709">
+                <Symbol UId="710">
+                  <Component Name="ValveDb" UId="711">
+                    <BooleanAttribute Name="HasQuotes" UId="712">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="713" />
+                  <Component Name="Cv38" UId="714" />
+                  <Token Text="." UId="715" />
+                  <Component Name="OpenClose" UId="716" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="717" />
+              <Access Scope="LiteralConstant" UId="718">
+                <Constant UId="719">
+                  <ConstantValue UId="721">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="722" />
+              <Token Text="AND" UId="723" />
+              <NewLine UId="724" />
+              <Blank Num="4" UId="725" />
+              <Access Scope="GlobalVariable" UId="726">
+                <Symbol UId="727">
+                  <Component Name="ValveDb" UId="728">
+                    <BooleanAttribute Name="HasQuotes" UId="729">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="730" />
+                  <Component Name="Cv39" UId="731" />
+                  <Token Text="." UId="732" />
+                  <Component Name="OpenClose" UId="733" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="734" />
+              <Access Scope="LiteralConstant" UId="735">
+                <Constant UId="736">
+                  <ConstantValue UId="738">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="739" />
+              <Token Text="AND" UId="740" />
+              <Blank Num="2" UId="741" />
+              <NewLine UId="742" />
+              <Blank Num="4" UId="743" />
+              <Access Scope="GlobalVariable" UId="744">
+                <Symbol UId="745">
+                  <Component Name="ValveDb" UId="746">
+                    <BooleanAttribute Name="HasQuotes" UId="747">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="748" />
+                  <Component Name="Cv40" UId="749" />
+                  <Token Text="." UId="750" />
+                  <Component Name="OpenClose" UId="751" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="752" />
+              <Access Scope="LiteralConstant" UId="753">
+                <Constant UId="754">
+                  <ConstantValue UId="756">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="757" />
+              <Token Text="AND" UId="758" />
+              <NewLine UId="759" />
+              <Blank Num="4" UId="760" />
+              <Access Scope="GlobalVariable" UId="761">
+                <Symbol UId="762">
+                  <Component Name="ValveDb" UId="763">
+                    <BooleanAttribute Name="HasQuotes" UId="764">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="765" />
+                  <Component Name="Cv41" UId="766" />
+                  <Token Text="." UId="767" />
+                  <Component Name="OpenClose" UId="768" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="769" />
+              <Access Scope="LiteralConstant" UId="770">
+                <Constant UId="771">
+                  <ConstantValue UId="773">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="774" />
+              <Token Text="AND" UId="775" />
+              <NewLine UId="776" />
+              <Blank Num="4" UId="777" />
+              <Access Scope="GlobalVariable" UId="778">
+                <Symbol UId="779">
+                  <Component Name="ValveDb" UId="780">
+                    <BooleanAttribute Name="HasQuotes" UId="781">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="782" />
+                  <Component Name="Cv42" UId="783" />
+                  <Token Text="." UId="784" />
+                  <Component Name="OpenClose" UId="785" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="786" />
+              <Access Scope="LiteralConstant" UId="787">
+                <Constant UId="788">
+                  <ConstantValue UId="790">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="791" />
+              <Token Text="AND" UId="792" />
+              <NewLine UId="793" />
+              <Blank Num="4" UId="794" />
+              <Access Scope="GlobalVariable" UId="795">
+                <Symbol UId="796">
+                  <Component Name="ValveDb" UId="797">
+                    <BooleanAttribute Name="HasQuotes" UId="798">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="799" />
+                  <Component Name="Cv43" UId="800" />
+                  <Token Text="." UId="801" />
+                  <Component Name="OpenClose" UId="802" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="803" />
+              <Access Scope="LiteralConstant" UId="804">
+                <Constant UId="805">
+                  <ConstantValue UId="807">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="808" />
+              <Token Text="AND" UId="809" />
+              <NewLine UId="810" />
+              <Blank Num="4" UId="811" />
+              <Access Scope="GlobalVariable" UId="812">
+                <Symbol UId="813">
+                  <Component Name="ValveDb" UId="814">
+                    <BooleanAttribute Name="HasQuotes" UId="815">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="816" />
+                  <Component Name="Cv44" UId="817" />
+                  <Token Text="." UId="818" />
+                  <Component Name="OpenClose" UId="819" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="820" />
+              <Access Scope="LiteralConstant" UId="821">
+                <Constant UId="822">
+                  <ConstantValue UId="824">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="825" />
+              <Token Text="AND" UId="826" />
+              <NewLine UId="827" />
+              <Blank Num="4" UId="828" />
+              <Access Scope="GlobalVariable" UId="829">
+                <Symbol UId="830">
+                  <Component Name="ValveDb" UId="831">
+                    <BooleanAttribute Name="HasQuotes" UId="832">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="833" />
+                  <Component Name="Cv45" UId="834" />
+                  <Token Text="." UId="835" />
+                  <Component Name="OpenClose" UId="836" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="837" />
+              <Access Scope="LiteralConstant" UId="838">
+                <Constant UId="839">
+                  <ConstantValue UId="841">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="842" />
+              <Token Text="AND" UId="843" />
+              <NewLine UId="844" />
+              <Blank Num="4" UId="845" />
+              <Access Scope="GlobalVariable" UId="846">
+                <Symbol UId="847">
+                  <Component Name="ValveDb" UId="848">
+                    <BooleanAttribute Name="HasQuotes" UId="849">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="850" />
+                  <Component Name="Cv46" UId="851" />
+                  <Token Text="." UId="852" />
+                  <Component Name="OpenClose" UId="853" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="854" />
+              <Access Scope="LiteralConstant" UId="855">
+                <Constant UId="856">
+                  <ConstantValue UId="858">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="859" />
+              <Token Text="AND" UId="860" />
+              <NewLine UId="861" />
+              <Blank Num="4" UId="862" />
+              <Access Scope="GlobalVariable" UId="863">
+                <Symbol UId="864">
+                  <Component Name="ValveDb" UId="865">
+                    <BooleanAttribute Name="HasQuotes" UId="866">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="867" />
+                  <Component Name="Cv47" UId="868" />
+                  <Token Text="." UId="869" />
+                  <Component Name="OpenClose" UId="870" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="871" />
+              <Access Scope="LiteralConstant" UId="872">
+                <Constant UId="873">
+                  <ConstantValue UId="875">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="876" />
+              <Token Text="AND" UId="877" />
+              <NewLine UId="878" />
+              <Blank Num="4" UId="879" />
+              <Access Scope="GlobalVariable" UId="880">
+                <Symbol UId="881">
+                  <Component Name="ValveDb" UId="882">
+                    <BooleanAttribute Name="HasQuotes" UId="883">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="884" />
+                  <Component Name="Cv48" UId="885" />
+                  <Token Text="." UId="886" />
+                  <Component Name="OpenClose" UId="887" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="888" />
+              <Access Scope="LiteralConstant" UId="889">
+                <Constant UId="890">
+                  <ConstantValue UId="892">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="893" />
+              <Token Text="AND" UId="894" />
+              <NewLine UId="895" />
+              <Blank Num="4" UId="896" />
+              <Access Scope="GlobalVariable" UId="897">
+                <Symbol UId="898">
+                  <Component Name="ValveDb" UId="899">
+                    <BooleanAttribute Name="HasQuotes" UId="900">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="901" />
+                  <Component Name="Cv49" UId="902" />
+                  <Token Text="." UId="903" />
+                  <Component Name="OpenClose" UId="904" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="905" />
+              <Access Scope="LiteralConstant" UId="906">
+                <Constant UId="907">
+                  <ConstantValue UId="909">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="910" />
+              <Token Text="AND" UId="911" />
+              <NewLine UId="912" />
+              <Blank Num="4" UId="913" />
+              <Access Scope="GlobalVariable" UId="914">
+                <Symbol UId="915">
+                  <Component Name="ValveDb" UId="916">
+                    <BooleanAttribute Name="HasQuotes" UId="917">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="918" />
+                  <Component Name="Cv50" UId="919" />
+                  <Token Text="." UId="920" />
+                  <Component Name="OpenClose" UId="921" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="922" />
+              <Access Scope="LiteralConstant" UId="923">
+                <Constant UId="924">
+                  <ConstantValue UId="926">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="927" />
+              <Token Text="AND" UId="928" />
+              <NewLine UId="929" />
+              <Blank Num="4" UId="930" />
+              <Access Scope="GlobalVariable" UId="931">
+                <Symbol UId="932">
+                  <Component Name="ValveDb" UId="933">
+                    <BooleanAttribute Name="HasQuotes" UId="934">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="935" />
+                  <Component Name="Cv51" UId="936" />
+                  <Token Text="." UId="937" />
+                  <Component Name="OpenClose" UId="938" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="939" />
+              <Access Scope="LiteralConstant" UId="940">
+                <Constant UId="941">
+                  <ConstantValue UId="943">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="944" />
+              <Token Text="AND" UId="945" />
+              <NewLine UId="946" />
+              <Blank Num="4" UId="947" />
+              <Access Scope="GlobalVariable" UId="948">
+                <Symbol UId="949">
+                  <Component Name="ValveDb" UId="950">
+                    <BooleanAttribute Name="HasQuotes" UId="951">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="952" />
+                  <Component Name="Cv52" UId="953" />
+                  <Token Text="." UId="954" />
+                  <Component Name="OpenClose" UId="955" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="956" />
+              <Access Scope="LiteralConstant" UId="957">
+                <Constant UId="958">
+                  <ConstantValue UId="960">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="961" />
+              <Token Text="AND" UId="962" />
+              <NewLine UId="963" />
+              <Blank Num="4" UId="964" />
+              <Access Scope="GlobalVariable" UId="965">
+                <Symbol UId="966">
+                  <Component Name="ValveDb" UId="967">
+                    <BooleanAttribute Name="HasQuotes" UId="968">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="969" />
+                  <Component Name="Cv53" UId="970" />
+                  <Token Text="." UId="971" />
+                  <Component Name="OpenClose" UId="972" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="973" />
+              <Access Scope="LiteralConstant" UId="974">
+                <Constant UId="975">
+                  <ConstantValue UId="977">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="978" />
+              <Token Text="AND" UId="979" />
+              <NewLine UId="980" />
+              <Blank Num="4" UId="981" />
+              <Access Scope="GlobalVariable" UId="982">
+                <Symbol UId="983">
+                  <Component Name="ValveDb" UId="984">
+                    <BooleanAttribute Name="HasQuotes" UId="985">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="986" />
+                  <Component Name="Cv54" UId="987" />
+                  <Token Text="." UId="988" />
+                  <Component Name="OpenClose" UId="989" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="990" />
+              <Access Scope="LiteralConstant" UId="991">
+                <Constant UId="992">
+                  <ConstantValue UId="994">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="995" />
+              <Token Text="AND" UId="996" />
+              <NewLine UId="997" />
+              <Blank Num="4" UId="998" />
+              <Access Scope="GlobalVariable" UId="999">
+                <Symbol UId="1000">
+                  <Component Name="ValveDb" UId="1001">
+                    <BooleanAttribute Name="HasQuotes" UId="1002">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="1003" />
+                  <Component Name="Cv55" UId="1004" />
+                  <Token Text="." UId="1005" />
+                  <Component Name="OpenClose" UId="1006" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="1007" />
+              <Access Scope="LiteralConstant" UId="1008">
+                <Constant UId="1009">
+                  <ConstantValue UId="1011">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="1012" />
+              <Token Text="AND" UId="1013" />
+              <NewLine UId="1014" />
+              <Blank Num="4" UId="1015" />
+              <Access Scope="GlobalVariable" UId="1016">
+                <Symbol UId="1017">
+                  <Component Name="ValveDb" UId="1018">
+                    <BooleanAttribute Name="HasQuotes" UId="1019">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="1020" />
+                  <Component Name="Cv56" UId="1021" />
+                  <Token Text="." UId="1022" />
+                  <Component Name="OpenClose" UId="1023" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="1024" />
+              <Access Scope="LiteralConstant" UId="1025">
+                <Constant UId="1026">
+                  <ConstantValue UId="1028">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="1029" />
+              <Token Text="AND" UId="1030" />
+              <NewLine UId="1031" />
+              <Blank Num="4" UId="1032" />
+              <Access Scope="GlobalVariable" UId="1033">
+                <Symbol UId="1034">
+                  <Component Name="ValveDb" UId="1035">
+                    <BooleanAttribute Name="HasQuotes" UId="1036">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="1037" />
+                  <Component Name="Cv57" UId="1038" />
+                  <Token Text="." UId="1039" />
+                  <Component Name="OpenClose" UId="1040" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="1041" />
+              <Access Scope="LiteralConstant" UId="1042">
+                <Constant UId="1043">
+                  <ConstantValue UId="1045">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="1046" />
+              <Token Text="AND" UId="1047" />
+              <NewLine UId="1048" />
+              <Blank Num="4" UId="1049" />
+              <Access Scope="GlobalVariable" UId="1050">
+                <Symbol UId="1051">
+                  <Component Name="ValveDb" UId="1052">
+                    <BooleanAttribute Name="HasQuotes" UId="1053">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="1054" />
+                  <Component Name="Cv58" UId="1055" />
+                  <Token Text="." UId="1056" />
+                  <Component Name="OpenClose" UId="1057" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="1058" />
+              <Access Scope="LiteralConstant" UId="1059">
+                <Constant UId="1060">
+                  <ConstantValue UId="1062">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="1063" />
+              <Token Text="AND" UId="1064" />
+              <NewLine UId="1065" />
+              <Blank Num="4" UId="1066" />
+              <Access Scope="GlobalVariable" UId="1067">
+                <Symbol UId="1068">
+                  <Component Name="ValveDb" UId="1069">
+                    <BooleanAttribute Name="HasQuotes" UId="1070">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="1071" />
+                  <Component Name="Cv59" UId="1072" />
+                  <Token Text="." UId="1073" />
+                  <Component Name="OpenClose" UId="1074" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="1075" />
+              <Access Scope="LiteralConstant" UId="1076">
+                <Constant UId="1077">
+                  <ConstantValue UId="1079">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="1080" />
+              <Token Text="AND" UId="1081" />
+              <NewLine UId="1082" />
+              <Blank Num="4" UId="1083" />
+              <Access Scope="GlobalVariable" UId="1084">
+                <Symbol UId="1085">
+                  <Component Name="ValveDb" UId="1086">
+                    <BooleanAttribute Name="HasQuotes" UId="1087">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="1088" />
+                  <Component Name="Cv60" UId="1089" />
+                  <Token Text="." UId="1090" />
+                  <Component Name="OpenClose" UId="1091" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="1092" />
+              <Access Scope="LiteralConstant" UId="1093">
+                <Constant UId="1094">
+                  <ConstantValue UId="1096">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="1097" />
+              <Token Text="AND" UId="1098" />
+              <NewLine UId="1099" />
+              <Blank Num="4" UId="1100" />
+              <Access Scope="GlobalVariable" UId="1101">
+                <Symbol UId="1102">
+                  <Component Name="ValveDb" UId="1103">
+                    <BooleanAttribute Name="HasQuotes" UId="1104">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="1105" />
+                  <Component Name="Cv61" UId="1106" />
+                  <Token Text="." UId="1107" />
+                  <Component Name="OpenClose" UId="1108" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="1109" />
+              <Access Scope="LiteralConstant" UId="1110">
+                <Constant UId="1111">
+                  <ConstantValue UId="1113">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="1114" />
+              <Token Text="AND" UId="1115" />
+              <NewLine UId="1116" />
+              <Blank Num="4" UId="1117" />
+              <Access Scope="GlobalVariable" UId="1118">
+                <Symbol UId="1119">
+                  <Component Name="ValveDb" UId="1120">
+                    <BooleanAttribute Name="HasQuotes" UId="1121">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="1122" />
+                  <Component Name="Cv62" UId="1123" />
+                  <Token Text="." UId="1124" />
+                  <Component Name="OpenClose" UId="1125" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="1126" />
+              <Access Scope="LiteralConstant" UId="1127">
+                <Constant UId="1128">
+                  <ConstantValue UId="1130">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="1131" />
+              <Token Text="AND" UId="1132" />
+              <NewLine UId="1133" />
+              <Blank Num="4" UId="1134" />
+              <Access Scope="GlobalVariable" UId="1135">
+                <Symbol UId="1136">
+                  <Component Name="ValveDb" UId="1137">
+                    <BooleanAttribute Name="HasQuotes" UId="1138">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="1139" />
+                  <Component Name="Cv63" UId="1140" />
+                  <Token Text="." UId="1141" />
+                  <Component Name="OpenClose" UId="1142" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="1143" />
+              <Access Scope="LiteralConstant" UId="1144">
+                <Constant UId="1145">
+                  <ConstantValue UId="1147">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="1148" />
+              <Token Text="AND" UId="1149" />
+              <NewLine UId="1150" />
+              <Blank Num="4" UId="1151" />
+              <Access Scope="GlobalVariable" UId="1152">
+                <Symbol UId="1153">
+                  <Component Name="ValveDb" UId="1154">
+                    <BooleanAttribute Name="HasQuotes" UId="1155">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="1156" />
+                  <Component Name="Cv64" UId="1157" />
+                  <Token Text="." UId="1158" />
+                  <Component Name="OpenClose" UId="1159" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="1160" />
+              <Access Scope="LiteralConstant" UId="1161">
+                <Constant UId="1162">
+                  <ConstantValue UId="1164">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="1165" />
+              <Token Text="AND" UId="1166" />
+              <NewLine UId="1167" />
+              <Blank Num="4" UId="1168" />
+              <Access Scope="GlobalVariable" UId="1169">
+                <Symbol UId="1170">
+                  <Component Name="ValveDb" UId="1171">
+                    <BooleanAttribute Name="HasQuotes" UId="1172">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="1173" />
+                  <Component Name="Fbov01" UId="1174" />
+                  <Token Text="." UId="1175" />
+                  <Component Name="OpenClose" UId="1176" />
+                </Symbol>
+              </Access>
+              <Token Text="=" UId="1177" />
+              <Access Scope="LiteralConstant" UId="1178">
+                <Constant UId="1179">
+                  <ConstantValue UId="1181">0</ConstantValue>
+                </Constant>
+              </Access>
+              <NewLine UId="1182" />
+              <Blank Num="4" UId="1183" />
+              <NewLine UId="1184" />
+              <Blank Num="4" UId="1185" />
+              <NewLine UId="1186" />
+              <Blank Num="4" UId="1187" />
+              <NewLine UId="1188" />
+              <Blank Num="4" UId="1189" />
+              <NewLine UId="1190" />
+              <Token Text="THEN" UId="1191" />
+              <NewLine UId="1192" />
+              <Blank Num="4" UId="1193" />
+              <Access Scope="GlobalVariable" UId="1194">
+                <Symbol UId="1195">
+                  <Component Name="ModeDb_R" UId="1196">
+                    <BooleanAttribute Name="HasQuotes" UId="1197">true</BooleanAttribute>
+                  </Component>
+                  <Token Text="." UId="1198" />
+                  <Component Name="ManualMode" UId="1199" />
+                  <Token Text="." UId="1200" />
+                  <Component Name="Selected" UId="1201" />
+                </Symbol>
+              </Access>
+              <Blank UId="1202" />
+              <Token Text=":=" UId="1203" />
+              <Blank UId="1204" />
+              <Access Scope="LiteralConstant" UId="1205">
+                <Constant UId="1206">
+                  <ConstantValue UId="1208">0</ConstantValue>
+                </Constant>
+              </Access>
+              <Blank UId="1209" />
+              <Token Text=";" UId="1210" />
+              <NewLine UId="1211" />
+              <Token Text="END_IF" UId="1212" />
+              <Token Text=";" UId="1213" />
+              <NewLine UId="1214" />
+            </StructuredText>
+          </NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4F" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="50" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="51" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="52" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>__________________________ Manual Mode Valve REset__________________________</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="53" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="54" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="55" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="56" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="57" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="58" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="59" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FC>
+</Document>

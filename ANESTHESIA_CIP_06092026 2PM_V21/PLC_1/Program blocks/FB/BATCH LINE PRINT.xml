@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V21" />
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="Input">
+            <Member Name="PrintInetrval" Datatype="Int" Remanence="SetInIDB" />
+            <Member Name="SecPulse" Datatype="Bool" Remanence="SetInIDB" />
+          </Section>
+          <Section Name="Output" />
+          <Section Name="InOut">
+            <Member Name="ResetBatchTimer" Datatype="Bool" Remanence="SetInIDB" />
+            <Member Name="BatchSelected" Datatype="Bool" />
+          </Section>
+          <Section Name="Static">
+            <Member Name="IEC_Counter_0_Instance" Datatype="CTU_INT" Version="1.0">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+          </Section>
+          <Section Name="Temp" />
+          <Section Name="Constant" />
+        </Sections>
+      </Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>BATCH LINE PRINT</Name>
+      <Namespace />
+      <Number>5</Number>
+      <ProgrammingLanguage>LAD</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="3" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="5" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="6" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="8" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="LocalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="BatchSelected" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LocalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="SecPulse" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LocalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="ResetBatchTimer" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LocalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="PrintInetrval" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="25">
+                  <Symbol>
+                    <Component Name="BatchLinePrint" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LocalVariable" UId="26">
+                  <Symbol>
+                    <Component Name="ResetBatchTimer" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="27">
+                  <Symbol>
+                    <Component Name="BatchLinePrint" />
+                  </Symbol>
+                </Access>
+                <Access Scope="TypedConstant" UId="28">
+                  <Constant>
+                    <ConstantValue>T#1S</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="29">
+                  <Symbol>
+                    <Component Name="BatchLinePrint" />
+                  </Symbol>
+                </Access>
+                <Part Name="Contact" UId="30" />
+                <Part Name="Contact" UId="31" />
+                <Part Name="CTU" Version="1.0" UId="32">
+                  <Instance Scope="LocalVariable" UId="33">
+                    <Component Name="IEC_Counter_0_Instance" />
+                  </Instance>
+                  <TemplateValue Name="value_type" Type="Type">Int</TemplateValue>
+                </Part>
+                <Part Name="SCoil" UId="34">
+                  <Comment>
+                    <MultiLanguageText Lang="en-US">Line Print interval</MultiLanguageText>
+                  </Comment>
+                </Part>
+                <Part Name="Coil" UId="35" />
+                <Part Name="Contact" UId="36" />
+                <Part Name="TON" Version="1.0" UId="37">
+                  <Instance Scope="GlobalVariable" UId="38">
+                    <Component Name="IEC_Timer_0_DB_9" />
+                  </Instance>
+                  <TemplateValue Name="time_type" Type="Type">Time</TemplateValue>
+                </Part>
+                <Part Name="RCoil" UId="39" />
+              </Parts>
+              <Wires>
+                <Wire UId="42">
+                  <Powerrail />
+                  <NameCon UId="30" Name="in" />
+                </Wire>
+                <Wire UId="43">
+                  <IdentCon UId="21" />
+                  <NameCon UId="30" Name="operand" />
+                </Wire>
+                <Wire UId="44">
+                  <NameCon UId="30" Name="out" />
+                  <NameCon UId="31" Name="in" />
+                  <NameCon UId="36" Name="in" />
+                </Wire>
+                <Wire UId="45">
+                  <IdentCon UId="22" />
+                  <NameCon UId="31" Name="operand" />
+                </Wire>
+                <Wire UId="46">
+                  <NameCon UId="31" Name="out" />
+                  <NameCon UId="32" Name="CU" />
+                </Wire>
+                <Wire UId="47">
+                  <IdentCon UId="23" />
+                  <NameCon UId="32" Name="R" />
+                </Wire>
+                <Wire UId="48">
+                  <IdentCon UId="24" />
+                  <NameCon UId="32" Name="PV" />
+                </Wire>
+                <Wire UId="49">
+                  <NameCon UId="32" Name="Q" />
+                  <NameCon UId="34" Name="in" />
+                  <NameCon UId="35" Name="in" />
+                </Wire>
+                <Wire UId="50">
+                  <NameCon UId="32" Name="CV" />
+                  <OpenCon UId="40" />
+                </Wire>
+                <Wire UId="51">
+                  <IdentCon UId="25" />
+                  <NameCon UId="34" Name="operand" />
+                </Wire>
+                <Wire UId="52">
+                  <IdentCon UId="26" />
+                  <NameCon UId="35" Name="operand" />
+                </Wire>
+                <Wire UId="53">
+                  <IdentCon UId="27" />
+                  <NameCon UId="36" Name="operand" />
+                </Wire>
+                <Wire UId="54">
+                  <NameCon UId="36" Name="out" />
+                  <NameCon UId="37" Name="IN" />
+                </Wire>
+                <Wire UId="55">
+                  <IdentCon UId="28" />
+                  <NameCon UId="37" Name="PT" />
+                </Wire>
+                <Wire UId="56">
+                  <NameCon UId="37" Name="Q" />
+                  <NameCon UId="39" Name="in" />
+                </Wire>
+                <Wire UId="57">
+                  <NameCon UId="37" Name="ET" />
+                  <OpenCon UId="41" />
+                </Wire>
+                <Wire UId="58">
+                  <IdentCon UId="29" />
+                  <NameCon UId="39" Name="operand" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="9" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="B" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="D" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="E" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="10" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="11" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="12" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="13" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>

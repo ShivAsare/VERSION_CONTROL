@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V21" />
+  <SW.Blocks.InstanceDB ID="0">
+    <AttributeList>
+      <InstanceOfName>PHT Block</InstanceOfName>
+      <InstanceOfType>FB</InstanceOfType>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="Input">
+            <Member Name="Secs" Datatype="Bool" />
+            <Member Name="Start" Datatype="Bool" />
+            <Member Name="Stop" Datatype="Bool" />
+            <Member Name="Abort" Datatype="Bool" />
+            <Member Name="AlarmAck" Datatype="Bool" />
+            <Member Name="AlwaysTrue" Datatype="Bool" />
+            <Member Name="StartupMsgSelection" Datatype="Bool" />
+            <Member Name="spare1" Datatype="Bool" />
+            <Member Name="spare2" Datatype="Bool" />
+            <Member Name="EndMsgSelection" Datatype="Bool" />
+            <Member Name="EndMsgAck" Datatype="Bool" />
+            <Member Name="Fault" Datatype="Bool" />
+            <Member Name="Popup1Enable" Datatype="Bool" />
+            <Member Name="Popup2Enable" Datatype="Bool" />
+            <Member Name="ScadaHmi" Datatype="Bool" />
+            <Member Name="StabilizeTime" Datatype="Int" />
+            <Member Name="SetPressure" Datatype="Real" />
+            <Member Name="ReleasePressure" Datatype="Real" />
+            <Member Name="FailPressure" Datatype="Real" />
+            <Member Name="AcceptableLeakage" Datatype="Real" />
+            <Member Name="HoldTime" Datatype="Int" />
+            <Member Name="UtilityValveDelay" Datatype="Int" />
+            <Member Name="Actual Minimum Pressure" Datatype="Real" />
+            <Member Name="Actual Maximum Pressure" Datatype="Real" />
+            <Member Name="MaximumAttemptToFailedSelection" Datatype="Int" />
+            <Member Name="MaximumNoAttemptToFailed" Datatype="Int" />
+            <Member Name="PrintInterval" Datatype="Int" />
+          </Section>
+          <Section Name="Output">
+            <Member Name="StartupMsg1" Datatype="Bool" />
+            <Member Name="CycleOver" Datatype="Bool" />
+            <Member Name="LineValves" Datatype="Bool" />
+            <Member Name="ControlValve" Datatype="Bool" />
+            <Member Name="UtilityValve" Datatype="Bool" />
+            <Member Name="StartupMsg" Datatype="Bool" />
+            <Member Name="EndMsg" Datatype="Bool" />
+            <Member Name="TestPassAlarm" Datatype="Bool" />
+            <Member Name="TestFailAlarm" Datatype="Bool" />
+            <Member Name="DrainValves" Datatype="Bool" />
+            <Member Name="StartupMsg2" Datatype="Bool" />
+            <Member Name="StabilizeActualSecs" Datatype="DInt" />
+            <Member Name="HoldActualMins" Datatype="DInt" />
+            <Member Name="HoldActualSecs" Datatype="DInt" />
+            <Member Name="Status" Datatype="Int" />
+            <Member Name="StatusStr" Datatype="String[60]" />
+            <Member Name="UtilityValveActualDelay" Datatype="Int" />
+            <Member Name="Event" Datatype="Word" />
+          </Section>
+          <Section Name="InOut">
+            <Member Name="Selected" Datatype="Bool" />
+            <Member Name="CycleSelected" Datatype="Bool" />
+            <Member Name="Running" Datatype="Bool" />
+            <Member Name="VesselPressurised" Datatype="Bool" />
+            <Member Name="DataLogCmd" Datatype="Bool" />
+            <Member Name="StartLog" Datatype="Bool" />
+            <Member Name="EndLog" Datatype="Bool" />
+            <Member Name="DataLogYes" Datatype="Bool" />
+            <Member Name="ResetPhtTimer" Datatype="Bool" />
+            <Member Name="VesselStabilised" Datatype="Bool" />
+            <Member Name="DelayToConfirmVesselPressurized" Datatype="Bool" />
+            <Member Name="PressureDropDuringStabilizeTime" Datatype="Bool" />
+            <Member Name="PressureDropDuringHoldTime" Datatype="Bool" />
+            <Member Name="TestPassedRW" Datatype="Bool" />
+            <Member Name="DelayToStartReleaseDone" Datatype="Bool" />
+            <Member Name="DrainValve" Datatype="Bool" />
+            <Member Name="StabilizePopup" Datatype="Bool" />
+            <Member Name="LineValvesOpeningTime" Datatype="Int" />
+            <Member Name="DrainValvesOpeningTime" Datatype="Int" />
+            <Member Name="AcceptablePressure" Datatype="Real" />
+            <Member Name="PHT Selected" Datatype="Bool" />
+            <Member Name="TestAborted" Datatype="Bool" />
+            <Member Name="ResetBit" Datatype="Bool" />
+            <Member Name="Popup2Ack" Datatype="Bool" />
+            <Member Name="StartupMsgYes" Datatype="Bool" />
+            <Member Name="StartupMsgNo" Datatype="Bool" />
+            <Member Name="MaximumNoAttemptToFailedTemp" Datatype="Int" />
+          </Section>
+          <Section Name="Static">
+            <Member Name="StabilizeTimer" Datatype="&quot;R_TIMER&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="HoldTimer" Datatype="&quot;R_TIMER&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="CheckPressureDuringStabilizeTime" Datatype="&quot;On Delay Timer&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="CheckPressureDuringHoldTime" Datatype="&quot;On Delay Timer&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="ReleaseCheckTime" Datatype="&quot;On Delay Timer&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="CheckPressuredelay" Datatype="&quot;On Delay Timer&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="DelayToStartRelease" Datatype="&quot;On Delay Timer&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="StabilizeDelay" Datatype="&quot;On Delay Timer&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="IEC_Timer_0_Instance" Datatype="TON_TIME" Version="1.0">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="IEC_Timer_1_Instance" Datatype="TON_TIME" Version="1.0">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="Timer1" Datatype="TON_TIME" Version="1.0">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="Timer2" Datatype="TON_TIME" Version="1.0">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="Timer3" Datatype="TON_TIME" Version="1.0">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="Timer4" Datatype="TON_TIME" Version="1.0">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="Timer5" Datatype="TON_TIME" Version="1.0">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="Timer6" Datatype="TON_TIME" Version="1.0">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="Timer7" Datatype="TON_TIME" Version="1.0">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="Re" Datatype="Bool">
+              <AttributeList>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="Re1" Datatype="Bool">
+              <AttributeList>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="Re2" Datatype="Bool">
+              <AttributeList>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="Re3" Datatype="Bool">
+              <AttributeList>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="Re4" Datatype="Bool">
+              <AttributeList>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="Re5" Datatype="Bool">
+              <AttributeList>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="Re6" Datatype="Bool">
+              <AttributeList>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="Re7" Datatype="Bool">
+              <AttributeList>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="Re8" Datatype="Bool">
+              <AttributeList>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="Re9" Datatype="Bool">
+              <AttributeList>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="Re10" Datatype="Bool" />
+            <Member Name="Re11" Datatype="Bool" />
+            <Member Name="Re12" Datatype="Bool" />
+            <Member Name="Timer8" Datatype="TON_TIME" Version="1.0" />
+            <Member Name="Timer9" Datatype="TON_TIME" Version="1.0">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="Timer10" Datatype="TON_TIME" Version="1.0">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="Timer11" Datatype="TON_TIME" Version="1.0">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="Timer12" Datatype="TON_TIME" Version="1.0">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="IEC_Counter_0_Instance" Datatype="CTU_INT" Version="1.0">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+            </Member>
+            <Member Name="Re13" Datatype="Bool" />
+            <Member Name="Re14" Datatype="Bool" />
+            <Member Name="Re15" Datatype="Bool" />
+            <Member Name="timer13" Datatype="TON_TIME" Version="1.0" />
+          </Section>
+        </Sections>
+      </Interface>
+      <Name>Pht_Block</Name>
+      <Namespace />
+      <Number>1230</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.InstanceDB>
+</Document>

@@ -1,0 +1,2316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V21" />
+  <SW.Blocks.OB ID="0">
+    <AttributeList>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="Temp" />
+          <Section Name="Constant" />
+        </Sections>
+      </Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <Name>Date_Time_Block</Name>
+      <Namespace />
+      <Number>200</Number>
+      <ProgrammingLanguage>LAD</ProgrammingLanguage>
+      <SecondaryType>ProgramCycle</SecondaryType>
+      <SetENOAutomatically>false</SetENOAutomatically>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="3" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="DateTime" />
+                    <Component Name="time_local_read" />
+                    <Component Name="DAY" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="date_int" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="date_int" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="date_string" />
+                  </Symbol>
+                </Access>
+                <Part Name="Convert" UId="25" DisabledENO="false">
+                  <TemplateValue Name="SrcType" Type="Type">USInt</TemplateValue>
+                  <TemplateValue Name="DestType" Type="Type">Int</TemplateValue>
+                </Part>
+                <Part Name="S_CONV" Version="3.4" UId="26" DisabledENO="true">
+                  <TemplateValue Name="src_type" Type="Type">Int</TemplateValue>
+                  <TemplateValue Name="dest_type" Type="Type">String</TemplateValue>
+                </Part>
+              </Parts>
+              <Wires>
+                <Wire UId="27">
+                  <Powerrail />
+                  <NameCon UId="25" Name="en" />
+                </Wire>
+                <Wire UId="28">
+                  <IdentCon UId="21" />
+                  <NameCon UId="25" Name="in" />
+                </Wire>
+                <Wire UId="29">
+                  <NameCon UId="25" Name="eno" />
+                  <NameCon UId="26" Name="en" />
+                </Wire>
+                <Wire UId="30">
+                  <NameCon UId="25" Name="out" />
+                  <IdentCon UId="22" />
+                </Wire>
+                <Wire UId="31">
+                  <IdentCon UId="23" />
+                  <NameCon UId="26" Name="IN" />
+                </Wire>
+                <Wire UId="32">
+                  <NameCon UId="26" Name="OUT" />
+                  <IdentCon UId="24" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="5" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="6" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Convert Date to String</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="8" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="DateTime" />
+                    <Component Name="time_local_read" />
+                    <Component Name="MONTH" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="month_int" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="month_int" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="month_string" />
+                  </Symbol>
+                </Access>
+                <Part Name="Convert" UId="25" DisabledENO="false">
+                  <TemplateValue Name="SrcType" Type="Type">USInt</TemplateValue>
+                  <TemplateValue Name="DestType" Type="Type">Int</TemplateValue>
+                </Part>
+                <Part Name="S_CONV" Version="3.4" UId="26" DisabledENO="true">
+                  <TemplateValue Name="src_type" Type="Type">Int</TemplateValue>
+                  <TemplateValue Name="dest_type" Type="Type">String</TemplateValue>
+                </Part>
+              </Parts>
+              <Wires>
+                <Wire UId="27">
+                  <Powerrail />
+                  <NameCon UId="25" Name="en" />
+                </Wire>
+                <Wire UId="28">
+                  <IdentCon UId="21" />
+                  <NameCon UId="25" Name="in" />
+                </Wire>
+                <Wire UId="29">
+                  <NameCon UId="25" Name="eno" />
+                  <NameCon UId="26" Name="en" />
+                </Wire>
+                <Wire UId="30">
+                  <NameCon UId="25" Name="out" />
+                  <IdentCon UId="22" />
+                </Wire>
+                <Wire UId="31">
+                  <IdentCon UId="23" />
+                  <NameCon UId="26" Name="IN" />
+                </Wire>
+                <Wire UId="32">
+                  <NameCon UId="26" Name="OUT" />
+                  <IdentCon UId="24" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="9" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="B" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Convert Month to String</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="D" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="DateTime" />
+                    <Component Name="time_local_read" />
+                    <Component Name="YEAR" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="year_string" />
+                  </Symbol>
+                </Access>
+                <Part Name="S_CONV" Version="3.4" UId="23" DisabledENO="true">
+                  <TemplateValue Name="src_type" Type="Type">UInt</TemplateValue>
+                  <TemplateValue Name="dest_type" Type="Type">String</TemplateValue>
+                </Part>
+              </Parts>
+              <Wires>
+                <Wire UId="24">
+                  <Powerrail />
+                  <NameCon UId="23" Name="en" />
+                </Wire>
+                <Wire UId="25">
+                  <IdentCon UId="21" />
+                  <NameCon UId="23" Name="IN" />
+                </Wire>
+                <Wire UId="26">
+                  <NameCon UId="23" Name="OUT" />
+                  <IdentCon UId="22" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="E" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="10" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="11" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Convert Year to String</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="12" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="DateTime" />
+                    <Component Name="time_local_read" />
+                    <Component Name="HOUR" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="hour_int" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="hour_int" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="hour_string" />
+                  </Symbol>
+                </Access>
+                <Part Name="Convert" UId="25" DisabledENO="false">
+                  <TemplateValue Name="SrcType" Type="Type">USInt</TemplateValue>
+                  <TemplateValue Name="DestType" Type="Type">Int</TemplateValue>
+                </Part>
+                <Part Name="S_CONV" Version="3.4" UId="26" DisabledENO="true">
+                  <TemplateValue Name="src_type" Type="Type">Int</TemplateValue>
+                  <TemplateValue Name="dest_type" Type="Type">String</TemplateValue>
+                </Part>
+              </Parts>
+              <Wires>
+                <Wire UId="27">
+                  <Powerrail />
+                  <NameCon UId="25" Name="en" />
+                </Wire>
+                <Wire UId="28">
+                  <IdentCon UId="21" />
+                  <NameCon UId="25" Name="in" />
+                </Wire>
+                <Wire UId="29">
+                  <NameCon UId="25" Name="eno" />
+                  <NameCon UId="26" Name="en" />
+                </Wire>
+                <Wire UId="30">
+                  <NameCon UId="25" Name="out" />
+                  <IdentCon UId="22" />
+                </Wire>
+                <Wire UId="31">
+                  <IdentCon UId="23" />
+                  <NameCon UId="26" Name="IN" />
+                </Wire>
+                <Wire UId="32">
+                  <NameCon UId="26" Name="OUT" />
+                  <IdentCon UId="24" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="13" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="14" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="15" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="16" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Convert Hour to String</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="17" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="DateTime" />
+                    <Component Name="time_local_read" />
+                    <Component Name="MINUTE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="minute_int" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="minute_int" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="minute_string" />
+                  </Symbol>
+                </Access>
+                <Part Name="Convert" UId="25" DisabledENO="false">
+                  <TemplateValue Name="SrcType" Type="Type">USInt</TemplateValue>
+                  <TemplateValue Name="DestType" Type="Type">Int</TemplateValue>
+                </Part>
+                <Part Name="S_CONV" Version="3.4" UId="26" DisabledENO="true">
+                  <TemplateValue Name="src_type" Type="Type">Int</TemplateValue>
+                  <TemplateValue Name="dest_type" Type="Type">String</TemplateValue>
+                </Part>
+              </Parts>
+              <Wires>
+                <Wire UId="27">
+                  <Powerrail />
+                  <NameCon UId="25" Name="en" />
+                </Wire>
+                <Wire UId="28">
+                  <IdentCon UId="21" />
+                  <NameCon UId="25" Name="in" />
+                </Wire>
+                <Wire UId="29">
+                  <NameCon UId="25" Name="eno" />
+                  <NameCon UId="26" Name="en" />
+                </Wire>
+                <Wire UId="30">
+                  <NameCon UId="25" Name="out" />
+                  <IdentCon UId="22" />
+                </Wire>
+                <Wire UId="31">
+                  <IdentCon UId="23" />
+                  <NameCon UId="26" Name="IN" />
+                </Wire>
+                <Wire UId="32">
+                  <NameCon UId="26" Name="OUT" />
+                  <IdentCon UId="24" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="18" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="19" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="1A" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="1B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Convert Minute to String</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="1C" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="DateTime" />
+                    <Component Name="time_local_read" />
+                    <Component Name="SECOND" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="second_int" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="second_int" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="second_string" />
+                  </Symbol>
+                </Access>
+                <Part Name="Convert" UId="25" DisabledENO="false">
+                  <TemplateValue Name="SrcType" Type="Type">USInt</TemplateValue>
+                  <TemplateValue Name="DestType" Type="Type">Int</TemplateValue>
+                </Part>
+                <Part Name="S_CONV" Version="3.4" UId="26" DisabledENO="true">
+                  <TemplateValue Name="src_type" Type="Type">Int</TemplateValue>
+                  <TemplateValue Name="dest_type" Type="Type">String</TemplateValue>
+                </Part>
+              </Parts>
+              <Wires>
+                <Wire UId="27">
+                  <Powerrail />
+                  <NameCon UId="25" Name="en" />
+                </Wire>
+                <Wire UId="28">
+                  <IdentCon UId="21" />
+                  <NameCon UId="25" Name="in" />
+                </Wire>
+                <Wire UId="29">
+                  <NameCon UId="25" Name="eno" />
+                  <NameCon UId="26" Name="en" />
+                </Wire>
+                <Wire UId="30">
+                  <NameCon UId="25" Name="out" />
+                  <IdentCon UId="22" />
+                </Wire>
+                <Wire UId="31">
+                  <IdentCon UId="23" />
+                  <NameCon UId="26" Name="IN" />
+                </Wire>
+                <Wire UId="32">
+                  <NameCon UId="26" Name="OUT" />
+                  <IdentCon UId="24" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="1D" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="1E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="1F" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="20" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Convert Second to String</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="21" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="date_string" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="22">
+                  <Constant>
+                    <ConstantType>Int</ConstantType>
+                    <ConstantValue>2</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="date_temp" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="date_temp" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="25">
+                  <Constant>
+                    <ConstantType>String</ConstantType>
+                    <ConstantValue>' '</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="26">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="date_zero" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="27">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="date_zero" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="28">
+                  <Constant>
+                    <ConstantType>Int</ConstantType>
+                    <ConstantValue>1</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="29">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="date_temp" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="30">
+                  <Constant>
+                    <ConstantType>String</ConstantType>
+                    <ConstantValue>'0'</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="LiteralConstant" UId="31">
+                  <Constant>
+                    <ConstantType>UInt</ConstantType>
+                    <ConstantValue>1</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="LiteralConstant" UId="32">
+                  <Constant>
+                    <ConstantType>UInt</ConstantType>
+                    <ConstantValue>1</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="33">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="date_actual" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="34">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="date_zero" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="35">
+                  <Constant>
+                    <ConstantType>Int</ConstantType>
+                    <ConstantValue>0</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="36">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="date_temp" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="37">
+                  <Constant>
+                    <ConstantType>String</ConstantType>
+                    <ConstantValue>''</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="38">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="date_actual" />
+                  </Symbol>
+                </Access>
+                <Part Name="RIGHT" Version="1.3" UId="39" DisabledENO="true">
+                  <TemplateValue Name="str_type" Type="Type">String</TemplateValue>
+                </Part>
+                <Part Name="FIND" Version="1.2" UId="40" DisabledENO="false">
+                  <TemplateValue Name="str_type" Type="Type">String</TemplateValue>
+                </Part>
+                <Part Name="Eq" UId="41">
+                  <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+                </Part>
+                <Part Name="REPLACE" Version="1.3" UId="42" DisabledENO="false">
+                  <TemplateValue Name="str_type" Type="Type">String</TemplateValue>
+                </Part>
+                <Part Name="Eq" UId="43">
+                  <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+                </Part>
+                <Part Name="CONCAT" Version="1.5" UId="44" DisabledENO="false">
+                  <TemplateValue Name="card" Type="Cardinality">2</TemplateValue>
+                  <TemplateValue Name="str_type" Type="Type">String</TemplateValue>
+                </Part>
+              </Parts>
+              <Wires>
+                <Wire UId="45">
+                  <Powerrail />
+                  <NameCon UId="39" Name="en" />
+                </Wire>
+                <Wire UId="46">
+                  <IdentCon UId="21" />
+                  <NameCon UId="39" Name="IN" />
+                </Wire>
+                <Wire UId="47">
+                  <IdentCon UId="22" />
+                  <NameCon UId="39" Name="L" />
+                </Wire>
+                <Wire UId="48">
+                  <NameCon UId="39" Name="eno" />
+                  <NameCon UId="40" Name="en" />
+                </Wire>
+                <Wire UId="49">
+                  <NameCon UId="39" Name="OUT" />
+                  <IdentCon UId="23" />
+                </Wire>
+                <Wire UId="50">
+                  <IdentCon UId="24" />
+                  <NameCon UId="40" Name="IN1" />
+                </Wire>
+                <Wire UId="51">
+                  <IdentCon UId="25" />
+                  <NameCon UId="40" Name="IN2" />
+                </Wire>
+                <Wire UId="52">
+                  <NameCon UId="40" Name="eno" />
+                  <NameCon UId="41" Name="pre" />
+                  <NameCon UId="43" Name="pre" />
+                </Wire>
+                <Wire UId="53">
+                  <NameCon UId="40" Name="OUT" />
+                  <IdentCon UId="26" />
+                </Wire>
+                <Wire UId="54">
+                  <IdentCon UId="27" />
+                  <NameCon UId="41" Name="in1" />
+                </Wire>
+                <Wire UId="55">
+                  <IdentCon UId="28" />
+                  <NameCon UId="41" Name="in2" />
+                </Wire>
+                <Wire UId="56">
+                  <NameCon UId="41" Name="out" />
+                  <NameCon UId="42" Name="en" />
+                </Wire>
+                <Wire UId="57">
+                  <IdentCon UId="29" />
+                  <NameCon UId="42" Name="IN1" />
+                </Wire>
+                <Wire UId="58">
+                  <IdentCon UId="30" />
+                  <NameCon UId="42" Name="IN2" />
+                </Wire>
+                <Wire UId="59">
+                  <IdentCon UId="31" />
+                  <NameCon UId="42" Name="L" />
+                </Wire>
+                <Wire UId="60">
+                  <IdentCon UId="32" />
+                  <NameCon UId="42" Name="P" />
+                </Wire>
+                <Wire UId="61">
+                  <NameCon UId="42" Name="OUT" />
+                  <IdentCon UId="33" />
+                </Wire>
+                <Wire UId="62">
+                  <IdentCon UId="34" />
+                  <NameCon UId="43" Name="in1" />
+                </Wire>
+                <Wire UId="63">
+                  <IdentCon UId="35" />
+                  <NameCon UId="43" Name="in2" />
+                </Wire>
+                <Wire UId="64">
+                  <NameCon UId="43" Name="out" />
+                  <NameCon UId="44" Name="en" />
+                </Wire>
+                <Wire UId="65">
+                  <IdentCon UId="36" />
+                  <NameCon UId="44" Name="IN1" />
+                </Wire>
+                <Wire UId="66">
+                  <IdentCon UId="37" />
+                  <NameCon UId="44" Name="IN2" />
+                </Wire>
+                <Wire UId="67">
+                  <NameCon UId="44" Name="OUT" />
+                  <IdentCon UId="38" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="22" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="23" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="24" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="25" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Get the actual Date value</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="26" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="month_string" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="22">
+                  <Constant>
+                    <ConstantType>Int</ConstantType>
+                    <ConstantValue>2</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="month_temp" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="month_temp" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="25">
+                  <Constant>
+                    <ConstantType>String</ConstantType>
+                    <ConstantValue>' '</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="26">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="month_zero" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="27">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="month_zero" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="28">
+                  <Constant>
+                    <ConstantType>Int</ConstantType>
+                    <ConstantValue>1</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="29">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="month_temp" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="30">
+                  <Constant>
+                    <ConstantType>String</ConstantType>
+                    <ConstantValue>'0'</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="LiteralConstant" UId="31">
+                  <Constant>
+                    <ConstantType>UInt</ConstantType>
+                    <ConstantValue>1</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="LiteralConstant" UId="32">
+                  <Constant>
+                    <ConstantType>UInt</ConstantType>
+                    <ConstantValue>1</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="33">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="month_actual" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="34">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="month_zero" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="35">
+                  <Constant>
+                    <ConstantType>Int</ConstantType>
+                    <ConstantValue>0</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="36">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="month_temp" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="37">
+                  <Constant>
+                    <ConstantType>String</ConstantType>
+                    <ConstantValue>''</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="38">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="month_actual" />
+                  </Symbol>
+                </Access>
+                <Part Name="RIGHT" Version="1.3" UId="39" DisabledENO="false">
+                  <TemplateValue Name="str_type" Type="Type">String</TemplateValue>
+                </Part>
+                <Part Name="FIND" Version="1.2" UId="40" DisabledENO="false">
+                  <TemplateValue Name="str_type" Type="Type">String</TemplateValue>
+                </Part>
+                <Part Name="Eq" UId="41">
+                  <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+                </Part>
+                <Part Name="REPLACE" Version="1.3" UId="42" DisabledENO="false">
+                  <TemplateValue Name="str_type" Type="Type">String</TemplateValue>
+                </Part>
+                <Part Name="Eq" UId="43">
+                  <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+                </Part>
+                <Part Name="CONCAT" Version="1.5" UId="44" DisabledENO="false">
+                  <TemplateValue Name="card" Type="Cardinality">2</TemplateValue>
+                  <TemplateValue Name="str_type" Type="Type">String</TemplateValue>
+                </Part>
+              </Parts>
+              <Wires>
+                <Wire UId="45">
+                  <Powerrail />
+                  <NameCon UId="39" Name="en" />
+                </Wire>
+                <Wire UId="46">
+                  <IdentCon UId="21" />
+                  <NameCon UId="39" Name="IN" />
+                </Wire>
+                <Wire UId="47">
+                  <IdentCon UId="22" />
+                  <NameCon UId="39" Name="L" />
+                </Wire>
+                <Wire UId="48">
+                  <NameCon UId="39" Name="eno" />
+                  <NameCon UId="40" Name="en" />
+                </Wire>
+                <Wire UId="49">
+                  <NameCon UId="39" Name="OUT" />
+                  <IdentCon UId="23" />
+                </Wire>
+                <Wire UId="50">
+                  <IdentCon UId="24" />
+                  <NameCon UId="40" Name="IN1" />
+                </Wire>
+                <Wire UId="51">
+                  <IdentCon UId="25" />
+                  <NameCon UId="40" Name="IN2" />
+                </Wire>
+                <Wire UId="52">
+                  <NameCon UId="40" Name="eno" />
+                  <NameCon UId="41" Name="pre" />
+                  <NameCon UId="43" Name="pre" />
+                </Wire>
+                <Wire UId="53">
+                  <NameCon UId="40" Name="OUT" />
+                  <IdentCon UId="26" />
+                </Wire>
+                <Wire UId="54">
+                  <IdentCon UId="27" />
+                  <NameCon UId="41" Name="in1" />
+                </Wire>
+                <Wire UId="55">
+                  <IdentCon UId="28" />
+                  <NameCon UId="41" Name="in2" />
+                </Wire>
+                <Wire UId="56">
+                  <NameCon UId="41" Name="out" />
+                  <NameCon UId="42" Name="en" />
+                </Wire>
+                <Wire UId="57">
+                  <IdentCon UId="29" />
+                  <NameCon UId="42" Name="IN1" />
+                </Wire>
+                <Wire UId="58">
+                  <IdentCon UId="30" />
+                  <NameCon UId="42" Name="IN2" />
+                </Wire>
+                <Wire UId="59">
+                  <IdentCon UId="31" />
+                  <NameCon UId="42" Name="L" />
+                </Wire>
+                <Wire UId="60">
+                  <IdentCon UId="32" />
+                  <NameCon UId="42" Name="P" />
+                </Wire>
+                <Wire UId="61">
+                  <NameCon UId="42" Name="OUT" />
+                  <IdentCon UId="33" />
+                </Wire>
+                <Wire UId="62">
+                  <IdentCon UId="34" />
+                  <NameCon UId="43" Name="in1" />
+                </Wire>
+                <Wire UId="63">
+                  <IdentCon UId="35" />
+                  <NameCon UId="43" Name="in2" />
+                </Wire>
+                <Wire UId="64">
+                  <NameCon UId="43" Name="out" />
+                  <NameCon UId="44" Name="en" />
+                </Wire>
+                <Wire UId="65">
+                  <IdentCon UId="36" />
+                  <NameCon UId="44" Name="IN1" />
+                </Wire>
+                <Wire UId="66">
+                  <IdentCon UId="37" />
+                  <NameCon UId="44" Name="IN2" />
+                </Wire>
+                <Wire UId="67">
+                  <NameCon UId="44" Name="OUT" />
+                  <IdentCon UId="38" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="27" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="28" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="29" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="2A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Get the actual month value</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="2B" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="year_string" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="22">
+                  <Constant>
+                    <ConstantType>Int</ConstantType>
+                    <ConstantValue>4</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="year_actual" />
+                  </Symbol>
+                </Access>
+                <Part Name="RIGHT" Version="1.3" UId="24" DisabledENO="false">
+                  <TemplateValue Name="str_type" Type="Type">String</TemplateValue>
+                </Part>
+              </Parts>
+              <Wires>
+                <Wire UId="25">
+                  <Powerrail />
+                  <NameCon UId="24" Name="en" />
+                </Wire>
+                <Wire UId="26">
+                  <IdentCon UId="21" />
+                  <NameCon UId="24" Name="IN" />
+                </Wire>
+                <Wire UId="27">
+                  <IdentCon UId="22" />
+                  <NameCon UId="24" Name="L" />
+                </Wire>
+                <Wire UId="28">
+                  <NameCon UId="24" Name="OUT" />
+                  <IdentCon UId="23" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="2C" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="2D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="2E" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="2F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Get the actual year value</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="30" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="hour_string" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="22">
+                  <Constant>
+                    <ConstantType>Int</ConstantType>
+                    <ConstantValue>2</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="hour_temp" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="hour_temp" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="25">
+                  <Constant>
+                    <ConstantType>String</ConstantType>
+                    <ConstantValue>' '</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="26">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="hour_zero" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="27">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="hour_zero" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="28">
+                  <Constant>
+                    <ConstantType>Int</ConstantType>
+                    <ConstantValue>1</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="29">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="hour_temp" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="30">
+                  <Constant>
+                    <ConstantType>String</ConstantType>
+                    <ConstantValue>'0'</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="LiteralConstant" UId="31">
+                  <Constant>
+                    <ConstantType>UInt</ConstantType>
+                    <ConstantValue>1</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="LiteralConstant" UId="32">
+                  <Constant>
+                    <ConstantType>UInt</ConstantType>
+                    <ConstantValue>1</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="33">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="hour_actual" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="34">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="hour_zero" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="35">
+                  <Constant>
+                    <ConstantType>Int</ConstantType>
+                    <ConstantValue>0</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="36">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="hour_temp" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="37">
+                  <Constant>
+                    <ConstantType>String</ConstantType>
+                    <ConstantValue>''</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="38">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="hour_actual" />
+                  </Symbol>
+                </Access>
+                <Part Name="RIGHT" Version="1.3" UId="39" DisabledENO="false">
+                  <TemplateValue Name="str_type" Type="Type">String</TemplateValue>
+                </Part>
+                <Part Name="FIND" Version="1.2" UId="40" DisabledENO="false">
+                  <TemplateValue Name="str_type" Type="Type">String</TemplateValue>
+                </Part>
+                <Part Name="Eq" UId="41">
+                  <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+                </Part>
+                <Part Name="REPLACE" Version="1.3" UId="42" DisabledENO="false">
+                  <TemplateValue Name="str_type" Type="Type">String</TemplateValue>
+                </Part>
+                <Part Name="Eq" UId="43">
+                  <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+                </Part>
+                <Part Name="CONCAT" Version="1.5" UId="44" DisabledENO="false">
+                  <TemplateValue Name="card" Type="Cardinality">2</TemplateValue>
+                  <TemplateValue Name="str_type" Type="Type">String</TemplateValue>
+                </Part>
+              </Parts>
+              <Wires>
+                <Wire UId="45">
+                  <Powerrail />
+                  <NameCon UId="39" Name="en" />
+                </Wire>
+                <Wire UId="46">
+                  <IdentCon UId="21" />
+                  <NameCon UId="39" Name="IN" />
+                </Wire>
+                <Wire UId="47">
+                  <IdentCon UId="22" />
+                  <NameCon UId="39" Name="L" />
+                </Wire>
+                <Wire UId="48">
+                  <NameCon UId="39" Name="eno" />
+                  <NameCon UId="40" Name="en" />
+                </Wire>
+                <Wire UId="49">
+                  <NameCon UId="39" Name="OUT" />
+                  <IdentCon UId="23" />
+                </Wire>
+                <Wire UId="50">
+                  <IdentCon UId="24" />
+                  <NameCon UId="40" Name="IN1" />
+                </Wire>
+                <Wire UId="51">
+                  <IdentCon UId="25" />
+                  <NameCon UId="40" Name="IN2" />
+                </Wire>
+                <Wire UId="52">
+                  <NameCon UId="40" Name="eno" />
+                  <NameCon UId="41" Name="pre" />
+                  <NameCon UId="43" Name="pre" />
+                </Wire>
+                <Wire UId="53">
+                  <NameCon UId="40" Name="OUT" />
+                  <IdentCon UId="26" />
+                </Wire>
+                <Wire UId="54">
+                  <IdentCon UId="27" />
+                  <NameCon UId="41" Name="in1" />
+                </Wire>
+                <Wire UId="55">
+                  <IdentCon UId="28" />
+                  <NameCon UId="41" Name="in2" />
+                </Wire>
+                <Wire UId="56">
+                  <NameCon UId="41" Name="out" />
+                  <NameCon UId="42" Name="en" />
+                </Wire>
+                <Wire UId="57">
+                  <IdentCon UId="29" />
+                  <NameCon UId="42" Name="IN1" />
+                </Wire>
+                <Wire UId="58">
+                  <IdentCon UId="30" />
+                  <NameCon UId="42" Name="IN2" />
+                </Wire>
+                <Wire UId="59">
+                  <IdentCon UId="31" />
+                  <NameCon UId="42" Name="L" />
+                </Wire>
+                <Wire UId="60">
+                  <IdentCon UId="32" />
+                  <NameCon UId="42" Name="P" />
+                </Wire>
+                <Wire UId="61">
+                  <NameCon UId="42" Name="OUT" />
+                  <IdentCon UId="33" />
+                </Wire>
+                <Wire UId="62">
+                  <IdentCon UId="34" />
+                  <NameCon UId="43" Name="in1" />
+                </Wire>
+                <Wire UId="63">
+                  <IdentCon UId="35" />
+                  <NameCon UId="43" Name="in2" />
+                </Wire>
+                <Wire UId="64">
+                  <NameCon UId="43" Name="out" />
+                  <NameCon UId="44" Name="en" />
+                </Wire>
+                <Wire UId="65">
+                  <IdentCon UId="36" />
+                  <NameCon UId="44" Name="IN1" />
+                </Wire>
+                <Wire UId="66">
+                  <IdentCon UId="37" />
+                  <NameCon UId="44" Name="IN2" />
+                </Wire>
+                <Wire UId="67">
+                  <NameCon UId="44" Name="OUT" />
+                  <IdentCon UId="38" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="31" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="32" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="33" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="34" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Get the actual hour value</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="35" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="minute_string" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="22">
+                  <Constant>
+                    <ConstantType>Int</ConstantType>
+                    <ConstantValue>2</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="minute_temp" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="minute_temp" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="25">
+                  <Constant>
+                    <ConstantType>String</ConstantType>
+                    <ConstantValue>' '</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="26">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="minute_zero" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="27">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="minute_zero" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="28">
+                  <Constant>
+                    <ConstantType>Int</ConstantType>
+                    <ConstantValue>1</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="29">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="minute_temp" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="30">
+                  <Constant>
+                    <ConstantType>String</ConstantType>
+                    <ConstantValue>'0'</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="LiteralConstant" UId="31">
+                  <Constant>
+                    <ConstantType>UInt</ConstantType>
+                    <ConstantValue>1</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="LiteralConstant" UId="32">
+                  <Constant>
+                    <ConstantType>UInt</ConstantType>
+                    <ConstantValue>1</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="33">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="minute_actual" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="34">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="minute_zero" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="35">
+                  <Constant>
+                    <ConstantType>Int</ConstantType>
+                    <ConstantValue>0</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="36">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="minute_temp" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="37">
+                  <Constant>
+                    <ConstantType>String</ConstantType>
+                    <ConstantValue>''</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="38">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="minute_actual" />
+                  </Symbol>
+                </Access>
+                <Part Name="RIGHT" Version="1.3" UId="39" DisabledENO="false">
+                  <TemplateValue Name="str_type" Type="Type">String</TemplateValue>
+                </Part>
+                <Part Name="FIND" Version="1.2" UId="40" DisabledENO="false">
+                  <TemplateValue Name="str_type" Type="Type">String</TemplateValue>
+                </Part>
+                <Part Name="Eq" UId="41">
+                  <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+                </Part>
+                <Part Name="REPLACE" Version="1.3" UId="42" DisabledENO="false">
+                  <TemplateValue Name="str_type" Type="Type">String</TemplateValue>
+                </Part>
+                <Part Name="Eq" UId="43">
+                  <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+                </Part>
+                <Part Name="CONCAT" Version="1.5" UId="44" DisabledENO="false">
+                  <TemplateValue Name="card" Type="Cardinality">2</TemplateValue>
+                  <TemplateValue Name="str_type" Type="Type">String</TemplateValue>
+                </Part>
+              </Parts>
+              <Wires>
+                <Wire UId="45">
+                  <Powerrail />
+                  <NameCon UId="39" Name="en" />
+                </Wire>
+                <Wire UId="46">
+                  <IdentCon UId="21" />
+                  <NameCon UId="39" Name="IN" />
+                </Wire>
+                <Wire UId="47">
+                  <IdentCon UId="22" />
+                  <NameCon UId="39" Name="L" />
+                </Wire>
+                <Wire UId="48">
+                  <NameCon UId="39" Name="eno" />
+                  <NameCon UId="40" Name="en" />
+                </Wire>
+                <Wire UId="49">
+                  <NameCon UId="39" Name="OUT" />
+                  <IdentCon UId="23" />
+                </Wire>
+                <Wire UId="50">
+                  <IdentCon UId="24" />
+                  <NameCon UId="40" Name="IN1" />
+                </Wire>
+                <Wire UId="51">
+                  <IdentCon UId="25" />
+                  <NameCon UId="40" Name="IN2" />
+                </Wire>
+                <Wire UId="52">
+                  <NameCon UId="40" Name="eno" />
+                  <NameCon UId="41" Name="pre" />
+                  <NameCon UId="43" Name="pre" />
+                </Wire>
+                <Wire UId="53">
+                  <NameCon UId="40" Name="OUT" />
+                  <IdentCon UId="26" />
+                </Wire>
+                <Wire UId="54">
+                  <IdentCon UId="27" />
+                  <NameCon UId="41" Name="in1" />
+                </Wire>
+                <Wire UId="55">
+                  <IdentCon UId="28" />
+                  <NameCon UId="41" Name="in2" />
+                </Wire>
+                <Wire UId="56">
+                  <NameCon UId="41" Name="out" />
+                  <NameCon UId="42" Name="en" />
+                </Wire>
+                <Wire UId="57">
+                  <IdentCon UId="29" />
+                  <NameCon UId="42" Name="IN1" />
+                </Wire>
+                <Wire UId="58">
+                  <IdentCon UId="30" />
+                  <NameCon UId="42" Name="IN2" />
+                </Wire>
+                <Wire UId="59">
+                  <IdentCon UId="31" />
+                  <NameCon UId="42" Name="L" />
+                </Wire>
+                <Wire UId="60">
+                  <IdentCon UId="32" />
+                  <NameCon UId="42" Name="P" />
+                </Wire>
+                <Wire UId="61">
+                  <NameCon UId="42" Name="OUT" />
+                  <IdentCon UId="33" />
+                </Wire>
+                <Wire UId="62">
+                  <IdentCon UId="34" />
+                  <NameCon UId="43" Name="in1" />
+                </Wire>
+                <Wire UId="63">
+                  <IdentCon UId="35" />
+                  <NameCon UId="43" Name="in2" />
+                </Wire>
+                <Wire UId="64">
+                  <NameCon UId="43" Name="out" />
+                  <NameCon UId="44" Name="en" />
+                </Wire>
+                <Wire UId="65">
+                  <IdentCon UId="36" />
+                  <NameCon UId="44" Name="IN1" />
+                </Wire>
+                <Wire UId="66">
+                  <IdentCon UId="37" />
+                  <NameCon UId="44" Name="IN2" />
+                </Wire>
+                <Wire UId="67">
+                  <NameCon UId="44" Name="OUT" />
+                  <IdentCon UId="38" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="36" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="37" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="38" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="39" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Get the actual minute value</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="3A" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="second_string" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="22">
+                  <Constant>
+                    <ConstantType>Int</ConstantType>
+                    <ConstantValue>2</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="second_temp" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="second_temp" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="25">
+                  <Constant>
+                    <ConstantType>String</ConstantType>
+                    <ConstantValue>' '</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="26">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="second_zero" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="27">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="second_zero" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="28">
+                  <Constant>
+                    <ConstantType>Int</ConstantType>
+                    <ConstantValue>1</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="29">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="second_temp" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="30">
+                  <Constant>
+                    <ConstantType>String</ConstantType>
+                    <ConstantValue>'0'</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="LiteralConstant" UId="31">
+                  <Constant>
+                    <ConstantType>UInt</ConstantType>
+                    <ConstantValue>1</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="LiteralConstant" UId="32">
+                  <Constant>
+                    <ConstantType>UInt</ConstantType>
+                    <ConstantValue>1</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="33">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="second_actual" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="34">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="second_zero" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="35">
+                  <Constant>
+                    <ConstantType>Int</ConstantType>
+                    <ConstantValue>0</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="36">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="second_temp" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="37">
+                  <Constant>
+                    <ConstantType>String</ConstantType>
+                    <ConstantValue>''</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="38">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="second_actual" />
+                  </Symbol>
+                </Access>
+                <Part Name="RIGHT" Version="1.3" UId="39" DisabledENO="false">
+                  <TemplateValue Name="str_type" Type="Type">String</TemplateValue>
+                </Part>
+                <Part Name="FIND" Version="1.2" UId="40" DisabledENO="false">
+                  <TemplateValue Name="str_type" Type="Type">String</TemplateValue>
+                </Part>
+                <Part Name="Eq" UId="41">
+                  <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+                </Part>
+                <Part Name="REPLACE" Version="1.3" UId="42" DisabledENO="false">
+                  <TemplateValue Name="str_type" Type="Type">String</TemplateValue>
+                </Part>
+                <Part Name="Eq" UId="43">
+                  <TemplateValue Name="SrcType" Type="Type">Int</TemplateValue>
+                </Part>
+                <Part Name="CONCAT" Version="1.5" UId="44" DisabledENO="false">
+                  <TemplateValue Name="card" Type="Cardinality">2</TemplateValue>
+                  <TemplateValue Name="str_type" Type="Type">String</TemplateValue>
+                </Part>
+              </Parts>
+              <Wires>
+                <Wire UId="45">
+                  <Powerrail />
+                  <NameCon UId="39" Name="en" />
+                </Wire>
+                <Wire UId="46">
+                  <IdentCon UId="21" />
+                  <NameCon UId="39" Name="IN" />
+                </Wire>
+                <Wire UId="47">
+                  <IdentCon UId="22" />
+                  <NameCon UId="39" Name="L" />
+                </Wire>
+                <Wire UId="48">
+                  <NameCon UId="39" Name="eno" />
+                  <NameCon UId="40" Name="en" />
+                </Wire>
+                <Wire UId="49">
+                  <NameCon UId="39" Name="OUT" />
+                  <IdentCon UId="23" />
+                </Wire>
+                <Wire UId="50">
+                  <IdentCon UId="24" />
+                  <NameCon UId="40" Name="IN1" />
+                </Wire>
+                <Wire UId="51">
+                  <IdentCon UId="25" />
+                  <NameCon UId="40" Name="IN2" />
+                </Wire>
+                <Wire UId="52">
+                  <NameCon UId="40" Name="eno" />
+                  <NameCon UId="41" Name="pre" />
+                  <NameCon UId="43" Name="pre" />
+                </Wire>
+                <Wire UId="53">
+                  <NameCon UId="40" Name="OUT" />
+                  <IdentCon UId="26" />
+                </Wire>
+                <Wire UId="54">
+                  <IdentCon UId="27" />
+                  <NameCon UId="41" Name="in1" />
+                </Wire>
+                <Wire UId="55">
+                  <IdentCon UId="28" />
+                  <NameCon UId="41" Name="in2" />
+                </Wire>
+                <Wire UId="56">
+                  <NameCon UId="41" Name="out" />
+                  <NameCon UId="42" Name="en" />
+                </Wire>
+                <Wire UId="57">
+                  <IdentCon UId="29" />
+                  <NameCon UId="42" Name="IN1" />
+                </Wire>
+                <Wire UId="58">
+                  <IdentCon UId="30" />
+                  <NameCon UId="42" Name="IN2" />
+                </Wire>
+                <Wire UId="59">
+                  <IdentCon UId="31" />
+                  <NameCon UId="42" Name="L" />
+                </Wire>
+                <Wire UId="60">
+                  <IdentCon UId="32" />
+                  <NameCon UId="42" Name="P" />
+                </Wire>
+                <Wire UId="61">
+                  <NameCon UId="42" Name="OUT" />
+                  <IdentCon UId="33" />
+                </Wire>
+                <Wire UId="62">
+                  <IdentCon UId="34" />
+                  <NameCon UId="43" Name="in1" />
+                </Wire>
+                <Wire UId="63">
+                  <IdentCon UId="35" />
+                  <NameCon UId="43" Name="in2" />
+                </Wire>
+                <Wire UId="64">
+                  <NameCon UId="43" Name="out" />
+                  <NameCon UId="44" Name="en" />
+                </Wire>
+                <Wire UId="65">
+                  <IdentCon UId="36" />
+                  <NameCon UId="44" Name="IN1" />
+                </Wire>
+                <Wire UId="66">
+                  <IdentCon UId="37" />
+                  <NameCon UId="44" Name="IN2" />
+                </Wire>
+                <Wire UId="67">
+                  <NameCon UId="44" Name="OUT" />
+                  <IdentCon UId="38" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="3B" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="3C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="3D" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="3E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Get the actual second value</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="3F" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="date_actual" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="22">
+                  <Constant>
+                    <ConstantType>String</ConstantType>
+                    <ConstantValue>''</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="Final_Date" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="Final_Date" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="25">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="month_actual" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="26">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="Final_Date" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="27">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="Final_Date" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="28">
+                  <Constant>
+                    <ConstantType>String</ConstantType>
+                    <ConstantValue>''</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="29">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="Final_Date" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="30">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="Final_Date" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="31">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="year_actual" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="32">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="Final_Date" />
+                  </Symbol>
+                </Access>
+                <Part Name="CONCAT" Version="1.5" UId="33" DisabledENO="false">
+                  <TemplateValue Name="card" Type="Cardinality">2</TemplateValue>
+                  <TemplateValue Name="str_type" Type="Type">String</TemplateValue>
+                </Part>
+                <Part Name="CONCAT" Version="1.5" UId="34" DisabledENO="false">
+                  <TemplateValue Name="card" Type="Cardinality">2</TemplateValue>
+                  <TemplateValue Name="str_type" Type="Type">String</TemplateValue>
+                </Part>
+                <Part Name="CONCAT" Version="1.5" UId="35" DisabledENO="false">
+                  <TemplateValue Name="card" Type="Cardinality">2</TemplateValue>
+                  <TemplateValue Name="str_type" Type="Type">String</TemplateValue>
+                </Part>
+                <Part Name="CONCAT" Version="1.5" UId="36" DisabledENO="false">
+                  <TemplateValue Name="card" Type="Cardinality">2</TemplateValue>
+                  <TemplateValue Name="str_type" Type="Type">String</TemplateValue>
+                </Part>
+              </Parts>
+              <Wires>
+                <Wire UId="37">
+                  <Powerrail />
+                  <NameCon UId="33" Name="en" />
+                </Wire>
+                <Wire UId="38">
+                  <IdentCon UId="21" />
+                  <NameCon UId="33" Name="IN1" />
+                </Wire>
+                <Wire UId="39">
+                  <IdentCon UId="22" />
+                  <NameCon UId="33" Name="IN2" />
+                </Wire>
+                <Wire UId="40">
+                  <NameCon UId="33" Name="eno" />
+                  <NameCon UId="34" Name="en" />
+                </Wire>
+                <Wire UId="41">
+                  <NameCon UId="33" Name="OUT" />
+                  <IdentCon UId="23" />
+                </Wire>
+                <Wire UId="42">
+                  <IdentCon UId="24" />
+                  <NameCon UId="34" Name="IN1" />
+                </Wire>
+                <Wire UId="43">
+                  <IdentCon UId="25" />
+                  <NameCon UId="34" Name="IN2" />
+                </Wire>
+                <Wire UId="44">
+                  <NameCon UId="34" Name="eno" />
+                  <NameCon UId="35" Name="en" />
+                </Wire>
+                <Wire UId="45">
+                  <NameCon UId="34" Name="OUT" />
+                  <IdentCon UId="26" />
+                </Wire>
+                <Wire UId="46">
+                  <IdentCon UId="27" />
+                  <NameCon UId="35" Name="IN1" />
+                </Wire>
+                <Wire UId="47">
+                  <IdentCon UId="28" />
+                  <NameCon UId="35" Name="IN2" />
+                </Wire>
+                <Wire UId="48">
+                  <NameCon UId="35" Name="eno" />
+                  <NameCon UId="36" Name="en" />
+                </Wire>
+                <Wire UId="49">
+                  <NameCon UId="35" Name="OUT" />
+                  <IdentCon UId="29" />
+                </Wire>
+                <Wire UId="50">
+                  <IdentCon UId="30" />
+                  <NameCon UId="36" Name="IN1" />
+                </Wire>
+                <Wire UId="51">
+                  <IdentCon UId="31" />
+                  <NameCon UId="36" Name="IN2" />
+                </Wire>
+                <Wire UId="52">
+                  <NameCon UId="36" Name="OUT" />
+                  <IdentCon UId="32" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="40" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="41" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="42" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="43" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Final_Date</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="44" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="hour_actual" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="22">
+                  <Constant>
+                    <ConstantType>String</ConstantType>
+                    <ConstantValue>''</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="Final_time" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="Final_time" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="25">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="minute_actual" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="26">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="Final_time" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="27">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="Final_time" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LiteralConstant" UId="28">
+                  <Constant>
+                    <ConstantType>String</ConstantType>
+                    <ConstantValue>''</ConstantValue>
+                  </Constant>
+                </Access>
+                <Access Scope="GlobalVariable" UId="29">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="Final_time" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="30">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="Final_time" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="31">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="second_actual" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="32">
+                  <Symbol>
+                    <Component Name="RTC_to_String_Conversion Block" />
+                    <Component Name="Final_time" />
+                  </Symbol>
+                </Access>
+                <Part Name="CONCAT" Version="1.5" UId="33" DisabledENO="false">
+                  <TemplateValue Name="card" Type="Cardinality">2</TemplateValue>
+                  <TemplateValue Name="str_type" Type="Type">String</TemplateValue>
+                </Part>
+                <Part Name="CONCAT" Version="1.5" UId="34" DisabledENO="false">
+                  <TemplateValue Name="card" Type="Cardinality">2</TemplateValue>
+                  <TemplateValue Name="str_type" Type="Type">String</TemplateValue>
+                </Part>
+                <Part Name="CONCAT" Version="1.5" UId="35" DisabledENO="false">
+                  <TemplateValue Name="card" Type="Cardinality">2</TemplateValue>
+                  <TemplateValue Name="str_type" Type="Type">String</TemplateValue>
+                </Part>
+                <Part Name="CONCAT" Version="1.5" UId="36" DisabledENO="false">
+                  <TemplateValue Name="card" Type="Cardinality">2</TemplateValue>
+                  <TemplateValue Name="str_type" Type="Type">String</TemplateValue>
+                </Part>
+              </Parts>
+              <Wires>
+                <Wire UId="37">
+                  <Powerrail />
+                  <NameCon UId="33" Name="en" />
+                </Wire>
+                <Wire UId="38">
+                  <IdentCon UId="21" />
+                  <NameCon UId="33" Name="IN1" />
+                </Wire>
+                <Wire UId="39">
+                  <IdentCon UId="22" />
+                  <NameCon UId="33" Name="IN2" />
+                </Wire>
+                <Wire UId="40">
+                  <NameCon UId="33" Name="eno" />
+                  <NameCon UId="34" Name="en" />
+                </Wire>
+                <Wire UId="41">
+                  <NameCon UId="33" Name="OUT" />
+                  <IdentCon UId="23" />
+                </Wire>
+                <Wire UId="42">
+                  <IdentCon UId="24" />
+                  <NameCon UId="34" Name="IN1" />
+                </Wire>
+                <Wire UId="43">
+                  <IdentCon UId="25" />
+                  <NameCon UId="34" Name="IN2" />
+                </Wire>
+                <Wire UId="44">
+                  <NameCon UId="34" Name="eno" />
+                  <NameCon UId="35" Name="en" />
+                </Wire>
+                <Wire UId="45">
+                  <NameCon UId="34" Name="OUT" />
+                  <IdentCon UId="26" />
+                </Wire>
+                <Wire UId="46">
+                  <IdentCon UId="27" />
+                  <NameCon UId="35" Name="IN1" />
+                </Wire>
+                <Wire UId="47">
+                  <IdentCon UId="28" />
+                  <NameCon UId="35" Name="IN2" />
+                </Wire>
+                <Wire UId="48">
+                  <NameCon UId="35" Name="eno" />
+                  <NameCon UId="36" Name="en" />
+                </Wire>
+                <Wire UId="49">
+                  <NameCon UId="35" Name="OUT" />
+                  <IdentCon UId="29" />
+                </Wire>
+                <Wire UId="50">
+                  <IdentCon UId="30" />
+                  <NameCon UId="36" Name="IN1" />
+                </Wire>
+                <Wire UId="51">
+                  <IdentCon UId="31" />
+                  <NameCon UId="36" Name="IN2" />
+                </Wire>
+                <Wire UId="52">
+                  <NameCon UId="36" Name="OUT" />
+                  <IdentCon UId="32" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="45" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="46" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="47" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="48" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Final_Time</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="49" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4A" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="4B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="4C" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="4D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="4E" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4F" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.OB>
+</Document>

@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V21" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="Static">
+            <Member Name="PcdTime" Datatype="Int" Remanence="Retain">
+              <StartValue>10</StartValue>
+            </Member>
+            <Member Name="VesselDrainWeight" Datatype="Real" Remanence="Retain">
+              <StartValue>15.0</StartValue>
+            </Member>
+            <Member Name="AirPurgingPressureTolerence" Datatype="Real" Remanence="Retain">
+              <StartValue>0.1</StartValue>
+            </Member>
+            <Member Name="AirPurgingReleaseTime" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="DrainPressureTolerance" Datatype="Real" Remanence="Retain">
+              <StartValue>0.2</StartValue>
+            </Member>
+            <Member Name="DelayToCheckConductivity" Datatype="Int" Remanence="Retain">
+              <StartValue>10</StartValue>
+            </Member>
+            <Member Name="ConductivityCheckTime" Datatype="Int" Remanence="Retain">
+              <StartValue>5</StartValue>
+            </Member>
+            <Member Name="FinalRinseCycleNo.OfRep" Datatype="Int" Remanence="Retain">
+              <StartValue>3</StartValue>
+            </Member>
+            <Member Name="FillRinseSamplingLineDelay" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="FillRinseBlanketingLineDelay" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="FillRinseJTubeLineDelay" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="FillRinseSpargingLineDelay" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="FillRinseSbiLineDelay" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="FillRinseRecirculationlineDelay" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="FillRinseVesselBypassLineDelay" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="FillRinsePumpBypassLineDelay" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="FillRinsePf01InLineDelay" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="FillRinsePf01VentLineDelay" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="FillRinsePf02InLineDelay" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="FillRinsePf02VentLineDelay" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="FillRinsePf02OutLineDelay" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="FillRinsePf01BypassLineDelay" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="FillRinsePf02BypassLineDelay" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="FillRinsePtlLineDelay" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="RecSamplingLineDelay" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="RecBlanketingLineDelay" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="RecJTubeLineDelay" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="RecSpargingLineDelay" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="RecSbiLineDelay" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="DrainVesselDrainLineDelay" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="DrainPumpBypassLineDelay" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="DrainPf01InLineDelay" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="DrainPf01VentLineDelay" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="DrainPf02InLineDelay" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="DrainPf02VentLineDelay" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="DrainPf02OutLineDelay" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="DrainPf01BypassLineDelay" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="DrainPf02BypassLineDelay" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="FinalRinseCycleVesselDrainLineDelay" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="AirPurgeSamplingLineDelay" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="AirPurgeBlankeingLineDelay" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="AirPurgeJTubeLineDelay" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="AirPurgeSpargingLineDelay" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="AirPurgeSbiLineDelay" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="AirPurgeRecirculationlineDelay" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="AirPurgeVesselBypassLineDelay" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="AirPurgeVesselDrainLineDelay" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="AirPurgePumpBypassLineDelay" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="AirPurgePf01InLineDelay" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="AirPurgePf01VentLineDelay" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="AirPurgePf02InLineDelay" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="AirPurgePf02VentLineDelay" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="AirPurgePf02OutLineDelay" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="AirPurgePf01BypassLineDelay" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="AirPurgePf02BypassLineDelay" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+            <Member Name="AirPurgePtlLineDelay" Datatype="Int" Remanence="Retain">
+              <StartValue>30</StartValue>
+            </Member>
+          </Section>
+        </Sections>
+      </Interface>
+      <MemoryLayout>Standard</MemoryLayout>
+      <Name>DB624</Name>
+      <Namespace />
+      <Number>624</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

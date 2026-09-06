@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V21" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="Static">
+            <Member Name="ControlKeyOff" Datatype="Bool" />
+            <Member Name="EmergencyStopPressed" Datatype="Bool" />
+            <Member Name="PowerReset" Datatype="Bool" />
+            <Member Name="CompresseDairPressurelow" Datatype="Bool" />
+            <Member Name="PowerFailure" Datatype="Bool" />
+            <Member Name="PlcRestarted" Datatype="Bool" />
+            <Member Name="Mm01FeedbackTrip" Datatype="Bool" />
+            <Member Name="Cp01FeedbackTrip" Datatype="Bool" />
+            <Member Name="Mm01OverloadTrip" Datatype="Bool" />
+            <Member Name="Cp01OverloadTrip" Datatype="Bool" />
+            <Member Name="MinimumWeightRequiredToStartmm01" Datatype="Bool" />
+            <Member Name="Ticr01WireBreak" Datatype="Bool" />
+            <Member Name="Ticr02WireBreak" Datatype="Bool" />
+            <Member Name="Ticr03WireBreak" Datatype="Bool" />
+            <Member Name="Ticr04WireBreak" Datatype="Bool" />
+            <Member Name="Ticr05WireBreak" Datatype="Bool" />
+            <Member Name="Ticr06WireBreak" Datatype="Bool" />
+            <Member Name="Ticr07WireBreak" Datatype="Bool" />
+            <Member Name="Ticr08WireBreak" Datatype="Bool" />
+            <Member Name="Ticr09WireBreak" Datatype="Bool" />
+            <Member Name="Ticr10WireBreak" Datatype="Bool" />
+            <Member Name="Picr01WireBreak" Datatype="Bool" />
+            <Member Name="Picr02WireBreak" Datatype="Bool" />
+            <Member Name="Picr03WireBreak" Datatype="Bool" />
+            <Member Name="Picr04WireBreak" Datatype="Bool" />
+            <Member Name="Cicr01WireBreak" Datatype="Bool" />
+            <Member Name="Lc01CommunicationFailed" Datatype="Bool" />
+            <Member Name="VesselHighPressure" Datatype="Bool" />
+            <Member Name="Mm01SpeedSensorTrip" Datatype="Bool" />
+            <Member Name="PlcToHmiCommunicationFailed" Datatype="Bool" />
+          </Section>
+        </Sections>
+      </Interface>
+      <MemoryLayout>Standard</MemoryLayout>
+      <Name>SafetyAlarms</Name>
+      <Namespace />
+      <Number>181</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

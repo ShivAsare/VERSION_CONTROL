@@ -1,0 +1,2494 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V21" />
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <Interface>
+        <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+          <Section Name="Input">
+            <Member Name="sec" Datatype="Bool" />
+            <Member Name="AlarmAck" Datatype="Bool" />
+            <Member Name="AlwaysTrue" Datatype="Bool" />
+            <Member Name="AlwaysFalse" Datatype="Bool" />
+            <Member Name="Interlock" Datatype="Bool" />
+          </Section>
+          <Section Name="Output" />
+          <Section Name="InOut" />
+          <Section Name="Static">
+            <Member Name="Do01" Datatype="&quot;DigitalOutput&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+              <Comment>
+                <MultiLanguageText Lang="en-US">Mm01Cmd</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Do02" Datatype="&quot;DigitalOutput&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+              <Comment>
+                <MultiLanguageText Lang="en-US">Cp01Cmd</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Do03" Datatype="&quot;DigitalOutput&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+              <Comment>
+                <MultiLanguageText Lang="en-US">Htr</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Do04" Datatype="&quot;DigitalOutput&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+              <Comment>
+                <MultiLanguageText Lang="en-US">Lf01</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Do05" Datatype="&quot;DigitalOutput&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+              <Comment>
+                <MultiLanguageText Lang="en-US">DoSpare1</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Do06" Datatype="&quot;DigitalOutput&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+              <Comment>
+                <MultiLanguageText Lang="en-US">DoSpare2</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Do07" Datatype="&quot;DigitalOutput&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+              <Comment>
+                <MultiLanguageText Lang="en-US">DoSpare3</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Do08" Datatype="&quot;DigitalOutput&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+              <Comment>
+                <MultiLanguageText Lang="en-US">DoSpare4</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Do09" Datatype="&quot;DigitalOutput&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+              <Comment>
+                <MultiLanguageText Lang="en-US">DoSpare5</MultiLanguageText>
+              </Comment>
+            </Member>
+            <Member Name="Do10" Datatype="&quot;DigitalOutput&quot;">
+              <AttributeList>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+              </AttributeList>
+              <Comment>
+                <MultiLanguageText Lang="en-US">DoSpare6</MultiLanguageText>
+              </Comment>
+            </Member>
+          </Section>
+          <Section Name="Temp" />
+          <Section Name="Constant" />
+        </Sections>
+      </Interface>
+      <MemoryLayout>Standard</MemoryLayout>
+      <Name>DoFb</Name>
+      <Namespace />
+      <Number>109</Number>
+      <ProgrammingLanguage>LAD</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="3" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="AlwaysFALSE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LocalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="Interlock" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="Sec_Pulse" />
+                  </Symbol>
+                </Access>
+                <Call UId="25">
+                  <CallInfo Name="DigitalOutput" BlockType="FB">
+                    <Instance Scope="LocalVariable" UId="26">
+                      <Component Name="Do01" />
+                    </Instance>
+                    <Parameter Name="Cmd" Section="Input" Type="Bool" />
+                    <Parameter Name="SimulationOn" Section="Input" Type="Bool" />
+                    <Parameter Name="MotorFeedbackInputSelection" Section="Input" Type="Bool" />
+                    <Parameter Name="MotorFeedbackInput" Section="Input" Type="Bool" />
+                    <Parameter Name="WaterSensorSelection" Section="Input" Type="Bool" />
+                    <Parameter Name="WaterSensorInput" Section="Input" Type="Bool" />
+                    <Parameter Name="AlwaysTrue" Section="Input" Type="Bool" />
+                    <Parameter Name="AlwaysFalse" Section="Input" Type="Bool" />
+                    <Parameter Name="OpenClose" Section="Input" Type="Bool" />
+                    <Parameter Name="Spare_3" Section="Input" Type="Bool" />
+                    <Parameter Name="ValveFeedbackInputSelection" Section="Input" Type="Bool" />
+                    <Parameter Name="ValveFeedbackInput" Section="Input" Type="Bool" />
+                    <Parameter Name="Interlock" Section="Input" Type="Bool" />
+                    <Parameter Name="FBCheckDelay" Section="Input" Type="Int" />
+                    <Parameter Name="WSCheckDelay" Section="Input" Type="Int" />
+                    <Parameter Name="secs" Section="Input" Type="Bool" />
+                    <Parameter Name="AlarmAck" Section="Input" Type="Bool" />
+                    <Parameter Name="ModeSel" Section="Input" Type="Bool" />
+                    <Parameter Name="Fault" Section="Input" Type="Bool" />
+                    <Parameter Name="Reset" Section="Input" Type="Bool" />
+                    <Parameter Name="spare" Section="Input" Type="Bool" />
+                    <Parameter Name="spare_1" Section="Input" Type="Bool" />
+                    <Parameter Name="spare_2" Section="Input" Type="Bool" />
+                    <Parameter Name="Output" Section="Output" Type="Bool" />
+                    <Parameter Name="FeedBackTripAlarm" Section="Output" Type="Bool" />
+                    <Parameter Name="NoWaterFlowAlarm" Section="Output" Type="Bool" />
+                    <Parameter Name="LineColour" Section="Output" Type="DInt" />
+                    <Parameter Name="ValveColour" Section="Output" Type="DInt" />
+                    <Parameter Name="Mode" Section="Output" Type="DInt" />
+                    <Parameter Name="Status" Section="Output" Type="DInt" />
+                    <Parameter Name="OpFbTrip" Section="InOut" Type="Bool" />
+                    <Parameter Name="OpWaterSensorTrip" Section="InOut" Type="Bool" />
+                    <Parameter Name="FBCheckActualTime" Section="InOut" Type="Int" />
+                    <Parameter Name="WSCheckActualTime" Section="InOut" Type="Int" />
+                  </CallInfo>
+                </Call>
+              </Parts>
+              <Wires>
+                <Wire UId="57">
+                  <Powerrail />
+                  <NameCon UId="25" Name="en" />
+                </Wire>
+                <Wire UId="58">
+                  <OpenCon UId="27" />
+                  <NameCon UId="25" Name="Cmd" />
+                </Wire>
+                <Wire UId="59">
+                  <OpenCon UId="28" />
+                  <NameCon UId="25" Name="SimulationOn" />
+                </Wire>
+                <Wire UId="60">
+                  <OpenCon UId="29" />
+                  <NameCon UId="25" Name="MotorFeedbackInputSelection" />
+                </Wire>
+                <Wire UId="61">
+                  <OpenCon UId="30" />
+                  <NameCon UId="25" Name="MotorFeedbackInput" />
+                </Wire>
+                <Wire UId="62">
+                  <OpenCon UId="31" />
+                  <NameCon UId="25" Name="WaterSensorSelection" />
+                </Wire>
+                <Wire UId="63">
+                  <OpenCon UId="32" />
+                  <NameCon UId="25" Name="WaterSensorInput" />
+                </Wire>
+                <Wire UId="64">
+                  <IdentCon UId="21" />
+                  <NameCon UId="25" Name="AlwaysTrue" />
+                </Wire>
+                <Wire UId="65">
+                  <IdentCon UId="22" />
+                  <NameCon UId="25" Name="AlwaysFalse" />
+                </Wire>
+                <Wire UId="66">
+                  <OpenCon UId="33" />
+                  <NameCon UId="25" Name="OpenClose" />
+                </Wire>
+                <Wire UId="67">
+                  <OpenCon UId="34" />
+                  <NameCon UId="25" Name="Spare_3" />
+                </Wire>
+                <Wire UId="68">
+                  <OpenCon UId="35" />
+                  <NameCon UId="25" Name="ValveFeedbackInputSelection" />
+                </Wire>
+                <Wire UId="69">
+                  <OpenCon UId="36" />
+                  <NameCon UId="25" Name="ValveFeedbackInput" />
+                </Wire>
+                <Wire UId="70">
+                  <IdentCon UId="23" />
+                  <NameCon UId="25" Name="Interlock" />
+                </Wire>
+                <Wire UId="71">
+                  <OpenCon UId="37" />
+                  <NameCon UId="25" Name="FBCheckDelay" />
+                </Wire>
+                <Wire UId="72">
+                  <OpenCon UId="38" />
+                  <NameCon UId="25" Name="WSCheckDelay" />
+                </Wire>
+                <Wire UId="73">
+                  <IdentCon UId="24" />
+                  <NameCon UId="25" Name="secs" />
+                </Wire>
+                <Wire UId="74">
+                  <OpenCon UId="39" />
+                  <NameCon UId="25" Name="AlarmAck" />
+                </Wire>
+                <Wire UId="75">
+                  <OpenCon UId="40" />
+                  <NameCon UId="25" Name="ModeSel" />
+                </Wire>
+                <Wire UId="76">
+                  <OpenCon UId="41" />
+                  <NameCon UId="25" Name="Fault" />
+                </Wire>
+                <Wire UId="77">
+                  <OpenCon UId="42" />
+                  <NameCon UId="25" Name="Reset" />
+                </Wire>
+                <Wire UId="78">
+                  <OpenCon UId="43" />
+                  <NameCon UId="25" Name="spare" />
+                </Wire>
+                <Wire UId="79">
+                  <OpenCon UId="44" />
+                  <NameCon UId="25" Name="spare_1" />
+                </Wire>
+                <Wire UId="80">
+                  <OpenCon UId="45" />
+                  <NameCon UId="25" Name="spare_2" />
+                </Wire>
+                <Wire UId="81">
+                  <OpenCon UId="46" />
+                  <NameCon UId="25" Name="OpFbTrip" />
+                </Wire>
+                <Wire UId="82">
+                  <OpenCon UId="47" />
+                  <NameCon UId="25" Name="OpWaterSensorTrip" />
+                </Wire>
+                <Wire UId="83">
+                  <OpenCon UId="48" />
+                  <NameCon UId="25" Name="FBCheckActualTime" />
+                </Wire>
+                <Wire UId="84">
+                  <OpenCon UId="49" />
+                  <NameCon UId="25" Name="WSCheckActualTime" />
+                </Wire>
+                <Wire UId="85">
+                  <NameCon UId="25" Name="Output" />
+                  <OpenCon UId="50" />
+                </Wire>
+                <Wire UId="86">
+                  <NameCon UId="25" Name="FeedBackTripAlarm" />
+                  <OpenCon UId="51" />
+                </Wire>
+                <Wire UId="87">
+                  <NameCon UId="25" Name="NoWaterFlowAlarm" />
+                  <OpenCon UId="52" />
+                </Wire>
+                <Wire UId="88">
+                  <NameCon UId="25" Name="LineColour" />
+                  <OpenCon UId="53" />
+                </Wire>
+                <Wire UId="89">
+                  <NameCon UId="25" Name="ValveColour" />
+                  <OpenCon UId="54" />
+                </Wire>
+                <Wire UId="90">
+                  <NameCon UId="25" Name="Mode" />
+                  <OpenCon UId="55" />
+                </Wire>
+                <Wire UId="91">
+                  <NameCon UId="25" Name="Status" />
+                  <OpenCon UId="56" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="5" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="6" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Mm01Cmd</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="8" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="AlwaysFALSE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LocalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="Interlock" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="Sec_Pulse" />
+                  </Symbol>
+                </Access>
+                <Call UId="25">
+                  <CallInfo Name="DigitalOutput" BlockType="FB">
+                    <Instance Scope="LocalVariable" UId="26">
+                      <Component Name="Do02" />
+                    </Instance>
+                    <Parameter Name="Cmd" Section="Input" Type="Bool" />
+                    <Parameter Name="SimulationOn" Section="Input" Type="Bool" />
+                    <Parameter Name="MotorFeedbackInputSelection" Section="Input" Type="Bool" />
+                    <Parameter Name="MotorFeedbackInput" Section="Input" Type="Bool" />
+                    <Parameter Name="WaterSensorSelection" Section="Input" Type="Bool" />
+                    <Parameter Name="WaterSensorInput" Section="Input" Type="Bool" />
+                    <Parameter Name="AlwaysTrue" Section="Input" Type="Bool" />
+                    <Parameter Name="AlwaysFalse" Section="Input" Type="Bool" />
+                    <Parameter Name="OpenClose" Section="Input" Type="Bool" />
+                    <Parameter Name="Spare_3" Section="Input" Type="Bool" />
+                    <Parameter Name="ValveFeedbackInputSelection" Section="Input" Type="Bool" />
+                    <Parameter Name="ValveFeedbackInput" Section="Input" Type="Bool" />
+                    <Parameter Name="Interlock" Section="Input" Type="Bool" />
+                    <Parameter Name="FBCheckDelay" Section="Input" Type="Int" />
+                    <Parameter Name="WSCheckDelay" Section="Input" Type="Int" />
+                    <Parameter Name="secs" Section="Input" Type="Bool" />
+                    <Parameter Name="AlarmAck" Section="Input" Type="Bool" />
+                    <Parameter Name="ModeSel" Section="Input" Type="Bool" />
+                    <Parameter Name="Fault" Section="Input" Type="Bool" />
+                    <Parameter Name="Reset" Section="Input" Type="Bool" />
+                    <Parameter Name="spare" Section="Input" Type="Bool" />
+                    <Parameter Name="spare_1" Section="Input" Type="Bool" />
+                    <Parameter Name="spare_2" Section="Input" Type="Bool" />
+                    <Parameter Name="Output" Section="Output" Type="Bool" />
+                    <Parameter Name="FeedBackTripAlarm" Section="Output" Type="Bool" />
+                    <Parameter Name="NoWaterFlowAlarm" Section="Output" Type="Bool" />
+                    <Parameter Name="LineColour" Section="Output" Type="DInt" />
+                    <Parameter Name="ValveColour" Section="Output" Type="DInt" />
+                    <Parameter Name="Mode" Section="Output" Type="DInt" />
+                    <Parameter Name="Status" Section="Output" Type="DInt" />
+                    <Parameter Name="OpFbTrip" Section="InOut" Type="Bool" />
+                    <Parameter Name="OpWaterSensorTrip" Section="InOut" Type="Bool" />
+                    <Parameter Name="FBCheckActualTime" Section="InOut" Type="Int" />
+                    <Parameter Name="WSCheckActualTime" Section="InOut" Type="Int" />
+                  </CallInfo>
+                </Call>
+              </Parts>
+              <Wires>
+                <Wire UId="57">
+                  <Powerrail />
+                  <NameCon UId="25" Name="en" />
+                </Wire>
+                <Wire UId="58">
+                  <OpenCon UId="27" />
+                  <NameCon UId="25" Name="Cmd" />
+                </Wire>
+                <Wire UId="59">
+                  <OpenCon UId="28" />
+                  <NameCon UId="25" Name="SimulationOn" />
+                </Wire>
+                <Wire UId="60">
+                  <OpenCon UId="29" />
+                  <NameCon UId="25" Name="MotorFeedbackInputSelection" />
+                </Wire>
+                <Wire UId="61">
+                  <OpenCon UId="30" />
+                  <NameCon UId="25" Name="MotorFeedbackInput" />
+                </Wire>
+                <Wire UId="62">
+                  <OpenCon UId="31" />
+                  <NameCon UId="25" Name="WaterSensorSelection" />
+                </Wire>
+                <Wire UId="63">
+                  <OpenCon UId="32" />
+                  <NameCon UId="25" Name="WaterSensorInput" />
+                </Wire>
+                <Wire UId="64">
+                  <IdentCon UId="21" />
+                  <NameCon UId="25" Name="AlwaysTrue" />
+                </Wire>
+                <Wire UId="65">
+                  <IdentCon UId="22" />
+                  <NameCon UId="25" Name="AlwaysFalse" />
+                </Wire>
+                <Wire UId="66">
+                  <OpenCon UId="33" />
+                  <NameCon UId="25" Name="OpenClose" />
+                </Wire>
+                <Wire UId="67">
+                  <OpenCon UId="34" />
+                  <NameCon UId="25" Name="Spare_3" />
+                </Wire>
+                <Wire UId="68">
+                  <OpenCon UId="35" />
+                  <NameCon UId="25" Name="ValveFeedbackInputSelection" />
+                </Wire>
+                <Wire UId="69">
+                  <OpenCon UId="36" />
+                  <NameCon UId="25" Name="ValveFeedbackInput" />
+                </Wire>
+                <Wire UId="70">
+                  <IdentCon UId="23" />
+                  <NameCon UId="25" Name="Interlock" />
+                </Wire>
+                <Wire UId="71">
+                  <OpenCon UId="37" />
+                  <NameCon UId="25" Name="FBCheckDelay" />
+                </Wire>
+                <Wire UId="72">
+                  <OpenCon UId="38" />
+                  <NameCon UId="25" Name="WSCheckDelay" />
+                </Wire>
+                <Wire UId="73">
+                  <IdentCon UId="24" />
+                  <NameCon UId="25" Name="secs" />
+                </Wire>
+                <Wire UId="74">
+                  <OpenCon UId="39" />
+                  <NameCon UId="25" Name="AlarmAck" />
+                </Wire>
+                <Wire UId="75">
+                  <OpenCon UId="40" />
+                  <NameCon UId="25" Name="ModeSel" />
+                </Wire>
+                <Wire UId="76">
+                  <OpenCon UId="41" />
+                  <NameCon UId="25" Name="Fault" />
+                </Wire>
+                <Wire UId="77">
+                  <OpenCon UId="42" />
+                  <NameCon UId="25" Name="Reset" />
+                </Wire>
+                <Wire UId="78">
+                  <OpenCon UId="43" />
+                  <NameCon UId="25" Name="spare" />
+                </Wire>
+                <Wire UId="79">
+                  <OpenCon UId="44" />
+                  <NameCon UId="25" Name="spare_1" />
+                </Wire>
+                <Wire UId="80">
+                  <OpenCon UId="45" />
+                  <NameCon UId="25" Name="spare_2" />
+                </Wire>
+                <Wire UId="81">
+                  <OpenCon UId="46" />
+                  <NameCon UId="25" Name="OpFbTrip" />
+                </Wire>
+                <Wire UId="82">
+                  <OpenCon UId="47" />
+                  <NameCon UId="25" Name="OpWaterSensorTrip" />
+                </Wire>
+                <Wire UId="83">
+                  <OpenCon UId="48" />
+                  <NameCon UId="25" Name="FBCheckActualTime" />
+                </Wire>
+                <Wire UId="84">
+                  <OpenCon UId="49" />
+                  <NameCon UId="25" Name="WSCheckActualTime" />
+                </Wire>
+                <Wire UId="85">
+                  <NameCon UId="25" Name="Output" />
+                  <OpenCon UId="50" />
+                </Wire>
+                <Wire UId="86">
+                  <NameCon UId="25" Name="FeedBackTripAlarm" />
+                  <OpenCon UId="51" />
+                </Wire>
+                <Wire UId="87">
+                  <NameCon UId="25" Name="NoWaterFlowAlarm" />
+                  <OpenCon UId="52" />
+                </Wire>
+                <Wire UId="88">
+                  <NameCon UId="25" Name="LineColour" />
+                  <OpenCon UId="53" />
+                </Wire>
+                <Wire UId="89">
+                  <NameCon UId="25" Name="ValveColour" />
+                  <OpenCon UId="54" />
+                </Wire>
+                <Wire UId="90">
+                  <NameCon UId="25" Name="Mode" />
+                  <OpenCon UId="55" />
+                </Wire>
+                <Wire UId="91">
+                  <NameCon UId="25" Name="Status" />
+                  <OpenCon UId="56" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="9" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="B" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Cp01Cmd</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="D" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="AlwaysFALSE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LocalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="Interlock" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="Sec_Pulse" />
+                  </Symbol>
+                </Access>
+                <Call UId="25">
+                  <CallInfo Name="DigitalOutput" BlockType="FB">
+                    <Instance Scope="LocalVariable" UId="26">
+                      <Component Name="Do03" />
+                    </Instance>
+                    <Parameter Name="Cmd" Section="Input" Type="Bool" />
+                    <Parameter Name="SimulationOn" Section="Input" Type="Bool" />
+                    <Parameter Name="MotorFeedbackInputSelection" Section="Input" Type="Bool" />
+                    <Parameter Name="MotorFeedbackInput" Section="Input" Type="Bool" />
+                    <Parameter Name="WaterSensorSelection" Section="Input" Type="Bool" />
+                    <Parameter Name="WaterSensorInput" Section="Input" Type="Bool" />
+                    <Parameter Name="AlwaysTrue" Section="Input" Type="Bool" />
+                    <Parameter Name="AlwaysFalse" Section="Input" Type="Bool" />
+                    <Parameter Name="OpenClose" Section="Input" Type="Bool" />
+                    <Parameter Name="Spare_3" Section="Input" Type="Bool" />
+                    <Parameter Name="ValveFeedbackInputSelection" Section="Input" Type="Bool" />
+                    <Parameter Name="ValveFeedbackInput" Section="Input" Type="Bool" />
+                    <Parameter Name="Interlock" Section="Input" Type="Bool" />
+                    <Parameter Name="FBCheckDelay" Section="Input" Type="Int" />
+                    <Parameter Name="WSCheckDelay" Section="Input" Type="Int" />
+                    <Parameter Name="secs" Section="Input" Type="Bool" />
+                    <Parameter Name="AlarmAck" Section="Input" Type="Bool" />
+                    <Parameter Name="ModeSel" Section="Input" Type="Bool" />
+                    <Parameter Name="Fault" Section="Input" Type="Bool" />
+                    <Parameter Name="Reset" Section="Input" Type="Bool" />
+                    <Parameter Name="spare" Section="Input" Type="Bool" />
+                    <Parameter Name="spare_1" Section="Input" Type="Bool" />
+                    <Parameter Name="spare_2" Section="Input" Type="Bool" />
+                    <Parameter Name="Output" Section="Output" Type="Bool" />
+                    <Parameter Name="FeedBackTripAlarm" Section="Output" Type="Bool" />
+                    <Parameter Name="NoWaterFlowAlarm" Section="Output" Type="Bool" />
+                    <Parameter Name="LineColour" Section="Output" Type="DInt" />
+                    <Parameter Name="ValveColour" Section="Output" Type="DInt" />
+                    <Parameter Name="Mode" Section="Output" Type="DInt" />
+                    <Parameter Name="Status" Section="Output" Type="DInt" />
+                    <Parameter Name="OpFbTrip" Section="InOut" Type="Bool" />
+                    <Parameter Name="OpWaterSensorTrip" Section="InOut" Type="Bool" />
+                    <Parameter Name="FBCheckActualTime" Section="InOut" Type="Int" />
+                    <Parameter Name="WSCheckActualTime" Section="InOut" Type="Int" />
+                  </CallInfo>
+                </Call>
+              </Parts>
+              <Wires>
+                <Wire UId="57">
+                  <Powerrail />
+                  <NameCon UId="25" Name="en" />
+                </Wire>
+                <Wire UId="58">
+                  <OpenCon UId="27" />
+                  <NameCon UId="25" Name="Cmd" />
+                </Wire>
+                <Wire UId="59">
+                  <OpenCon UId="28" />
+                  <NameCon UId="25" Name="SimulationOn" />
+                </Wire>
+                <Wire UId="60">
+                  <OpenCon UId="29" />
+                  <NameCon UId="25" Name="MotorFeedbackInputSelection" />
+                </Wire>
+                <Wire UId="61">
+                  <OpenCon UId="30" />
+                  <NameCon UId="25" Name="MotorFeedbackInput" />
+                </Wire>
+                <Wire UId="62">
+                  <OpenCon UId="31" />
+                  <NameCon UId="25" Name="WaterSensorSelection" />
+                </Wire>
+                <Wire UId="63">
+                  <OpenCon UId="32" />
+                  <NameCon UId="25" Name="WaterSensorInput" />
+                </Wire>
+                <Wire UId="64">
+                  <IdentCon UId="21" />
+                  <NameCon UId="25" Name="AlwaysTrue" />
+                </Wire>
+                <Wire UId="65">
+                  <IdentCon UId="22" />
+                  <NameCon UId="25" Name="AlwaysFalse" />
+                </Wire>
+                <Wire UId="66">
+                  <OpenCon UId="33" />
+                  <NameCon UId="25" Name="OpenClose" />
+                </Wire>
+                <Wire UId="67">
+                  <OpenCon UId="34" />
+                  <NameCon UId="25" Name="Spare_3" />
+                </Wire>
+                <Wire UId="68">
+                  <OpenCon UId="35" />
+                  <NameCon UId="25" Name="ValveFeedbackInputSelection" />
+                </Wire>
+                <Wire UId="69">
+                  <OpenCon UId="36" />
+                  <NameCon UId="25" Name="ValveFeedbackInput" />
+                </Wire>
+                <Wire UId="70">
+                  <IdentCon UId="23" />
+                  <NameCon UId="25" Name="Interlock" />
+                </Wire>
+                <Wire UId="71">
+                  <OpenCon UId="37" />
+                  <NameCon UId="25" Name="FBCheckDelay" />
+                </Wire>
+                <Wire UId="72">
+                  <OpenCon UId="38" />
+                  <NameCon UId="25" Name="WSCheckDelay" />
+                </Wire>
+                <Wire UId="73">
+                  <IdentCon UId="24" />
+                  <NameCon UId="25" Name="secs" />
+                </Wire>
+                <Wire UId="74">
+                  <OpenCon UId="39" />
+                  <NameCon UId="25" Name="AlarmAck" />
+                </Wire>
+                <Wire UId="75">
+                  <OpenCon UId="40" />
+                  <NameCon UId="25" Name="ModeSel" />
+                </Wire>
+                <Wire UId="76">
+                  <OpenCon UId="41" />
+                  <NameCon UId="25" Name="Fault" />
+                </Wire>
+                <Wire UId="77">
+                  <OpenCon UId="42" />
+                  <NameCon UId="25" Name="Reset" />
+                </Wire>
+                <Wire UId="78">
+                  <OpenCon UId="43" />
+                  <NameCon UId="25" Name="spare" />
+                </Wire>
+                <Wire UId="79">
+                  <OpenCon UId="44" />
+                  <NameCon UId="25" Name="spare_1" />
+                </Wire>
+                <Wire UId="80">
+                  <OpenCon UId="45" />
+                  <NameCon UId="25" Name="spare_2" />
+                </Wire>
+                <Wire UId="81">
+                  <OpenCon UId="46" />
+                  <NameCon UId="25" Name="OpFbTrip" />
+                </Wire>
+                <Wire UId="82">
+                  <OpenCon UId="47" />
+                  <NameCon UId="25" Name="OpWaterSensorTrip" />
+                </Wire>
+                <Wire UId="83">
+                  <OpenCon UId="48" />
+                  <NameCon UId="25" Name="FBCheckActualTime" />
+                </Wire>
+                <Wire UId="84">
+                  <OpenCon UId="49" />
+                  <NameCon UId="25" Name="WSCheckActualTime" />
+                </Wire>
+                <Wire UId="85">
+                  <NameCon UId="25" Name="Output" />
+                  <OpenCon UId="50" />
+                </Wire>
+                <Wire UId="86">
+                  <NameCon UId="25" Name="FeedBackTripAlarm" />
+                  <OpenCon UId="51" />
+                </Wire>
+                <Wire UId="87">
+                  <NameCon UId="25" Name="NoWaterFlowAlarm" />
+                  <OpenCon UId="52" />
+                </Wire>
+                <Wire UId="88">
+                  <NameCon UId="25" Name="LineColour" />
+                  <OpenCon UId="53" />
+                </Wire>
+                <Wire UId="89">
+                  <NameCon UId="25" Name="ValveColour" />
+                  <OpenCon UId="54" />
+                </Wire>
+                <Wire UId="90">
+                  <NameCon UId="25" Name="Mode" />
+                  <OpenCon UId="55" />
+                </Wire>
+                <Wire UId="91">
+                  <NameCon UId="25" Name="Status" />
+                  <OpenCon UId="56" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="E" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="10" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="11" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Htr</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="12" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="AlwaysFALSE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LocalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="Interlock" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="Sec_Pulse" />
+                  </Symbol>
+                </Access>
+                <Call UId="25">
+                  <CallInfo Name="DigitalOutput" BlockType="FB">
+                    <Instance Scope="LocalVariable" UId="26">
+                      <Component Name="Do04" />
+                    </Instance>
+                    <Parameter Name="Cmd" Section="Input" Type="Bool" />
+                    <Parameter Name="SimulationOn" Section="Input" Type="Bool" />
+                    <Parameter Name="MotorFeedbackInputSelection" Section="Input" Type="Bool" />
+                    <Parameter Name="MotorFeedbackInput" Section="Input" Type="Bool" />
+                    <Parameter Name="WaterSensorSelection" Section="Input" Type="Bool" />
+                    <Parameter Name="WaterSensorInput" Section="Input" Type="Bool" />
+                    <Parameter Name="AlwaysTrue" Section="Input" Type="Bool" />
+                    <Parameter Name="AlwaysFalse" Section="Input" Type="Bool" />
+                    <Parameter Name="OpenClose" Section="Input" Type="Bool" />
+                    <Parameter Name="Spare_3" Section="Input" Type="Bool" />
+                    <Parameter Name="ValveFeedbackInputSelection" Section="Input" Type="Bool" />
+                    <Parameter Name="ValveFeedbackInput" Section="Input" Type="Bool" />
+                    <Parameter Name="Interlock" Section="Input" Type="Bool" />
+                    <Parameter Name="FBCheckDelay" Section="Input" Type="Int" />
+                    <Parameter Name="WSCheckDelay" Section="Input" Type="Int" />
+                    <Parameter Name="secs" Section="Input" Type="Bool" />
+                    <Parameter Name="AlarmAck" Section="Input" Type="Bool" />
+                    <Parameter Name="ModeSel" Section="Input" Type="Bool" />
+                    <Parameter Name="Fault" Section="Input" Type="Bool" />
+                    <Parameter Name="Reset" Section="Input" Type="Bool" />
+                    <Parameter Name="spare" Section="Input" Type="Bool" />
+                    <Parameter Name="spare_1" Section="Input" Type="Bool" />
+                    <Parameter Name="spare_2" Section="Input" Type="Bool" />
+                    <Parameter Name="Output" Section="Output" Type="Bool" />
+                    <Parameter Name="FeedBackTripAlarm" Section="Output" Type="Bool" />
+                    <Parameter Name="NoWaterFlowAlarm" Section="Output" Type="Bool" />
+                    <Parameter Name="LineColour" Section="Output" Type="DInt" />
+                    <Parameter Name="ValveColour" Section="Output" Type="DInt" />
+                    <Parameter Name="Mode" Section="Output" Type="DInt" />
+                    <Parameter Name="Status" Section="Output" Type="DInt" />
+                    <Parameter Name="OpFbTrip" Section="InOut" Type="Bool" />
+                    <Parameter Name="OpWaterSensorTrip" Section="InOut" Type="Bool" />
+                    <Parameter Name="FBCheckActualTime" Section="InOut" Type="Int" />
+                    <Parameter Name="WSCheckActualTime" Section="InOut" Type="Int" />
+                  </CallInfo>
+                </Call>
+              </Parts>
+              <Wires>
+                <Wire UId="57">
+                  <Powerrail />
+                  <NameCon UId="25" Name="en" />
+                </Wire>
+                <Wire UId="58">
+                  <OpenCon UId="27" />
+                  <NameCon UId="25" Name="Cmd" />
+                </Wire>
+                <Wire UId="59">
+                  <OpenCon UId="28" />
+                  <NameCon UId="25" Name="SimulationOn" />
+                </Wire>
+                <Wire UId="60">
+                  <OpenCon UId="29" />
+                  <NameCon UId="25" Name="MotorFeedbackInputSelection" />
+                </Wire>
+                <Wire UId="61">
+                  <OpenCon UId="30" />
+                  <NameCon UId="25" Name="MotorFeedbackInput" />
+                </Wire>
+                <Wire UId="62">
+                  <OpenCon UId="31" />
+                  <NameCon UId="25" Name="WaterSensorSelection" />
+                </Wire>
+                <Wire UId="63">
+                  <OpenCon UId="32" />
+                  <NameCon UId="25" Name="WaterSensorInput" />
+                </Wire>
+                <Wire UId="64">
+                  <IdentCon UId="21" />
+                  <NameCon UId="25" Name="AlwaysTrue" />
+                </Wire>
+                <Wire UId="65">
+                  <IdentCon UId="22" />
+                  <NameCon UId="25" Name="AlwaysFalse" />
+                </Wire>
+                <Wire UId="66">
+                  <OpenCon UId="33" />
+                  <NameCon UId="25" Name="OpenClose" />
+                </Wire>
+                <Wire UId="67">
+                  <OpenCon UId="34" />
+                  <NameCon UId="25" Name="Spare_3" />
+                </Wire>
+                <Wire UId="68">
+                  <OpenCon UId="35" />
+                  <NameCon UId="25" Name="ValveFeedbackInputSelection" />
+                </Wire>
+                <Wire UId="69">
+                  <OpenCon UId="36" />
+                  <NameCon UId="25" Name="ValveFeedbackInput" />
+                </Wire>
+                <Wire UId="70">
+                  <IdentCon UId="23" />
+                  <NameCon UId="25" Name="Interlock" />
+                </Wire>
+                <Wire UId="71">
+                  <OpenCon UId="37" />
+                  <NameCon UId="25" Name="FBCheckDelay" />
+                </Wire>
+                <Wire UId="72">
+                  <OpenCon UId="38" />
+                  <NameCon UId="25" Name="WSCheckDelay" />
+                </Wire>
+                <Wire UId="73">
+                  <IdentCon UId="24" />
+                  <NameCon UId="25" Name="secs" />
+                </Wire>
+                <Wire UId="74">
+                  <OpenCon UId="39" />
+                  <NameCon UId="25" Name="AlarmAck" />
+                </Wire>
+                <Wire UId="75">
+                  <OpenCon UId="40" />
+                  <NameCon UId="25" Name="ModeSel" />
+                </Wire>
+                <Wire UId="76">
+                  <OpenCon UId="41" />
+                  <NameCon UId="25" Name="Fault" />
+                </Wire>
+                <Wire UId="77">
+                  <OpenCon UId="42" />
+                  <NameCon UId="25" Name="Reset" />
+                </Wire>
+                <Wire UId="78">
+                  <OpenCon UId="43" />
+                  <NameCon UId="25" Name="spare" />
+                </Wire>
+                <Wire UId="79">
+                  <OpenCon UId="44" />
+                  <NameCon UId="25" Name="spare_1" />
+                </Wire>
+                <Wire UId="80">
+                  <OpenCon UId="45" />
+                  <NameCon UId="25" Name="spare_2" />
+                </Wire>
+                <Wire UId="81">
+                  <OpenCon UId="46" />
+                  <NameCon UId="25" Name="OpFbTrip" />
+                </Wire>
+                <Wire UId="82">
+                  <OpenCon UId="47" />
+                  <NameCon UId="25" Name="OpWaterSensorTrip" />
+                </Wire>
+                <Wire UId="83">
+                  <OpenCon UId="48" />
+                  <NameCon UId="25" Name="FBCheckActualTime" />
+                </Wire>
+                <Wire UId="84">
+                  <OpenCon UId="49" />
+                  <NameCon UId="25" Name="WSCheckActualTime" />
+                </Wire>
+                <Wire UId="85">
+                  <NameCon UId="25" Name="Output" />
+                  <OpenCon UId="50" />
+                </Wire>
+                <Wire UId="86">
+                  <NameCon UId="25" Name="FeedBackTripAlarm" />
+                  <OpenCon UId="51" />
+                </Wire>
+                <Wire UId="87">
+                  <NameCon UId="25" Name="NoWaterFlowAlarm" />
+                  <OpenCon UId="52" />
+                </Wire>
+                <Wire UId="88">
+                  <NameCon UId="25" Name="LineColour" />
+                  <OpenCon UId="53" />
+                </Wire>
+                <Wire UId="89">
+                  <NameCon UId="25" Name="ValveColour" />
+                  <OpenCon UId="54" />
+                </Wire>
+                <Wire UId="90">
+                  <NameCon UId="25" Name="Mode" />
+                  <OpenCon UId="55" />
+                </Wire>
+                <Wire UId="91">
+                  <NameCon UId="25" Name="Status" />
+                  <OpenCon UId="56" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="13" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="14" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="15" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="16" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Lf01</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="17" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="AlwaysFALSE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LocalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="Interlock" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="Sec_Pulse" />
+                  </Symbol>
+                </Access>
+                <Call UId="25">
+                  <CallInfo Name="DigitalOutput" BlockType="FB">
+                    <Instance Scope="LocalVariable" UId="26">
+                      <Component Name="Do05" />
+                    </Instance>
+                    <Parameter Name="Cmd" Section="Input" Type="Bool" />
+                    <Parameter Name="SimulationOn" Section="Input" Type="Bool" />
+                    <Parameter Name="MotorFeedbackInputSelection" Section="Input" Type="Bool" />
+                    <Parameter Name="MotorFeedbackInput" Section="Input" Type="Bool" />
+                    <Parameter Name="WaterSensorSelection" Section="Input" Type="Bool" />
+                    <Parameter Name="WaterSensorInput" Section="Input" Type="Bool" />
+                    <Parameter Name="AlwaysTrue" Section="Input" Type="Bool" />
+                    <Parameter Name="AlwaysFalse" Section="Input" Type="Bool" />
+                    <Parameter Name="OpenClose" Section="Input" Type="Bool" />
+                    <Parameter Name="Spare_3" Section="Input" Type="Bool" />
+                    <Parameter Name="ValveFeedbackInputSelection" Section="Input" Type="Bool" />
+                    <Parameter Name="ValveFeedbackInput" Section="Input" Type="Bool" />
+                    <Parameter Name="Interlock" Section="Input" Type="Bool" />
+                    <Parameter Name="FBCheckDelay" Section="Input" Type="Int" />
+                    <Parameter Name="WSCheckDelay" Section="Input" Type="Int" />
+                    <Parameter Name="secs" Section="Input" Type="Bool" />
+                    <Parameter Name="AlarmAck" Section="Input" Type="Bool" />
+                    <Parameter Name="ModeSel" Section="Input" Type="Bool" />
+                    <Parameter Name="Fault" Section="Input" Type="Bool" />
+                    <Parameter Name="Reset" Section="Input" Type="Bool" />
+                    <Parameter Name="spare" Section="Input" Type="Bool" />
+                    <Parameter Name="spare_1" Section="Input" Type="Bool" />
+                    <Parameter Name="spare_2" Section="Input" Type="Bool" />
+                    <Parameter Name="Output" Section="Output" Type="Bool" />
+                    <Parameter Name="FeedBackTripAlarm" Section="Output" Type="Bool" />
+                    <Parameter Name="NoWaterFlowAlarm" Section="Output" Type="Bool" />
+                    <Parameter Name="LineColour" Section="Output" Type="DInt" />
+                    <Parameter Name="ValveColour" Section="Output" Type="DInt" />
+                    <Parameter Name="Mode" Section="Output" Type="DInt" />
+                    <Parameter Name="Status" Section="Output" Type="DInt" />
+                    <Parameter Name="OpFbTrip" Section="InOut" Type="Bool" />
+                    <Parameter Name="OpWaterSensorTrip" Section="InOut" Type="Bool" />
+                    <Parameter Name="FBCheckActualTime" Section="InOut" Type="Int" />
+                    <Parameter Name="WSCheckActualTime" Section="InOut" Type="Int" />
+                  </CallInfo>
+                </Call>
+              </Parts>
+              <Wires>
+                <Wire UId="57">
+                  <Powerrail />
+                  <NameCon UId="25" Name="en" />
+                </Wire>
+                <Wire UId="58">
+                  <OpenCon UId="27" />
+                  <NameCon UId="25" Name="Cmd" />
+                </Wire>
+                <Wire UId="59">
+                  <OpenCon UId="28" />
+                  <NameCon UId="25" Name="SimulationOn" />
+                </Wire>
+                <Wire UId="60">
+                  <OpenCon UId="29" />
+                  <NameCon UId="25" Name="MotorFeedbackInputSelection" />
+                </Wire>
+                <Wire UId="61">
+                  <OpenCon UId="30" />
+                  <NameCon UId="25" Name="MotorFeedbackInput" />
+                </Wire>
+                <Wire UId="62">
+                  <OpenCon UId="31" />
+                  <NameCon UId="25" Name="WaterSensorSelection" />
+                </Wire>
+                <Wire UId="63">
+                  <OpenCon UId="32" />
+                  <NameCon UId="25" Name="WaterSensorInput" />
+                </Wire>
+                <Wire UId="64">
+                  <IdentCon UId="21" />
+                  <NameCon UId="25" Name="AlwaysTrue" />
+                </Wire>
+                <Wire UId="65">
+                  <IdentCon UId="22" />
+                  <NameCon UId="25" Name="AlwaysFalse" />
+                </Wire>
+                <Wire UId="66">
+                  <OpenCon UId="33" />
+                  <NameCon UId="25" Name="OpenClose" />
+                </Wire>
+                <Wire UId="67">
+                  <OpenCon UId="34" />
+                  <NameCon UId="25" Name="Spare_3" />
+                </Wire>
+                <Wire UId="68">
+                  <OpenCon UId="35" />
+                  <NameCon UId="25" Name="ValveFeedbackInputSelection" />
+                </Wire>
+                <Wire UId="69">
+                  <OpenCon UId="36" />
+                  <NameCon UId="25" Name="ValveFeedbackInput" />
+                </Wire>
+                <Wire UId="70">
+                  <IdentCon UId="23" />
+                  <NameCon UId="25" Name="Interlock" />
+                </Wire>
+                <Wire UId="71">
+                  <OpenCon UId="37" />
+                  <NameCon UId="25" Name="FBCheckDelay" />
+                </Wire>
+                <Wire UId="72">
+                  <OpenCon UId="38" />
+                  <NameCon UId="25" Name="WSCheckDelay" />
+                </Wire>
+                <Wire UId="73">
+                  <IdentCon UId="24" />
+                  <NameCon UId="25" Name="secs" />
+                </Wire>
+                <Wire UId="74">
+                  <OpenCon UId="39" />
+                  <NameCon UId="25" Name="AlarmAck" />
+                </Wire>
+                <Wire UId="75">
+                  <OpenCon UId="40" />
+                  <NameCon UId="25" Name="ModeSel" />
+                </Wire>
+                <Wire UId="76">
+                  <OpenCon UId="41" />
+                  <NameCon UId="25" Name="Fault" />
+                </Wire>
+                <Wire UId="77">
+                  <OpenCon UId="42" />
+                  <NameCon UId="25" Name="Reset" />
+                </Wire>
+                <Wire UId="78">
+                  <OpenCon UId="43" />
+                  <NameCon UId="25" Name="spare" />
+                </Wire>
+                <Wire UId="79">
+                  <OpenCon UId="44" />
+                  <NameCon UId="25" Name="spare_1" />
+                </Wire>
+                <Wire UId="80">
+                  <OpenCon UId="45" />
+                  <NameCon UId="25" Name="spare_2" />
+                </Wire>
+                <Wire UId="81">
+                  <OpenCon UId="46" />
+                  <NameCon UId="25" Name="OpFbTrip" />
+                </Wire>
+                <Wire UId="82">
+                  <OpenCon UId="47" />
+                  <NameCon UId="25" Name="OpWaterSensorTrip" />
+                </Wire>
+                <Wire UId="83">
+                  <OpenCon UId="48" />
+                  <NameCon UId="25" Name="FBCheckActualTime" />
+                </Wire>
+                <Wire UId="84">
+                  <OpenCon UId="49" />
+                  <NameCon UId="25" Name="WSCheckActualTime" />
+                </Wire>
+                <Wire UId="85">
+                  <NameCon UId="25" Name="Output" />
+                  <OpenCon UId="50" />
+                </Wire>
+                <Wire UId="86">
+                  <NameCon UId="25" Name="FeedBackTripAlarm" />
+                  <OpenCon UId="51" />
+                </Wire>
+                <Wire UId="87">
+                  <NameCon UId="25" Name="NoWaterFlowAlarm" />
+                  <OpenCon UId="52" />
+                </Wire>
+                <Wire UId="88">
+                  <NameCon UId="25" Name="LineColour" />
+                  <OpenCon UId="53" />
+                </Wire>
+                <Wire UId="89">
+                  <NameCon UId="25" Name="ValveColour" />
+                  <OpenCon UId="54" />
+                </Wire>
+                <Wire UId="90">
+                  <NameCon UId="25" Name="Mode" />
+                  <OpenCon UId="55" />
+                </Wire>
+                <Wire UId="91">
+                  <NameCon UId="25" Name="Status" />
+                  <OpenCon UId="56" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="18" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="19" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="1A" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="1B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>#Do05 spare1</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="1C" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="AlwaysFALSE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LocalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="Interlock" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="Sec_Pulse" />
+                  </Symbol>
+                </Access>
+                <Call UId="25">
+                  <CallInfo Name="DigitalOutput" BlockType="FB">
+                    <Instance Scope="LocalVariable" UId="26">
+                      <Component Name="Do06" />
+                    </Instance>
+                    <Parameter Name="Cmd" Section="Input" Type="Bool" />
+                    <Parameter Name="SimulationOn" Section="Input" Type="Bool" />
+                    <Parameter Name="MotorFeedbackInputSelection" Section="Input" Type="Bool" />
+                    <Parameter Name="MotorFeedbackInput" Section="Input" Type="Bool" />
+                    <Parameter Name="WaterSensorSelection" Section="Input" Type="Bool" />
+                    <Parameter Name="WaterSensorInput" Section="Input" Type="Bool" />
+                    <Parameter Name="AlwaysTrue" Section="Input" Type="Bool" />
+                    <Parameter Name="AlwaysFalse" Section="Input" Type="Bool" />
+                    <Parameter Name="OpenClose" Section="Input" Type="Bool" />
+                    <Parameter Name="Spare_3" Section="Input" Type="Bool" />
+                    <Parameter Name="ValveFeedbackInputSelection" Section="Input" Type="Bool" />
+                    <Parameter Name="ValveFeedbackInput" Section="Input" Type="Bool" />
+                    <Parameter Name="Interlock" Section="Input" Type="Bool" />
+                    <Parameter Name="FBCheckDelay" Section="Input" Type="Int" />
+                    <Parameter Name="WSCheckDelay" Section="Input" Type="Int" />
+                    <Parameter Name="secs" Section="Input" Type="Bool" />
+                    <Parameter Name="AlarmAck" Section="Input" Type="Bool" />
+                    <Parameter Name="ModeSel" Section="Input" Type="Bool" />
+                    <Parameter Name="Fault" Section="Input" Type="Bool" />
+                    <Parameter Name="Reset" Section="Input" Type="Bool" />
+                    <Parameter Name="spare" Section="Input" Type="Bool" />
+                    <Parameter Name="spare_1" Section="Input" Type="Bool" />
+                    <Parameter Name="spare_2" Section="Input" Type="Bool" />
+                    <Parameter Name="Output" Section="Output" Type="Bool" />
+                    <Parameter Name="FeedBackTripAlarm" Section="Output" Type="Bool" />
+                    <Parameter Name="NoWaterFlowAlarm" Section="Output" Type="Bool" />
+                    <Parameter Name="LineColour" Section="Output" Type="DInt" />
+                    <Parameter Name="ValveColour" Section="Output" Type="DInt" />
+                    <Parameter Name="Mode" Section="Output" Type="DInt" />
+                    <Parameter Name="Status" Section="Output" Type="DInt" />
+                    <Parameter Name="OpFbTrip" Section="InOut" Type="Bool" />
+                    <Parameter Name="OpWaterSensorTrip" Section="InOut" Type="Bool" />
+                    <Parameter Name="FBCheckActualTime" Section="InOut" Type="Int" />
+                    <Parameter Name="WSCheckActualTime" Section="InOut" Type="Int" />
+                  </CallInfo>
+                </Call>
+              </Parts>
+              <Wires>
+                <Wire UId="57">
+                  <Powerrail />
+                  <NameCon UId="25" Name="en" />
+                </Wire>
+                <Wire UId="58">
+                  <OpenCon UId="27" />
+                  <NameCon UId="25" Name="Cmd" />
+                </Wire>
+                <Wire UId="59">
+                  <OpenCon UId="28" />
+                  <NameCon UId="25" Name="SimulationOn" />
+                </Wire>
+                <Wire UId="60">
+                  <OpenCon UId="29" />
+                  <NameCon UId="25" Name="MotorFeedbackInputSelection" />
+                </Wire>
+                <Wire UId="61">
+                  <OpenCon UId="30" />
+                  <NameCon UId="25" Name="MotorFeedbackInput" />
+                </Wire>
+                <Wire UId="62">
+                  <OpenCon UId="31" />
+                  <NameCon UId="25" Name="WaterSensorSelection" />
+                </Wire>
+                <Wire UId="63">
+                  <OpenCon UId="32" />
+                  <NameCon UId="25" Name="WaterSensorInput" />
+                </Wire>
+                <Wire UId="64">
+                  <IdentCon UId="21" />
+                  <NameCon UId="25" Name="AlwaysTrue" />
+                </Wire>
+                <Wire UId="65">
+                  <IdentCon UId="22" />
+                  <NameCon UId="25" Name="AlwaysFalse" />
+                </Wire>
+                <Wire UId="66">
+                  <OpenCon UId="33" />
+                  <NameCon UId="25" Name="OpenClose" />
+                </Wire>
+                <Wire UId="67">
+                  <OpenCon UId="34" />
+                  <NameCon UId="25" Name="Spare_3" />
+                </Wire>
+                <Wire UId="68">
+                  <OpenCon UId="35" />
+                  <NameCon UId="25" Name="ValveFeedbackInputSelection" />
+                </Wire>
+                <Wire UId="69">
+                  <OpenCon UId="36" />
+                  <NameCon UId="25" Name="ValveFeedbackInput" />
+                </Wire>
+                <Wire UId="70">
+                  <IdentCon UId="23" />
+                  <NameCon UId="25" Name="Interlock" />
+                </Wire>
+                <Wire UId="71">
+                  <OpenCon UId="37" />
+                  <NameCon UId="25" Name="FBCheckDelay" />
+                </Wire>
+                <Wire UId="72">
+                  <OpenCon UId="38" />
+                  <NameCon UId="25" Name="WSCheckDelay" />
+                </Wire>
+                <Wire UId="73">
+                  <IdentCon UId="24" />
+                  <NameCon UId="25" Name="secs" />
+                </Wire>
+                <Wire UId="74">
+                  <OpenCon UId="39" />
+                  <NameCon UId="25" Name="AlarmAck" />
+                </Wire>
+                <Wire UId="75">
+                  <OpenCon UId="40" />
+                  <NameCon UId="25" Name="ModeSel" />
+                </Wire>
+                <Wire UId="76">
+                  <OpenCon UId="41" />
+                  <NameCon UId="25" Name="Fault" />
+                </Wire>
+                <Wire UId="77">
+                  <OpenCon UId="42" />
+                  <NameCon UId="25" Name="Reset" />
+                </Wire>
+                <Wire UId="78">
+                  <OpenCon UId="43" />
+                  <NameCon UId="25" Name="spare" />
+                </Wire>
+                <Wire UId="79">
+                  <OpenCon UId="44" />
+                  <NameCon UId="25" Name="spare_1" />
+                </Wire>
+                <Wire UId="80">
+                  <OpenCon UId="45" />
+                  <NameCon UId="25" Name="spare_2" />
+                </Wire>
+                <Wire UId="81">
+                  <OpenCon UId="46" />
+                  <NameCon UId="25" Name="OpFbTrip" />
+                </Wire>
+                <Wire UId="82">
+                  <OpenCon UId="47" />
+                  <NameCon UId="25" Name="OpWaterSensorTrip" />
+                </Wire>
+                <Wire UId="83">
+                  <OpenCon UId="48" />
+                  <NameCon UId="25" Name="FBCheckActualTime" />
+                </Wire>
+                <Wire UId="84">
+                  <OpenCon UId="49" />
+                  <NameCon UId="25" Name="WSCheckActualTime" />
+                </Wire>
+                <Wire UId="85">
+                  <NameCon UId="25" Name="Output" />
+                  <OpenCon UId="50" />
+                </Wire>
+                <Wire UId="86">
+                  <NameCon UId="25" Name="FeedBackTripAlarm" />
+                  <OpenCon UId="51" />
+                </Wire>
+                <Wire UId="87">
+                  <NameCon UId="25" Name="NoWaterFlowAlarm" />
+                  <OpenCon UId="52" />
+                </Wire>
+                <Wire UId="88">
+                  <NameCon UId="25" Name="LineColour" />
+                  <OpenCon UId="53" />
+                </Wire>
+                <Wire UId="89">
+                  <NameCon UId="25" Name="ValveColour" />
+                  <OpenCon UId="54" />
+                </Wire>
+                <Wire UId="90">
+                  <NameCon UId="25" Name="Mode" />
+                  <OpenCon UId="55" />
+                </Wire>
+                <Wire UId="91">
+                  <NameCon UId="25" Name="Status" />
+                  <OpenCon UId="56" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="1D" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="1E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="1F" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="20" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>#Do06 spare2</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="21" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="AlwaysFALSE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LocalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="Interlock" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="Sec_Pulse" />
+                  </Symbol>
+                </Access>
+                <Call UId="25">
+                  <CallInfo Name="DigitalOutput" BlockType="FB">
+                    <Instance Scope="LocalVariable" UId="26">
+                      <Component Name="Do07" />
+                    </Instance>
+                    <Parameter Name="Cmd" Section="Input" Type="Bool" />
+                    <Parameter Name="SimulationOn" Section="Input" Type="Bool" />
+                    <Parameter Name="MotorFeedbackInputSelection" Section="Input" Type="Bool" />
+                    <Parameter Name="MotorFeedbackInput" Section="Input" Type="Bool" />
+                    <Parameter Name="WaterSensorSelection" Section="Input" Type="Bool" />
+                    <Parameter Name="WaterSensorInput" Section="Input" Type="Bool" />
+                    <Parameter Name="AlwaysTrue" Section="Input" Type="Bool" />
+                    <Parameter Name="AlwaysFalse" Section="Input" Type="Bool" />
+                    <Parameter Name="OpenClose" Section="Input" Type="Bool" />
+                    <Parameter Name="Spare_3" Section="Input" Type="Bool" />
+                    <Parameter Name="ValveFeedbackInputSelection" Section="Input" Type="Bool" />
+                    <Parameter Name="ValveFeedbackInput" Section="Input" Type="Bool" />
+                    <Parameter Name="Interlock" Section="Input" Type="Bool" />
+                    <Parameter Name="FBCheckDelay" Section="Input" Type="Int" />
+                    <Parameter Name="WSCheckDelay" Section="Input" Type="Int" />
+                    <Parameter Name="secs" Section="Input" Type="Bool" />
+                    <Parameter Name="AlarmAck" Section="Input" Type="Bool" />
+                    <Parameter Name="ModeSel" Section="Input" Type="Bool" />
+                    <Parameter Name="Fault" Section="Input" Type="Bool" />
+                    <Parameter Name="Reset" Section="Input" Type="Bool" />
+                    <Parameter Name="spare" Section="Input" Type="Bool" />
+                    <Parameter Name="spare_1" Section="Input" Type="Bool" />
+                    <Parameter Name="spare_2" Section="Input" Type="Bool" />
+                    <Parameter Name="Output" Section="Output" Type="Bool" />
+                    <Parameter Name="FeedBackTripAlarm" Section="Output" Type="Bool" />
+                    <Parameter Name="NoWaterFlowAlarm" Section="Output" Type="Bool" />
+                    <Parameter Name="LineColour" Section="Output" Type="DInt" />
+                    <Parameter Name="ValveColour" Section="Output" Type="DInt" />
+                    <Parameter Name="Mode" Section="Output" Type="DInt" />
+                    <Parameter Name="Status" Section="Output" Type="DInt" />
+                    <Parameter Name="OpFbTrip" Section="InOut" Type="Bool" />
+                    <Parameter Name="OpWaterSensorTrip" Section="InOut" Type="Bool" />
+                    <Parameter Name="FBCheckActualTime" Section="InOut" Type="Int" />
+                    <Parameter Name="WSCheckActualTime" Section="InOut" Type="Int" />
+                  </CallInfo>
+                </Call>
+              </Parts>
+              <Wires>
+                <Wire UId="57">
+                  <Powerrail />
+                  <NameCon UId="25" Name="en" />
+                </Wire>
+                <Wire UId="58">
+                  <OpenCon UId="27" />
+                  <NameCon UId="25" Name="Cmd" />
+                </Wire>
+                <Wire UId="59">
+                  <OpenCon UId="28" />
+                  <NameCon UId="25" Name="SimulationOn" />
+                </Wire>
+                <Wire UId="60">
+                  <OpenCon UId="29" />
+                  <NameCon UId="25" Name="MotorFeedbackInputSelection" />
+                </Wire>
+                <Wire UId="61">
+                  <OpenCon UId="30" />
+                  <NameCon UId="25" Name="MotorFeedbackInput" />
+                </Wire>
+                <Wire UId="62">
+                  <OpenCon UId="31" />
+                  <NameCon UId="25" Name="WaterSensorSelection" />
+                </Wire>
+                <Wire UId="63">
+                  <OpenCon UId="32" />
+                  <NameCon UId="25" Name="WaterSensorInput" />
+                </Wire>
+                <Wire UId="64">
+                  <IdentCon UId="21" />
+                  <NameCon UId="25" Name="AlwaysTrue" />
+                </Wire>
+                <Wire UId="65">
+                  <IdentCon UId="22" />
+                  <NameCon UId="25" Name="AlwaysFalse" />
+                </Wire>
+                <Wire UId="66">
+                  <OpenCon UId="33" />
+                  <NameCon UId="25" Name="OpenClose" />
+                </Wire>
+                <Wire UId="67">
+                  <OpenCon UId="34" />
+                  <NameCon UId="25" Name="Spare_3" />
+                </Wire>
+                <Wire UId="68">
+                  <OpenCon UId="35" />
+                  <NameCon UId="25" Name="ValveFeedbackInputSelection" />
+                </Wire>
+                <Wire UId="69">
+                  <OpenCon UId="36" />
+                  <NameCon UId="25" Name="ValveFeedbackInput" />
+                </Wire>
+                <Wire UId="70">
+                  <IdentCon UId="23" />
+                  <NameCon UId="25" Name="Interlock" />
+                </Wire>
+                <Wire UId="71">
+                  <OpenCon UId="37" />
+                  <NameCon UId="25" Name="FBCheckDelay" />
+                </Wire>
+                <Wire UId="72">
+                  <OpenCon UId="38" />
+                  <NameCon UId="25" Name="WSCheckDelay" />
+                </Wire>
+                <Wire UId="73">
+                  <IdentCon UId="24" />
+                  <NameCon UId="25" Name="secs" />
+                </Wire>
+                <Wire UId="74">
+                  <OpenCon UId="39" />
+                  <NameCon UId="25" Name="AlarmAck" />
+                </Wire>
+                <Wire UId="75">
+                  <OpenCon UId="40" />
+                  <NameCon UId="25" Name="ModeSel" />
+                </Wire>
+                <Wire UId="76">
+                  <OpenCon UId="41" />
+                  <NameCon UId="25" Name="Fault" />
+                </Wire>
+                <Wire UId="77">
+                  <OpenCon UId="42" />
+                  <NameCon UId="25" Name="Reset" />
+                </Wire>
+                <Wire UId="78">
+                  <OpenCon UId="43" />
+                  <NameCon UId="25" Name="spare" />
+                </Wire>
+                <Wire UId="79">
+                  <OpenCon UId="44" />
+                  <NameCon UId="25" Name="spare_1" />
+                </Wire>
+                <Wire UId="80">
+                  <OpenCon UId="45" />
+                  <NameCon UId="25" Name="spare_2" />
+                </Wire>
+                <Wire UId="81">
+                  <OpenCon UId="46" />
+                  <NameCon UId="25" Name="OpFbTrip" />
+                </Wire>
+                <Wire UId="82">
+                  <OpenCon UId="47" />
+                  <NameCon UId="25" Name="OpWaterSensorTrip" />
+                </Wire>
+                <Wire UId="83">
+                  <OpenCon UId="48" />
+                  <NameCon UId="25" Name="FBCheckActualTime" />
+                </Wire>
+                <Wire UId="84">
+                  <OpenCon UId="49" />
+                  <NameCon UId="25" Name="WSCheckActualTime" />
+                </Wire>
+                <Wire UId="85">
+                  <NameCon UId="25" Name="Output" />
+                  <OpenCon UId="50" />
+                </Wire>
+                <Wire UId="86">
+                  <NameCon UId="25" Name="FeedBackTripAlarm" />
+                  <OpenCon UId="51" />
+                </Wire>
+                <Wire UId="87">
+                  <NameCon UId="25" Name="NoWaterFlowAlarm" />
+                  <OpenCon UId="52" />
+                </Wire>
+                <Wire UId="88">
+                  <NameCon UId="25" Name="LineColour" />
+                  <OpenCon UId="53" />
+                </Wire>
+                <Wire UId="89">
+                  <NameCon UId="25" Name="ValveColour" />
+                  <OpenCon UId="54" />
+                </Wire>
+                <Wire UId="90">
+                  <NameCon UId="25" Name="Mode" />
+                  <OpenCon UId="55" />
+                </Wire>
+                <Wire UId="91">
+                  <NameCon UId="25" Name="Status" />
+                  <OpenCon UId="56" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="22" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="23" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="24" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="25" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>#Do07spare3</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="26" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="AlwaysFALSE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LocalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="Interlock" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="Sec_Pulse" />
+                  </Symbol>
+                </Access>
+                <Call UId="25">
+                  <CallInfo Name="DigitalOutput" BlockType="FB">
+                    <Instance Scope="LocalVariable" UId="26">
+                      <Component Name="Do08" />
+                    </Instance>
+                    <Parameter Name="Cmd" Section="Input" Type="Bool" />
+                    <Parameter Name="SimulationOn" Section="Input" Type="Bool" />
+                    <Parameter Name="MotorFeedbackInputSelection" Section="Input" Type="Bool" />
+                    <Parameter Name="MotorFeedbackInput" Section="Input" Type="Bool" />
+                    <Parameter Name="WaterSensorSelection" Section="Input" Type="Bool" />
+                    <Parameter Name="WaterSensorInput" Section="Input" Type="Bool" />
+                    <Parameter Name="AlwaysTrue" Section="Input" Type="Bool" />
+                    <Parameter Name="AlwaysFalse" Section="Input" Type="Bool" />
+                    <Parameter Name="OpenClose" Section="Input" Type="Bool" />
+                    <Parameter Name="Spare_3" Section="Input" Type="Bool" />
+                    <Parameter Name="ValveFeedbackInputSelection" Section="Input" Type="Bool" />
+                    <Parameter Name="ValveFeedbackInput" Section="Input" Type="Bool" />
+                    <Parameter Name="Interlock" Section="Input" Type="Bool" />
+                    <Parameter Name="FBCheckDelay" Section="Input" Type="Int" />
+                    <Parameter Name="WSCheckDelay" Section="Input" Type="Int" />
+                    <Parameter Name="secs" Section="Input" Type="Bool" />
+                    <Parameter Name="AlarmAck" Section="Input" Type="Bool" />
+                    <Parameter Name="ModeSel" Section="Input" Type="Bool" />
+                    <Parameter Name="Fault" Section="Input" Type="Bool" />
+                    <Parameter Name="Reset" Section="Input" Type="Bool" />
+                    <Parameter Name="spare" Section="Input" Type="Bool" />
+                    <Parameter Name="spare_1" Section="Input" Type="Bool" />
+                    <Parameter Name="spare_2" Section="Input" Type="Bool" />
+                    <Parameter Name="Output" Section="Output" Type="Bool" />
+                    <Parameter Name="FeedBackTripAlarm" Section="Output" Type="Bool" />
+                    <Parameter Name="NoWaterFlowAlarm" Section="Output" Type="Bool" />
+                    <Parameter Name="LineColour" Section="Output" Type="DInt" />
+                    <Parameter Name="ValveColour" Section="Output" Type="DInt" />
+                    <Parameter Name="Mode" Section="Output" Type="DInt" />
+                    <Parameter Name="Status" Section="Output" Type="DInt" />
+                    <Parameter Name="OpFbTrip" Section="InOut" Type="Bool" />
+                    <Parameter Name="OpWaterSensorTrip" Section="InOut" Type="Bool" />
+                    <Parameter Name="FBCheckActualTime" Section="InOut" Type="Int" />
+                    <Parameter Name="WSCheckActualTime" Section="InOut" Type="Int" />
+                  </CallInfo>
+                </Call>
+              </Parts>
+              <Wires>
+                <Wire UId="57">
+                  <Powerrail />
+                  <NameCon UId="25" Name="en" />
+                </Wire>
+                <Wire UId="58">
+                  <OpenCon UId="27" />
+                  <NameCon UId="25" Name="Cmd" />
+                </Wire>
+                <Wire UId="59">
+                  <OpenCon UId="28" />
+                  <NameCon UId="25" Name="SimulationOn" />
+                </Wire>
+                <Wire UId="60">
+                  <OpenCon UId="29" />
+                  <NameCon UId="25" Name="MotorFeedbackInputSelection" />
+                </Wire>
+                <Wire UId="61">
+                  <OpenCon UId="30" />
+                  <NameCon UId="25" Name="MotorFeedbackInput" />
+                </Wire>
+                <Wire UId="62">
+                  <OpenCon UId="31" />
+                  <NameCon UId="25" Name="WaterSensorSelection" />
+                </Wire>
+                <Wire UId="63">
+                  <OpenCon UId="32" />
+                  <NameCon UId="25" Name="WaterSensorInput" />
+                </Wire>
+                <Wire UId="64">
+                  <IdentCon UId="21" />
+                  <NameCon UId="25" Name="AlwaysTrue" />
+                </Wire>
+                <Wire UId="65">
+                  <IdentCon UId="22" />
+                  <NameCon UId="25" Name="AlwaysFalse" />
+                </Wire>
+                <Wire UId="66">
+                  <OpenCon UId="33" />
+                  <NameCon UId="25" Name="OpenClose" />
+                </Wire>
+                <Wire UId="67">
+                  <OpenCon UId="34" />
+                  <NameCon UId="25" Name="Spare_3" />
+                </Wire>
+                <Wire UId="68">
+                  <OpenCon UId="35" />
+                  <NameCon UId="25" Name="ValveFeedbackInputSelection" />
+                </Wire>
+                <Wire UId="69">
+                  <OpenCon UId="36" />
+                  <NameCon UId="25" Name="ValveFeedbackInput" />
+                </Wire>
+                <Wire UId="70">
+                  <IdentCon UId="23" />
+                  <NameCon UId="25" Name="Interlock" />
+                </Wire>
+                <Wire UId="71">
+                  <OpenCon UId="37" />
+                  <NameCon UId="25" Name="FBCheckDelay" />
+                </Wire>
+                <Wire UId="72">
+                  <OpenCon UId="38" />
+                  <NameCon UId="25" Name="WSCheckDelay" />
+                </Wire>
+                <Wire UId="73">
+                  <IdentCon UId="24" />
+                  <NameCon UId="25" Name="secs" />
+                </Wire>
+                <Wire UId="74">
+                  <OpenCon UId="39" />
+                  <NameCon UId="25" Name="AlarmAck" />
+                </Wire>
+                <Wire UId="75">
+                  <OpenCon UId="40" />
+                  <NameCon UId="25" Name="ModeSel" />
+                </Wire>
+                <Wire UId="76">
+                  <OpenCon UId="41" />
+                  <NameCon UId="25" Name="Fault" />
+                </Wire>
+                <Wire UId="77">
+                  <OpenCon UId="42" />
+                  <NameCon UId="25" Name="Reset" />
+                </Wire>
+                <Wire UId="78">
+                  <OpenCon UId="43" />
+                  <NameCon UId="25" Name="spare" />
+                </Wire>
+                <Wire UId="79">
+                  <OpenCon UId="44" />
+                  <NameCon UId="25" Name="spare_1" />
+                </Wire>
+                <Wire UId="80">
+                  <OpenCon UId="45" />
+                  <NameCon UId="25" Name="spare_2" />
+                </Wire>
+                <Wire UId="81">
+                  <OpenCon UId="46" />
+                  <NameCon UId="25" Name="OpFbTrip" />
+                </Wire>
+                <Wire UId="82">
+                  <OpenCon UId="47" />
+                  <NameCon UId="25" Name="OpWaterSensorTrip" />
+                </Wire>
+                <Wire UId="83">
+                  <OpenCon UId="48" />
+                  <NameCon UId="25" Name="FBCheckActualTime" />
+                </Wire>
+                <Wire UId="84">
+                  <OpenCon UId="49" />
+                  <NameCon UId="25" Name="WSCheckActualTime" />
+                </Wire>
+                <Wire UId="85">
+                  <NameCon UId="25" Name="Output" />
+                  <OpenCon UId="50" />
+                </Wire>
+                <Wire UId="86">
+                  <NameCon UId="25" Name="FeedBackTripAlarm" />
+                  <OpenCon UId="51" />
+                </Wire>
+                <Wire UId="87">
+                  <NameCon UId="25" Name="NoWaterFlowAlarm" />
+                  <OpenCon UId="52" />
+                </Wire>
+                <Wire UId="88">
+                  <NameCon UId="25" Name="LineColour" />
+                  <OpenCon UId="53" />
+                </Wire>
+                <Wire UId="89">
+                  <NameCon UId="25" Name="ValveColour" />
+                  <OpenCon UId="54" />
+                </Wire>
+                <Wire UId="90">
+                  <NameCon UId="25" Name="Mode" />
+                  <OpenCon UId="55" />
+                </Wire>
+                <Wire UId="91">
+                  <NameCon UId="25" Name="Status" />
+                  <OpenCon UId="56" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="27" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="28" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="29" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="2A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>#Do08 spare4</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="2B" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="AlwaysFALSE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LocalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="Interlock" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="Sec_Pulse" />
+                  </Symbol>
+                </Access>
+                <Call UId="25">
+                  <CallInfo Name="DigitalOutput" BlockType="FB">
+                    <Instance Scope="LocalVariable" UId="26">
+                      <Component Name="Do09" />
+                    </Instance>
+                    <Parameter Name="Cmd" Section="Input" Type="Bool" />
+                    <Parameter Name="SimulationOn" Section="Input" Type="Bool" />
+                    <Parameter Name="MotorFeedbackInputSelection" Section="Input" Type="Bool" />
+                    <Parameter Name="MotorFeedbackInput" Section="Input" Type="Bool" />
+                    <Parameter Name="WaterSensorSelection" Section="Input" Type="Bool" />
+                    <Parameter Name="WaterSensorInput" Section="Input" Type="Bool" />
+                    <Parameter Name="AlwaysTrue" Section="Input" Type="Bool" />
+                    <Parameter Name="AlwaysFalse" Section="Input" Type="Bool" />
+                    <Parameter Name="OpenClose" Section="Input" Type="Bool" />
+                    <Parameter Name="Spare_3" Section="Input" Type="Bool" />
+                    <Parameter Name="ValveFeedbackInputSelection" Section="Input" Type="Bool" />
+                    <Parameter Name="ValveFeedbackInput" Section="Input" Type="Bool" />
+                    <Parameter Name="Interlock" Section="Input" Type="Bool" />
+                    <Parameter Name="FBCheckDelay" Section="Input" Type="Int" />
+                    <Parameter Name="WSCheckDelay" Section="Input" Type="Int" />
+                    <Parameter Name="secs" Section="Input" Type="Bool" />
+                    <Parameter Name="AlarmAck" Section="Input" Type="Bool" />
+                    <Parameter Name="ModeSel" Section="Input" Type="Bool" />
+                    <Parameter Name="Fault" Section="Input" Type="Bool" />
+                    <Parameter Name="Reset" Section="Input" Type="Bool" />
+                    <Parameter Name="spare" Section="Input" Type="Bool" />
+                    <Parameter Name="spare_1" Section="Input" Type="Bool" />
+                    <Parameter Name="spare_2" Section="Input" Type="Bool" />
+                    <Parameter Name="Output" Section="Output" Type="Bool" />
+                    <Parameter Name="FeedBackTripAlarm" Section="Output" Type="Bool" />
+                    <Parameter Name="NoWaterFlowAlarm" Section="Output" Type="Bool" />
+                    <Parameter Name="LineColour" Section="Output" Type="DInt" />
+                    <Parameter Name="ValveColour" Section="Output" Type="DInt" />
+                    <Parameter Name="Mode" Section="Output" Type="DInt" />
+                    <Parameter Name="Status" Section="Output" Type="DInt" />
+                    <Parameter Name="OpFbTrip" Section="InOut" Type="Bool" />
+                    <Parameter Name="OpWaterSensorTrip" Section="InOut" Type="Bool" />
+                    <Parameter Name="FBCheckActualTime" Section="InOut" Type="Int" />
+                    <Parameter Name="WSCheckActualTime" Section="InOut" Type="Int" />
+                  </CallInfo>
+                </Call>
+              </Parts>
+              <Wires>
+                <Wire UId="57">
+                  <Powerrail />
+                  <NameCon UId="25" Name="en" />
+                </Wire>
+                <Wire UId="58">
+                  <OpenCon UId="27" />
+                  <NameCon UId="25" Name="Cmd" />
+                </Wire>
+                <Wire UId="59">
+                  <OpenCon UId="28" />
+                  <NameCon UId="25" Name="SimulationOn" />
+                </Wire>
+                <Wire UId="60">
+                  <OpenCon UId="29" />
+                  <NameCon UId="25" Name="MotorFeedbackInputSelection" />
+                </Wire>
+                <Wire UId="61">
+                  <OpenCon UId="30" />
+                  <NameCon UId="25" Name="MotorFeedbackInput" />
+                </Wire>
+                <Wire UId="62">
+                  <OpenCon UId="31" />
+                  <NameCon UId="25" Name="WaterSensorSelection" />
+                </Wire>
+                <Wire UId="63">
+                  <OpenCon UId="32" />
+                  <NameCon UId="25" Name="WaterSensorInput" />
+                </Wire>
+                <Wire UId="64">
+                  <IdentCon UId="21" />
+                  <NameCon UId="25" Name="AlwaysTrue" />
+                </Wire>
+                <Wire UId="65">
+                  <IdentCon UId="22" />
+                  <NameCon UId="25" Name="AlwaysFalse" />
+                </Wire>
+                <Wire UId="66">
+                  <OpenCon UId="33" />
+                  <NameCon UId="25" Name="OpenClose" />
+                </Wire>
+                <Wire UId="67">
+                  <OpenCon UId="34" />
+                  <NameCon UId="25" Name="Spare_3" />
+                </Wire>
+                <Wire UId="68">
+                  <OpenCon UId="35" />
+                  <NameCon UId="25" Name="ValveFeedbackInputSelection" />
+                </Wire>
+                <Wire UId="69">
+                  <OpenCon UId="36" />
+                  <NameCon UId="25" Name="ValveFeedbackInput" />
+                </Wire>
+                <Wire UId="70">
+                  <IdentCon UId="23" />
+                  <NameCon UId="25" Name="Interlock" />
+                </Wire>
+                <Wire UId="71">
+                  <OpenCon UId="37" />
+                  <NameCon UId="25" Name="FBCheckDelay" />
+                </Wire>
+                <Wire UId="72">
+                  <OpenCon UId="38" />
+                  <NameCon UId="25" Name="WSCheckDelay" />
+                </Wire>
+                <Wire UId="73">
+                  <IdentCon UId="24" />
+                  <NameCon UId="25" Name="secs" />
+                </Wire>
+                <Wire UId="74">
+                  <OpenCon UId="39" />
+                  <NameCon UId="25" Name="AlarmAck" />
+                </Wire>
+                <Wire UId="75">
+                  <OpenCon UId="40" />
+                  <NameCon UId="25" Name="ModeSel" />
+                </Wire>
+                <Wire UId="76">
+                  <OpenCon UId="41" />
+                  <NameCon UId="25" Name="Fault" />
+                </Wire>
+                <Wire UId="77">
+                  <OpenCon UId="42" />
+                  <NameCon UId="25" Name="Reset" />
+                </Wire>
+                <Wire UId="78">
+                  <OpenCon UId="43" />
+                  <NameCon UId="25" Name="spare" />
+                </Wire>
+                <Wire UId="79">
+                  <OpenCon UId="44" />
+                  <NameCon UId="25" Name="spare_1" />
+                </Wire>
+                <Wire UId="80">
+                  <OpenCon UId="45" />
+                  <NameCon UId="25" Name="spare_2" />
+                </Wire>
+                <Wire UId="81">
+                  <OpenCon UId="46" />
+                  <NameCon UId="25" Name="OpFbTrip" />
+                </Wire>
+                <Wire UId="82">
+                  <OpenCon UId="47" />
+                  <NameCon UId="25" Name="OpWaterSensorTrip" />
+                </Wire>
+                <Wire UId="83">
+                  <OpenCon UId="48" />
+                  <NameCon UId="25" Name="FBCheckActualTime" />
+                </Wire>
+                <Wire UId="84">
+                  <OpenCon UId="49" />
+                  <NameCon UId="25" Name="WSCheckActualTime" />
+                </Wire>
+                <Wire UId="85">
+                  <NameCon UId="25" Name="Output" />
+                  <OpenCon UId="50" />
+                </Wire>
+                <Wire UId="86">
+                  <NameCon UId="25" Name="FeedBackTripAlarm" />
+                  <OpenCon UId="51" />
+                </Wire>
+                <Wire UId="87">
+                  <NameCon UId="25" Name="NoWaterFlowAlarm" />
+                  <OpenCon UId="52" />
+                </Wire>
+                <Wire UId="88">
+                  <NameCon UId="25" Name="LineColour" />
+                  <OpenCon UId="53" />
+                </Wire>
+                <Wire UId="89">
+                  <NameCon UId="25" Name="ValveColour" />
+                  <OpenCon UId="54" />
+                </Wire>
+                <Wire UId="90">
+                  <NameCon UId="25" Name="Mode" />
+                  <OpenCon UId="55" />
+                </Wire>
+                <Wire UId="91">
+                  <NameCon UId="25" Name="Status" />
+                  <OpenCon UId="56" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="2C" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="2D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="2E" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="2F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>##Do09 spare5</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="30" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v5">
+              <Parts>
+                <Access Scope="GlobalVariable" UId="21">
+                  <Symbol>
+                    <Component Name="AlwaysTRUE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="22">
+                  <Symbol>
+                    <Component Name="AlwaysFALSE" />
+                  </Symbol>
+                </Access>
+                <Access Scope="LocalVariable" UId="23">
+                  <Symbol>
+                    <Component Name="Interlock" />
+                  </Symbol>
+                </Access>
+                <Access Scope="GlobalVariable" UId="24">
+                  <Symbol>
+                    <Component Name="Sec_Pulse" />
+                  </Symbol>
+                </Access>
+                <Call UId="25">
+                  <CallInfo Name="DigitalOutput" BlockType="FB">
+                    <Instance Scope="LocalVariable" UId="26">
+                      <Component Name="Do10" />
+                    </Instance>
+                    <Parameter Name="Cmd" Section="Input" Type="Bool" />
+                    <Parameter Name="SimulationOn" Section="Input" Type="Bool" />
+                    <Parameter Name="MotorFeedbackInputSelection" Section="Input" Type="Bool" />
+                    <Parameter Name="MotorFeedbackInput" Section="Input" Type="Bool" />
+                    <Parameter Name="WaterSensorSelection" Section="Input" Type="Bool" />
+                    <Parameter Name="WaterSensorInput" Section="Input" Type="Bool" />
+                    <Parameter Name="AlwaysTrue" Section="Input" Type="Bool" />
+                    <Parameter Name="AlwaysFalse" Section="Input" Type="Bool" />
+                    <Parameter Name="OpenClose" Section="Input" Type="Bool" />
+                    <Parameter Name="Spare_3" Section="Input" Type="Bool" />
+                    <Parameter Name="ValveFeedbackInputSelection" Section="Input" Type="Bool" />
+                    <Parameter Name="ValveFeedbackInput" Section="Input" Type="Bool" />
+                    <Parameter Name="Interlock" Section="Input" Type="Bool" />
+                    <Parameter Name="FBCheckDelay" Section="Input" Type="Int" />
+                    <Parameter Name="WSCheckDelay" Section="Input" Type="Int" />
+                    <Parameter Name="secs" Section="Input" Type="Bool" />
+                    <Parameter Name="AlarmAck" Section="Input" Type="Bool" />
+                    <Parameter Name="ModeSel" Section="Input" Type="Bool" />
+                    <Parameter Name="Fault" Section="Input" Type="Bool" />
+                    <Parameter Name="Reset" Section="Input" Type="Bool" />
+                    <Parameter Name="spare" Section="Input" Type="Bool" />
+                    <Parameter Name="spare_1" Section="Input" Type="Bool" />
+                    <Parameter Name="spare_2" Section="Input" Type="Bool" />
+                    <Parameter Name="Output" Section="Output" Type="Bool" />
+                    <Parameter Name="FeedBackTripAlarm" Section="Output" Type="Bool" />
+                    <Parameter Name="NoWaterFlowAlarm" Section="Output" Type="Bool" />
+                    <Parameter Name="LineColour" Section="Output" Type="DInt" />
+                    <Parameter Name="ValveColour" Section="Output" Type="DInt" />
+                    <Parameter Name="Mode" Section="Output" Type="DInt" />
+                    <Parameter Name="Status" Section="Output" Type="DInt" />
+                    <Parameter Name="OpFbTrip" Section="InOut" Type="Bool" />
+                    <Parameter Name="OpWaterSensorTrip" Section="InOut" Type="Bool" />
+                    <Parameter Name="FBCheckActualTime" Section="InOut" Type="Int" />
+                    <Parameter Name="WSCheckActualTime" Section="InOut" Type="Int" />
+                  </CallInfo>
+                </Call>
+              </Parts>
+              <Wires>
+                <Wire UId="57">
+                  <Powerrail />
+                  <NameCon UId="25" Name="en" />
+                </Wire>
+                <Wire UId="58">
+                  <OpenCon UId="27" />
+                  <NameCon UId="25" Name="Cmd" />
+                </Wire>
+                <Wire UId="59">
+                  <OpenCon UId="28" />
+                  <NameCon UId="25" Name="SimulationOn" />
+                </Wire>
+                <Wire UId="60">
+                  <OpenCon UId="29" />
+                  <NameCon UId="25" Name="MotorFeedbackInputSelection" />
+                </Wire>
+                <Wire UId="61">
+                  <OpenCon UId="30" />
+                  <NameCon UId="25" Name="MotorFeedbackInput" />
+                </Wire>
+                <Wire UId="62">
+                  <OpenCon UId="31" />
+                  <NameCon UId="25" Name="WaterSensorSelection" />
+                </Wire>
+                <Wire UId="63">
+                  <OpenCon UId="32" />
+                  <NameCon UId="25" Name="WaterSensorInput" />
+                </Wire>
+                <Wire UId="64">
+                  <IdentCon UId="21" />
+                  <NameCon UId="25" Name="AlwaysTrue" />
+                </Wire>
+                <Wire UId="65">
+                  <IdentCon UId="22" />
+                  <NameCon UId="25" Name="AlwaysFalse" />
+                </Wire>
+                <Wire UId="66">
+                  <OpenCon UId="33" />
+                  <NameCon UId="25" Name="OpenClose" />
+                </Wire>
+                <Wire UId="67">
+                  <OpenCon UId="34" />
+                  <NameCon UId="25" Name="Spare_3" />
+                </Wire>
+                <Wire UId="68">
+                  <OpenCon UId="35" />
+                  <NameCon UId="25" Name="ValveFeedbackInputSelection" />
+                </Wire>
+                <Wire UId="69">
+                  <OpenCon UId="36" />
+                  <NameCon UId="25" Name="ValveFeedbackInput" />
+                </Wire>
+                <Wire UId="70">
+                  <IdentCon UId="23" />
+                  <NameCon UId="25" Name="Interlock" />
+                </Wire>
+                <Wire UId="71">
+                  <OpenCon UId="37" />
+                  <NameCon UId="25" Name="FBCheckDelay" />
+                </Wire>
+                <Wire UId="72">
+                  <OpenCon UId="38" />
+                  <NameCon UId="25" Name="WSCheckDelay" />
+                </Wire>
+                <Wire UId="73">
+                  <IdentCon UId="24" />
+                  <NameCon UId="25" Name="secs" />
+                </Wire>
+                <Wire UId="74">
+                  <OpenCon UId="39" />
+                  <NameCon UId="25" Name="AlarmAck" />
+                </Wire>
+                <Wire UId="75">
+                  <OpenCon UId="40" />
+                  <NameCon UId="25" Name="ModeSel" />
+                </Wire>
+                <Wire UId="76">
+                  <OpenCon UId="41" />
+                  <NameCon UId="25" Name="Fault" />
+                </Wire>
+                <Wire UId="77">
+                  <OpenCon UId="42" />
+                  <NameCon UId="25" Name="Reset" />
+                </Wire>
+                <Wire UId="78">
+                  <OpenCon UId="43" />
+                  <NameCon UId="25" Name="spare" />
+                </Wire>
+                <Wire UId="79">
+                  <OpenCon UId="44" />
+                  <NameCon UId="25" Name="spare_1" />
+                </Wire>
+                <Wire UId="80">
+                  <OpenCon UId="45" />
+                  <NameCon UId="25" Name="spare_2" />
+                </Wire>
+                <Wire UId="81">
+                  <OpenCon UId="46" />
+                  <NameCon UId="25" Name="OpFbTrip" />
+                </Wire>
+                <Wire UId="82">
+                  <OpenCon UId="47" />
+                  <NameCon UId="25" Name="OpWaterSensorTrip" />
+                </Wire>
+                <Wire UId="83">
+                  <OpenCon UId="48" />
+                  <NameCon UId="25" Name="FBCheckActualTime" />
+                </Wire>
+                <Wire UId="84">
+                  <OpenCon UId="49" />
+                  <NameCon UId="25" Name="WSCheckActualTime" />
+                </Wire>
+                <Wire UId="85">
+                  <NameCon UId="25" Name="Output" />
+                  <OpenCon UId="50" />
+                </Wire>
+                <Wire UId="86">
+                  <NameCon UId="25" Name="FeedBackTripAlarm" />
+                  <OpenCon UId="51" />
+                </Wire>
+                <Wire UId="87">
+                  <NameCon UId="25" Name="NoWaterFlowAlarm" />
+                  <OpenCon UId="52" />
+                </Wire>
+                <Wire UId="88">
+                  <NameCon UId="25" Name="LineColour" />
+                  <OpenCon UId="53" />
+                </Wire>
+                <Wire UId="89">
+                  <NameCon UId="25" Name="ValveColour" />
+                  <OpenCon UId="54" />
+                </Wire>
+                <Wire UId="90">
+                  <NameCon UId="25" Name="Mode" />
+                  <OpenCon UId="55" />
+                </Wire>
+                <Wire UId="91">
+                  <NameCon UId="25" Name="Status" />
+                  <OpenCon UId="56" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="31" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="32" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="33" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="34" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>#Do10 spare6</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="35" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="36" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>
